@@ -46,11 +46,11 @@
     "debugBattleResultMessage": false,
 	"replaceBattleMessages": true,
     "onlineReloadConfig": false,
-    "ignoreBattleType": [2, 4, 9],
+    "ignoreBattleType": [],
     "showResetButton": true,
     "textResetButton": "Reset",
-    "dailyAutoReset": false,
-    "dailyAutoResetHour": 2,
+    "dailyAutoReset": true,
+    "dailyAutoResetHour": 6,
     "battleEndedMessageDefeat": "<font size='18' color='#FE0E00'>Defeat.</font>\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
     "battleEndedMessageDraw": "<font size='18' color='#FE7903'>Draw.\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
     "battleEndedMessageWin": "<font size='18' color='#60FF00'>Victory!\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
@@ -72,117 +72,141 @@
     },
     "gradient": {
         "EFF": [
-            {"value": 400, "color": "#FE0E00"},
-            {"value": 610, "color": "#FE7903"},
-            {"value": 850, "color": "#F8F400"},
-            {"value": 1145, "color": "#60FF00"},
-            {"value": 1475, "color": "#02C9B3"},
-            {"value": 1775, "color": "#D042F3"}
+			{ "value":      0, "color": "#FE0E00" },
+			{ "value":    630, "color": "#FE7903" },
+			{ "value":    860, "color": "#F8F400" },
+			{ "value":   1140, "color": "#60FF00" },
+			{ "value":   1460, "color": "#02C9B3" },
+			{ "value":   1735, "color": "#D042F3" }
         ],
         "WN6": [
-            {"value": 300, "color": "#FE0E00"},
-            {"value": 410, "color": "#FE7903"},
-            {"value": 795, "color": "#F8F400"},
-            {"value": 1185, "color": "#60FF00"},
-            {"value": 1585, "color": "#02C9B3"},
-            {"value": 1925, "color": "#D042F3"}
+			{ "value":      0, "color": "#990000" },
+			{ "value":    500, "color": "#FE0E00" },
+			{ "value":    700, "color": "#FE7903" },
+			{ "value":    900, "color": "#F8F400" },
+			{ "value":   1100, "color": "#60FF00" },
+			{ "value":   1350, "color": "#00CC00" },
+			{ "value":   1550, "color": "#02C9B3" },
+			{ "value":   1850, "color": "#D042F3" },
+			{ "value":   2050, "color": "#9900FF" }	
         ],
         "WN7": [
-            {"value": 300, "color": "#FE0E00"},
-            {"value": 410, "color": "#FE7903"},
-            {"value": 795, "color": "#F8F400"},
-            {"value": 1185, "color": "#60FF00"},
-            {"value": 1585, "color": "#02C9B3"},
-            {"value": 1925, "color": "#D042F3"}
+			{ "value":      0, "color": "#990000" },
+			{ "value":    500, "color": "#FE0E00" },
+			{ "value":    700, "color": "#FE7903" },
+			{ "value":    900, "color": "#F8F400" },
+			{ "value":   1100, "color": "#60FF00" },
+			{ "value":   1350, "color": "#00CC00" },
+			{ "value":   1550, "color": "#02C9B3" },
+			{ "value":   1850, "color": "#D042F3" },
+			{ "value":   2050, "color": "#9900FF" }	
         ],
 		"avgBattleTier": [			
-			{ "value": 2,		"color": "#FE0E00" },	
-			{ "value": 3,		"color": "#FE7903" },	
-			{ "value": 5,		"color": "#F8F400" },	
-			{ "value": 7,		"color": "#60FF00" },	
-			{ "value": 9,		"color": "#02C9B3" },	
-			{ "value": 11,		"color": "#D042F3" }	
+			{ "value":      2, "color": "#FE0E00" },
+			{ "value":      3, "color": "#FE7903" },
+			{ "value":      5, "color": "#F8F400" },
+			{ "value":      7, "color": "#60FF00" },
+			{ "value":      9, "color": "#02C9B3" },
+			{ "value":     11, "color": "#D042F3" }	
 		],
 		"currentPlace": [
-			{ "value": 2,		"color": "#D042F3" },	
-			{ "value": 3,		"color": "#02C9B3" },	
-			{ "value": 5,		"color": "#60FF00" },	
-			{ "value": 7,		"color": "#F8F400" },	
-			{ "value": 9,		"color": "#FE7903" },	
-			{ "value": 12,		"color": "#FE0E00" }	
+			{ "value":      2, "color": "#D042F3" },	
+			{ "value":      3, "color": "#02C9B3" },	
+			{ "value":      5, "color": "#60FF00" },	
+			{ "value":      7, "color": "#F8F400" },	
+			{ "value":      9, "color": "#FE7903" },	
+			{ "value":     12, "color": "#FE0E00" }	
 		],
 		"potentialDmg": [
-			 { "value": 0,		"color": "#DBA901" },
-			 { "value": 1,      "color": "#FE0E00" },
-			 { "value": 800,      "color": "#FE0E00" },
-			 { "value": 1500,     "color": "#FE7903" },
-			 { "value": 2000,     "color": "#F8F400" },
-			 { "value": 2500,     "color": "#60FF00" },
-			 { "value": 3000,     "color": "#02C9B3" },
-			 { "value": 9999,     "color": "#D042F3" }
+			{ "value":      0, "color": "#DBA901" },
+			{ "value":      1, "color": "#FE0E00" },
+			{ "value":    800, "color": "#FE0E00" },
+			{ "value":   1500, "color": "#FE7903" },
+			{ "value":   2000, "color": "#F8F400" },
+			{ "value":   2500, "color": "#60FF00" },
+			{ "value":   3000, "color": "#02C9B3" },
+			{ "value":   9999, "color": "#D042F3" }
 		],
         "WN8": [
-            {"value": 155, "color": "#FE0E00"},
-            {"value": 530, "color": "#FE7903"},
-            {"value": 1030, "color": "#F8F400"},
-            {"value": 1638, "color": "#60FF00"},
-            {"value": 2253, "color": "#02C9B3"},
-            {"value": 2895, "color": "#D042F3"}
+			{ "value":      0, "color": "#990000" },
+			{ "value":    300, "color": "#FE0E00" },
+			{ "value":    600, "color": "#FE7903" },
+			{ "value":    900, "color": "#F8F400" },
+			{ "value":   1250, "color": "#60FF00" },
+			{ "value":   1600, "color": "#00CC00" },
+			{ "value":   1900, "color": "#02C9B3" },
+			{ "value":   2350, "color": "#D042F3" },
+			{ "value":   2900, "color": "#9900FF" }	
         ],
-        "rWIN": [
-            {"value": 0.34, "color": "#FE0E00"},
-            {"value": 0.57, "color": "#FE7903"},
-            {"value": 0.81, "color": "#F8F400"},
-            {"value": 1.03, "color": "#60FF00"},
-            {"value": 1.22, "color": "#02C9B3"},
-            {"value": 1.57, "color": "#D042F3"}
-        ],
+		"rWIN": [
+			{"value":    0.00, "color": "#990000"},
+			{"value":    0.96, "color": "#FE0E00"},
+			{"value":    0.98, "color": "#FE7903"},
+			{"value":    1.00, "color": "#F8F400"},
+			{"value":    1.03, "color": "#60FF00"},
+			{"value":    1.05, "color": "#00CC00"},
+			{"value":    1.07, "color": "#02C9B3"},
+			{"value":    1.11, "color": "#D042F3"},
+			{"value":    1.16, "color": "#9900FF"}
+		],			
         "rDAMAGE": [
-            {"value": 0.34, "color": "#FE0E00"},
-            {"value": 0.57, "color": "#FE7903"},
-            {"value": 0.81, "color": "#F8F400"},
-            {"value": 1.03, "color": "#60FF00"},
-            {"value": 1.22, "color": "#02C9B3"},
-            {"value": 1.57, "color": "#D042F3"}
+			{"value":    0.00, "color": "#990000"},
+			{"value":    0.96, "color": "#FE0E00"},
+			{"value":    0.98, "color": "#FE7903"},
+			{"value":    1.00, "color": "#F8F400"},
+			{"value":    1.03, "color": "#60FF00"},
+			{"value":    1.05, "color": "#00CC00"},
+			{"value":    1.07, "color": "#02C9B3"},
+			{"value":    1.11, "color": "#D042F3"},
+			{"value":    1.16, "color": "#9900FF"}
         ],
         "rFRAG": [
-            {"value": 0.34, "color": "#FE0E00"},
-            {"value": 0.57, "color": "#FE7903"},
-            {"value": 0.81, "color": "#F8F400"},
-            {"value": 1.03, "color": "#60FF00"},
-            {"value": 1.22, "color": "#02C9B3"},
-            {"value": 1.57, "color": "#D042F3"}
+			{"value":    0.00, "color": "#990000"},
+			{"value":    0.96, "color": "#FE0E00"},
+			{"value":    0.98, "color": "#FE7903"},
+			{"value":    1.00, "color": "#F8F400"},
+			{"value":    1.03, "color": "#60FF00"},
+			{"value":    1.05, "color": "#00CC00"},
+			{"value":    1.07, "color": "#02C9B3"},
+			{"value":    1.11, "color": "#D042F3"},
+			{"value":    1.16, "color": "#9900FF"}
         ],
         "rSPOT": [
-            {"value": 0.34, "color": "#FE0E00"},
-            {"value": 0.57, "color": "#FE7903"},
-            {"value": 0.81, "color": "#F8F400"},
-            {"value": 1.03, "color": "#60FF00"},
-            {"value": 1.22, "color": "#02C9B3"},
-            {"value": 1.57, "color": "#D042F3"}
+			{"value":    0.00, "color": "#990000"},
+			{"value":    0.96, "color": "#FE0E00"},
+			{"value":    0.98, "color": "#FE7903"},
+			{"value":    1.00, "color": "#F8F400"},
+			{"value":    1.03, "color": "#60FF00"},
+			{"value":    1.05, "color": "#00CC00"},
+			{"value":    1.07, "color": "#02C9B3"},
+			{"value":    1.11, "color": "#D042F3"},
+			{"value":    1.16, "color": "#9900FF"}
         ],
         "rDEF": [
-            {"value": 0.34, "color": "#FE0E00"},
-            {"value": 0.57, "color": "#FE7903"},
-            {"value": 0.81, "color": "#F8F400"},
-            {"value": 1.03, "color": "#60FF00"},
-            {"value": 1.22, "color": "#02C9B3"},
-            {"value": 1.57, "color": "#D042F3"}
+			{"value":    0.00, "color": "#990000"},
+			{"value":    0.96, "color": "#FE0E00"},
+			{"value":    0.98, "color": "#FE7903"},
+			{"value":    1.00, "color": "#F8F400"},
+			{"value":    1.03, "color": "#60FF00"},
+			{"value":    1.05, "color": "#00CC00"},
+			{"value":    1.07, "color": "#02C9B3"},
+			{"value":    1.11, "color": "#D042F3"},
+			{"value":    1.16, "color": "#9900FF"}
         ],
         "medPlace": [
-            {"value": 1, "color": "#D042F3"},
-            {"value": 3, "color": "#02C9B3"},
-            {"value": 5, "color": "#60FF00"},
-            {"value": 7, "color": "#F8F400"},
-            {"value": 10, "color": "#FE7903"},
-            {"value": 15, "color": "#FE0E00"}
+            {"value":       1, "color": "#D042F3"},
+            {"value":       3, "color": "#02C9B3"},
+            {"value":       5, "color": "#60FF00"},
+            {"value":       7, "color": "#F8F400"},
+            {"value":      10, "color": "#FE7903"},
+            {"value":      15, "color": "#FE0E00"}
         ]
     },
     "palette" : {
         "credits": [
-            {"value": -1, "color": "#FE0E00"},
-            {"value": 0, "color": "#FFFFFF"},
-            {"value": 1, "color": "#60FF00"}
+            {"value":      -1, "color": "#FE0E00"},
+            {"value":       0, "color": "#FFFFFF"},
+            {"value":       1, "color": "#60FF00"}
         ]
     }
 }
