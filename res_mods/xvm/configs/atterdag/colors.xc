@@ -111,21 +111,6 @@
       "ally_enemytk_hit":           ${"def.en"},
       "ally_enemytk_kill":          ${"def.en"},
       "ally_enemytk_blowup":        ${"def.en"},
-      "squadman_ally_hit":          ${"def.tk"},
-      "squadman_ally_kill":         ${"def.tk"},
-      "squadman_ally_blowup":       ${"def.tk"},
-      "squadman_squadman_hit":      ${"def.tk"},
-      "squadman_squadman_kill":     ${"def.tk"},
-      "squadman_squadman_blowup":   ${"def.tk"},
-      "squadman_enemy_hit":         "0xFFB964",
-      "squadman_enemy_kill":        "0xFFB964",
-      "squadman_enemy_blowup":      "0xFFB964",
-      "squadman_allytk_hit":        ${"def.tk"},
-      "squadman_allytk_kill":       ${"def.tk"},
-      "squadman_allytk_blowup":     ${"def.tk"},
-      "squadman_enemytk_hit":       ${"def.en"},
-      "squadman_enemytk_kill":      ${"def.en"},
-      "squadman_enemytk_blowup":    ${"def.en"},
       "enemy_ally_hit":             ${"def.al"},
       "enemy_ally_kill":            ${"def.al"},
       "enemy_ally_blowup":          ${"def.al"},
@@ -156,6 +141,21 @@
       "unknown_enemytk_hit":        ${"def.en"},
       "unknown_enemytk_kill":       ${"def.en"},
       "unknown_enemytk_blowup":     ${"def.en"},
+      "squadman_ally_hit":          ${"def.tk"},
+      "squadman_ally_kill":         ${"def.tk"},
+      "squadman_ally_blowup":       ${"def.tk"},
+      "squadman_squadman_hit":      ${"def.tk"},
+      "squadman_squadman_kill":     ${"def.tk"},
+      "squadman_squadman_blowup":   ${"def.tk"},
+      "squadman_enemy_hit":         "0xFFB964",
+      "squadman_enemy_kill":        "0xFFB964",
+      "squadman_enemy_blowup":      "0xFFB964",
+      "squadman_allytk_hit":        ${"def.tk"},
+      "squadman_allytk_kill":       ${"def.tk"},
+      "squadman_allytk_blowup":     ${"def.tk"},
+      "squadman_enemytk_hit":       ${"def.en"},
+      "squadman_enemytk_kill":      ${"def.en"},
+      "squadman_enemytk_blowup":    ${"def.en"},
       "player_ally_hit":            ${"def.pl"},
       "player_ally_kill":           ${"def.pl"},
       "player_ally_blowup":         ${"def.pl"},
@@ -239,6 +239,17 @@
       { "value": 2350, "color": ${"def.colorRating.excellent"     } },   // 1900 - 2349 - excellent
       { "value": 2900, "color": ${"def.colorRating.unicum"        } },   // 1350 - 1899 - unicum
       { "value": 9999, "color": ${"def.colorRating.super_unicum"  } }    // 2900 - *    - super unicum
+    ],
+    // Dynamic color by WG rating
+    // Динамический цвет по рейтингу WG
+    // TODO: update values
+    "wgr": [
+      { "value": 2000,  "color": ${"def.colorRating.very_bad" } },  // very bad   (20% of players)
+      { "value": 4000,  "color": ${"def.colorRating.bad"      } },  // bad        (better then 20% of players)
+      { "value": 6000,  "color": ${"def.colorRating.normal"   } },  // normal     (better then 60% of players)
+      { "value": 8000,  "color": ${"def.colorRating.good"     } },  // good       (better then 90% of players)
+      { "value": 10000, "color": ${"def.colorRating.very_good"} },  // very good  (better then 99% of players)
+      { "value": 20000, "color": ${"def.colorRating.unique"   } }   // unique     (better then 99.9% of players)
     ],
     // Dynamic color by TEFF (E) rating
     // Динамический цвет по рейтингу TEFF (E)

@@ -19,7 +19,7 @@
 {
   // Version of the config. Do not remove or change it unnecessarily.
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
-  "configVersion": "0.9.0.9",
+  "configVersion": "0.9.2.0",
 
   // Version of the editor.
   // Версия редактора.
@@ -50,7 +50,7 @@
 
     // Config description.
     // Описание конфига.
-    "description": "AoS's custom settings for XVM",
+    "description": "atterdag's custom settings for XVM",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "2014-07-17",
+    "date": "31.07.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.1",
+    "gameVersion": "0.9.2",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "5.3.2-test1"
+    "modMinVersion": "5.3.3-nightly-build-20140731"
   },
 
   // Parameters for login screen.
