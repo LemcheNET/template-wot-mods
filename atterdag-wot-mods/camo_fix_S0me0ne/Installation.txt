@@ -1,0 +1,23 @@
+mirtankov.net
+
+1. unpack
+2 . Res_mods folder copied to World_of_Tanks \
+3 . Start the game
+
+Asked to make a mod that would Fix bug with camouflage - and indeed sometimes is not good when you come into the game - always default winter camouflage .
+My mod solves this problem - you can make a random selection of camouflage every time you change the tank in the hangar , or choose one type of camouflage forever , and in the hangar so it will always ask how .
+In fashion there is a file camo.cfg, which is located on the way / res_mods/0.8.9/camo.cfg
+There you can set the parameters :
+camo:
+- Winter: winter camouflage constantly
+- Summer: summer constantly camouflage
+- Desert: desert camouflage constantly
+userandom:
+- Yes: constantly casual camouflage hangar ignored field camo
+- No: off the random camouflage in the hangar , the value is taken from the camo
+
+Last Update:
+- Added GUI settings in the hangar
+- Random Camouflage works by changing the tank in the hangar , and not once in the entire session
+- Some more minor fixes
+- Adaptation to 0.8.10

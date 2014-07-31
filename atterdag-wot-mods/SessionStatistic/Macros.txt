@@ -1,0 +1,289 @@
+
+
+====================macro====================
+==============valuevaruable macro============
+MultiXPTeam7x7
+MultiXPTotal
+BattleCreditsTeam7x7
+BattleCreditsRandom
+VehicleTierCompany
+VehicleTierClan
+MultiXPRandom
+BattleCreditsCompany
+ServiceCostRandom
+VehicleTierRandom
+MultiXPCompany
+BattlesCountTotal
+BattleCreditsTotal
+ServiceCostTeam7x7
+ServiceCostClan
+FreeXPTotal
+MultiXPClan
+ServiceCostCompany
+VehicleTierTotal
+VehicleTierTeam7x7
+BattleCreditsClan
+ServiceCostTotal
+=============dossier macro===================
+FragsCountCompany
+DmgAssistedRadioRandom
+FragsCountTotal
+gold
+ShotsCountRandom
+DCapPointsCompany
+BattlesCountCompany
+DeathsCountTotal
+DmgReceivedClan
+DmgAssistedRadioTeam7x7
+HitsCountCompany
+DmgReceivedTeam7x7
+DmgDealtClan
+DmgReceivedRandom
+DmgAssistedTrackTotal
+ShotsCountTotal
+PiercedCountClan
+BattlesCountRandom
+BattlesCountClan
+PiercedCountTotal
+FragsCountTeam7x7
+HitsCountClan
+ShotsCountClan
+DCapPointsTeam7x7
+PiercedCountRandom
+XPTotal
+BattlesCountTotal
+DmgAssistedTrackTeam7x7
+DmgAssistedRadioClan
+WinsCountClan
+ShotsCountCompany
+DmgReceivedCompany
+credits
+SpottedCountTeam7x7
+OriginalXPCompany
+PiercedCountTeam7x7
+OriginalXPClan
+HitsCountRandom
+WinsCountTotal
+DmgAssistedRadioCompany
+SpottedCountTotal
+DmgAssistedTrackRandom
+DmgDealtRandom
+DeathsCountCompany
+WinsCountTeam7x7
+OriginalXPTotal
+HitsCountTotal
+BattlesCountTeam7x7
+CapPointsClan
+freeXP
+DmgAssistedRadioTotal
+LossesClan
+SpottedCountCompany
+CapPointsTotal
+DeathsCountRandom
+OriginalXPRandom
+DmgReceivedTotal
+DmgDealtTotal
+WinsCountCompany
+XPRandom
+HitsCountTeam7x7
+PiercedCountCompany
+DCapPointsRandom
+DCapPointsTotal
+SpottedCountClan
+LossesRandom
+CapPointsRandom
+DCapPointsClan
+ShotsCountTeam7x7
+SpottedCountRandom
+FragsCountClan
+DeathsCountTeam7x7
+XPClan
+DmgAssistedTrackClan
+XPTeam7x7
+DmgDealtCompany
+LossesTeam7x7
+LossesTotal
+CapPointsTeam7x7
+WinsCountRandom
+DeathsCountClan
+LossesCompany
+DmgDealtTeam7x7
+FragsCountRandom
+DmgAssistedTrackCompany
+CapPointsCompany
+XPCompany
+OriginalXPTeam7x7
+===========run time calc macro===============
+
+***************************with tag = Total
+DmgAssistedTotal
+DrawsTotal
+WinsRateTotal
+HitsRateTotal
+EffHitsRateTotal
+PureBattleTotal
+=========avg macro(int base)==========
+avgDmgAssistedTotal
+avgDmgAssistedTrackTotal
+avgDmgAssistedRadioTotal
+avgDmgReceivedTotal
+avgDmgDealtTotal
+avgMultiXPTotal
+avgOriginalXPTotal
+avgXPTotal
+avgServiceCostTotal
+avgPureBattleTotal
+avgBattleCreditsTotal
+==============avg macro (float base) =============
+avgCapPointsTotal
+avgDCapPointsTotal
+avgVehicleTierTotal
+avgSpottedCountTotal
+avgFragsCountTotal
+=====ratios======
+DmgRatioTotal
+fragsRatioTotal
+***********************************************************
+
+***************************with tag = Company
+DmgAssistedCompany
+DrawsCompany
+WinsRateCompany
+HitsRateCompany
+EffHitsRateCompany
+PureBattleCompany
+=========avg macro(int base)==========
+avgDmgAssistedCompany
+avgDmgAssistedTrackCompany
+avgDmgAssistedRadioCompany
+avgDmgReceivedCompany
+avgDmgDealtCompany
+avgMultiXPCompany
+avgOriginalXPCompany
+avgXPCompany
+avgServiceCostCompany
+avgPureBattleCompany
+avgBattleCreditsCompany
+==============avg macro (float base) =============
+avgCapPointsCompany
+avgDCapPointsCompany
+avgVehicleTierCompany
+avgSpottedCountCompany
+avgFragsCountCompany
+=====ratios======
+DmgRatioCompany
+fragsRatioCompany
+***********************************************************
+
+***************************with tag = Clan
+DmgAssistedClan
+DrawsClan
+WinsRateClan
+HitsRateClan
+EffHitsRateClan
+PureBattleClan
+=========avg macro(int base)==========
+avgDmgAssistedClan
+avgDmgAssistedTrackClan
+avgDmgAssistedRadioClan
+avgDmgReceivedClan
+avgDmgDealtClan
+avgMultiXPClan
+avgOriginalXPClan
+avgXPClan
+avgServiceCostClan
+avgPureBattleClan
+avgBattleCreditsClan
+==============avg macro (float base) =============
+avgCapPointsClan
+avgDCapPointsClan
+avgVehicleTierClan
+avgSpottedCountClan
+avgFragsCountClan
+=====ratios======
+DmgRatioClan
+fragsRatioClan
+***********************************************************
+
+***************************with tag = Team7x7
+DmgAssistedTeam7x7
+DrawsTeam7x7
+WinsRateTeam7x7
+HitsRateTeam7x7
+EffHitsRateTeam7x7
+PureBattleTeam7x7
+=========avg macro(int base)==========
+avgDmgAssistedTeam7x7
+avgDmgAssistedTrackTeam7x7
+avgDmgAssistedRadioTeam7x7
+avgDmgReceivedTeam7x7
+avgDmgDealtTeam7x7
+avgMultiXPTeam7x7
+avgOriginalXPTeam7x7
+avgXPTeam7x7
+avgServiceCostTeam7x7
+avgPureBattleTeam7x7
+avgBattleCreditsTeam7x7
+==============avg macro (float base) =============
+avgCapPointsTeam7x7
+avgDCapPointsTeam7x7
+avgVehicleTierTeam7x7
+avgSpottedCountTeam7x7
+avgFragsCountTeam7x7
+=====ratios======
+DmgRatioTeam7x7
+fragsRatioTeam7x7
+***********************************************************
+
+***************************with tag = Random
+DmgAssistedRandom
+DrawsRandom
+WinsRateRandom
+HitsRateRandom
+EffHitsRateRandom
+PureBattleRandom
+=========avg macro(int base)==========
+avgDmgAssistedRandom
+avgDmgAssistedTrackRandom
+avgDmgAssistedRadioRandom
+avgDmgReceivedRandom
+avgDmgDealtRandom
+avgMultiXPRandom
+avgOriginalXPRandom
+avgXPRandom
+avgServiceCostRandom
+avgPureBattleRandom
+avgBattleCreditsRandom
+==============avg macro (float base) =============
+avgCapPointsRandom
+avgDCapPointsRandom
+avgVehicleTierRandom
+avgSpottedCountRandom
+avgFragsCountRandom
+=====ratios======
+DmgRatioRandom
+fragsRatioRandom
+***********************************************************
+=========================reating=====================
+wn6, xwn6, wn7, xwn7, eff, xeff
+
+----------- Messages after battle ------------
+macros in posts
+{{result}} - macro expands depending on the outcome of the battle to the text defined in a "isWin", "isDraw", "isDefeat"
+{{pure}} - label . in its place later, when data are available for repairs , etc. , will be written that is defined in line purecredits
+{{vehicle}} - the name of art
+{{credits}} - earned ( in The message of remnote - spent ) money
+{{xp}} - Experience per Battle to the coefficients and all deductions
+{{dailyXPFactor}} - multiplier experience
+{{pure?redits}} - net income for the fight
+{{tmenXP}} - experience tankers
+{{arenaName}} - title card
+{{createdAt}} - a time when the fight was played
+{{achieves}} - for all the achievements of the battle in one line
+{{xpPenalty}} - fine for damage to the allies
+{{creditsContributionIn}} paying you for the damage done to your allies
+{{creditsContributionOut}} - fine you for damage caused by the Allies
+{{RepairCost}} - repair costs
+{{AmmoCost}} - for replenishment costs BC
+{{EqipmentCost}} - the cost of equipment
+{{quests}} - Award for the performing combat tasks

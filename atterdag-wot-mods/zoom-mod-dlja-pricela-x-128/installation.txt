@@ -1,0 +1,4 @@
+Download wow-clear.ru - skins, fashion, sights. 
+
+installation: 
+Copy the folder gui and scripts in WOT/res_mods/0.8.11 /, confirming the replacement.

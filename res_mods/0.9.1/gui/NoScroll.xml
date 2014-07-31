@@ -1,0 +1,19 @@
+<NoScroll.xml>
+    
+    <!--
+        "True" disables mouse scroll to enter Sniper Mode, "False" mouse scroll enabled (default)
+    -->
+    <noScroll>False</noScroll>
+
+   
+   <!--
+        "True" min. zoom lvl. used for first step of sniper mode (default), "False" remember last time used zoom lvl.
+    -->
+    <defZoom>False</defZoom>
+    
+	
+	<!--
+        Zoom level for first step of sniper mode, works only if "defZoom" is "False"
+    -->
+    <defZoomVal>2.0</defZoomVal>
+</NoScroll.xml>

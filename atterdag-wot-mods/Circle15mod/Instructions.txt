@@ -1,0 +1,23 @@
+Mod Circle15 v.0.8.10.03
+
+Allows you to display around his tank ring radius of 15 meters.
+The minimum distance from the bushes on which the shots were not unmask your tank.
+In the sniper scope ring is not displayed.
+
+installation:
+Put the folder scripts and objects from the archive along this path : World_of_Tanks \ res_mods \ 0.XY \, where 0.XY - the current version number of the game.
+
+use:
+
+Disable / enable button in the game , which is configured in Circle15.cfg.
+
+A list of buttons that you can try to register in the file is Circle15.cfg Keys.txt.
+
+Operating mode on / off button is also set Circle15.cfg.
+
+If the file is Circle15.cfg, and if not its structure , the activation button is "F9".
+
+The file also can be configured Circle15.cfg state mode ( display rings on or off ) when you enter the battle / replay .
+
+In the folder " The variants " is several options texture responsible for the coloring of the ring.
+The selected option called Circle15.dds and placed in a folder instead of the existing objects where the texture file .
