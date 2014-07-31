@@ -1,0 +1,11 @@
+<sights.xml>
+  <strategicMode>1</strategicMode>
+  <sniperMode>1</sniperMode>
+  <positionFixArcade>False</positionFixArcade>
+  <positionFixSniper>False</positionFixSniper>
+  <positionFixStrategic>False</positionFixStrategic>
+  <positionFixPostmortem>False</positionFixPostmortem>
+  <settingsFix>False</settingsFix>
+  <aimScale>1.0</aimScale>
+  <flags>dm</flags>
+</sights.xml>
