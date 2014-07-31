@@ -1,0 +1,42 @@
+﻿{
+  "en": {
+    "information": "Make channels permanent",
+    "autojoinOwnChannels": "auto join own channels",
+    "autojoinOtherChannels": "auto join to other channels",
+    "recreateOwnChannels": "recreate own channels",
+    "recreateOtherChannels": "recreate other channels",
+    "secondsBetweenChannelsActions": "seconds between channels actions",
+    "colorizeOwnerName": "colorize channel's owner name",
+    "removeJsonDataFromChannelList": "hide json data from channel list",
+    "button": "reset saved channels",
+    "buttonCC": "create new channel",
+    "newChannelNOCLANDesc": "accept players without clan",
+    "newChannelACLANDesc": "a list of accepted clan TAG separated by <font color=\"#FFD700\">,</font>",
+    "newChannelROLEDesc": "a list of accepted clan roles separated by <font color=\"#FFD700\">,</font>",
+    "newChannelWN8Desc": "insert the minimum WN8 to access this channel",
+    "newChannelRWN8Desc": "insert the minimum recent WN8 to access this channel",
+	"newChannelWRDesc": "insert the minimum Win rate to access this channel",
+    "newChannelNameDesc": "the channel name",
+    "legend": ""	
+  },
+  "it": {
+    "information": "Rende i canali permanenti",
+    "autojoinOwnChannels": "riconessione automatica ai propri canali",
+    "autojoinOtherChannels": "riconessione automatica a canali di terzi",
+    "recreateOwnChannels": "ricrea automaticamente i tuoi canali",
+    "recreateOtherChannels": "ricrea automaticamente i canali di terzi",
+    "secondsBetweenChannelsActions": "secondi tra ogni creazione di canale",	
+    "colorizeOwnerName": "colora il nome del creatore del canale",
+    "removeJsonDataFromChannelList": "nascondi le informazioni json nella lista dei canali",
+    "button": "cancella i canali salvati",
+    "buttonCC": "crea nuovo canale",
+    "newChannelNOCLANDesc": "accetta giocatori senza clan",
+    "newChannelACLANDesc": "una lista di clan TAG permesse separate da <font color=\"#FFD700\">,</font>",
+    "newChannelROLEDesc": "una lista di ruoli di clan permessi separati da <font color=\"#FFD700\">,</font>",
+    "newChannelWN8Desc": "inserisci la minima WN8 per accedere al canale",
+    "newChannelRWN8Desc": "inserisci la minima WN8 recente per accedere al canale",
+	"newChannelWRDesc": "inserisci la minima Win rate per accedere al canale",
+    "newChannelNameDesc": "il nome del canale",
+    "legend": ""
+  }
+}	
