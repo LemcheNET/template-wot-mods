@@ -177,13 +177,13 @@ Supported macros in chat text:
    %(ammo)s     - displays your remaining ammo in AUTOLOADER CLIP
    
 XVM stat depending chat command macros:
-   %(winrate)s%% -- targets global winrate
-   %(eff)s -- targets efficiency rating
-   %(kbattles)s -- targets total battles in thousands
-   %(avglvl)s -- targets average tier played
-   %(twr)s -- targets Tourist efficiency factor
-   %(tankDamage)s -- targets avg. damage with the current tank (usually incorrect!)
-   %(tankWinrate)s%% -- targets winrate with the current tank
+   %(winrate)s%% - targets global winrate
+   %(eff)s - targets efficiency rating
+   %(kbattles)s - targets total battles in thousands
+   %(avglvl)s - targets average tier played
+   %(twr)s - targets Tourist efficiency factor
+   %(tankDamage)s - targets avg. damage with the current tank (usually incorrect!)
+   %(tankWinrate)s%% - targets winrate with the current tank
    
   The macros "%(vehicle)s", "%(clan)s", "%(name)s", "%(winrate)s%%", "%(eff)s",
 "%(kbattles)s", "%(avglvl)s", "%(twr)s", "%(tankDamage)s", "%(tankWinrate)s%%"
@@ -219,21 +219,22 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 	<TankMenu>
 		<CommonCommands>
 			<Command>
-				<Title>Greetings</Title>
-				<Icon>Yes</Icon>
-				<Text>Hello, good luck and have fun, fellow tankers. :)</Text>
-				<ChatMode>All</ChatMode>
-			</Command>
-			<Command>
-				<Title>Clan spam</Title>
+				<Title>Anti whine</Title>
 				<Icon>Support</Icon>
 				<Text>%(randpart)s</Text>
 				<ChatMode>All</ChatMode>
 				<Variants>
-				<Variant>Clan XYZ is recruiting. Contact me per PM...blablabla</Variant>
-				<Variant>If someone wants to join your clan, they will find it on the website...</Variant>
-				<Variant>Ohh..the circus is back in town! Anyone want to run away with it?</Variant>
+					<Variant>Please report %(name)s for flooding the game with tears.</Variant>
+					<Variant>%(name)s, do you want some cheese with that "whine"?</Variant>
+					<Variant>%(name)s, cry some more. Your tears sustain me!</Variant>
 				</Variants>
+			</Command>
+			<Command>
+				<Title>Notify about "Spot Messanger" (For AoS Clan Wars)</Title>
+				<Icon>Yes</Icon>
+				<Text>If you're using the "AoS Mod Pack" then press &lt;F11&gt; to activate automatic spot notification.</Text>
+				<ChatMode>Team</ChatMode>
+				<Hotkey>KEY_LCONTROL+KEY_LALT+KEY_M</Hotkey>
 			</Command>
 			<Command>
 				<Title>Wake up!</Title>
@@ -241,9 +242,9 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>Team</ChatMode>
 				<Variants>
-				<Variant>Good morning base campers. The battle has started!</Variant>
-				<Variant>You guys got a fire going and drink beer in base?</Variant>
-				<Variant>Come on! Last one out of base has to paint the enemy flag green...</Variant>
+					<Variant>Good morning base campers. The battle has started!</Variant>
+					<Variant>You guys got a fire going and drink beer in base?</Variant>
+					<Variant>Come on! Last one out of base has to paint the enemy flag green...</Variant>
 				</Variants>
 				<Hotkey>KEY_LALT+KEY_C</Hotkey>
 			</Command>
@@ -1062,10 +1063,10 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>Team</ChatMode>
 				<Variants>
-				<Variant>With cat like tread, upon our prey we steal!</Variant>
-				<Variant>In silence dread, our cautious way we feel...</Variant>
-				<Variant>No sound at all! We never speak a word!</Variant>
-				<Variant>A fly's foot-fall, would be distinctly heard!</Variant>
+					<Variant>With cat like tread, upon our prey we steal!</Variant>
+					<Variant>In silence dread, our cautious way we feel...</Variant>
+					<Variant>No sound at all! We never speak a word!</Variant>
+					<Variant>A fly's foot-fall, would be distinctly heard!</Variant>
 				</Variants>
 				<NoRandomChoice>1</NoRandomChoice>
 				<Hotkey>KEY_N</Hotkey>
@@ -1076,10 +1077,10 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>Team</ChatMode>
 				<Variants>
-				<Variant>Look at me Lemmingtrain, Lemmingtrain on a track, on a track...</Variant>
-				<Variant>Look at me I go somewhere...I'm a Lemmingtrain!</Variant>
-				<Variant>CHOO-CHOO!</Variant>
-				<Variant>C'mon! Join Up! Join the Love-train...Love-Train!</Variant>
+					<Variant>Look at me Lemmingtrain, Lemmingtrain on a track, on a track...</Variant>
+					<Variant>Look at me I go somewhere...I'm a Lemmingtrain!</Variant>
+					<Variant>CHOO-CHOO!</Variant>
+					<Variant>C'mon! Join Up! Join the Love-train...Love-Train!</Variant>
 				</Variants>
 				<Hotkey>KEY_L</Hotkey>
 			</Command>
