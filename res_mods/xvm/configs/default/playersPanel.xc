@@ -19,6 +19,9 @@
     // Start panels mode. Possible values: "none", "short", "medium", "medium2", "large".
     // Начальный режим ушей. Возможные значения: "none", "short", "medium", "medium2", "large".
     "startMode": "large",
+    // Alternative panels mode. Possible values: null, "none", "short", "medium", "medium2", "large".
+    // Альтернативный режим ушей. Возможные значения: null, "none", "short", "medium", "medium2", "large".
+    "altMode": null,
     // Display options for Team/Clan logos (see battleLoading.xc).
     // Параметры отображения иконки игрока/клана (см. battleLoading.xc).
     "clanIcon": {
@@ -38,7 +41,7 @@
     "enemySpottedMarker": {
       // false - Disable.
       // false - отключить.
-      "enabled": false,
+      "enabled": true,
       // Offset relative to level icon (by X, Y).
       // Смещение относительно иконки уровня танка (по X, Y).
       "Xoffset": 15,
@@ -47,22 +50,22 @@
       "format": {
         // Never seen this enemy.
         // Этот враг никогда не светился.
-        "neverSeen": "<font face='$FieldFont' size='24' color='#DEDEDE'>*</font>",
+        "neverSeen": "",
         // This enemy was seen at least once.
         // Этот враг светился хотя бы один раз и отмечен на миникарте как потерянный.
-        "lost": "",
+        "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
         // Enemy currently revealed at minimap.
         // Виден на миникарте прямо сейчас.
-        "revealed": "",
+        "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
         // Dead enemy.
         // Уничтоженный враг.
         "dead": "",
         // Artillery specific values.
         // Специфичные значения для артиллерии.
         "artillery": {
-          "neverSeen": "<font face='$FieldFont' size='24' color='#DEDEDE'>*</font>",
-          "lost": "",
-          "revealed": "",
+          "neverSeen": "",
+          "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
+          "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
           "dead": ""
         }
       }

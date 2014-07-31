@@ -43,6 +43,8 @@ Legend:
 │ {{a:hp-ratio}}             │   │ X │ X │ X │ X │ X │ X │   │   │ transparency depending on current health ratio (only in vehicle markers)
 │ {{alive}}                  │   │ X │ X │ X │ X │ X │ X │   │   │ 'alive' for alive, '' for dead
 │ {{frags}}                  │   │ X │ X │ X │   │   │   │   │   │ current frags
+│ {{player}}                 │   │ X │ X │ X │   │   │   │   │   │ value 'pl' for current player, empty for others
+│ {{tk}}                     │   │ X │ X │ X │ X │   │   │   │   │ value 'tk' for teamkiller, empty for others
 │ {{c:system}}               │   │ X │ X │ X │ X │   │   │   │   │ system color
 │ {{turret}}                 │   │   │   │   │ X │   │   │   │   │ stock turret marker
 │ {{dmg}}                    │   │   │   │   │ X │ X │   │   │   │ damage health points / last hit value
@@ -67,17 +69,7 @@ Legend:
 │ {{vtype-l}}                │ X │   │   │   │   │   │   │   │ X │ vehicle class (text substitution from locale)
 │ {{battletier-min}}         │ X │   │   │   │   │   │   │   │ X │ minimal vehicle battle tier
 │ {{battletier-max}}         │ X │   │   │   │   │   │   │   │ X │ maximal vehicle battle tier
-│ {{l10n:blownUp}}           │   │   │   │   │ X │   │   │   │   │ localizated text "Blown-up!", only in "blowupMessage"
-│ {{l10n:Hits}}              │   │   │   │   │   │ X │   │   │   │ localizated text "Hits"
-│ {{l10n:Total}}             │   │   │   │   │   │ X │   │   │   │ localizated text "Total"
-│ {{l10n:Last}}              │   │   │   │   │   │ X │   │   │   │ localizated text "Last"
-│ {{l10n:hpLeftTitle}}       │   │   │   │   │   │   │ X │   │   │ localizated text "Hitpoints left:", only in "header"
-│ {{l10n:enemyBaseCapture}}  │   │   │   │   │   │   │   │ X │   │ localizated text "Base capture by allies!"
-│ {{l10n:enemyBaseCaptured}} │   │   │   │   │   │   │   │ X │   │ localizated text "Base captured by allies!"
-│ {{l10n:allyBaseCapture}}   │   │   │   │   │   │   │   │ X │   │ localizated text "Base capture by enemies!"
-│ {{l10n:allyBaseCaptured}}  │   │   │   │   │   │   │   │ X │   │ localizated text "Base captured by enemies!"
-│ {{l10n:Timeleft}}          │   │   │   │   │   │   │   │ X │   │ localizated text "Timeleft"
-│ {{l10n:Capturers}}         │   │   │   │   │   │   │   │ X │   │ localizated text "Capturers"
+│ {{l10n:ID}}                │   │ X │   │   │ X │ X │ X │ X │   │ localizated text, see en.xc for id
 └────────────────────────────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴─────────────────────────────────
 
   Statistic macros
@@ -89,9 +81,11 @@ Legend:
 │ {{teff}}, {{e}} │ X │ X │ X │ X │ player per-vehicle efficiency: http://www.koreanrandom.com/forum/topic/1643-
 │ {{wn6}}         │ X │ X │ X │ X │ WN6 rating: http://www.koreanrandom.com/forum/topic/2575-
 │ {{wn8}}         │ X │ X │ X │ X │ WN8 rating: http://www.koreanrandom.com/forum/topic/2575-
+│ {{wgr}}         │ X │ X │ X │ X │ WG rating: http://www.koreanrandom.com/forum/topic/13433-
 │ {{xeff}}        │ X │ X │ X │ X │ XVM Scale for efficiency (values 00-99, XX for Tops)
 │ {{xwn6}}        │ X │ X │ X │ X │ XVM Scale for WN6 (values 00-99, XX for Tops)
 │ {{xwn8}}        │ X │ X │ X │ X │ XVM Scale for WN8 (values 00-99, XX for Tops)
+│ {{xwgr}}        │ X │ X │ X │ X │ XVM Scale for WG rating (values 00-99, XX for Tops)
 │ {{rating}}      │ X │ X │ X │ X │ GWR (Global Win Ratio)
 │ {{battles}}     │ X │ X │ X │ X │ total battles count
 │ {{wins}}        │ X │ X │ X │ X │ total wins count
@@ -113,9 +107,11 @@ Legend:
 │ {{c:e}}         │ X │ X │ X │ X │ color depending on player per-vehicle efficiency
 │ {{c:wn6}}       │ X │ X │ X │ X │ color depending on WN6 rating
 │ {{c:wn8}}       │ X │ X │ X │ X │ color depending on WN8 rating
+│ {{c:wgr}}       │ X │ X │ X │ X │ color depending on WG rating
 │ {{c:xeff}}      │ X │ X │ X │ X │ color depending on XVM Scale for efficiency
 │ {{c:xwn6}}      │ X │ X │ X │ X │ color depending on XVM Scale for WN6
 │ {{c:xwn8}}      │ X │ X │ X │ X │ color depending on XVM Scale for WN8
+│ {{c:xwgr}}      │ X │ X │ X │ X │ color depending on XVM Scale for WG rating
 │ {{c:rating}}    │ X │ X │ X │ X │ color depending on GWR
 │ {{c:kb}}        │ X │ X │ X │ X │ color depending on kilo-battles
 │ {{c:avglvl}}    │ X │ X │ X │ X │ color depending on average level of tanks

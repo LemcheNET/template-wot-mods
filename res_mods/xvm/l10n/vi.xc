@@ -73,6 +73,7 @@
     "radio_range/actual": "thực tế",
     "(sec)": "(giây)",
     "(m)": "(m)",
+    "Squad battle tiers": "Cấp trận đấu trung đội",
     "Vehicle": "Xe",
     "Battle tiers": "Cấp trận đấu",
     "Type": "Loại",

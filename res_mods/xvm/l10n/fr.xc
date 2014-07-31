@@ -73,6 +73,7 @@
     "radio_range/actual": "actuelle",
     "(sec)": "(sec)",
     "(m)": "(m)",
+    "Squad battle tiers": "Tier de bataille du peloton",
     "Vehicle": "Char",
     "Battle tiers": "Tier de bataille",
     "Type": "Type",
