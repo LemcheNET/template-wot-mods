@@ -6,15 +6,15 @@
   // Dynamic transparency by various statistical parameters.
   // Динамическая прозрачность по различным статистическим показателям.
   "alphaRating": {
-    "very_bad":     "100",  // very bad
-    "bad":           "90",  // bad
+    "very_bad":     "100",  // very bad   / очень плохо
+    "bad":           "90",  // bad        / плохо
     "poor":          "80",  // poor
-    "average":       "70",  // average
-    "good":          "65",  // good
-    "very_good":     "60",  // very good
+    "average":       "70",  // average     / средне
+    "good":          "65",  // good       / хорошо
+    "very_good":     "60",  // very good  / очень хорошо
 	"excellent":     "55",  // excellent
-	"unicum":        "50",  // unicum
-	"super_unicum":  "40"   // super unicum
+    "unicum":        "50",  // unicum     / уникально
+    "super_unicum":  "40"   // super unicum
   },
   // Dynamic transparency by remaining health points.
   // Динамическая прозрачность по оставшемуся запасу прочности.
@@ -28,40 +28,40 @@
     // Dynamic transparency by remaining health.
     // Динамическая прозрачность по оставшемуся здоровью.
     "hp": [
-      { "value": 200,  "alpha": ${"alphaHP.very_low"     } },
-      { "value": 400,  "alpha": ${"alphaHP.low"          } },
-      { "value": 1000, "alpha": ${"alphaHP.average"      } },
-      { "value": 9999, "alpha": ${"alphaHP.above_average"} }
+      { "value": 200,  "alpha": ${"alphaHP.very_low"         } },
+      { "value": 400,  "alpha": ${"alphaHP.low"              } },
+      { "value": 1000, "alpha": ${"alphaHP.average"          } },
+      { "value": 9999, "alpha": ${"alphaHP.above_average"    } }
     ],
     // Dynamic transparency by percentage of remaining health.
     // Динамическая прозрачность по проценту оставшегося здоровья.
     "hp_ratio": [
-      { "value": 10,  "alpha": ${"alphaHP.very_low"     } },
-      { "value": 25,  "alpha": ${"alphaHP.low"          } },
-      { "value": 50,  "alpha": ${"alphaHP.average"      } },
-      { "value": 101, "alpha": ${"alphaHP.above_average"} }
+      { "value": 10,  "alpha": ${"alphaHP.very_low"          } },
+      { "value": 25,  "alpha": ${"alphaHP.low"               } },
+      { "value": 50,  "alpha": ${"alphaHP.average"           } },
+      { "value": 101, "alpha": ${"alphaHP.above_average"     } }
     ],
     // Dynamic transparency for XVM Scale
     // Динамическая прозрачность по шкале XVM
     "x": [
-      { "value": 5,    "alpha": ${"alphaRating.very_bad"     } },
+      { "value":  5,   "alpha": ${"alphaRating.very_bad"     } },
       { "value": 30,   "alpha": ${"alphaRating.bad"          } },
       { "value": 50,   "alpha": ${"alphaRating.poor"         } },
       { "value": 75,   "alpha": ${"alphaRating.average"      } },
       { "value": 90,   "alpha": ${"alphaRating.good"         } },
-      { "value": 95,   "alpha": ${"alphaRating.excellent"    } },
+      { "value": 93,   "alpha": ${"alphaRating.excellent"    } },
       { "value": 99,   "alpha": ${"alphaRating.unicum"       } },
       { "value": 9975, "alpha": ${"alphaRating.super_unicum" } }
     ],
     // Dynamic transparency by efficiency
     // Динамическая прозрачность по эффективности
     "eff": [
-      { "value": 610,  "alpha": ${"alphaRating.bad" } },
-      { "value": 850,  "alpha": ${"alphaRating.poor"      } },
-      { "value": 1145, "alpha": ${"alphaRating.average"     } },
-      { "value": 1475, "alpha": ${"alphaRating.good"     } },
-      { "value": 1775, "alpha": ${"alphaRating.excellent"} },
-      { "value": 9999, "alpha": ${"alphaRating.unicum"   } }
+      { "value": 610,  "alpha": ${"alphaRating.bad"          } },
+      { "value": 850,  "alpha": ${"alphaRating.poor"         } },
+      { "value": 1145, "alpha": ${"alphaRating.average"      } },
+      { "value": 1475, "alpha": ${"alphaRating.good"         } },
+      { "value": 1775, "alpha": ${"alphaRating.excellent"    } },
+      { "value": 9999, "alpha": ${"alphaRating.unicum"       } }
     ],
     // Dynamic transparency by WN6 rating
     // Динамическая прозрачность по рейтингу WN6
@@ -93,12 +93,12 @@
     // Динамическая прозрачность по рейтингу WG
     // TODO: update values
     "wgr": [
-      { "value": 2000,  "alpha": ${"alphaRating.very_bad" } },
-      { "value": 4000,  "alpha": ${"alphaRating.bad"      } },
-      { "value": 5000,  "alpha": ${"alphaRating.normal"   } },
-      { "value": 7000,  "alpha": ${"alphaRating.good"     } },
-      { "value": 9000,  "alpha": ${"alphaRating.very_good"} },
-      { "value": 20000, "alpha": ${"alphaRating.unique"   } }
+      { "value": 2000,  "alpha": ${"alphaRating.bad"         } },
+      { "value": 4000,  "alpha": ${"alphaRating.poor"        } },
+      { "value": 5000,  "alpha": ${"alphaRating.average"     } },
+      { "value": 7000,  "alpha": ${"alphaRating.good"        } },
+      { "value": 9000,  "alpha": ${"alphaRating.excellent"   } },
+      { "value": 20000, "alpha": ${"alphaRating.unicum"      } }
     ],
     // Dynamic transparency by TEFF (E) rating
     // Динамическая прозрачность по рейтингу TEFF (E)
@@ -120,6 +120,7 @@
       { "value": 60,  "alpha": ${"alphaRating.excellent"    } },
       { "value": 70,  "alpha": ${"alphaRating.unicum"       } },
       { "value": 101, "alpha": ${"alphaRating.super_unicum" } }
+
     ],
     // Dynamic transparency by kilo-battles
     // Динамическая прозрачность по количеству кило-боев
@@ -175,6 +176,7 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
+
     ],
     // Dynamic transparency by average frags per battle on current tank
     // Динамическая прозрачность по среднему количеству фрагов за бой на текущем танке
@@ -188,6 +190,7 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
+
     ],
     // Dynamic transparency by number of spotted enemies per battle on current tank
     // Динамическая прозрачность по среднему количеству засвеченных врагов за бой на текущем танке
@@ -201,6 +204,7 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
+
     ]
   }
 }
