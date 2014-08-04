@@ -14,12 +14,12 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 2
-!define VERSIONBUILD 0
+!define VERSIONBUILD 1
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
-!define HELPURL "https://code.google.com/p/atterdag-wot-mods/w/list" # "Support Information" link
-!define UPDATEURL "https://code.google.com/p/atterdag-wot-mods/wiki/Downloads" # "Product Updates" link
-!define ABOUTURL "http://www.spades.dk/forum/viewtopic.php?f=32&t=1726" # "Publisher" link
+!define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
+!define UPDATEURL "https://code.google.com/p/atterdag-wot-mods/" # "Product Updates" link
+!define ABOUTURL "https://code.google.com/p/atterdag-wot-mods/" # "Publisher" link
 # This is the size (in kB) of all the files copied into "Program Files"
 !define INSTALLSIZE 26863
 
@@ -555,7 +555,6 @@ section "uninstall"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-fr.txt"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-en.txt"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-cz.txt"
-    Delete "$INSTDIR\atterdag-wot-mods\xvm\3060"
     Delete "$INSTDIR\atterdag-wot-mods\spotMessanger\readme.TXT"
     Delete "$INSTDIR\atterdag-wot-mods\SessionStatistic\sstatpage2.jpg"
     Delete "$INSTDIR\atterdag-wot-mods\SessionStatistic\sstatpage1.jpg"
@@ -597,6 +596,7 @@ section "uninstall"
     RMDir "$INSTDIR\atterdag-wot-mods\botdetect_report"
     RMDir "$INSTDIR\atterdag-wot-mods\AutoEquip"
     RMDir "$INSTDIR\atterdag-wot-mods"
+
 
 	# Always delete uninstaller as the last action
 	Delete $INSTDIR\atterdag-wot-mods-uninstall.exe

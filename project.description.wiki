@@ -5,7 +5,7 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.2.0.exe atterdag-wot-mods-0.9.2.0.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.2.1.exe atterdag-wot-mods-0.9.2.1.exe]
 
 = Mods included =
 Some details of my mod pack.
@@ -53,7 +53,7 @@ The changes made to the XVM configuration are:
 
 *NB Remember you need to sign up at http://www.modxvm.com/en/, and click on Activate before you can see statistics in XVM.*
 
-== SpotMessanger == _(yeah I know its spelled wrong, but it is done so by the author)_
+== SpotMessanger _(yeah I know its spelled wrong, but it is done so by the author)_ ==
 The SpotMessanger mod is disabled by default, so that you don't spam the chat in random battles. You enable it by pressing <F11>. (Which is helpful at CW)
 
 == Session Stats ==
