@@ -5,7 +5,7 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.2.1.exe atterdag-wot-mods-0.9.2.1.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.2.2.exe atterdag-wot-mods-0.9.2.2.exe]
 
 = Mods included =
 Some details of my mod pack.
@@ -27,11 +27,9 @@ Some details of my mod pack.
   * [http://forum.worldoftanks.eu/index.php?/topic/353476-0811-botdetect/ Botdetect]
   * [http://forum.worldoftanks.eu/index.php?/topic/377290-090-permanent-channels Permanent channels]
   * [http://forum.worldoftanks.ru/index.php?/topic/1190058-09-autoequip AutoEquip]
-
-== What is not yet included yet: ==
-  * [http://forum.worldoftanks.eu/index.php?/topic/295772-088-permanent-serverside-reticle-mod/ Permanent Serverside Reticle mod]
-  * Serverside Reticle mod - gun_marker_blue_ultraSlimWhite.dds
   * [http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html Circle15mod]
+  * [http://wotskins.ucoz.ru/news/zoom_mod_0_8_0_arkadnyj_i_art_rezhimy/2014-08-03-6412 Permanent Serverside Reticle mod]
+  * Serverside Reticle mod - gun_marker_blue_ultraSlimWhite.dds
 
 = Mods configuration =
 I've changed a lot of the default configurations of the various mods, so this is sort of an overview of those changes.
