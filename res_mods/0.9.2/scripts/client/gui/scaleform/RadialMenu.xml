@@ -224,27 +224,27 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>All</ChatMode>
 				<Variants>
-					<Variant>Please report %(name)s for flooding the game with tears.</Variant>
+					<Variant>Please report %(name) for flooding the game ... with tears.</Variant>
 					<Variant>%(name)s, do you want some cheese with that "whine"?</Variant>
 					<Variant>%(name)s, cry some more. Your tears sustain me!</Variant>
 				</Variants>
 			</Command>
 			<Command>
-				<Title>Notify about "Spot Messanger" (For AoS Clan Wars)</Title>
+				<Title>Notify about "Spot Messanger"</Title>
 				<Icon>Yes</Icon>
-				<Text>If you're using the "AoS Mod Pack" then press &lt;F11&gt; to activate automatic spot notification.</Text>
+				<Text>Press &lt;F11&gt; to activate automatic spot notification.</Text>
 				<ChatMode>Team</ChatMode>
 				<Hotkey>KEY_LCONTROL+KEY_LALT+KEY_M</Hotkey>
 			</Command>
 			<Command>
-				<Title>Wake up!</Title>
+				<Title>Battle cry!</Title>
 				<Icon>Attack</Icon>
 				<Text>%(randpart)s</Text>
-				<ChatMode>Team</ChatMode>
+				<ChatMode>All</ChatMode>
 				<Variants>
-					<Variant>Good morning base campers. The battle has started!</Variant>
-					<Variant>You guys got a fire going and drink beer in base?</Variant>
-					<Variant>Come on! Last one out of base has to paint the enemy flag green...</Variant>
+					<Variant>CLENCH bitches!</Variant>
+					<Variant>Bend over, and BRACE FOR IMPACT!</Variant>
+					<Variant>WAAAAAAAAAAAAARRRRRRRRGGGGGGG!!!!!!</Variant>
 				</Variants>
 				<Hotkey>KEY_LALT+KEY_C</Hotkey>
 			</Command>
