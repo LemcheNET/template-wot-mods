@@ -326,6 +326,7 @@
         <KEY_0>	10	</KEY_0>
       </predefinedVerticalVelocities>
       <keyShowGunMarker>KEY_APOSTROPHE</keyShowGunMarker>
+      <keyBindToVehicle>KEY_B</keyBindToVehicle>
     </camera>
   </videoMode>
 </avatar_input_handler.xml>
