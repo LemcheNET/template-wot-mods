@@ -23,14 +23,18 @@
   <MaxTeamAmountOnTraining>0</MaxTeamAmountOnTraining> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCompany>0</MaxTeamAmountOnCompany> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCyberSport>0</MaxTeamAmountOnCyberSport> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
+  <MaxTeamAmountOnHistorical>0</MaxTeamAmountOnHistorical> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
+  <MaxTeamAmountOnFortifications>0</MaxTeamAmountOnFortifications> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnClanWar>0</MaxTeamAmountOnClanWar> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
        
   <!-- Match filters -->
-  <AvoidRandomMes>True</AvoidRandomMes> <!-- Send message in random battles - True/False. !! Use with caution, you might get reported for spamming, especially when combined with ping or help !!-->
-  <AvoidTrainingMes>False</AvoidTrainingMes> <!-- Send message in training battles - True/False. -->
-  <AvoidCompanyMes>False</AvoidCompanyMes> <!-- Send message in company battles - True/False. -->
-  <AvoidCyberSportMes>False</AvoidCyberSportMes> <!-- Send message in team battles - True/False. -->
-  <AvoidClanWarMes>False</AvoidClanWarMes> <!-- Send message in special (clan war) battles - True/False. -->
+  <AvoidRandomMes>True</AvoidRandomMes> <!-- Avoid send message in random battles - True/False. !! Use with caution, you might get reported for spamming, especially when combined with ping or help !!-->
+  <AvoidTrainingMes>False</AvoidTrainingMes> <!-- Avoid send message in training battles - True/False. -->
+  <AvoidCompanyMes>False</AvoidCompanyMes> <!-- Avoid send message in company battles - True/False. -->
+  <AvoidCyberSportMes>False</AvoidCyberSportMes> <!-- Avoid send message in team battles - True/False. -->
+  <AvoidHistoricalMes>False</AvoidHistoricalMes> <!-- Avoid send message in historical battles - True/False. -->
+  <AvoidFortificationsMes>False</AvoidFortificationsMes> <!-- Avoid send message in fortifications battles - True/False. -->
+  <AvoidClanWarMes>False</AvoidClanWarMes> <!-- Avoid send message in special (clan war) battles - True/False. -->
     
   <!-- Tank filters -->
   <OnTD>True</OnTD> <!-- Send message when driving a tank destroyer - True/False. -->
