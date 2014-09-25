@@ -19,6 +19,9 @@
     // Start panels mode. Possible values: "none", "short", "medium", "medium2", "large".
     // Начальный режим ушей. Возможные значения: "none", "short", "medium", "medium2", "large".
     "startMode": "large",
+    // Alternative panels mode. Possible values: null, "none", "short", "medium", "medium2", "large".
+    // Альтернативный режим ушей. Возможные значения: null, "none", "short", "medium", "medium2", "large".
+    "altMode": null,
     // Display options for Team/Clan logos (see battleLoading.xc).
     // Параметры отображения иконки игрока/клана (см. battleLoading.xc).
     "clanIcon": {
@@ -50,10 +53,10 @@
         "neverSeen": "<font face='$FieldFont' size='24' color='#DEDEDE'>*</font>",
         // This enemy was seen at least once.
         // Этот враг светился хотя бы один раз и отмечен на миникарте как потерянный.
-        "lost": "",
+        "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
         // Enemy currently revealed at minimap.
         // Виден на миникарте прямо сейчас.
-        "revealed": "",
+        "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
         // Dead enemy.
         // Уничтоженный враг.
         "dead": "",
@@ -61,8 +64,8 @@
         // Специфичные значения для артиллерии.
         "artillery": {
           "neverSeen": "<font face='$FieldFont' size='24' color='#DEDEDE'>*</font>",
-          "lost": "",
-          "revealed": "",
+          "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
+          "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
           "dead": ""
         }
       }
@@ -70,6 +73,8 @@
     // Options for the "none" panels - empty panels.
     // Режим ушей "none" - пустые уши.
     "none": {
+      // false - disable (отключить)
+      "enabled": true,
       // Layout ("vertical" or "horizontal")
       // Размещение ("vertical" - вертикально, или "horizontal" - горизонтально)
       "layout": "vertical",
@@ -114,7 +119,7 @@
           //      for left panel default value is "left"
           //      for right panel default value is "right"
           //
-          // fields available for both TextField format only:
+          // fields available for TextField format only:
           //   "valign" - vertical alignment ("top", "center", "bottom")
           //      default value is "top"
           //   "borderColor" - if set, draw border with specified color (macros allowed)
@@ -147,6 +152,11 @@
     // Options for the "short" panels - panels with frags and vehicle icon.
     // Режим ушей "short" - короткие уши (фраги и иконка танка).
     "short": {
+      // false - disable (отключить)
+      "enabled": true,
+      // Width of the column, 0-250. Default is 0.
+      // Ширина поля, 0-250. По умолчанию: 0.
+      "width": 0,
       // Display format for frags (macros allowed, see readme-en.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. readme-ru.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -163,15 +173,17 @@
     // Options for the "medium" panels - the first of the medium panels.
     // Режим ушей "medium" - первые средние уши в игре.
     "medium": {
+      // false - disable (отключить)
+      "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 46.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 46.
       "width": 46,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatLeft": "<font color='{{c:wn8}}'>{{nick}}</font> (<font color='{{c:rating}}'>{{rating}}</font>)",
+      "formatLeft": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font> (<font color='{{c:rating}}'>{{rating}}</font>)",
       // Display format for the right panel (macros allowed, see readme-en.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatRight": "<font color='{{c:wn8}}'>{{nick}}</font> (<font color='{{c:rating}}'>{{rating}}</font>)",
+      "formatRight": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font> (<font color='{{c:rating}}'>{{rating}}</font>)",
       // Display format for frags (macros allowed, see readme-en.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. readme-ru.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -188,15 +200,17 @@
     // Options for the "medium2" panels - the second of the medium panels.
     // Режим ушей "medium2" - вторые средние уши в игре.
     "medium2": {
+      // false - disable (отключить)
+      "enabled": true,
       // Maximum width of the vehicle name column, 0-250. Default is 65.
       // Максимальная ширина названия танка, 0-250. По умолчанию: 65.
       "width": 65,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatLeft": "<font color='{{c:wn8}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",
+      "formatLeft": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",
       // Display format for the right panel (macros allowed, see readme-en.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatRight": "<font color='{{c:wn8}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",
+      "formatRight": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",
       // Display format for frags (macros allowed, see readme-en.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. readme-ru.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -213,13 +227,15 @@
     // Options for the "large" panels - the widest panels.
     // Режим ушей "large" - широкие уши в игре.
     "large": {
+      // false - disable (отключить)
+      "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 170.
       // Минимальная ширина имени игрока, 0-250. По умолчанию: 170.
       "width": 170,
       // Display format for player nickname (macros allowed, see readme-en.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. readme-ru.txt).
-      "nickFormatLeft": "<font color='{{c:wn8}}'>{{nick}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
-      "nickFormatRight": "<font color='{{c:wn8}}'>{{nick}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
+      "nickFormatLeft": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
+      "nickFormatRight": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
       // Display format for vehicle name (macros allowed, see readme-en.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. readme-ru.txt).
       "vehicleFormatLeft": "<font color='{{c:teff}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",

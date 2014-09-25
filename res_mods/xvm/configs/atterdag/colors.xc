@@ -74,7 +74,7 @@
     // Dynamic color by damage kind.
     // Динамический цвет по типу урона.
     "dmg_kind": {
-      "attack": "0xFFAA55",          // attack / атака
+      "shot": "0xFFAA55",            // shot / попадание
       "fire": "0xFF6655",            // fire / пожар
       "ramming": "0x998855",         // ramming / таран
       "world_collision": "0x228855", // world collision / столкновение с объектами, падение
@@ -260,12 +260,12 @@
     // Динамический цвет по рейтингу WG
     // TODO: update values
     "wgr": [
-      { "value": 2000,  "color": ${"def.colorRating.bad"          } },  // very bad   (20% of players)
-      { "value": 4000,  "color": ${"def.colorRating.poor"         } },  // bad        (better then 20% of players)
-      { "value": 6000,  "color": ${"def.colorRating.average"      } },  // average    (better then 60% of players)
-      { "value": 8000,  "color": ${"def.colorRating.good"         } },  // good       (better then 90% of players)
-      { "value": 10000, "color": ${"def.colorRating.excellent"    } },  // very good  (better then 99% of players)
-      { "value": 20000, "color": ${"def.colorRating.unicum"       } }   // unicum     (better then 99.9% of players)
+      { "value": 2020,  "color": ${"def.colorRating.very_bad" } },  //    0 - 2019 - very bad   (20% of players)
+      { "value": 4185,  "color": ${"def.colorRating.bad"      } },  // 2020 - 4184 - bad        (better then 20% of players)
+      { "value": 6340,  "color": ${"def.colorRating.normal"   } },  // 4185 - 6339 - normal     (better then 60% of players)
+      { "value": 8525,  "color": ${"def.colorRating.good"     } },  // 6340 - 8524 - good       (better then 90% of players)
+      { "value": 9930,  "color": ${"def.colorRating.very_good"} },  // 8525 - 9929 - very good  (better then 99% of players)
+      { "value": 99999, "color": ${"def.colorRating.unique"   } }   // 9930 - *    - unique     (better then 99.9% of players)
     ],
     // Dynamic color by TEFF (E) rating
     // Динамический цвет по рейтингу TEFF (E)
@@ -365,15 +365,22 @@
     // Dynamic color by average number of spotted enemies per battle on current tank 
     // Динамический цвет по среднему количеству засвеченных врагов за бой на текущем танке 
     "tsb": [
-      { "value": 0.01, "color": ${"def.colorRating.very_bad"      } },
-      { "value": 0.6,  "color": ${"def.colorRating.bad"           } },
-      { "value": 0.8,  "color": ${"def.colorRating.poor"          } },
-      { "value": 1.0,  "color": ${"def.colorRating.average"       } },
-      { "value": 1.3,  "color": ${"def.colorRating.good"          } },
-      { "value": 1.5,  "color": ${"def.colorRating.very_good"     } },
-      { "value": 2.0,  "color": ${"def.colorRating.excellent"     } },
-      { "value": 2.5,  "color": ${"def.colorRating.unicum"        } },
-      { "value": 15,   "color": ${"def.colorRating.super_unicum"  } }
+      { "value": 0.6,  "color": ${"def.colorRating.very_bad" } },
+      { "value": 0.8,  "color": ${"def.colorRating.bad"      } },
+      { "value": 1.0,  "color": ${"def.colorRating.normal"   } },
+      { "value": 1.3,  "color": ${"def.colorRating.good"     } },
+      { "value": 2.0,  "color": ${"def.colorRating.very_good"} },
+      { "value": 15,   "color": ${"def.colorRating.unique"   } }
+    ],
+    // Dynamic color by WN8 effective damage
+    // Динамический цвет по эффективному урону по WN8
+    "wn8effd": [
+      { "value": 0.6,  "color": ${"def.colorRating.very_bad" } },
+      { "value": 0.8,  "color": ${"def.colorRating.bad"      } },
+      { "value": 1.0,  "color": ${"def.colorRating.normal"   } },
+      { "value": 1.3,  "color": ${"def.colorRating.good"     } },
+      { "value": 2.0,  "color": ${"def.colorRating.very_good"} },
+      { "value": 15,   "color": ${"def.colorRating.unique"   } }
     ]
   }
 }

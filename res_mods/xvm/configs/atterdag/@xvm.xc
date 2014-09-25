@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "08.01.2014",
+    "date": "09.25.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.2",
+    "gameVersion": "0.9.3",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "5.3.3"
+    "modMinVersion": "5.3.5"
   },
 
   // Parameters for login screen.
@@ -121,10 +121,6 @@
   // Параметры окна послебоевой статистики.
   "battleResults": ${"battleResults.xc":"battleResults"},
 
-  // {{turret}} marker display strings.
-  // Отображаемые строки {{turret}} маркера.
-  "turretMarkers": ${"turretMarkers.xc":"turretMarkers"},
-
   // Hit log (my hits calculator).
   // Лог попаданий (счетчик своих попаданий).
   "hitLog": ${"hitLog.xc":"hitLog"},
@@ -136,6 +132,10 @@
   // Minimap.
   // Миникарта.
   "minimap": ${"minimap.xc":"minimap"},
+
+  // Minimap.
+  // Миникарта.
+  "minimapAlt": ${"minimapAlt.xc":"minimap"},
 
   // Over-target markers.
   // Маркеры над танками.
