@@ -93,12 +93,12 @@
     // Динамическая прозрачность по рейтингу WG
     // TODO: update values
     "wgr": [
-      { "value": 2020,  "alpha": ${"alphaRating.very_bad" } },
-      { "value": 4185,  "alpha": ${"alphaRating.bad"      } },
-      { "value": 6340,  "alpha": ${"alphaRating.normal"   } },
+      { "value": 2020,  "alpha": ${"alphaRating.bad" } },
+      { "value": 4185,  "alpha": ${"alphaRating.poor"      } },
+      { "value": 6340,  "alpha": ${"alphaRating.average"   } },
       { "value": 8525,  "alpha": ${"alphaRating.good"     } },
-      { "value": 9930,  "alpha": ${"alphaRating.very_good"} },
-      { "value": 99999, "alpha": ${"alphaRating.unique"   } }
+      { "value": 9930,  "alpha": ${"alphaRating.excellent"} },
+      { "value": 99999, "alpha": ${"alphaRating.unicum"   } }
     ],
     // Dynamic transparency by TEFF (E) rating
     // Динамическая прозрачность по рейтингу TEFF (E)
@@ -176,7 +176,6 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
-
     ],
     // Dynamic transparency by average frags per battle on current tank
     // Динамическая прозрачность по среднему количеству фрагов за бой на текущем танке
@@ -190,7 +189,6 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
-
     ],
     // Dynamic transparency by number of spotted enemies per battle on current tank
     // Динамическая прозрачность по среднему количеству засвеченных врагов за бой на текущем танке
@@ -204,7 +202,6 @@
       { "value": 2.0,  "color": ${"alphaRating.excellent"    } },
       { "value": 2.5,  "color": ${"alphaRating.unicum"       } },
       { "value": 15,   "color": ${"alphaRating.super_unicum" } }
-
     ]
   }
 }

@@ -260,12 +260,12 @@
     // Динамический цвет по рейтингу WG
     // TODO: update values
     "wgr": [
-      { "value": 2020,  "color": ${"def.colorRating.very_bad" } },  //    0 - 2019 - very bad   (20% of players)
-      { "value": 4185,  "color": ${"def.colorRating.bad"      } },  // 2020 - 4184 - bad        (better then 20% of players)
-      { "value": 6340,  "color": ${"def.colorRating.normal"   } },  // 4185 - 6339 - normal     (better then 60% of players)
+      { "value": 2020,  "color": ${"def.colorRating.bad"      } },  //    0 - 2019 - very bad   (20% of players)
+      { "value": 4185,  "color": ${"def.colorRating.poor"     } },  // 2020 - 4184 - bad        (better then 20% of players)
+      { "value": 6340,  "color": ${"def.colorRating.average"  } },  // 4185 - 6339 - normal     (better then 60% of players)
       { "value": 8525,  "color": ${"def.colorRating.good"     } },  // 6340 - 8524 - good       (better then 90% of players)
-      { "value": 9930,  "color": ${"def.colorRating.very_good"} },  // 8525 - 9929 - very good  (better then 99% of players)
-      { "value": 99999, "color": ${"def.colorRating.unique"   } }   // 9930 - *    - unique     (better then 99.9% of players)
+      { "value": 9930,  "color": ${"def.colorRating.excellent"} },  // 8525 - 9929 - very good  (better then 99% of players)
+      { "value": 99999, "color": ${"def.colorRating.unicum"   } }   // 9930 - *    - unique     (better then 99.9% of players)
     ],
     // Dynamic color by TEFF (E) rating
     // Динамический цвет по рейтингу TEFF (E)
@@ -365,22 +365,22 @@
     // Dynamic color by average number of spotted enemies per battle on current tank 
     // Динамический цвет по среднему количеству засвеченных врагов за бой на текущем танке 
     "tsb": [
-      { "value": 0.6,  "color": ${"def.colorRating.very_bad" } },
-      { "value": 0.8,  "color": ${"def.colorRating.bad"      } },
-      { "value": 1.0,  "color": ${"def.colorRating.normal"   } },
+      { "value": 0.6,  "color": ${"def.colorRating.bad" } },
+      { "value": 0.8,  "color": ${"def.colorRating.poor"      } },
+      { "value": 1.0,  "color": ${"def.colorRating.average"   } },
       { "value": 1.3,  "color": ${"def.colorRating.good"     } },
-      { "value": 2.0,  "color": ${"def.colorRating.very_good"} },
-      { "value": 15,   "color": ${"def.colorRating.unique"   } }
+      { "value": 2.0,  "color": ${"def.colorRating.excellent"} },
+      { "value": 15,   "color": ${"def.colorRating.unicum"   } }
     ],
     // Dynamic color by WN8 effective damage
     // Динамический цвет по эффективному урону по WN8
     "wn8effd": [
-      { "value": 0.6,  "color": ${"def.colorRating.very_bad" } },
-      { "value": 0.8,  "color": ${"def.colorRating.bad"      } },
-      { "value": 1.0,  "color": ${"def.colorRating.normal"   } },
+      { "value": 0.6,  "color": ${"def.colorRating.bad" } },
+      { "value": 0.8,  "color": ${"def.colorRating.poor"      } },
+      { "value": 1.0,  "color": ${"def.colorRating.average"   } },
       { "value": 1.3,  "color": ${"def.colorRating.good"     } },
-      { "value": 2.0,  "color": ${"def.colorRating.very_good"} },
-      { "value": 15,   "color": ${"def.colorRating.unique"   } }
+      { "value": 2.0,  "color": ${"def.colorRating.excellent"} },
+      { "value": 15,   "color": ${"def.colorRating.unicum"   } }
     ]
   }
 }
