@@ -6,9 +6,6 @@
     // Ping
     "Initialization": "Initialization",
 
-    // BattleLoading
-    "New version available": "New version available",
-
     // Win chance
     "Chance error": "Chance error",
     "Chance to win": "Chance to win",
@@ -18,10 +15,13 @@
     "chanceBattleTier": "Battle tier",
 
     // Hitlog
-    "attack": "attack",
+    "shot": "shot",
     "fire": "fire",
     "ramming": "ramming",
     "world_collision": "falling",
+    "death_zone": "death zone",
+    "drowning": "drowning",
+
     "Hits": "Hits",
     "Total": "Total",
     "Last": "Last",
@@ -40,6 +40,7 @@
     // BattleResults
     "Hit percent": "Hit percent",
     "Damage (assisted / own)": "Damage (assisted / own)",
+    "BR_xpCrew": "crew",
 
     // TeamRenderers
     "Friend": "Friend",
@@ -90,6 +91,8 @@
     "PutOwnCrew": "Put own crew",
     "PutBestCrew": "Put best crew",
     "PutClassCrew": "Put same class crew",
+    "PutPreviousCrew": "Put previous crew",
+    "DropAllCrew": "Drop all crew",
 
     // Vehicle Params
     "gun_reload_time/actual": "Actual gun reload time",
@@ -123,6 +126,11 @@
     // VehicleMarkersManager
     "blownUp": "Blown-up!",
 
+    // Check version
+    "ver/currentVersion": "XVM {0} #{1}", // XVM 5.3.4 #4321
+    "ver/newVersion": "Update available:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
+    "websock/not_connected": "<font color='#FFFF00'>no connection to XVM server</font>",
+
     // Token
     "token/network_error": "Network error. XVM statistics is unavailable, try again later.",
     "token/bad_token": "Bad token.\n{{l10n:token/notify_xvm_site}}",
@@ -134,9 +142,10 @@
     "token/cnt": "Requests count:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Unknown status",
     "token/notify_xvm_site": "Please go to the <a href='#XVM_SITE#'>XVM site</a> and activate statistics in the personal cabinet.",
-    
+
     //Vehicle status
     "Destroyed": "Destroyed",
-    "No data": "No data"
+    "No data": "No data",
+    "Not ready": "Not ready"
   }
 }

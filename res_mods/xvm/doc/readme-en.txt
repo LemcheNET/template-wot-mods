@@ -255,8 +255,16 @@
         flag  - "-" for left align, else right align
                 "0" for filling with leading zeros
         width - minimum width
-        prec  - maximum width for lines or number of digits after comma for numbers
-        type  - type (s - string, d - decimal, f - float, ...)
+        prec  - depended from the type:
+                - maximum width for strings
+                - number of digits after comma for float numbers
+                - offset of ASCII table for numbers as ASCII char (default 129)
+        type  - type
+                s - string
+                d, i - integer number
+                f, F - float number
+                x, X - hex number
+                a - number as ascii char
 
         suf   - suffix added at the end
         rep   - value replacement, returned instead of the regular value if the value is present
@@ -299,21 +307,23 @@
   Clan and players icons.
   Config parameter battle/clanIconsFolder set path to clan icons root folder.
 
-  All icons are loading automatically from game region subfolder (RU/EU/US/...).
+  All icons are loading automatically from game region subfolder (RU/EU/US/... or
+  ID for player's account id).
 
   To add your clan or player icon, just copy icon file to:
     \res_mods\xvm\res\clanicons\[REGION]\clan\ (for clan)
     \res_mods\xvm\res\clanicons\[REGION]\nick\ (for single player)
+    \res_mods\xvm\res\clanicons\ID\ (for single player by accountId)
   Also you can create default clan and player icons:
     \res_mods\xvm\res\clanicons\[REGION]\clan\default.png (for default clan)
     \res_mods\xvm\res\clanicons\[REGION]\nick\default.png (for default player)
   Search order is:
-    nick/<player>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
+    ID/<accountId>.png -> nick/<playerName>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
   TOP 150 clans are added to mod archive by default.
   Full archive with all clans can be downloaded separately:
     http://www.modxvm.com/en/download-xvm/
-    Files: clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
-    clanicons-full-ASIA-XXX.zip (ASIA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
+    Files: clanicons-full-RU-XXX.zip (RU), clanicons-full-EU-XXX.zip (EU), clanicons-full-NA-XXX.zip (NA),
+    clanicons-full-ASIA-XXX.zip (ASIA), clanicons-full-KR-XXX.zip (KR)
 
   6-th sense image.
   To change sixth sense indicator place alternative PNG image to

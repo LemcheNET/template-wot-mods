@@ -242,13 +242,22 @@
         name  - имя макроса
 
         :norm - нормализация значения, например {{hp-ratio:300}} вернет значения в диапазоне 0..300
-        
+
         flag  - "-" для выравнивания влево, иначе выравнивание вправо
                 "0" для дополнения чисел ведущими нулями до заданной длины
         width - минимальная ширина
-        prec  - максимальная ширина для строк, или количество знаков после запятой для чисел
-        type  - тип (s - строка, d - целое число, f - дробное число, ...)
-        
+        prec  - в зависимости от типа:
+                - максимальная ширина для строк
+                - количество знаков после запятой для дробных чисел
+                - смещение ASCII таблицы для чисел в ASCII (по умолчанию 129)
+        type  - тип:
+                s - строка
+                d - целое число
+                f - число с плавающей запятой
+                x — шестнадцатеричное число (abcdef)
+                a - целое число в ASCII (для значений от 0 до 100)
+                ...
+
         suf   - суффикс, добавляемый в конце
         rep   - подменное значение, возвращается вместо обычного значения если оно присутствует
         def   - значение по умолчанию, которое подставляется при отсутствии значения:
@@ -292,20 +301,21 @@
   Параметр конфигурационного файла battle/clanIconsFolder определяет путь к корневой
   папке иконок кланов.
   Все иконки загружаются автоматически из подпапки с названием, соответствующем региону
-  игры (RU, EU, US, и т.д.).
+  игры (RU, EU, US, и т.д. или из папки ID по id аккаунта игрока).
   Чтобы добавить иконку клана или игрока, просто скопируйте файл иконки в:
     \res_mods\xvm\res\clanicons\[REGION]\clan\ (для клана)
     \res_mods\xvm\res\clanicons\[REGION]\nick\ (для отдельного игрока)
+    \res_mods\xvm\res\clanicons\ID\ (для отдельного игрока по id)
   Так же можно сделать иконку по умолчанию для клана или игрока:
     \res_mods\xvm\res\clanicons\[REGION]\clan\default.png (для клана по умолчанию)
     \res_mods\xvm\res\clanicons\[REGION]\nick\default.png (для игрока по умолчанию)
   Иконки ищутся в следующем порядке:
-    nick/<player>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
+    ID/<accountId>.png -> nick/<playerName>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
   По умолчанию в архив мода добавлены топ 150 кланов.
   Полный архив со всеми кланами можно скачать отдельно:
     http://www.modxvm.com/%d1%81%d0%ba%d0%b0%d1%87%d0%b0%d1%82%d1%8c-xvm/
-    Файлы: clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
-    clanicons-full-ASIA-XXX.zip (ASIA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
+    Файлы: clanicons-full-RU-XXX.zip (RU), clanicons-full-EU-XXX.zip (EU), clanicons-full-NA-XXX.zip (NA),
+    clanicons-full-ASIA-XXX.zip (ASIA), clanicons-full-KR-XXX.zip (KR)
 
   Изображение 6-ого чувства.
   Для замены изображения индикатора 6-ого чувства поместите альтернативное изображение PNG формата в
