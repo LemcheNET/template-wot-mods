@@ -5,7 +5,7 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.2.2.exe atterdag-wot-mods-0.9.2.2.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.3.0.exe atterdag-wot-mods-0.9.3.0.exe]
 
 = Mods included =
 Some details of my mod pack.
@@ -21,9 +21,9 @@ Some details of my mod pack.
   * [http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/ Radial Menu]
   * [http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]
   * [http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936 6thsense-audio]
-  * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger]
-  * [http://worldof-tanks.com/0-8-7-working-zoom-in-out-server-reticle/ zoom-mod-128] (Server reticle isn't working yet)
-  * [http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]
+  * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger] (Loads, but doesn't seem to work)
+  * [http://worldof-tanks.com/0-8-7-working-zoom-in-out-server-reticle/ zoom-mod-128]
+  * [http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer] (Currently breaks game)
   * [http://forum.worldoftanks.eu/index.php?/topic/353476-0811-botdetect/ Botdetect]
   * [http://forum.worldoftanks.eu/index.php?/topic/377290-090-permanent-channels Permanent channels]
   * [http://forum.worldoftanks.ru/index.php?/topic/1190058-09-autoequip AutoEquip]
