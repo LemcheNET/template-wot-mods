@@ -14,13 +14,13 @@
     "vehicle": { "enabled": true, "inmeters": true, "color": "0x60FF00" },
      // Camera direction definition.
      // Шаблон направления камеры от своей техники.
-    "camera": { "enabled": true, "inmeters": true, "color": "0xFFCC66" },
+    "camera": { "enabled": true, "inmeters": true, "color": "0xF50800" },
      // Dots definition.
      // Шаблон точек.
-    "dot": { "enabled": true, "inmeters": true, "color": "0xFFCC66" },
+    "dot": { "enabled": true, "inmeters": true, "color": "0xF50800" },
      // Horizontal gun traverse angle definition.
      // Шаблон угла горизонтальной наводки.
-    "traverseAngle": { "enabled": true, "inmeters": true, "color": "0xCCCCCC" }
+    "traverseAngle": { "enabled": true, "inmeters": true, "color": "0xFFCC66" }
   },
   "lines": {
        "enabled": true,
