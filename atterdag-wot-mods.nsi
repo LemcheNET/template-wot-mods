@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 3
-!define VERSIONBUILD 0
+!define VERSIONBUILD 1
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -307,6 +307,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\ids_wipe.json"
     Delete "$INSTDIR\res_mods\ids_bots.json"
     Delete "$INSTDIR\res_mods\customnames.json"
+    Delete "$INSTDIR\res_mods\0.9.3\scripts\client\vehicle_damage.json"
+    Delete "$INSTDIR\res_mods\0.9.3\scripts\client\vehicle.pyc"
     Delete "$INSTDIR\res_mods\0.9.3\scripts\client\modsOOP\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.3\scripts\client\modsOOP\spotMessanger\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.3\scripts\client\modsOOP\spotMessanger\SpotMessanger.pyc"
