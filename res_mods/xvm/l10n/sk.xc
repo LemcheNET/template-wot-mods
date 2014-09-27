@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Načítanie",
-    "New version available": "Nová verzia je k dispozícii",
     "Chance error": "Chyba",
     "Chance to win": "Šanca na výhru",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "streľba",
     "fire": "požiar",
     "ramming": "náraz",
     "world_collision": "pádom",
@@ -100,6 +98,8 @@
     "token/cnt": "Počet prístupov:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Neznámy status",
     "token/notify_xvm_site": "Prosím choďte na <a href='#XVM_SITE#'>XVM stránku</a> a aktivujte štatistiky.",
+    "": "Nová verzia je k dispozícii",
+    "": "streľba",
     "": "relic242, Alfavio",
     "": "Status: <font color='#00FF00'>Aktívny</font>",
     "": "Zostávajú dní:<tab/><font color='#eeeeee'>{0}</font>",

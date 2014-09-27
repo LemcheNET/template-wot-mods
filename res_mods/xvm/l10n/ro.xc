@@ -1,10 +1,8 @@
 {
   "locale": {
     "Initialization": "Iniţializare",
-    "New version available": "Versiune nouă disponibilă",
     "Chance error": "Eroare posibilităţi de victorie",
     "Chance to win": "Şanse de victorie",
-    "attack": "atac",
     "fire": "incendiu",
     "ramming": "ramming",
     "world_collision": "cădem",
@@ -50,6 +48,8 @@
     "TD": "DT",
     "SPG": "Tun autopropulsat",
     "blownUp": "Explozie!",
+    "": "Versiune nouă disponibilă",
+    "": "atac",
     "": "XVM Team"
   }
 }

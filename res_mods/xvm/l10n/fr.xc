@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Initialisation",
-    "New version available": "Nouvelle version disponible",
     "Chance error": "Erreur lors du calcul des chances",
     "Chance to win": "Chances de victoire",
     "chanceLive": "par chars restants",
     "chanceBattleTier": "par tiers",
-    "attack": "attaque",
     "fire": "incendie",
     "ramming": "collision",
     "world_collision": "chute",
@@ -101,6 +99,8 @@
     "token/cnt": "Nb. de requêtes :<tab/><font color='#eeeeee'>{0}</font>",
     "token/unknown_status": "Statut inconnu",
     "token/notify_xvm_site": "Merci d'aller sur le <a href='#XVM_SITE#'>site d'XVM</a> et d'activer les statistiques dans les paramètres personnels.",
+    "": "Nouvelle version disponible",
+    "": "attaque",
     "": "Edgar 'LaCourgette' Fournival",
     "": "Statut : <font color='#00FF00'>Actif</font>",
     "": "Jours restant :<tab/><font color='#eeeeee'>{0}</font>",

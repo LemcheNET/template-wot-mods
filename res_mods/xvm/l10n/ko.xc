@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "시작 중",
-    "New version available": "새 버전이 나왔습니다!",
     "Chance error": "확률 에러 발생",
     "Chance to win": "승률",
     "chanceLive": "실시간 승률",
     "chanceBattleTier": "티어",
-    "attack": "명중",
     "fire": "화재",
     "ramming": "충각",
     "world_collision": "추락",
@@ -82,6 +80,8 @@
     "TD": "구축전차",
     "SPG": "자주포",
     "blownUp": "유폭!",
+    "": "새 버전이 나왔습니다!",
+    "": "명중",
     "": "PFN [-EGL-]"
   }
 }

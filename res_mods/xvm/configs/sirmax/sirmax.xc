@@ -2,7 +2,7 @@
   "configVersion": "5.1.0",
   "def": {
     "formatNick": "{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>",
-    "formatVehicle": "<font face='Consolas' size='11'><font color='{{c:avglvl|#666666}}'>{{avglvl%d|-}}</font> <font color='{{c:tdv|#666666}}'>{{tdv%0.1f|---}}|<font color='{{c:e|#666666}}'>{{e|-}}</font>|<font color='{{c:xeff|#666666}}'>{{xeff|--}}</font>|<font color='{{c:xwn8|#666666}}'>{{xwn8|--}}</font> <font color='{{c:kb|#666666}}'>{{kb%2d~k|--k}}</font></font>",
+    "formatVehicle": "<font face='Consolas' size='11'><font color='{{c:avglvl|#666666}}'>{{avglvl%d|-}}</font> <font color='{{c:tdv|#666666}}'>{{tdv%0.1f|---}}|<font color='{{c:e|#666666}}'>{{e|-}}</font>|<font color='{{c:xwgr|#666666}}'>{{xwgr|--}}</font>|<font color='{{c:xeff|#666666}}'>{{xeff|--}}</font>|<font color='{{c:xwn8|#666666}}'>{{xwn8|--}}</font> <font color='{{c:kb|#666666}}'>{{kb%2d~k|--k}}</font></font>",
     //"formatVehicle": "{{vehicle}}",
     //"formatVehicle": "<font color='{{c:teff|#666666}}'>{{teff%4d|----}}</font>",
 
@@ -31,14 +31,53 @@
     "pingServers": ${"def.pingServers"}
   },
   "hangar": {
-    "hideTutorial": false,
-    "masteryMarkInTankCarousel": true,
     "masteryMarkInTechTree": true,
     "hidePricesInTechTree": true,
     "widgetsEnabled": true,
     "pingServers": {
       "$ref": { "path":"def.pingServers" },
       "x": 5
+    },
+    "carousel": {
+      //"enabled": false,
+      //"zoom": 0.66,
+      //"zoom": 0.75,
+      "zoom": 0.80,
+      //"zoom": 2,
+      "rows": 2,
+      "padding": { "horizontal": 2, "vertical": 2 },
+      "alwaysShowFilters": true,
+      //"hideBuyTank": true,
+      //"hideBuySlot": true,
+      "filters": {
+        //"nation":   { "enabled": false },
+        //"type":     { "enabled": false },
+        //"level":    { "enabled": false },
+        //"prefs":    { "enabled": false },
+        //"favorite": { "enabled": false }
+      },
+      "fields": {
+        "tankType": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+        "level":    { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+        "xp":       { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+        "multiXp":  { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+        "tankName": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 }
+      },
+      "extraFields": [
+        //{ "x": "0", "y": 28, "w": 45, "h": 35, "bgColor": "0xFFFFFF", "alpha": 20 },
+        { "x": -1, "y": 10, "format": "<img src='img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png' width='23' height='23'>" },
+        { "x": 22, "y": 12, "format": "<font color='{{v.c_winrate}}'>{{v.winrate%d~%}}</font>", "shadow": {} },
+        { "x": 0, "y": 28, "format": "<font color='{{v.c_wn8effd}}'>{{v.wn8effd%0.2f}}</font>", "shadow": {} },
+        { "x": 0, "y": 42, "format": "<font color='{{v.c_battles}}'>{{v.battles}}</font>", "shadow": {} },
+        { "x": 0, "y": 54, "format": "<font color='{{v.c_damageRating}}'>{{v.damageRating~%}}</font>", "shadow": {} },
+        //{ "x": 60, "y": 12, "format": "<font color='{{v.c_type}}'>{{v.premium?1|0}}</font>", "shadow": {} },
+        //{ "x": -1, "y": 54, "format": "<img src='xvm://res/icons/xvm/16x16.png' width='16' height='16'>" },
+        {}
+      ]
+    },
+    "clock": {
+      //"x": 100,
+      //"y": 5
     }
   },
   "userInfo": {
@@ -60,6 +99,7 @@
     "showPostmortemTips": false,
     "highlightVehicleIcon": false,
     "allowHpInPanelsAndMinimap": true,
+    "allowMarksOnGunInPanelsAndMinimap": true,
     "clanIconsFolder": "clanicons",
     "elements": ${"elements"}
   },
@@ -80,7 +120,10 @@
     "__stub__": null
   },
   "hotkeys": {
-    "minimapZoom": { "enabled": false, "onHold": true, "keyCode": 17 }
+    //"minimapZoom": { "enabled": true, "keyCode": 29, "onHold": true },
+    //"minimapAltMode": { "enabled": true, "keyCode": 29 },
+    //"playersPanelAltMode": { "enabled": true, "keyCode": 29 },
+    "__stub__": {}
   },
   "battleLoading": {
     "showChances": true,
@@ -108,58 +151,13 @@
   "battleResults": {
     "startPage": 1,
     "sortColumn": 5,
+    "showCrewExperience": true,
     "showTotals": true,
     "showChances": true,
     "showBattleTier": true
   },
-  "minimap": {
-    "enabled": true,
-    //"iconScale": 2,
-    "circles": {
-        "view": [
-            { "enabled": true, "state": 1, "distance": 50, "scale": 1, "thickness": 0.5, "alpha": 70, "color": "0xFFFFFF" },
-            { "enabled": true, "state": 2, "distance": 50, "scale": 1, "thickness": 0.5, "alpha": 45, "color": "0xFFFFFF" },
-            //{ "enabled": true, "distance": 445, "scale": 1, "thickness": 0.5, "alpha": 45, "color": "0xFFFFFF" },
-            //{ "enabled": true, "distance": "blindarea", "scale": 0.9, "thickness": 1.5, "alpha": 80, "color": "0xFFFF00" },
-            { "enabled": true, "state": 1, "distance": "dynamic", "scale": 1, "thickness": 1, "alpha": 80, "color": "0x3EB5F1" },
-            { "enabled": true, "state": 2, "distance": "dynamic", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x3EB5F1" },
-            { "enabled": true, "distance": "motion", "scale": 1, "thickness": 0.5, "alpha": 50, "color": "0x3EB5F1" },
-            { "enabled": true, "distance": "standing", "scale": 1, "thickness": 0.5, "alpha": 50, "color": "0x3EB5F1" },
-            {}
-        ],
-        "special": [
-//            { "uk-GB01_Medium_Mark_I": { "alpha": 60, "color": "0xEE4444", "distance": 100, "enabled": true, "thickness": 0.5 } }
-        ]
-    },
-    "lines": {
-      "vehicle": [
-         { "enabled": true, "from": -50, "to": 150,  "inmeters": true, "thickness": 1.2,  "alpha": 65, "color": "0xFFFFFF"}
-       ],
-       "camera": [
-         { "enabled": true, "from": 50,  "to": 707,   "inmeters": true, "thickness": 0.7,  "alpha": 65, "color": "0x00BBFF"},
-         { "enabled": true, "from": 707, "to": 1463,  "inmeters": true, "thickness": 0.2,  "alpha": 35, "color": "0x00BBFF"},
-         { "enabled": true, "from": 445, "to": 446,   "inmeters": true, "thickness": 3,    "alpha": 65, "color": "0x00BBFF"},
-         { "enabled": true, "from": 500, "to": 501,   "inmeters": true, "thickness": 3,    "alpha": 65, "color": "0x00BBFF"},
-         { "enabled": true, "from": 706, "to": 707,   "inmeters": true, "thickness": 3,    "alpha": 65, "color": "0x00BBFF"}
-       ],
-       "traverseAngle": [
-         { "enabled": true, "from": 50,  "to": 1463,  "inmeters": true, "thickness": 0.5,   "alpha": 65, "color": "0xFFFFFF"}
-       ]
-    },
-    "labels": {
-      "units": {
-        "format": {
-          "ally":           "<span class='mm_a'><font color='{{c:xwn8}}'>*</font> {{vehicle-short}}</span>",
-          "teamkiller":     "<span class='mm_t'><font color='{{c:xwn8}}'>*</font> {{vehicle-short}}</span>",
-          "enemy":          "<span class='mm_e'><font color='{{c:xwn8}}'>*</font> {{vehicle-short}}</span>"
-        },
-        "alpha" : {
-          //"deadenemy": 50
-        }
-      }
-    },
-    "square" : { "enabled": true }
-  },
+  "minimap": ${"sirmax-minimap.xc":"minimap"},
+  "minimapAlt": ${"sirmax-minimap.xc":"minimapAlt"},
   "hitLog": {
     "visible": true,
     "x": 235,
@@ -207,7 +205,10 @@
     "usa-T34_hvy": { "name": "т34.", "short": "т34" },
     "ussr-KV-1s": { "name": "квас", "short": "квс" }
   },
-  //"texts": { "vtype": { "LT":  "ЛТ" } },
+  "texts": {
+    //"vtype": { "LT":  "ЛТ" },
+    "marksOnGun": { "_0": "", "_1": "|", "_2": "||", "_3": "|||" }
+  },
   "colors": {
     "system": {
       //"ally_alive":          "0x029CF5",

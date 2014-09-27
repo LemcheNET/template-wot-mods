@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Inicjalizacja",
-    "New version available": "Nowa wersja dostępna",
     "Chance error": "Szansa (błąd)",
     "Chance to win": "Szansa na wygraną",
     "chanceLive": "Szansa na wygraną (na żywo)",
     "chanceBattleTier": "Tier",
-    "attack": "atak",
     "fire": "ogień",
     "ramming": "taranowanie",
     "world_collision": "upadek",
@@ -107,6 +105,8 @@
     "Destroyed": "Zniszczony",
     "No data": "Brak danych",
     "Not ready": "Niegotowy",
+    "": "Nowa wersja dostępna",
+    "": "atak",
     "": "XVM Team, wRR, shogomad, jerry1333",
     "": "Stan: <font color='#00FF00'>Aktywny</font>",
     "": "Pozostało dni:<tab/><font color='#eeeeee'>{0}</font>",

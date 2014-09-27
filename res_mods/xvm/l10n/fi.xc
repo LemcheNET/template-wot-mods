@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Alustus",
-    "New version available": "Uusi versio on saatavilla",
     "Chance error": "Todennäköisyyden epävarmuus",
     "Chance to win": "Voittotodennäköisyys",
     "chanceLive": "Elävien",
     "chanceBattleTier": "T",
-    "attack": "osuma",
     "fire": "tulipalo",
     "ramming": "törmäys",
     "world_collision": "putoaminen",
@@ -107,6 +105,8 @@
     "Destroyed": "Tuhottu",
     "No data": "Ei tietoa",
     "Not ready": "Ei valmis",
+    "": "Uusi versio on saatavilla",
+    "": "osuma",
     "": "Mikael Palokangas, Seula, Taifuuni and Tuomas Rantalainen",
     "": "Tila: <font color='#00FF00'>Päällä</font>",
     "": "Päiviä jäljellä:<tab/><font color='#eeeeee'>{0}</font>",

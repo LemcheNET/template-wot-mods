@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Подготовка",
-    "New version available": "Налична е нова версия",
     "Chance error": "Вероятност за загуба",
     "Chance to win": "Вероятност за победа",
     "chanceLive": "За оцеляване",
     "chanceBattleTier": "Ниво",
-    "attack": "изстрел",
     "fire": "огън",
     "ramming": "зблъсък",
     "world_collision": "падане",
@@ -88,6 +86,8 @@
     "token/inactive": "Състояние: <font color='#FFFF00'>Неактивно</font><br>{{l10n:token/notify_xvm_site}}",
     "token/unknown_status": "Незнаен статут",
     "token/notify_xvm_site": "Моля, отворете <a href='#XVM_SITE#'>страницата на XVM</a> и активирайте статистиките в персоналния ви кабинет.",
+    "": "Налична е нова версия",
+    "": "изстрел",
     "": "Превод: Георги Шарапанов, корекции от Пламен Синигерски // Translated by Georgi Sharapanov, edited by Plamen Sinigersky",
     "": "Състояние: <font color='#00FF00'>Активно</font>",
     "": "Оставащи дни:<tab/><font color='#eeeeee'>{0}</font>",

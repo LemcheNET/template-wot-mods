@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Pasiruošimas",
-    "New version available": "Yra nauja versija!",
     "Chance error": "Tikimybės klaida",
     "Chance to win": "Laimėjimo tikimybė",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "šūvis",
     "fire": "ugnis",
     "ramming": "raminimas",
     "world_collision": "kritimas",
@@ -63,6 +61,8 @@
     "TD": "TD",
     "SPG": "SPG",
     "blownUp": "Sprogo!",
+    "": "Yra nauja versija!",
+    "": "šūvis",
     "": "Miega"
   }
 }

@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Initialization",
-    "New version available": "New version available",
     "Chance error": "Chance-fejl",
     "Chance to win": "Chance for at vinde",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "angreb",
     "fire": "ild",
     "ramming": "sammenstød",
     "world_collision": "fald",
@@ -82,6 +80,8 @@
     "TD": "TD",
     "SPG": "SPG",
     "blownUp": "Eksploderet!",
+    "": "New version available",
+    "": "angreb",
     "": "PowerBait"
   }
 }

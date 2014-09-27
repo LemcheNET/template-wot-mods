@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Initialisering",
-    "New version available": "Ny version tillgänglig",
     "Chance error": "Fel med vinstchans",
     "Chance to win": "Vinstchans",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "attack",
     "fire": "eld",
     "ramming": "kollision",
     "world_collision": "fall",
@@ -65,6 +63,8 @@
     "TD": "TD",
     "SPG": "SPG",
     "blownUp": "Sprängd!",
+    "": "Ny version tillgänglig",
+    "": "attack",
     "": "Nilkrokodil (EU)"
   }
 }

@@ -1,4 +1,12 @@
-﻿XVM-5.3.5:
+﻿XVM-5.3.6-dev:
+  * изменено значение макроса: {{v.hitsRatio}} теперь в процентах
+  * макрос {{gun-marks}} изменен на {{marksOnGun}}, секция "gunmarks" изменена на "marksOnGun",
+    опция "allowGunMarksInPanelsAndMinimap" изменена на "allowMarksOnGunInPanelsAndMinimap"
+    для однообразия
+  * исправлена работа статистики в окне набора роты
+  * добавлен макрос {{damageRating}} и секция цветов "damageRating"
+
+XVM-5.3.5:
   * адаптация к WoT 0.9.3
   * изменены значения dmg-kind:
       shot, fire, ramming, world_collision, death_zone, drowning, other
@@ -11,7 +19,7 @@
   * новые опции:
     battleResults/showTotalExperience - отображать общий полученный опыт на странице результатов боя
     battleResults/showCrewExperience - отображать опыт экипажа на первой странице результатов боя
-  * иконка игрока по accountId - загружаются из \res_mods\xvm\res\clanicons\ID\ 
+  * иконка игрока по accountId - загружаются из \res_mods\xvm\res\clanicons\ID\
     Порядок поиска иконки:
       id -> nick -> clan -> clan/default.png -> nick/default.png
 

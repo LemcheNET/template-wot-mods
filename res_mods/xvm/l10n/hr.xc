@@ -1,15 +1,16 @@
 {
   "locale": {
     "Initialization": "Pokretanje",
-    "New version available": "Nova verzija je dostupna",
     "Chance error": "Šansa pogreške",
     "Chance to win": "Šanse za pobjedu",
     "chanceLive": "Za žive igrače",
     "chanceBattleTier": "Razina bitke",
-    "attack": "Napad",
+    "shot": "hitac",
     "fire": "Požar",
     "ramming": "Sudar",
     "world_collision": "Pad",
+    "death_zone": "mrtva zona",
+    "drowning": "utopio",
     "Hits": "Pogodci",
     "Total": "Sve ukupno",
     "Last": "Posljednji",
@@ -22,6 +23,7 @@
     "Capturers": "Zauzimatelji baze",
     "Hit percent": "Postotak pogodaka",
     "Damage (assisted / own)": "Šteta (asistirano / osobno)",
+    "BR_xpCrew": "posada",
     "Friend": "Prijatelj",
     "Ignored": "Ignoriran",
     "unknown": "Nepoznato",
@@ -94,6 +96,9 @@
     "TD": "Lovac na tenkove",
     "SPG": "Samohodni top",
     "blownUp": "Eksplodirao",
+    "ver/currentVersion": "XVM {0} #{1}",
+    "ver/newVersion": "Ažuriranje dostupno:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
+    "websock/not_connected": "<font color='#FFFF00'>nema konekcije do XVM servera</font>",
     "token/network_error": "Greška mreže. XVM statistika je nedostupna, pokušajte kasnije.",
     "token/bad_token": "Krivi token. \n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "Status:<font color='#FF0000'>Blokiran</font>{l10n:token/notify_xvm_site}}",
@@ -106,6 +111,8 @@
     "token/notify_xvm_site": "Molimo odite na<a href='#XVM_SITE#'>XVM stranicu</a>i aktivirajte statistiku.",
     "Destroyed": "Uništen",
     "No data": "Nema podataka",
-    "Not ready": "Nije spremno"
+    "Not ready": "Nije spremno",
+    "": "Nova verzija je dostupna",
+    "": "Napad"
   }
 }

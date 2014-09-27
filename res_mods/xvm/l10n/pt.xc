@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Inicialização",
-    "New version available": "Nova versão disponível",
     "Chance error": "Margem de erro",
     "Chance to win": "Probabilidade de vitória",
     "chanceLive": "Em combate",
     "chanceBattleTier": "Nível",
-    "attack": "ataque",
     "fire": "fogo",
     "ramming": "colisão",
     "world_collision": "queda",
@@ -107,6 +105,8 @@
     "Destroyed": "Destruido",
     "No data": "Sem dados",
     "Not ready": "Não está pronto",
+    "": "Nova versão disponível",
+    "": "ataque",
     "": "Xft (25-Apr-2014)",
     "": "Estado: <font color='#00FF00'>Activo</font>",
     "": "Dias restantes:<tab/><font color='#eeeeee'>{0}</font>",

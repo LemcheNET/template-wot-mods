@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "初始化",
-    "New version available": "有新版本可以更新",
     "Chance error": "失败概率",
     "Chance to win": "胜利概率",
     "chanceLive": "存活率",
     "chanceBattleTier": "战斗分级",
-    "attack": "攻击",
     "fire": "起火",
     "ramming": "撞击",
     "world_collision": "坠毁",
@@ -82,6 +80,8 @@
     "TD": "反坦克歼击车",
     "SPG": "自行火炮",
     "blownUp": "击毁弹药架!",
+    "": "有新版本可以更新",
+    "": "攻击",
     "": "Rick Chen  陈郭"
   }
 }

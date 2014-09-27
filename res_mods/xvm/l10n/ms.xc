@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Penyediaan bermula",
-    "New version available": "Ada versi terkini",
     "Chance error": "Ralat kemungkinan",
     "Chance to win": "Kemungkinan untuk menang",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "serang",
     "fire": "tembak",
     "ramming": "tempuhan",
     "world_collision": "tumbang",
@@ -64,6 +62,8 @@
     "TD": "TD",
     "SPG": "SPG",
     "blownUp": "Meletup!",
+    "": "Ada versi terkini",
+    "": "serang",
     "": "AzlanDyNasTy(SEA)"
   }
 }

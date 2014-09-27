@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Inicialização",
-    "New version available": "Nova versão disponível",
     "Chance error": "Margem de erro",
     "Chance to win": "Chance de vencer",
     "chanceLive": "Live",
     "chanceBattleTier": "Cat",
-    "attack": "ataque",
     "fire": "fogo",
     "ramming": "batendo",
     "world_collision": "queda",
@@ -63,6 +61,8 @@
     "TD": "CT",
     "SPG": "AAP",
     "blownUp": "Explodido!",
+    "": "Nova versão disponível",
+    "": "ataque",
     "": "Zazula"
   }
 }

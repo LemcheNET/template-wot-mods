@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "初始化中",
-    "New version available": "新版已出!",
     "Chance error": "失敗率",
     "Chance to win": "獲勝率",
     "chanceLive": "存活率",
     "chanceBattleTier": "分房階級",
-    "attack": "射擊",
     "fire": "火災",
     "ramming": "撞擊",
     "world_collision": "墜落",
@@ -82,6 +80,8 @@
     "TD": "驅逐戰車",
     "SPG": "自走炮",
     "blownUp": "彈藥架殉爆!",
+    "": "新版已出!",
+    "": "射擊",
     "": "(SG)LiNcUtT[507SW]"
   }
 }
