@@ -4,11 +4,11 @@
  */
 {
   "carousel": {
-    "enabled": false,
+    "enabled": true,
     "zoom": 1,
-    "rows": 1,
+    "rows": 2,
     "padding": { "horizontal": 10, "vertical": 2 },
-    "alwaysShowFilters": false,
+    "alwaysShowFilters": true,
     "hideBuyTank": false,
     "hideBuySlot": false,
     "filters": {
