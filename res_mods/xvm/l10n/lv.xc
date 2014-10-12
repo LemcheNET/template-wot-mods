@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Lūdzu, apmeklē <a href='#XVM_SITE#'>XVM mājaslapu</a> un aktivizē statistiku savā profilā.",
     "Destroyed": "Iznīcināts",
     "No data": "Nav datu",
-    "Not ready": "Nav gatavs",
-    "": "Pieejama jauna versija",
-    "": "iešauts",
-    "": "Latvian WoT community http://goo.gl/lG87wX ",
-    "": "Statuss: <font color='#00FF00'>Aktīvs</font>",
-    "": "Atlikušas dienas:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Atlikušas stundas:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Pieprasījumu skaits:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Nav gatavs"
   }
 }

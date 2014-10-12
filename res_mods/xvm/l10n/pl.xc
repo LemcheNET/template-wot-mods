@@ -104,13 +104,6 @@
     "token/notify_xvm_site": "Proszę odwiedzić <a href='#XVM_SITE#'>stronę XVM</a> i aktywować statystyki w profilu.",
     "Destroyed": "Zniszczony",
     "No data": "Brak danych",
-    "Not ready": "Niegotowy",
-    "": "Nowa wersja dostępna",
-    "": "atak",
-    "": "XVM Team, wRR, shogomad, jerry1333",
-    "": "Stan: <font color='#00FF00'>Aktywny</font>",
-    "": "Pozostało dni:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Pozostało godzin:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Liczba zapytań:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Niegotowy"
   }
 }

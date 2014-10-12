@@ -85,13 +85,6 @@
     "token/blocked": "Статус: <font color='#FF0000'>Заблокований</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "Статус: <font color='#FFFF00'>Неактивний</font><br>{{l10n:token/notify_xvm_site}}",
     "token/unknown_status": "Невідомий статус",
-    "token/notify_xvm_site": "Будь-ласка, перейдіть на <a href='#XVM_SITE#'>сайт XVM</a> та активуйте статистику в особистому кабінеті.",
-    "": "Доступна нова версія",
-    "": "атака",
-    "": "RedMor, Vlad VirusX",
-    "": "Статус:<font color='#00FF00'>Активний</font>",
-    "": "Залишилось днів:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Залишилось годин:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Кiлькiсть запитiв:<tab/><font color='#eeeeee'>{0}</font>"
+    "token/notify_xvm_site": "Будь-ласка, перейдіть на <a href='#XVM_SITE#'>сайт XVM</a> та активуйте статистику в особистому кабінеті."
   }
 }

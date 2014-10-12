@@ -90,6 +90,9 @@
     "carousel": ${"carousel.xc":"carousel"},
     // Parameters for hangar clock
     // Параметры часов в ангаре
-    "clock": ${"clock.xc":"clock"}
+    "clock": ${"clock.xc":"clock"},
+    // Parameters for comments for players
+    // Параметры для комментариев для игроков
+    "comments": ${"comments.xc":"comments"}
   }
 }

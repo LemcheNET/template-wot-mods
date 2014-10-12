@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Látogasd meg az <a href='#XVM_SITE#'>XVM oldalt</a> és aktiváld a statisztikát a személyes beállításoknál!",
     "Destroyed": "Megsemmisítve",
     "No data": "Nincs adat",
-    "Not ready": "Nincs kész",
-    "": "Új verzió elérhető",
-    "": "támadás",
-    "": "drhideg",
-    "": "Állapot: <font color='#00FF00'>Aktív</font>",
-    "": "Hátralévő napok:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Hátralévő órák:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Kérések száma:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Nincs kész"
   }
 }

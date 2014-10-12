@@ -60,9 +60,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Sprogo!",
-    "": "Yra nauja versija!",
-    "": "šūvis",
-    "": "Miega"
+    "blownUp": "Sprogo!"
   }
 }

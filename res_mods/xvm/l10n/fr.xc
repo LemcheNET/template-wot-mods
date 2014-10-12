@@ -98,13 +98,6 @@
     "token/time_left_warn": "Temps restant :<tab/><font color='#EEEE00'>{0} jours, {1} heures, {2} minutes</font>",
     "token/cnt": "Nb. de requêtes :<tab/><font color='#eeeeee'>{0}</font>",
     "token/unknown_status": "Statut inconnu",
-    "token/notify_xvm_site": "Merci d'aller sur le <a href='#XVM_SITE#'>site d'XVM</a> et d'activer les statistiques dans les paramètres personnels.",
-    "": "Nouvelle version disponible",
-    "": "attaque",
-    "": "Edgar 'LaCourgette' Fournival",
-    "": "Statut : <font color='#00FF00'>Actif</font>",
-    "": "Jours restant :<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Heures restantes :<tab/><font color='#ffff00'>{0}</font>",
-    "": "Nb. de requêtes :<tab/><font color='#eeeeee'>{0}</font>"
+    "token/notify_xvm_site": "Merci d'aller sur le <a href='#XVM_SITE#'>site d'XVM</a> et d'activer les statistiques dans les paramètres personnels."
   }
 }

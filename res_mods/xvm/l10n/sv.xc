@@ -62,9 +62,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Sprängd!",
-    "": "Ny version tillgänglig",
-    "": "attack",
-    "": "Nilkrokodil (EU)"
+    "blownUp": "Sprängd!"
   }
 }

@@ -104,13 +104,6 @@
     "token/notify_xvm_site": "Por favor aceda ao <a href='#XVM_SITE#'>site do XVM</a> e active as estatisticas na sua área pessoal.",
     "Destroyed": "Destruido",
     "No data": "Sem dados",
-    "Not ready": "Não está pronto",
-    "": "Nova versão disponível",
-    "": "ataque",
-    "": "Xft (25-Apr-2014)",
-    "": "Estado: <font color='#00FF00'>Activo</font>",
-    "": "Dias restantes:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Horas restantes:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Número de solicitações:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Não está pronto"
   }
 }

@@ -47,9 +47,6 @@
     "LT": "HT",
     "TD": "TA",
     "SPG": "KMT",
-    "blownUp": "Patladı!",
-    "": "New version available",
-    "": "saldır",
-    "": "Ferhat 'Fornicras' Pınar/EU"
+    "blownUp": "Patladı!"
   }
 }

@@ -61,9 +61,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Opgeblazen!",
-    "": "Nieuwe versie beschikbaar",
-    "": "aanval",
-    "": "Ruud Bremer"
+    "blownUp": "Opgeblazen!"
   }
 }

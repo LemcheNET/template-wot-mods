@@ -79,9 +79,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Eksploderet!",
-    "": "New version available",
-    "": "angreb",
-    "": "PowerBait"
+    "blownUp": "Eksploderet!"
   }
 }

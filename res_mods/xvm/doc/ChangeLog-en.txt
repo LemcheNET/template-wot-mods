@@ -1,9 +1,18 @@
-﻿XVM-5.3.6-dev:
-  * changed macro value: {{v.hitsRatio}} is in percents now
+﻿XVM-5.3.6.1:
+  * fixed bug when xvm.xc is absent
+
+XVM-5.3.6:
+  * many bugs fixed
   * macro {{gun-marks}} changed to {{marksOnGun}}, section "gunmarks" changed to "marksOnGun",
     option "allowGunMarksInPanelsAndMinimap" changed "allowMarksOnGunInPanelsAndMinimap"
     for unification
+  * changed macro value: {{v.hitsRatio}} is in percents now
+  * added macro {{v.c_hitsRatio}} and colors section "hitsRatio"
   * added macro {{v.c_damageRating}} and colors section "damageRating"
+  * added option "onHold" to the hotkeys settings for alternative minimap and players panel mode
+  * added option hangar/clock/bgImage for background image in clock
+  * macros {{alive}}, {{ready}}, {{player}}, {{tk}}, {{squad}}, {{squad-num}}, {{hp-max}} works in the 
+    battle loading screen
 
 XVM-5.3.5:
   * adaptation to WoT 0.9.3

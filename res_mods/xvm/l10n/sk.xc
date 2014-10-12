@@ -97,13 +97,6 @@
     "token/time_left_warn": "Zostávajúci čas:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
     "token/cnt": "Počet prístupov:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Neznámy status",
-    "token/notify_xvm_site": "Prosím choďte na <a href='#XVM_SITE#'>XVM stránku</a> a aktivujte štatistiky.",
-    "": "Nová verzia je k dispozícii",
-    "": "streľba",
-    "": "relic242, Alfavio",
-    "": "Status: <font color='#00FF00'>Aktívny</font>",
-    "": "Zostávajú dní:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Zostávajú hodiny:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Počet prístupov:<tab/><font color='#eeeeee'>{0}</font>"
+    "token/notify_xvm_site": "Prosím choďte na <a href='#XVM_SITE#'>XVM stránku</a> a aktivujte štatistiky."
   }
 }

@@ -19,7 +19,7 @@
 {
   // Version of the config. Do not remove or change it unnecessarily.
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
-  "configVersion": "0.9.3.2",
+  "configVersion": "0.9.3.3",
 
   // Version of the editor.
   // Версия редактора.
@@ -58,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "09.27.2014",
+    "date": "10.12.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
@@ -66,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "XVM nightly build 3238 (2014-09-27)"
+    "modMinVersion": "5.3.6.1"
   },
 
   // Parameters for login screen.

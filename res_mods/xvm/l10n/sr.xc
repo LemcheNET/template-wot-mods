@@ -58,9 +58,6 @@
     "LT": "Laki",
     "TD": "Destrojeri",
     "SPG": "Artiljerija",
-    "blownUp": "Eksplodirao",
-    "": "Nova verzija je raspoloživa",
-    "": "Napad",
-    "": "Tixar, Tekija (EU)"
+    "blownUp": "Eksplodirao"
   }
 }

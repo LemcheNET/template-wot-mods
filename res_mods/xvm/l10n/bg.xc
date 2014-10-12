@@ -85,13 +85,6 @@
     "token/blocked": "Състояние: <font color='#FF0000'>Блокирано</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "Състояние: <font color='#FFFF00'>Неактивно</font><br>{{l10n:token/notify_xvm_site}}",
     "token/unknown_status": "Незнаен статут",
-    "token/notify_xvm_site": "Моля, отворете <a href='#XVM_SITE#'>страницата на XVM</a> и активирайте статистиките в персоналния ви кабинет.",
-    "": "Налична е нова версия",
-    "": "изстрел",
-    "": "Превод: Георги Шарапанов, корекции от Пламен Синигерски // Translated by Georgi Sharapanov, edited by Plamen Sinigersky",
-    "": "Състояние: <font color='#00FF00'>Активно</font>",
-    "": "Оставащи дни:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Оставащи часове:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Брой заявки:<tab/><font color='#eeeeee'>{0}</font>"
+    "token/notify_xvm_site": "Моля, отворете <a href='#XVM_SITE#'>страницата на XVM</a> и активирайте статистиките в персоналния ви кабинет."
   }
 }

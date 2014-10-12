@@ -60,9 +60,6 @@
     "LT": "TL",
     "TD": "CT",
     "SPG": "AAP",
-    "blownUp": "Explodido!",
-    "": "Nova versão disponível",
-    "": "ataque",
-    "": "Zazula"
+    "blownUp": "Explodido!"
   }
 }

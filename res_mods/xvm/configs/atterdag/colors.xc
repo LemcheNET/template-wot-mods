@@ -388,6 +388,17 @@
       { "value": 99,    "color": ${"def.colorRating.good"     } },  // better then 90% of players
       { "value": 99.9,  "color": ${"def.colorRating.excellent"} },  // better then 99% of players
       { "value": 101,   "color": ${"def.colorRating.unicum"   } }   // better then 99.9% of players
+    ],
+    // TODO:values
+    // Dynamic color by hit ratio (percents of hits)
+    // Динамический цвет по проценту попаданий
+    "hitsRatio": [
+      { "value": 20,    "color": ${"def.colorRating.bad" } },
+      { "value": 60,    "color": ${"def.colorRating.poor"      } },
+      { "value": 90,    "color": ${"def.colorRating.average"   } },
+      { "value": 99,    "color": ${"def.colorRating.good"     } },
+      { "value": 99.9,  "color": ${"def.colorRating.excellent"} },
+      { "value": 101,   "color": ${"def.colorRating.unicum"   } }
     ]
   }
 }

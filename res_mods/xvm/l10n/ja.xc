@@ -75,12 +75,6 @@
     "token/bad_token": "不正なトークン\n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "ステータス: <font color='#FF0000'>ブロック</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "ステータス: <font color='#FFFF00'>Inactive</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/unknown_status": "未知のステータス",
-    "": "新しいバージョンがあります",
-    "": "攻撃",
-    "": "naokii",
-    "": "ステータス: <font color='#00FF00'>Active</font>",
-    "": "残り <font color='#eeeeee'>{0}</font>日",
-    "": "残り <font color='#eeeeee'>{0}</font>時間"
+    "token/unknown_status": "未知のステータス"
   }
 }

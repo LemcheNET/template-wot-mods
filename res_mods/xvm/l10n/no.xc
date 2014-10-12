@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Vennligst gå til <a href='#XVM_SITE#'>XVM siden</a> og aktiver statistikk i kontrollpanelet.",
     "Destroyed": "Ødelagt",
     "No data": "Ingen data",
-    "Not ready": "Ikke klar",
-    "": "Ny versjon tilgjengelig",
-    "": "angrep",
-    "": "Orrie (EU)",
-    "": "Status: <font color='#00FF00'>Aktiv</font>",
-    "": "Dager igjen:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Timer igjen:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Antall forespørsler:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Ikke klar"
   }
 }

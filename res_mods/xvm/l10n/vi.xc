@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Xin hãy truy cập <a href='#XVM_SITE#'>Web XVM</a> và kích hoạt sử dụng dữ liệu thống kê người chơi.",
     "Destroyed": "Bị phá hủy",
     "No data": "Không có dữ liệu",
-    "Not ready": "Chưa sẵn sàng",
-    "": "Đã có phiên bản mới",
-    "": "bắn",
-    "": "3ar0n",
-    "": "Tình trạng: <font color='#00FF00'>Đã kích hoạt</font>",
-    "": "Số ngày còn:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Số giờ còn:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Số yêu cầu:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Chưa sẵn sàng"
   }
 }

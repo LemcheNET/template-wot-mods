@@ -61,9 +61,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Meletup!",
-    "": "Ada versi terkini",
-    "": "serang",
-    "": "AzlanDyNasTy(SEA)"
+    "blownUp": "Meletup!"
   }
 }

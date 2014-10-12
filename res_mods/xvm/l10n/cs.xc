@@ -9,6 +9,7 @@
     "fire": "požár",
     "ramming": "náraz",
     "world_collision": "pádem",
+    "death_zone": "zakázaná zóna",
     "drowning": "utopení",
     "Hits": "Zásahů",
     "Total": "Celkem",
@@ -110,13 +111,6 @@
     "token/notify_xvm_site": "Prosím jděte na <a href='#XVM_SITE#'>stránky XVM</a> a aktivujte statistiky.",
     "Destroyed": "Zničen",
     "No data": "Chybí data",
-    "Not ready": "Nepřipraven",
-    "": "Nová verze k dispozici",
-    "": "střelba",
-    "": "Crabtr33",
-    "": "Stav: <font color='#00FF00'>Aktivní</font>",
-    "": "Zbývá dnů:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Zbývá hodin:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Počet přístupů:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Nepřipraven"
   }
 }

@@ -79,9 +79,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Plahvatas!",
-    "": "Uus versioon saadaval",
-    "": "mürsk",
-    "": "jyrka98, Mikk Kiilaspää"
+    "blownUp": "Plahvatas!"
   }
 }

@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Bitte besuche die <a href='#XVM_SITE#'>XVM Webseite</a> und aktiviere die Statistiken für deinen Account.",
     "Destroyed": "Zerstört",
     "No data": "Keine Daten",
-    "Not ready": "Nicht bereit",
-    "": "Neue Version verfügbar",
-    "": "Angriff",
-    "": "diclovit",
-    "": "Status: <font color='#00FF00'>Aktiv</font>",
-    "": "Verbleibende Tage:<tab/><font color='#eeeeee'>{0}</font>",
-    "": "Verbleibende Stunden:<tab/><font color='#ffff00'>{0}</font>",
-    "": "Abrufe:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "Nicht bereit"
   }
 }

@@ -111,13 +111,6 @@
     "token/notify_xvm_site": "Por favor visite <a href='#XVM_SITE#'>la página de XVM</a> y active las estadísticas en tu cuenta personal.",
     "Destroyed": "Destruído",
     "No data": "Sin datos",
-    "Not ready": "No preparado",
-    "": "Nueva versión disponible",
-    "": "ataque",
-    "": "RKPhantom",
-    "": "Estado: <font color='#00FF00'>Activo</font>",
-    "": "Tiempo restante:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
-    "": "Tiempo restante:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
-    "": "Cantidad de solicitudes:<tab/><font color='#eeeeee'>{0}</font>"
+    "Not ready": "No preparado"
   }
 }

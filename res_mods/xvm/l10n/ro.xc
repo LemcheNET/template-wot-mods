@@ -47,9 +47,6 @@
     "LT": "TU",
     "TD": "DT",
     "SPG": "Tun autopropulsat",
-    "blownUp": "Explozie!",
-    "": "Versiune nouă disponibilă",
-    "": "atac",
-    "": "XVM Team"
+    "blownUp": "Explozie!"
   }
 }
