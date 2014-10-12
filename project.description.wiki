@@ -1,5 +1,8 @@
+= About =
+Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
+
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.3.2.exe atterdag-wot-mods-0.9.3.2.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.3.3.exe atterdag-wot-mods-0.9.3.3.exe]
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -17,11 +20,11 @@ Some details of my mod pack.
   * [http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/ Damage Panel int centered and vanilla]
   * [http://www.modxvm.com XVM Mod]
   * [http://www.vbaddict.net Active Dossier Uploader]
-  * [http://forum.worldoftanks.com/index.php?/topic/281624-089-multilined-tankcarousel-locastans-mod-for-89-v10/ Multilined TankCarousel by 4lCapwn and CS2001]
+  * [http://forum.worldoftanks.com/index.php?/topic/281624-089-multilined-tankcarousel-locastans-mod-for-89-v10/ Multilined TankCarousel by 4lCapwn and CS2001] (Currently disabled due to testing XVM's carosel)
   * [http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/ Radial Menu]
   * [http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]
   * [http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936 6thsense-audio]
-  * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger] (Loads, but doesn't seem to work)
+  * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger]
   * [http://worldof-tanks.com/0-8-7-working-zoom-in-out-server-reticle/ zoom-mod-128]
   * [http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]
   * [http://forum.worldoftanks.eu/index.php?/topic/353476-0811-botdetect/ Botdetect]
@@ -41,7 +44,7 @@ The changes made to the XVM configuration are:
   * Reformatted player lists to put emphasis on players' WN8 rather than EFF. (EFF is so 2012).
   * Enabled hit log
   * Enabled win chance
-  * Redefined colors such as WR, WN & EFF so that the color codes are based on the thresholds from [http://wiki.wnefficiency.net/pages/Color_Scale wiki.wnefficiency.net Color scale], and WOT-News respectively.
+  * Changed colors such as WR, WN & EFF so that the color codes are based on the thresholds from [http://wotlabs.net/euhttp://wotlabs.net/eu WotLabs Color scale], and WOT-News respectively.
   * When you press ALT you see the name of the player in the color of the players WN8 rating.
   * Platoon mates damage to enemies is colored dark yellow, and when they receive damage it's colored magenta (because real men don't say 'pink'!).
   * Minimap shows a red line with dots where the camera points to.
