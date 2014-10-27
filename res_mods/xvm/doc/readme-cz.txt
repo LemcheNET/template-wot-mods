@@ -61,7 +61,7 @@
 
   4. Je tu možnost používání "nočních" verzí XVM.
     Tyto verze jsou vytvořeny automaticky z aktuálního zdrojového kódu, nemusí být testovány a mohou obsahovat chyby!
-    Stahovat je můžete ze stránek http://wargaming.by-reservation.com/xvm/
+    Stahovat je můžete ze stránek http://nightly.modxvm.com/
 
 -----------------------------------------------------------
 3. Aktualizace
@@ -202,7 +202,7 @@
       {{vehicle-short}} - zkrácený název vozydla
 
     Statistická makra:
-      V souboru s nastavení (\res_mods\xvm\configs\@Default\rating.xc) musí být povoleno "rating/showPlayersStatistics".
+      * Network services on the XVM site (www.modxvm.com) must be activated.
 
       {{avglvl}}      - průměrná úroveň (tier) vozidel
       {{eff}}         - efektivita hráče: http://wot-news.com/index.php/stat/calc/en/

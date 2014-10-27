@@ -80,11 +80,6 @@
     "TD": "ПТ-СаУ",
     "SPG": "СаУ",
     "blownUp": "Взривен!",
-    "token/network_error": "Проблеми с мрежата. XVM статистиките са недостъпни, опитайте отново.",
-    "token/bad_token": "Грешен жетон.\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "Състояние: <font color='#FF0000'>Блокирано</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "Състояние: <font color='#FFFF00'>Неактивно</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/unknown_status": "Незнаен статут",
-    "token/notify_xvm_site": "Моля, отворете <a href='#XVM_SITE#'>страницата на XVM</a> и активирайте статистиките в персоналния ви кабинет."
+    "token/unknown_status": "Незнаен статут"
   }
 }

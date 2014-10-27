@@ -21,10 +21,6 @@
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
   "configVersion": "0.9.3.3",
 
-  // Version of the editor.
-  // Версия редактора.
-  "editorVersion": "0.80",
-
   // Language used in mod
   // "auto" - automatically detect language from game client,
   // or specify file name located in res_mods/xvm/l10n/ (ex: "en")

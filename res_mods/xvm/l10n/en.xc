@@ -3,12 +3,24 @@
  */
 {
   "locale": {
+    // Common
+    "Warning": "Warning",
+    "Error": "Error",
+    "Information": "Information",
+    "OK": "OK",
+    "Cancel": "Cancel",
+    "Save": "Save",
+    "Remove": "Remove",
+    "Yes": "Yes",
+    "No": "No",
+
     // Ping
     "Initialization": "Initialization",
 
     // Win chance
     "Chance error": "Chance error",
     "Chance to win": "Chance to win",
+    "Team strength": "Team strength",
     //"global": "global",
     //"per-vehicle": "per-vehicle",
     "chanceLive": "For alive",
@@ -127,29 +139,36 @@
     "blownUp": "Blown-up!",
 
     // Check version
-    // XVM 5.3.4 #4321
-    "ver/currentVersion": "XVM {0} #{1}",
+    // XVM 5.3.4 (4321)
+    "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Update available:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>no connection to XVM server</font>",
 
     // Token
-    "token/network_error": "Network error. XVM statistics is unavailable, try again later.",
-    "token/bad_token": "Bad token.\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "Status: <font color='#FF0000'>Blocked</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "Status: <font color='#FFFF00'>Inactive</font><br>{{l10n:token/notify_xvm_site}}",
+    "token/services_unavailable": "Network services unavailable.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
+    "token/services_inactive": "Network services inactive.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>more info</font></a>",
+    "token/blocked": "Status: <font color='#FF0000'>Blocked</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>more info</font></a>",
     "token/active": "Status:<tab/><font color='#00FF00'>Active</font>",
     "token/time_left": "Time left:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
     "token/time_left_warn": "Time left:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
     "token/cnt": "Requests count:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Unknown status",
-    "token/notify_xvm_site": "Please go to the <a href='#XVM_SITE#'>XVM site</a> and activate statistics in the personal cabinet.",
+
+    // Carousel
+    "NonElite": "Non elite",
+    "Premium": "Premium",
+    "Normal": "Normal",
+    "MultiXP": "Multi XP",
+    "NoMaster": "No master",
 
     // Comments
+    "Error loading comments": "Error loading comments",
+    "Error saving comments": "Error saving comments",
+    "Comments disabled": "Comments disabled",
+    "Edit data": "Edit data",
+    "Nick": "Nick",
     "Group": "Group",
-    "Add group": "Add group",
-    "Edit group": "Edit group",
-    "Add comment": "Add comment",
-    "Edit comment": "Edit comment",
+    "Comment": "Comment",
 
     //Vehicle status
     "Destroyed": "Destroyed",

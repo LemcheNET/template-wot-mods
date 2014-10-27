@@ -3,12 +3,24 @@
  */
 {
   "locale": {
+    // Common
+    "Warning": "Предупреждение",
+    "Error": "Ошибка",
+    "Information": "Информация",
+    "OK": "OK",
+    "Cancel": "Отмена",
+    "Save": "Сохранить",
+    "Remove": "Удалить",
+    "Yes": "Да",
+    "No": "Нет",
+
     // Ping
     "Initialization": "Инициализация",
 
     // Win chance
     "Chance error": "Ошибка расчета шансов",
     "Chance to win": "Шансы на победу",
+    "Team strength": "Силы команд",
     //"global": "общий",
     //"per-vehicle": "по технике",
     "chanceLive": "Для живых",
@@ -127,29 +139,36 @@
     "blownUp": "Взрыв БК!",
 
     // Check version
-    // XVM 5.3.4 #4321
-    "ver/currentVersion": "XVM {0} #{1}",
+    // XVM 5.3.4 (4321)
+    "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Доступно обновление:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>нет подключения к серверу XVM</font>",
 
     // Token
-    "token/network_error": "Ошибка сети.\nСтатистика XVM недоступна, попробуйте позже.",
-    "token/bad_token": "Неверный токен.\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "Статус: <font color='#FF0000'>Заблокирован</font>\n{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "Статус: <font color='#FFFF00'>Неактивен</font>\n{{l10n:token/notify_xvm_site}}",
+    "token/services_unavailable": "Сетевые сервисы недоступны.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>подробнее</font></a>",
+    "token/services_inactive": "Сетевые сервисы неактивны.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>подробнее</font></a>",
+    "token/blocked": "Статус: <font color='#FF0000'>Заблокирован</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>подробнее</font></a>",
     "token/active": "Статус:<tab/><font color='#00FF00'>Активен</font>",
     "token/time_left": "Осталось:<tab/><font color='#EEEEEE'>{0}д. {1}ч. {2}м.</font>",
     "token/time_left_warn": "Осталось:<tab/><font color='#EEEE00'>{0}д. {1}ч. {2}м.</font>",
     "token/cnt": "Количество запросов:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Неизвестный статус",
-    "token/notify_xvm_site": "Пожалуйста, перейдите на <a href='#XVM_SITE#'>сайт XVM</a> и активируйте статистику в личном кабинете.",
+
+    // Carousel
+    "NonElite": "Не элитный",
+    "Premium": "Премиум",
+    "Normal": "Обычный",
+    "MultiXP": "Мультиопыт",
+    "NoMaster": "Нет мастера",
 
     // Comments
+    "Error loading comments": "Ошибка загрузки комментариев",
+    "Error saving comments": "Ошибка сохранения комментариев",
+    "Comments disabled": "Комментарии отключены",
+    "Edit data": "Изменить данные",
+    "Nick": "Имя",
     "Group": "Группа",
-    "Add group": "Добавить группу",
-    "Edit group": "Изменить группу",
-    "Add comment": "Добавить комментарий",
-    "Edit comment": "Изменить комментарий",
+    "Comment": "Комментарий",
 
     // Vehicle status
     "Destroyed": "Уничтожен",

@@ -56,7 +56,7 @@
     The language code must match the name of the file in the \res_mods\xvm\l10n\ (for example, "en").
 
   4. There is possibility to install nightly builds of XVM.
-    You can download nightly builds on http://wargaming.by-reservation.com/xvm/
+    You can download nightly builds on http://nightly.modxvm.com/
 
 -----------------------------------------------------------
 3. UPDATE
@@ -197,7 +197,9 @@
       {{battletier-min}} - minimal vehicle battle tier
       {{battletier-max}} - maximal vehicle battle tier
 
-    Statistics macros ('rating/showPlayersStatistics' must be enabled):
+    Statistics macros:
+      * Network services on the XVM site (www.modxvm.com) must be activated.
+
       {{avglvl}}      - average level (tier) of tanks
       {{eff}}         - player efficiency: http://wot-news.com/index.php/stat/calc/en/
       {{eff:4}}       - player efficiency aligned from left to 4 chars

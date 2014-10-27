@@ -294,12 +294,11 @@
     "kb": [
       { "value":   1, "color": ${"def.colorRating.very_bad"       } },   //  0 -  1
       { "value":   2, "color": ${"def.colorRating.bad"            } },   //  1 -  2
-      { "value":   5, "color": ${"def.colorRating.average"        } },   //  2 -  5
-      { "value":  10, "color": ${"def.colorRating.good"           } },   //  6 - 10
-      { "value":  15, "color": ${"def.colorRating.very_good"      } },   // 10 - 15
-      { "value":  20, "color": ${"def.colorRating.excellent"      } },   // 15 - 20
-      { "value":  30, "color": ${"def.colorRating.unicum"         } },   // 20 - 30
-      { "value": 100, "color": ${"def.colorRating.super_unicum"   } }    // 30 - *
+      { "value":   6, "color": ${"def.colorRating.poor"           } },   //  2 -  5
+      { "value":  16, "color": ${"def.colorRating.average"        } },   //  6 - 10
+      { "value":  30, "color": ${"def.colorRating.good"           } },   // 10 - 15
+      { "value":  43, "color": ${"def.colorRating.very_good"      } },   // 15 - 20
+      { "value": 999, "color": ${"def.colorRating.unicum"         } }    // 30 - *
     ],
     // Dynamic color by average level of player tanks
     // Динамический цвет по среднему уровню танков игрока
@@ -326,12 +325,12 @@
     // Dynamic color by average damage on current tank
     // Динамический цвет по среднему урону за бой на текущем танке
     "tdb": [
-      { "value": 1,    "color": ${"def.colorRating.bad"           } },
-      { "value": 500,  "color": ${"def.colorRating.poor"          } },
-      { "value": 1000, "color": ${"def.colorRating.average"       } },
-      { "value": 1500, "color": ${"def.colorRating.good"          } },
-      { "value": 2000, "color": ${"def.colorRating.excellent"     } },
-      { "value": 2500, "color": ${"def.colorRating.unicum"        } }
+      { "value":  500, "color": ${"def.colorRating.very_bad"      } },
+      { "value":  750, "color": ${"def.colorRating.bad"           } },
+      { "value": 1000, "color": ${"def.colorRating.normal"        } },
+      { "value": 1800, "color": ${"def.colorRating.good"          } },
+      { "value": 2500, "color": ${"def.colorRating.very_good"     } },
+      { "value": 9999, "color": ${"def.colorRating.unicum"        } }
     ],
     // Dynamic color by average damage efficiency on current tank 
     // Динамический цвет по эффективности урона за бой на текущем танке 

@@ -88,15 +88,10 @@
     "TD": "TD",
     "SPG": "SPG",
     "blownUp": "Munícia!",
-    "token/network_error": "Chyba siete. Štatistiky xvm nie sú k dispozícii, skúste to neskôr.",
-    "token/bad_token": "Zlý token.\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "Status: <font color='#FF0000'>Blokovaný</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "Status: <font color='#FFFF00'>Neaktívny</font><br>{{l10n:token/notify_xvm_site}}",
     "token/active": "Status:<tab/><font color='#00FF00'>Aktívny</font>",
     "token/time_left": "Zostávajúci čas:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
     "token/time_left_warn": "Zostávajúci čas:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
     "token/cnt": "Počet prístupov:<tab/><font color='#EEEEEE'>{0}</font>",
-    "token/unknown_status": "Neznámy status",
-    "token/notify_xvm_site": "Prosím choďte na <a href='#XVM_SITE#'>XVM stránku</a> a aktivujte štatistiky."
+    "token/unknown_status": "Neznámy status"
   }
 }

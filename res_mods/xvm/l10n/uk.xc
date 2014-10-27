@@ -80,11 +80,6 @@
     "TD": "ПТ",
     "SPG": "САУ",
     "blownUp": "Вибух БК!",
-    "token/network_error": "Помилка мережі. Статистика XVM недоступна, спробуйте пізніше.",
-    "token/bad_token": "Невiрний токен.\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "Статус: <font color='#FF0000'>Заблокований</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "Статус: <font color='#FFFF00'>Неактивний</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/unknown_status": "Невідомий статус",
-    "token/notify_xvm_site": "Будь-ласка, перейдіть на <a href='#XVM_SITE#'>сайт XVM</a> та активуйте статистику в особистому кабінеті."
+    "token/unknown_status": "Невідомий статус"
   }
 }

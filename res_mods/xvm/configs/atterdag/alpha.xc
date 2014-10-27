@@ -16,6 +16,19 @@
     "unicum":        "50",  // unicum     / уникально
     "super_unicum":  "40"   // super unicum
   },
+  // WoTLabs ratings
+  "wotlabsAlphaRating": {
+    "beginner":     "100",  // bad
+    "basic":         "90",  // bad
+    "below_average": "80",  // below average
+    "average":       "70",  // average
+    "above_average": "65",  // above average
+    "good":          "60",  // good
+    "very_good":     "55",  // very good
+    "great":         "50",  // great
+    "unicum":        "45",  // unicum
+    "super_unicum":  "40"   // super_unicum
+  },
   // Dynamic transparency by remaining health points.
   // Динамическая прозрачность по оставшемуся запасу прочности.
   "alphaHP": {
@@ -79,15 +92,16 @@
     // Dynamic transparency by WN8 rating
     // Динамическая прозрачность по рейтингу WN8
     "wn8": [
-      { "value": 300,  "alpha": ${"alphaRating.very_bad"     } },
-      { "value": 600,  "alpha": ${"alphaRating.bad"          } },
-      { "value": 900,  "alpha": ${"alphaRating.poor"         } },
-      { "value": 1250, "alpha": ${"alphaRating.average"      } },
-      { "value": 1600, "alpha": ${"alphaRating.good"         } },
-      { "value": 1850, "alpha": ${"alphaRating.very_good"    } },
-      { "value": 2350, "alpha": ${"alphaRating.excellent"    } },
-      { "value": 2900, "alpha": ${"alphaRating.unicum"       } },
-      { "value": 9999, "alpha": ${"alphaRating.super_unicum" } }
+	  { "value":  300, "color": ${"def.wotlabsAlphaRating.beginner"      } },
+	  { "value":  450, "color": ${"def.wotlabsAlphaRating.basic"		 } },
+	  { "value":  650, "color": ${"def.wotlabsAlphaRating.below_average" } },
+	  { "value":  900, "color": ${"def.wotlabsAlphaRating.average"	     } },
+	  { "value": 1200, "color": ${"def.wotlabsAlphaRating.above_average" } },
+	  { "value": 1600, "color": ${"def.wotlabsAlphaRating.good"			 } },
+	  { "value": 2000, "color": ${"def.wotlabsAlphaRating.very_good"	 } },
+	  { "value": 2450, "color": ${"def.wotlabsAlphaRating.great"		 } },
+	  { "value": 2900, "color": ${"def.wotlabsAlphaRating.unicum"		 } },
+	  { "value": 9999, "color": ${"def.wotlabsAlphaRating.super_unicum"	 } } 
     ],
     // Dynamic transparency by WG rating
     // Динамическая прозрачность по рейтингу WG
@@ -113,23 +127,25 @@
     // Dynamic transparency by win percent
     // Динамическая прозрачность по проценту побед
     "rating": [
-      { "value": 46,  "alpha": ${"alphaRating.bad"          } },
-      { "value": 48,  "alpha": ${"alphaRating.poor"         } },
-      { "value": 51,  "alpha": ${"alphaRating.average"      } },
-      { "value": 54,  "alpha": ${"alphaRating.good"         } },
-      { "value": 60,  "alpha": ${"alphaRating.excellent"    } },
-      { "value": 70,  "alpha": ${"alphaRating.unicum"       } },
-      { "value": 101, "alpha": ${"alphaRating.super_unicum" } }
-
+	  { "value":  46,  "color": ${"def.wotlabsAlphaRating.beginner"	     } },
+	  { "value":  47,  "color": ${"def.wotlabsAlphaRating.basic"		 } },
+	  { "value":  48,  "color": ${"def.wotlabsAlphaRating.below_average" } },
+	  { "value":  50,  "color": ${"def.wotlabsAlphaRating.average"	     } },
+	  { "value":  52,  "color": ${"def.wotlabsAlphaRating.above_average" } },
+	  { "value":  54,  "color": ${"def.wotlabsAlphaRating.good"			 } },
+	  { "value":  56,  "color": ${"def.wotlabsAlphaRating.very_good"	 } },
+	  { "value":  60,  "color": ${"def.wotlabsAlphaRating.great"		 } },
+	  { "value":  65,  "color": ${"def.wotlabsAlphaRating.unicum"	     } },
+	  { "value": 101,  "color": ${"def.wotlabsAlphaRating.super_unicum"  } } 
     ],
     // Dynamic transparency by kilo-battles
     // Динамическая прозрачность по количеству кило-боев
     "kb": [
       { "value": 2,   "alpha": ${"alphaRating.bad"       } },
-      { "value": 5,   "alpha": ${"alphaRating.poor"      } },
-      { "value": 9,   "alpha": ${"alphaRating.average"   } },
-      { "value": 14,  "alpha": ${"alphaRating.good"      } },
-      { "value": 20,  "alpha": ${"alphaRating.very_good" } },
+      { "value": 6,   "alpha": ${"alphaRating.poor"      } },
+      { "value": 16,   "alpha": ${"alphaRating.average"   } },
+      { "value": 30,  "alpha": ${"alphaRating.good"      } },
+      { "value": 43,  "alpha": ${"alphaRating.very_good" } },
       { "value": 999, "alpha": ${"alphaRating.unicum"    } }
     ],
     // Dynamic transparency by average level of player tanks
@@ -157,12 +173,12 @@
     // Dynamic transparency by average damage on current tank
     // Динамическая прозрачность по среднему урону за бой на текущем танке
     "tdb": [
-      { "value": 1,    "color": ${"alphaRating.bad"       } },
-      { "value": 500,  "color": ${"alphaRating.poor"      } },
+      { "value":  500, "color": ${"alphaRating.bad"       } },
+      { "value":  750, "color": ${"alphaRating.poor"      } },
       { "value": 1000, "color": ${"alphaRating.average"   } },
-      { "value": 1500, "color": ${"alphaRating.good"      } },
-      { "value": 2000, "color": ${"alphaRating.excellent" } },
-      { "value": 2500, "color": ${"alphaRating.unicum"    } }
+      { "value": 1800, "color": ${"alphaRating.good"      } },
+      { "value": 2500, "color": ${"alphaRating.excellent" } },
+      { "value": 9999, "color": ${"alphaRating.unicum"    } }
     ],
     // Dynamic transparency by average damage efficiency on current tank
     // Динамическая прозрачность по эффективности урона за бой на текущем танке

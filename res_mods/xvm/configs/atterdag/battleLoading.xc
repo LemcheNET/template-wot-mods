@@ -8,9 +8,6 @@
     // Формат часов на экране загрузки боя.
     // http://php.net/date
     "clockFormat": "H:i:s",
-    // true - Enable display of "chance to win". Read more: http://www.koreanrandom.com/forum/topic/1663-/
-    // true - включить отображение шансов на победу. Прочитать подробней: http://www.koreanrandom.com/forum/topic/1663-/
-    "showChances": false,
     // true - Enable display of battle tier.
     // true - включить отображение уровня боя.
     "showBattleTier": true,
@@ -45,6 +42,9 @@
       // Прозрачность иконки игрока/клана.
       "alpha": 90
     },
+    // false - disable highlight of icons during battle start depends on ready state.
+    // false - отключить затемнение иконки не загрузившегося игрока.
+    "darkenNotReadyIcon": true,
     // Display format for the left panel (macros allowed, see readme-en.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
     "formatLeftNick": "{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>",

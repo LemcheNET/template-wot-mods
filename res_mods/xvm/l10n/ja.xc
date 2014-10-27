@@ -71,10 +71,6 @@
     "TD": "駆逐戦車",
     "SPG": "自走砲",
     "blownUp": "爆散!",
-    "token/network_error": "ネットワークエラー　XVM統計情報は有効になりませんでした。再度試行してください。",
-    "token/bad_token": "不正なトークン\n{{l10n:token/notify_xvm_site}}",
-    "token/blocked": "ステータス: <font color='#FF0000'>ブロック</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/inactive": "ステータス: <font color='#FFFF00'>Inactive</font><br>{{l10n:token/notify_xvm_site}}",
     "token/unknown_status": "未知のステータス"
   }
 }
