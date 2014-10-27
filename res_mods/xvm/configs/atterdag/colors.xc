@@ -327,9 +327,9 @@
     "tdb": [
       { "value":  500, "color": ${"def.colorRating.very_bad"      } },
       { "value":  750, "color": ${"def.colorRating.bad"           } },
-      { "value": 1000, "color": ${"def.colorRating.normal"        } },
+      { "value": 1000, "color": ${"def.colorRating.average"       } },
       { "value": 1800, "color": ${"def.colorRating.good"          } },
-      { "value": 2500, "color": ${"def.colorRating.very_good"     } },
+      { "value": 2500, "color": ${"def.colorRating.excellent"     } },
       { "value": 9999, "color": ${"def.colorRating.unicum"        } }
     ],
     // Dynamic color by average damage efficiency on current tank 
