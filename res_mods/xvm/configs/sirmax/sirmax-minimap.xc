@@ -1,7 +1,8 @@
 {
   "minimap": {
     "enabled": true,
-    //"iconScale": 2,
+    "iconScale": 1.5,
+    "zoom": { "centered": false },
     "circles": {
         "view": [
             { "enabled": true, "state": 1, "distance": 50, "scale": 1, "thickness": 0.5, "alpha": 70, "color": "0xFFFFFF" },
@@ -49,7 +50,7 @@
   },
   "minimapAlt": {
     "$ref": { "path": "minimap" },
-    "enabled": false,
+    "enabled": true,
     "mapBackgroundImageAlpha": 50,
     "selfIconAlpha": 50,
     "cameraAlpha": 50,

@@ -119,7 +119,7 @@
     "NonElite": "Ei eliittejä",
     "Premium": "Premium",
     "Normal": "Normaalit",
-    "MultiXP": "X * XP",
+    "MultiXP": "x * XP",
     "NoMaster": "Ei tankkiässiä",
     "Error loading comments": "Virhe ladattaessa kommentteja",
     "Error saving comments": "Virhe tallennettaessa kommentteja",

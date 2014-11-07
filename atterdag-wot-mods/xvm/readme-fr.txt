@@ -64,7 +64,7 @@
 
   4. Vous pouvez installer des versions journalières de développement d'XVM.
     Vous pouvez télécharger ces versions spéciales ici :
-      http://wargaming.by-reservation.com/xvm/ (en anglais)
+      http://nightly.modxvm.com/ (en anglais)
 
 -----------------------------------------------------------
 3. MISE A JOUR
@@ -202,7 +202,9 @@
 	  {{vehiclename}}   - renvoie le nom du véhicule dans le système - usa-M24_Chaffee
 	  {{vehicle-short}} - nom du tank raccourci
 
-    Macros statistiques ('rating/showPlayersStatistics' doit être activé) :
+    Macros statistiques:
+      * Network services on the XVM site (www.modxvm.com) must be activated.
+
       {{avglvl}}      - tier moyen des tanks joués
       {{eff}}         - ER du joueur : http://wot-news.com/index.php/stat/calc/en/ 
       {{eff:4}}       - ER du joueur aligné à gauche sur 4 caractères

@@ -23,7 +23,7 @@
     "Hits": "Impactos",
     "Total": "Total",
     "Last": "Último",
-    "hpLeftTitle": "Puntos de impacto restante:",
+    "hpLeftTitle": "Puntos de impacto restantes:",
     "enemyBaseCapture": "¡Capturando base enemiga!",
     "enemyBaseCaptured": "¡Base enemiga capturada!",
     "allyBaseCapture": "¡Están capturando la base aliada!",

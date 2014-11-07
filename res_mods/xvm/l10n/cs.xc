@@ -108,6 +108,7 @@
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Nová verze:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>nelze se spojit se serverem XVM</font>",
+    "token/blocked": "Stav: <font color='#FF0000'>Blokováno</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>více informací</font></a>",
     "token/active": "Stav:<tab/><font color='#00FF00'>Aktivní</font>",
     "token/time_left": "Zbývající čas:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
     "token/time_left_warn": "Zbývající čas:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
@@ -116,7 +117,10 @@
     "Error loading comments": "Chyba při načítání komentářů",
     "Error saving comments": "Chyba při ukládání komentářů",
     "Comments disabled": "Komentáře vypnuty",
+    "Edit data": "Upravit data",
+    "Nick": "Přezdívka",
     "Group": "Skupina",
+    "Comment": "Komentář",
     "Destroyed": "Zničen",
     "No data": "Chybí data",
     "Not ready": "Nepřipraven"
