@@ -1,0 +1,14 @@
+/*
+	Приведённая броня танка
+	Redused tank armor
+*/
+{
+	
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	// Тестовый режим подмены цвета маркера.
+	// Test mode spoofing marker color.
+	"testMode": false
+}

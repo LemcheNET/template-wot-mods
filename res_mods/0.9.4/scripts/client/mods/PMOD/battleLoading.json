@@ -1,0 +1,16 @@
+/*
+	Информация об вашем респауне на экране загрузки.
+	Information about your spawn on the loading screen.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	// Текстовые подстановки с информацией о местоположении вашей базы.
+	// Text substitution with information about the location of your base.
+	"baseTop": "База с верхней стороны.",
+	"baseBottom": "База с нижней стороны.",
+	"baseLeft": "База с левой стороны.",
+	"baseRight": "База с правой стороны."
+}

@@ -1,0 +1,7 @@
+"battleChat": {
+		"resultInformer": {
+			"resultWin": "<i><font face='Impact' color='#FFFFFF'>Танк:</font> <font face='Impact' color='#0082E0'>{{VehicleLocalNameShort}}</font> <font face='Impact' color='#FFFFFF'>Карта:</font> <font face='Impact' color='#0082E0'>{{Map}}</font>  <font face='Impact' color='#00FF00'>ПОБЕДА !!!</font></i>",
+			"resultDraw": "<i><font face='Impact' color='#FFFFFF'>Танк:</font> <font face='Impact' color='#0082E0'>{{VehicleLocalNameShort}}</font> <font face='Impact' color='#FFFFFF'>Карта:</font> <font face='Impact' color='#0082E0'>{{Map}}</font>  <font face='Impact' color='#FFA500'>НИЧЬЯ !!!</font></i>",
+			"resultDefeat": "<i><font face='Impact' color='#FFFFFF'>Танк:</font> <font face='Impact' color='#0082E0'>{{VehicleLocalNameShort}}</font> <font face='Impact' color='#FFFFFF'>Карта:</font> <font face='Impact' color='#0082E0'>{{Map}}</font>  <font face='Impact' color='#FF0000'>ПОРАЖЕНИЕ !!!</font></i>"
+		}
+	}
