@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.3.4.exe atterdag-wot-mods-0.9.3.4.exe] *UNINSTALL PREVIOUS VERSION BEFORE INSTALLING THIS*
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.4.0.exe atterdag-wot-mods-0.9.4.0.exe] *UNINSTALL PREVIOUS VERSION BEFORE INSTALLING THIS*
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -19,19 +19,18 @@ Some details of my mod pack.
   * [http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/ Color Messages]
   * [http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/ Damage Panel int centered and vanilla]
   * [http://www.modxvm.com XVM Mod]
-  * [http://www.vbaddict.net Active Dossier Uploader]
+  * [http://www.vbaddict.net Active Dossier Uploader] (Missing ATS, and BRR as they are not yet working with 0.9.4)
   * [http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/ Radial Menu]
-  * [http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]
+  * ~~[http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]~~ (Not yet working with 0.9.4)
   * [http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936 6thsense-audio]
-  * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger]
-  * [http://worldof-tanks.com/0-8-7-working-zoom-in-out-server-reticle/ zoom-mod-128]
-  * [http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]
-  * [http://forum.worldoftanks.eu/index.php?/topic/353476-0811-botdetect/ Botdetect]
+  * ~~[http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger]~~ (Not yet working with 0.9.4)
+  * ~~[http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]~~ (Not yet working with 0.9.4)
   * [http://forum.worldoftanks.eu/index.php?/topic/377290-090-permanent-channels Permanent channels]
-  * [http://forum.worldoftanks.ru/index.php?/topic/1190058-09-autoequip AutoEquip]
+  * [http://blogtanker.ru/autoequip-dlya-wot.html AutoEquip]
   * [http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html Circle15mod]
-  * [http://wotskins.ucoz.ru/news/zoom_mod_0_8_0_arkadnyj_i_art_rezhimy/2014-08-03-6412 Permanent Serverside Reticle mod]
   * Serverside Reticle mod - gun_marker_blue_ultraSlimWhite.dds
+  * [http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/ Team HP Pools]
+  * [http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/ PMOD]
 
 = Mods configuration =
 I've changed a lot of the default configurations of the various mods, so this is sort of an overview of those changes.
