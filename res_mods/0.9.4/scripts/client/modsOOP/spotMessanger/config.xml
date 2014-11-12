@@ -5,12 +5,12 @@
 <config.xml>
   
   <!-- Activation options -->
-  <ActiveByDefault>true</ActiveByDefault> <!-- Activate Mod at the beginning of the battle - true/false. -->
+  <ActiveByDefault>false</ActiveByDefault> <!-- Activate Mod at the beginning of the battle - true/false. -->
   <ActivationHotkey>KEY_F11</ActivationHotkey> <!-- Set the hotkey to enable/disable the Mod during battle. -->
     
   <!-- Message options -->
-  <DoPing>false</DoPing> <!-- Ping the minimap square you are in when the perk activates - true/false. -->
-  <CallHelp>false</CallHelp> <!-- Send "Help!" quick command (F7) when the perk activates - true/false. -->
+  <DoPing>false</DoPing> <!-- Ping the minimap square you are in when the perk activates - true/talse. -->
+  <CallHelp>true</CallHelp> <!-- Send "Help!" quick command (F7) when the perk activates - true/false. -->
   <ImSpotted>An enemy has spotted me at {pos}.</ImSpotted> <!-- Message that will be sent to chat when the perk activates. Accepts the macro {pos} to include minimap location (i.e. "D7"). Leave blank or "None" for no message. -->
   <DisableSystemMsg>Sixth Sense Message disabled</DisableSystemMsg> <!-- System message you see when you disable the mod via hotkey. -->
   <EnableSystemMsg>Sixth Sense Message enabled</EnableSystemMsg> <!-- System message you see when you enable the mod via hotkey. -->
@@ -18,7 +18,7 @@
   <!-- Special options -->
   <TryPlatoonMes>true</TryPlatoonMes> <!-- Try to send the message to platoon chat. If a platoon is found message will go to platoon chat instead team chat. If no platoon is found message will be send to the team if allowed via filters. -->
   
-  <MaxTeamAmountOnRandom>0</MaxTeamAmountOnRandom> <!-- (also for platoon chat)Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
+  <MaxTeamAmountOnRandom>6</MaxTeamAmountOnRandom> <!-- (also for platoon chat)Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnTraining>0</MaxTeamAmountOnTraining> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCompany>0</MaxTeamAmountOnCompany> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCyberSport>0</MaxTeamAmountOnCyberSport> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
@@ -27,13 +27,13 @@
   <MaxTeamAmountOnClanWar>0</MaxTeamAmountOnClanWar> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
        
   <!-- Match filters -->
-  <AvoidRandomMes>true</AvoidRandomMes> <!-- Avoid send message in random battles - true/false. !! Use with caution, you might get reported for spamming, especially when combined with ping or help !!-->
-  <AvoidTrainingMes>false</AvoidTrainingMes> <!-- Avoid send message in training battles - true/false. -->
-  <AvoidCompanyMes>false</AvoidCompanyMes> <!-- Avoid send message in company battles - true/false. -->
-  <AvoidCyberSportMes>false</AvoidCyberSportMes> <!-- Avoid send message in team battles - true/false. -->
-  <AvoidHistoricalMes>false</AvoidHistoricalMes> <!-- Avoid send message in historical battles - true/false. -->
-  <AvoidFortificationsMes>false</AvoidFortificationsMes> <!-- Avoid send message in fortifications battles - true/false. -->
-  <AvoidClanWarMes>false</AvoidClanWarMes> <!-- Avoid send message in special (clan war) battles - true/false. -->
+  <AvoidRandomMes>true</AvoidRandomMes> <!-- Avoid send message in random battles - True/False. !! Use with caution, you might get reported for spamming, especially when combined with ping or help !!-->
+  <AvoidTrainingMes>false</AvoidTrainingMes> <!-- Avoid send message in training battles - True/False. -->
+  <AvoidCompanyMes>false</AvoidCompanyMes> <!-- Avoid send message in company battles - True/False. -->
+  <AvoidCyberSportMes>false</AvoidCyberSportMes> <!-- Avoid send message in team battles - True/False. -->
+  <AvoidHistoricalMes>false</AvoidHistoricalMes> <!-- Avoid send message in historical battles - True/False. -->
+  <AvoidFortificationsMes>false</AvoidFortificationsMes> <!-- Avoid send message in fortifications battles - True/False. -->
+  <AvoidClanWarMes>false</AvoidClanWarMes> <!-- Avoid send message in special (clan war) battles - True/False. -->
     
   <!-- Tank filters -->
   <OnTD>true</OnTD> <!-- Send message when driving a tank destroyer - true/false. -->
