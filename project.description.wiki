@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.4.2.exe atterdag-wot-mods-0.9.4.2.exe] *UNINSTALL PREVIOUS VERSION BEFORE INSTALLING THIS*
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.4.3.exe atterdag-wot-mods-0.9.4.3.exe] *UNINSTALL PREVIOUS VERSION BEFORE INSTALLING THIS*
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -19,12 +19,12 @@ Some details of my mod pack.
   * [http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/ Color Messages]
   * [http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/ Damage Panel int centered and vanilla]
   * [http://www.modxvm.com XVM Mod]
-  * [http://www.vbaddict.net Active Dossier Uploader] (Missing ATS, and BRR as they are not yet working with 0.9.4)
+  * [http://www.vbaddict.net Active Dossier Uploader]
   * [http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/ Radial Menu]
-  * ~~[http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]~~ (Not yet working with 0.9.4)
+  * [http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]
   * [http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936 6thsense-audio]
   * [http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/ SpotMessanger]
-  * ~~[http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]~~ (Not yet working with 0.9.4)
+  * [http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/ Received Damage Announcer]
   * ~~[http://forum.worldoftanks.eu/index.php?/topic/377290-090-permanent-channels Permanent channels]~~ (Not working with 0.9.4)
   * [http://blogtanker.ru/autoequip-dlya-wot.html AutoEquip]
   * [http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html Circle15mod]
