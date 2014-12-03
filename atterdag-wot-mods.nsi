@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 4
-!define VERSIONBUILD 3
+!define VERSIONBUILD 4
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -124,7 +124,7 @@ section "uninstall"
 	Delete $INSTDIR\ActiveDossierUploader.exe
 	
 	# Generate a list in file_and_directory_list.txt by using generate-file-list.sh, and copy the content into this file below.
-    Delete "$INSTDIR\res\audio\xvm.fsb"
+     Delete "$INSTDIR\res\audio\xvm.fsb"
     Delete "$INSTDIR\res\audio\xvm.fev"
     RMDir "$INSTDIR\res\audio"
     RMDir "$INSTDIR\res"
@@ -1026,6 +1026,23 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\modsOOP\spotMessanger\Keys.txt"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\modsOOP\spotMessanger\config.xml"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\__init__.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\__init__.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\tokens.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\serializer.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\scanner.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\resolver.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\representer.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\reader.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\parser.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\nodes.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\loader.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\events.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\error.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\emitter.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\dumper.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\cyaml.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\constructor.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml\composer.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\TeamHPPools.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\stat_config.json"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\stat.pyc"
@@ -1682,6 +1699,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\Circle15.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\Circle15.cfg"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\BRR.pyc"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\battle_assistant.txt"
+    Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\battle_assistant.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\AutoEquip.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\mods\ATS.pyc"
     Delete "$INSTDIR\res_mods\0.9.4\scripts\client\messenger\gui\messengerDispatcher.pyc"
@@ -1854,6 +1873,7 @@ section "uninstall"
     RMDir "$INSTDIR\res_mods\ModSettings"
     RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\modsOOP\spotMessanger"
     RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\modsOOP"
+    RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\mods\yaml"
     RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\mods\SessionStat\XpIcon"
     RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\mods\SessionStat\ranks"
     RMDir "$INSTDIR\res_mods\0.9.4\scripts\client\mods\SessionStat"

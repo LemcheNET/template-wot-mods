@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.4.3.exe atterdag-wot-mods-0.9.4.3.exe] *UNINSTALL PREVIOUS VERSION BEFORE INSTALLING THIS*
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.4.4.exe atterdag-wot-mods-0.9.4.4.exe]
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -31,6 +31,7 @@ Some details of my mod pack.
   * Serverside Reticle mod - gun_marker_blue_ultraSlimWhite.dds
   * [http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/ Team HP Pools]
   * [http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/ PMOD]
+  * [http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/ Battle Assistant]
 
 = Mods configuration =
 I've changed a lot of the default configurations of the various mods, so this is sort of an overview of those changes.
@@ -57,7 +58,7 @@ The changes made to the XVM configuration are:
 The SpotMessanger mod is disabled by default, so that you don't spam the chat in random battles. You enable it by pressing <F11>. (Which is helpful at CW)
 
 == Session Stats ==
-The colors (WR, WN8 etc) are based on [http://wiki.wnefficiency.net/pages/Color_Scale wiki.wnefficiency.net Color scale]. 
+The colors (WR, WN8 etc) are based on [http://wotlabs.net/euhttp://wotlabs.net/eu WotLabs Color scale]. 
 Removed all WN6, and WN7 ratings. Only WN8 is valid these days
 Removed ratings from daily session stat, and only left ratings in the global stat.
 Configured global stats to be reset every day at 6 AM. (In effect turning ratings in global stat into daily stats. If you want to see global stats goto WotLabs ...)
