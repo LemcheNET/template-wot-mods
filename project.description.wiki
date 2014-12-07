@@ -58,9 +58,9 @@ The changes made to the XVM configuration are:
 The SpotMessanger mod is disabled by default, so that you don't spam the chat in random battles. You enable it by pressing <F11>. (Which is helpful at CW)
 
 == Session Stats ==
-The colors (WR, WN8 etc) are based on [http://wotlabs.net/eu WotLabs Color scale]. 
-Removed all WN6, and WN7 ratings. Only WN8 is valid these days
-Configured global stats to be reset every day at 6 AM. (In effect turning ratings in global stat into daily stats. If you want to see global stats goto WotLabs ...)
+  * The colors (WR, WN8 etc) are based on [http://wotlabs.net/eu WotLabs Color scale]. 
+  * Removed all WN6, and WN7 ratings. Only WN8 is valid these days
+  * Configured global stats to be reset every day at 6 AM. (In effect turning ratings in global stat into daily stats. If you want to see global stats goto WotLabs ...)
 
 == ADU (ActiveDossierUploader) ==
 The installer will add a link to ADU to your Start Menu\Programs\Startup folder.
