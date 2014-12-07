@@ -51,9 +51,9 @@
     "textResetButton": "Reset",
     "dailyAutoReset": true,
     "dailyAutoResetHour": 6,
-    "battleEndedMessageDefeat": "<font size='18' color='#FE0E00'>Defeat.</font>\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
-    "battleEndedMessageDraw": "<font size='18' color='#FE7903'>Draw.\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
-    "battleEndedMessageWin": "<font size='18' color='#60FF00'>Victory!\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "battleEndedMessageDefeat": "<font size='18' color='#FE0E00'>Defeat.</font>\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "battleEndedMessageDraw": "<font size='18' color='#FE7903'>Draw.\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "battleEndedMessageWin": "<font size='18' color='#60FF00'>Victory!\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
 	"battleAchieves": "<img src='img://{{achieveicon}}' width='36' height='38' align='baseline' vspace='-4'> ",
     "bgIcon": "",
     "template": [
