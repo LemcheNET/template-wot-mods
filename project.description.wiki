@@ -43,7 +43,7 @@ The changes made to the XVM configuration are:
   * Reformatted player lists to put emphasis on players' WN8 rather than EFF. (EFF is so 2012).
   * Enabled hit log
   * Enabled win chance
-  * Changed colors such as WR, WN & EFF so that the color codes are based on the thresholds from [http://wotlabs.net/euhttp://wotlabs.net/eu WotLabs Color scale], and WOT-News respectively.
+  * Changed colors such as WR, WN & EFF so that the color codes are based on the thresholds from [http://wotlabs.net/eu WotLabs Color scale], and WOT-News respectively.
   * When you press ALT you see the name of the player in the color of the players WN8 rating.
   * Platoon mates damage to enemies is colored dark yellow, and when they receive damage it's colored magenta (because real men don't say 'pink'!).
   * Minimap shows a red line with dots where the camera points to.
@@ -58,9 +58,8 @@ The changes made to the XVM configuration are:
 The SpotMessanger mod is disabled by default, so that you don't spam the chat in random battles. You enable it by pressing <F11>. (Which is helpful at CW)
 
 == Session Stats ==
-The colors (WR, WN8 etc) are based on [http://wotlabs.net/euhttp://wotlabs.net/eu WotLabs Color scale]. 
+The colors (WR, WN8 etc) are based on [http://wotlabs.net/eu WotLabs Color scale]. 
 Removed all WN6, and WN7 ratings. Only WN8 is valid these days
-Removed ratings from daily session stat, and only left ratings in the global stat.
 Configured global stats to be reset every day at 6 AM. (In effect turning ratings in global stat into daily stats. If you want to see global stats goto WotLabs ...)
 
 == ADU (ActiveDossierUploader) ==
