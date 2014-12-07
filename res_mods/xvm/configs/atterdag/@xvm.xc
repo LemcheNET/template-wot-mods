@@ -19,7 +19,11 @@
 {
   // Version of the config. Do not remove or change it unnecessarily.
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
-  "configVersion": "0.9.4.0",
+  "configVersion": "0.9.4.5",
+
+  // automatically reload config. Can reduce performance.
+  // автоматически перезагружать конфиг. Может понизить производительность.
+  "autoReloadConfig": true,
 
   // Language used in mod
   // "auto" - automatically detect language from game client,
@@ -54,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "10.12.2014",
+    "date": "2014-12-07",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
@@ -62,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "5.4.1.2"
+    "modMinVersion": "5.4.1.5"
   },
 
   // Parameters for login screen.
