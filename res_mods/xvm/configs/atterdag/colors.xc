@@ -395,9 +395,9 @@
     "hitsRatio": [
       { "value": 47.5,  "color": ${"def.colorRating.very_bad" } },
       { "value": 60.5,  "color": ${"def.colorRating.bad"      } },
-      { "value": 68.5,  "color": ${"def.colorRating.normal"   } },
+      { "value": 68.5,  "color": ${"def.colorRating.average"   } },
       { "value": 74.5,  "color": ${"def.colorRating.good"     } },
-      { "value": 78.5,  "color": ${"def.colorRating.very_good"} },
+      { "value": 78.5,  "color": ${"def.colorRating.excellent"} },
       { "value": 101,   "color": ${"def.colorRating.unicum"   } }
     ]
   }
