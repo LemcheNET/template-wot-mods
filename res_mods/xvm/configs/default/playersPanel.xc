@@ -37,42 +37,6 @@
       "h": 16,
       "alpha": 90
     },
-    // Enemy spotted status marker at right side panel.
-    // This feature depends on enabled XVM minimap mod
-    // Маркер статуса засвета в правой боковой панели списка игроков.
-    // Фича зависит от включенного XVM мода миникарты
-    "enemySpottedMarker": {
-      // false - Disable.
-      // false - отключить.
-      "enabled": true,
-      // Offset relative to level icon (by X, Y).
-      // Смещение относительно иконки уровня танка (по X, Y).
-      "Xoffset": 15,
-      "Yoffset": 0,
-      // Формат.
-      "format": {
-        // Never seen this enemy.
-        // Этот враг никогда не светился.
-        "neverSeen": "",
-        // This enemy was seen at least once.
-        // Этот враг светился хотя бы один раз и отмечен на миникарте как потерянный.
-        "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
-        // Enemy currently revealed at minimap.
-        // Виден на миникарте прямо сейчас.
-        "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
-        // Dead enemy.
-        // Уничтоженный враг.
-        "dead": "",
-        // Artillery specific values.
-        // Специфичные значения для артиллерии.
-        "artillery": {
-          "neverSeen": "",
-          "lost": "<font face='$FieldFont' size='24' color='#999999'>*</font>",
-          "revealed": "<font face='$FieldFont' size='24' color='#FFFFFF'>*</font>",
-          "dead": ""
-        }
-      }
-    },
     // Options for the "none" panels - empty panels.
     // Режим ушей "none" - пустые уши.
     "none": {
@@ -116,6 +80,7 @@
           //   "y" - y position (macros allowed)
           //   "w" - width (macros allowed)
           //   "h" - height (macros allowed)
+          //   "bindToIcon" - if enabled, x position is binded to vehicle icon (default false)
           //   "alpha" - transparency in percents (0..100) (macros allowed)
           //   "rotation" - rotation in degrees (0..360) (macros allowed)
           //   "align" - horizontal alignment ("left", "center", "right")
@@ -175,7 +140,9 @@
       "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsRight": []
+      "extraFieldsRight": [
+        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+      ]
     },
     // Options for the "medium" panels - the first of the medium panels.
     // Режим ушей "medium" - первые средние уши в игре.
@@ -187,10 +154,10 @@
       "width": 46,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
+      "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font> <font alpha='#A0'>{{clan}}</font>",
       // Display format for the right panel (macros allowed, see readme-en.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatRight": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
+      "formatRight": "<font alpha='#A0'>{{clan}}</font> <font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font>",
       // Display format for frags (macros allowed, see readme-en.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. readme-ru.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -202,7 +169,9 @@
       "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsRight": []
+      "extraFieldsRight": [
+        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+      ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
     // Режим ушей "medium2" - вторые средние уши в игре.
@@ -229,7 +198,9 @@
       "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsRight": []
+      "extraFieldsRight": [
+        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+      ]
     },
     // Options for the "large" panels - the widest panels.
     // Режим ушей "large" - широкие уши в игре.
@@ -238,11 +209,11 @@
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 170.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 170.
-      "width": 170,
+      "width": 100,
       // Display format for player nickname (macros allowed, see readme-en.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. readme-ru.txt).
-      "nickFormatLeft": "<font face='Lucida Console' size='12' color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{xwn8}}</font> {{nick}}",
-      "nickFormatRight": "{{nick}} <font face='Lucida Console' size='12' color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{xwn8}}</font>",
+      "nickFormatLeft": "<font face='Lucida Console' size='12' color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{xwn8}}</font> {{name%.15s~..}} <font alpha='#A0'>{{clan}}</font>",
+      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font> {{name%.15s~..}} <font face='Lucida Console' size='12' color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{xwn8}}</font>",
       // Display format for vehicle name (macros allowed, see readme-en.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. readme-ru.txt).
       "vehicleFormatLeft": "{{vehicle}}",
@@ -258,7 +229,9 @@
       "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsRight": []
+      "extraFieldsRight": [
+        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+      ]
     }
   }
 }
