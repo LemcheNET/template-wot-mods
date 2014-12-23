@@ -14,14 +14,14 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 5
-!define VERSIONBUILD 1
+!define VERSIONBUILD 2
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
 !define UPDATEURL "https://code.google.com/p/atterdag-wot-mods/" # "Product Updates" link
 !define ABOUTURL "https://code.google.com/p/atterdag-wot-mods/" # "Publisher" link
 # This is the size (in kB) of all the files copied into "Program Files"
-!define INSTALLSIZE 21311
+!define INSTALLSIZE 23289
 
 RequestExecutionLevel admin ;Require admin rights on NT6+ (When UAC is turned on)
  
@@ -1406,6 +1406,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\yaml\composer.pyc"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\stat_config.json"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\stat.pyc"
+    Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\sights.xml"
+    Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\sights.pyc"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\SessionStatistic.pyc"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\SessionStatConfig.cfg"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\SessionStat\XpIcon\#FFA462.png"
@@ -1486,6 +1488,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\MultiHitLog\BackGround2.dds"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\MultiHitLog\BackGround10.dds"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\MultiHitLog\BackGround1.dds"
+    Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\GunConstraints.xml"
+    Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\GunConstraints.pyc"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\expected_tank_values.json"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\Circle15.pyc"
     Delete "$INSTDIR\res_mods\0.9.5\scripts\client\mods\Circle15.cfg"
@@ -1589,7 +1593,15 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\StatisticForm.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\PlayersPanel.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\Minimap.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\GunConstraints.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\DM\DM_ugn.xml"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\DamagePanel.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_strategic.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_sniper.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_panel_strategic.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_panel_sniper.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_panel_postmortem.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\crosshair_panel_arcade.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\CDPData.xml"
     Delete "$INSTDIR\res_mods\0.9.5\gui\scaleform\battle.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\maps\icons\library\VeryGood.png"
@@ -1617,6 +1629,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.5\gui\gui_sounds.xml"
     Delete "$INSTDIR\res_mods\0.9.5\gui\flash\waiting.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\flash\logos.swf"
+    Delete "$INSTDIR\res_mods\0.9.5\gui\flash\crosshairSniper.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\flash\battle.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\flash\Application.swf"
     Delete "$INSTDIR\res_mods\0.9.5\gui\avatar_input_handler.xml"
@@ -1686,6 +1699,7 @@ section "uninstall"
     RMDir "$INSTDIR\res_mods\0.9.5\scripts\client"
     RMDir "$INSTDIR\res_mods\0.9.5\scripts"
     RMDir "$INSTDIR\res_mods\0.9.5\objects"
+    RMDir "$INSTDIR\res_mods\0.9.5\gui\scaleform\DM"
     RMDir "$INSTDIR\res_mods\0.9.5\gui\scaleform"
     RMDir "$INSTDIR\res_mods\0.9.5\gui\maps\icons\library\message"
     RMDir "$INSTDIR\res_mods\0.9.5\gui\maps\icons\library"

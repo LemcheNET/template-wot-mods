@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.5.1.exe atterdag-wot-mods-0.9.5.1.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.5.2.exe atterdag-wot-mods-0.9.5.2.exe]
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -14,12 +14,12 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 Some details of my mod pack.
 
 == The mods included are as following: ==
-  * ~~[http://forum.worldoftanks.eu/index.php?/topic/56831-089-j1mb0s-crosshair-mod-xvm-config/ J1mB0's Crosshair Mod & XVM Config]~~ (Not working with 0.9.5)
+  * [http://forum.worldoftanks.eu/index.php?/topic/56831-089-j1mb0s-crosshair-mod-xvm-config/ J1mB0's Crosshair Mod & XVM Config]
   * [http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/ Session Stats]
   * [http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/ Color Messages]
   * [http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/ Damage Panel int centered and vanilla]
   * [http://www.modxvm.com XVM Mod]
-  * [http://www.vbaddict.net Active Dossier Uploader] (BRR, and ATS isn't working with 0.9.5 yet)
+  * [http://www.vbaddict.net Active Dossier Uploader]
   * [http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/ Radial Menu]
   * [http://forum.worldoftanks.ru/index.php?/topic/1075087- SafeShot]
   * [http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936 6thsense-audio]
@@ -71,6 +71,9 @@ I want to encourage people to use [http://www.vbaddict.net/wot.php vBAddict] as 
 
 == Received Damage Announcer ==
 I've removed the reload time information, as well as the name of the player who shot you. Otherwise its not allowed to use this mod.
+
+== MultiHitLog ==
+I've created my own configuration based on expD.json, so it only shows the WN8, EFF, expected damage etc, but I keep using the Hitlog from XVM, and Damage Panel from Locastan. I've updated the WN8 ratings to WoTLabs levels, and changes the font, and colors to match the general interface.
 
 = Common problems =
 If the installer complains that its not able to overwrite C:\Games\World_of_Tanks\ActiveDossierUploader.exe, then just close ADU in your task bar (its the icon with the green circle next to the clock), and click on 'Try Again'. Or you can just click on 'Ignore';
