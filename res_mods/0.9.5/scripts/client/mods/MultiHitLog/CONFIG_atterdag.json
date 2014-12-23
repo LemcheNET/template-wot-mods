@@ -22,7 +22,7 @@
 	"AnnounceDamageForPlatoon":	"False",
 	"AnnounceDamageMessage":	"Damage done: {{HL_DMG}}!",
 	"MinimumTeamDamage":		50,
-	"ReportTeamDamage":			"False",
+	"ReportTeamDamage":			"True",
 	"ReportTeamDamageMessage":	"{{DL_AttackerName}} ({{DL_AttackerTank}}) you just damage me for {{DL_AttackerDamage}}hp",
 	"TeamDamageForYou":			"False",
 	"TeamDamageMessageForYou":	"TEAMDAMAGE: {{DL_AttackerName}} in {{DL_AttackerTank}} for {{DL_AttackerDamage}}",
@@ -31,12 +31,12 @@
 		{
 			"xAlign":			"Center",
 			"yAlign":			"Normal",
-			"x":				500,
-			"y":				1,
+			"x":				575,
+			"y":				5,
 			"offsetX":			17, 
 			"offsetY":			5, 
-			"width":			320,
-			"height":			45,
+			"width":			270,
+			"height":			40,
 			"backgroundLevel":	-1,
 			"backgroundFile":	"MHL.dds", 
 			"ConfigName":		"atterdag",
@@ -122,7 +122,7 @@
 
 	"Fonts":[
 		{"value": 0,	"font": "",						"width": 0,		"height": 0},
-		{"value": 1,	"font": "default_smaller.font",	"width": 8,		"height": 16},
+		{"value": 1,	"font": "default_smaller.font",	"width": 8,		"height": 14},
 		{"value": 2,	"font": "default_smaller.font",	"width": 10,	"height": 18},
 		{"value": 3,	"font": "default_medium.font",	"width": 12,	"height": 22},
 		{"value": 4,	"font": "verdana_medium.font",	"width": 12,	"height": 22}
@@ -137,4 +137,3 @@
 		{"type": "Drown"}
 	]
 }
-
