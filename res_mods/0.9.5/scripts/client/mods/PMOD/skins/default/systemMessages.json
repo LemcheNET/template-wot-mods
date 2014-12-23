@@ -1,0 +1,196 @@
+
+// Обработка сообщений в системном канале
+// Process messages in the system channel	
+"systemMessages": {
+
+	// Сообщения о конце боя.
+	// Messages about end of the battle.
+	"battleResults": {
+		
+		// Сообщение при победе. 
+		// Message with the victory
+		"winPattern": {
+			
+			// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+			// Message text. List of macros watch in readme file. Custom macros support.
+			"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:creditsEX}}{{UM:achievements}}",
+			
+			// Подложка сообщения. Путь к изображению с поддержкой макросов
+			// Message background. Path to an image with support for macros
+			//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconVictory-1.png",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultWin.png",
+			
+			// Иконка сообщения. Путь к изображению с поддержкой макросов
+			// Message icon. Path to an image with support for macros
+			"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png",
+			
+			// Если данных о бое нет, используется этот блок.
+			// If there is no data on this battle, this block is used.
+			"noBattleData": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+			
+				// Подложка сообщения. Путь к изображению
+				// Message background. Path to an image
+				//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconVictory-1.png",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultWin.png",
+				
+				// Иконка сообщения. Путь к изображению
+				// Message icon. Path to an image
+				"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png"
+			}
+		},
+
+		// Сообщение при поражении.
+		// Message in the defeat.
+		"defeatPattern": {
+			
+			// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+			// Message text. List of macros watch in readme file. Custom macros support.
+			"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:creditsEX}}{{UM:achievements}}",
+			
+			// Подложка сообщения. Путь к изображению с поддержкой макросов
+			// Message background. Path to an image with support for macros
+			//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDefeat-1.png",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultDefeat.png",
+			
+			// Иконка сообщения. Путь к изображению с поддержкой макросов
+			// Message icon. Path to an image with support for macros
+			"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png",
+			
+			// Если данных о бое нет, используется этот блок.
+			// If there is no data on this battle, this block is used.
+			"noBattleData": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+			
+				// Подложка сообщения. Путь к изображению
+				// Message background. Path to an image
+				//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDefeat-1.png",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultDefeat.png",
+				
+				// Иконка сообщения. Путь к изображению
+				// Message icon. Path to an image
+				"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png"
+			}
+		},
+
+		// Сообщение при ничье.
+		// Message in the draw.
+		"drawPattern": {
+			
+			// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+			// Message text. List of macros watch in readme file. Custom macros support.
+			"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:creditsEX}}{{UM:achievements}}",
+			
+			// Подложка сообщения. Путь к изображению с поддержкой макросов
+			// Message background. Path to an image with support for macros
+			//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDraw-1.png",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultDraft.png",
+			
+			// Иконка сообщения. Путь к изображению с поддержкой макросов
+			// Message icon. Path to an image with support for macros
+			"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png",
+			
+			// Если данных о бое нет, используется этот блок.
+			// If there is no data on this battle, this block is used.
+			"noBattleData": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+			
+				// Подложка сообщения. Путь к изображению
+				// Message background. Path to an image
+				//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDraw-1.png",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/default/images/battleResultDraft.png",
+				
+				// Иконка сообщения. Путь к изображению
+				// Message icon. Path to an image
+				"icon": "../../gui/maps/icons/library/BattleResultIcon-1.png"
+			}
+		},
+		
+		// Паттерны макросов.
+		// Macro patterns.
+		"macrosFormatter": {
+			
+			// Множитель опыта. {{val}} - подставляется значение множителя.
+			// Modifier experience. {{val}} - replaced with the value factor.
+			"dailyXPFactor": "<font color='#D3D3D3'> (X {{val}}) </font>",
+			
+			// Штраф за нанесение урона союзникам. {{val}} - подставляется значение кредитов.
+			// Penalty for dealing damage allies. {{val}} - replaced with the value of loans.
+			"creditsPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+
+			// Компенсация за урон полученный от союзника. {{val}} - подставляется значение кредитов.
+			// Compensation for damage resulting from an ally. {{val}} - replaced with the value of loans.
+			"creditsCompensation": "компенсация за урон от союзников: <font color='#D3D3D3'>{{val}}</font>",			
+			
+			// Штраф за нанесение урона союзникам. {{val}} - подставляется значение кредитов.
+			// Penalty for dealing damage allies. {{val}} - replaced with the value of loans.
+			"xpPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+			
+			// Макрос для отображения медалей
+			// Macro to display the medals
+			"achievements": {
+				
+				// #1 Начальная обработка медали. 
+				// {{name}} - имя медали, {{localName}} - локализованное имя медали, {{icon}} - иконка медали размером 67х71
+				// #1 The initial treatment medals. {{val}} - localized name of the medal.
+				"pattern": "{{localName}}",
+				
+				// #2 Разделитель. Все медали соединяются в одну строку и между ними ставится разделитель.
+				// #2 separator. Аll medals combined in one line and put a separator between them.
+				"separator": "; ",
+				
+				// #3 Финальный результат макроса. {{pattern}} - сюда подставится готовая строка с медалями.
+				// #3 The final result of the macro. {{pattern}} - will be substituted here ready line with medals.
+				"result": "Награды и Достижения:<br> {{pattern}} "
+			}
+		},
+		
+		// Настройка внешнего вида кнопок в сообщениях
+		// Customize the style of the button in the message
+		"buttons": {
+			
+			// Надпись на кнопке
+			// Label ob button
+			"label": "Подробнее",
+			
+			// Цвет кнопки
+			// standart - стандартный, black - чёрный
+			// Button color
+			// standart, black
+			"type": "black",
+			
+			// Шырина кнопки
+			// Button width
+			"width": 122
+		},
+		
+		// Пользовательские макросы
+		// Custom macros
+		"userMacros": {
+			"UM:win": "<font color='#46B700' size='16'>Победа!</font><br>",
+			"UM:defeat": "<font color='#C40900' size='16'>Поражение</font><br>",
+			"UM:draw": "<font color='#D86704' size='16'>Ничья</font><br>",
+			"UM:map": "<font size='14'>Бой: <font color='#D3D3D3'>{{Map}}</font></font><br>",
+			"UM:vehicle": "<font size='14'>Техника: <font color='#D3D3D3'>{{VehicleLocalName}}</font></font><br>",
+			"UM:xp": "<font size='14'>Получено: {{DailyXPFactor}}<font color='#0082E0'>{{XP}}</font> <img src='img://gui/maps/icons/library/XpIcon-1.png' width='14' height='14' align='baseline' vspace='-4'> ",
+			"UM:credits": "<font color='#E5BF00'>{{Credits}}</font> <img src='img://gui/maps/icons/library/CreditsIconBig-1.png' width='8' height='8' align='baseline' vspace='0'></font>",
+			"UM:creditsEX": "<font color='#E5BF00'>{{PureCredits}}</font> <img src='img://gui/maps/icons/library/CreditsIconBig-1.png' width='8' height='8' align='baseline' vspace='0'></font>",
+			"UM:achievements": "<br><br><br>{{Achievements}}"
+		},
+		
+		// Список цветовых подстановок. "название_макроса": [{"value": значение,  "color": "#код_цвета"}, {"value": значение,  "color": "#код_цвета"}]
+		// List of color permutations. "macro_name": [{"value": value,  "color": "#color_code"}, {"value": value,  "color": "#color_code"}]
+		"colors": {
+			"WN8": [{"value": 310,  "color": "#FE0E00"}, {"value": 750,  "color": "#FE7903"}, {"value": 1310, "color": "#F8F400"}, {"value": 1965, "color": "#60FF00"}, {"value": 2540, "color": "#02C9B3"}, {"value": 9999,  "color": "#D042F3"}]
+		}	
+	}
+}
