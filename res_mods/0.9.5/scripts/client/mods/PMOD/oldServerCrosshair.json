@@ -5,7 +5,7 @@
 {
 	// true - включить модуль.
 	// true - enable the module.
-	"enable": false,
+	"enable": true,
 	
 	/* Ввиду громоздкого набора параметров текстур, описаны будут параметры только единожды. */
 	/* Due to the cumbersome set of parameters texture parameters will be described only once. */
@@ -27,7 +27,7 @@
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
+			"path" : "scripts/client/mods/PMOD/gun_marker_blue.dds"
 		},
 		
 		// Масштаб прицела
@@ -55,7 +55,7 @@
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
+			"path" : "scripts/client/mods/PMOD/gun_marker_blue.dds"
 		},
 		"crosshairScale" : 0.5,
 		"crosshairElements" : {
@@ -72,15 +72,10 @@
 	"strategicMode" : {
 		"enableServerGunMarker" : true,
 		"enableFlashGunMarker" : true,
-	
-		// true - сведение текстурой, false - сведение flash (1 в 1 как основное только цвет другой).
-		// true - texture gun marker, false - flash gun marker (1 to 1 as the main, only color other).
-		"textureServerGunMarker" : true,
-		
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
+			"path" : "scripts/client/mods/PMOD/gun_marker_blue.dds"
 		},
 		"crosshairScale" : 0.5,
 		"crosshairElements" : {
