@@ -1,11 +1,15 @@
-﻿XVM-5.4.2-dev:
+﻿XVM-5.5.0:
   * адаптация к Wot 0.9.5
+  * Разрешено использование вложенных макросов: {{xvm-stat?{{alive?80|30}}|0}}
   * добавлена секция texts/spotted с подстановками текста для статуса засвета.
-    Доступные значения: "neverSeen", "lost", "revealed", "dead".
+    Доступные значения:
+      Для обычного танка: "neverSeen", "lost", "revealed", "dead"
+      Для арты: "neverSeen_arty", "lost_arty", "revealed_arty", "dead_arty"
   * добавлены новые макросы:
       {{language}} - язык клиента игрока
       {{region}} - текущий регион игры (RU, EU, NA, CN, ASIA, VTC, KR, CT)
       {{spotted}} со значениями из секции texts/spotted
+      {{c:spotted}}, {{a:spotted}} для цвета и прозрачности по статусу засвета
   * удалена секция playersPanel/enemySpottedMarker (используйте экстра-поля с макросом {{spotted}})
   * добавлена новая опция в экстра-поля: "bindToIcon" - если включена, позиция x привязывается к
     иконке танка (по умолчанию false)
@@ -64,7 +68,7 @@ XVM-5.3.6:
   * добавлен макрос {{v.c_damageRating}} и секция цветов "damageRating"
   * добавлена опция "onHold" в настройки клавиш альтернативной миникарты и режима ушей
   * добавлена опция hangar/clock/bgImage для фонового изображения в часах
-  * макросы {{alive}}, {{ready}}, {{player}}, {{tk}}, {{squad}}, {{squad-num}}, {{hp-max}} работают 
+  * макросы {{alive}}, {{ready}}, {{player}}, {{tk}}, {{squad}}, {{squad-num}}, {{hp-max}} работают
     на экране загрузки боя
 
 XVM-5.3.5:
