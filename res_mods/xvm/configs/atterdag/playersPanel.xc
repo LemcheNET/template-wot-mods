@@ -211,8 +211,8 @@
       "width": 100,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
-      "nickFormatLeft": "<font face='Lucida Console' size='12' color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{wn8}}</font> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> {{name%.15s~..}} <font alpha='#A0'>{{clan}}</font>",
-      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font> {{name%.15s~..}} <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> <font face='Lucida Console' size='12' color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{wn8}}</font>",
+      "nickFormatLeft": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
+      "nickFormatRight": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
       "vehicleFormatLeft": "<font color='{{c:teff}}'>{{vehicle}}</font> (<font color='{{c:t-rating}}'>{{t-rating}}</font>)",
