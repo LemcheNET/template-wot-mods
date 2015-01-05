@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 = Download =
-[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.5.4.exe atterdag-wot-mods-0.9.5.4.exe]
+[https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.5.5.exe atterdag-wot-mods-0.9.5.5.exe]
 
 = Installation =
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
