@@ -131,6 +131,9 @@
     "Comment": "Коментар",
     "Destroyed": "Знищений",
     "No data": "Немає данних",
-    "Not ready": "Не готовий"
+    "Not ready": "Не готовий",
+    "XVM config reloaded": "Конфіг XVM перезавантажено",
+    "Config file xvm.xc was not found, using the built-in config": "Файл конфігурації xvm.xc не знайдений, використовуємо вбудовану конфігурацію",
+    "Error loading XVM config": "Помилка завантаження конфіга XVM"
   }
 }

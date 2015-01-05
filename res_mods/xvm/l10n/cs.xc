@@ -80,7 +80,7 @@
     "PutClassCrew": "Posádka stejné třídy",
     "PutPreviousCrew": "Předchozí posádka",
     "DropAllCrew": "Vyjmout celou posádku",
-    "gun_reload_time/actual": "Aktuální čas nabíjení",
+    "gun_reload_time/actual": "Odhadovaný čas nabíjení",
     "view_range/base": "základní",
     "view_range/actual": "aktuální",
     "view_range/stereoscope": "s binokulárem",
