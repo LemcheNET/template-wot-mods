@@ -131,6 +131,9 @@
     "Comment": "Komentar",
     "Destroyed": "Uništen",
     "No data": "Nema podataka",
-    "Not ready": "Nije spremno"
+    "Not ready": "Nije spremno",
+    "XVM config reloaded": "XVM konfiguracija učitana",
+    "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristit će se standardna konfiguracija",
+    "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"
   }
 }

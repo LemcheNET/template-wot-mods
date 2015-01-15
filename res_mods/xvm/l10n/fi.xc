@@ -131,6 +131,9 @@
     "Comment": "Kommentti",
     "Destroyed": "Tuhottu",
     "No data": "Ei tietoa",
-    "Not ready": "Ei valmis"
+    "Not ready": "Ei valmis",
+    "XVM config reloaded": "XVM asetukset uudelleenladattu",
+    "Config file xvm.xc was not found, using the built-in config": "Asetustiedostoa xvm.xc ei löydy, käytetään oletusasetuksia",
+    "Error loading XVM config": "Virhe ladattaessa XVM asetuksia"
   }
 }

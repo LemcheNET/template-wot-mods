@@ -113,8 +113,8 @@
     "token/services_inactive": "Mrežna usluga neaktivna.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>više detalja</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blokirano</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>više detalja</font></a>",
     "token/active": "Status:<font color='#00FF00'>Aktivan</font>",
-    "token/time_left": "Vremena preostalo<tab/><font color='#EEEEEE'><font color='#EEEEEE'>0}d. {1}h. {2}m.</font>",
-    "token/time_left_warn": "Vremena preostalo<tab/><font color='#EEEE00'><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
+    "token/time_left": "Vremena preostalo:<tab/><font color='#EEEEEE'><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
+    "token/time_left_warn": "Vremena preostalo:<tab/><font color='#EEEE00'><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
     "token/cnt": "Broj zahtjeva:<tab/><font color='#EEEEEE'><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Nepoznat status",
     "NonElite": "Bez elitnog statusa",
@@ -131,6 +131,9 @@
     "Comment": "Komentar",
     "Destroyed": "Uništen",
     "No data": "Nema podataka",
-    "Not ready": "Nije spremno"
+    "Not ready": "Nije spremno",
+    "XVM config reloaded": "XVM konfiguracija učitana",
+    "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristit će se standardna konfiguracija",
+    "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"
   }
 }

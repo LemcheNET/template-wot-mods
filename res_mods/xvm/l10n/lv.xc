@@ -131,6 +131,9 @@
     "Comment": "Komentārs",
     "Destroyed": "Iznīcināts",
     "No data": "Nav datu",
-    "Not ready": "Nav gatavs"
+    "Not ready": "Nav gatavs",
+    "XVM config reloaded": "XVM konfigurācija pārlādēta",
+    "Config file xvm.xc was not found, using the built-in config": "Konfigurācijas fails xvm.xc nav atrasts, tiks izmantota pamata konfigurācija",
+    "Error loading XVM config": "Kļūda ielādējot XVM konfigurāciju"
   }
 }
