@@ -211,7 +211,7 @@
       "width": 100,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
-      "nickFormatLeft": "<img src=src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
+      "nickFormatLeft": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
       "nickFormatRight": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:rating}}'>{{rating}}</font>)",
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
