@@ -41,5 +41,5 @@
 	
 	// Отображение в реплеях
 	// Display in replays
-	"enableInBattleReplay": true
+	"enableInBattleReplay": false
 }
