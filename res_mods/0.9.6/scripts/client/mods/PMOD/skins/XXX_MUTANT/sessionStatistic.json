@@ -1,0 +1,168 @@
+	// Сессионная статистика
+	// Session statistic
+	"sessionStatistic": {
+
+		// Сообщение на случай отсутствия проведенных боев за сессию.
+		// Message in case of absence spent battles for session.
+		"needBattleToProcess": "<font color='#FFCC00'> \n <b>PMOD - Сессионная статистика</b></font> \n\n<font color='#029CFF'>{{UM:helloMessage}}, для отображения изменений в статистике нужно провести хотя бы один бой!</font>\n\n<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/XXX_MUTANT.png' width='200' height='215' align='baseline' vspace='0'>\n\n<font color='#0FB8B6' size='12'><i><b>                 Config by XXX_MUTANT\n                Nick in game Xxx_mutant</b></i></font>",
+		
+		// Подложка сообщения
+		// Message background
+		"messageBackground": {
+			
+			// true - Использовать подложку
+			// true - Use a substrate
+			"enable": true,
+			
+			// Путь к изображению с поддержкой макросов (сыгран хотя бы один бой)
+			// Path to an image with support for macros (played at least one fight)
+			"path": "../../scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/background/sessionStatisticBackground{{c:WN8}}.png",
+			
+			// Путь к изображению без поддержки макросов (нет ни одного боя)
+			// Path to an image without macros (not played any battles)
+			//"pathNullBattles": " "
+			"pathNullBattles": "../../scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/background/background_default0.png"
+		},
+		
+		// Иконка сообщения
+		// Message icon
+		"messageIcon": {
+
+			// true - Использовать иконку
+			// true - Use a icon
+			"enable" : true, 
+			
+
+
+			// Путь к изображению
+			// Path to image
+			//"path": " ",
+			"path": "../maps/icons/library/PersonalAchievementsIcon-1.png",
+		
+			// Путь к изображению без поддержки макросов (нет ни одного боя)
+			// Path to an image without macros (not played any battles)
+			"pathNullBattles": "../../scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/background/background_default0.png"
+		},
+		
+		// Кнопка обнуления статистики
+		// Reset statistic button 
+		"resetButton": {
+		
+			// true - Отображать кнопку
+			// true - Display button
+			"enable": true,
+			
+			// Надпись на кнопке
+			// Button text
+			"label": "!!!Сброс статистики!!!",
+			
+			// Цвет кнопки
+			// standart - стандартный, balck - чёрный
+			// Button color
+			// standart, black
+			"type": "blue"
+		},
+		
+		// Заготовка сообщения. Список макросов смотрите в файле readme. Также можно использовать пользовательские макросы
+		// The blank message. List of macros watch in readme file. You can also use users macros
+		"template":[
+		    "<font size='12' color='#B0FFFF'><b>",
+            "<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/WinRate/{{c:WinRate}}.png' width='220' height='8' align='baseline' vspace='2'><textformat  tabstops='[6,42,78,114,150,186]'>\n\n",
+			"<font color='#55C1FE'><tab>  Эффективность:<tab><tab><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/XpIcon/{{c:XP}}.png' width='60' height='12' align='baseline' vspace='0'></font>\n",
+			"<font color='#55C1FE'><tab>   РЭ:<tab> WN6:<tab> WN7:<tab> WN8:<tab>   Ур:</font>\n",
+			"<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/master/{{c:EFF}}.png' width='30' height='30' align='baseline' vspace='0'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/master/{{c:WN6}}.png' width='30' height='30' align='baseline' vspace='0'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/master/{{c:WN7}}.png' width='30' height='30' align='baseline' vspace='0'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/master/{{c:WN8}}.png' width='30' height='30' align='baseline' vspace='0'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/survival40x32.png' width='30' height='30' align='baseline' vspace='0'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/ranks/{{c:Frags}}.png' width='32' height='24' align='baseline' vspace='0'>\n",
+			"<tab> <font color='{{c:EFF}}'>{{EFF}}</font><tab> <font color='{{c:WN6}}'>{{WN6}}</font><tab> <font color='{{c:WN7}}'>{{WN7}}</font><tab> <font color='{{c:WN8}}'>{{WN8}}</font><tab>  <font color='{{c:AvgBattleLevel}}'>{{AvgBattleLevel}}б</font>\n",
+			"<tab>  <font color='{{c:XEFF}}'>{{XEFF}}</font><tab>  <font color='{{c:XWN6}}'>{{XWN6}}</font><tab>  <font color='{{c:XWN7}}'>{{XWN7}}</font><tab>   <font color='{{c:XWN8}}'>{{XWN8}}</font><tab>  <font color='{{c:AvgBattleLevel}}'>{{AvgTierLevel}}т</font>\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[84,185]'>\n",
+			"<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Battle1.png' width='80' height='16' align='baseline' vspace='0'><tab>Инфо по боям:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/brotherhood.png' width='20' height='20' align='baseline' vspace='-5'>\n",
+			"<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Battle2.png' width='80' height='16' align='baseline' vspace='0'><tab><font color='#55C1FE'>{{Battles}}</font> / <font color='#00d81b'>{{Wins}}</font> - <font color='#DD3333' >{{Losses}}</font> - <font color='#F59000'>{{Draws}}</font><tab><font color='{{c:WinRate}}'>{{WinRate}}%</font><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffWinrate}}.png' width='10' height='12'>\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[40,80,120,160,200]'>\n",
+            "<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/damage1.png' width='20' height='20' align='baseline' vspace='-4'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/damage2.png' width='20' height='20' align='baseline' vspace='-4'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/assist.png' width='20' height='20' align='baseline' vspace='-4'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/loader_intuition.png' width='20' height='20' align='baseline' vspace='-4'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/gunner_sniper.png' width='20' height='20' align='baseline' vspace='-4'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/kill.png' width='20' height='20' align='baseline' vspace='-4'>\n",
+			"<font color='{{c:AvgDamageDealt}}'>{{DamageDealt}}</font><tab><font color='{{c:AvgDamageReceived}}'>{{DamageReceived}}</font><tab>{{DamageAssisted}}<tab><font color='{{c:HitsRate}}'>{{Shots}}</font><tab><font color='{{c:EffHitsRate}}'>{{Hits}}</font><tab><font color='{{c:AvgFrags}}'>{{Frags}}</font>\n",
+			"<font color='{{c:AvgDamageDealt}}'>{{AvgDamageDealt}}</font><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgDamageDealt}}.png' width='10' height='12'><tab><font color='{{c:AvgDamageReceived}}'>{{AvgDamageReceived}}</font><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgDamageReceived}}.png' width='10' height='12'><tab>{{AvgDamageAssisted}}<tab><font color='{{c:HitsRate}}'>{{Hits}}</font><tab><font color='{{c:EffHitsRate}}'>{{Piercings}}</font><tab><font color='{{c:AvgFrags}}'>{{AvgFrags}}</font>\n",
+			"<font color='{{c:AvgDamageDealt}}'>-------</font><tab><font color='{{c:AvgDamageReceived}}'>-------</font><tab>------<tab><font color='{{c:HitsRate}}'>{{HitsRate}}%</font><tab><font color='{{c:EffHitsRate}}'>{{EffHitsRate}}%</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgFrags}}.png' width='10' height='12'>\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[95,158]'>\n",
+            "<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/assist1.png' width='28' height='14' align='baseline' vspace='-2'><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/stereoscope1.png' width='24' height='14' align='baseline' vspace='-2'><font color='#4BFE85'>{{DamageAssistedRadio}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/supporter1.png' width='28' height='14' align='baseline' vspace='-2'><font color='#4BFE85'>{{CapturePoints}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/defender1.png' width='28' height='14' align='baseline' vspace='-2'><font color='#4BFE85'>{{DroppedCapturePoints}}</font>\n",
+            "<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/assist2.png' width='28' height='14' align='baseline' vspace='0'><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/caterpillars.png' width='24' height='14' align='baseline' vspace='0'><font color='#4BFE85'>{{DamageAssistedTrack}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/supporter2.png' width='28' height='14' align='baseline' vspace='0'><font color='{{c:AvgCapturePoints}}'>{{AvgCapturePoints}}</font><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgCapturePoints}}.png' width='10' height='12'><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/defender2.png' width='28' height='14' align='baseline' vspace='0'><font color='{{c:AvgDroppedCapturePoints}}'>{{AvgDroppedCapturePoints}}</font><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgDroppedCapturePoints}}.png' width='10' height='12' hspace='2'>\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[50,60,78,150,168]'>\n",
+            "Опыт<tab>:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 182.png' width='16' height='16' align='baseline' vspace='-10'><tab><font color='#4BFE85'>{{XP}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgXP}}.png' width='10' height='12'><tab><font color='{{c:AvgXP}}'>{{AvgXP}}</font>\n",
+			"Св. опыт<tab>:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 180.png' width='16' height='16' align='baseline' vspace='-10'><tab><font color='#4BFE85'>{{FreeXP}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 180.png' width='16' height='16' align='baseline' vspace='-10'><tab>{{AvgFreeXP}}\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font>\n",
+			"<img src='{{img}}gui/maps/icons/library/InvoiceIcon-1.png' width='16' height='16' align='baseline' vspace='-2'>  Инфо по кредитам:\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[50,60,78,150,168]'>\n",            
+			"Прибыль<tab>:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='#4BFE85'>{{Credits}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='{{c:AvgCredits}}'>{{AvgCredits}}</font>\n",
+			"Доход<tab>:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='{{c:PureCredits}}'>{{PureCredits}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='{{c:AvgPureCredits}}'>{{AvgPureCredits}}</font>\n",
+			"Баланс<tab>:<tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='{{c:AccountCredits}}'>{{AccountCredits}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/Image 178.png' width='13' height='13' align='baseline' vspace='-10'><tab><font color='{{c:AccountGold}}'>{{AccountGold}}</font>\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[25,90,130]'>\n",
+			"<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/plusminus.png' width='25' height='12' align='baseline' vspace='-2'><tab>Влияние сессии на аккаунт:\n",
+            "<font size='7' color='{{c:WinRate}}'>----------------------------------------------------------------------------------------------</font><textformat  tabstops='[25,95,115,170]'>\n",
+			"<tab>% побед<tab>:<tab><font color='{{c:DiffWinrate}}'>{{DiffWinrate}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffWinrate}}.png' width='10' height='12'>\n",
+			"<tab>Урон<tab>:<tab><font color='{{c:DiffAvgDamageDealt}}'>{{DiffAvgDamageDealt}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgDamageDealt}}.png' width='10' height='12'>\n",
+			"<tab>Уничтожено<tab>:<tab><font color='{{c:DiffAvgFrags}}'>{{DiffAvgFrags}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgFrags}}.png' width='10' height='12'>\n",
+			"<tab>Обнаружено<tab>:<tab><font color='{{c:DiffAvgSpottedEnemies}}'>{{DiffAvgSpottedEnemies}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgSpottedEnemies}}.png' width='10' height='12'>\n",
+			"<tab>Опыт<tab>:<tab><font color='{{c:DiffAvgXP}}'>{{DiffAvgXP}}</font><tab><img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/image/{{c:DiffAvgXP}}.png' width='10' height='12'>\n\n",
+			"<img src='img://scripts/client/mods/PMOD/skins/XXX_MUTANT/icons/WinRate/{{c:WinRate}}.png' width='220' height='8' align='baseline' vspace='2'>\n",
+			"</b></font>\n"
+		],
+
+		// Список цветовых подстановок. "название_макроса": [{"value": значение,    "color": "#код_цвета"}, {"value": значение,    "color": "#код_цвета"}]
+		// List of color permutations. "macro_name": [{"value": value,    "color": "#color_code"}, {"value": value,    "color": "#color_code"}]
+		"colors": {
+			"WinRate"                     :    [{"value": 47,        "color": "#FE0E00"}, {"value": 49,        "color": "#FE7903"}, {"value": 52,        "color": "#F8F400"}, {"value": 57,        "color": "#60FF00"}, {"value": 65,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+            "AvgBattleLevel"              :    [{"value": 2,         "color": "#FE0E00"}, {"value": 3,         "color": "#FE7903"}, {"value": 5,         "color": "#F8F400"}, {"value": 7,         "color": "#60FF00"}, {"value": 9,         "color": "#02C9B3"}, {"value": 11,        "color": "#D042F3"}],
+			"AvgDamageDealt"              :    [{"value": 800,       "color": "#FE0E00"}, {"value": 1500,      "color": "#FE7903"}, {"value": 2000,      "color": "#F8F400"}, {"value": 2500,      "color": "#60FF00"}, {"value": 3000,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+            "AvgDamageReceived"           :    [{"value": 500,       "color": "#D042F3"}, {"value": 800,       "color": "#02C9B3"}, {"value": 1200,      "color": "#60FF00"}, {"value": 2000,      "color": "#F8F400"}, {"value": 2500,      "color": "#FE7903"}, {"value": 3000,      "color": "#FE0E00"}],
+			"AvgFrags"                    :    [{"value": 0,         "color": "#EE0001"}, {"value": 0.6,       "color": "#FF1010"}, {"value": 0.8,       "color": "#FE7903"}, {"value": 1,         "color": "#F8F400"}, {"value": 1.3,       "color": "#60FF00"}, {"value": 2,         "color": "#02C9B3"}, {"value": 15,        "color": "#D042F3"}],
+			"AvgSpottedEnemies"           :    [{"value": 0,         "color": "#EE0001"}, {"value": 0.6,       "color": "#FF1010"}, {"value": 1,         "color": "#FE7903"}, {"value": 1.5,       "color": "#F8F400"}, {"value": 2,         "color": "#60FF00"}, {"value": 5,         "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"AvgXP"                       :    [{"value": 0,         "color": "#EE0001"}, {"value": 201,       "color": "#FE0E00"}, {"value": 301,       "color": "#FE7903"}, {"value": 601,       "color": "#F8F400"}, {"value": 801,       "color": "#60FF00"}, {"value": 1101,      "color": "#02C9B3"}, {"value": 99999,     "color": "#D042F3"}],
+			"WN6"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 410,       "color": "#FE0E00"}, {"value": 795,       "color": "#FE7903"}, {"value": 1185,      "color": "#F8F400"}, {"value": 1585,      "color": "#60FF00"}, {"value": 1925,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN6"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"WN7"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 455,       "color": "#FE0E00"}, {"value": 815,       "color": "#FE7903"}, {"value": 1180,      "color": "#F8F400"}, {"value": 1570,      "color": "#60FF00"}, {"value": 1890,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN7"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"EFF"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 610,       "color": "#FE0E00"}, {"value": 850,       "color": "#FE7903"}, {"value": 1145,      "color": "#F8F400"}, {"value": 1475,      "color": "#60FF00"}, {"value": 1775,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XEFF"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"WN8"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 315,       "color": "#FE0E00"}, {"value": 760,       "color": "#FE7903"}, {"value": 1325,      "color": "#F8F400"}, {"value": 1980,      "color": "#60FF00"}, {"value": 2570,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN8"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"AvgCapturePoints"            :    [{"value": 0.1,       "color": "#D6D7D4"}, {"value": 17,        "color": "#EE0000"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"AvgDroppedCapturePoints"     :    [{"value": 0.1,       "color": "#D6D7D4"}, {"value": 17,        "color": "#EE0000"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"HitsRate"                    :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"EffHitsRate"                 :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"AvgPureCredits"              :    [{"value": 0,         "color": "#EE0001"}, {"value": 9999999,   "color": "#00EE00"}],
+                                              
+		// Цвет для звезд и погонов.          
+			"XP"                          :    [{"value": 5000,      "color": "#FC6060"}, {"value": 10000,     "color": "#FF6262"}, {"value": 15000,     "color": "#FFA362"}, {"value": 20000,     "color": "#FFA462"}, {"value": 25000,     "color": "#EEFF62"}, {"value": 30000,     "color": "#EEFE62"}, {"value": 35000,     "color": "#62FE78"}, {"value": 40000,     "color": "#62FF78"}, {"value": 45000,     "color": "#62BDFF"}, {"value": 50000,     "color": "#62BEFF"}, {"value": 60000,     "color": "#BE61FF"}, {"value": 999999999, "color": "#BE62FF"}],
+			"Frags"                       :    [{"value": 6,         "color": "#000011"}, {"value": 12,        "color": "#000010"}, {"value": 18,        "color": "#000009"}, {"value": 24,        "color": "#000008"}, {"value": 30,        "color": "#000007"}, {"value": 36,        "color": "#000006"}, {"value": 42,        "color": "#000005"}, {"value": 48,        "color": "#000004"}, {"value": 54,        "color": "#000003"}, {"value": 60,        "color": "#000002"}, {"value": 999999,    "color": "#000001"}],
+                                              
+		// Плюс / Минус                       
+			"DiffWinrate"                 :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgDamageDealt"          :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+            "DiffAvgDamageReceived"       :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgFrags"                :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgSpottedEnemies"       :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgXP"                   :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgCapturePoints"        :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"DiffAvgDroppedCapturePoints" :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"AvgCredits"                  :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"AvgPureCredits"              :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"PureCredits"                 :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"AccountCredits"              :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"Сredits"                     :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"AccountGold"                 :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#F5FF21"}]
+		},
+
+		// Пользовательские макросы
+		// Custom macros
+		"userMacros": {
+			"UM:helloMessage" : "Привет <font color='#4BFE85' size='15'>{{PlayerName}}</font>",
+			"UM:line"         : "\n<img src='img://scripts/client/mods/PMOD/skins/default/images/line.png' height='2' width='200'>\n",
+			"UM:rgWinrate"    : "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffWinrate}}.png' width='11' height='10'>",
+			"UM:rgXP"         : "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgXP}}.png' width='11' height='10'>",
+			"UM:rgDamage"     : "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgDamageDealt}}.png' width='11' height='10'>",
+			"UM:rgFrags"      : "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgFrags}}.png' width='11' height='10'>",
+			"UM:rgCredits"    : "<img src='img://scripts/client/mods/PMOD/skins/default/images/null.png' width='11' height='10'>"
+		},
+		
+		// Дебаг кнопка для перезагрузки конфига
+		// Debug button to reload config
+		"debug": true
+	}

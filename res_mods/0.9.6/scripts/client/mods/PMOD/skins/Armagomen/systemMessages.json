@@ -1,0 +1,102 @@
+/**
+ * Скин: Armagomen
+ * Обновление: http://armagomen.tk  http://enterport.tk/news/armagomen_wot/1-0-29
+ */
+
+"systemMessages": {
+
+	"battleResults": {
+		// ПОБЕДА
+		"winPattern": {
+			"message": "<textformat leading='2'>{{UM:win}}{{UM:vehicle}}{{UM:DR}}</textformat><br>{{UM:WN8}}{{UM:EFF}}<textformat leading='2'>{{UM:DMG}}&nbsp;&nbsp;{{image_frg}}&nbsp;{{UM:FRG}}<p align='center'>{{UM:xp}}{{xp_ico}}&nbsp;&nbsp;{{UM:fxp}}{{fxp_ico}}&nbsp;&nbsp;{{UM:PCR}}{{cr_ico}}</p></textformat>{{Achievements}}",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+			"icon": " ",
+			"noBattleData": {
+				"message": "<textformat leading='2'>{{UM:win}}{{UM:vehicle}}</textformat><br>{{XP:NBD}}{{xp_ico}}<br>{{CR:NBD}}{{cr_ico}}<br><br>{{Achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+				"icon": " "
+			}
+		},
+		// ПОРАЖЕНИЕ
+		"defeatPattern": {
+			"message": "<textformat leading='2'>{{UM:defeat}}{{UM:vehicle}}{{UM:DR}}</textformat><br>{{UM:WN8}}{{UM:EFF}}<textformat leading='2'>{{UM:DMG}}&nbsp;&nbsp;{{image_frg}}&nbsp;{{UM:FRG}}<p align='center'>{{UM:xp}}{{xp_ico}}&nbsp;&nbsp;{{UM:fxp}}{{fxp_ico}}&nbsp;&nbsp;{{UM:PCR}}{{cr_ico}}</p></textformat>{{Achievements}}",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+			"icon": " ",
+			"noBattleData": {
+				"message": "<textformat leading='2'>{{UM:defeat}}{{UM:vehicle}}</textformat><br>{{XP:NBD}}{{xp_ico}}<br>{{CR:NBD}}{{cr_ico}}<br><br>{{Achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+				"icon": " "
+			}
+		},
+		// НИЧЬЯ
+		"drawPattern": {
+			"message": "<textformat leading='2'>{{UM:draw}}{{UM:vehicle}}{{UM:DR}}</textformat><br>{{UM:WN8}}{{UM:EFF}}<textformat leading='2'>{{UM:DMG}}&nbsp;&nbsp;{{image_frg}}&nbsp;{{UM:FRG}}<p align='center'>{{UM:xp}}{{xp_ico}}&nbsp;&nbsp;{{UM:fxp}}{{fxp_ico}}&nbsp;&nbsp;{{UM:PCR}}{{cr_ico}}</p></textformat>{{Achievements}}",
+			"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+			"icon": " ",
+			"noBattleData": {
+				"message": "<textformat leading='2'>{{UM:draw}}{{UM:vehicle}}</textformat><br>{{XP:NBD}}{{xp_ico}}<br>{{CR:NBD}}{{cr_ico}}<br><br>{{Achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/fone/{{VehicleImage}}.png",
+				"icon": " "
+			}
+		},
+		// ФОРМАТИРОВАНИЕ Макросов
+		"macrosFormatter": {
+			"dailyXPFactor": "<font color='#D3D3D3' size='12'>(x{{val}})</font>",
+			"creditsPenalty": "Штраф за урон по союзникам: {{val}}",
+			"creditsCompensation": "Компенсация за урон от союзников: {{val}}",			
+			"xpPenalty": "Штраф за урон по союзникам: {{val}}",
+			"damageRating": "&nbsp;&nbsp;&nbsp;&nbsp;<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/marks.png' width='15' height='13' vspace='0' /><font size='16' face='Impact'><i>{{val}}%</i></font>",
+			"achievements": {
+				"pattern": "&nbsp;•&nbsp;<i>{{localName}}</i>",
+				"separator": "<br>",
+				"result": "<font color='#D5C100'>{{pattern}}</font>"
+			}
+		},
+		"buttons": {
+			"label": "Подробные результаты боя",
+			"type": "black",
+			"width": 222
+		},
+		"userMacros": {
+			/**Общие.*/
+			"UM:win":		"<p align='center'><font face='Impact' color='#60FF00' size='18'><i>{{Map}}</i></font></p>",
+			"UM:defeat":	"<p align='center'><font face='Impact' color='#CC0000' size='18'><i>{{Map}}</i></font></p>",
+			"UM:draw":		"<p align='center'><font face='Impact' color='#E46003' size='18'><i>{{Map}}</i></font></p>",
+			"UM:vehicle":	"<font size='16' face='Impact' color='#5A91D2'><i>{{VehicleLocalNameShort}}</i></font>",
+			
+			/**Раздельные по типу сообщений.*/
+			// Нет данных о бое.
+			"XP:NBD":		"<textformat tabstops='[57]'><font color='#C0C0C0' size='15'>Опыт:</font><tab><font color='{{c:XP}}' size='15'><b>{{XP}}</b></font>{{DailyXPFactor}}</textformat>",
+			"CR:NBD":		"<textformat tabstops='[57]'><font color='#C0C0C0' size='15'>Кредиты:</font><tab><font color='#93EF71' size='15'><b>{{Credits}}</b></font></textformat>",
+
+			// Есть данные о бое.
+			"UM:DR":		"<font color='{{c:DamageRating}}'>{{DamageRating}}</font>",
+
+			"UM:WN8":		"<textformat tabstops='[40]'><font color='#C0C0C0' size='15'><b>WN8:</b></font><tab><font color='{{c:WN8}}' size='15'><b>{{WN8}}</b></font></textformat><br>",
+			"UM:EFF":		"<textformat tabstops='[40]'><font color='#C0C0C0' size='15'><b>EFF:</b></font><tab><font color='{{c:EFF}}' size='15'><b>{{EFF}}</b></font></textformat><br>",
+			"UM:DMG":		"<textformat tabstops='[40]'><font color='#C0C0C0' size='15'><b>Урон:</b></font><tab><font color='{{c:DamageDealt}}' size='15'><b>{{DamageDealt}}</b></font></textformat>",
+			"UM:FRG":		"<font color='{{c:Frags}}' size='15'><b>{{Frags}}</b></font><br>",
+
+			
+			"UM:xp":		"<font color='{{c:XP}}' size='16'><b>{{XP}}</b></font>{{DailyXPFactor}}",
+			"UM:fxp":		"<font color='#FE7903' size='16'><b>{{FreeXP}}</b></font>",
+			"UM:PCR":		"<font color='{{c:PureCredits}}' size='16'><b>{{PureCredits}}</b></font>",
+			
+			// Иконки
+			"xp_ico":		"<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' />",
+			"fxp_ico":		"<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/freexp.png' width='14' height='14' vspace='-3' />",
+			"image_frg":    "<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/destr.png' width='15' height='12' vspace='-1' />",
+			"cr_ico":		"<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/credits.png' width='15' height='15' vspace='0' />"
+			},
+				
+		"colors": {	
+			"Frags":		[{"value": 1,    "color": "#F8F400"}, {"value": 2,  "color": "#60FF00"}, {"value": 6,    "color": "#02C9B3"}, {"value": 15,    "color": "#D042F3"}],
+			"XP": 			[{"value": 200,  "color": "#E82D00"}, {"value": 400,  "color": "#FE7903"}, {"value": 800,  "color": "#F8F400"}, {"value": 1200, "color": "#60FF00"}, {"value": 2000, "color": "#02C9B3"}, {"value": 9999999,  "color": "#D042F3"}],
+			"DamageDealt":	[{"value": 500,  "color": "#E82D00"}, {"value": 1000, "color": "#FE7903"}, {"value": 1800, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 9999999,  "color": "#D042F3"}],
+			"DamageRating":	[{"value": 65,	 "color": "#F8F400"}, {"value": 85,   "color": "#60FF00"}, {"value": 95,   "color": "#02C9B3"}, {"value": 101,  "color": "#D042F3"}],
+			"PureCredits":	[{"value": 0,	 "color": "#CC0000"}, {"value": 9999999, "color": "#60FF00"}],
+			"EFF": 			[{"value": 609,  "color": "#FE0E00"}, {"value": 849,  "color": "#FE7903"}, {"value": 1144, "color": "#F8F400"}, {"value": 1474, "color": "#60FF00"}, {"value": 1774, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+			"WN8":			[{"value": 354,  "color": "#FE0E00"}, {"value": 819,  "color": "#FE7903"}, {"value": 1369, "color": "#F8F400"}, {"value": 2019, "color": "#60FF00"}, {"value": 2619, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}]
+			}
+	}
+}
