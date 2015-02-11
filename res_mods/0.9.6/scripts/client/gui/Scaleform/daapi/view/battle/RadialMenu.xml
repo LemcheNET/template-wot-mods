@@ -177,13 +177,13 @@ Supported macros in chat text:
    %(ammo)s     - displays your remaining ammo in AUTOLOADER CLIP
    
 XVM stat depending chat command macros:
-   %(winrate)s%% -- targets global winrate
-   %(eff)s -- targets efficiency rating
-   %(kbattles)s -- targets total battles in thousands
-   %(avglvl)s -- targets average tier played
-   %(twr)s -- targets Tourist efficiency factor
-   %(tankDamage)s -- targets avg. damage with the current tank (usually incorrect!)
-   %(tankWinrate)s%% -- targets winrate with the current tank
+   %(winrate)s%% - targets global winrate
+   %(eff)s - targets efficiency rating
+   %(kbattles)s - targets total battles in thousands
+   %(avglvl)s - targets average tier played
+   %(twr)s - targets Tourist efficiency factor
+   %(tankDamage)s - targets avg. damage with the current tank (usually incorrect!)
+   %(tankWinrate)s%% - targets winrate with the current tank
    
   The macros "%(vehicle)s", "%(clan)s", "%(name)s", "%(winrate)s%%", "%(eff)s",
 "%(kbattles)s", "%(avglvl)s", "%(twr)s", "%(tankDamage)s", "%(tankWinrate)s%%"
@@ -216,38 +216,35 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
   <MapMenuKey>KEY_LALT</MapMenuKey>
   <MenuReloadHotkey>KEY_LCONTROL+KEY_F11</MenuReloadHotkey>
   <HotkeyCommandDelay>250</HotkeyCommandDelay>
-  <CHAT_DELAY>1200</CHAT_DELAY>
 	<TankMenu>
 		<CommonCommands>
 			<Command>
-				<Title>Greetings</Title>
-				<Icon>Yes</Icon>
-				<Text>Hello, good luck and have fun, fellow tankers. :)</Text>
-				<ChatMode>All</ChatMode>
-			</Command>
-			<Command>
-				<Title>Clan spam</Title>
+				<Title>Anti whine</Title>
 				<Icon>Support</Icon>
 				<Text>%(randpart)s</Text>
 				<ChatMode>All</ChatMode>
 				<Variants>
-				<Variant>Join our stronk clan...blablabla. Plz. stop this crap.</Variant>
-				<Variant>Here comes the spam again...</Variant>
-				<Variant>Spam, Spam, Spam, Spam, Lovely Spam, Wonderful Spam...</Variant>
-				<Variant>Ohh..the circus is back in town! Anyone want to run away with it?</Variant>
-				<Variant>Oh look! Its a CLAN! Such novel approach to recruiting...much wow.</Variant>
+					<Variant>Please report %(name) for flooding the game ... with tears.</Variant>
+					<Variant>%(name)s, do you want some cheese with that "whine"?</Variant>
+					<Variant>%(name)s, cry some more. Your tears sustain me!</Variant>
 				</Variants>
 			</Command>
 			<Command>
-				<Title>Wake up!</Title>
+				<Title>Notify about "Spot Messanger"</Title>
+				<Icon>Yes</Icon>
+				<Text>Press &lt;F11&gt; to activate automatic spot notification.</Text>
+				<ChatMode>Team</ChatMode>
+				<Hotkey>KEY_LCONTROL+KEY_LALT+KEY_M</Hotkey>
+			</Command>
+			<Command>
+				<Title>Battle cry!</Title>
 				<Icon>Attack</Icon>
 				<Text>%(randpart)s</Text>
-				<ChatMode>Team</ChatMode>
+				<ChatMode>All</ChatMode>
 				<Variants>
-				<Variant>Good morning base campers. The battle has started!</Variant>
-				<Variant>I see some tanks were delivered without engines...so sad.</Variant>
-				<Variant>You campers have not found WASD, yet?</Variant>
-				<Variant>Come on! Last one out of base has to paint the enemy flag green...</Variant>
+					<Variant>CLENCH bitches!</Variant>
+					<Variant>Bend over, and BRACE FOR IMPACT!</Variant>
+					<Variant>WAAAAAAAAAAAAARRRRRRRRGGGGGGG!!!!!!</Variant>
 				</Variants>
 				<Hotkey>KEY_LALT+KEY_C</Hotkey>
 			</Command>
@@ -256,7 +253,7 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Icon>Backtobase</Icon>
 				<Text>Back to base, please hurry!</Text>
 				<ChatMode>Team</ChatMode>
-				<Hotkey>KEY_LALT+KEY_F</Hotkey>
+				<Hotkey>KEY_LCONTROL+KEY_F</Hotkey>
 			</Command>
 			<Command>
 				<Title>Reloading</Title>
@@ -290,9 +287,9 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<ChatMode>Team</ChatMode>
 			</Command>
 			<Command>
-				<Title>Blocking!</Title>
+				<Title>Hold line</Title>
 				<Icon>Stop</Icon>
-				<Text>%(name)s, move your %(vehicle)s out of my line of fire!</Text>
+				<Text>%(name)s, stop and hold the defense line, please.</Text>
 				<ChatMode>Team</ChatMode>
 			</Command>
 			<Command>
@@ -1066,10 +1063,10 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>Team</ChatMode>
 				<Variants>
-				<Variant>With cat like tread, upon our prey we steal!</Variant>
-				<Variant>In silence dread, our cautious way we feel...</Variant>
-				<Variant>No sound at all! We never speak a word!</Variant>
-				<Variant>A fly's foot-fall, would be distinctly heard!</Variant>
+					<Variant>With cat like tread, upon our prey we steal!</Variant>
+					<Variant>In silence dread, our cautious way we feel...</Variant>
+					<Variant>No sound at all! We never speak a word!</Variant>
+					<Variant>A fly's foot-fall, would be distinctly heard!</Variant>
 				</Variants>
 				<NoRandomChoice>1</NoRandomChoice>
 				<Hotkey>KEY_N</Hotkey>
@@ -1080,10 +1077,14 @@ A complete list of names of keys for the shortcuts - http://pastebin.com/5GKk9jB
 				<Text>%(randpart)s</Text>
 				<ChatMode>Team</ChatMode>
 				<Variants>
-				<Variant>Lemmings...Lemmings everywhere.</Variant>
-				<Variant>The Lemmingtrain is stronk in that one! -.-</Variant>
-				<Variant>The cow goes: MOO!...The Lemmingtrain goes: CHOO-CHOO!</Variant>
-				<Variant>Strenghth in numbers took a hard blow, when WoT invented the Lemmingtrain... :|</Variant>
+					<Variant>Look at me Lemmingtrain, Lemmingtrain on a track, on a track...</Variant>
+					<Variant>Look at me I go somewhere...I'm a Lemmingtrain!</Variant>
+					<Variant>CHOO-CHOO!</Variant>
+					<Variant>C'mon! Join Up! Join the Love-train...Love-Train!</Variant>
+					<Variant>Lemmings...Lemmings everywhere.</Variant>
+					<Variant>The Lemmingtrain is stronk in that one! -.-</Variant>
+					<Variant>The cow goes: MOO!...The Lemmingtrain goes: CHOO-CHOO!</Variant>
+					<Variant>Strenghth in numbers took a hard blow, when WoT invented the Lemmingtrain... :|</Variant>
 				</Variants>
 				<Hotkey>KEY_L</Hotkey>
 			</Command>
