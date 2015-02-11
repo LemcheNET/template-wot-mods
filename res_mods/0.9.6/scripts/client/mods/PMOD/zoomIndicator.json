@@ -5,13 +5,13 @@
 {
 	// true - включить модуль.
 	// true - enable the module.
-	"enable": false,
+	"enable": true,
 
 	// Позиция индикатора на экране.
 	// Перевернутая по высоте декартовая система координат в пикселях, с отчетом, от центра экрана.
 	// Indicator position on the screen.
 	// Inverted adjustment cartesian coordinate system in pixels, with a report from the center of the screen.
-	"position": [250, 0],
+	"position": [240, -175],
 	
 	// Цвет надписи индикатора.
 	// Значение цвета либо в палитре RGBA (красный, зелёный, синий, прозрачность)
@@ -19,7 +19,7 @@
 	// Display color of the indicator.
 	// Importance color in a RGBA palette (red, green, blue, transparency)
 	// or advance provided color: red, green, blue, gray, black, white, yellow, magenta
-	"color": [123, 255, 35, 255],
+	"color": [102, 204, 0, 255],
 	
 	// Текст надписи индикатора.
 	// Вместо {{zoom}} будет подставлено текущее значение кратности.
@@ -41,5 +41,5 @@
 	
 	// Отображение в реплеях
 	// Display in replays
-	"enableInBattleReplay": false
+	"enableInBattleReplay": true
 }
