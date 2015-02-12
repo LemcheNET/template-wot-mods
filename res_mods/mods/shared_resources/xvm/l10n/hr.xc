@@ -132,6 +132,8 @@
     "Destroyed": "Uništen",
     "No data": "Nema podataka",
     "Not ready": "Nije spremno",
+    "Hide with honors": "Sakrij se s časti",
+    "Hide not available": "Skrivanje nedostupno",
     "XVM config reloaded": "XVM konfiguracija učitana",
     "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristit će se standardna konfiguracija",
     "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"

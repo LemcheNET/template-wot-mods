@@ -122,6 +122,7 @@
     "Normal": "Normál",
     "MultiXP": "Többszörös XP",
     "NoMaster": "Nem Tank ász",
+    "CompleteCrew": "Teljes legénység",
     "Error loading comments": "Hiba a megjegyzések betöltése közben",
     "Error saving comments": "Hiba a megjegyzések mentése közben",
     "Comments disabled": "Megjegyzések letiltva",
@@ -132,6 +133,8 @@
     "Destroyed": "Megsemmisítve",
     "No data": "Nincs adat",
     "Not ready": "Nincs kész",
+    "Hide with honors": "Kitüntetéssel teljesítettek elrejtése",
+    "Hide not available": "Nem elérhetőek elrejtése",
     "XVM config reloaded": "XVM beállítások újratöltve",
     "Config file xvm.xc was not found, using the built-in config": "Az xvm.xc beállítófájl nem található, beépített beállítások használata",
     "Error loading XVM config": "Hiba az XVM beállítások betöltésekor"

@@ -132,6 +132,8 @@
     "Destroyed": "Zničen",
     "No data": "Chybí data",
     "Not ready": "Nepřipraven",
+    "Hide with honors": "Skýt s vyznamenáním",
+    "Hide not available": "Skýt nedostupné",
     "XVM config reloaded": "Konfigurace XVM byla znovu načtena",
     "Config file xvm.xc was not found, using the built-in config": "Konfigurační soubor xvm.xc nenalezen, bude použita zabudovaná konfigurace",
     "Error loading XVM config": "Chyba v nahrávání konfigurace XVM"

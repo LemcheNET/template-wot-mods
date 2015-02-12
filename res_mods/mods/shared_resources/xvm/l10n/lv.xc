@@ -122,6 +122,7 @@
     "Normal": "Standarta",
     "MultiXP": "Vairākkārtēja pieredze",
     "NoMaster": "Nav lietpratēja",
+    "CompleteCrew": "Visa apkalpe",
     "Error loading comments": "Neizdevās ielādēt komentārus",
     "Error saving comments": "Neizdevās saglabāt komentārus",
     "Comments disabled": "Komentāri atslēgti",

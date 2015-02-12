@@ -122,6 +122,7 @@
     "Normal": "Normaalit",
     "MultiXP": "x * XP",
     "NoMaster": "Ei tankkiässiä",
+    "CompleteCrew": "Täysi miehistö",
     "Error loading comments": "Virhe ladattaessa kommentteja",
     "Error saving comments": "Virhe tallennettaessa kommentteja",
     "Comments disabled": "Kommentit pois päältä",
