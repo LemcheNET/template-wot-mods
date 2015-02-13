@@ -122,6 +122,7 @@
     "Normal": "Звычайны",
     "MultiXP": "Мультыдосвед",
     "NoMaster": "Без майстра",
+    "CompleteCrew": "Экіпаж укамплектаваны",
     "Error loading comments": "Няўдалая загрузка каментарыяў",
     "Error saving comments": "Няўдалае захоўванне каментарыяў",
     "Comments disabled": "Каментарыі адключаныя",
