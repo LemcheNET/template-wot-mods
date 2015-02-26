@@ -280,10 +280,10 @@
     // Dynamic color for win chance
     // Динамический цвет для шанса на победу
     "winChance": [
-      { "value": 14.5, "color": ${"def.colorRating.bad" } },
-      { "value": 34.5, "color": ${"def.colorRating.poor"      } },
-      { "value": 64.5, "color": ${"def.colorRating.average"   } },
-      { "value": 79.5, "color": ${"def.colorRating.good"     } },
+      { "value": 24.5, "color": ${"def.colorRating.bad"      } },
+      { "value": 39.5, "color": ${"def.colorRating.poor"     } },
+      { "value": 59.5, "color": ${"def.colorRating.average"  } },
+      { "value": 74.5, "color": ${"def.colorRating.good"     } },
       { "value": 89.5, "color": ${"def.colorRating.excellent"} },
       { "value": 101,  "color": ${"def.colorRating.unicum"   } }
     ],
