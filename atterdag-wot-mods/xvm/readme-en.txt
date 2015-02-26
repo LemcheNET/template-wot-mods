@@ -245,13 +245,14 @@
       Any color macro you can change to transparency macro (e.g. {{a:tdb}}).
 
       Extended macros formatting rules:
-        {{name[:norm][%[flag][width][.prec]type][~suf][?rep][|def]}}
+        {{name[:norm][%[flag][width][.prec]type][~suf][(=|!=|<|<=|>|>=)match][?rep][|def]}}
         name  - macro name
 
         :norm - value normalization, for example {{hp-ratio:300}} returns values in range 0..300
 
         flag  - "-" for left align, else right align
                 "0" for filling with leading zeros
+                "'" for thousands separator (only for integer numbers)
         width - minimum width
         prec  - depended from the type:
                 - maximum width for strings
@@ -265,6 +266,8 @@
                 a - number as ascii char
 
         suf   - suffix added at the end
+        match - value matching, only matched value returned, else default value
+                allowed operators: =, !=, >, >=, <, <=
         rep   - value replacement, returned instead of the regular value if the value is present
         def   - default value, set when value is absent:
 
