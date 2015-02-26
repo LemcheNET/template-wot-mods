@@ -1,17 +1,20 @@
 ﻿{
-  //"startMode": "none",
-  //"altMode": "short",
+  //"startMode": "{{battletype=regular?medium|{{battletype=clan?none}}}}",
+  //"altMode": "{{battletype=regular?medium2|{{battletype=clan?short}}}}",
   "def": {
     "c1": "0x13C313",
     "c2": "0xFF0F0F"
   },
   "large": {
+    //"enabled": false,
     "nickFormatLeft": "        {{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>",
     "nickFormatRight": "{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>       &nbsp;",
     "vehicleFormatLeft": "{{hp}} / {{hp-max}}",
     "vehicleFormatRight": "{{hp}} / {{hp-max}}",
     //"vehicleFormatLeft": "<font color='{{c:rating}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
     //"vehicleFormatRight": "<font color='{{c:rating}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+    //"vehicleFormatLeft": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png' width='9' height='9'>",
+    //"vehicleFormatRight": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png' width='9' height='9'>",
     //"fragsFormatLeft": "{{frags|0}}",
     //"fragsFormatRight": "{{frags|0}}",
     "extraFieldsLeft": [
@@ -44,6 +47,7 @@
     "width": 120
   },
   "medium": {
+    //"enabled": false,
     "width": 120,
     "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
     "formatRight": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
@@ -53,14 +57,18 @@
     ]
   },
   "medium2": {
+    //"enabled": false,
     "width": 120,
     "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
     "formatRight": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>"
   },
   "short": {
+    //"enabled": false,
     //"width": 120,
+    "__stub__": null
   },
   "none": {
+    //"enabled": false,
     //"layout": "horizontal",
     "extraFields": ${"sirmax-panels-none.xc":"."}
   },

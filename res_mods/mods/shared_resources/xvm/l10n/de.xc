@@ -121,7 +121,8 @@
     "Premium": "Premium",
     "Normal": "Normal",
     "MultiXP": "Multi XP",
-    "NoMaster": "kein Master",
+    "NoMaster": "kein Panzerass",
+    "CompleteCrew": "Vollständige Besatzung",
     "Error loading comments": "Fehler beim Laden der Kommentare",
     "Error saving comments": "Fehler beim Speichern der Kommentare",
     "Comments disabled": "Kommentare deaktiviert",
@@ -131,6 +132,11 @@
     "Comment": "Kommentar",
     "Destroyed": "Zerstört",
     "No data": "Keine Daten",
-    "Not ready": "Nicht bereit"
+    "Not ready": "Nicht bereit",
+    "Hide with honors": "Ausgezeichnet erfüllte ausblenden",
+    "Hide not available": "Nicht verfügbare ausblenden",
+    "XVM config reloaded": "XVM Konfiguration neu geladen",
+    "Config file xvm.xc was not found, using the built-in config": "Konfigurationsdatei xvm.xc nicht gefunden, benutze eingebaute Standard Konfiguration",
+    "Error loading XVM config": "Fehler beim Laden der XVM Konfiguration"
   }
 }

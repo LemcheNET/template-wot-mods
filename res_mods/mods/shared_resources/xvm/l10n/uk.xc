@@ -122,6 +122,7 @@
     "Normal": "Досвід",
     "MultiXP": "Мультидосвід",
     "NoMaster": "Немає майстра",
+    "CompleteCrew": "Повний екіпаж",
     "Error loading comments": "Помилка завантаження коментарів",
     "Error saving comments": "Помилка збереження коментарів",
     "Comments disabled": "Коментарі відключені",

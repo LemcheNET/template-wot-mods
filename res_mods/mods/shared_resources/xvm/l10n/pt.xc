@@ -109,9 +109,9 @@
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Actualização disponível:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>sem ligação ao servidor do XVM</font>",
-    "token/services_unavailable": "Os serviços de rede estão indisponíveis.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
-    "token/services_inactive": "Os serviços de rede estão inativos.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>more info</font></a>",
-    "token/blocked": "Status: <font color='#FF0000'>Blocked</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>more info</font></a>",
+    "token/services_unavailable": "Os serviços de rede estão indisponíveis.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>mais informação</font></a>",
+    "token/services_inactive": "Os serviços de rede estão inativos.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>mais informação</font></a>",
+    "token/blocked": "Estado: <font color='#FF0000'>Bloqueado</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>mais informação</font></a>",
     "token/active": "Estado:<tab/><font color='#00FF00'>Activo</font>",
     "token/time_left": "Tempo restante:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
     "token/time_left_warn": "Tempo restante:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
@@ -122,6 +122,7 @@
     "Normal": "Normal",
     "MultiXP": "Multi XP",
     "NoMaster": "Sem mestria",
+    "CompleteCrew": "Toda a tripulação",
     "Error loading comments": "Erro na leitura de comentários",
     "Error saving comments": "Erro na gravação de comentários",
     "Comments disabled": "Comentários desactivados",
@@ -131,6 +132,11 @@
     "Comment": "Comentários",
     "Destroyed": "Destruido",
     "No data": "Sem dados",
-    "Not ready": "Não está pronto"
+    "Not ready": "Não está pronto",
+    "Hide with honors": "Esconder com honras",
+    "Hide not available": "Esconder não disponivel",
+    "XVM config reloaded": "Configuração XVM carregada",
+    "Config file xvm.xc was not found, using the built-in config": "O ficheiro de configuração xvm.xc não foi encontrado, serão usadas as definições por defeito",
+    "Error loading XVM config": "Erro ao carregar a configuração XVM"
   }
 }

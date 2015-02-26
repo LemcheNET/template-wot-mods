@@ -122,6 +122,7 @@
     "Normal": "Normale",
     "MultiXP": "1a vittoria",
     "NoMaster": "No maestria",
+    "CompleteCrew": "con equipaggio",
     "Error loading comments": "Errore nel caricamento dei commenti",
     "Error saving comments": "Errore nel salvataggio dei commenti",
     "Comments disabled": "Commenti disabilitati",

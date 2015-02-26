@@ -122,6 +122,7 @@
     "Normal": "Tavaline",
     "MultiXP": "Kordajaga XP",
     "NoMaster": "Puudub meister",
+    "CompleteCrew": "Komplektne tiim",
     "Error loading comments": "Viga kommentaaride laadimisel",
     "Error saving comments": "Viga kommentaaride salvestamisel",
     "Comments disabled": "Kommentaarid välja lülitatud",

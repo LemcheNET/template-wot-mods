@@ -122,6 +122,7 @@
     "Normal": "Normal",
     "MultiXP": "Multi XP",
     "NoMaster": "No maestría",
+    "CompleteCrew": "Sin tripulación",
     "Error loading comments": "Error al cargar comentarios",
     "Error saving comments": "Error al guardar comentarios",
     "Comments disabled": "Comentarios desactivados",
