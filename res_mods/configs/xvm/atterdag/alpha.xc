@@ -12,7 +12,7 @@
     "average":       "70",  // average    / средне
     "good":          "65",  // good       / хорошо
     "very_good":     "60",  // very good  / очень хорошо
-	"excellent":     "55",  // excellent
+    "excellent":     "55",  // excellent
     "unicum":        "50",  // unicum     / уникально
     "super_unicum":  "40"   // super unicum
   },
@@ -92,16 +92,16 @@
     // Dynamic transparency by WN8 rating
     // Динамическая прозрачность по рейтингу WN8
     "wn8": [
-	  { "value":  300, "color": ${"wotlabsAlphaRating.beginner"      } },
-	  { "value":  450, "color": ${"wotlabsAlphaRating.basic"		 } },
-	  { "value":  650, "color": ${"wotlabsAlphaRating.below_average" } },
-	  { "value":  900, "color": ${"wotlabsAlphaRating.average"	     } },
-	  { "value": 1200, "color": ${"wotlabsAlphaRating.above_average" } },
-	  { "value": 1600, "color": ${"wotlabsAlphaRating.good"			 } },
-	  { "value": 2000, "color": ${"wotlabsAlphaRating.very_good"	 } },
-	  { "value": 2450, "color": ${"wotlabsAlphaRating.great"		 } },
-	  { "value": 2900, "color": ${"wotlabsAlphaRating.unicum"		 } },
-	  { "value": 9999, "color": ${"wotlabsAlphaRating.super_unicum"	 } } 
+      { "value":  300, "color": ${"wotlabsAlphaRating.beginner"      } },
+      { "value":  450, "color": ${"wotlabsAlphaRating.basic"         } },
+      { "value":  650, "color": ${"wotlabsAlphaRating.below_average" } },
+      { "value":  900, "color": ${"wotlabsAlphaRating.average"         } },
+      { "value": 1200, "color": ${"wotlabsAlphaRating.above_average" } },
+      { "value": 1600, "color": ${"wotlabsAlphaRating.good"             } },
+      { "value": 2000, "color": ${"wotlabsAlphaRating.very_good"     } },
+      { "value": 2450, "color": ${"wotlabsAlphaRating.great"         } },
+      { "value": 2900, "color": ${"wotlabsAlphaRating.unicum"         } },
+      { "value": 9999, "color": ${"wotlabsAlphaRating.super_unicum"     } } 
     ],
     // Dynamic transparency by WG rating
     // Динамическая прозрачность по рейтингу WG
@@ -127,16 +127,16 @@
     // Dynamic transparency by win percent
     // Динамическая прозрачность по проценту побед
     "rating": [
-	  { "value":  46,  "color": ${"wotlabsAlphaRating.beginner"	     } },
-	  { "value":  47,  "color": ${"wotlabsAlphaRating.basic"		 } },
-	  { "value":  48,  "color": ${"wotlabsAlphaRating.below_average" } },
-	  { "value":  50,  "color": ${"wotlabsAlphaRating.average"	     } },
-	  { "value":  52,  "color": ${"wotlabsAlphaRating.above_average" } },
-	  { "value":  54,  "color": ${"wotlabsAlphaRating.good"			 } },
-	  { "value":  56,  "color": ${"wotlabsAlphaRating.very_good"	 } },
-	  { "value":  60,  "color": ${"wotlabsAlphaRating.great"		 } },
-	  { "value":  65,  "color": ${"wotlabsAlphaRating.unicum"	     } },
-	  { "value": 101,  "color": ${"wotlabsAlphaRating.super_unicum"  } } 
+      { "value":  46,  "color": ${"wotlabsAlphaRating.beginner"         } },
+      { "value":  47,  "color": ${"wotlabsAlphaRating.basic"         } },
+      { "value":  48,  "color": ${"wotlabsAlphaRating.below_average" } },
+      { "value":  50,  "color": ${"wotlabsAlphaRating.average"         } },
+      { "value":  52,  "color": ${"wotlabsAlphaRating.above_average" } },
+      { "value":  54,  "color": ${"wotlabsAlphaRating.good"             } },
+      { "value":  56,  "color": ${"wotlabsAlphaRating.very_good"     } },
+      { "value":  60,  "color": ${"wotlabsAlphaRating.great"         } },
+      { "value":  65,  "color": ${"wotlabsAlphaRating.unicum"         } },
+      { "value": 101,  "color": ${"wotlabsAlphaRating.super_unicum"  } } 
     ],
     // Dynamic transparency by kilo-battles
     // Динамическая прозрачность по количеству кило-боев

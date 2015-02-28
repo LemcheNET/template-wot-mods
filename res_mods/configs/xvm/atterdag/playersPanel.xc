@@ -3,6 +3,31 @@
  * Параметры панелей игроков ("ушей").
  */
 {
+  // Enemy spotted status marker format for substitutions in extra fields.
+  // Подстановка для дополнительного поля с маркером статуса засвета
+  "enemySpottedMarker": {
+    "valign": "top",
+    // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
+    // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
+    "alpha": 100,
+    // x position.
+    // положение по горизонтали.
+    "x": 0,
+    // y position.
+    // положение по вертикали.
+    "y": 5,
+    // true - x position is binded to vehicle icon, false - binded to edge of the screen.
+    // true - положение по горизонтали отсчитывается от иконки танка, false - от края экрана.
+    "bindToIcon": true,
+    // enemy spotted status marker format.
+    // формат маркера статуса засвета.
+    "format": "{{spotted}}",
+    // shadow (see below).
+    // настройки тени (см. ниже).
+    "shadow": {}
+  },
+  // Parameters of the Players Panels ("ears").
+  // Параметры панелей игроков ("ушей").
   "playersPanel": {
     // Opacity percentage of the panels. 0 - transparent, 100 - opaque.
     // Прозрачность в процентах ушей. 0 - прозрачные, 100 - не прозрачные.
@@ -61,7 +86,7 @@
           //   "{{nick}}",
           //   "<img src='xvm://res/img/panel-bg-l-{{alive|dead}}.png' width='318' height='28'>",
           //   // extended format
-          //   { "x": 20, "y": 10, "border": 1, "borderColor": "0xFFFFFF", "format": "{{nick}}" },
+          //   { "x": 20, "y": 10, "borderColor": "0xFFFFFF", "format": "{{nick}}" },
           //   { "x": 200, "src": "xvm://res/contour/{{vehiclename}}.png" }
           // ]
           //
@@ -86,6 +111,7 @@
           //   "align" - horizontal alignment ("left", "center", "right")
           //      for left panel default value is "left"
           //      for right panel default value is "right"
+          //   "scaleX", "scaleY" - scaling (use negative values for mirroring)
           //
           // fields available for TextField format only:
           //   "valign" - vertical alignment ("top", "center", "bottom")
@@ -140,7 +166,10 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
+        ${"enemySpottedMarker"}
+
       ]
     },
     // Options for the "medium" panels - the first of the medium panels.
@@ -169,7 +198,9 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
+        ${"enemySpottedMarker"}
       ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
@@ -198,7 +229,9 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
+        ${"enemySpottedMarker"}
       ]
     },
     // Options for the "large" panels - the widest panels.
@@ -229,7 +262,9 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        { "x": 0, "y": 5, "valign": "top", "bindToIcon": true, "format": "{{spotted}}", "shadow": {} }
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
+        ${"enemySpottedMarker"}
       ]
     }
   }
