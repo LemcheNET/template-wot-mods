@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 6
-!define VERSIONBUILD 5
+!define VERSIONBUILD 6
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -702,6 +702,9 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_company\actionscript\xvm_company.swf"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\__version__.pyc"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\__init__.pyc"
+    Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\wg_compat.pyc"
+    Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\view.pyc"
+    Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\contacts.pyc"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\python\comments.pyc"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_comments\actionscript\xvm_comments.swf"
     Delete "$INSTDIR\res_mods\mods\packages\xvm_clock\actionscript\xvm_clock.swf"
