@@ -107,7 +107,7 @@
     "SPG": "SAP",
     "blownUp": "Sprogo!",
     "ver/currentVersion": "XVM {0} ({1})",
-    "ver/newVersion": "Atnaujinimas prieinamas:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
+    "ver/newVersion": "Prieinamas atnaujinimas: <tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>nutrūko ryšys su XVM serveriu</font>",
     "token/services_unavailable": "Tinklo paslaugos nepasiekiamos.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>daugiau informacijos</font></a>",
     "token/services_inactive": "Tinklo paslaugos neveikia.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>daugiau informacijos</font></a>",
@@ -134,7 +134,7 @@
     "No data": "Nėra informacijos",
     "Not ready": "Neparuošta",
     "Hide with honors": "Slėpti su pagyrimu",
-    "Hide not available": "Slėpti nepasiekiamus",
+    "Hide not available": "Slėpti nepasiekiamas",
     "XVM config reloaded": "XVM forma perkrauta",
     "Config file xvm.xc was not found, using the built-in config": "Konfigūracijos failas xvm.xc buvo nerastas, naudojant įmontuotą formą",
     "Error loading XVM config": "Klaida kraunant XVM konfigūraciją"

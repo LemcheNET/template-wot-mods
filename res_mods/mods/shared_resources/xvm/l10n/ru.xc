@@ -113,6 +113,7 @@
     "view_range/stereoscope": "со стереотрубой",
     "radio_range/base": "базовая",
     "radio_range/actual": "расчетная",
+    "shootingRadius": "Дальность стрельбы",
     "(sec)": "(сек)",
     "(m)": "(м)",
 
@@ -163,6 +164,7 @@
     "CompleteCrew": "Полный экипаж",
 
     // Comments
+    "Network services unavailable": "Сетевые сервисы недоступны",
     "Error loading comments": "Ошибка загрузки комментариев",
     "Error saving comments": "Ошибка сохранения комментариев",
     "Comments disabled": "Комментарии отключены",

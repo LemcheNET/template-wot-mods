@@ -122,6 +122,7 @@
     "Normal": "Normální",
     "MultiXP": "Násobky",
     "NoMaster": "Bez Hrdiny",
+    "CompleteCrew": "Plná posádka",
     "Error loading comments": "Chyba při načítání komentářů",
     "Error saving comments": "Chyba při ukládání komentářů",
     "Comments disabled": "Komentáře vypnuty",

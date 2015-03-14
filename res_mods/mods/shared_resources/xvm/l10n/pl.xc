@@ -122,7 +122,7 @@
     "Normal": "Normalny",
     "MultiXP": "Multi XP",
     "NoMaster": "Bez M",
-    "CompleteCrew": "Pełną załogą",
+    "CompleteCrew": "Pełna załoga",
     "Error loading comments": "Błąd ładowania komentarza",
     "Error saving comments": "Błąd zapisywania komentarza",
     "Comments disabled": "Komentarz wyłączony",

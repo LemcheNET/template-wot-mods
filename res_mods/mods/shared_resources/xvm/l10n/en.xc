@@ -113,6 +113,7 @@
     "view_range/stereoscope": "with stereoscope",
     "radio_range/base": "base",
     "radio_range/actual": "actual",
+    "shootingRadius": "Shooting radius",
     "(sec)": "(sec)",
     "(m)": "(m)",
 
@@ -163,6 +164,7 @@
     "CompleteCrew": "Complete crew",
 
     // Comments
+    "Network services unavailable": "Network services unavailable",
     "Error loading comments": "Error loading comments",
     "Error saving comments": "Error saving comments",
     "Comments disabled": "Comments disabled",
