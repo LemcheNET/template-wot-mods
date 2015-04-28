@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customDamagePanel>
+	<components>
+	
+		<!-- Panel Background -->
+		<background alpha="50"/> <!-- alpha="100" - set transparency for panel background. 100 - opaque. 0 - completely invisible -->
+		
+		<!-- Tank indicator -->
+		<tankIndicator>
+			<turret alpha="20"/> <!-- turret alpha -->
+			<gun alpha="50"/> <!-- gun alpha -->
+			<hull alpha="90"/> <!-- hull alpha -->
+			<gunConstraints alpha="100" color="0x9A9A8A" ccolor="0xFF7C00"/> <!-- gun contraint colors for tds and arty -->
+		</tankIndicator>		
+
+		<!-- Vehicle Name -->
+		<vehicleName visible="true"> <!-- vehicle name visible "true" means tankname will be visible, set "false" to hide. -->
+			<location x="100" y="2"/> <!-- Location of tankname text -->
+			<text font="$FieldFont" size="12" color="0xC4C1AC" align="right"/> <!-- font - must be installed on your computer. size - textsize. color - HEX color value. align - text alignment (left, right, center). -->
+			<filter size="2" angle="90" distance="1" color="0x000000" alpha="100" strength="6"/> <!-- drop shadow behind text -->
+		</vehicleName>
+		
+		<!-- Nickname -->
+		<playerName visible="true">
+			<location x="3" y="2"/>
+			<text font="$FieldFont" size="12" color="0xC4C1AC" align="left"/>
+			<filter size="2" angle="90" distance="1" color="0x000000" alpha="100" strength="6"/>
+		</playerName>
+		
+		<!-- healthbar -->
+		<health visible="true">
+			<location x="0" y="22"/> <!-- healthbar text location -->
+			<text font="Arial" size="13" color="0xE2E2E2" align="center"/> 
+			<filter size="4" angle="45" distance="0" color="0x000000" alpha="100" strength="2"/>
+			<format>{{hp}}/{{hp-max}}</format> <!-- format - how the text appears. macros -->
+			<healthBar fcolor="0x009000" lcolor="0xFA0100"/> <!-- fcolor - full helthbar color, lcolor - low healthbar color. -->
+		</health>
+		
+		<!-- cruise ctrl settings -->
+		<cruiseCtrl>
+			<speedPoints visible="true">
+				<location x="16" y="0"/>
+				<text font="$UniversCondC" size="8" color="0xC4C1AC" align="left"/> 
+				<filter size="2" angle="0" distance="0" color="0x000000" alpha="100" strength="1"/>
+				<units text="km/h" unit="kmh"/> <!-- text - unit text next to speedometer, unit allows the conversion to mph. valid values are kmh or mph -->
+			</speedPoints>
+			
+			<speed visible="true">
+				<location x="14" y="8"/>
+				<text font="Arial" size="13" color="0xE2E2E2" align="left"/> 
+				<filter size="2" angle="0" distance="0" color="0x000000" alpha="100" strength="1"/>
+			</speed>
+		</cruiseCtrl>
+		
+		<!-- fire alerts -->
+		<fireAlert>
+			<fireMessage>
+				<location x="70" y="172"/>
+				<text font="Arial" size="18" color="0xFF9F00" align="right"/> 
+				<filter size="1" angle="0" distance="0" color="0xFF0000" alpha="100" strength="1"/>
+				<txt>! Tank on Fire !</txt> <!-- txt - text that is displayed when the tank is burning. -->
+			</fireMessage>
+	
+			<fireIcon>
+				<location x="50" y="59"/>
+				<common size="2" color="0xFF5F00"/> <!-- color currently disabled because of flickering in high fps -->
+				<filter size="3" angle="0" distance="0" color="0xFF0000" alpha="100" strength="5"/>
+			</fireIcon>
+		</fireAlert>
+		
+		<!-- taken damage history log -->
+		<damageLog visible="true">
+			<location x="240" y="33"/>
+			<text font="$TextFont" size="15" color="0xD2D2D2" align="left"/> 
+			<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="1.5"/>
+			<format>{{count}}:  {{dmg-one}} {{time-abs}}</format>
+		</damageLog>
+		
+		<!-- big damage text display -->
+		<showDmg visible="true">
+			<location x="245" y="0" mode="1"/> <!-- mode - determins way of placement. 1 - coordinates are measured from the left edge, 2 - measured from center. -->
+			<text font="$TextFont" size="25" color="0xE2E2E2" align="left"/> 
+			<filter size="2" angle="0" distance="0" color="0xFF0000" alpha="100" strength="2.5"/>
+			<showTime>5</showTime> <!-- message decay time -->
+			<format>{{dmg-one}}</format>
+		</showDmg>
+		
+	</components>
+</customDamagePanel>
