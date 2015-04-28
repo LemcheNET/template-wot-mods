@@ -23,7 +23,7 @@
     "Avg level": "Nivelul mediu",
     "EFF": "EFF",
     "updated": "actualizate",
-    " to ": " la ",
+    "to": " la ",
     "Filter": "Filtru",
     "PutOwnCrew": "Foloseşte echipajul obişnuit",
     "PutBestCrew": "Foloseşte cel mai bun echipaj",

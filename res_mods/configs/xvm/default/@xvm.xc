@@ -35,10 +35,10 @@
 
   // Game Region
   // "auto" - automatically detect game region from game client,
-  // or specify one of: "RU", "EU", "NA", "SG", "VTC", "KR"
+  // or specify one of: "RU", "EU", "NA", "ASIA", "KR", "CN"
   // Регион (игровой кластер)
   // "auto" - автоматически определять регион из клиента игры,
-  // или укажите один из: "RU", "EU", "NA", "SG", "VTC", "KR"
+  // или укажите один из: "RU", "EU", "NA", "ASIA", "KR", "CN"
   "region": "auto",
 
   // Common config options. All settings information in the mod not being used.
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "14.03.2015",
+    "date": "25.04.2015",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.6",
+    "gameVersion": "0.9.7",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.0.2"
+    "modMinVersion": "6.1.0"
   },
 
   // Parameters for login screen.
@@ -159,5 +159,13 @@
 
   // Export data
   // Выгрузка данных
-  "export": ${"export.xc":"export"}
+  "export": ${"export.xc":"export"},
+
+  // Parameters for tooltips
+  // Параметры всплывающих подсказок
+  "tooltips": ${"tooltips.xc":"tooltips"},
+
+  // Extra sounds settings
+  // Настройки дополнительных звуков
+  "sounds": ${"sounds.xc":"sounds"}
 }

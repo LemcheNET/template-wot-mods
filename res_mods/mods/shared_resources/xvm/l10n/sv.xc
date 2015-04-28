@@ -30,7 +30,7 @@
     "WN8": "WN8",
     "EFF": "EFF",
     "updated": "uppdaterat",
-    " to ": " till ",
+    "to": " till ",
     "avg": "genomsn.",
     "top": "topp",
     "draws": "oavgjorda",

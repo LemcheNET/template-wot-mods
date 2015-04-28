@@ -23,7 +23,7 @@
     "Avg level": "Ortalama Seviye",
     "EFF": "EFF",
     "updated": "güncellendi",
-    " to ": " to ",
+    "to": " to ",
     "Filter": "Filtre",
     "PutOwnCrew": "Kendi mürettabatını koy",
     "PutBestCrew": "En iyi mürettabatı koy",

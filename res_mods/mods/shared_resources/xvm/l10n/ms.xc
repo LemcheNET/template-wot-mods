@@ -30,7 +30,7 @@
     "WN8": "WN8",
     "EFF": "EFF",
     "updated": "telah dikemaskini",
-    " to ": " ke ",
+    "to": " ke ",
     "avg": "prt",
     "top": "atas",
     "draws": "seri",
