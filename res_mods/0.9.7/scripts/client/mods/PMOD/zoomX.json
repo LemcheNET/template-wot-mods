@@ -1,0 +1,15 @@
+/*
+	Количество шагов в снайперском прицеле и ихняя кратность.
+	The number of steps in the sniper scope and multiplicity of theirs.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": true,
+	
+	// Список значений кратности снайперского режима.
+	// минимальное значение - 0.8, максимальное значение - 60, максимальное количество шагов - 20
+	// List of multiplicity sniper mode.
+	// minimum value - 0.8, maximum value - 60, maximum number of steps - 20.
+	"zoomXSteps": [2, 4, 8, 16]
+}
