@@ -1,1 +1,0 @@
-This mod provides colored servicechannel messages for battle results in the garage.
