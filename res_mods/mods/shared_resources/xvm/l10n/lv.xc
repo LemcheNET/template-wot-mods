@@ -122,6 +122,7 @@
     {1}",
     "websock/not_connected": "<font color='#FFFF00'>nav savienojuma ar XVM serveri</font>",
     "token/services_unavailable": "Tīkla pakalpojumi nav pieejami.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>vairāk</font></a>",
+    "token/services_inactive": "Tīkla servisi neaktīvi.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>aktivizēt</font></a>",
     "token/blocked": "Statuss: <font color='#FF0000'>Bloķēts</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>vairāk</font></a>",
     "token/active": "Statuss:<tab/><font color='#00FF00'>Aktīvs</font>",
     "token/time_left": "Atlicis:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
