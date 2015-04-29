@@ -14,7 +14,6 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 Some details of my mod pack.
 
 ## The mods included are as following: ##
-  * ~~[J1mB0's Crosshair Mod & XVM Config](http://forum.worldoftanks.eu/index.php?/topic/56831-089-j1mb0s-crosshair-mod-xvm-config/)~~ (It works like crap with other mods these days)
   * [Session Stats](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
   * [Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
   * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/)
@@ -24,15 +23,13 @@ Some details of my mod pack.
   * [SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio](http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
-  * ~~[Received Damage Announcer](http://forum.worldoftanks.eu/index.php?/topic/299941-received-damage-announcer-v17-089/)~~ (Not working with 0.9.5)
-  * ~~[Permanent channels](http://forum.worldoftanks.eu/index.php?/topic/377290-090-permanent-channels)~~ (Not working with 0.9.5)
   * [AutoEquip](http://blogtanker.ru/autoequip-dlya-wot.html)
   * [Circle15mod](http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)
   * Serverside Reticle mod - gun\_marker\_blue\_ultraSlimWhite.dds
   * [Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)
   * [PMOD](http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/) (For old server side reticle)
   * [Battle Assistant](http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
-  * [Multi Hit Log v.1.9f](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
+  * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
 
 # Mods configuration #
