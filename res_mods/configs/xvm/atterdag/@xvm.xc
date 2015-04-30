@@ -19,7 +19,7 @@
 {
   // Version of the config. Do not remove or change it unnecessarily.
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
-  "configVersion": "0.9.7.0",
+  "configVersion": "0.9.7.1",
 
   // automatically reload config. Can reduce performance.
   // автоматически перезагружать конфиг. Может понизить производительность.
@@ -58,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "2015-04-28",
+    "date": "2015-04-30",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
