@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 7
-!define VERSIONBUILD 0
+!define VERSIONBUILD 1
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -273,7 +273,6 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\ms.png"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\lv.png"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\lt.png"
-    Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\ky.png"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\ko.png"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\kk.png"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\icons\lang\ka.png"
@@ -1632,7 +1631,6 @@ section "uninstall"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-fr.txt"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-en.txt"
     Delete "$INSTDIR\atterdag-wot-mods\xvm\readme-cz.txt"
-    Delete "$INSTDIR\atterdag-wot-mods\xvm\4227"
     Delete "$INSTDIR\atterdag-wot-mods\spotMessanger\readme.TXT"
     Delete "$INSTDIR\atterdag-wot-mods\SessionStatistic\sstatpage2.jpg"
     Delete "$INSTDIR\atterdag-wot-mods\SessionStatistic\sstatpage1.jpg"
