@@ -122,7 +122,6 @@
     {1}",
     "websock/not_connected": "<font color='#FFFF00'>nema konekcije do XVM servera</font>",
     "token/services_unavailable": "Mrežna usluga nedostupna.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>više detalja</font></a>",
-    "token/services_inactive": "Mrežne usluge nedostupne.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>uključi</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blokirano</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>više detalja</font></a>",
     "token/active": "Status:<font color='#00FF00'>Aktivan</font>",
     "token/time_left": "Vremena preostalo:<tab/><font color='#EEEEEE'><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
@@ -138,7 +137,7 @@
     Automatski vrati posadu koja se boril,
     u tom vozilu prošlu bitku",
     "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b,
-    Statistika po vozil,
+    Po vozilu statistik,
     Više detalja na<font color='#FDF4CE'><font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip},
     
@@ -165,7 +164,7 @@
     "No data": "Nema podataka",
     "Not ready": "Nije spremno",
     "Hide with honors": "Sakrij časno obavljene",
-    "Hide unavailable": "Nedostupno skrivanje",
+    "Hide unavailable": "Nedostupno sakrivanje",
     "XVM config reloaded": "XVM konfiguracija učitana",
     "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristit će se standardna konfiguracija",
     "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"
