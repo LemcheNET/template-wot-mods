@@ -24,7 +24,7 @@
     "masteryMarkInTechTree": true,
     // true - Allow to consider the exchange of experience with gold in tech tree
     // true - Разрешить учитывать обмен опыта за золото в дереве исследований
-    "allowExchangeXPInTechTree": false,
+    "allowExchangeXPInTechTree": true,
     // true - enable crew auto return function
     // true - включить функцию автовозврата экипажа
     "enableCrewAutoReturn": true,
