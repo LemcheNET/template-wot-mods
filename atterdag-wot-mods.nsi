@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 7
-!define VERSIONBUILD 1
+!define VERSIONBUILD 2
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -599,6 +599,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\battle.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\alpha.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\@xvm.xc"
+    Delete "$INSTDIR\res_mods\0.9.7\scripts\client\vehicle_damage.json"
+    Delete "$INSTDIR\res_mods\0.9.7\scripts\client\vehicle.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\SpotMessanger_plugin\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\SpotMessanger_plugin\SpotMessanger.pyc"
