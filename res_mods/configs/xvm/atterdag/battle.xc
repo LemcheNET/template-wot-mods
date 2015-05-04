@@ -30,7 +30,7 @@
     "clanIconsFolder": "clanicons/",
     // Path to sixth sense icon ("" for original icon).
     // Путь к иконке 6-го чувства ("" для оригинальной иконки).
-    "sixthSenseIcon": "xvm://res/SixthSense.png",
+    "sixthSenseIcon": "cfg://atterdag/res/SixthSense.png",
     // GUI elements settings (experts only)
     // Настройки графических элементов (только для экспертов!)
     "elements": ${"elements.xc":"elements"}
