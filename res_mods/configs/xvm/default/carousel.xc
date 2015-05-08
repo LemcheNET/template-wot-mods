@@ -62,7 +62,13 @@
       "xp":       { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Vehicle name.
       // Название танка.
-      "tankName": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 }
+      "tankName": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      // Status text (Crew incomplete, Repairs required)
+      // Статусный текст (Неполный экипаж, Требуется ремонт).
+      "statusText": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      // Clan lock timer
+      // Таймер блокировки танка
+      "clanLock":   { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 }
     },
     // Extra cell fields (see playersPanel.xc).
     // Дополнительные поля ячеек (см. playersPanel.xc).
@@ -73,12 +79,17 @@
     ],
     // Order of nations.
     // Порядок наций.
-    "nations_order": ["ussr", "germany", "usa", "france", "uk", "china", "japan"],
+    //"nations_order": ["ussr", "germany", "usa", "france", "uk", "china", "japan"],
+    "nations_order": [],
     // Order of types of vehicles.
     // Порядок классов техники.
     "types_order":   ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
-    // Tank sorting criteria, available options: "nation", "type", "level", "maxBattleTier", "-level", "-maxBattleTier". (minus = reverse order)
-    // Критерии сортировки танков, доступные значения: "nation", "type", "level", "maxBattleTier", "-level", "-maxBattleTier". (минус = в обратном порядке)
-    "sorting_criteria": ["nation", "type", "level"]
+    // Tank sorting criteria, available options: (minus = reverse order)
+    // Критерии сортировки танков, доступные значения: (минус = в обратном порядке)
+    // "nation", "type", "level", "maxBattleTier", "premium", "-level", "-maxBattleTier", "-premium"
+    "sorting_criteria": ["nation", "type", "level"],
+    // Suppress the tooltips for tanks in carousel
+    // Убрать подсказки к танкам в карусели
+    "suppressCarouselTooltips": false
   }
 }
