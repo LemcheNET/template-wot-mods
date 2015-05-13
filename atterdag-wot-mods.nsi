@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 7
-!define VERSIONBUILD 4
+!define VERSIONBUILD 5
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -767,6 +767,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\battle.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\alpha.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\atterdag\@xvm.xc"
+    Delete "$INSTDIR\res_mods\0.9.7\system\transp-dummy.dds"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\vehicle_damage.json"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\vehicle.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\__init__.pyc"
@@ -843,6 +844,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\SessionStat\#D042F3.png"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\SessionStat\#02C9B3.png"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\SessionStat\#00EE00.png"
+    Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\scope_shadow_remove.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\SafeShot.xml"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\SafeShot.pyc"
     Delete "$INSTDIR\res_mods\0.9.7\scripts\client\mods\PMOD.pyc"
@@ -1759,6 +1761,7 @@ section "uninstall"
     RMDir "$INSTDIR\res_mods\configs\xvm\atterdag"
     RMDir "$INSTDIR\res_mods\configs\xvm"
     RMDir "$INSTDIR\res_mods\configs"
+    RMDir "$INSTDIR\res_mods\0.9.7\system"
     RMDir "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\SpotMessanger_plugin"
     RMDir "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\SixthSenseDuration_plugin"
     RMDir "$INSTDIR\res_mods\0.9.7\scripts\client\plugins\IngameMessanger_plugin"
