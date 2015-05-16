@@ -138,7 +138,7 @@
     "lobby/header/freexp_locked_tooltip": "Esp tecnica bloccata",
     "lobby/header/freexp_unlocked_tooltip": "Esp tecnica sbloccata",
     "lobby/crew/enable_prev_crew": "Equip precedente in automatico",
-    "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nRidai automaticamente l'equipaggio che ha combattuto\nla battaglia precedente su questo veicolo",
+    "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nImposta automaticamente l'equipaggio che ha combattuto\nla battaglia precedente su questo veicolo",
     "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nEfficienza per veicolo\nPiù info su <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nValori di riferimento:\n\t\tdanno\tuccisioni\n\tAttuale:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tMedia:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tTop:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "NonElite": "Non elite",

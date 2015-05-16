@@ -159,7 +159,7 @@
     "No data": "Ei tietoa",
     "Not ready": "Ei valmis",
     "Hide with honors": "Piilota kunniamainitut",
-    "Hide unavailable": "Piilota "ei saatavilla"",
+    "Hide unavailable": "Piilota ei saatavilla",
     "XVM config reloaded": "XVM asetukset uudelleenladattu",
     "Config file xvm.xc was not found, using the built-in config": "Asetustiedostoa xvm.xc ei löydy, käytetään oletusasetuksia",
     "Error loading XVM config": "Virhe ladattaessa XVM asetuksia"
