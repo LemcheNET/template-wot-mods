@@ -14,8 +14,8 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 Some details of my mod pack.
 
 ## The mods included are as following: ##
-  * [Session Stats](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
-  * [Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
+  * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
+  * [Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)
   * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/)
   * [XVM Mod](http://www.modxvm.com)
   * [Active Dossier Uploader](http://www.vbaddict.net)
