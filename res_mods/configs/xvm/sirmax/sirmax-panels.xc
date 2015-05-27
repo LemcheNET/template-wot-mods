@@ -7,6 +7,7 @@
   },
   "large": {
     //"enabled": false,
+    "removeSquadIcon": true,
     "nickFormatLeft": "        {{r_size=2?|{{r_size=4?   |    }}}}{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>",
     "nickFormatRight": "{{name%.20s~..}}<font alpha='#A0'>{{clan}}</font>{{r_size=2?|{{r_size=4?   |    }}}}       &nbsp;",
     "vehicleFormatLeft": "{{hp}} / {{hp-max}}",
@@ -48,7 +49,8 @@
   },
   "medium": {
     //"enabled": false,
-    "width": 120,
+    "width": 80,
+    //"removeSquadIcon": true,
     "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
     "formatRight": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{nick}}</font>",
     //"extraFieldsLeft": [
@@ -59,14 +61,16 @@
   },
   "medium2": {
     //"enabled": false,
-    "width": 120,
+    "width": 80,
+    //"removeSquadIcon": true,
     "formatLeft": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
     "formatRight": "<font color='{{c:xwn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
     "__stub__": null
   },
   "short": {
     //"enabled": false,
-    //"width": 120,
+    //"width": 80,
+    //"removeSquadIcon": true,
     "__stub__": null
   },
   "none": {
@@ -76,7 +80,6 @@
   },
   "alpha": 50,
   //"iconAlpha": 50,
-  "removeSquadIcon": true,
   //"removeSelectedBackground": true,
   "removePanelsModeSwitcher": true,
   "clanIcon": { "show": true, "x": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 }
