@@ -31,678 +31,93 @@
 	For more detailed information, open the file PMOD/skins/skinLoader.json
 	
 */
-
 {
 
 	// Игровой чат в бою.
 	// Ingame chat in battle.
-	"battleChat": {
-
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Фильтр игрового чата.
-		// Ingame chat filter.
-		"cleaner": {
-			
-			// true - включить функцию.
-			// true - enable function.
-			"enable": false,
-			
-			// Список предложений по которым удаляются сообщения.
-			// List of proposals which deletes the message.
-			"mask": ["Я в свете!", "Не мешай стрелять"]
-		}
-	},
+	"battleChat" : ${"PMOD/battleChat.json"},
 
 	// Изменение поведения интерфейса в бою.
 	// Changing of the interface in battle.
-	"battleGui": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Состояние панели игроков (ушей) при отсчете до начала боя.
-		// Возможные значения - none (скрыть), short (короткая), medium (средняя), medium2 (средняя 2), large (длинная).
-		// Если используете XVM измените параметр "startMode" в файле "playersPanel.xc"
-		// Players panel state when counting up the fight.
-		// Possible values ​​- noen, short, medium, medium2, large.
-		// If you use XVM change the setting "startMode" in the file "playersPanel.xc"
-		"playersPanelState": "large",
-		
-		// Продолжительность отображения индикатора засвета (лампочка) в секундах.
-		// Duration displaying light indicator (lamp) in seconds.
-		"sixthSenseDuration": 2.0,
-		
-		// Отображать углы горизонтальной наводки на всех типах техники (0.9.5 - ВГ Миникарта).
-		// Display traverse angles on all types of vehicles (0.9.5 - WG minimap).
-		"minimapAnglesFix": false
-	},
+	"battleGui" : ${"PMOD/battleGui.json"},
 	
-	// Информация об вашем респауне на экране загрузки.
+	// Информация об вашем спауне на экране загрузки.
 	// Information about your spawn on the loading screen.
-	"battleLoading": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Текстовые подстановки с информацией о местоположении вашей базы.
-		// Вместо макроса {{square}} подставляется квадрат базы (А1 ... К0).
-		// Text substitution with information about the location of your base.
-		// Instead, the macro {{square}} is inserted square base (А1 ... К0).
-		"baseTop": "База с верхней стороны ({{square}}).",
-		"baseBottom": "База с нижней стороны ({{square}}).",
-		"baseLeft": "База с левой стороны ({{square}}).",
-		"baseRight": "База с правой стороны ({{square}}).",
-		
-		// Изменять вместо информативного сообщения не ифнформативный заголовок.
-		// Change instead of informative descrption, non informative title.
-		"changeTitle": false
-	},
+	"battleLoading" : ${"PMOD/battleLoading.json"},
 	
-	// Настройки камеры во время боя.
-	// Camera opption during battle.
-	"cameraOptions": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Инерция камеры (появилась в 0.8.11).
-		// Сamera inertia (introduced in 0.8.11).
-		"noGlideCamera": false,
-		
-		// Красная вспышка когда враг попадает по вам.
-		// Red flash when enemy hit your tank.
-		"noFlashBang": false,
-		
-		// Тряска камеры когда враг попадает по вам.
-		// Shake of camera when enemy hit your tank.
-		"noShockWave": false,
-		
-		// Время слежение камеры за тем кто вас убил (Если он в засвете, и галка стоит в настройках клиента)
-		// Time of camera tracking for those who killed you (If it is spotted, and the jackdaw client is configured)
-		"killerVisionTime": 5.0,
-		
-		// Смещением камеры по оси у (высота) относительно геометрического центра модели танка.
-		// Displacement camera on the y-axis (height) relative to the geometric center of the model tank.
-		"heightOffset": 4.0
-	},
+	// Эффекты камеры во время боя.
+	// Camera effects during battle.
+	"cameraOptions" : ${"PMOD/cameraOptions.json"},
 	
 	// Постоянное стартовое значение кратности снайперского прицела.
 	// Constant starting value of sniper scope multiplicity.
-	"defaultZoom": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Постоянное значение кратности при входе в снайперский прицел.
-		// Constant value of multiplicity when entering the the sniper scope.
-		"defaultZoomValue": 4
-	},
+	"defaultZoom" : ${"PMOD/defaultZoom.json"},
 	
 	// Ангарная часть мода.
 	// Hangar part of the mod.
-	"hangar": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Снятие и одевание сменного оборудования в 1 нажатие кнопки.
-		// Removing and attaching replaceable equipment in 1 click.
-		"autoEquip": {
-			
-			// true - включить функцию.
-			// true - enable function.			
-			"enable": false,
-			
-			// Кнопка при нажатии которой срабатывает функция.
-			// Button by which pressing function is activated.
-			"equipKey": "F3",
-			
-			// Приоритет сменного оборудования.
-			// telescope - стереотруба, mesh - маск. сеть, toolbox - ящик с инструментами
-			// Priority replaceable equipment.
-			"equipPriority": ["telescope", "mesh", "toolbox"]
-		},
-		
-		// Фильтр сообщений в ангаре
-		// Hangar messeges filter
-		"messagesCleaner": {
-			
-			// true - включить функцию.
-			// true - enable function.	
-			"enable": false,
-			
-			// Всплывающие сообщения в ангаре.
-			// Pop-up messages in the hangar.
-			"popUpMessages": false,
-			
-			// Сообщения в системном канале.
-			// Messages in the system channel.
-			"systemLog": false,
-			
-			// Список строк по которым удаляются всплывающие сообщения.
-			// List of strings which delete popup messages.
-			"maskPopUp": ["Вы не меняли пароль", "Добро пожаловать на сервер", "Ремонт", "Куплено"],
-			
-			// Список строк по которым удаляются сообщения в системном канале.
-			// List of strings which delete messages from system channel.
-			"maskSysLog": ["Вы не меняли пароль", "Добро пожаловать на сервер"]
-		}
-	},
-	
+	"hangar" : ${"PMOD/hangar.json"},
+
 	// Поведение горизонтальной стабилизации.
 	// Behavior of horizontal stabilization.
-	"horizontalStabilizer": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Тип горизонтальной стабилизации.
-		// disable - выключена на всей технике, full - включена на всей технике.
-		// Type of horizontal stabilization.
-		// disable - off on the whole technique, full - included on all vehicles.
-		"horizontalStabilizerType": "full"
-	},
+	"horizontalStabilizer" : ${"PMOD/horizontalStabilizer.json"},
 	
 	// Окно входа в игру.
 	// Login screen.
-	"loginWindow": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Автоматический вход при запуске игры.
-		// Automatic login on startup of the game.
-		"autoLogin": false,	
-
-		// Отключение автовыбора сервера в окне логина.
-		// Disable server auto-select in the login window.
-		"saveServer": false,
-		
-		// Отключение RRS новостей в окне логина.
-		// Disable RRS new in login window.
-		"skipRSS": false,
-		
-		// Отключение проигрывания стартового ролика.
-		// Deactivating the ingame start video.
-		"skipVideo": false
-	},
+	"loginWindow" : ${"PMOD/loginWindow.json"},
 	
 	// Отключение затемнения и озеленения в снайперском прицела.
 	// Disabling dimming and greening in sniper scope.
-	"noBinoculars": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false
-	},
+	"noBinoculars" : ${"PMOD/noBinoculars.json"},
 	
 	// Покачивания прицела и камеры (Динамическая камера).
 	// Wiggle sight and cameras (Dynamic camera).
-	"noDynamic": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Тип изменения динамической камеры.
-		// full - покачивание отключено полностью.
-		// custom - отключено только покачивание прицела.
-		// Type of change dynamic camera.
-		// full - off swinging completely.
-		// custom - just off wiggle sight.
-		"noDynamicType": "full"
-	},
+	"noDynamic" : ${"PMOD/noDynamic.json"},
 	
 	// Отмена смены режимов камеры по скроллу.
 	// Cancel change camera modes by scrolling.
-	"noScroll": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false
-	},
-	
-	// Отдаление камеры при старте боя и после уничтожения танка.
-	// Distancing camera at start of battle and after destroying the tank.
-	"onStartDeadDistance": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": true,
-		
-		// Отдаление камеры при входе в бой.
-		// минимальное - 1, максимальное - 400, стандартное - 2.
-		// Distancing camera when entering the the fight.
-		// minimum - 1, maximum - 400, standard - 2.
-		"startDistance": 2,
-		
-		// Отдаление камеры после уничтожения танка.
-		// минимальное - 1, максимальное - 400, стандартное - 15.
-		// Distancing camera after destroying the tank.
-		// minimum - 1, maximum - 400, standard - 15.
-		"deadDistance": 15
-	},
-	
-	// Приведённая броня танка
-	// Redused tank armor
-	"reducedArmor" : {
-		
-		// true - включить модуль. (только посылка данных в файл прицела)
-		// true - enable the module. (only sending data to a sight file)
-		"enable" : false,
-		
-		// Использовать собственный flash для вывода данных.
-		// Use own flash for data output.
-		"enable_flash": false,
-		
-		// Двигатся за интерфейсом (интерфейс игры двигается если динамическая камера включена)
-		// Move for the interface (game interface moves if the dynamic camera is turned on)
-		"trackUI": false,
-		
-		// Позиция индикатора на экране
-		// Отдельно для аркадного и снайперского режима
-		// Перевернутая по высоте декартовая система координат в пикселях, с отчетом, от центра экрана
-		// Indicator position on the screen
-		// Separately for arcade and sniper mode
-		// Inverted adjustment cartesian coordinate system in pixels, with a report from the center of the screen
-		"position" : {
-			"arcade": [-250, 200],
-			"sniper": [-250, 220]
-		},
-		
-		// Отображать только при наведении на врагов
-		// Display only on enemy targets
-		"enemysOnly": true,
-		
-		// Текст надписи 
-		//   {{armor}} - толщина брони/экрана
-		//   {{calcedArmor}} - приведённая
-		//   {{piercingPower}} - пробитие текущим снарядом
-		//   {{calcedPiercingPower}} - реальное пробитие текущим снарядом
-		//   {{enemyDistance}} - дистанция до врага
-		//   {{maxShotDistance}} - максимальная дистанция полёта снаряда
-		//   {{dynamicColor}} - динамический цвет относительно шанса пробития
-		//   {{piercingReserve}} - резерв пробития (calcedPiercingPower - calcedArmor)
-		// Label text indicator
-		"pattern" : "{{calcedPiercingPower}}/{{calcedArmor}}",
-		
-		// Обрабатывать параметр pattern как HTML текст
-		// Process pattern parameter as HTML text
-		"useHtml": false,
-		
-		// Выравнивание надписи индикатора
-		// Alignment label indicator
-		"align" : "center",
-
-		// Прозрачность надписи индикатора. Oт 0 - прозрачный до 10 непрозрачный
-		// Transparency label indicator. From 0 - transparent to 10 not transparent
-		"alpha" : 10,
-		
-		// Набор цветов относительно текущего шанса пробития
-		// Colors set relative to the current chance of penetrate
-		"colors" : {
-			// не пробить
-			"not_pierced": "E90000",
-			// возможно пробить
-			"little_pierced": "FFAD00",
-			// пробить
-			"great_pierced": "6BF40D"
-		},
-
-		// Шрифт надписи индикатора
-		// Font label indicator
-		"font" : "$FieldFont",
-
-		// Размер шрифта надписи индикатора
-		// label font size indicator
-		"size" : 18,
-
-		// Настройки тени текста  надписи индикатора
-		// Shadow settings label text indicator
-		"shadow" : {
-
-			// Прозрачность тени. Oт 0 - прозрачный до 10 непрозрачный
-			// Transparency shadow. From 0 - transparent to 10 not transparent
-			"alpha" : 9,
-
-			// Размытые тени. Oт 0 - не размыта до 10 размыта
-			// Blurry shadows. From 0 - not blurred to 10 blurred
-			"blur" : 10,
-
-			// Цвет тени. Значение цвета в палитре RGB (красный, зелёный, синий)
-			// Color тени. Value colors in the RGB (red, green, blue)
-			"color" : "000000",
-
-			// Сила тени. Oт 0 - слабая до 10 сильная
-			// Strength shadows. From 0 - not strength to 10 strength
-			"strength" : 5,
-
-			// Дистанция отступа от основного текста
-			// Indentation distance from the main text
-			"distance" : 0,
-
-			// Угол в котором движется тень
-			// The angle in which the motion of the shadow
-			"angle" : 0
-		}
-	},
-	
-	// Прокрутка в аркадном режиме.
-	// Scroll in arcade mode.
-	"scrollSensitivity": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Чувствительность прокрутки в аркадном режиме.
-		// Scroll sensitivity in arcade mode.
-		"arcadeScroll": 5
-	},
-	
-	// Сессионная статистика *Большинство настроек находятся в файле скина
-	// Session statistic *Most of the settings are in the skin file
-	"sessionStatistic": {
-
-		// true - включить функцию.
-		// true - enable function.
-		"enable": false,
-		
-		// Автоматически обнулять статистику по истечению срока годности.
-		// Automatically reset the statistics after the expiration date.
-		"autoReset": true,
-		
-		// Количество дней на протяжении которых хранится статистика.
-		// The number of days during which the stored statistics.
-		"daysToBeSaved": 1,
-
-		// Время когда статистика обнуляется (от 0 до 23).
-		// Time when statistics are reset (from 0 to 23).
-		"hourOffset": 4,
-
-		// true - Обрабатывать бои которые идут в основную статистику.
-		// false - Обрабатывать все бои без исключений.
-		// true - Process battles that go to general statistics.
-		// false - Process all battles without exception.
-		"processOnlyStatBattles": false,
-		
-		// true - Статистика хранится только за текущую сессию (пока танки открыты).
-		// false - Статистика хранится независимо от сессии (так как было всегда).
-		// true - Statistics are stored only for the current session (until the tanks are open).
-		// false - Statistics are stored independently of the session (as it has always been).
-		"statBySession": false,
-		
-		// Кнопка перезагрузки конфига
-		// Config reload Button
-		"debugButton": {
-			"enable": false,
-			"label": "R",
-			"type": "black",
-			"width": 20
-		}
-	},
-
-	// Обработка сообщений в системном канале *Большинство настроек находятся в файле скина
-	// Process messages in the system channel *Most of the settings are in the skin file
-	"systemMessages": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false
-	},
-	
-	// Ручной тормоз на ПТ-САУ.
-	// Handbrake on Tank Destroyers.
-	"TDBrakeRemover": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		// Тип отключения ручного тормоз на ПТ-САУ.
-		// full - полное отключение тормоза, custom - только открепление камеры.
-		// Type of deactivating of manual brake on Tank Destroyers.
-		// full - completely off the brake, custom - just detach the camera.
-		"TDSniperMovementMode": "custom"
-	},
-	
-	// Свободная камера.
-	// Free camera.
-	"videomode": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-			
-		// Кнопка при нажатии которой активируется камера.
-		// Button by which pressing the camera is activated.
-		"activateKey": "F3",
-		
-		// Горячие клавиши для разных манипуляций с камерой.
-		// Hotkeys for different manipulations with the camera.
-		"binds": {
-			"bindToVehicle": "B",
-			"showGunMarker": "N",
-			"showMarkers": "H",
-			"setDefaultRoll": "R",
-			"switchInertia": "P",
-			"switchLandCamera": "L",
-			"switchRotateAroundPoint": "C",
-			"setDefaultFov": "F"
-		}
-	},
-	
-	// Отдаление  камеры в бою.
-	// Distancing camera in battle.
-	"zoomDistance": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": true,
-		
-		// Отдаление в аркадном режиме.
-		// минимальное - 1, максимальное - 400, стандартное - 2 25.
-		// Distancing in arcade mode.
-		// minimum - 1, maximum - 400, standard - 2 25.
-		"arcadeDistance": [2, 75],
-		
-		// Отдаление в артиллерийском режиме.
-		// минимальное - 1, максимальное - 400, стандартное - 40 100.
-		// Distancing in strategic mode.
-		// minimum - 1, maximum - 400, standard - 40 100.
-		"artilleryDistance": [10, 200]
-	},
-	
-	// Количество шагов в снайперском прицеле и ихняя кратность.
-	// The number of steps in the sniper scope and multiplicity of theirs.
-	"zoomX": {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": true,
-		
-		// Список значений кратности снайперского режима.
-		// минимальное значение - 0.8, максимальное значение - 60, максимальное количество шагов - 20
-		// List of multiplicity sniper mode.
-		// minimum value - 0.8, maximum value - 60, maximum number of steps - 20.
-		"zoomXSteps": [2, 4, 8, 16]
-	},
-
-	// Зум индикатор.
-	// Zoom indicator.
-	"zoomIndicator" : {
-		
-		// true - включить модуль.
-		// true - enable the module.
-		"enable" : false,
-		
-		// Двигатся за интерфейсом (интерфейс игры двигается если динамическая камера включена)
-		// Move for the interface (game interface moves if the dynamic camera is turned on)
-		"trackUI": false,
-
-		// Позиция индикатора на экране
-		// Перевернутая по высоте декартовая система координат в пикселях, с отчетом, от центра экрана
-		// Indicator position on the screen
-		// Inverted adjustment cartesian coordinate system in pixels, with a report from the center of the screen
-		"position" : [240, -18],
-
-		// Текст надписи индикатора
-		// Вместо {{zoom}} будет подставлено текущее значение кратности
-		// Label text indicator
-		// Instead of {{zoom}} will be inserted the current value of multiplicity
-		"pattern" : "x{{zoom}}",
-
-		// Выравнивание надписи индикатора
-		// Alignment label indicator
-		"align" : "left",
-
-		// Прозрачность надписи индикатора. Oт 0 - прозрачный до 10 непрозрачный
-		// Transparency label indicator. From 0 - transparent to 10 not transparent
-		"alpha" : 10,
-
-		// Цвет надписи индикатора. Значение цвета в палитре RGB (красный, зелёный, синий)
-		// Color label indicator. Value colors in the RGB (red, green, blue)
-		"color" : "6BF40D",
-
-		// Шрифт надписи индикатора
-		// Font label indicator
-		"font" : "$FieldFont",
-
-		// Размер шрифта надписи индикатора
-		// label font size indicator
-		"size" : 18,
-
-		// Настройки тени текста  надписи индикатора
-		// Shadow settings label text indicator
-		"shadow" : {
-
-			// Прозрачность тени. Oт 0 - прозрачный до 10 непрозрачный
-			// Transparency shadow. From 0 - transparent to 10 not transparent
-			"alpha" : 9,
-
-			// Размытые тени. Oт 0 - не размыта до 10 размыта
-			// Blurry shadows. From 0 - not blurred to 10 blurred
-			"blur" : 10,
-
-			// Цвет тени. Значение цвета в палитре RGB (красный, зелёный, синий)
-			// Color тени. Value colors in the RGB (red, green, blue)
-			"color" : "000000",
-
-			// Сила тени. Oт 0 - слабая до 10 сильная
-			// Strength shadows. From 0 - not strength to 10 strength
-			"strength" : 5,
-
-			// Дистанция отступа от основного текста
-			// Indentation distance from the main text
-			"distance" : 0,
-
-			// Угол в котором движется тень
-			// The angle in which the motion of the shadow
-			"angle" : 0
-		}
-	},
+	"noScroll" : ${"PMOD/noScroll.json"},
 	
 	// Старый серверный прицел.
 	// Old server crosshair.
-	"oldServerCrosshair": {
+	"oldServerCrosshair" : ${"PMOD/oldServerCrosshair.json"},
+		
+	// Отдаление камеры при старте боя и после уничтожения танка.
+	// Distancing camera at start of battle and after destroying the tank.
+	"onStartDeadDistance" : ${"PMOD/onStartDeadDistance.json"},
+	
+	// Приведённая броня танка
+	// Redused tank armor
+	"reducedArmor": ${"PMOD/reducedArmor.json"},
 
-		// true - включить модуль.
-		// true - enable the module.
-		"enable": false,
-		
-		/* Ввиду громоздкого набора параметров текстур, описаны будут параметры только единожды. */
-		/* Due to the cumbersome set of parameters texture parameters will be described only once. */
-		
-		// Аркадный режим.
-		// Arcade mode.
-		"arcadeMode" : {
-			
-			// Показывать серверный прицел.
-			// Show server crosshair.
-			"enableServerGunMarker" : true,
-			
-			// Показывать обыкновенный прицел.
-			// Show default flash crosshair.
-			"enableFlashGunMarker" : true,
-			
-			// Размер и расположение текстуры.
-			// The size and location of the texture.
-			"textureSettings" : {
-				"width" : 64,
-				"height" : 64,
-				"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
-			},
-			
-			// Масштаб прицела
-			// Crosshair scale 
-			"crosshairScale" : 1,
-			
-			// Эти параметры вам лучше не трогать, они относятся к расположению элементов внутри текстуры.
-			// Люди которые делают свои текстуры, или используют какие-то не стандартные, знакомы с этими параметрами.
-			// These parameters you better not touch it, they relate to the layout inside texture. 
-			// People who make their texture, or use any non-standard, familiar with these parameters.
-			"crosshairElements" : {
-				"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
-				"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
-				"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
-				"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
-				"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
-			}
-		},
-		
-		// Снайперский режим.
-		// Sniper mode.
-		"sniperMode" : {
-			"enableServerGunMarker" : true,
-			"enableFlashGunMarker" : true,
-			"textureSettings" : {
-				"width" : 64,
-				"height" : 64,
-				"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
-			},
-			"crosshairScale" : 0.5,
-			"crosshairElements" : {
-				"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
-				"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
-				"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
-				"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
-				"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
-			}
-		},
-		
-		// Артилерийский режим.
-		// Strategic mode.
-		"strategicMode" : {
-			"enableServerGunMarker" : true,
-			"enableFlashGunMarker" : true,
-			
-			// true - сведение текстурой, false - сведение flash (1 в 1 как основное только цвет другой).
-			// true - texture gun marker, false - flash gun marker (1 to 1 as the main, only color other).
-			"textureServerGunMarker" : true,
-			
-			"textureSettings" : {
-				"width" : 64,
-				"height" : 64,
-				"path" : "scripts/client/mods/PMOD/gun_marker_standart.dds"
-			},
-			"crosshairScale" : 0.5,
-			"crosshairElements" : {
-				"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
-				"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
-				"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
-				"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
-				"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
-			}
-		}	
-	}
+	// Прокрутка в аркадном режиме.
+	// Scroll in arcade mode.
+	"scrollSensitivity" : ${"PMOD/scrollSensitivity.json"},
+	
+	// Сессионная статистика
+	// Session statistic
+	"sessionStatistic" : ${"PMOD/sessionStatistic.json"},
+
+	// Обработка сообщений в системном канале
+	// Process messages in the system channel
+	"systemMessages" : ${"PMOD/systemMessages.json"},
+	
+	// Ручной тормоз на ПТ-САУ.
+	// Handbrake on Tank Destroyers.
+	"TDBrakeRemover" : ${"PMOD/TDBrakeRemover.json"},
+	
+	// Свободная камера.
+	// Free camera.
+	"videomode" : ${"PMOD/videomode.json"},
+	
+	// Отдаление  камеры в бою.
+	// Distancing camera in battle.
+	"zoomDistance" : ${"PMOD/zoomDistance.json"},
+	
+	// Зум индикатор.
+	// Zoom indicator.
+	"zoomIndicator" : ${"PMOD/zoomIndicator.json"},	
+	
+	// Количество шагов в снайперском прицеле и ихняя кратность.
+	// The number of steps in the sniper scope and multiplicity of theirs.
+	"zoomX" : ${"PMOD/zoomX.json"}
 }

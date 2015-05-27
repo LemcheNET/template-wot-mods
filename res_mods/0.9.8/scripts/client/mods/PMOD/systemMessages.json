@@ -1,0 +1,9 @@
+/*
+	Обработка сообщений в системном канале *Большинство настроек находятся в файле скина
+	Process messages in the system channel *Most of the settings are in the skin file
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false
+}

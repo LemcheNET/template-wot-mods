@@ -1,6 +1,7 @@
  {
 	// ВЫБОР КОМПОНЕНТОВ СКИНА (ССЫЛКИ)  |  SKIN COMPONENTS SELECTION (LINKS)
 
+	${"PMOD/skins/default/battleChat.json"},       // Информер результатов о завершенном бое в чат | Battle Chat - Result Informer
 	${"PMOD/skins/default/sessionStatistic.json"}, // Сессионная статистика | Session Statistic
 	${"PMOD/skins/default/systemMessages.json"}    // Обработка сообщений в системном канале | System Channel Messages
 
@@ -10,7 +11,7 @@
  * Загрузчик скинов
  *
  * Скин позволяет изменять внешний вид следующих модулей:
- * sessionStatistic, systemMessages.
+ * sessionStatistic, systemMessages, battleChat: Result Informer.
  * Для выбора компонентов скина скопируйте ИМЯ ПАПКИ СКИНА из таблицы ниже
  * и вставьте его в соответствующую ССЫЛКУ, заменив имя "default"
  *
