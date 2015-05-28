@@ -4,13 +4,14 @@ if [ -f delme.txt ]; then
 	rm -f delme.txt
 fi
 
+LASTVERSION=0.9.7
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 for folder in {atterdag-wot-mods,res_mods,res}; do
-	for d in $($USERPROFILE/bin/find.exe $folder -type d); do
+	for d in $($USERPROFILE/bin/find.exe $folder -type d | grep -v \res_mods/${LASTVERSION}); do
 		echo "    RMDir \"\$INSTDIR\\$d\"" >> delme.txt
 	done
-	for f in $($USERPROFILE/bin/find.exe $folder -type f); do
+	for f in $($USERPROFILE/bin/find.exe $folder -type f | grep -v \res_mods/${LASTVERSION}); do
 		echo "    Delete \"\$INSTDIR\\$f\"" >> delme.txt
 	done
 done
