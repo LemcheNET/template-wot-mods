@@ -145,7 +145,7 @@
     "lobby/crew/enable_prev_crew": "Automatisch letzte Besatzung verwenden",
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nAutomatisch die Besatzung aus dem letzten\nGefecht mit diesem Fahrzeug verwenden",
     "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nEffizienz pro Fahrzeug\nWeitere Informationen unter <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
-    "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nReferenzwerte:\n\t\tSchaden\tAbschüsse\n\tAktuell:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tDurchschnitt:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tHöchste:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
+    "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nReferenzwerte:\n\t\t\tSchaden\tAbschüsse\n\tAktuell:\t\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tDurchschnitt:\t\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tHöchste:\t\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "NonElite": "nicht-Elite",
     "Premium": "Premium",
     "Normal": "Normal",

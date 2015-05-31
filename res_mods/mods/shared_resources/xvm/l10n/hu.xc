@@ -163,7 +163,7 @@
     "Destroyed": "Megsemmisítve",
     "No data": "Nincs adat",
     "Not ready": "Nincs kész",
-    "Hide completed": "",
+    "Hide completed": "Teljesítettek elrejtése",
     "Hide with honors": "Kitüntetéssel teljesítettek elrejtése",
     "Hide unavailable": "Nem elérhetőek elrejtése",
     "XVM config reloaded": "XVM beállítások újratöltve",

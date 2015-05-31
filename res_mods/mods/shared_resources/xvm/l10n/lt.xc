@@ -163,7 +163,7 @@
     "Destroyed": "Sunaikinti",
     "No data": "Nėra informacijos",
     "Not ready": "Neparuošta",
-    "Hide completed": "",
+    "Hide completed": "Slėpti įvykdytas",
     "Hide with honors": "Slėpti su pagyrimu",
     "Hide unavailable": "Slėpti nepasiekiamas",
     "XVM config reloaded": "XVM forma perkrauta",
