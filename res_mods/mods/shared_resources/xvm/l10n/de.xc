@@ -92,6 +92,7 @@
     "view_range/stereoscope": "mit Scherenfernrohr",
     "radio_range/base": "Basis",
     "radio_range/actual": "Tatsächlich",
+    "lowAmmo": "",
     "shootingRadius": "Geschützreichweite",
     "pitchLimits": "Vertikaler Richtwinkel",
     "pitchLimitsSide": "Vertikaler Richtwinkel (seitlich)",

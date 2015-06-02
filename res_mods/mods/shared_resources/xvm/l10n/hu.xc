@@ -92,6 +92,7 @@
     "view_range/stereoscope": "periszkóppal",
     "radio_range/base": "alap",
     "radio_range/actual": "tényleges",
+    "lowAmmo": "Kevés lőszer",
     "shootingRadius": "Lőtávolság",
     "pitchLimits": "Függőleges kitéríthetőség",
     "pitchLimitsSide": "Függőleges kitéríthetőség (oldalt)",

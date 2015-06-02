@@ -92,6 +92,7 @@
     "view_range/stereoscope": "s binokulárem",
     "radio_range/base": "základní",
     "radio_range/actual": "aktuální",
+    "lowAmmo": "",
     "shootingRadius": "Dostřel",
     "pitchLimits": "Svislé omezení pohybu děla",
     "pitchLimitsSide": "Omezení pohybu děla (boční)",

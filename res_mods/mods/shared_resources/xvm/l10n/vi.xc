@@ -92,6 +92,7 @@
     "view_range/stereoscope": "có ống nhòm",
     "radio_range/base": "",
     "radio_range/actual": "",
+    "lowAmmo": "",
     "shootingRadius": "",
     "pitchLimits": "",
     "pitchLimitsSide": "",

@@ -92,6 +92,7 @@
     "view_range/stereoscope": "con binocoli",
     "radio_range/base": "base",
     "radio_range/actual": "attuale",
+    "lowAmmo": "",
     "shootingRadius": "Raggio di tiro",
     "pitchLimits": "Alzo",
     "pitchLimitsSide": "Alzo (lato)",

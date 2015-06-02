@@ -92,6 +92,7 @@
     "view_range/stereoscope": "sa stereokopom",
     "radio_range/base": "baza",
     "radio_range/actual": "stvarno",
+    "lowAmmo": "",
     "shootingRadius": "Pucački radijus",
     "pitchLimits": "Kut povišenja",
     "pitchLimitsSide": "",

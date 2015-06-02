@@ -92,6 +92,7 @@
     "view_range/stereoscope": "su binokuliarais",
     "radio_range/base": "bazė",
     "radio_range/actual": "apskaičiuotas",
+    "lowAmmo": "Nedaug amunicijos",
     "shootingRadius": "Šaudymo spindulys",
     "pitchLimits": "Pakilimo spindulys",
     "pitchLimitsSide": "Pakilimo spindulys (šonas)",

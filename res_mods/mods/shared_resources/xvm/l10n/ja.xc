@@ -92,6 +92,7 @@
     "view_range/stereoscope": "双眼鏡使用時",
     "radio_range/base": "基礎値",
     "radio_range/actual": "実効値",
+    "lowAmmo": "",
     "shootingRadius": "",
     "pitchLimits": "俯仰角",
     "pitchLimitsSide": "俯仰角(側面)",

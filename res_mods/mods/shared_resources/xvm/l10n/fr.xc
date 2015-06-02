@@ -92,6 +92,7 @@
     "view_range/stereoscope": "avec binoculaires",
     "radio_range/base": "de base",
     "radio_range/actual": "actuelle",
+    "lowAmmo": "Peu de munitions",
     "shootingRadius": "Rayon de tir",
     "pitchLimits": "Dépression",
     "pitchLimitsSide": "Dépression (coté)",

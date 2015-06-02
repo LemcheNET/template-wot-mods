@@ -92,6 +92,7 @@
     "view_range/stereoscope": "雙筒望遠鏡",
     "radio_range/base": "基本",
     "radio_range/actual": "實際",
+    "lowAmmo": "",
     "shootingRadius": "",
     "pitchLimits": "俯仰角",
     "pitchLimitsSide": "",

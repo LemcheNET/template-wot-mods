@@ -92,6 +92,7 @@
     "view_range/stereoscope": "kiikareilla",
     "radio_range/base": "perus",
     "radio_range/actual": "todellinen",
+    "lowAmmo": "Vähän ammuksia",
     "shootingRadius": "ampumasäde",
     "pitchLimits": "Ylä- ja alakoro",
     "pitchLimitsSide": "Ylä- ja alakoro (sivulla)",

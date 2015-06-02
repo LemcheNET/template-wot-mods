@@ -92,6 +92,7 @@
     "view_range/stereoscope": "stereoskoobiga",
     "radio_range/base": "baas",
     "radio_range/actual": "tegelik",
+    "lowAmmo": "",
     "shootingRadius": "Laskeraadius",
     "pitchLimits": "Tõusunurk",
     "pitchLimitsSide": "Tõusunurk (küljed)",

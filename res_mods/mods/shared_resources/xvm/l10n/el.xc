@@ -92,6 +92,7 @@
     "view_range/stereoscope": "Με στερεοσκόπιο",
     "radio_range/base": "βάση",
     "radio_range/actual": "πραγματικός",
+    "lowAmmo": "",
     "shootingRadius": "",
     "pitchLimits": "",
     "pitchLimitsSide": "",

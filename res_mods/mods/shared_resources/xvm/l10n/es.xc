@@ -92,6 +92,7 @@
     "view_range/stereoscope": "con estereoscopio",
     "radio_range/base": "base",
     "radio_range/actual": "actual",
+    "lowAmmo": "",
     "shootingRadius": "Radio de disparo",
     "pitchLimits": "Elevación arc",
     "pitchLimitsSide": "Arco de elevación (lado)",

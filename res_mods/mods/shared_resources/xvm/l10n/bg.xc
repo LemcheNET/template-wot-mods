@@ -92,6 +92,7 @@
     "view_range/stereoscope": "със бинокъл",
     "radio_range/base": "основен",
     "radio_range/actual": "действителен",
+    "lowAmmo": "",
     "shootingRadius": "",
     "pitchLimits": "",
     "pitchLimitsSide": "",
