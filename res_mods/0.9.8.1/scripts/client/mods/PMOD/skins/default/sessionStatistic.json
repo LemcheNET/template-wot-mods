@@ -1,0 +1,107 @@
+
+// Сессионная статистика
+// Session statistic
+"sessionStatistic": {
+
+	// Сообщение на случай отсутствия проведенных боев за сессию.
+	// Message in case of absence spent battles for session.
+	"needBattleToProcess": "<br><br><p align='center'><font face='$TitleFont' size='15' color='#E9E2BF'>PMOD - Сессионная статистика</font><br><br>{{UM:helloMessage}}, для отображения изменений в статистике нужно провести хотя бы один бой!</p>",
+	
+	// Подложка сообщения
+	// Message background
+	"messageBackground": {
+		
+		// true - Использовать подложку
+		// true - Use a substrate
+		"enable": true,
+		
+		// Путь к изображению с поддержкой макросов (сыгран хотя бы один бой)
+		// Path to an image with support for macros (played at least one fight)
+		"path": "../../scripts/client/mods/PMOD/skins/default/images/sessionStatisticBackground{{c:WN8}}.png",
+		
+		// Путь к изображению без поддержки макросов (нет ни одного боя)
+		// Path to an image without macros (not played any battles)
+		"pathNullBattles": "../../scripts/client/mods/PMOD/skins/default/images/sessionStatisticBackgroundNull.png"
+	},
+	
+	// Иконка сообщения
+	// Message icon
+	"messageIcon": {
+
+		// true - Использовать иконку
+		// true - Use a icon
+		"enable" : false, 
+		
+		// Путь к изображению с поддержкой макросов (сыгран хотя бы один бой)
+		// Path to an image with support for macros (played at least one fight)
+		"path": "../maps/icons/library/PersonalAchievementsIcon-1.png",
+	
+		// Путь к изображению без поддержки макросов (нет ни одного боя)
+		// Path to an image without macros (not played any battles)
+		"pathNullBattles": "../maps/icons/library/PersonalAchievementsIcon-1.png"
+	},
+	
+	// Кнопка обнуления статистики
+	// Reset statistic button 
+	"resetButton": {
+	
+		// true - Отображать кнопку
+		// true - Display button
+		"enable": false,
+		
+		// Надпись на кнопке
+		// Button text
+		"label": "Сброс",
+		
+		// Цвет кнопки
+		// standart - стандартный, black - чёрный
+		// Button color
+		// standart, black
+		"type": "black",
+		
+		// Шырина кнопки
+		// Button width
+		"width": 122
+	},
+	
+	// Заготовка сообщения. Список макросов смотрите в файле readme. Также можно использовать пользовательские макросы
+	// The blank message. List of macros watch in readme file. You can also use users macros
+	"template":[
+		"<font size='14' color='#A3A09B'><textformat leading='2' tabstops='[5,90,150]'> ",
+		"<tab>Победы<tab><font color='#F5F2E1'>{{Wins}} / {{Battles}}</font><tab>{{UM:rgWinrate}}<font color='{{c:WinRate}}'>{{WinRate}}%</font>{{UM:line}}",
+		"<tab>Опыт<tab><font color='#F5F2E1'>{{XP}}</font><tab>{{UM:rgXP}}<font color='{{c:AvgXP}}'>{{AvgXP}}</font>{{UM:line}}",
+		"<tab>Урон<tab><font color='#F5F2E1'>{{DamageDealt}}</font><tab>{{UM:rgDamage}}<font color='{{c:AvgDamageDealt}}'>{{AvgDamageDealt}}</font>{{UM:line}}",
+		"<tab>Фраги<tab><font color='#F5F2E1'>{{Frags}}</font><tab>{{UM:rgFrags}}<font color='{{c:AvgFrags}}'>{{AvgFrags}}</font>{{UM:line}}",
+		"<tab>Кредиты<tab><font color='{{c:PureCredits}}'>{{PureCredits}}</font><tab>{{UM:rgCredits}}<font color='{{c:AvgPureCredits}}'>{{AvgPureCredits}}</font><br>",
+		" <tab> <tab><font color='{{c:AccountCredits}}'>{{AccountCredits}}</textformat></font></font></textformat>"
+	],
+
+	// Список цветовых подстановок. "название_макроса": [{"value": значение,  "color": "#код_цвета"}, {"value": значение,  "color": "#код_цвета"}]
+	// List of color permutations. "macro_name": [{"value": value,  "color": "#color_code"}, {"value": value,  "color": "#color_code"}]
+	"colors": {
+		"WinRate": [{"value": 47, "color": "#EE0000"}, {"value": 49, "color": "#FE7903"}, {"value": 52, "color": "#F8F400"}, {"value": 57, "color": "#60FF00"}, {"value": 64, "color": "#02C9B3"}, {"value": 101, "color": "#D042F3"}],
+		"AvgDamageDealt": [{"value": 800, "color": "#EE0000"}, {"value": 1500, "color": "#FE7903"}, {"value": 2000, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 9999,  "color": "#D042F3"}],
+		"AvgFrags": [{"value": 0.6, "color": "#EE0000"}, {"value": 0.8,  "color": "#FE7903"}, {"value": 1,    "color": "#F8F400"}, {"value": 1.3,  "color": "#60FF00"}, {"value": 2,    "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+		"AvgXP": [{"value": 0,   "color": "#D6D7D4"}, {"value": 201, "color": "#EE0000"}, {"value": 301,  "color": "#FE7903"}, {"value": 601,  "color": "#F8F400"}, {"value": 801,  "color": "#60FF00"}, {"value": 1101, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+		"AvgPureCredits": [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+		"PureCredits": [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+		"AccountCredits": [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+		"WN8": [{"value": 315, "color": "Red"}, {"value": 760,  "color": "Orange"}, {"value": 1325, "color": "Yellow"}, {"value": 1980, "color": "Green"}, {"value": 2570, "color": "Cyan"}, {"value": 9999,  "color": "Purple"}],
+		"DiffWinrate": [{"value": 0, "color": "red"}, {"value": 9999999, "color": "green"}],
+		"DiffAvgDamageDealt": [{"value": 0, "color": "red"}, {"value": 9999999, "color": "green"}],
+		"DiffAvgFrags": [{"value": 0, "color": "red"}, {"value": 9999999, "color": "green"}],
+		"DiffAvgXP": [{"value": 0, "color": "red"}, {"value": 9999999, "color": "green"}]
+	},
+
+	// Пользовательские макросы
+	// Custom macros
+	"userMacros": {
+		"UM:helloMessage": "Привет {{PlayerName}}",
+		"UM:line": "\n<img src='img://scripts/client/mods/PMOD/skins/default/images/line.png' height='2' width='200'>\n",
+		"UM:rgWinrate": "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffWinrate}}.png' width='11' height='10'>",
+		"UM:rgXP": "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgXP}}.png' width='11' height='10'>",
+		"UM:rgDamage": "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgDamageDealt}}.png' width='11' height='10'>",
+		"UM:rgFrags": "<img src='img://scripts/client/mods/PMOD/skins/default/images/{{c:DiffAvgFrags}}.png' width='11' height='10'>",
+		"UM:rgCredits": "<img src='img://scripts/client/mods/PMOD/skins/default/images/null.png' width='11' height='10'>"
+	}
+}
