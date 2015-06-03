@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 8
-!define VERSIONBUILD 4
+!define VERSIONBUILD 5
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
@@ -1765,9 +1765,11 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\damageAnnouncer.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\Circle15.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\Circle15.cfg"
+    Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\BRR.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\battle_assistant.txt"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\battle_assistant.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\AutoEquip.pyc"
+    Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\mods\ATS.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\gui\scaleform\locale\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\gui\scaleform\daapi\view\battle\RadialMenu.xml"
     Delete "$INSTDIR\res_mods\0.9.8.1\scripts\client\gui\scaleform\daapi\view\battle\RadialMenu.pyc"
