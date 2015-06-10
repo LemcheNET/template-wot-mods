@@ -46,179 +46,146 @@
     "debugBattleResultMessage": false,
 	"replaceBattleMessages": true,
     "onlineReloadConfig": false,
-    "ignoreBattleType": [],
+    "ignoreBattleType": [2, 4, 7, 8],
     "showResetButton": true,
     "textResetButton": "Reset",
-    "dailyAutoReset": true,
-    "dailyAutoResetHour": 6,
-    "battleEndedMessageDefeat": "<font size='18' color='#FE0E00'>Defeat.</font>\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
-    "battleEndedMessageDraw": "<font size='18' color='#FE7903'>Draw.\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
-    "battleEndedMessageWin": "<font size='18' color='#60FF00'>Victory!\n <font size='13' color='#DBA901'>{{map}}\n</font> <img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "dailyAutoReset": false,
+    "dailyAutoResetHour": 2,
+    "battleEndedMessageDefeat": "<font size='18' color='#FE0E00'>Defeat.</font>\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "battleEndedMessageDraw": "<font size='18' color='#FE7903'>Draw.\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
+    "battleEndedMessageWin": "<font size='18' color='#60FF00'>Victory!\n <font size='13' color='#DBA901'>{{map}}\n</font><img src='img://gui/maps/icons/vehicle/{{tankimage}}.png' width='120' height='75' align='middle' vspace='-10'> <font size='14' color='#DBA901'>{{vehicle}}</font>\n",
 	"battleAchieves": "<img src='img://{{achieveicon}}' width='36' height='38' align='baseline' vspace='-4'> ",
     "bgIcon": "",
     "template": [
-        "<font size='12'><textformat leading='-4' tabstops='[50,130]'><font color='#FFCC66'>WN8:</font><tab><font color='{{g:WN8}}'><b>{{WN8}} ({{XWN8}})</b></font></font><tab><font color='#FFCC66'>Avg.Tier: <font color='{{g:avgBattleTier}}'><b>{{avgTier:1f}}</b></font></font></textformat>",
-        "<textformat leading='-4' tabstops='[50,130,190]'><font color='#FFCC66'>Battles:</font><tab><font color='{{g:rWIN}}'><b>{{winsCount}}/{{battlesCount}}<tab>{{avgWinRate}}%<tab>{{rWIN}}</b></font>",
-		"\n<font color='#FFCC66'><tab><b>Total:<tab>Avg.:<tab>Xpc:</b></font>",
-        "<font color='#FFCC66'>Dmg:</font><tab><font color='{{g:rDAMAGE}}'><b>{{totalDmg}}<tab>{{avgDamage}}<tab>{{rDAMAGE}}</b></font>",
-        "<font color='#FFCC66'>Frags:</font><tab><font color='{{g:rFRAG}}'><b>{{totalFrag}}<tab>{{avgFrag}}<tab>{{rFRAG}}</b></font>",
-        "<font color='#FFCC66'>Spot:</font><tab><font color='{{g:rSPOT}}'><b>{{totalSpot}}<tab>{{avgSpot}}<tab>{{rSPOT}}</b></font>",
-        "<font color='#FFCC66'>Def:</font><tab><font color='{{g:rDEF}}'><b>{{totalDef}}<tab>{{avgDef}}<tab>{{rDEF}}</b></font>",
-        "<font color='#FFCC66'>Exp.(Place):</font><tab><font color='{{g:medPlace}}'><b>{{totalXP}}<tab>{{avgOriginalXP}}<tab></font><font color='#FFCC66'>(<font color='{{g:medPlace}}'>{{medPlace:1f}}</b></font>)</font>",
-        "<font color='#FFCC66'>Total:</font><tab><font color='{{c:credits}}'><b>{{credits}} <img src='img://gui/maps/icons/library/CreditsIcon-1.png' width='11' height='11' align='baseline' vspace='-2'><tab>{{avgCredits}} <img src='img://gui/maps/icons/library/CreditsIcon-1.png' width='11' height='11' align='baseline' vspace='-2'></b></font></textformat><font>",
-		"<font color='#FFCC66'>Gold balance:</font><tab><font color='{{c:gold}}'>{{gold}}</font> <img src='img://gui/maps/icons/library/GoldIcon-2.png' width='15' height='15' align='baseline' vspace='-4'>"
+        		"<font size='12' face='$FieldFont' color='#FFB964'><textformat leading='-2' tabstops='[80,93,150]'>",			
+				"WN8:<tab><tab>EFF:",
+				"<font color='{{g:WN8}}'>{{WN8}} ({{XWN8}})</font><tab><tab><font color='{{g:EFF}}'>{{EFF}} ({{XEFF}})</font>\n",
+				"Ø Tier:<tab>Ø Place:<tab><tab>Ø WinRate:",
+				"<font color='{{g:avgBattleTier}}'>{{avgBattleTier}} ({{avgBattleTierDiff}})</font><tab><font color='{{g:medPlace}}'>{{medPlace}}</font><tab><tab><font color='{{g:avgWinRate}}'>{{avgWinRate}}</font>",
+				"Gold balance:<tab><font color='{{c:gold}}'>{{gold}}</font> <img src='img://gui/maps/icons/library/GoldIcon-2.png' width='15' height='15' align='baseline' vspace='-4'>",
+				"</font></textformat>"
     ],
 	"userMacros": {
 		"potential": "\n<font size='12' color='#DBA901'>Pot. Dmg. Received: </font><font size='12' color='{{g:potentialDmg}}'>{{potentialDmg}}</font>"
     },
     "gradient": {
         "EFF": [
-			{ "value":      0, "color": "#FE0E00" },
-			{ "value":    610, "color": "#FE7903" },
-			{ "value":    850, "color": "#F8F400" },
-			{ "value":   1145, "color": "#60FF00" },
-			{ "value":   1475, "color": "#02C9B3" },
-			{ "value":   1775, "color": "#D042F3" }
+            {"value": 400, "color": "#FE0E00"},
+            {"value": 610, "color": "#FE7903"},
+            {"value": 850, "color": "#F8F400"},
+            {"value": 1145, "color": "#60FF00"},
+            {"value": 1475, "color": "#02C9B3"},
+            {"value": 1775, "color": "#D042F3"}
         ],
         "WN6": [
-			{ "value":      0, "color": "#990000" },
-			{ "value":    500, "color": "#FE0E00" },
-			{ "value":    700, "color": "#FE7903" },
-			{ "value":    900, "color": "#F8F400" },
-			{ "value":   1100, "color": "#60FF00" },
-			{ "value":   1350, "color": "#00CC00" },
-			{ "value":   1550, "color": "#02C9B3" },
-			{ "value":   1850, "color": "#D042F3" },
-			{ "value":   2050, "color": "#9900FF" }	
+            {"value": 300, "color": "#FE0E00"},
+            {"value": 410, "color": "#FE7903"},
+            {"value": 795, "color": "#F8F400"},
+            {"value": 1185, "color": "#60FF00"},
+            {"value": 1585, "color": "#02C9B3"},
+            {"value": 1925, "color": "#D042F3"}
         ],
         "WN7": [
-			{ "value":      0, "color": "#990000" },
-			{ "value":    500, "color": "#FE0E00" },
-			{ "value":    700, "color": "#FE7903" },
-			{ "value":    900, "color": "#F8F400" },
-			{ "value":   1100, "color": "#60FF00" },
-			{ "value":   1350, "color": "#00CC00" },
-			{ "value":   1550, "color": "#02C9B3" },
-			{ "value":   1850, "color": "#D042F3" },
-			{ "value":   2050, "color": "#9900FF" }	
+            {"value": 300, "color": "#FE0E00"},
+            {"value": 410, "color": "#FE7903"},
+            {"value": 795, "color": "#F8F400"},
+            {"value": 1185, "color": "#60FF00"},
+            {"value": 1585, "color": "#02C9B3"},
+            {"value": 1925, "color": "#D042F3"}
         ],
 		"avgBattleTier": [			
-			{ "value":      2, "color": "#FE0E00" },
-			{ "value":      3, "color": "#FE7903" },
-			{ "value":      5, "color": "#F8F400" },
-			{ "value":      7, "color": "#60FF00" },
-			{ "value":      9, "color": "#02C9B3" },
-			{ "value":     11, "color": "#D042F3" }	
+			{ "value": 2,		"color": "#FE0E00" },	
+			{ "value": 3,		"color": "#FE7903" },	
+			{ "value": 5,		"color": "#F8F400" },	
+			{ "value": 7,		"color": "#60FF00" },	
+			{ "value": 9,		"color": "#02C9B3" },	
+			{ "value": 11,		"color": "#D042F3" }	
 		],
 		"currentPlace": [
-			{ "value":      2, "color": "#D042F3" },
-			{ "value":      3, "color": "#02C9B3" },
-			{ "value":      5, "color": "#60FF00" },
-			{ "value":      7, "color": "#F8F400" },
-			{ "value":      9, "color": "#FE7903" },
-			{ "value":     12, "color": "#FE0E00" }
+			{ "value": 2,		"color": "#D042F3" },	
+			{ "value": 3,		"color": "#02C9B3" },	
+			{ "value": 5,		"color": "#60FF00" },	
+			{ "value": 7,		"color": "#F8F400" },	
+			{ "value": 9,		"color": "#FE7903" },	
+			{ "value": 12,		"color": "#FE0E00" }	
 		],
 		"potentialDmg": [
-			{ "value":      0, "color": "#DBA901" },
-			{ "value":      1, "color": "#FE0E00" },
-			{ "value":    800, "color": "#FE0E00" },
-			{ "value":   1500, "color": "#FE7903" },
-			{ "value":   2000, "color": "#F8F400" },
-			{ "value":   2500, "color": "#60FF00" },
-			{ "value":   3000, "color": "#02C9B3" },
-			{ "value":   9999, "color": "#D042F3" }
+			 { "value": 0,		"color": "#DBA901" },
+			 { "value": 1,      "color": "#FE0E00" },
+			 { "value": 800,      "color": "#FE0E00" },
+			 { "value": 1500,     "color": "#FE7903" },
+			 { "value": 2000,     "color": "#F8F400" },
+			 { "value": 2500,     "color": "#60FF00" },
+			 { "value": 3000,     "color": "#02C9B3" },
+			 { "value": 9999,     "color": "#D042F3" }
 		],
         "WN8": [
-			{ "value":      0, "color": "#BAAAAD" },
-			{ "value":    300, "color": "#F11919" },
-			{ "value":    450, "color": "#FF8A00" },
-			{ "value":    650, "color": "#E6DF27" },
-			{ "value":    900, "color": "#77E812" },
-			{ "value":   1200, "color": "#459300" },
-			{ "value":   1600, "color": "#2AE4FF" },
-			{ "value":   2000, "color": "#00A0B8" },
-			{ "value":   2450, "color": "#C64CFF" },
-			{ "value":   2900, "color": "#8225AD" }	
+            {"value": 155, "color": "#FE0E00"},
+            {"value": 530, "color": "#FE7903"},
+            {"value": 1030, "color": "#F8F400"},
+            {"value": 1638, "color": "#60FF00"},
+            {"value": 2253, "color": "#02C9B3"},
+            {"value": 2895, "color": "#D042F3"}
         ],
-		"rWIN": [
-			{"value":    0.00, "color": "#BAAAAD"},
-			{"value":    0.96, "color": "#F11919"},
-			{"value":    0.97, "color": "#FF8A00"},
-			{"value":    0.98, "color": "#E6DF27"},
-			{"value":    1.00, "color": "#77E812"},
-			{"value":    1.02, "color": "#459300"},
-			{"value":    1.04, "color": "#2AE4FF"},
-			{"value":    1.06, "color": "#00A0B8"},
-			{"value":    1.10, "color": "#C64CFF"},
-			{"value":    1.15, "color": "#8225AD"}
-		],			
+        "rWIN": [
+            {"value": 0.34, "color": "#FE0E00"},
+            {"value": 0.57, "color": "#FE7903"},
+            {"value": 0.81, "color": "#F8F400"},
+            {"value": 1.03, "color": "#60FF00"},
+            {"value": 1.22, "color": "#02C9B3"},
+            {"value": 1.57, "color": "#D042F3"}
+        ],
         "rDAMAGE": [
-			{"value":    0.00, "color": "#BAAAAD"},
-			{"value":    0.96, "color": "#F11919"},
-			{"value":    0.97, "color": "#FF8A00"},
-			{"value":    0.98, "color": "#E6DF27"},
-			{"value":    1.00, "color": "#77E812"},
-			{"value":    1.02, "color": "#459300"},
-			{"value":    1.04, "color": "#2AE4FF"},
-			{"value":    1.06, "color": "#00A0B8"},
-			{"value":    1.10, "color": "#C64CFF"},
-			{"value":    1.15, "color": "#8225AD"}
+            {"value": 0.34, "color": "#FE0E00"},
+            {"value": 0.57, "color": "#FE7903"},
+            {"value": 0.81, "color": "#F8F400"},
+            {"value": 1.03, "color": "#60FF00"},
+            {"value": 1.22, "color": "#02C9B3"},
+            {"value": 1.57, "color": "#D042F3"}
         ],
         "rFRAG": [
-			{"value":    0.00, "color": "#BAAAAD"},
-			{"value":    0.96, "color": "#F11919"},
-			{"value":    0.97, "color": "#FF8A00"},
-			{"value":    0.98, "color": "#E6DF27"},
-			{"value":    1.00, "color": "#77E812"},
-			{"value":    1.02, "color": "#459300"},
-			{"value":    1.04, "color": "#2AE4FF"},
-			{"value":    1.06, "color": "#00A0B8"},
-			{"value":    1.10, "color": "#C64CFF"},
-			{"value":    1.15, "color": "#8225AD"}
+            {"value": 0.34, "color": "#FE0E00"},
+            {"value": 0.57, "color": "#FE7903"},
+            {"value": 0.81, "color": "#F8F400"},
+            {"value": 1.03, "color": "#60FF00"},
+            {"value": 1.22, "color": "#02C9B3"},
+            {"value": 1.57, "color": "#D042F3"}
         ],
         "rSPOT": [
-			{"value":    0.00, "color": "#BAAAAD"},
-			{"value":    0.96, "color": "#F11919"},
-			{"value":    0.97, "color": "#FF8A00"},
-			{"value":    0.98, "color": "#E6DF27"},
-			{"value":    1.00, "color": "#77E812"},
-			{"value":    1.02, "color": "#459300"},
-			{"value":    1.04, "color": "#2AE4FF"},
-			{"value":    1.06, "color": "#00A0B8"},
-			{"value":    1.10, "color": "#C64CFF"},
-			{"value":    1.15, "color": "#8225AD"}
+            {"value": 0.34, "color": "#FE0E00"},
+            {"value": 0.57, "color": "#FE7903"},
+            {"value": 0.81, "color": "#F8F400"},
+            {"value": 1.03, "color": "#60FF00"},
+            {"value": 1.22, "color": "#02C9B3"},
+            {"value": 1.57, "color": "#D042F3"}
         ],
         "rDEF": [
-			{"value":    0.00, "color": "#BAAAAD"},
-			{"value":    0.96, "color": "#F11919"},
-			{"value":    0.97, "color": "#FF8A00"},
-			{"value":    0.98, "color": "#E6DF27"},
-			{"value":    1.00, "color": "#77E812"},
-			{"value":    1.02, "color": "#459300"},
-			{"value":    1.04, "color": "#2AE4FF"},
-			{"value":    1.06, "color": "#00A0B8"},
-			{"value":    1.10, "color": "#C64CFF"},
-			{"value":    1.15, "color": "#8225AD"}
+            {"value": 0.34, "color": "#FE0E00"},
+            {"value": 0.57, "color": "#FE7903"},
+            {"value": 0.81, "color": "#F8F400"},
+            {"value": 1.03, "color": "#60FF00"},
+            {"value": 1.22, "color": "#02C9B3"},
+            {"value": 1.57, "color": "#D042F3"}
         ],
         "medPlace": [
-            {"value":       1, "color": "#D042F3"},
-            {"value":       3, "color": "#02C9B3"},
-            {"value":       5, "color": "#60FF00"},
-            {"value":       7, "color": "#F8F400"},
-            {"value":      10, "color": "#FE7903"},
-            {"value":      15, "color": "#FE0E00"}
+            {"value": 1, "color": "#D042F3"},
+            {"value": 3, "color": "#02C9B3"},
+            {"value": 5, "color": "#60FF00"},
+            {"value": 7, "color": "#F8F400"},
+            {"value": 10, "color": "#FE7903"},
+            {"value": 15, "color": "#FE0E00"}
         ]
     },
     "palette" : {
         "credits": [
-            {"value":      -1, "color": "#FE0E00"},
-            {"value":       0, "color": "#FFFFFF"},
-            {"value":       1, "color": "#60FF00"}
+            {"value": -1, "color": "#FE0E00"},
+            {"value": 0, "color": "#FFFFFF"},
+            {"value": 1, "color": "#60FF00"}
         ],
         "gold": [
-            {"value":      -1, "color": "#FE0E00"},
-            {"value":       0, "color": "#FFFFFF"},
-            {"value":       1, "color": "#60FF00"}
+            {"value": -1, "color": "#FE0E00"},
+            {"value": 0, "color": "#FFFFFF"},
+            {"value": 1, "color": "#60FF00"}
         ]
     }
 }
