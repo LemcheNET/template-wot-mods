@@ -32,7 +32,7 @@
 			<location x="0" y="22"/> <!-- healthbar text location -->
 			<text font="Arial" size="13" color="0xE2E2E2" align="center"/> 
 			<filter size="4" angle="45" distance="0" color="0x000000" alpha="100" strength="2"/>
-			<format>{{hp}}/{{hp-max}}</format> <!-- format - how the text appears. macros -->
+			<format>{{hp}}/{{hp-max}} ({{hp-ratio}}%)</format> <!-- format - how the text appears. macros -->
 			<healthBar fcolor="0x009000" lcolor="0xFA0100"/> <!-- fcolor - full helthbar color, lcolor - low healthbar color. -->
 		</health>
 		
@@ -55,14 +55,14 @@
 		<!-- fire alerts -->
 		<fireAlert>
 			<fireMessage>
-				<location x="70" y="-246" mode="2"/>
+				<location x="70" y="172"/>
 				<text font="Arial" size="18" color="0xFF9F00" align="right"/> 
 				<filter size="1" angle="0" distance="0" color="0xFF0000" alpha="100" strength="1"/>
 				<txt>! Tank on Fire !</txt> <!-- txt - text that is displayed when the tank is burning. -->
 			</fireMessage>
 	
 			<fireIcon>
-				<location x="50" y="-359" mode="2"/>
+				<location x="50" y="59"/>
 				<common size="2" color="0xFF5F00"/> <!-- color currently disabled because of flickering in high fps -->
 				<filter size="3" angle="0" distance="0" color="0xFF0000" alpha="100" strength="5"/>
 			</fireIcon>
