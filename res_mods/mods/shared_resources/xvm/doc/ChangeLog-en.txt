@@ -1,4 +1,8 @@
-﻿XVM-6.1.2.1:
+﻿XVM-6.1.2.3:
+  * update for WoT 0.9.8.1 #62
+  * fixed battle results window
+
+XVM-6.1.2.1:
   * added new filter to the tank carousel: remove "domination"
   * Personal missions: added "Hide with honors" and "Started" filters and saving filter settings
   * bugs fixed

@@ -94,7 +94,7 @@
     "radio_range/actual": "bieżący",
     "lowAmmo": "Mało amunicji",
     "shootingRadius": "Zasięg ostrzału",
-    "pitchLimits": "Elewacja",
+    "pitchLimits": "Depresja/elewacja",
     "pitchLimitsSide": "Elewacja (bok)",
     "pitchLimitsRear": "Elewacja (tył)",
     "traverseLimits": "Wychylenie działa",
