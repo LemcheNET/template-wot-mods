@@ -39,6 +39,8 @@ I also normally add these mods
  * [Terrorist Allahu Akbar Voice Mod](http://forum.wotlabs.net/index.php?/topic/13181-terrorist-allahu-akbar-voice-mod/) - Hearing "Allahu Akhbar" everything I hit some one just puts a smile on my face for some odd reason.
  * [AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.
 
+Furthermore I also want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
+
 # Mods configuration #
 I've changed a lot of the default configurations of the various mods, so this is sort of an overview of those changes.
 
