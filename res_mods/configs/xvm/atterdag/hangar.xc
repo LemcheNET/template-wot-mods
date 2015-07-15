@@ -33,10 +33,13 @@
     "crewReturnByDefault": false,
     // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
-    "enableEquipAutoReturn": false,
-    // true - Make vehicle not ready for battle if less than 20% ammo loaded
-    // true - Сделать машину не готовой к битве если заряжено менее 20% снарядов
-    "blockVehicleIfNoAmmo": true,
+    "enableEquipAutoReturn": true,
+    // true - Make vehicle not ready for battle if low ammo
+    // true - Сделать машину не готовой к битве если мало снарядов
+    "blockVehicleIfLowAmmo": false,
+    // Below this percentage, ammo is low. (0 - 100)
+    // Ниже этого процента, снарядов считается мало. (0 - 100)
+    "lowAmmoPercentage": 20,
     // true - Enable widgets
     // true - включить виджеты
     "widgetsEnabled": false,
@@ -53,6 +56,12 @@
       // Положение поля по осям
       "x": 3,
       "y": 51,
+      // Horizontal alignment of field at screen ("left", "center", "right").
+      // Горизонтальное выравнивание поля на экране ("left", "center", "right").
+      "hAlign": "left",
+      // Vertical alignment of field at screen ("top", "center", "bottom").
+      // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
+      "vAlign": "top",
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
@@ -71,6 +80,9 @@
       // true - place at top of other windows, false - at bottom.
       // true - отображать поверх остальных окон, false - под.
       "topmost": true,
+      // true - show title "Ping"
+      // true - показывать заголовок "Пинг"
+      "showTitle": true,
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -87,7 +99,10 @@
           "good":  "0xE5E4E1",  // Хороший
           "poor":  "0x96948F",  // Так себе
           "bad":   "0xD64D4D"   // Плохой
-        }
+        },
+        // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
+        // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
+        "markCurrentServer": "bold"
       },
       // Threshold values defining response quality
       // Пороговые значения, определяющие качество отклика
@@ -103,6 +118,82 @@
         "poor": 100
         // Values above define bad response
         // Значения более считаются плохим откликом
+      },
+      // Параметры тени
+      "shadow": {
+        "enabled": true,
+        "color": "0x000000",
+        "distance": 0,
+        "angle": 0,
+        "alpha": 70,
+        "blur": 4,
+        "strength": 2
+      }
+    },
+    "onlineServers": {
+      // true - Enable display online of servers
+      // true - показывать онлайн серверов
+      "enabled": false,
+      // Axis field coordinates
+      // Положение поля по осям
+      "x": -3,
+      "y": 51,
+      // Horizontal alignment of field at screen ("left", "center", "right").
+      // Горизонтальное выравнивание поля на экране ("left", "center", "right").
+      "hAlign": "right",
+      // Vertical alignment of field at screen ("top", "center", "bottom").
+      // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
+      "vAlign": "top",
+      // Transparency
+      // Прозрачность от 0 до 100
+      "alpha": 80,
+      // Server to online text delimiter
+      // Разделитель сервера от онлайна
+      "delimiter": ": ",
+      // Maximum number of column rows
+      // Максимальное количество строк одной колонки
+      "maxRows": 2,
+      // Gap between columns
+      // Пространство между колонками
+      "columnGap": 3,
+      // Leading between lines.
+      // Пространство между строками
+      "leading": 0,
+      // true - place at top of other windows, false - at bottom.
+      // true - отображать поверх остальных окон, false - под.
+      "topmost": true,
+      // true - show title "Online"
+      // true - показывать заголовок "Онлайн"
+      "showTitle": true,
+      // Text style
+      // Стиль текста
+      "fontStyle": {
+        // Font name
+        // Название шрифта
+        "name": "$FieldFont",
+        "size": 12,         // Размер
+        "bold": false,      // Жирный
+        "italic": false,    // Курсив
+        // Different colors depending on people online
+        // Разные цвета в зависимости от количества игроков
+        "color": {
+          "great": "0x60ff00",  // Отличный
+          "good":  "0xF8F400",  // Хороший
+          "poor":  "0xFE7903",  // Так себе
+          "bad":   "0xFE0E00"   // Плохой
+        },
+        // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
+        // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
+        "markCurrentServer": "bold"
+     },
+      // Threshold values defining server online and thus shorter battle queue
+      // Пороговые значения, определяющие количество человек онлайн и следовательно меньшую очередь в бой
+      "threshold": {
+        "great": 30000,
+        "good": 10000,
+        "poor": 3000
+        //below this value the queue might be long
+        //ниже этого значения очередь может быть долгой
       },
       // Параметры тени
       "shadow": {
