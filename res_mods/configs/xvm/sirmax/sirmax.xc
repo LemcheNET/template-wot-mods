@@ -8,11 +8,19 @@
     //"formatVehicle": "{{vehicle}}",
 
     "pingServers": {
-      //"y": 70,
       "enabled": true,
+      //"y": 70,
+      "showTitle": false,
       "updateInterval": 5000
     },
-
+    "onlineServers": {
+      "enabled": true,
+      //"x": -3,
+      //"y": 51,
+      //"hAlign": "center",
+      //"topmost": true,
+      "showTitle": false
+    },
     "__stub__": null
   },
   "hotkeys": {
@@ -162,6 +170,8 @@
   "iconset": {
     "battleLoadingAlly": "../../../../res/contour/Master_XH",
     "battleLoadingEnemy": "../../../../res/contour/Master_XH",
+    //"battleLoadingAlly": "../../../../res/contour/block",
+    //"battleLoadingEnemy": "../../../../res/contour/block",
     "statisticFormAlly": "../../../../res/contour/Master_XH",
     "statisticFormEnemy": "../../../../res/contour/Master_XH",
     "playersPanelAlly":  "../../../../res/contour/Master_XH",

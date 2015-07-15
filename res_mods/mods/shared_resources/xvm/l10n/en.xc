@@ -14,8 +14,10 @@
     "Yes": "Yes",
     "No": "No",
 
-    // Ping
+    // Ping & Online
     "Initialization": "Initialization",
+    "Ping": "Ping",
+    "Online": "Online",
 
     // Win chance
     "Chance error": "Chance error",
@@ -192,6 +194,11 @@
     "NoMaster": "No master",
     "CompleteCrew": "Complete crew",
     "NonDomination": "Remove \"Domination\"",
+    "ReserveFilter": "Reserve",
+    "check_reserve_menu": "Set as reserve",
+    "uncheck_reserve_menu": "Uncheck Reserve label",
+    "reserve_confirm_title": "Hide tank",
+    "reserve_confirm_message": "Are you sure you want to mark the tank as reserve? It will be available via filters in carousel.",
 
     // Comments
     "Network services unavailable": "Network services unavailable",
