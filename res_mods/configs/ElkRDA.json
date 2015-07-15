@@ -1,0 +1,73 @@
+{
+	"spectator": true,
+	"only_spotted": false,
+	"reload": {
+		"skill": 100,
+		"brothers_in_arms": false,
+		"adrenaline_rush": false,
+		"ration": false,
+		"rammer": true,
+		"ventilation": true
+	},
+	"outgoing": {
+		"enabled": false,
+		"format": ""
+	},
+	"outgoing_nodamage": {
+		"enabled": false,
+		"format": ""
+	},
+	"incoming": {
+		"enabled": true,
+		"format": "<font color='#CCCCCC'><img src='img://gui/maps/icons/library/alertIcon.png' width='16' height='16' align='baseline' vspace='-2'><font color='#E23131'>$a_name</font> [<font color='$a_tankclass_color'>$a_tank_short</font>]<tab><font color='$shelltype_color'>$shelltype_name</font>{if_goldshell}<img src='img://gui/maps/icons/library/GoldIcon-2.png' width='18' height='18' align='baseline' vspace='-4'>{end_goldshell}: <font color='#E23131'><b>$damage</b></font> $damage_roll<tab><img src='img://gui/maps/icons/library/timerIcon.png' width='16' height='16' align='baseline' vspace='-2'><b>{if_clip}$shot_delay / $reload{else_clip}$reload{end_clip}</b>{if_burst}<tab>BURST: $burst_damage/$burst_total{end_burst}</font>"
+	},
+	"incoming_nodamage": {
+		"enabled": true,
+		"format": "<font color='#898989'><img src='img://gui/maps/icons/library/alertIcon.png' width='16' height='16' align='baseline' vspace='-2'>$a_name [<font color='$a_tankclass_color'>$a_tank_short</font>]<tab><font color='$shelltype_color'>$shelltype_name</font>{if_goldshell}<img src='img://gui/maps/icons/library/GoldIcon-2.png' width='18' height='18' align='baseline' vspace='-4'>{end_goldshell}: <b>0</b><tab><img src='img://gui/maps/icons/library/timerIcon.png' width='16' height='16' align='baseline' vspace='-2'><b>{if_clip}$shot_delay / $reload{else_clip}$reload{end_clip}</b>{if_burst}<tab>BURST: $burst_damage/$burst_total{end_burst}</font>"
+	},
+	"burst_compression": {
+		"enabled": true,
+		"outgoing_start_enabled": false,
+		"outgoing_start_format": "",
+		"incoming_start_enabled": true,
+		"incoming_start_format": "<font color='#CCCCCC'><img src='img://gui/maps/icons/library/alertIcon.png' width='16' height='16' align='baseline' vspace='-2'><font color='#E23131'>$a_name</font> [<font color='$a_tankclass_color'>$a_tank_short</font>]<tab><font color='$shelltype_color'>$shelltype_name</font>{if_goldshell}<img src='img://gui/maps/icons/library/GoldIcon-2.png' width='18' height='18' align='baseline' vspace='-4'>{end_goldshell}: BURST START<tab><img src='img://gui/maps/icons/library/timerIcon.png' width='16' height='16' align='baseline' vspace='-2'><b>{if_clip}$shot_delay / $reload{else_clip}$reload{end_clip}</b></font>"
+	},
+	"announce_spg": {
+		"enabled": false,
+		"only_spotted": false,
+		"format": "Enemy SPG $a_name ($a_tank) just hit me and is now reloading for about {if_clip}$shot_delay or $reload{else_clip}$reload{end_clip}."
+	},
+	"announce_teamdamage": {
+		"enabled": true,
+		"min_damage": 25,
+		"format": "$a_name ($a_tank), please watch your fire! You just hit me for $damage HP."
+	},
+	"shelltype_name": {
+		"ARMOR_PIERCING": "AP",
+		"ARMOR_PIERCING_CR": "APCR",
+		"ARMOR_PIERCING_HE": "APHE",
+		"HIGH_EXPLOSIVE": "HE",
+		"HOLLOW_CHARGE": "HEAT"
+	},
+	"shelltype_color": {
+		"ARMOR_PIERCING": "#FFBF00",
+		"ARMOR_PIERCING_CR": "#FFBF00",
+		"ARMOR_PIERCING_HE": "#FFBF00",
+		"HIGH_EXPLOSIVE": "#FFBF00",
+		"HOLLOW_CHARGE": "#FFBF00"
+	},
+	"tankclass_name": {
+		"lightTank": "LT",
+		"mediumTank": "MT",
+		"heavyTank": "HT",
+		"SPG": "SPG",
+		"AT-SPG": "TD"
+	},
+	"tankclass_color": {
+		"lightTank": "#A2FF9A",
+		"mediumTank": "#FFF198",
+		"heavyTank": "#FFACAC",
+		"SPG": "#EFAEFF",
+		"AT-SPG": "#A0CFFF"
+	}
+}

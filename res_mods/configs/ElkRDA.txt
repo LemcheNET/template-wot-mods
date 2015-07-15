@@ -1,0 +1,46 @@
+Elkano's Received Damage Announcer v0.7
+=======================================
+
+The following replacements are performed on the configured strings before outputting them:
+
+
+conditional blocks
+------------------
+Before any variable substitutions are made, the following blocks are evaluated. The {else_?} part is optional.
+
+{if_burst}...{else_burst}...{end_burst}
+{if_clip}...{else_clip}...{end_clip}
+{if_goldshell}...{else_goldshell}...{end_goldshell}
+{if_spotted}...{else_spotted}...{end_spotted}
+
+
+variables (replace * with a for attacker or d for defender)
+-----------------------------------------------------------
+$*_name               player name
+$*_tank               tank name
+$*_tank_short         tank name (short)
+$*_tankclass          tank class
+$*_tankclass_color    color based on tank class (see config)
+$*_tankclass_name     name based on tank class (see config)
+$*_tier               tank tier
+$*_health             remaining tank health
+$*_health_max         maximum tank health
+
+$damage               the shot's damage
+$damage_roll          deviation of the shot's damage
+
+$burst_damage         amount of hits in burst that caused damage
+$burst_total          total amount of hits in burst
+
+$penetration_min      used shell's minimum penetration value
+$penetration_avg      used shell's average penetration value
+$penetration_max      used shell's maximum penetration value
+
+$reload               attacker's reload speed (configured modificators are assumed)
+$reload_base          attacker's base reload speed (individual shell or full clip)
+$reload_min           attacker's best reload speed (with rations, BiA, ventilation, rammer, adrenalin rush)
+$shot_delay           attacker's shell reload
+
+$shelltype            type of the shell used
+$shelltype_color      color based on type of the shell used (see config)
+$shelltype_name       name based on type of the shell used (see config)
