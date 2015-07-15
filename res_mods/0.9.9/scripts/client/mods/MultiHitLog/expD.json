@@ -1,0 +1,129 @@
+{
+"ShowPen": 					"True",
+"ShowBounce": 				"True",
+"ShowAlly": 				"True",
+"AP_Shell":					"AP",
+"APCR_Shell":				"APCR",
+"APCR_G_Shell":				"APCR",
+"HE_Shell":					"HE",
+"HEAT_G_Shell":				"HEAT",
+"HESH_G_Shell":				"HESH", 
+"KeyToShowOwnTankInfo": 	"KEY_RALT",
+"groupHitLog": 				"True",
+"HL_Killed_Text": 			"Kill",
+"HL_Ally_Text": 			"! Ally !",
+"TimeDelayAfterKeyRelease":	0,
+"Class_Light_Tank":			"LT",
+"Class_Medium_Tank":		"MT",
+"Class_Heavy_Tank":			"HT",
+"Class_Tank_Destroyer":		"TD",
+"Class_SPG":				"SPG",
+
+"AnnounceDamageForPlatoon": "False",
+"AnnounceDamageMessage": 	"Damage done: {{HL_DMG}}!",
+"MinimumTeamDamage": 		50,
+"ReportTeamDamage": 		"False",
+"ReportTeamDamageMessage": 	"{{DL_AttackerName}} ({{DL_AttackerTank}}) you just damage me for {{DL_AttackerDamage}}hp",
+"TeamDamageForYou": 		"False",
+"TeamDamageMessageForYou": 	"TEAMDAMAGE: {{DL_AttackerName}} in {{DL_AttackerTank}} for {{DL_AttackerDamage}}",
+
+"WindowKeyList":[
+   {"xAlign": "Center", "x": 500, 	"offsetX": 17, 
+	"yAlign": "Normal", "y": 1, 	"offsetY": 5, 
+	"width": 320,		"height": 45,	
+	"backgroundLevel": -1, 			"backgroundFile": "MHL.dds", 
+	"ConfigName": "expD",			"time": 0, "Key": "ALWAYS"}
+	],
+
+
+"expD":[
+	{"LineType": "expD_Line1"},
+	{"LineType": "expD_Line2"}
+	],
+		
+	"expD_Line1": [
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "Dmg:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#00FF00",	"text": "{{HL_DMG}}"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "Diff:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "diff",	"text": "{{HL_Diff}}"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "Last:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "{{HL_LastDMG}}"}
+		],
+	"expD_Line2": [
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "Avg:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#00FF00",	"text": "{{HL_AvgDMG}}"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "WN8:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "WN8",		"text": "{{HL_WN8}}"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#4CA6FF",	"text": "EFF:"},
+		{"type": "Mix",	"width": 5,	"shadow": "True",	"shadow_color": "#000000",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "EFF",		"text": "{{HL_EFF}}"}
+		],
+
+
+"Colors": [
+    {"type": "diff",	"value": "less",		"color": "#FF3030"},
+    {"type": "diff",	"value": "same",		"color": "#67C8FF"},
+    {"type": "diff",	"value": "more",		"color": "#26FF26"},
+        
+    {"type": "WN8",        "value": 0,                "color": "#AAAAAA"},
+    {"type": "WN8",        "value": 300,            "color": "#FF3030"},
+    {"type": "WN8",        "value": 600,            "color": "#FF8000"},
+    {"type": "WN8",        "value": 900,            "color": "#D9D900"},
+    {"type": "WN8",        "value": 1250,            "color": "#4CFF4C"},
+    {"type": "WN8",        "value": 1600,            "color": "#00FF00"},
+    {"type": "WN8",        "value": 1900,            "color": "#2693FF"},
+    {"type": "WN8",        "value": 2350,            "color": "#FF73FF"},
+    {"type": "WN8",        "value": 2900,            "color": "#C926FF"},
+	
+	{"type": "EFF",		"value": 0,				"color": "#FF3030"},
+	{"type": "EFF",		"value": 600,			"color": "#FF8000"},
+	{"type": "EFF",		"value": 900,			"color": "#D9D900"},
+	{"type": "EFF",		"value": 1200,			"color": "#36D900"},
+	{"type": "EFF",		"value": 1500,			"color": "#2693FF"},
+	{"type": "EFF",		"value": 1800,			"color": "#D24CFF"},
+
+    {"type": "hit",		"value": "pen",			"color": "#FF3030"},
+    {"type": "hit",		"value": "bounce",		"color": "#30FF30"},
+    {"type": "hit",		"value": "ally",		"color": "#6599FF"},
+                        
+    {"type": "ammo",	"value": "credit",		"color": "#C9C9C9"},
+    {"type": "ammo",	"value": "gold",		"color": "#FFD700"},
+                                
+	{"type": "damage",	"value": "Shot",		"color": "#FFFF00"},
+    {"type": "damage",	"value": "Fire",		"color": "#FFFF10"},
+    {"type": "damage",	"value": "Ram",			"color": "#FFFF20"},
+    {"type": "damage",	"value": "Fall",		"color": "#FFFF30"},
+    {"type": "damage",	"value": "Expl",		"color": "#FFFF40"},
+    {"type": "damage",	"value": "Drown",		"color": "#FFFF50"},
+
+    {"type": "weight",	"value": "even",		"color": "#FFD700"},
+    {"type": "weight",	"value": "less",		"color": "#FFD700"},
+    {"type": "weight",	"value": "more",		"color": "#FFD700"},
+
+	{"type": "class",   "value": "lightTank",  "color": "#BDBDAE"},
+	{"type": "class",   "value": "mediumTank", "color": "#00D900"},
+	{"type": "class",   "value": "heavyTank",  "color": "#FF9326"},
+	{"type": "class",   "value": "SPG",	   	   "color": "#FF2626"},
+	{"type": "class",   "value": "AT-SPG",     "color": "#007FFF"},
+
+	{"type": "team",    "value": "ally", 	   "color": "#30FF30"},
+	{"type": "team",    "value": "enemy",	   "color": "#FF3030"}
+	],
+
+"Fonts":[
+	{"value": 0,	"font": "",						"width": 0,		"height": 0},
+	{"value": 1,	"font": "default_smaller.font",	"width": 8,		"height": 16},
+	{"value": 2,	"font": "default_small.font",	"width": 10,	"height": 18},
+	{"value": 3,	"font": "default_medium.font",	"width": 12,	"height": 22},
+	{"value": 4,	"font": "verdana_medium.font",	"width": 12,	"height": 22}
+	],
+	
+"Attack_Reasons" : [
+	{"type": "Shot"},
+	{"type": "Fire"},
+	{"type": "Ram"},
+	{"type": "Fall"},
+	{"type": "Expl"},
+	{"type": "Drown"}
+    ]
+}
+    
