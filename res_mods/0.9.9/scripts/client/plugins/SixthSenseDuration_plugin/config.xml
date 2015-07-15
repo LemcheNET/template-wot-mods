@@ -223,7 +223,7 @@
       http://www.w3schools.com/tags/ref_colorpicker.asp  
       Example:
       * "#FF8000" : orange   -->
-  <TimerColor>#FF8000</TimerColor>
+  <TimerColor>#FF0000</TimerColor>
   <!-- ***************************************************** -->
   
   
