@@ -133,7 +133,10 @@
       * "Dlink" : /GUI/notifications_FX/gun_intuition
       * "Clock" : /GUI/notifications_FX/cybersport_timer  
       -->
-  <AudioPath>/GUI/notifications_FX/cybersport_timer</AudioPath>
+  <!--
+  <AudioPath>/GUI/notifications_FX/cybersport_timer</AudioPath> 
+  -->
+  <AudioPath>/GUI/notifications_FX/gun_intuition</AudioPath> 
   <!-- ***************************************************** -->
   
   
