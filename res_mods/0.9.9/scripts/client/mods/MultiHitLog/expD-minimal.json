@@ -131,7 +131,7 @@
 			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
 			{"type": "DamageLog",	"width": 4,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "hit",		"text": "{{DL_AttackerDamage}}"},
 			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
-			{"type": "DamageLog",	"width": 4,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "ammo",	"text": "{{DL_AttackerAmmoType}}"},
+			{"type": "DamageLog",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "ammo",	"text": "{{DL_AttackerAmmoType}}"},
 			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
 			{"type": "DamageLog",	"width": 3,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "class",	"text": "{{DL_AttackerTankClass}}"},
 			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},

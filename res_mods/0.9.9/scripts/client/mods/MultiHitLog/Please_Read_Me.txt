@@ -1,7 +1,7 @@
-MultiHitLog v.2.0 by PiJey77 & mtm78 & ZeesuS
+MultiHitLog v.2.2 by PiJey77 & mtm78 & ZeesuS
 
 Changelog:
--add {{DL_BOUNCE}} for expected potential damage received / bounced 
+- add new macro {{DL_AttackerAmmoType}} it show ammo type if it was shot or damage type if was something else than shot
 
 
 "ShowPen":                  		"True",	  	- True/False - Show info about shot that penetrate us
