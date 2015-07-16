@@ -1,4 +1,4 @@
-﻿XVM-6.1.3-dev:
+﻿XVM-6.1.3:
   * adaptation to WoT 0.9.9
   * new feature: similar to servers ping, added servers online (login page and hangar)
   * new feature: mark tanks as "reserve", it will be hidden unless set in filters
@@ -9,6 +9,7 @@
       in hangar and login, for pingServers and onlineServers added:
           "showTitle" - show title of list
           "markCurrentServer" - mark current server in the list (not available at login screen)
+      "battle"/"fragCorrelation"/"sortByType" - sort markers in frags panel by type
 
 XVM-6.1.2.3:
   * update for WoT 0.9.8.1 #62
