@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 # Download #
-[atterdag-wot-mods-0.9.9.0.exe](https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.9.0.exe)
+[atterdag-wot-mods-0.9.9.1.exe](https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.9.1.exe)
 
 # Installation #
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -14,19 +14,19 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 Some details of my mod pack.
 
 ## The mods included are as following: ##
-  * ~~[Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/) (Currently using the minimalistic)~~ _Not working for 0.9.9_
-  * ~~[Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)~~ _Not working for 0.9.9_
+  * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/) (Currently using the minimalistic)
+  * [Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)
   * ~~[Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/) (Only version 3 "centered modules" is currently supported for 0.9.8)~~ _Not working for 0.9.9_
   * [XVM Mod](http://www.modxvm.com)
   * [Active Dossier Uploader](http://www.vbaddict.net)
-  * ~~[Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)~~ _Not working for 0.9.9_
+  * [Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)
   * [SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio](http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
-  * ~~[SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)~~ _Not working for 0.9.9_
+  * [SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
   * ~~[AutoEquip](http://blogtanker.ru/autoequip-dlya-wot.html)~~ _Trying out XVM's version_
   * [radius_15m](http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)
   * Serverside Reticle mod - gun\_marker\_blue\_ultraSlimWhite.dds
-  * ~~[Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)~~ _Not working for 0.9.9_
+  * [Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)
   * [PMOD](http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/) (For old server side reticle)
   * ~~[Battle Assistant](http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)~~ _Not working for 0.9.9_
   * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
