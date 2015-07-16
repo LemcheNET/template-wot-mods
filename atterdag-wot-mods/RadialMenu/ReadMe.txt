@@ -1,4 +1,4 @@
-﻿CustomCommandRose v.2.3 by hedger, translated by locastan.
+﻿CustomCommandRose v.2.5 by tehHedger, Spoter, translated by locastan.
 Mod "Radial menu customizable commands"
 
 ________________________________________________________________________________
@@ -141,7 +141,7 @@ Each command is formatted as follows:
       <Title> Short name that is displayed in the menu </Title>
       <Icon> Icon (see list below) </Icon>
       <Text> Full text displayed in the chat (supports macros) </Text>
-      <ChatMode> Chat mode, Team or All </ChatMode>
+      <ChatMode> Chat mode, Team, All or Squad </ChatMode>
 			<!- - These are optional commands - ->
       <Command>The capitalize Iconnames so they appear on the minimap</Command>
       <Variants>List of phrase variants that replace %(randpart)s macro
