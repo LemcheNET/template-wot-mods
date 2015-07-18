@@ -14,7 +14,7 @@ I've used a familiar face to bring comfort with the 6th sense kicks in, with bra
 Some details of my mod pack.
 
 ## The mods included are as following: ##
-  * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/) (Currently using the minimalistic)
+  * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
   * [Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)
   * ~~[Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/) (Only version 3 "centered modules" is currently supported for 0.9.8)~~ _Not working for 0.9.9_
   * [XVM Mod](http://www.modxvm.com)
@@ -32,6 +32,7 @@ Some details of my mod pack.
   * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * [Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)
+  * [Classic reload cross](http://www.locastan.com/products.htm)
 
 ### Not included but recommended mods ###
 I also normally add these mods
