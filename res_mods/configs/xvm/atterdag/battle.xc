@@ -41,6 +41,9 @@
     // true - show quantity of alive instead of dead
     // true - показывать количество живых танков вместо убитых
     "showAliveNotFrags": false
+    // true - sort markers by vehicle type
+    // true - сортировать маркеры по типу техники
+    "sortByType": true
   },
   // Ingame crits panel by "expert" skill.
   // Внутриигровая панель критов от навыка "эксперт".
