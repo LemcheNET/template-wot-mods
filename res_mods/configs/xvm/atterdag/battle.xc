@@ -40,7 +40,7 @@
   "fragCorrelation": {
     // true - show quantity of alive instead of dead
     // true - показывать количество живых танков вместо убитых
-    "showAliveNotFrags": false
+    "showAliveNotFrags": false,
     // true - sort markers by vehicle type
     // true - сортировать маркеры по типу техники
     "sortByType": true
