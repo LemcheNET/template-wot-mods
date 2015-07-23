@@ -4,6 +4,9 @@
   	 true/false -->
   <pluginEnable>true</pluginEnable>
   
+  
+  <reloadConfigKey>KEY_NUMPAD2</reloadConfigKey>
+  
   <!-- ******************* IconRange **********************
       This entry represent the icon duration in milliseconds.
       Note: this will set the duration of both original icon and own icons      
@@ -133,10 +136,7 @@
       * "Dlink" : /GUI/notifications_FX/gun_intuition
       * "Clock" : /GUI/notifications_FX/cybersport_timer  
       -->
-  <!--
-  <AudioPath>/GUI/notifications_FX/cybersport_timer</AudioPath> 
-  -->
-  <AudioPath>/GUI/notifications_FX/gun_intuition</AudioPath> 
+  <AudioPath>/GUI/notifications_FX/cybersport_timer</AudioPath>
   <!-- ***************************************************** -->
   
   
@@ -223,7 +223,7 @@
       http://www.w3schools.com/tags/ref_colorpicker.asp  
       Example:
       * "#FF8000" : orange   -->
-  <TimerColor>#FF0000</TimerColor>
+  <TimerColor>#FF8000</TimerColor>
   <!-- ***************************************************** -->
   
   
