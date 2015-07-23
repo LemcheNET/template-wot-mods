@@ -75,7 +75,7 @@
   		To disable the icon set it to 
   		scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds -->
   <!--<IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/unspotted.dds</IconUnspottedPath>-->
-  <IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/inactive.dds</IconUnspottedPath>
+  <IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds</IconUnspottedPath>
   <!-- ***************************************************** -->
   
   <!-- ******************* IconSpottedPath ****************
@@ -83,7 +83,7 @@
   		To disable the icon set it to 
   		scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds -->
   <!--<IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/spotted.dds</IconSpottedPath>-->
-  <IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/inactive.dds</IconSpottedPath>
+  <IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds</IconSpottedPath>
   <!-- ***************************************************** -->
   
   
