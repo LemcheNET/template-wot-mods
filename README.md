@@ -2,7 +2,7 @@
 Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 # Download #
-[atterdag-wot-mods-0.9.9.2.exe](https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.9.2.exe)
+[atterdag-wot-mods-0.9.9.3.exe](https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.9.3.exe)
 
 # Installation #
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -16,7 +16,7 @@ Some details of my mod pack.
 ## The mods included are as following: ##
   * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
   * [Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)
-  * ~~[Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/) (Only version 3 "centered modules" is currently supported for 0.9.8)~~ _Not working for 0.9.9_
+  * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/) _No official  working for 0.9.9, however using 0.9.8.1 with showing relative time between shells rather than absolute time_
   * [XVM Mod](http://www.modxvm.com)
   * [Active Dossier Uploader](http://www.vbaddict.net)
   * [Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)
@@ -33,6 +33,7 @@ Some details of my mod pack.
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * [Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)
   * [Classic reload cross](http://www.locastan.com/products.htm)
+  * [TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
 
 ### Not included but recommended mods ###
 I also normally add these mods
