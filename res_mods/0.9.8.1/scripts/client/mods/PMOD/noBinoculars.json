@@ -1,9 +1,0 @@
-/*
-	Отключение затемнения и озеленения в снайперском прицела.
-	Disabling dimming and greening in sniper scope.
-*/
-{
-	// true - включить модуль.
-	// true - enable the module.
-	"enable" : false
-}
