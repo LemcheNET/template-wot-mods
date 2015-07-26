@@ -17,7 +17,7 @@
 !define VERSIONBUILD 3
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
-!define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/master"   # "Support Information" link
+!define HELPURL "https://github.com/atterdag/atterdag-wot-mods/issues"   # "Support Information" link
 !define UPDATEURL "https://github.com/atterdag/atterdag-wot-mods/tree/master" # "Product Updates" link
 !define ABOUTURL "https://github.com/atterdag/atterdag-wot-mods/tree/master"  # "Publisher" link
 # This is the size (in kB) of all the files copied into "Program Files"
