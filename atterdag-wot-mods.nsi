@@ -9,7 +9,7 @@
 # All the other settings can be tweaked by editing the !defines at the top of this script
 !define APPNAME "atterdag's World of Tanks Modifications"
 !define COMPANYNAME "atterdag's backyard"
-!define DESCRIPTION "A compilation of mods used by Ace of Spades"
+!define DESCRIPTION "A compilation of mods used by atterdag"
 # These three must be integers
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
@@ -17,9 +17,9 @@
 !define VERSIONBUILD 3
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
-!define HELPURL "https://code.google.com/p/atterdag-wot-mods/" # "Support Information" link
-!define UPDATEURL "https://code.google.com/p/atterdag-wot-mods/" # "Product Updates" link
-!define ABOUTURL "https://code.google.com/p/atterdag-wot-mods/" # "Publisher" link
+!define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/master"   # "Support Information" link
+!define UPDATEURL "https://github.com/atterdag/atterdag-wot-mods/tree/master" # "Product Updates" link
+!define ABOUTURL "https://github.com/atterdag/atterdag-wot-mods/tree/master"  # "Publisher" link
 # This is the size (in kB) of all the files copied into "Program Files"
 !define INSTALLSIZE 23289
 
