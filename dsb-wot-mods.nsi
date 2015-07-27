@@ -69,9 +69,6 @@ Section "install"
 	File /r res_mods
 	File /r res
 	
-	# For some reason NSIS won't include res_mods\${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}\scripts\client\modsOOP\spotMessanger\__init__.pyc is not included, so I'll copy it from 
-	CopyFiles res_mods\${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}\scripts\client\modsOOP\__init__.pyc res_mods\${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}\scripts\client\modsOOP\spotMessanger\__init__.pyc
-	
 	# Uninstaller - See function un.onInit and section "uninstall" for configuration
 	WriteUninstaller "$INSTDIR\dsb-wot-mods-uninstall.exe"
  
@@ -122,6 +119,7 @@ section "uninstall"
  
 	# Remove files
 	Delete $INSTDIR\ActiveDossierUploader.exe
+	Delete $INSTDIR\res_mods\TeamHPPools.xml
 
 	# Generate a list in file_and_directory_list.txt by using generate-file-list.sh, and copy the content into this file below.
     Delete "$INSTDIR\res_mods\0.9.9\tessumod.ts3_plugin"
