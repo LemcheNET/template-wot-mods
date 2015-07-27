@@ -89,3 +89,6 @@ I've created my own configuration based on expD.json, so it only shows the WN8, 
 
 # Common problems #
 If the installer complains that its not able to overwrite C:\Games\World\_of\_Tanks\ActiveDossierUploader.exe, then just close ADU in your task bar (its the icon with the green circle next to the clock), and click on 'Try Again'. Or you can just click on 'Ignore';
+
+# Screen shots #
+_Please refer to individual branches for screenshots_
