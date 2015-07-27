@@ -22,7 +22,6 @@ Some details of my mod pack.
   * [SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio](http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
-  * ~~[AutoEquip](http://blogtanker.ru/autoequip-dlya-wot.html)~~ _Trying out XVM's version_
   * [radius_15m](http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)
   * Serverside Reticle mod - gun\_marker\_blue\_ultraSlimWhite.dds
   * [Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)
