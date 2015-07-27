@@ -1,14 +1,14 @@
 # About #
-Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
+Welcome to a DSB port of my no-nonsense, keep it simple World of Tanks mod pack. I haven't made any of the mods, I've merely change the configuration of some of them. I try to keep the amount of mods low, as I find too many mods just clutters up the game play, and interface.
 
 # Download #
-[atterdag-wot-mods-0.9.9.3.exe](https://dl.dropboxusercontent.com/u/11915528/wot/atterdag-wot-mods-0.9.9.3.exe)
+[dsb-wot-mods-0.9.9.3.exe](https://dl.dropboxusercontent.com/u/11915528/wot/dsb-wot-mods-0.9.9.3.exe)
 
 # Installation #
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
 
 # My branding #
-I've used a familiar face to bring comfort with the 6th sense kicks in, with branding the game start logo, and the data synchronization icon.
+I've used DSB's logo 6th sense, game start logo, and the data synchronization icon.
 
 # Mods included #
 Some details of my mod pack.
