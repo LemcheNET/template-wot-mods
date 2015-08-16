@@ -32,6 +32,7 @@ Some details of my mod pack.
   * [Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)
   * [Classic reload cross](http://www.locastan.com/products.htm)
   * [TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
+  * [Autoaim indication+snapping](http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
 
 ### Not included but recommended mods ###
 I also normally add these mods
