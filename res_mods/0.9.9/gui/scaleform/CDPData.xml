@@ -73,7 +73,7 @@
 			<location x="240" y="33"/>
 			<text font="$TextFont" size="15" color="0xD2D2D2" align="left"/> 
 			<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="1.5"/>
-			<format>{{count}}:  {{dmg-one}} {{time-rel}}</format>
+			<format>{{count}}:  {{dmg-one}} {{time-abs}}</format>
 		</damageLog>
 		
 		<!-- big damage text display -->
