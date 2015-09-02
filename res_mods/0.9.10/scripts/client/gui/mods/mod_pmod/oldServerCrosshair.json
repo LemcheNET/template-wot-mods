@@ -1,0 +1,94 @@
+/*
+	Старый серверный прицел.
+	Old server crosshair.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	/* Ввиду громоздкого набора параметров текстур, описаны будут параметры только единожды. */
+	/* Due to the cumbersome set of parameters texture parameters will be described only once. */
+	
+	// Аркадный режим.
+	// Arcade mode.
+	"arcadeMode" : {
+		
+		// Показывать серверный прицел.
+		// Show server crosshair.
+		"enableServerGunMarker" : true,
+		
+		// Показывать обыкновенный прицел.
+		// Show default flash crosshair.
+		"enableFlashGunMarker" : true,
+		
+		// Размер и расположение текстуры.
+		// The size and location of the texture.
+		"textureSettings" : {
+			"width" : 64,
+			"height" : 64,
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+		},
+		
+		// Масштаб прицела
+		// Crosshair scale 
+		"crosshairScale" : 1,
+		
+		// Эти параметры вам лучше не трогать, они относятся к расположению элементов внутри текстуры.
+		// Люди которые делают свои текстуры, или используют какие-то не стандартные, знакомы с этими параметрами.
+		// These parameters you better not touch it, they relate to the layout inside texture. 
+		// People who make their texture, or use any non-standard, familiar with these parameters.
+		"crosshairElements" : {
+			"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
+			"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
+			"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
+			"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
+			"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
+		}
+	},
+	
+	// Снайперский режим.
+	// Sniper mode.
+	"sniperMode" : {
+		"enableServerGunMarker" : true,
+		"enableFlashGunMarker" : true,
+		"textureSettings" : {
+			"width" : 64,
+			"height" : 64,
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+		},
+		"crosshairScale" : 0.5,
+		"crosshairElements" : {
+			"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
+			"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
+			"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
+			"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
+			"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
+		}
+	},
+	
+	// Артилерийский режим.
+	// Strategic mode.
+	"strategicMode" : {
+		"enableServerGunMarker" : true,
+		"enableFlashGunMarker" : true,
+	
+		// true - сведение текстурой, false - сведение flash (1 в 1 как основное только цвет другой).
+		// true - texture gun marker, false - flash gun marker (1 to 1 as the main, only color other).
+		"textureServerGunMarker" : true,
+		
+		"textureSettings" : {
+			"width" : 64,
+			"height" : 64,
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+		},
+		"crosshairScale" : 0.5,
+		"crosshairElements" : {
+			"top" :    {"mapping": [13, 0, 26, 13], "size": [13, 13]},
+			"right" :  {"mapping": [26, 0, 39, 13], "size": [13, 13]},
+			"bottom" : {"mapping": [39, 0, 52, 13], "size" : [13, 13]},
+			"left" :   {"mapping": [0, 0, 13, 13],  "size" : [13, 13]},
+			"center" : {"mapping": [0, 13, 21, 34], "size" : [21, 21]}
+		}
+	}	
+}
