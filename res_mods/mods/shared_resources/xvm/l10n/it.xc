@@ -86,7 +86,7 @@
     "PutBestCrew": "Carica equipaggio migliore",
     "PutClassCrew": "Carica equipaggio stessa classe",
     "PutPreviousCrew": "Metti crew precedente",
-    "DropAllCrew": "Congeda equipaggio completo",
+    "DropAllCrew": "Invia in Caserma equipaggio",
     "noSkills": "No abilità",
     "gun_reload_time/actual": "Tempo di ricarica attuale",
     "view_range/base": "base",

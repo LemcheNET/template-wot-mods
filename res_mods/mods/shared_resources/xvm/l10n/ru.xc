@@ -13,6 +13,7 @@
     "Remove": "Удалить",
     "Yes": "Да",
     "No": "Нет",
+    "Not available short": "н/д",
 
     // Ping & Online
     "Initialization": "Инициализация",
@@ -189,7 +190,6 @@
     "MultiXP": "Мультиопыт",
     "NoMaster": "Нет мастера",
     "CompleteCrew": "Полный экипаж",
-    "NonDomination": "Убрать \"Превосходство\"",
     "ReserveFilter": "Резерв",
     "check_reserve_menu": "Отметить как «резерв»",
     "uncheck_reserve_menu": "Снять отметку «резерв»",

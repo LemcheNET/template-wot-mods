@@ -1,5 +1,31 @@
-﻿XVM-6.1.3.1:
+﻿XVM-6.1.4-dev:
+  * adaptation to WoT 0.9.10
+  * add winRate sorting to carousel
+  * removed obsoleted option "fragCorrelation"/"sortByType"
+  * added options in "battleLoading" and "statisticForm" sections:
+    "removeVehicleLevel" - disable vehicle level indicator.
+    "removeVehicleTypeIcon" - disable vehicle type icon. This space will be used for vehicle field.
+    "squadIconOffsetXLeft" - X offset for allies squad icons
+    "squadIconOffsetXRight" - X offset for enemies squad icons field
+    "nameFieldOffsetXLeft" - X offset for allies player names field
+    "nameFieldOffsetXRight" - X offset for enemies player names field
+    "vehicleFieldOffsetXLeft" - X offset for allies vehicle names field
+    "vehicleFieldOffsetXRight" - X offset for enemies vehicle names field
+    "vehicleIconOffsetXLeft" - X offset for allies vehicle icons
+    "vehicleIconOffsetXRight" - X offset for enemies vehicle icons
+  * added section "carousel"/"filtersPadding" - spacing between filters cells.
+
+XVM-6.1.3.1:
   * bug fixes and optimization
+  * xvm_online and xvm_ping: minimalLength now expands the value length
+  * xvm_squad: showing min and max battle tier for squad
+  * xvm_contacts: tooltips uses native form
+  * new options:
+      "tooltips"/"tooltipsDelay" - delay in tooltips appearance
+      in hangar and login, for pingServers and onlineServers added:
+          "serverColor" - сolor for server name and delimiter
+          "errorString" - text to show in case of error
+      "hangar"/"serverInfo"/"shiftY" - shift Y position of server info
 
 XVM-6.1.3:
   * adaptation to WoT 0.9.9

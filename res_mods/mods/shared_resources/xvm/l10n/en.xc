@@ -13,6 +13,7 @@
     "Remove": "Remove",
     "Yes": "Yes",
     "No": "No",
+    "Not available short": "n/a",
 
     // Ping & Online
     "Initialization": "Initialization",
@@ -193,7 +194,6 @@
     "MultiXP": "Multi XP",
     "NoMaster": "No master",
     "CompleteCrew": "Complete crew",
-    "NonDomination": "Remove \"Domination\"",
     "ReserveFilter": "Reserve",
     "check_reserve_menu": "Set as reserve",
     "uncheck_reserve_menu": "Uncheck Reserve label",
