@@ -6,7 +6,8 @@
             Name it as you wish, make changes inside, and then put here name
             of your configutarion file
     -->
-    <ConfigFileName>expD-minimal.json</ConfigFileName>
+    <!--<ConfigFileName>ZMHL_MOJ.json</ConfigFileName>-->
+	<ConfigFileName>CONFIG_atterdag.json</ConfigFileName>
 </MultiHitLog.xml>
 <!--
             
