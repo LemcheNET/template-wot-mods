@@ -145,8 +145,7 @@
     ],
     // Order of nations.
     // Порядок наций.
-    //"nations_order": ["china", "france", "germany", "uk", "usa", "ussr", "japan"],
-    "nations_order": [],
+    "nations_order": ["china", "france", "germany", "uk", "usa", "ussr", "japan"],
     // Order of types of vehicles.
     // Порядок классов техники.
     "types_order":   ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
