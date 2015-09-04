@@ -12,26 +12,26 @@ I've created a installer using NSIS of my mod packs for all those that can't be 
 # Mods included #
 Some details of my mod pack.
 
-## The mods included are as following: ##
+## The mods included are as following (Striked out mods are uncompatible with current version of World of Tanks):##
   * [Session Stats, and Color Messages](http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
-  * [Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)
+  * ~~[Scope shadow removal](http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)~~
   * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/)
   * [XVM Mod](http://www.modxvm.com)
   * [Active Dossier Uploader](http://www.vbaddict.net)
-  * [Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)
-  * [SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)
+  * ~~[Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)~~
+  * ~~[SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)~~
   * [6thsense-audio](http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
-  * [radius_15m](http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)
+  * ~~[radius_15m](http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)~~
   * Serverside Reticle mod - gun\_marker\_blue\_ultraSlimWhite.dds
-  * [Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)
+  * ~~[Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)~~
   * [PMOD](http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/) (For old server side reticle)
   * [Battle Assistant](http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
-  * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
+  * ~~[Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)~~
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
-  * [Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)
-  * [Classic reload cross](http://www.locastan.com/products.htm)
-  * [TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
+  * ~~[Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)~~
+  * ~~[Classic reload cross](http://www.locastan.com/products.htm)~~
+  * ~~[TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)~~
   * [Autoaim indication+snapping](http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
 
 ### Not included but recommended mods ###
