@@ -129,7 +129,7 @@
     "LT": "ЛТ",
     "TD": "ПТ",
     "SPG": "САУ",
-    "blownUp": "Боєуклад!",
+    "blownUp": "Вибух БК!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Доступне оновлення:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>з'єднання з сервером XVM відсутнє</font>",

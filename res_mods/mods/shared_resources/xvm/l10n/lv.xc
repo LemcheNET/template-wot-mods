@@ -155,7 +155,7 @@
     "MultiXP": "Vairākkārtēja pieredze",
     "NoMaster": "Nav lietpratēja",
     "CompleteCrew": "Visa apkalpe",
-    "NonDomination": "",
+    "NonDomination": "Noņemt \"Domination\"",
     "ReserveFilter": "Rezerve",
     "check_reserve_menu": "Atzīmēt kā rezervi",
     "uncheck_reserve_menu": "Izņemt no rezerves",

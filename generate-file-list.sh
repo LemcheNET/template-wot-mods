@@ -4,7 +4,7 @@ if [ -f delme.txt ]; then
 	rm -f delme.txt
 fi
 
-CURRENT_VERSION=0.9.9
+CURRENT_VERSION=0.9.10
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 for folder in {dsb-wot-mods,res,res_mods/configs,res_mods/mods,res_mods/ModSettings,res_mods/${CURRENT_VERSION}}; do

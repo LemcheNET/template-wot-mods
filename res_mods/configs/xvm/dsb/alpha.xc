@@ -88,11 +88,11 @@
     // Dynamic transparency by efficiency
     // Динамическая прозрачность по эффективности
     "eff": [
-      { "value": 610,  "alpha": ${"alphaRating.very_bad" } },
-      { "value": 865,  "alpha": ${"alphaRating.bad"      } },
-      { "value": 1165, "alpha": ${"alphaRating.normal"   } },
-      { "value": 1515, "alpha": ${"alphaRating.good"     } },
-      { "value": 1835, "alpha": ${"alphaRating.very_good"} },
+      { "value": 615,  "alpha": ${"alphaRating.very_bad" } },
+      { "value": 870,  "alpha": ${"alphaRating.bad"      } },
+      { "value": 1175, "alpha": ${"alphaRating.normal"   } },
+      { "value": 1525, "alpha": ${"alphaRating.good"     } },
+      { "value": 1850, "alpha": ${"alphaRating.very_good"} },
       { "value": 9999, "alpha": ${"alphaRating.unique"   } }
     ],
     // Dynamic transparency by WN6 rating
@@ -125,11 +125,11 @@
     // Dynamic transparency by WG rating
     // Динамическая прозрачность по рейтингу WG
     "wgr": [
-      { "value": 2405,  "alpha": ${"alphaRating.very_bad" } },
-      { "value": 4250,  "alpha": ${"alphaRating.bad"      } },
-      { "value": 6350,  "alpha": ${"alphaRating.normal"   } },
-      { "value": 8550,  "alpha": ${"alphaRating.good"     } },
-      { "value": 9960,  "alpha": ${"alphaRating.very_good"} },
+      { "value": 2495,  "alpha": ${"alphaRating.very_bad" } },
+      { "value": 4345,  "alpha": ${"alphaRating.bad"      } },
+      { "value": 6425,  "alpha": ${"alphaRating.normal"   } },
+      { "value": 8625,  "alpha": ${"alphaRating.good"     } },
+      { "value": 10040, "alpha": ${"alphaRating.very_good"} },
       { "value": 99999, "alpha": ${"alphaRating.unique"   } }
     ],
     // Dynamic transparency by win percent

@@ -9,8 +9,8 @@
   
   Для настройки мода вам не нужны знания в программировании, или же танцы с бубном
   Все что вам нужно это капля желания и текстовый редактор Notepad++
-  Все настройки мода находятся в файле: res_mods\0.9.9\scripts\client\mods\PMOD.json, 
-  либо в файлах внутри папки: res_mods\0.9.9\scripts\client\mods\PMOD\
+  Все настройки мода находятся в файле: res_mods/0.9.10/scripts/client/gui/mods/mod_pmod.json, 
+  либо в файлах внутри папки: res_mods/0.9.10/scripts/client/gui/mods/mod_pmod
   Внутри файлов вас ждет подробное описание всех параметров и их стандартные значения
 
 
@@ -296,7 +296,7 @@
 
   Для ссылок городите примерно такой велосипед
   
-	<a href='event:openIngameBrowser:poliroid.ru/update_test'>Внутре гровой браузер</a> 
+	<a href='event:openIngameBrowser:poliroid.ru/update_test'>Внутре игровой браузер</a> 
 	<a href='event:openWindowsBrowser:poliroid.ru/update_test'>Внешний браузер</a>
 
 
