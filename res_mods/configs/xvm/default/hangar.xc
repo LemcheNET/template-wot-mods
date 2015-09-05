@@ -31,6 +31,12 @@
     // true - Return crew check box is selected by default
     // true - Включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
+    // true - Show flags in barracks
+    // true - Показывать флаги в казарме
+    "barracksShowFlags": true,
+    // true - Show skills in barracks
+    // true - Показывать умения в казарме
+    "barracksShowSkills": true,
     // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
     "enableEquipAutoReturn": false,
@@ -86,9 +92,12 @@
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
-      // expand each field to this amount of symbols (for example: "US East:     12345")
-      // расширить каждую ячейку до данного количества символов (к примеру: "RU1:     12345")
+      // expand values to this amount of symbols. recommended to use monospace font if this option is set.
+      // расширить значения до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalLength": 0,
+      // text to show in case of error
+      // текст показываемый в случае ошибки
+      "errorString": "--",
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -108,7 +117,10 @@
         },
         // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
         // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
-        "markCurrentServer": "bold"
+        "markCurrentServer": "bold",
+        // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
+        // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
+        "serverColor": ""
       },
       // Threshold values defining response quality
       // Пороговые значения, определяющие качество отклика
@@ -174,9 +186,12 @@
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
-      // expand each field to this amount of symbols (for example: "US East:     12345")
-      // расширить каждую ячейку до данного количества символов (к примеру: "RU1:     12345")
+      // expand values to this amount of symbols. recommended to use monospace font if this option is set.
+      // расширить значения до данного количества символов. рекомендуется использовать моноширинный шрифт если данная опция задана.
       "minimalLength": 0,
+      // text to show in case of error
+      // текст показываемый в случае ошибки
+      "errorString": "--k",
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -196,7 +211,10 @@
         },
         // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
         // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
-        "markCurrentServer": "bold"
+        "markCurrentServer": "bold",
+        // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
+        // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
+        "serverColor": ""
      },
       // Threshold values defining server online and thus shorter battle queue
       // Пороговые значения, определяющие количество человек онлайн и следовательно меньшую очередь в бой
@@ -229,7 +247,10 @@
       "alpha": 100,
       // Rotation in degrees [0..360].
       // Угол поворота в градусах [0..360].
-      "rotation": 0
+      "rotation": 0,
+      // Shift Y position
+      // Сдвиг по оси Y
+      "shiftY": 0
     },
     // Parameters for tank carousel
     // Параметры карусели танков

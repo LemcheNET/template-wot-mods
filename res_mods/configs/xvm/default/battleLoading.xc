@@ -14,6 +14,36 @@
     // true - disable Platoon icons. This blank space can house, for example, clan logos.
     // true - убрать отображение иконки взвода. На пустое поле можно вывести, например, иконку клана.
     "removeSquadIcon": false,
+    // true - disable vehicle level indicator.
+    // true - убрать отображение уровня танка.
+    "removeVehicleLevel": false,
+    // true - disable vehicle type icon. This space will be used for formatted vehicle field.
+    // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
+    "removeVehicleTypeIcon": false,
+    // X offset for allies squad icons
+    // Cмещение по оси X значка взвода для союзников
+    "squadIconOffsetXLeft": 0,
+    // X offset for enemies squad icons field
+    // Cмещение по оси X значка взвода для противников
+    "squadIconOffsetXRight": 0,
+    // X offset for allies player names field
+    // Cмещение по оси X поля ника для союзников
+    "nameFieldOffsetXLeft": 0,
+    // X offset for enemies player names field
+    // Cмещение по оси X поля ника для противников
+    "nameFieldOffsetXRight": 0,
+    // X offset for "formatLeftVehicle" field
+    // Cмещение по оси X поля названия танка для союзников
+    "vehicleFieldOffsetXLeft": 0,
+    // X offset for "formatRightVehicle" field
+    // Cмещение по оси X поля названия танка для противников
+    "vehicleFieldOffsetXRight": 0,
+    // X offset for allies vehicle icons
+    // Смещение по оси X иконки танка для союзников
+    "vehicleIconOffsetXLeft": 0,
+    // X offset for enemies vehicle icons
+    // Смещение по оси X иконки танка для противников
+    "vehicleIconOffsetXRight": 0,
     // Display options for Team/Clan logos.
     // Параметры отображения иконки игрока/клана.
     "clanIcon": {
