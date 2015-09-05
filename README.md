@@ -27,7 +27,7 @@ Some details of my mod pack.
   * ~~[Team HP Pools](http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)~~
   * [PMOD](http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/) (For old server side reticle)
   * [Battle Assistant](http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
-  * ~~[Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)~~
+  * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * ~~[Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)~~
   * ~~[Classic reload cross](http://www.locastan.com/products.htm)~~
