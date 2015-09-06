@@ -30,9 +30,9 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Battle Assistant](http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
   * [Multi Hit Log](http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
   * [sixth sense duration (icon+audio+countdown)](http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
-  * ~~[Received Damage Announcer](http://worldof-tanks.com/tag/received-damage-announcer/)~~
+  * [Received Damage Announcer](http://forum.worldoftanks.eu/index.php?/topic/505319-0910-elkanos-received-damage-announcer-v09-2015-09-02/)
   * ~~[Classic reload cross](http://www.locastan.com/products.htm)~~
-  * ~~[TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)~~
+  * [TessuMod, WOT/Teamspeak integration mod](http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping](http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
 
 ### Not included but recommended mods ###
