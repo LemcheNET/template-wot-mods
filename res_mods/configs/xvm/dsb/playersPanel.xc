@@ -158,6 +158,9 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
+      // transparency of vehicle level
+      // прозрачность уровня танка
+      "vehicleLevelAlpha": 100,
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -187,6 +190,9 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
+      // transparency of vehicle level
+      // прозрачность уровня танка
+      "vehicleLevelAlpha": 100,
       // Display format for the left panel (macros allowed, see macros.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
       "formatLeft": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:winrate}}'>{{winrate%2d~%}}</font>)",
@@ -221,6 +227,9 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
+      // transparency of vehicle level
+      // прозрачность уровня танка
+      "vehicleLevelAlpha": 100,
       // Display format for the left panel (macros allowed, see macros.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
       "formatLeft": "<font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> (<font color='{{c:t-winrate}}'>{{t-winrate%2d~%}}</font>)",
@@ -255,6 +264,9 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
+      // transparency of vehicle level
+      // прозрачность уровня танка
+      "vehicleLevelAlpha": 100,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
       "nickFormatLeft": "<img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font color='{{c:wn8}}' alpha='{{alive?#FF|#80}}'>{{name%.15s~..}}</font> <font alpha='#A0'>{{clan}}</font> (<font color='{{c:wn8}}'>{{wn8}}</font> / <font color='{{c:winrate}}'>{{winrate%2d~%}}</font>)",
