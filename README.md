@@ -19,7 +19,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/)
   * [XVM Mod](http://www.modxvm.com)
   * [Active Dossier Uploader](http://www.vbaddict.net)
-  * ~~[Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)~~
+  * [Radial Menu](http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)
   * ~~[SafeShot](http://forum.worldoftanks.ru/index.php?/topic/1075087-)~~
   * [6thsense-audio](http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger](http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
