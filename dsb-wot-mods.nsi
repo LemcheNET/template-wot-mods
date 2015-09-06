@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 10
-!define VERSIONBUILD 1
+!define VERSIONBUILD 2
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/dsb" # "Support Information" link
@@ -255,7 +255,6 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\MultiHitLog\BackGround10.dds"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\MultiHitLog\BackGround1.dds"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\expected_tank_values.json"
-    Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\ElkRDA.pyc"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\Circle15.pyc"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\Circle15.cfg"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\mods\BRR.pyc"
@@ -571,6 +570,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_pmod\battleLoading.json"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_pmod\battleGui.json"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_pmod\battleChat.json"
+    Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_ElkRDA.pyc"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_battle_assistant.txt"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_battle_assistant.pyc"
     Delete "$INSTDIR\res_mods\0.9.10\scripts\client\gui\mods\mod_.pyc"
