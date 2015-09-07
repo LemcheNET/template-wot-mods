@@ -34,6 +34,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * ~~[Classic reload cross] (http://www.locastan.com/products.htm)~~
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
+  * [[ZJ] Marker Re-Load build 69 Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
 
 ### Not included but recommended mods ###
 I also normally add these mods
