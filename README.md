@@ -31,7 +31,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Multi Hit Log] (http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)
   * [sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * [Received Damage Announcer] (http://forum.worldoftanks.eu/index.php?/topic/505319-0910-elkanos-received-damage-announcer-v09-2015-09-02/)
-  * ~~[Classic reload cross] (http://www.locastan.com/products.htm)~~
+  * [Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * [[ZJ] Marker Re-Load build 69 Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
