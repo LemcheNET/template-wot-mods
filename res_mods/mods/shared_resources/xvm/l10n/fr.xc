@@ -12,7 +12,7 @@
     "Remove": "Supprimer",
     "Yes": "Oui",
     "No": "Non",
-    "Not available short": "",
+    "Not available short": "n/a",
     "Initialization": "Initialisation",
     "Ping": "Ping",
     "Online": "En ligne",
