@@ -12,7 +12,7 @@
     "Remove": "Eltávolít",
     "Yes": "Igen",
     "No": "Nem",
-    "Not available short": "",
+    "Not available short": "Ismeretlen",
     "Initialization": "Inicializálás",
     "Ping": "Ping",
     "Online": "Online",
