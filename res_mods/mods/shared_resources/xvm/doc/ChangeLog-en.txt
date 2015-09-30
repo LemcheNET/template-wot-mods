@@ -1,4 +1,7 @@
-﻿XVM-6.1.4.1:
+﻿XVM-6.1.4.2:
+  * update for WoT minipatch
+
+XVM-6.1.4.1:
   * bug fixes and optimization
   * new options:
       "sounds"/"fireAlert" - fire alarm sound
