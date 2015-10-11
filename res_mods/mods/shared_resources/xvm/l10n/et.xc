@@ -114,6 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "Rühma lahingu järgud",
+    "Squad tanks battle tiers difference": "Rühma lahingu järgud",
     "Vehicle": "Masin",
     "Battle tiers": "Lahingu järgud",
     "Type": "Tüüp",

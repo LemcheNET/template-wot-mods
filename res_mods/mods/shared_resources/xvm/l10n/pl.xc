@@ -3,7 +3,7 @@
  */
 {
   "locale": {
-    "Warning": "Uwaga",
+    "Warning": "Ostrzeżenie",
     "Error": "Błąd",
     "Information": "Informacja",
     "OK": "OK",
@@ -114,6 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "Battle tier dla plutonu",
+    "Squad tanks battle tiers difference": "Battle tier dla plutonu",
     "Vehicle": "Pojazd",
     "Battle tiers": "Poziom pojazdów w bitwie",
     "Type": "Typ",

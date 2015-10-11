@@ -114,6 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "Lag kampnivå",
+    "Squad tanks battle tiers difference": "Lag kampnivå",
     "Vehicle": "Fartøy",
     "Battle tiers": "Kampnivå",
     "Type": "Type",

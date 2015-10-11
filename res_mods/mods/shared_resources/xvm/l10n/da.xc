@@ -114,6 +114,7 @@
     "(sec)": "",
     "(m)": "",
     "Squad battle tiers": "",
+    "Squad tanks battle tiers difference": "",
     "Vehicle": "Vogn",
     "Battle tiers": "Kampniveauer",
     "Type": "Type",

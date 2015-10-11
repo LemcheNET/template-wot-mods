@@ -114,6 +114,7 @@
     "(sec)": "(mp)",
     "(m)": "(m)",
     "Squad battle tiers": "Szakasz csata szintek",
+    "Squad tanks battle tiers difference": "Szakasz csata szintkülönbség",
     "Vehicle": "Jármű",
     "Battle tiers": "Csata szint",
     "Type": "Típus",

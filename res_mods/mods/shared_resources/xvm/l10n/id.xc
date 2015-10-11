@@ -114,6 +114,7 @@
     "(sec)": "(detik)",
     "(m)": "(m)",
     "Squad battle tiers": "Squad tier pertarungan",
+    "Squad tanks battle tiers difference": "Squad tier pertarungan",
     "Vehicle": "Kendaraan",
     "Battle tiers": "Tier pertarungan",
     "Type": "Tipe",

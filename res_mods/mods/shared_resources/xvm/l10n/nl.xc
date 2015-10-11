@@ -114,6 +114,7 @@
     "(sec)": "(sec)",
     "(m)": "(m)",
     "Squad battle tiers": "Ploeg gevecht niveaus",
+    "Squad tanks battle tiers difference": "Ploeg gevecht niveaus",
     "Vehicle": "Voertuig",
     "Battle tiers": "Gevechtsniveau ",
     "Type": "Type",

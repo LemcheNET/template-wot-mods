@@ -114,6 +114,7 @@
     "(sec)": "",
     "(m)": "",
     "Squad battle tiers": "",
+    "Squad tanks battle tiers difference": "",
     "Vehicle": "Veículo",
     "Battle tiers": "Níveis de batalha",
     "Type": "Type",

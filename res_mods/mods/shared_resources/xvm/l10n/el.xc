@@ -114,6 +114,7 @@
     "(sec)": "(sec)",
     "(m)": "(m)",
     "Squad battle tiers": "Squad βαθμίδες μάχης",
+    "Squad tanks battle tiers difference": "Squad βαθμίδες μάχης",
     "Vehicle": "Όχημα",
     "Battle tiers": "Βαθμίδες μάχης",
     "Type": "Τύπος",

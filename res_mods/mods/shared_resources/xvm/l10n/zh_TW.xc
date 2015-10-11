@@ -114,6 +114,7 @@
     "(sec)": "(秒)",
     "(m)": "(公尺)",
     "Squad battle tiers": "",
+    "Squad tanks battle tiers difference": "",
     "Vehicle": "車輛名稱",
     "Battle tiers": "分房階級",
     "Type": "車輛類型",

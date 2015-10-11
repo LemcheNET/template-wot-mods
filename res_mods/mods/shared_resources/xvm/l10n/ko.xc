@@ -114,6 +114,7 @@
     "(sec)": "(초)",
     "(m)": "(m)",
     "Squad battle tiers": "소대의 배틀티어",
+    "Squad tanks battle tiers difference": "소대의 배틀티어",
     "Vehicle": "전차",
     "Battle tiers": "배틀 티어",
     "Type": "전차 종류",

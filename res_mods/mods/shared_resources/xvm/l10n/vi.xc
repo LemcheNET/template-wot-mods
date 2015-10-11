@@ -114,6 +114,7 @@
     "(sec)": "(giây)",
     "(m)": "(m)",
     "Squad battle tiers": "Cấp trận đấu trung đội",
+    "Squad tanks battle tiers difference": "Cấp trận đấu trung đội",
     "Vehicle": "Xe",
     "Battle tiers": "Cấp trận đấu",
     "Type": "Loại",

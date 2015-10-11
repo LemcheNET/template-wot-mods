@@ -114,6 +114,7 @@
     "(sec)": "(s)",
     "(m)": "(m)",
     "Squad battle tiers": "Vada kaujas līmenis",
+    "Squad tanks battle tiers difference": "Vada kaujas līmenis",
     "Vehicle": "Tanks",
     "Battle tiers": "Kaujas līmenis",
     "Type": "Veids",

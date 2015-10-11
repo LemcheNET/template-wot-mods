@@ -114,6 +114,7 @@
     "(sec)": "(秒)",
     "(m)": "(メートル)",
     "Squad battle tiers": "小隊戦闘ティア",
+    "Squad tanks battle tiers difference": "小隊戦闘ティア",
     "Vehicle": "車両",
     "Battle tiers": "戦闘対象Tier",
     "Type": "タイプ",
