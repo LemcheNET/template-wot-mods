@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 10
-!define VERSIONBUILD 5
+!define VERSIONBUILD 6
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/dsb" # "Support Information" link
@@ -1877,6 +1877,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\audio\xvm.fev"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\res\audio\readme.txt"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\zh_TW.xc"
+    Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\zh_SG.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\zh_CN.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\vi.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\uk.xc"
@@ -1906,6 +1907,8 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\fil.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\fi.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\et.xc"
+    Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\es_MX.xc"
+    Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\es_AR.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\es.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\en.xc"
     Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\l10n\el.xc"
