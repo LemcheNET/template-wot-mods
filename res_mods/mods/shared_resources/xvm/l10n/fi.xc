@@ -114,6 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "Osaston taistelutaso",
+    "Squad tanks battle tiers difference": "Osaston taistelutaso",
     "Vehicle": "Tankki",
     "Battle tiers": "Taistelutasot",
     "Type": "Tyyppi",

@@ -114,6 +114,7 @@
     "(sec)": "(წამ)",
     "(m)": "(მ)",
     "Squad battle tiers": "ვზვოდის ბრძოლების დონე",
+    "Squad tanks battle tiers difference": "ვზვოდის ბრძოლების დონე",
     "Vehicle": "ტექნიკა",
     "Battle tiers": "ბრძოლების დონე",
     "Type": "ტიპი",

@@ -114,6 +114,7 @@
     "(sec)": "(sec)",
     "(m)": "(m)",
     "Squad battle tiers": "Nivel de joc al plutonului",
+    "Squad tanks battle tiers difference": "Nivel de joc al plutonului",
     "Vehicle": "Vehicul",
     "Battle tiers": "Generaţii de luptă",
     "Type": "Tip",

@@ -114,6 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "Bojový tier",
+    "Squad tanks battle tiers difference": "Bojový tier",
     "Vehicle": "Vozidlo",
     "Battle tiers": "MM",
     "Type": "Typ",

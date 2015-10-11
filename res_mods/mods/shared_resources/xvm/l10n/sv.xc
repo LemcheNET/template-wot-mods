@@ -114,6 +114,7 @@
     "(sec)": "",
     "(m)": "",
     "Squad battle tiers": "",
+    "Squad tanks battle tiers difference": "",
     "Vehicle": "Fordon",
     "Battle tiers": "Stridsnivå",
     "Type": "Typ",

@@ -114,6 +114,7 @@
     "(sec)": "(seg)",
     "(m)": "(m)",
     "Squad battle tiers": "Tier de batalla del pelotón",
+    "Squad tanks battle tiers difference": "Diferencia de tier de batalla de los tanques del escuadrón",
     "Vehicle": "Vehículo",
     "Battle tiers": "Tiers de batalla",
     "Type": "Tipo",

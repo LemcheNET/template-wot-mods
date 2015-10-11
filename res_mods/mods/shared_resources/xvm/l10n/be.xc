@@ -114,6 +114,7 @@
     "(sec)": "(с)",
     "(m)": "(м)",
     "Squad battle tiers": "Узровень баёў звязу",
+    "Squad tanks battle tiers difference": "Узровень баёў звязу",
     "Vehicle": "Танк",
     "Battle tiers": "Узровень баёў",
     "Type": "Тып",

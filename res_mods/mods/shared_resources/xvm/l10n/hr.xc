@@ -114,6 +114,7 @@
     "(sec)": "(sekunda)",
     "(m)": "(metar)",
     "Squad battle tiers": "Vod ulazi u bitke levela",
+    "Squad tanks battle tiers difference": "Vod ulazi u bitke levela",
     "Vehicle": "Vozilo",
     "Battle tiers": "Borbeni nivoi",
     "Type": "Tip",
