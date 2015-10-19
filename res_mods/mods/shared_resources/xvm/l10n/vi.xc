@@ -175,6 +175,7 @@
     "Not ready": "Chưa sẵn sàng",
     "Hide with honors": "Ẩn Hoàn thành xuất sắc",
     "Started": "Đang thực hiện",
+    "Incomplete": "Đủ kíp lái",
     "XVM config reloaded": "Đã nạp lại cấu hình XVM",
     "Config file xvm.xc was not found, using the built-in config": "Không tìm thấy tệp cấu hình xvm.xc, sử dụng cấu hình đựng sẵn",
     "Error loading XVM config": "Lỗi nạp cấu hình XVM"

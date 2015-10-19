@@ -175,6 +175,7 @@
     "Not ready": "No preparado",
     "Hide with honors": "Ocultar con honores",
     "Started": "Iniciado",
+    "Incomplete": "Incompleta",
     "XVM config reloaded": "Configuración XVM actualizada",
     "Config file xvm.xc was not found, using the built-in config": "Archivo xvm.xc no ha sido encontrado usando la configuración por defecto",
     "Error loading XVM config": "Error al cargar la configuración XVM"

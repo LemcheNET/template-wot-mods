@@ -175,6 +175,7 @@
     "Not ready": "",
     "Hide with honors": "",
     "Started": "",
+    "Incomplete": "",
     "XVM config reloaded": "",
     "Config file xvm.xc was not found, using the built-in config": "",
     "Error loading XVM config": ""

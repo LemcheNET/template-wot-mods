@@ -175,6 +175,7 @@
     "Not ready": "Nav gatavs",
     "Hide with honors": "Paslēpt ar izcilību izpildītās",
     "Started": "Iesākts",
+    "Incomplete": "Paslēpt izpildītās",
     "XVM config reloaded": "XVM konfigurācija pārlādēta",
     "Config file xvm.xc was not found, using the built-in config": "Konfigurācijas fails xvm.xc nav atrasts, tiks izmantota pamata konfigurācija",
     "Error loading XVM config": "Kļūda ielādējot XVM konfigurāciju"

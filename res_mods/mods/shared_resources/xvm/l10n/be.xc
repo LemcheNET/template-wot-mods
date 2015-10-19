@@ -175,6 +175,7 @@
     "Not ready": "Не гатовы",
     "Hide with honors": "Схаваць з адзнакай",
     "Started": "Выконваецца",
+    "Incomplete": "Схаваць выкананыя",
     "XVM config reloaded": "Файл наладак XVM перазагружаны",
     "Config file xvm.xc was not found, using the built-in config": "Файл канфігурацыі xvm.xc не знойдзены, ужыта ўбудаваная канфігурацыя",
     "Error loading XVM config": "Няўдалая загрузка файла канфігурацыі XVM"

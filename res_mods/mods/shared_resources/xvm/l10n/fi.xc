@@ -175,6 +175,7 @@
     "Not ready": "Ei valmis",
     "Hide with honors": "Piilota kunniamainitut",
     "Started": "",
+    "Incomplete": "Piilotus suoritettu",
     "XVM config reloaded": "XVM asetukset uudelleenladattu",
     "Config file xvm.xc was not found, using the built-in config": "Asetustiedostoa xvm.xc ei löydy, käytetään oletusasetuksia",
     "Error loading XVM config": "Virhe ladattaessa XVM asetuksia"
