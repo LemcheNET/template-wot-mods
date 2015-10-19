@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 10
-!define VERSIONBUILD 6
+!define VERSIONBUILD 7
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/dsb" # "Support Information" link
@@ -2168,6 +2168,7 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-snippet-bt.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-panels.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-panels-none.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-minimapLabels.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-minimap.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-markers.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\sirmax\sirmax-carousel.xc"
@@ -2201,7 +2202,11 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\sounds.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\res\SixthSense.png"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\playersPanel.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapMapSize.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapLines.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapLabelsTemplates.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapLabelsData.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapLabelsAlt.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapLabels.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapCircles.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\dsb\minimapAlt.xc"
@@ -2235,7 +2240,11 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\configs\xvm\default\squad.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\sounds.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\playersPanel.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\default\minimapMapSize.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\minimapLines.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\default\minimapLabelsTemplates.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\default\minimapLabelsData.xc"
+    Delete "$INSTDIR\res_mods\configs\xvm\default\minimapLabelsAlt.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\minimapLabels.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\minimapCircles.xc"
     Delete "$INSTDIR\res_mods\configs\xvm\default\minimapAlt.xc"
