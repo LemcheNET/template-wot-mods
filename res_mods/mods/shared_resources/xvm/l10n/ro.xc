@@ -175,6 +175,7 @@
     "Not ready": "Nu este gata",
     "Hide with honors": "Ascunde cu onoruri",
     "Started": "Inceput",
+    "Incomplete": "Echipaj complet",
     "XVM config reloaded": "Configuratie XVM reincarcata",
     "Config file xvm.xc was not found, using the built-in config": "Fisierul xvm.xc nu a fost gasit, se foloseste configuratia interna",
     "Error loading XVM config": "Eroare la incarcarea configurarii XVM"

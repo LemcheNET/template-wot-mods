@@ -175,6 +175,7 @@
     "Not ready": "Pole valmis",
     "Hide with honors": "Peida kiitusega",
     "Started": "",
+    "Incomplete": "Komplektne tiim",
     "XVM config reloaded": "XVM sätted uuesti laetud",
     "Config file xvm.xc was not found, using the built-in config": "Sätetefaili xvm.xc ei leitud, kasutan algsätteid",
     "Error loading XVM config": "Viga XVM sätete laadimisel"

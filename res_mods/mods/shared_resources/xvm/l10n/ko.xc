@@ -175,6 +175,7 @@
     "Not ready": "준비되지 않음",
     "Hide with honors": "우수 등급으로 완료된 임무 숨김",
     "Started": "시작됨",
+    "Incomplete": "100% 승무원만",
     "XVM config reloaded": "XVM config reloaded",
     "Config file xvm.xc was not found, using the built-in config": "xvm.xc 환경설정 파일을 찾을수 없습니다. 내장된 환경설정을 사용합니다.",
     "Error loading XVM config": "XVM 설정을 불러오는데 문제가 발생했습니다."

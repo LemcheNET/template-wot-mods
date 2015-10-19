@@ -175,6 +175,7 @@
     "Not ready": "Neparuošta",
     "Hide with honors": "Slėpti su pagyrimu",
     "Started": "Pradėta",
+    "Incomplete": "Slėpti įvykdytas",
     "XVM config reloaded": "XVM forma perkrauta",
     "Config file xvm.xc was not found, using the built-in config": "Konfigūracijos failas xvm.xc buvo nerastas, naudojant įmontuotą formą",
     "Error loading XVM config": "Klaida kraunant XVM konfigūraciją"

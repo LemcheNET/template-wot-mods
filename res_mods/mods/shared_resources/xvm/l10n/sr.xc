@@ -175,6 +175,7 @@
     "Not ready": "Nije spremno",
     "Hide with honors": "Sakrij sa počastima",
     "Started": "Pokrenuto",
+    "Incomplete": "Cela posada",
     "XVM config reloaded": "XVM konfiguracija učitana",
     "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristiće se standardna konfiguracija",
     "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"

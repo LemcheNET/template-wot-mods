@@ -52,11 +52,11 @@
     "spotted": {
       "neverSeen":      100,
       "lost":           100,
-      "revealed":       100,
+      "spotted":       100,
       "dead":           100,
       "neverSeen_arty": 100,
       "lost_arty":      100,
-      "revealed_arty":  100,
+      "spotted_arty":  100,
       "dead_arty":      100
     },
     // Dynamic transparency by remaining health.

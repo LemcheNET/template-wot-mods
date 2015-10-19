@@ -114,7 +114,7 @@
     "(sec)": "(с)",
     "(m)": "(м)",
     "Squad battle tiers": "Рівень боїв взводу",
-    "Squad tanks battle tiers difference": "Рівень боїв взводу",
+    "Squad tanks battle tiers difference": "Різниця рівнів боїв танків взводу",
     "Vehicle": "Танк",
     "Battle tiers": "Рівень боїв",
     "Type": "Тип",
@@ -175,6 +175,7 @@
     "Not ready": "Не готовий",
     "Hide with honors": "Приховати з відзнакою",
     "Started": "Виконується",
+    "Incomplete": "Незавершені",
     "XVM config reloaded": "Конфіг XVM перезавантажено",
     "Config file xvm.xc was not found, using the built-in config": "Файл конфігурації xvm.xc не знайдений, використовуємо вбудовану конфігурацію",
     "Error loading XVM config": "Помилка завантаження конфігурації XVM"
