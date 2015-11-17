@@ -14,12 +14,12 @@ Some details of my mod pack.
 
 ## The mods included are as following:##
 _(Striked out mods are uncompatible with current version of World of Tanks)_
-  * [Session Stats, and Color Messages] (http://forum.worldoftanks.eu/index.php?/topic/177899-089-color-messages-and-session-stats/)
+  * [Session Stats, and Color Messages] (http://forum.worldoftanks.eu/index.php?/topic/524189-0910-color-messages-and-session-stats/)
   * ~~[Scope shadow removal] (http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)~~
   * [Damage Panel int centered and vanilla](http://forum.worldoftanks.eu/index.php?/topic/89516-089-damage-panel-134-int-centered-and-vanilla/)
   * [XVM Mod] (http://www.modxvm.com)
   * [Active Dossier Uploader] (http://www.vbaddict.net)
-  * [Radial Menu] (http://forum.worldoftanks.eu/index.php?/topic/184767-0810-radial-menu-v257-ut-announcer-pack/)
+  * [Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger] (http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
