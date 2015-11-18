@@ -7,7 +7,7 @@
   <pluginEnable>true</pluginEnable>
   
   <!-- Activation options -->
-  <ActiveByDefault>true</ActiveByDefault> <!-- Activate Mod at the beginning of the battle - true/false. -->
+  <ActiveByDefault>false</ActiveByDefault> <!-- Activate Mod at the beginning of the battle - true/false. -->
   <ActivationHotkey>KEY_F11</ActivationHotkey> <!-- Set the hotkey to enable/disable the Mod during battle. -->
   <ReloadConfigKey>KEY_NUMPAD4</ReloadConfigKey> <!-- Press this hotkey to reload configuration. -->
     
@@ -21,7 +21,7 @@
   <!-- Special options -->
   <TryPlatoonMes>true</TryPlatoonMes> <!-- Try to send the message to platoon chat. If a platoon is found message will go to platoon chat instead team chat. If no platoon is found message will be send to the team if allowed via filters. -->
   
-  <MaxTeamAmountOnRandom>0</MaxTeamAmountOnRandom> <!-- (also for platoon chat)Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
+  <MaxTeamAmountOnRandom>6</MaxTeamAmountOnRandom> <!-- (also for platoon chat)Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnTraining>0</MaxTeamAmountOnTraining> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCompany>0</MaxTeamAmountOnCompany> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
   <MaxTeamAmountOnCyberSport>0</MaxTeamAmountOnCyberSport> <!-- Send the message only if your team amount is less than this number. If 0 this feature is disabled -->
