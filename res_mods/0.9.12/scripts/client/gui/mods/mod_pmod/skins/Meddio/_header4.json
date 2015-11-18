@@ -1,0 +1,22 @@
+/**
+ * Скин: Meddio A.11.1 (подготовлен для PMOD 0.9.3 #11)
+ * Описание, инструкция по настройке:
+ * http://forum.worldoftanks.ru/index.php?/topic/1172523-/page__st__1980__pid__30837799#entry30837799
+ * http://www.koreanrandom.com/forum/topic/14360-/page-12#entry176082
+ */
+ 
+ "<textformat tabstops='[60, 115, 170]' leading='2'>",
+	"<font size='15'>WN7<tab>WN8<tab>  РЭ<tab>Уровень</font>{{line_hard}}",
+	"<font size='15'>", 
+		"  <font color='{{c:XWN7}}'>{{XWN7}}</font><tab>",
+		"  <font color='{{c:XWN8}}'>{{XWN8}}</font><tab>",
+		"  <font color='{{c:XEFF}}'>{{XEFF}}</font><tab>",
+		"  <font size='10'><b>Т</b></font>  <font color='{{c:AvgTierLevel}}'>{{AvgTierLevel}}</font>",
+	"</font>{{line_regular}}",
+	"<font size='14'>",
+		"<font color='{{c:WN7}}'>{{WN7}}</font><tab>",
+		"<font color='{{c:WN8}}'>{{WN8}}</font><tab>",
+		"<font color='{{c:EFF}}'>{{EFF}}</font><tab>",
+		"  <font size='10'><b>Б</b></font>  <font color='{{c:AvgBattleLevel}}'>{{AvgBattleLevel}}</font>",
+	"</font>{{line_hard}}",
+"</textformat>"
