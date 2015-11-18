@@ -18,7 +18,7 @@
     "no_snap_on_autoaim_off_E": true,
     "snap_to_nearest": true,
     "snap_continously": false,
-    "snappingDelay": 0.2,
+    "snappingDelay": 0.20,
     "snapping_angle_degrees": 15.0,
     "toggleKeyCode": 0,
     "toggleStateOn": true,
@@ -33,8 +33,6 @@
     },
     "addon-repair_with_T": {
         "devices": {
-            "engine": ["destroyed"],
-            "chassis": ["destroyed"]
         },
         "other_forcing_large_kit": {
             "engine": ["critical"],
