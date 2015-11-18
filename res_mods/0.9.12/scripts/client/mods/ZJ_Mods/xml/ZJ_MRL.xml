@@ -1,0 +1,87 @@
+<ZJ_MRL>
+    <!-- Версия XML файла -->
+    <versionMod>MRL 0.10.0 Demo 070</versionMod>
+    <!-- Вкл. мод по умолчанию -->
+    <modEnable>True</modEnable>
+    <!-- Горячая клавиша вкл./выкл. режимов -->
+    <toggleKey>KEY_F10</toggleKey>
+    <!-- Дополнительная клавиша  -->
+    <altKey>KEY_LALT</altKey>
+    <!-- Вкл. маркер Flash -->
+    <SWFMarkerShow>True</SWFMarkerShow>
+    <!-- Варианты маркеров Flash -->
+    <!-- Ext_Marker_orange.swf - оранжевый -->
+    <!-- Ext_Marker_red.swf - красный -->
+    <!-- Ext_Marker_blue.swf - синий -->
+    <!-- Ext_Marker_green.swf - зелёный -->
+    <!-- Для удаления кружка использовать формат (пример): Ext_Marker_green_noCircle.swf -->
+    <!-- Маркер противника-->
+    <SWF_FILE_NAME_ENEMIES>Ext_Marker_orange.swf</SWF_FILE_NAME_ENEMIES>
+    <!-- Маркер союзника-->
+    <SWF_FILE_NAME_ALLIES>Ext_Marker_green.swf</SWF_FILE_NAME_ALLIES>
+    <!-- Корректировка, задержка маркера (старый), в сек. (исправлять не рекомендовано) -->
+    <marker_timeCorrect>0.5</marker_timeCorrect>
+
+
+    <!-- Маркер количества снарядов в барабане -->
+    <!-- Вкл. маркер -->
+    <markerAmmoShow>True</markerAmmoShow>
+    <!-- Регулировка положения ось Х, шаг 0.01 -->
+    <markerAmmo_x>0.35</markerAmmo_x>
+    <!-- Регулировка положения ось Y, шаг 0.01 -->
+    <markerAmmo_y>0.73</markerAmmo_y>
+    <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
+    <markerAmmoClr>255 140 0 255</markerAmmoClr>
+
+    <!-- Маркер точного времени перезарядки -->
+    <!-- Вкл. маркер -->
+    <markerReloadShow>True</markerReloadShow>
+    <!-- Регулировка положения ось Х, шаг 0.01 -->
+    <markerReload_x>0.7</markerReload_x>
+    <!-- Регулировка положения ось Y, шаг 0.01 -->
+    <markerReload_y>0.73</markerReload_y>
+    <!-- Цвет маркера перезарядки противника, (RGBA, диапозон 0-255) -->
+    <markerReloadEnemyClr>255 0 0 255</markerReloadEnemyClr>
+    <!-- Цвет маркера перезарядки союзника, (RGBA, диапозон 0-255) -->
+    <markerReloadAllyClr>20 255 0 255</markerReloadAllyClr>
+
+    <!-- Маркер готовности орудия -->
+    <!-- Вкл. маркер -->
+    <markerReadyShow>True</markerReadyShow>
+    <!-- Символ маркера готовности орудия -->
+    <markerReady>.</markerReady>
+    <!-- Регулировка положения ось Х, шаг 0.01 -->
+    <markerReady_x>0.7</markerReady_x>
+    <!-- Регулировка положения ось Y, шаг 0.01 -->
+    <markerReady_y>0.73</markerReady_y>
+    <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
+    <markerReadyClr>0 255 0 255</markerReadyClr>
+
+    <!-- Шрифты маркера -->
+    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerFont>default_smaller.font</markerFont>
+
+    <!-- Дистанция отображения маркера (новый) -->
+    <markerDistance>100</markerDistance>
+    <!-- Дистанция рассеивания маркера (новый) -->
+    <markerDistDiss>50</markerDistDiss>
+    <!-- Вкл. союзников по умолчанию -->
+    <alliesEnable>True</alliesEnable>
+    <!-- Вкл. отображения перезарядки союзников в начале битвы -->
+    <startAlliesEnable>True</startAlliesEnable>
+    <!-- Вкл. отображения перезарядки для противника на миникарте -->
+    <minimapEnable>True</minimapEnable>
+    <!-- Учитывать Боевое Братство -->
+    <bonusBrotherhood>True</bonusBrotherhood>
+    <!-- Учитывать Доп.паёк -->
+    <bonusStimulator>False</bonusStimulator>
+    <!-- Учитывать Боевое Братство и Доп.паёк автоматически при боях на ГК -->
+    <bonusAuto>True</bonusAuto>
+    <!-- Считать барабан перезаряженным, если танк не открывал огонь в течении времени перезарядки -->
+    <timeOutAutoReload>True</timeOutAutoReload>
+    <!-- Добавочное время к timeOutAutoReload, в сек. -->
+    <timeOutReloadDelay>3.0</timeOutReloadDelay>
+    <!-- Разрешить показывать маркер перезарядки у техники пропавшей из вида -->
+    <unVisibleReload>False</unVisibleReload>
+
+</ZJ_MRL>
