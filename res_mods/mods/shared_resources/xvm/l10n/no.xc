@@ -175,7 +175,7 @@
     "Not ready": "Ikke klar",
     "Hide with honors": "",
     "Started": "",
-    "Incomplete": "",
+    "Incomplete": "Fjern hele besetningen",
     "XVM config reloaded": "XVM konfig gjennlastet",
     "Config file xvm.xc was not found, using the built-in config": "Konfig fil xvm.xc ble ikke funnet, laster inn innebygd konfig",
     "Error loading XVM config": "Feil ved innlasting av XVM konfig"

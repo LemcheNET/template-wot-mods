@@ -114,7 +114,7 @@
     "(sec)": "(sek)",
     "(m)": "(m)",
     "Squad battle tiers": "MM",
-    "Squad tanks battle tiers difference": "",
+    "Squad tanks battle tiers difference": "MM",
     "Vehicle": "Vozidlo",
     "Battle tiers": "MM",
     "Type": "Typ",

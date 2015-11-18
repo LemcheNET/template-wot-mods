@@ -1,4 +1,10 @@
-﻿XVM-6.1.5:
+﻿XVM-6.1.6:
+  * adaptation to WoT 0.9.12
+  * added options:
+      "carousel"/"scrollingSpeed" - carousel scrolling speed
+      "carousel"/"backgroundAlpha" - background transparency
+
+XVM-6.1.5:
   * Minimap label settings was completely reworked. See minimapLabels.xc file.
   * "mapSize" config section moved to the root of the "minimap" and "minimapAlt" sections
   * "revealed" renamed to "spotted" everywhere

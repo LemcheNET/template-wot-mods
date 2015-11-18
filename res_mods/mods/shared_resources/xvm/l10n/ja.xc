@@ -175,7 +175,7 @@
     "Not ready": "",
     "Hide with honors": "",
     "Started": "",
-    "Incomplete": "",
+    "Incomplete": "全搭乗員を降ろす",
     "XVM config reloaded": "XVM設定がリロードされました",
     "Config file xvm.xc was not found, using the built-in config": "xvm.xc 設定ファイルが見つかりませんでした",
     "Error loading XVM config": "XVM設定のロードでエラーが発生しました"
