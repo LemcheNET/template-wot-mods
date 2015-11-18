@@ -26,7 +26,7 @@
       Display the original spotted icon.
       Note: the other icons will keep be shown 
       true/false -->
-  <DisplayOriginalIcon>false</DisplayOriginalIcon>
+  <DisplayOriginalIcon>true</DisplayOriginalIcon>
   <!-- ***************************************************** -->
   
   
@@ -66,21 +66,24 @@
   		The path of the icon shown when sixthsense perk is not enabled 
   		To disable the icon set it to 
   		scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds -->
-  <IconInactivePath>scripts/client/plugins/SixthSenseDuration_plugin/resources/inactive.dds</IconInactivePath>
+  <!--<IconInactivePath>scripts/client/plugins/SixthSenseDuration_plugin/resources/inactive.dds</IconInactivePath>-->
+  <IconInactivePath>scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds</IconInactivePath>
   <!-- ***************************************************** -->
   
   <!-- ******************* IconUnspottedPath **************
   		The path of the icon shown when sixthsense is enabled and you are not spotted 
   		To disable the icon set it to 
   		scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds -->
-  <IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/unspotted.dds</IconUnspottedPath>
+  <!--<IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/unspotted.dds</IconUnspottedPath>-->
+  <IconUnspottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds</IconUnspottedPath>
   <!-- ***************************************************** -->
   
   <!-- ******************* IconSpottedPath ****************
   		The path of the icon shown when sixthsense is enabled and you are spotted 
   		To disable the icon set it to 
   		scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds -->
-  <IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/spotted.dds</IconSpottedPath>
+  <!--<IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/spotted.dds</IconSpottedPath>-->
+  <IconSpottedPath>scripts/client/plugins/SixthSenseDuration_plugin/resources/transparent.dds</IconSpottedPath>
   <!-- ***************************************************** -->
   
   
@@ -136,7 +139,7 @@
       * "Dlink" : /GUI/notifications_FX/gun_intuition
       * "Clock" : /GUI/notifications_FX/cybersport_timer  
       -->
-  <AudioPath>/GUI/notifications_FX/cybersport_timer</AudioPath>
+  <AudioPath>/GUI/notifications_FX/gun_intuition</AudioPath>
   <!-- ***************************************************** -->
   
   
@@ -223,7 +226,7 @@
       http://www.w3schools.com/tags/ref_colorpicker.asp  
       Example:
       * "#FF8000" : orange   -->
-  <TimerColor>#FF8000</TimerColor>
+  <TimerColor>#FF0000</TimerColor>
   <!-- ***************************************************** -->
   
   
@@ -242,7 +245,7 @@
       Y is your screen's height
       Example:
       * "(round(x / 2) + 120, round(y / 6) + 20, 0.7)" : (x,y,z)   -->
-  <TimerPosition>(round(x / 2) + 200.0,  30.0, 0.7)</TimerPosition>
+  <TimerPosition>(round(x / 2) + 120, round(y / 6) + 20, 0.7)</TimerPosition>
   <!-- ***************************************************** -->
   
   
