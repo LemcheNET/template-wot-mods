@@ -1,30 +1,30 @@
 <safeShotSetting>
-
-    <!-- Автор: Skino88 -->
-	<!-- Официальная тема: http://forum.worldoftanks.ru/index.php?/topic/1075087- -->
 	
-	<!-- Клавиша для отключения мода. -->
+	<!-- Author : Skino88 -->
+	<!-- Official Thread : http://forum.worldoftanks.ru/index.php?/topic/1075087- -->
+	
+	<!-- Key to disable the mod. -->
 	<disableKey>KEY_LALT</disableKey>
 	
-	<!-- Режим "залипания" горячей клавиши. -->
+	<!-- The "sticky" hotkey. -->
 	<toggledDisableKey>false</toggledDisableKey>
 	
-	<!-- Переключатель блокировки выстрела по союзникам. -->
+	<!-- Lock switch shot by the Allies. -->
 	<teamShot>true</teamShot>
 	
-		<!-- Переключатель сообщения при попытке выстрелить по союзнику. -->
-		<toggleMessage>true</toggleMessage>
-		
-			<!-- Текст сообщения при попытке выстрелить по союзнику. -->
-			<textMessage>{playerName}, не мешай стрелять!</textMessage>
+	<!-- Switch messages when trying to shoot at an ally. -->
+	<toggleMessage>true</toggleMessage>
 	
-	<!-- Переключатель блокировки выстрела по уничтоженным танкам. -->
+	<!-- Message when trying to shoot at an ally. -->
+	<textMessage>%s, dont be a cunt, and block my line of fire!</textMessage>
+	
+	<!-- Lock switch shots to destroy tanks. -->
 	<deadShot>true</deadShot>
 	
-		<!-- Длительность блокировки выстрела по уничтоженным танкам. (0.5 - 4.0) -->
-		<deadShotTime>2.0</deadShotTime>
-		
-		<!-- Переключатель блокировки выстрела по уничтоженным танкам, которые находятся вне видимости. -->
-		<deadShotDisappeared>true</deadShotDisappeared>
+	<!-- Lockout Duration shot to destroy tanks. (0.5 - 4.0) -->
+	<deadShotTime>2.0</deadShotTime>
+	
+	<!-- The lock switch on the shots destroy tanks that are out of sight. -->
+	<deadShotDisappeared>true</deadShotDisappeared>
 	
 </safeShotSetting>
