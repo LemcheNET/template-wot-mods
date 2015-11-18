@@ -5,7 +5,7 @@
 {
 	// true - включить модуль.
 	// true - enable the module.
-	"enable": false,
+	"enable": true,
 	
 	/* Ввиду громоздкого набора параметров текстур, описаны будут параметры только единожды. */
 	/* Due to the cumbersome set of parameters texture parameters will be described only once. */
