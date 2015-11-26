@@ -114,7 +114,7 @@
     "(sec)": "(sec)",
     "(m)": "(m)",
     "Squad battle tiers": "Nivel de joc al plutonului",
-    "Squad tanks battle tiers difference": "Nivel de joc al plutonului",
+    "Squad tanks battle tiers difference": "Diferenta de tier a plutonului",
     "Vehicle": "Vehicul",
     "Battle tiers": "Generaţii de luptă",
     "Type": "Tip",
@@ -175,7 +175,7 @@
     "Not ready": "Nu este gata",
     "Hide with honors": "Ascunde cu onoruri",
     "Started": "Inceput",
-    "Incomplete": "Echipaj complet",
+    "Incomplete": "Incomplet",
     "XVM config reloaded": "Configuratie XVM reincarcata",
     "Config file xvm.xc was not found, using the built-in config": "Fisierul xvm.xc nu a fost gasit, se foloseste configuratia interna",
     "Error loading XVM config": "Eroare la incarcarea configurarii XVM"

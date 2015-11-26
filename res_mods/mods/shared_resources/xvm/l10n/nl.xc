@@ -175,7 +175,7 @@
     "Not ready": "Niet Gereed",
     "Hide with honors": "",
     "Started": "",
-    "Incomplete": "",
+    "Incomplete": "Verwijder alle bemanning ",
     "XVM config reloaded": "XVM configuratie opnieuw geladen",
     "Config file xvm.xc was not found, using the built-in config": "Configuratiebestand xvm.xc werd niet gevonden met behulp van de ingebouwde configuratie",
     "Error loading XVM config": "out bij het laden van de XVM configuratie"

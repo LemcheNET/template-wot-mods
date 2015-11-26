@@ -11,6 +11,8 @@
     //"zoom": 0.75,
     "rows": 2,
     "padding": { "horizontal": 5, "vertical": 5 },
+    //"scrollingSpeed": 30,
+    //"backgroundAlpha": 30,
     "filtersPadding": { "horizontal": 11, "vertical": 10 },
     "alwaysShowFilters": true,
     //"suppressCarouselTooltips": true,
@@ -35,7 +37,7 @@
       "statusText":     { "visible": true,  "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "statusTextBuy":  { "visible": true,  "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "clanLock":       { "visible": true,  "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
-      "activateButton": { "visible": true,  "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "activateButton": { "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "__stub__": {}
     },
     "extraFields": [

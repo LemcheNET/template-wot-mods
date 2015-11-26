@@ -114,7 +114,7 @@
     "(sec)": "",
     "(m)": "",
     "Squad battle tiers": "战斗等级",
-    "Squad tanks battle tiers difference": "",
+    "Squad tanks battle tiers difference": "战斗等级",
     "Vehicle": "车辆",
     "Battle tiers": "战斗等级",
     "Type": "类别",
