@@ -24,7 +24,7 @@
     // Формат поля по умолчанию
     "defaultItem": {
       "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
-      "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 3, "strength": 4 },
+      "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 },
       "alpha": 100,
       "x": 0,
       "y": 0,
@@ -40,7 +40,7 @@
     "vtypeSpotted": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
-      "format": "<font size='13' color='{{.minimap.labelsData.colors.dot.{{sys-color-key}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>",
+      "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
       "align": "center",
       "valign": "center"
     },
@@ -101,7 +101,7 @@
     "vehicleDead": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "dead" ],
-      "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle-short}}</font>",
+      "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
       "alpha": 85,
       "x": 2,
       "y": -1

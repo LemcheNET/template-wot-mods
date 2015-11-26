@@ -4,10 +4,10 @@ if [ -f delme.txt ]; then
 	rm -f delme.txt
 fi
 
-CURRENT_VERSION=0.9.10
+CURRENT_VERSION=0.9.12
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
-for folder in {dsb-wot-mods,res,res_mods/configs,res_mods/mods,res_mods/ModSettings,res_mods/${CURRENT_VERSION}}; do
+for folder in {nfd-wot-mods,res,res_mods/configs,res_mods/mods,res_mods/ModSettings,res_mods/${CURRENT_VERSION}}; do
 	for d in $($USERPROFILE/bin/find.exe $folder -type d); do
 		echo "    RMDir \"\$INSTDIR\\$d\"" >> delme.txt
 	done
