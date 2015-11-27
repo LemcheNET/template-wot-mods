@@ -27,7 +27,7 @@
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_blue.dds"
 		},
 		
 		// Масштаб прицела
@@ -55,7 +55,7 @@
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_blue.dds"
 		},
 		"crosshairScale" : 0.5,
 		"crosshairElements" : {
@@ -80,7 +80,7 @@
 		"textureSettings" : {
 			"width" : 64,
 			"height" : 64,
-			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_standart.dds"
+			"path" : "scripts/client/gui/mods/mod_pmod/gun_marker_blue.dds"
 		},
 		"crosshairScale" : 0.5,
 		"crosshairElements" : {
