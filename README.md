@@ -4,7 +4,7 @@ Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't mad
 # Download #
 There are currently two branches of my mod pack available - Please go to each page for the latest version.
   * [Original version with my own branding] (https://github.com/atterdag/atterdag-wot-mods/tree/atterdag)
-  * [Danish Bomb Shells clan branding] (https://github.com/atterdag/atterdag-wot-mods/tree/dsb)
+  * [Northon Flank Denmark clan branding] (https://github.com/atterdag/atterdag-wot-mods/tree/nfd)
 
 # Installation #
 I've created a installer using NSIS of my mod packs for all those that can't be bothered with downloading mods, and installing them manually from the ZIP files.
@@ -15,7 +15,6 @@ Some details of my mod pack.
 ## The mods included are as following:##
 _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Session Stats, and Color Messages] (http://forum.worldoftanks.eu/index.php?/topic/524189-0910-color-messages-and-session-stats/)
-  * ~~[Scope shadow removal] (http://forum.worldoftanks.eu/index.php?/topic/259471-092-scope-shadow-removal/)~~
   * [DamageLog - log received, and blocked damage](http://forum.worldoftanks.ru/index.php?/topic/1594349-0912-damagelog-%D0%BB%D0%BE%D0%B3-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%BD%D0%B0%D0%BD%D0%B5%D1%81%D0%B5/)
   * [XVM Mod] (http://www.modxvm.com)
   * [Active Dossier Uploader] (http://www.vbaddict.net)
@@ -23,9 +22,6 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger] (http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
-  * ~~[radius_15m] (http://mirtankov.net/mods/11709-mod-nevidimyi-vystrel-iz-kusta-radius-15m.html)~~
-  * ~~Serverside Reticle mod - gun\_marker\_blue\_ultraSlimWhite.dds~~
-  * ~~[Team HP Pools] (http://forum.worldoftanks.eu/index.php?/topic/374447-090-team-hp-pool-bar/)~~
   * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/) (For old server side reticle)
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
   * ~~[Multi Hit Log] (http://worldof-tanks.com/0-9-2-multi-hit-log-v-1-2b/)~~
@@ -40,7 +36,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
 I also normally add these mods
  * [Gnomefather's HR Gun Sound Mod, Engines](http://gnomefather.blogspot.se/) - These mods increases the sense of immersion tremendously.
  * [Terrorist Allahu Akbar Voice Mod](http://forum.wotlabs.net/index.php?/topic/13181-terrorist-allahu-akbar-voice-mod/) - Hearing "Allahu Akhbar" everything I hit some one just puts a smile on my face for some odd reason.
- * [AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.
+ * ~~[AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.~~
 
 Furthermore I also want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
 
@@ -88,6 +84,17 @@ I've removed the reload time information, as well as the name of the player who 
 
 ## MultiHitLog ##
 I've created my own configuration based on expD.json, so it only shows the WN8, EFF, expected damage etc, but I keep using the Hitlog from XVM, and Damage Panel from Locastan. I've updated the WN8 ratings to WoTLabs levels, and changes the font, and colors to match the general interface.
+
+## PMOD ##
+I've enabled:
+  * Old Server Cross hair, and configured PMOD to use the gun_marker_blue.dds, instead of gun_marker_standart.dds as its a big ugly blue crosshair
+  * No binocular effect in sniper mode
+  * Horizontal stabilization
+  * I've configured a zoom indicator just up right corner of the cross hear
+  * Eanble 2x, 4x, 8x, and 16x zoom
+
+## DamageLog ##
+I've translated all the Russian messages, and logs (and help text in configuration files) to English.
 
 # Common problems #
 If the installer complains that its not able to overwrite C:\Games\World\_of\_Tanks\ActiveDossierUploader.exe, then just close ADU in your task bar (its the icon with the green circle next to the clock), and click on 'Try Again'. Or you can just click on 'Ignore';
