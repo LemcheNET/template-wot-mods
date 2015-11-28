@@ -1,0 +1,335 @@
+{
+"WindowKeyList":[
+	{"xAlign": "Normal",	"x": 220,	"offsetX": 25, "yAlign": "Normal", "y": -1,		"offsetY": 7, "width": 420,	"height": 274,	"backgroundLevel": -1, "backgroundFile": "MHL.dds", "ConfigName": "HitLogPanel",	"time": 0, "Key": "NONE"},
+	{"xAlign": "Normal",	"x": 220,	"offsetX": 25, "yAlign": "Normal", "y": -1,		"offsetY": 7, "width": 420,	"height": 274,	"backgroundLevel": -1, "backgroundFile": "MHL.dds", "ConfigName": "DamageLogPanel",	"time": 0, "Key": "KEY_LALT"},
+	
+	{"xAlign": "Normal",	"x": -427,	"offsetX": 25, "yAlign": "Normal", "y": -22,	"offsetY": 7, "width": 260,	"height": 253,	"backgroundLevel": -1, "backgroundFile": "MHL.dds", "ConfigName": "InfoPanel",		"time": 0, "Key": "NONE"},
+	{"xAlign": "Normal",	"x": -427,	"offsetX": 25, "yAlign": "Normal", "y": -22,	"offsetY": 7, "width": 260,	"height": 253,	"backgroundLevel": -1, "backgroundFile": "MHL.dds", "ConfigName": "HPLeftPanel",	"time": 0, "Key": "KEY_LALT"}
+	],
+
+"Common_INFO":"Here is common settings",
+	"AnnounceDamageForPlatoon": "True",
+	"AnnounceDamageMessage": 	"Damage done: {{HL_DMG}}!",
+	"MinimumTeamDamage": 		50,
+	"ReportTeamDamage": 		"True",
+	"ReportTeamDamageMessage": 	"{{DL_AttackerName}} ({{DL_AttackerTank}}) you just damage me for {{DL_AttackerDamage}}hp",
+	"TeamDamageForYou": 		"False",
+	"TeamDamageMessageForYou": 	"TEAMDAMAGE: {{DL_AttackerName}} in {{DL_AttackerTank}} for {{DL_AttackerDamage}}",
+	"TimeDelayAfterKeyRelease":	0,
+	"Vehicletypes":[
+		{"type": "Light_tank":		"icon": "True",		"icon_name": "LT",			"text":""},
+		{"type": "Medium_tank":		"icon": "True",		"icon_name": "MT",			"text":""},
+		{"type": "Heavy_tank":		"icon": "True",		"icon_name": "HT",			"text":""},
+		{"type": "Tank_destroyer":	"icon": "True",		"icon_name": "TD",			"text":""},
+		{"type": "Artillery":		"icon": "True",		"icon_name": "SPG",			"text":""}
+		],
+	"Ammotypes":[
+		{"type": "AP_Shell":		"icon": "False",	"icon_name": "AP",			"text":"AP"},
+		{"type": "APCR_Shell":		"icon": "False",	"icon_name": "APCR",		"text":"APCR"},
+		{"type": "APCR_G_Shell": 	"icon": "False",	"icon_name": "APCRG",		"text":"APCR"},
+		{"type": "HE_Shell":		"icon": "False",	"icon_name": "HE",			"text":"HE"},
+		{"type": "HEAT_G_Shell":	"icon": "False",	"icon_name": "HEAT",		"text":"HEAT"},
+		{"type": "HESH_G_Shell":	"icon": "False",	"icon_name": "HESH",		"text":"HESH"}
+		],
+	"Attack_Reasons":[
+		{"type": "Shot"				"icon": "False",	"icon_name": "Shot",		"text":"Shot"},
+		{"type": "Fire"				"icon": "False",	"icon_name": "Fire",		"text":"Fire"},
+		{"type": "Ram"				"icon": "False",	"icon_name": "Ram",			"text":"Ram"},
+		{"type": "Fall"				"icon": "False",	"icon_name": "Fall",		"text":"Fall"},
+		{"type": "Expl"				"icon": "False",	"icon_name": "Expl",		"text":"Expl"},
+		{"type": "Drown"			"icon":	"False",	"icon_name": "Drown",		"text":"Drown"}
+		],
+	"Other_Images":[
+		{"type": "Kill"				"icon": "True",		"icon_name": "Kill",		"text":""},
+		{"type": "Ally"				"icon":	"True",		"icon_name": "Ally",		"text":""}
+	],
+
+"Common_INFO":"Here is Common lines",
+	"Empty":[
+		{"type": "Mix",		"width": "Center",	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#D3D3D3",	"text": " "}
+		],
+	"Separator":[
+		{"type": "Mix",		"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#D3D3D3",	"text": "-----------------------------------------"}
+		],
+	"Common_Header":[
+		{"type": "Mix",		"width": 10,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#30FF30",	"text": "DMG: {{HL_DMG}}"},
+		{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "EFF",		"text": "EFF: {{HL_EFF}}"},
+		{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "WN8",		"text": "WN8: {{HL_WN8}}"},
+		{"type": "Mix",		"width": 14,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FF2020",	"text": "-DMG: {{DL_TotalReceived}}"}
+		],
+
+"Hitlog_INFO":"Here is Hitlog format and line options",
+	"groupHitLog": 				"True",
+	"HL_Killed_Text": 			"Kill",
+	"HL_Ally_Text": 			"! Ally !",
+	"HitLogPanel":[
+		{"LineType": "Common_Header"},
+		{"LineType": "HitLog_Header"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"},
+		{"LineType": "HitLog_Line"}
+		],
+		"HitLog_Header": [
+			{"type": "Mix",		"width": 10,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "Last: {{HL_LastDMG}}"},
+			{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "Avg: {{HL_AvgDMG}}"},
+			{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "Pen: {{HL_Shots}}"},
+			{"type": "Mix",		"width": 14,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "ZMHL 2.0Alpha"}
+			],
+		"HitLog_Line": [
+			{"type": "HitLog",	"width": 2,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#F0F0F0",	"text": "{{HL_Hits}}x"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 4,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "damage",	"text": "{{HL_AttackType}}"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "{{HL_TotalDamage}} / {{HL_LastDamage}}"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 3,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "class",	"text": "{{HL_TankClass}}"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "team",	"text": "{{HL_Tank}}"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "team",	"text": "{{HL_Name}}"},
+			{"type": "HitLog",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": ""},
+			{"type": "HitLog",	"width": 4,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#30FF30",	"text": "{{HL_Killed}}{{HL_Ally}}"}
+			],
+
+"DamageLog_INFO":"Here is Damagelog format and line options",
+	"ShowPen": 					"True",
+	"ShowBounce": 				"True",
+	"ShowAlly": 				"True",
+	"DamageLogPanel":[
+		{"LineType": "Common_Header"},
+		{"LineType": "DamageLog_Header"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"},
+		{"LineType": "DamageLog_Line"}
+		],
+		"DamageLog_Header": [    
+			{"type": "Mix",		"width": 10,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "Total: {{DL_ReceivedHits}}"},
+			{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FF0000",	"text": "Pen: {{DL_TotalPen}}"},
+			{"type": "Mix",		"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#00FF00",	"text": "Ding: {{DL_TotalBounce}}"},
+			{"type": "Mix",		"width": 14,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#6599FF",	"text": "Ally: {{DL_TotalAlly}}"}
+			],
+		"DamageLog_Line": [
+			{"type": "DamageLog",	"width": 2,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#F0F0F0",	"text": "{{DL_HitNr}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 4,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "hit",		"text": "{{DL_AttackerDamage}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 4,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "ammo",	"text": "{{DL_AttackerAmmo}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 4,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "damage",	"text": "{{DL_AttackType}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 3,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "class",	"text": "{{DL_AttackerTankClass}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "{{DL_AttackerTank}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "{{DL_AttackerName}}"},
+			{"type": "DamageLog",	"width": 1,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF",	"text": "|"},
+			{"type": "DamageLog",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#C9C9C9",	"text": "{{DL_AttackerReload}}"}
+			],
+
+"HPLeftPanel_INFO":"Here is HPLeftPanel format and line options",
+	"HPLeftPanel":[
+		{"LineType": "HPLeft_Header"},
+		{"LineType": "Separator"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"},
+		{"LineType": "HPLeft_Line"}
+		],
+		"HPLeft_Header": [
+			{"type": "Mix",		"width": "Center",	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "Enemy HP Left"}
+			],
+		"HPLeft_Line": [    
+			{"type": "HPLeft",	"width": 4,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF30",	"text": "{{HP_Left}}"},
+			{"type": "HPLeft",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF", "text": ""},
+			{"type": "HPLeft",	"width": 3,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF30",	"text": "{{HP_EnemyTankClass}}"},
+			{"type": "HPLeft",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF", "text": ""},
+			{"type": "HPLeft",	"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF30",	"text": "{{HP_EnemyTank}}"},
+			{"type": "HPLeft",	"width": 1,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFFFF", "text": ""},
+			{"type": "HPLeft",	"width": 9,			"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF30",	"text": "{{HP_EnemyName}}"}
+			],
+
+"InfoPanel_INFO":"Here is InfoPanel format and line options",
+	"KeyToShowOwnTankInfo": 	"KEY_X",
+	"InfoPanel":[
+		{"LineType": "IP_Header"},
+		{"LineType": "Separator"},
+		{"LineType": "IP_Tank"},
+		{"LineType": "IP_Weight"},
+		{"LineType": "IP_Gun"},
+		{"LineType": "Separator"},
+		{"LineType": "IP_Ammotype"},
+		{"LineType": "IP_Penetration"},
+		{"LineType": "IP_Damage"},
+		{"LineType": "Empty"},
+		{"LineType": "IP_Armor"},
+		{"LineType": "IP_Turret"},
+		{"LineType": "IP_Hull"}
+		],
+		"IP_Header": [
+			{"type": "Mix",		"width": "Center",	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 2,	"color": "#FFFFFF",	"text": "InfoPanel"}
+			],
+		"IP_Tank": [
+			{"type": "InfoPanel",	"width": 21,	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "{{IP_TankName}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_ViewRange}}m"}
+			],
+		"IP_Weight": [
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Class:"},
+			{"type": "InfoPanel",	"width": 11,	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "class",	"text": "{{IP_TankClass}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Weight:"},
+			{"type": "InfoPanel",	"width": 5,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_TargetWeight}}t"}
+			],
+		"IP_Gun": [
+			{"type": "InfoPanel",	"width": 20,	"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "{{IP_Gun}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_Reload}}s"}
+			],
+		"IP_Ammotype": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": " "},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,  "color": "#67C8FF",	"text": "{{IP_AmmoType1}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,  "color": "#67C8FF",	"text": "{{IP_AmmoType2}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,  "color": "#67C8FF",	"text": "{{IP_AmmoType3}}"}
+			],
+		"IP_Penetration": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Pen:"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_AmmoPen1}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,  "color": "#FFFF00",	"text": "{{IP_AmmoPen2}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,  "color": "#FFFF00",	"text": "{{IP_AmmoPen3}}"}
+			],
+		"IP_Damage": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Dmg:"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_AmmoDamage1}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_AmmoDamage2}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_AmmoDamage3}}"}
+			],
+		"IP_Armor": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": " "},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Front"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Side"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Rear"}
+			],
+		"IP_Turret": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Turret:"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_TurretF}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_TurretS}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_TurretR}}"}
+			],
+		"IP_Hull": [
+			{"type": "InfoPanel",	"width": 9,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#67C8FF",	"text": "Hull:"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_HullF}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_HullS}}"},
+			{"type": "InfoPanel",	"width": 6,		"shadow": "False",	"shadow_color": "#FFFFFF",	"shadow_offsetX": 1,	"shadow_offsetY": 1,	"size": 1,	"color": "#FFFF00",	"text": "{{IP_HullR}}"}
+			],
+
+"Colors": [
+    {"type": "diff",	"value": "less",		"color": "#FF4C4C"},
+    {"type": "diff",	"value": "same",		"color": "#67C8FF"},
+    {"type": "diff",	"value": "more",		"color": "#50FF50"},
+        
+	{"type": "WN8",		"value": 0,				"color": "#AAAAAA"},
+	{"type": "WN8",		"value": 300,			"color": "#FF3030"},
+	{"type": "WN8",		"value": 600,			"color": "#FF8000"},
+	{"type": "WN8",		"value": 900,			"color": "#FFFF00"},
+	{"type": "WN8",		"value": 1250,			"color": "#4CFF4C"},
+	{"type": "WN8",		"value": 1600,			"color": "#00FF00"},
+	{"type": "WN8",		"value": 1900,			"color": "#2693FF"},
+	{"type": "WN8",		"value": 2350,			"color": "#FF73FF"},
+	{"type": "WN8",		"value": 2900,			"color": "#C926FF"},
+	
+	{"type": "EFF",		"value": 0,				"color": "#FF3030"},
+	{"type": "EFF",		"value": 600,			"color": "#FF8000"},
+	{"type": "EFF",		"value": 900,			"color": "#D9D900"},
+	{"type": "EFF",		"value": 1200,			"color": "#36D900"},
+	{"type": "EFF",		"value": 1500,			"color": "#2693FF"},
+	{"type": "EFF",		"value": 1800,			"color": "#D24CFF"},
+
+    {"type": "hit",		"value": "pen",			"color": "#FF3030"},
+    {"type": "hit",		"value": "bounce",		"color": "#30FF30"},
+    {"type": "hit",		"value": "ally",		"color": "#67C8FF"},
+                        
+    {"type": "ammo",	"value": "credit",		"color": "#C9C9C9"},
+    {"type": "ammo",	"value": "gold",		"color": "#FFD700"},
+                                
+	{"type": "damage",	"value": "Shot",		"color": "#FFFF00"},
+    {"type": "damage",	"value": "Fire",		"color": "#FFFF10"},
+    {"type": "damage",	"value": "Ram",			"color": "#FFFF20"},
+    {"type": "damage",	"value": "Fall",		"color": "#FFFF30"},
+    {"type": "damage",	"value": "Expl",		"color": "#FFFF40"},
+    {"type": "damage",	"value": "Drown",		"color": "#FFFF50"},
+
+    {"type": "weight",	"value": "even",		"color": "#67C8FF"},
+    {"type": "weight",	"value": "less",		"color": "#67C8FF"},
+    {"type": "weight",	"value": "more",		"color": "#67C8FF"},
+
+	{"type": "class",	"value": "lightTank",	"color": "#BDBDAE"},
+	{"type": "class",	"value": "mediumTank",	"color": "#00D900"},
+	{"type": "class",	"value": "heavyTank",	"color": "#FF9326"},
+	{"type": "class",	"value": "SPG",			"color": "#FF2626"},
+	{"type": "class",	"value": "AT-SPG",		"color": "#67C8FF"},
+
+	{"type": "team",	"value": "ally",		"color": "#67C8FF"},
+	{"type": "team",	"value": "enemy",		"color": "#EEEEEE"}
+	],
+
+"Fonts":[
+	{"value": 0,		"font": "",						"width": 0,		"height": 0},
+	{"value": 1,		"font": "default_smaller.font",	"width": 8,		"height": 16},
+	{"value": 2,		"font": "default_small.font",	"width": 10,	"height": 18},
+	{"value": 3,		"font": "default_medium.font",	"width": 12,	"height": 22},
+	{"value": 4,		"font": "verdana_medium.font",	"width": 12,	"height": 22}
+	],
+
+"Icons":[
+	{"name": "LT",		"width": 16,  "height": 16, "file": "icons/LT.dds"},
+	{"name": "MT",		"width": 16,  "height": 16, "file": "icons/MT.dds"},
+	{"name": "HT",		"width": 16,  "height": 16, "file": "icons/HT.dds"},
+	{"name": "TD",		"width": 16,  "height": 16, "file": "icons/TD.dds"},
+	{"name": "SPG",		"width": 16,  "height": 16, "file": "icons/SPG.dds"},
+	
+	{"name": "AP",		"width": 16,  "height": 16, "file": "icons/AP.dds"},
+	{"name": "APCR",	"width": 16,  "height": 16, "file": "icons/APCR.dds"},
+	{"name": "APCRG",	"width": 16,  "height": 16, "file": "icons/APCRG.dds"},
+	{"name": "HE",		"width": 16,  "height": 16, "file": "icons/HE.dds"},
+	{"name": "HEAT",	"width": 16,  "height": 16, "file": "icons/HEAT.dds"},
+	{"name": "HESH",	"width": 16,  "height": 16, "file": "icons/HESH.dds"},
+	
+	{"name": "Shot",	"width": 16,  "height": 16, "file": "icons/Shot.dds"},
+	{"name": "Fire",	"width": 16,  "height": 16, "file": "icons/Fire.dds"},
+	{"name": "Ram",		"width": 16,  "height": 16, "file": "icons/Ram.dds"},
+	{"name": "Fall",	"width": 16,  "height": 16, "file": "icons/Fall.dds"},
+	{"name": "Expl",	"width": 16,  "height": 16, "file": "icons/Expl.dds"},
+	{"name": "Drown",	"width": 16,  "height": 16, "file": "icons/Drown.dds"},
+	
+	{"name": "Kill",	"width": 16,  "height": 16, "file": "icons/Kill.dds"},
+	{"name": "Ally",	"width": 16,  "height": 16, "file": "icons/Ally.dds"}
+    ]
+}
