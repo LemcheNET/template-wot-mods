@@ -1,0 +1,20 @@
+<!-- This is MultiHitLog config file -->
+<MultiHitLog.xml>
+    <!--
+            You can make as much as you want configuration files with JSON extension
+            just make copy of MultiHitLog_Full.json or MultiHitLog_Light.json
+            Name it as you wish, make changes inside, and then put here name
+            of your configutarion file
+    -->
+    <ConfigFileName>CONFIG_atterdag.json</ConfigFileName>
+</MultiHitLog.xml>
+<!--
+            
+                        Here are available JSON example CONFIG files:
+
+CONFIG_All_On.json 		- all option turned on just to see what is available (keys used: Left Alt, Left Ctrl, X)
+CONFIG_expD_Style.json		- simple info just damage done, expected damage and WN8
+CONFIG_Original_Hit_Log.json    - Config trying to take place of original one (keys used: Left Alt, Left Ctrl)
+CONFIG_Automatic.json           - Config will swich to damage log or hit log in event of damage received / dealt (key used, Left Alt, Left Ctrl, X)
+
+-->
