@@ -115,11 +115,11 @@
     "spotted": {
       "neverSeen":      "0x000000",
       "lost":           "0xD9D9D9",
-      "spotted":       "0xFFBB00",
+      "spotted":        "0xFFBB00",
       "dead":           "0xFFFFFF",
       "neverSeen_arty": "0x000000",
       "lost_arty":      "0xD9D9D9",
-      "spotted_arty":  "0xFFBB00",
+      "spotted_arty":   "0xFFBB00",
       "dead_arty":      "0xFFFFFF"
     },
     // Color settings for damage.
