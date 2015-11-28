@@ -14,7 +14,7 @@ Some details of my mod pack.
 
 ## The mods included are as following:##
 _(Striked out mods are uncompatible with current version of World of Tanks)_
-  * ~~[Session Stats, and Color Messages] (http://forum.worldoftanks.eu/index.php?/topic/524189-0910-color-messages-and-session-stats/)~~
+  * [YasenKrasen Colored Messages + Session Statistics] (http://soloviyko.com/yasenkrasen-colored-messages-session-statistics-v9-9a/)
   * [DamageLog - log received, and blocked damage](http://forum.worldoftanks.ru/index.php?/topic/1594349-0912-damagelog-%D0%BB%D0%BE%D0%B3-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%BD%D0%B0%D0%BD%D0%B5%D1%81%D0%B5/)
   * [XVM Mod] (http://www.modxvm.com)
   * [Active Dossier Uploader] (http://www.vbaddict.net)
