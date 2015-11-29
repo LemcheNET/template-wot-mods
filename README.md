@@ -90,8 +90,8 @@ I've enabled:
   * Old Server Cross hair, and configured PMOD to use the gun_marker_blue.dds, instead of gun_marker_standart.dds as its a big ugly blue crosshair
   * No binocular effect in sniper mode
   * Horizontal stabilization
-  * I've configured a zoom indicator just up right corner of the cross hear
-  * Eanble 2x, 4x, 8x, and 16x zoom
+  * I've configured a zoom level indicator just up right corner of the cross hear
+  * Enable 2x, 4x, 8x, and 16x zoom
 
 ## DamageLog ##
 I've translated all the Russian messages, and logs (and help text in configuration files) to English.
