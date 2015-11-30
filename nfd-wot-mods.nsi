@@ -1,4 +1,4 @@
-# This installs two files, app.exe and logo.ico, creates a start menu shortcut, builds an uninstaller, and
+﻿# This installs two files, app.exe and logo.ico, creates a start menu shortcut, builds an uninstaller, and
 # adds uninstall information to the registry for Add/Remove Programs
  
 # To get started, put this script into a folder with the two files (app.exe, logo.ico, and license.rtf -
@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 12
-!define VERSIONBUILD 1
+!define VERSIONBUILD 2
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Support Information" link
