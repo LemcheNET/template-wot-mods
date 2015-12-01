@@ -1,6 +1,6 @@
 <ZJ_MRL>
     <!-- Версия XML файла -->
-    <versionMod>MRL 0.10.0 Demo 070</versionMod>
+    <versionMod>MRL 0.10.0 Demo 071</versionMod>
     <!-- Вкл. мод по умолчанию -->
     <modEnable>True</modEnable>
     <!-- Горячая клавиша вкл./выкл. режимов -->
@@ -22,6 +22,7 @@
     <!-- Корректировка, задержка маркера (старый), в сек. (исправлять не рекомендовано) -->
     <marker_timeCorrect>0.5</marker_timeCorrect>
 
+    <!-- *** Настройка визуальных параметров маркеров *** -->
 
     <!-- Маркер количества снарядов в барабане -->
     <!-- Вкл. маркер -->
@@ -32,6 +33,9 @@
     <markerAmmo_y>0.73</markerAmmo_y>
     <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
     <markerAmmoClr>255 140 0 255</markerAmmoClr>
+    <!-- Шрифты маркера -->
+    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerAmmoFont>default_small.font</markerAmmoFont>
 
     <!-- Маркер точного времени перезарядки -->
     <!-- Вкл. маркер -->
@@ -44,6 +48,11 @@
     <markerReloadEnemyClr>255 0 0 255</markerReloadEnemyClr>
     <!-- Цвет маркера перезарядки союзника, (RGBA, диапозон 0-255) -->
     <markerReloadAllyClr>20 255 0 255</markerReloadAllyClr>
+    <!-- округление значения, количество знаков после запятой -->
+    <markerReloadRound>1</markerReloadRound>
+    <!-- Шрифты маркера -->
+    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerReloadFont>default_small.font</markerReloadFont>
 
     <!-- Маркер готовности орудия -->
     <!-- Вкл. маркер -->
@@ -56,15 +65,14 @@
     <markerReady_y>0.73</markerReady_y>
     <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
     <markerReadyClr>0 255 0 255</markerReadyClr>
-
     <!-- Шрифты маркера -->
-    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
-    <markerFont>default_smaller.font</markerFont>
+    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerReadyFont>default_small.font</markerReadyFont>
 
     <!-- Дистанция отображения маркера (новый) -->
-    <markerDistance>100</markerDistance>
+    <markerDistance>700</markerDistance>
     <!-- Дистанция рассеивания маркера (новый) -->
-    <markerDistDiss>50</markerDistDiss>
+    <markerDistDiss>100</markerDistDiss>
     <!-- Вкл. союзников по умолчанию -->
     <alliesEnable>True</alliesEnable>
     <!-- Вкл. отображения перезарядки союзников в начале битвы -->
