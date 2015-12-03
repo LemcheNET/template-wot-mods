@@ -16,7 +16,7 @@
 	<toggleMessage>true</toggleMessage>
 	
 	<!-- Message when trying to shoot at an ally. -->
-	<textMessage>%s, dont be a cunt, and block my line of fire!</textMessage>
+	<textMessage>{playerName}, dont be a cunt, and block my line of fire!</textMessage>
 	
 	<!-- Lock switch shots to destroy tanks. -->
 	<deadShot>true</deadShot>
