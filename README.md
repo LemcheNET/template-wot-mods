@@ -5,7 +5,7 @@ Please refer to [master branch](https://github.com/atterdag/atterdag-wot-mods) f
 I've used my logo for 6th sense, game start logo, and the data synchronization icon until NFD has their own
 
 # Download #
-[nfd-wot-mods-0.9.12.3.exe](https://dl.dropboxusercontent.com/u/11915528/wot/nfd-wot-mods-0.9.12.3.exe)
+[nfd-wot-mods-0.9.12.4.exe](https://dl.dropboxusercontent.com/u/11915528/wot/nfd-wot-mods-0.9.12.4.exe)
 
 # Screenshots #
 ## Game/garage loading ##

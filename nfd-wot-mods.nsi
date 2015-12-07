@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 12
-!define VERSIONBUILD 3
+!define VERSIONBUILD 4
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Support Information" link
@@ -209,6 +209,9 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.12\system\fonts\Courier_New_10.dds"
     Delete "$INSTDIR\res_mods\0.9.12\system\fonts\Arial_12.dds"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\__init__.pyc"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SpotMessanger_plugin\__init__.pyc"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SpotMessanger_plugin\SpotMessanger.pyc"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SpotMessanger_plugin\config.xml"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\SixthSenseDuration.pyc"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\resources\unspotted.dds"
@@ -218,6 +221,9 @@ section "uninstall"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\resources\sound.wav"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\resources\inactive.dds"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\config.xml"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\IngameMessanger_plugin\__init__.pyc"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\IngameMessanger_plugin\IngameMessanger.pyc"
+    Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\IngameMessanger_plugin\config.xml"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\Engine\__init__.pyc"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\Engine\Plugin.pyc"
     Delete "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\Engine\ModUtils.pyc"
@@ -1382,8 +1388,10 @@ section "uninstall"
     RMDir "$INSTDIR\res_mods\0.9.12\text"
     RMDir "$INSTDIR\res_mods\0.9.12\system\fonts"
     RMDir "$INSTDIR\res_mods\0.9.12\system"
+    RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SpotMessanger_plugin"
     RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin\resources"
     RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\SixthSenseDuration_plugin"
+    RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\IngameMessanger_plugin"
     RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins\Engine"
     RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\plugins"
     RMDir "$INSTDIR\res_mods\0.9.12\scripts\client\mods\ZJ_Mods\xml"
