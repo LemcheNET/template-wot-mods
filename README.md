@@ -31,6 +31,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * [[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
+  * [Destroyed Objects By ProstoNoob] (http://wotspeak.ru/chity-zapreschennye-mody-world-of-tanks-wot/13-razrushenie-obektov-na-minikarte.html)
 
 ### Not included but recommended mods ###
 I also normally add these mods
