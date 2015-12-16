@@ -1,0 +1,52 @@
+{
+    "date": "2015-12-16",
+    "players": {
+        "atterdag": {
+            "battles": [
+                {
+                    "assist": 960,
+                    "autoEquipCost": 0,
+                    "autoLoadCost": 3024,
+                    "autoRepairCost": 9363,
+                    "battleTier": 11,
+                    "cap": 0,
+                    "dailyXPFactor": 2,
+                    "damage": 1346,
+                    "damageAssistedRadio": 960,
+                    "damageAssistedTrack": 0,
+                    "damageRec": 1000,
+                    "deathsCount": 0,
+                    "def": 0,
+                    "eventTmenXP": 0,
+                    "fortResource": 0,
+                    "frag": 2,
+                    "freeXP": 130,
+                    "gametype": 1,
+                    "grossCredits": 28997,
+                    "grossGold": 0,
+                    "hits": 8,
+                    "idNum": 3889,
+                    "map": "04_himmelsdorf",
+                    "mileage": 2230,
+                    "netCredits": 16610,
+                    "netGold": 0,
+                    "originalFreeXP": 43,
+                    "originalPremXP": 1300.0,
+                    "originalXP": 867,
+                    "pierced": 6,
+                    "place": 2,
+                    "potDamageRec": 960,
+                    "result": 1,
+                    "service": 12387,
+                    "shots": 12,
+                    "spot": 0,
+                    "tier": 8,
+                    "tmenXP": 2602,
+                    "vehicle": "china-Ch17_WZ131_1_WZ132",
+                    "xp": 2602
+                }
+            ]
+        }
+    },
+    "version": 8
+}
