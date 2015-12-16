@@ -40,7 +40,8 @@
     "saveLastServer": true,
     "autologin": true,
     "confirmOldReplays": true,
-    "pingServers": ${"def.pingServers"}
+    "pingServers": ${"def.pingServers"},
+    "onlineServers": ${"def.onlineServers"}
   },
   "hangar": {
     "enableGoldLocker": true,
@@ -95,23 +96,44 @@
     "clanIconsFolder": "clanicons",
     "sixthSenseIcon": "cfg://sirmax/img/SixthSense.png",
     "elements": ${"elements"},
+    "minimapDeadSwitch": true,
     "camera": {
       "enabled": true,
+      "noScroll": true,
       "arcade": {
         "distRange": [2, 50],
         "startDist": 30,
-        "scrollSensitivity": 2.5
+        "scrollSensitivity": 2.5,
+        "dynamicCameraEnabled": false
       },
       "postmortem": {
         "distRange": [2, 100],
         "startDist": 30,
-        "scrollSensitivity": 2.5
+        "scrollSensitivity": 2.5,
+        "dynamicCameraEnabled": false
       },
       "strategic": {
-        "distRange": [30, 250]
+        "distRange": [30, 250],
+        "dynamicCameraEnabled": false
       },
       "sniper": {
-        "zooms": [2, 4, 8, 16]
+        "zooms": [2, 4, 8, 16],
+        "dynamicCameraEnabled": false,
+        "zoomIndicator": {
+          //"x": -100,
+          //"y": 0,
+          //"width": 100,
+          //"height": 40,
+          //"alpha": 100,
+          //"align": "left",
+          //"valign": "center",
+          //"bgColor": null,
+          //"borderColor": "0xFFFF00",
+          //"shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 },
+          //"format": "<font face='$FieldFont' size='20'>frags:{{my-frags}} x{{zoom}}</font>",
+          "enabled": true,
+          "__stub__": null
+        }
       }
     }
   },
