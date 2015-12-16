@@ -22,13 +22,13 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
   * [6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)
   * [SpotMessanger] (http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)
-  * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)
+  * ~~[PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)~~
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
   * [Multi Hit Log] (http://forum.worldoftanks.eu/index.php?/topic/413607-0981-multi-hit-log-v23-hitlog-inbattle-wn8-damage-log-no-xvm-required/#topmost)
   * [sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * [Received Damage Announcer] (http://forum.worldoftanks.eu/index.php?/topic/505319-0910-elkanos-received-damage-announcer-v09-2015-09-02/)
   * [Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)
-  * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
+  * ~~[TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)~~
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * [[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
   * [Destroyed Objects By ProstoNoob] (http://wotspeak.ru/chity-zapreschennye-mody-world-of-tanks-wot/13-razrushenie-obektov-na-minikarte.html)
