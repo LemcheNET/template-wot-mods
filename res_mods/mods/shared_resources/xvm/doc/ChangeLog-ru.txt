@@ -1,4 +1,12 @@
-﻿XVM-6.1.6.1:
+﻿XVM-6.2.0-dev:
+  * адаптация к WoT 0.9.13
+  * XVM API 4.0
+  * добавлены опции:
+      "battle"/"camera"/"noScroll" - не переключаться в снайперский режим колесом мыши
+      "battle"/"camera"/"<mode>"/"dynamicCameraEnabled" - включить/выключить динамическую камеру
+      "battle"/"minimapDeadSwitch" - переключение между игроками по миникарте после смерти
+
+XVM-6.1.6.1:
   * удален квадрат на миникарте
   * добавлены глобальные макросы:
       {{my-veh-id}}, {{my-vehicle}}, {{my-vehiclename}}, {{my-vehicle-short}}, {{my-vtype}},
