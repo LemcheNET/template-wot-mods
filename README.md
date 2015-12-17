@@ -28,16 +28,17 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)
   * [Received Damage Announcer] (http://forum.worldoftanks.eu/index.php?/topic/505319-0910-elkanos-received-damage-announcer-v09-2015-09-02/)
   * [Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)
-  * ~~[TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)~~
+  * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * [[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
   * [Destroyed Objects By ProstoNoob] (http://wotspeak.ru/chity-zapreschennye-mody-world-of-tanks-wot/13-razrushenie-obektov-na-minikarte.html)
+  * My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.13
 
 ### Not included but recommended mods ###
 I also normally add these mods
  * [Gnomefather's HR Gun Sound Mod, Engines](http://gnomefather.blogspot.se/) - These mods increases the sense of immersion tremendously.
  * [Terrorist Allahu Akbar Voice Mod](http://forum.wotlabs.net/index.php?/topic/13181-terrorist-allahu-akbar-voice-mod/) - Hearing "Allahu Akhbar" everything I hit some one just puts a smile on my face for some odd reason.
- * ~~[AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.~~
+ * ~~[AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.~~ (PS I made my own version of this skin, and I've added it by default in the modpack)
 
 Furthermore I also want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
 
