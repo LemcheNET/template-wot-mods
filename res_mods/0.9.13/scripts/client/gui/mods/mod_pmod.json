@@ -1,0 +1,127 @@
+/* 
+	
+	Главный конфигурационный файл.
+	
+	Синтаксис конфига JSON http://goo.gl/zUTTCX
+	// - комментирование строки
+	Подключение файлов с помощью ссылок:
+	${"путь_к_файлу"}
+	
+	Кодировка файл должна оставаться всегда UTF-8.
+	Для редактирования используйте Notepad++ http://goo.gl/6MeL2D
+	В случае блокнота Windows: Сохранить как -> Кодировка: UTF-8.
+	
+	Большинство настроек внешнего вида некоторых модулей/функций вынесены в файл скина.
+	Для более детального ознакомления откройте файл mod_pmod/skins/skinLoader.json
+	
+	
+	
+	The main configuration file.
+	
+	Syntax config JSON http://goo.gl/ekFb3H
+	// - сomment line
+	Connection files using links:
+	${"file_path"}
+	
+	Encoding file must remain always UTF-8.
+	To modify, use Notepad++ http://goo.gl/6MeL2D
+	In the case of notebook Windows: Save As -> Encoding: UTF-8.
+	
+	Most of the appearance settings of certain modules/functions delivered in the skin file. 
+	For more detailed information, open the file mod_pmod/skins/skinLoader.json
+	
+*/
+{
+
+	// Игровой чат в бою.
+	// Ingame chat in battle.
+	"battleChat" : ${"mod_pmod/battleChat.json"},
+
+	// Изменение поведения интерфейса в бою.
+	// Changing of the interface in battle.
+	"battleGui" : ${"mod_pmod/battleGui.json"},
+	
+	// Информация об вашем спауне на экране загрузки.
+	// Information about your spawn on the loading screen.
+	"battleLoading" : ${"mod_pmod/battleLoading.json"},
+	
+	// Эффекты камеры во время боя.
+	// Camera effects during battle.
+	"cameraOptions" : ${"mod_pmod/cameraOptions.json"},
+	
+	// Постоянное стартовое значение кратности снайперского прицела.
+	// Constant starting value of sniper scope multiplicity.
+	"defaultZoom" : ${"mod_pmod/defaultZoom.json"},
+	
+	// Ангарная часть мода.
+	// Hangar part of the mod.
+	"hangar" : ${"mod_pmod/hangar.json"},
+
+	// Поведение горизонтальной стабилизации.
+	// Behavior of horizontal stabilization.
+	"horizontalStabilizer" : ${"mod_pmod/horizontalStabilizer.json"},
+	
+	// Окно входа в игру.
+	// Login screen.
+	"loginWindow" : ${"mod_pmod/loginWindow.json"},
+	
+	// Отключение затемнения и озеленения в снайперском прицела.
+	// Disabling dimming and greening in sniper scope.
+	"noBinoculars" : ${"mod_pmod/noBinoculars.json"},
+	
+	// Покачивания прицела и камеры (Динамическая камера).
+	// Wiggle sight and cameras (Dynamic camera).
+	"noDynamic" : ${"mod_pmod/noDynamic.json"},
+	
+	// Отмена смены режимов камеры по скроллу.
+	// Cancel change camera modes by scrolling.
+	"noScroll" : ${"mod_pmod/noScroll.json"},
+	
+	// Старый серверный прицел.
+	// Old server crosshair.
+	"oldServerCrosshair" : ${"mod_pmod/oldServerCrosshair.json"},
+		
+	// Отдаление камеры при старте боя и после уничтожения танка.
+	// Distancing camera at start of battle and after destroying the tank.
+	"onStartDeadDistance" : ${"mod_pmod/onStartDeadDistance.json"},
+	
+	// Приведённая броня танка
+	// Redused tank armor
+	"reducedArmor": ${"mod_pmod/reducedArmor.json"},
+
+	// Прокрутка в аркадном режиме.
+	// Scroll in arcade mode.
+	"scrollSensitivity" : ${"mod_pmod/scrollSensitivity.json"},
+	
+	// Сессионная статистика
+	// Session statistic
+	"sessionStatistic" : ${"mod_pmod/sessionStatistic.json"},
+
+	// Обработка сообщений в системном канале
+	// Process messages in the system channel
+	"systemMessages" : ${"mod_pmod/systemMessages.json"},
+	
+	// Ручной тормоз на ПТ-САУ.
+	// Handbrake on Tank Destroyers.
+	"TDBrakeRemover" : ${"mod_pmod/TDBrakeRemover.json"},
+	
+	// Свободная камера.
+	// Free camera.
+	"videomode" : ${"mod_pmod/videomode.json"},
+	
+	// Отдаление  камеры в бою.
+	// Distancing camera in battle.
+	"zoomDistance" : ${"mod_pmod/zoomDistance.json"},
+	
+	// Зум индикатор.
+	// Zoom indicator.
+	"zoomIndicator" : ${"mod_pmod/zoomIndicator.json"},	
+	
+	// Количество шагов в снайперском прицеле и ихняя кратность.
+	// The number of steps in the sniper scope and multiplicity of theirs.
+	"zoomX" : ${"mod_pmod/zoomX.json"},
+	
+	// Файл "pmod.log" с отладочной информацией.
+	// File "pmod.log" with debug information.
+	"debug": true
+}

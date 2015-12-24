@@ -1,0 +1,26 @@
+/*
+	Свободная камера.
+	Free camera.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable" : false,
+		
+	// Кнопка при нажатии которой активируется камера.
+	// Button by which pressing the camera is activated.
+	"activateKey" : "F3",
+	
+	// Горячие клавиши для разных манипуляций с камерой.
+	// Hotkeys for different manipulations with the camera.
+	"binds" : {
+		"bindToVehicle": "B",
+		"showGunMarker": "N",
+		"showMarkers": "H",
+		"setDefaultRoll": "R",
+		"switchInertia": "P",
+		"switchLandCamera": "L",
+		"switchRotateAroundPoint": "C",
+		"setDefaultFov": "F"
+	}
+}

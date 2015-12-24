@@ -1,0 +1,21 @@
+/*
+	Отдаление камеры при старте боя и после уничтожения танка.
+	Distancing camera at start of battle and after destroying the tank.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": true,
+	
+	// Отдаление камеры при входе в бой.
+	// минимальное - 1, максимальное - 400, стандартное - 20.
+	// Distancing camera when entering the the fight.
+	// minimum - 1, maximum - 400, standard - 20.
+	"startDistance": 20,
+	
+	// Отдаление камеры после уничтожения танка.
+	// минимальное - 1, максимальное - 400, стандартное - 15.
+	// Distancing camera after destroying the tank.
+	// minimum - 1, maximum - 400, standard - 15.
+	"deadDistance": 15
+}
