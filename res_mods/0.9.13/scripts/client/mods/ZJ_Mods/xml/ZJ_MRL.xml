@@ -1,6 +1,6 @@
 <ZJ_MRL>
     <!-- Версия XML файла -->
-    <versionMod>MRL 0.10.0 Demo 072</versionMod>
+    <versionMod>MRL 0.9.13 Demo 074</versionMod>
     <!-- Вкл. мод по умолчанию -->
     <modEnable>True</modEnable>
     <!-- Горячая клавиша вкл./выкл. режимов -->
@@ -15,10 +15,14 @@
     <!-- Ext_Marker_blue.swf - синий -->
     <!-- Ext_Marker_green.swf - зелёный -->
     <!-- Для удаления кружка использовать формат (пример): Ext_Marker_green_noCircle.swf -->
-    <!-- Маркер противника-->
+    <!-- Маркер противника -->
     <SWF_FILE_NAME_ENEMIES>Ext_Marker_orange.swf</SWF_FILE_NAME_ENEMIES>
-    <!-- Маркер союзника-->
+    <!-- Маркер союзника -->
     <SWF_FILE_NAME_ALLIES>Ext_Marker_green.swf</SWF_FILE_NAME_ALLIES>
+    <!-- Собственный маркер -->
+    <SWF_FILE_NAME_SELF>Ext_Marker_khaki.swf</SWF_FILE_NAME_SELF>
+    <!-- Маркер совзводного -->
+    <SWF_FILE_NAME_SQUAD>Ext_Marker_khaki.swf</SWF_FILE_NAME_SQUAD>
     <!-- Корректировка, задержка маркера (старый), в сек. (исправлять не рекомендовано) -->
     <marker_timeCorrect>0.5</marker_timeCorrect>
 
@@ -34,8 +38,8 @@
     <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
     <markerAmmoClr>255 140 0 255</markerAmmoClr>
     <!-- Шрифты маркера -->
-    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
-    <markerAmmoFont>default_small.font</markerAmmoFont>
+    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerAmmoFont>default_smaller.font</markerAmmoFont>
 
     <!-- Маркер точного времени перезарядки -->
     <!-- Вкл. маркер -->
@@ -51,8 +55,8 @@
     <!-- округление значения, количество знаков после запятой -->
     <markerReloadRound>1</markerReloadRound>
     <!-- Шрифты маркера -->
-    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
-    <markerReloadFont>default_small.font</markerReloadFont>
+    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerReloadFont>default_smaller.font</markerReloadFont>
 
     <!-- Маркер готовности орудия -->
     <!-- Вкл. маркер -->
@@ -66,15 +70,36 @@
     <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
     <markerReadyClr>0 255 0 255</markerReadyClr>
     <!-- Шрифты маркера -->
-    <!-- default_large.font , default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
-    <markerReadyFont>default_small.font</markerReadyFont>
+    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <markerReadyFont>default_smaller.font</markerReadyFont>
+
+    <!-- Перезарядка в ушах (PlayerPanel) -->
+    <!-- Вкл. маркер -->
+    <ppReloadShow>True</ppReloadShow>
+    <!-- Только для артеллерии-->
+    <ppSPGOnly>True</ppSPGOnly>
+    <!-- Регулировка положения ось Х, шаг 1 -->
+    <ppReload_x>-5</ppReload_x>
+    <!-- Корректировка положения ось Х для противника, шаг 1 -->
+    <ppReload_x>-10</ppReload_x>
+    <!-- Регулировка положения ось Y, шаг 1 -->
+    <ppReload_y>8</ppReload_y>
+    <!-- Цвет маркера, (RGBA, диапозон 0-255) 250 230 20 255-->
+    <ppReloadClr>250 180 20 255</ppReloadClr>
+    <!-- Шрифты маркера -->
+    <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
+    <ppReloadFont>hpmp_panel.font</ppReloadFont>
 
     <!-- Дистанция отображения маркера (новый) -->
     <markerDistance>200</markerDistance>
     <!-- Дистанция рассеивания маркера (новый) -->
     <markerDistDiss>80</markerDistDiss>
-    <!-- Вкл. союзников по умолчанию -->
+    <!-- Вкл. собственного маркера по умолчанию -->
+    <selfEnable>True</selfEnable>
+    <!-- Вкл. маркера союзников по умолчанию -->
     <alliesEnable>True</alliesEnable>
+    <!-- Вкл. маркера совзводных по умолчанию -->
+    <squadEnable>True</squadEnable>
     <!-- Вкл. отображения перезарядки союзников в начале битвы -->
     <startAlliesEnable>True</startAlliesEnable>
     <!-- Вкл. отображения перезарядки для противника на миникарте -->
