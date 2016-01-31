@@ -1,10 +1,13 @@
 <ZJ_MRL>
     <!-- Версия XML файла -->
-    <versionMod>MRL 0.9.13 Demo 074</versionMod>
+    <versionMod>MRL 0.9.13 Demo 078</versionMod>
     <!-- Вкл. мод по умолчанию -->
     <modEnable>True</modEnable>
     <!-- Горячая клавиша вкл./выкл. режимов -->
     <toggleKey>KEY_F10</toggleKey>
+    <!-- Автоматически загружать данные при изменении конфигурации на лету -->
+    <!-- если False, то загрузка по комбинации клав. CTRL + toggleKey (см. выше) -->
+    <autoLoadConf>True</autoLoadConf>
     <!-- Дополнительная клавиша  -->
     <altKey>KEY_LALT</altKey>
     <!-- Вкл. маркер Flash -->
@@ -31,11 +34,13 @@
     <!-- Маркер количества снарядов в барабане -->
     <!-- Вкл. маркер -->
     <markerAmmoShow>True</markerAmmoShow>
+    <!-- True - показывать количество кассет в барабане, False - показывать все снаряды в барабане -->
+    <cassetteInClip>True</cassetteInClip>
     <!-- Регулировка положения ось Х, шаг 0.01 -->
     <markerAmmo_x>0.35</markerAmmo_x>
     <!-- Регулировка положения ось Y, шаг 0.01 -->
     <markerAmmo_y>0.73</markerAmmo_y>
-    <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
+    <!-- Цвет маркера, (RGBA, диапазон 0-255) -->
     <markerAmmoClr>255 140 0 255</markerAmmoClr>
     <!-- Шрифты маркера -->
     <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
@@ -48,9 +53,9 @@
     <markerReload_x>0.7</markerReload_x>
     <!-- Регулировка положения ось Y, шаг 0.01 -->
     <markerReload_y>0.73</markerReload_y>
-    <!-- Цвет маркера перезарядки противника, (RGBA, диапозон 0-255) -->
+    <!-- Цвет маркера перезарядки противника, (RGBA, диапазон 0-255) -->
     <markerReloadEnemyClr>255 0 0 255</markerReloadEnemyClr>
-    <!-- Цвет маркера перезарядки союзника, (RGBA, диапозон 0-255) -->
+    <!-- Цвет маркера перезарядки союзника, (RGBA, диапазон 0-255) -->
     <markerReloadAllyClr>20 255 0 255</markerReloadAllyClr>
     <!-- округление значения, количество знаков после запятой -->
     <markerReloadRound>1</markerReloadRound>
@@ -67,7 +72,7 @@
     <markerReady_x>0.7</markerReady_x>
     <!-- Регулировка положения ось Y, шаг 0.01 -->
     <markerReady_y>0.73</markerReady_y>
-    <!-- Цвет маркера, (RGBA, диапозон 0-255) -->
+    <!-- Цвет маркера, (RGBA, диапазон 0-255) -->
     <markerReadyClr>0 255 0 255</markerReadyClr>
     <!-- Шрифты маркера -->
     <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
@@ -76,15 +81,26 @@
     <!-- Перезарядка в ушах (PlayerPanel) -->
     <!-- Вкл. маркер -->
     <ppReloadShow>True</ppReloadShow>
-    <!-- Только для артеллерии-->
+    <!-- Только для артиллерии-->
     <ppSPGOnly>True</ppSPGOnly>
-    <!-- Регулировка положения ось Х, шаг 1 -->
-    <ppReload_x>-5</ppReload_x>
-    <!-- Корректировка положения ось Х для противника, шаг 1 -->
-    <ppReload_x>-10</ppReload_x>
-    <!-- Регулировка положения ось Y, шаг 1 -->
+    <!-- Регулировка положения ось Х, шаг 1 пикс. -->
+    <ppReload_x>0</ppReload_x>
+    <!-- Дополнительная корректировка положения ось Х для противника, шаг 1 пикс. -->
+    <ppEnemyCorr_x>0</ppEnemyCorr_x>
+    <!-- Корректировка положения ось Х для различных режимов ушей, шаг 1 пикс. -->
+    <!-- none -->
+    <pp_x_none>20</pp_x_none>
+    <!-- short -->
+    <pp_x_short>130</pp_x_short>
+    <!-- medium -->
+    <pp_x_medium>170</pp_x_medium>
+    <!-- medium2 -->
+    <pp_x_medium2>205</pp_x_medium2>
+    <!-- large -->
+    <pp_x_large>205</pp_x_large>
+    <!-- Регулировка положения ось Y, шаг 1 пикс. -->
     <ppReload_y>8</ppReload_y>
-    <!-- Цвет маркера, (RGBA, диапозон 0-255) 250 230 20 255-->
+    <!-- Цвет маркера, (RGBA, диапазон 0-255) -->
     <ppReloadClr>250 180 20 255</ppReloadClr>
     <!-- Шрифты маркера -->
     <!-- default_medium.font , default_small.font , default_smaller.font , hpmp_panel.font , system_large.font , system_medium.font , system_small.font , system_tiny.font , verdana_medium.font , verdana_small.font -->
@@ -94,7 +110,7 @@
     <markerDistance>200</markerDistance>
     <!-- Дистанция рассеивания маркера (новый) -->
     <markerDistDiss>80</markerDistDiss>
-    <!-- Вкл. собственного маркера по умолчанию -->
+    <!-- Вкл. собственного маркера перезарядки по умолчанию -->
     <selfEnable>True</selfEnable>
     <!-- Вкл. маркера союзников по умолчанию -->
     <alliesEnable>True</alliesEnable>
@@ -114,7 +130,7 @@
     <timeOutAutoReload>True</timeOutAutoReload>
     <!-- Добавочное время к timeOutAutoReload, в сек. -->
     <timeOutReloadDelay>3.0</timeOutReloadDelay>
-    <!-- Разрешить показывать маркер перезарядки у техники пропавшей из вида -->
+    <!-- Разрешить показывать маркер перезарядки у техники пропавшей из вида, работает только для флеш -->
     <unVisibleReload>False</unVisibleReload>
 
 </ZJ_MRL>
