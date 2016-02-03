@@ -4,7 +4,7 @@ if (Test-Path file_and_directory_list.txt){
 
 Add-Content -Path file_and_directory_list.txt -Value "`t# Generate a list in file_and_directory_list.txt by using generate-file-list.sh, and copy the content into this file below."
 
-$folders = @("res","res_mods","nfd-wot-mods")
+$folders = @("res","res_mods","aos-wot-mods")
 
 foreach($folder in $folders){
 	$files = (Get-ChildItem -Path $folder -Recurse -File | Resolve-Path -Relative | ForEach-Object Substring 2)
