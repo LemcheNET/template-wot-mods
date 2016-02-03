@@ -4,6 +4,7 @@ Welcome to my no-nonsense, keep it simple World of Tanks mod pack. I haven't mad
 # Download #
 There are currently two branches of my mod pack available - Please go to each page for the latest version.
   * [Original version with my own branding] (https://github.com/atterdag/atterdag-wot-mods/tree/atterdag)
+  * [Ace of Spades clan branding] (https://github.com/atterdag/atterdag-wot-mods/tree/aos)
   * [Northon Flank Denmark clan branding] (https://github.com/atterdag/atterdag-wot-mods/tree/nfd)
 
 # Installation #
