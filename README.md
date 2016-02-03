@@ -33,6 +33,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * [[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
   * [Destroyed Objects By ProstoNoob] (http://wotspeak.ru/chity-zapreschennye-mody-world-of-tanks-wot/13-razrushenie-obektov-na-minikarte.html)
+  * [crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)
   * My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.13
 
 ### Not included but recommended mods ###
