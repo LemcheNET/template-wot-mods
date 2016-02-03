@@ -1,10 +1,12 @@
 <ZJ_MRL>
     <!-- Версия XML файла -->
-    <versionMod>MRL 0.9.13 Demo 078</versionMod>
+    <versionMod>MRL 0.9.13 Demo 079</versionMod>
     <!-- Вкл. мод по умолчанию -->
     <modEnable>True</modEnable>
     <!-- Горячая клавиша вкл./выкл. режимов -->
     <toggleKey>KEY_F10</toggleKey>
+    <!-- Вкл.интерактивность настроек (применяется только после перезагрузки клиента)-->
+    <interactivSettings>False</interactivSettings>
     <!-- Автоматически загружать данные при изменении конфигурации на лету -->
     <!-- если False, то загрузка по комбинации клав. CTRL + toggleKey (см. выше) -->
     <autoLoadConf>True</autoLoadConf>
@@ -48,7 +50,7 @@
 
     <!-- Маркер точного времени перезарядки -->
     <!-- Вкл. маркер -->
-    <markerReloadShow>True</markerReloadShow>
+    <markerReloadShow>False</markerReloadShow>
     <!-- Регулировка положения ось Х, шаг 0.01 -->
     <markerReload_x>0.7</markerReload_x>
     <!-- Регулировка положения ось Y, шаг 0.01 -->
@@ -65,7 +67,7 @@
 
     <!-- Маркер готовности орудия -->
     <!-- Вкл. маркер -->
-    <markerReadyShow>True</markerReadyShow>
+    <markerReadyShow>False</markerReadyShow>
     <!-- Символ маркера готовности орудия -->
     <markerReady>.</markerReady>
     <!-- Регулировка положения ось Х, шаг 0.01 -->
@@ -111,7 +113,7 @@
     <!-- Дистанция рассеивания маркера (новый) -->
     <markerDistDiss>80</markerDistDiss>
     <!-- Вкл. собственного маркера перезарядки по умолчанию -->
-    <selfEnable>True</selfEnable>
+    <selfEnable>False</selfEnable>
     <!-- Вкл. маркера союзников по умолчанию -->
     <alliesEnable>True</alliesEnable>
     <!-- Вкл. маркера совзводных по умолчанию -->
