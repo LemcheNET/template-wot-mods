@@ -50,7 +50,7 @@
 
     <!-- Маркер точного времени перезарядки -->
     <!-- Вкл. маркер -->
-    <markerReloadShow>False</markerReloadShow>
+    <markerReloadShow>True</markerReloadShow>
     <!-- Регулировка положения ось Х, шаг 0.01 -->
     <markerReload_x>0.7</markerReload_x>
     <!-- Регулировка положения ось Y, шаг 0.01 -->
@@ -67,7 +67,7 @@
 
     <!-- Маркер готовности орудия -->
     <!-- Вкл. маркер -->
-    <markerReadyShow>False</markerReadyShow>
+    <markerReadyShow>True</markerReadyShow>
     <!-- Символ маркера готовности орудия -->
     <markerReady>.</markerReady>
     <!-- Регулировка положения ось Х, шаг 0.01 -->
@@ -113,7 +113,7 @@
     <!-- Дистанция рассеивания маркера (новый) -->
     <markerDistDiss>80</markerDistDiss>
     <!-- Вкл. собственного маркера перезарядки по умолчанию -->
-    <selfEnable>False</selfEnable>
+    <selfEnable>True</selfEnable>
     <!-- Вкл. маркера союзников по умолчанию -->
     <alliesEnable>True</alliesEnable>
     <!-- Вкл. маркера совзводных по умолчанию -->
