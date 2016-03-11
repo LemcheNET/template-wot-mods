@@ -47,6 +47,15 @@
     // Map size label
     // Поле размера карты
     "mapSize": ${"minimapMapSize.xc":"mapSize"},
+    // Use standard circles
+    // Использовать стандартные круги
+    "useStandardCircles": false,
+    // Use standard labels
+    // Использовать стандартные надписи
+    "useStandardLabels": false,
+    // Use standard lines
+    // Использовать стандартные линии
+    "useStandardLines": false,
     // Minimap labels.
     // Надписи на миникарте.
     "labels": ${"minimapLabels.xc":"labels"},

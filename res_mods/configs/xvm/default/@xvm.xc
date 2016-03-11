@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "30.12.2015",
+    "date": "10.03.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.13",
+    "gameVersion": "0.9.14",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.2.0.1"
+    "modMinVersion": "6.2.1"
   },
 
   // Parameters for login screen.
@@ -104,6 +104,10 @@
   // Parameters of the Battle Loading screen.
   // Параметры экрана загрузки боя.
   "battleLoading": ${"battleLoading.xc":"battleLoading"},
+
+  // Parameters for the alternative view of the Battle Loading screen.
+  // Параметры альтернативного представления экрана загрузки боя.
+  "battleLoadingTips": ${"battleLoadingTips.xc":"battleLoadingTips"},
 
   // Parameters of the Battle Statistics form.
   // Параметры окна статистики по клавише Tab.

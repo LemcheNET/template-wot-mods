@@ -127,6 +127,7 @@
     "uk": "Anh",
     "china": "Trung Quốc",
     "japan": "Nhật Bản",
+    "czech": "",
     "HT": "Tăng hạng nặng",
     "MT": "Tăng hạng trung",
     "LT": "Tăng hạng nhẹ",
