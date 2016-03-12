@@ -28,13 +28,14 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * ~~[Multi Hit Log] (http://forum.worldoftanks.eu/index.php?/topic/413607-0981-multi-hit-log-v23-hitlog-inbattle-wn8-damage-log-no-xvm-required/#topmost)~~ (Replaced by Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage)
   * [Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)
   * ~~[sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)~~
-  * [Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)
+  * ~~[Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)~~
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
   * ~~[[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)~~
   * [Destroyed Objects By ProstoNoob] (http://wotspeak.ru/chity-zapreschennye-mody-world-of-tanks-wot/13-razrushenie-obektov-na-minikarte.html)
   * ~~[crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)~~
   * [J1mB0's Contour Icon Mod](http://worldoftanks.curseforge.com/wot-mods/jimbos-contour-icon-mod/]
+  * [J1mB0's Crosshair Mod](http://worldoftanks.curseforge.com/wot-mods/j1mb0s-reticles/]
   * My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.13
 
 ### Not included but recommended mods ###
