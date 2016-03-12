@@ -1,0 +1,174 @@
+// Сессионная статистика
+// Session statistic
+"sessionStatistic": {
+		
+	// Сообщение на случай отсутствия проведенных боев за сессию.
+	// Message in case of absence spent battles for session.
+	"needBattleToProcess": "<textformat leading='0'><font color='#E2D2A2'>PMOD - Сессионная статистика</font></textformat>\n<textformat leading='9'><font size='13' color='#4D493D'>{{CurrentVersion}}\n\n\n\nДля отображения данных проведите бой.</font></textformat>",
+		
+	// Подложка сообщения
+	// Message background
+	"messageBackground": {
+			
+		// true - Использовать подложку
+		// true - Use a substrate
+		"enable": true,
+			
+		// Путь к изображению с поддержкой макросов (сыгран хотя бы один бой)
+		// Path to an image with support for macros (played at least one fight)
+		"path": "../../scripts/client/gui/mods/mod_pmod/skins/demon2597/img/StatBg{{c:WinRate}}{{c:XWN8}}.png",
+			
+		// Путь к изображению без поддержки макросов (нет ни одного боя)
+		// Path to an image without macros (not played any battles)
+		"pathNullBattles": "../../scripts/client/gui/mods/mod_pmod/skins/demon2597/img/StatBgNull.png"
+	},
+		
+	// Иконка сообщения
+	// Message icon
+	"messageIcon": {
+
+		// true - Использовать иконку
+		// true - Use a icon
+		"enable" : false, 
+			
+		// Путь к изображению
+		// Path to image
+		"path": "../maps/icons/library/PersonalAchievementsIcon-1.png",
+			
+		// Путь к изображению без поддержки макросов (нет ни одного боя)
+		// Path to an image without macros (not played any battles)
+		"pathNullBattles": "../maps/icons/library/PersonalAchievementsIcon-1.png"
+	},
+		
+	// Кнопка обнуления статистики
+	// Reset statistic button 
+	"resetButton": {
+		
+		// true - Отображать кнопку
+		// true - Display button
+		"enable": true,
+						
+		// Надпись на кнопке
+		// Button text
+		"label": "Сброс",
+			
+		// Цвет кнопки
+		// standart - стандартный, black - чёрный
+		// Button color
+		// standart, black
+		"type": "black",
+		
+		// Шырина кнопки
+		// Button width
+		"width": 110
+	},
+		
+	// Заготовка сообщения. Список макросов смотрите в файле readme. Также можно использовать собственные макросы
+	// The blank message. List of macroses watch in readme file. You can also use your own macros
+	"template":[
+		"<textformat tabstops='[98,163]' leading='-2'>",
+		"<font size='12' color='#E2D2A2'><p align='center'><textformat leading='-8'>ТЕКУЩАЯ СЕССИЯ</textformat></p>",
+		"<textformat leading='-3'>............................................................................</textformat>\n",
+		"<textformat leading='-8'>Достижения<tab>Всего<tab>Сред. (%)</textformat>\n",
+		"<textformat leading='1'>............................................................................</font></textformat>\n",
+		"<font size='13' color='#D6D7D4'>",
+		"<font color='#A5A6A4'>Побед <b>/</b> боёв:</font><tab><font color='{{c:WinRate}}'>{{Wins}} <b>/</b> {{Battles}}<tab>{{WinRate}}% ({{NumWinRate}})</font>\n",
+		"<font color='#A5A6A4'>Выживаемость:</font><tab>{{Survived}} <b>/</b> {{Battles}}<tab>{{SurvivedRate}}%\n",
+		"<textformat leading='10'><font color='#A5A6A4'>Уров. техники:</font><tab><font color='#4D4B49'>Х</font><tab>{{AvgTierLevel}}</textformat>\n",
+		"<font color='#A5A6A4'>Урон (коэф):</font><tab>{{DamageRatio}}<tab>{{AvgDamageDealt}}\n",
+		"<font color='#A5A6A4'>Фраги (коэф):</font><tab>{{FragsRatio}}<tab>{{AvgFrags}}\n",
+		"<font color='#A5A6A4'>Засвет:</font><tab><font color='#4D4B49'>Х</font><tab>{{AvgSpottedEnemies}}\n",
+		"<font color='#A5A6A4'>Точн. стрельбы:</font><tab><font color='#4D4B49'>Х</font><tab>{{HitsRate}}%</textformat>\n",
+		"<font color='#A5A6A4'>Эфф. стрельбы:</font><tab><font color='#4D4B49'>Х</font><tab>{{EffShotsRate}}%\n",
+		"<textformat leading='10'><font color='#A5A6A4'>Эфф. попаданий:</font><tab><font color='#4D4B49'>Х</font><tab>{{EffHitsRate}}%</textformat>\n",
+		"<font color='#A5A6A4'>Урон засвета:</font><tab><font color='#4D4B49'>Х</font><tab>{{AvgDamageAssistedRadio}}\n",
+		"<textformat leading='10'><font color='#A5A6A4'>Урон гусления:</font><tab><font color='#4D4B49'>Х</font><tab>{{AvgDamageAssistedTrack}}</textformat>\n",
+		"<font color='#FFCC66'>Опыт за бои:</font><tab>{{XP}}<tab>{{AvgXP}}\n",
+		"<font color='#FFCC66'>Св. опыт за бои:</font><tab>{{FreeXP}}<tab><font color='#4D4B49'>Х</font>\n",
+		"<font color='#FFCC66'>Доход за бои:</font><tab><font color='{{c:PureCredits}}'>{{PureCredits}}<tab>{{AvgPureCredits}}</font>\n",
+		"<textformat leading='10'><font color='#FFCC66'>Кредиты баланс:</font><tab><font color='{{c:AccountCredits}}'>{{AccountCredits}}</font><tab><font color='#4D4B49'>Х</font></textformat>\n",
+		"</font></textformat>",
+		"<font size='12' color='#E2D2A2'><p align='center'><textformat leading='-8'>ВЛИЯНИЕ СЕССИИИ НА АККАУНТ</textformat></p>",
+		"<textformat leading='1'>............................................................................</font></textformat>\n",
+		"<textformat tabstops='[139]' leading='-2'><font size='13'>",
+		"<font color='{{c:DiffWinrate}}'>Процент побед</font><tab><font color='{{c:DiffAvgDamageDealt}}'>Ср. нанес. урон</font>\n",
+		"<font color='{{c:DiffHitsRate}}'>Точн. стрельбы</font><tab><font color='{{c:DiffAvgDamageReceived}}'>Ср. получ. урон</font>\n",
+		"<font color='{{c:DiffSurvivedRate}}'>Выживаемость</font><tab><font color='{{c:DiffAvgFrags}}'>Ср. уничтожено</font>\n",
+		"<font color='{{c:DiffAvgXP}}'>Ср. опыт за бой</font><tab><font color='{{c:DiffAvgSpottedEnemies}}'>Ср. обнаружено</font>",
+		"</font></textformat>"
+	],
+
+	// Список цветовых подстановок.
+	// List of color permutations.
+	"colors": {
+		"WinRate": [
+			{ "value": 49.5,	"color": "#F01818" },
+			{ "value": 50.5,	"color": "#FFAA00" },
+       	                { "value": 101,		"color": "#00CC00" }
+		],
+		"PureCredits": [
+			{ "value": 0,		"color": "#F01818" },
+			{ "value": 1,		"color": "#D6D7D4" },
+			{ "value": 999999999,	"color": "#00CC00" }
+		],
+		"AccountCredits": [
+			{ "value": 0,		"color": "#F01818" },
+			{ "value": 1,		"color": "#D6D7D4" },
+			{ "value": 999999999,	"color": "#00CC00" }
+		],
+		"DiffWinrate": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffAvgDamageDealt": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffAvgDamageReceived": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffAvgFrags": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffAvgSpottedEnemies": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999, 	"color": "#00CC00" }
+		],
+		"DiffAvgXP": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffHitsRate": [
+			{ "value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{ "value": 9999999,	"color": "#00CC00" }
+		],
+		"DiffSurvivedRate": [
+			{"value": 0,		"color": "#F01818" },
+			{"value": 0.0000001,	"color": "#A5A6A4" },
+			{"value": 9999999,	"color": "#00CC00" }
+		],
+		"XWN8": [
+			{ "value": 16.5,	"color": "Red" },
+			{ "value": 33.5,	"color": "Orange" },
+			{ "value": 52.5,	"color": "Yellow" },
+			{ "value": 75.5,	"color": "Green" },
+			{ "value": 92.5,	"color": "Cyan" },
+			{ "value": 999,		"color": "Purple" }
+		]
+	},
+
+	// Пользовательские макросы
+	// Custom macros
+	"userMacros": {
+		"helloMessage": "Привет {{PlayerName}}"
+	}
+}

@@ -1,0 +1,30 @@
+<safeShotSetting>
+	
+	<!-- Author : Skino88 -->
+	<!-- Official Thread : http://forum.worldoftanks.ru/index.php?/topic/1075087- -->
+	
+	<!-- Key to disable the mod. -->
+	<disableKey>KEY_LALT</disableKey>
+	
+	<!-- The "sticky" hotkey. -->
+	<toggledDisableKey>false</toggledDisableKey>
+	
+	<!-- Lock switch shot by the Allies. -->
+	<teamShot>true</teamShot>
+	
+	<!-- Switch messages when trying to shoot at an ally. -->
+	<toggleMessage>true</toggleMessage>
+	
+	<!-- Message when trying to shoot at an ally. -->
+	<textMessage>{playerName}, dont be a cunt, and block my line of fire!</textMessage>
+	
+	<!-- Lock switch shots to destroy tanks. -->
+	<deadShot>true</deadShot>
+	
+	<!-- Lockout Duration shot to destroy tanks. (0.5 - 4.0) -->
+	<deadShotTime>2.0</deadShotTime>
+	
+	<!-- The lock switch on the shots destroy tanks that are out of sight. -->
+	<deadShotDisappeared>true</deadShotDisappeared>
+	
+</safeShotSetting>

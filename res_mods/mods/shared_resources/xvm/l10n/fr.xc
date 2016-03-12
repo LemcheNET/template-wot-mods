@@ -127,6 +127,7 @@
     "uk": "GB",
     "china": "Chine",
     "japan": "Japon",
+    "czech": "Tchécoslovaquie",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

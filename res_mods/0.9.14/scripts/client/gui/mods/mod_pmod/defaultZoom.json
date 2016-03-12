@@ -1,0 +1,13 @@
+/*
+	Постоянное стартовое значение кратности снайперского прицела.
+	Constant starting value of sniper scope multiplicity.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable" : false,
+	
+	// Постоянное значение кратности при входе в снайперский прицел.
+	// Constant value of multiplicity when entering the the sniper scope.
+	"defaultZoomValue" : 4
+}

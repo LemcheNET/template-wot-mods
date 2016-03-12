@@ -127,6 +127,7 @@
     "uk": "Suurbritannia",
     "china": "Hiina",
     "japan": "Jaapan",
+    "czech": "",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",
@@ -179,7 +180,7 @@
     "Started": "",
     "Incomplete": "Komplektne tiim",
     "XVM config reloaded": "XVM sätted uuesti laetud",
-    "Config file xvm.xc was not found, using the built-in config": "Sätetefaili xvm.xc ei leitud, kasutan algsätteid",
-    "Error loading XVM config": "Viga XVM sätete laadimisel"
+    "Config file xvm.xc was not found, using the built-in config": "",
+    "Error loading XVM config": "Viga kommentaaride laadimisel"
   }
 }

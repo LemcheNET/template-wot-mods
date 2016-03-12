@@ -1,0 +1,298 @@
+	// Обработка сообщений в системном канале
+	// Process messages in the system channel	
+	"systemMessages": {
+
+		// Сообщения о конце боя.
+		// Messages about end of the battle.
+		"battleResults": {
+			
+			// Сообщение при победе. 
+			// Message with the victory
+			"winPattern": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:win}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:TmenXP}}{{UM:PureCredits}}{{UM:AmmoCost}}{{UM:RepairCost}}{{UM:EquipCost}}{{UM:%%%%%}}{{UM:line1}}{{UM:icons}}{{UM:info}}{{UM:line2}}{{UM:stata}}{{UM:achievements}}",
+				
+				// Подложка сообщения. Путь к изображению с поддержкой макросов
+				// Message background. Path to an image with support for macros
+				//"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BgBattleResultIconVictory-1.png",
+				"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultWin.png",
+				
+				// Иконка сообщения. Путь к изображению с поддержкой макросов
+				// Message icon. Path to an image with support for macros
+				"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png",
+				
+				// Если данных о бое нет, используется этот блок.
+				// If there is no data on this battle, this block is used.
+				"noBattleData": {
+					
+					// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+					// Message text. List of macros watch in readme file. Custom macros support.
+					"message": "{{UM:win}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				
+					// Подложка сообщения. Путь к изображению
+					// Message background. Path to an image
+					//"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BgBattleResultIconVictory-1.png",
+					"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultWin.png",
+					
+					// Иконка сообщения. Путь к изображению
+					// Message icon. Path to an image
+					"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png"
+				}
+			},
+
+			// Сообщение при поражении.
+			// Message in the defeat.
+			"defeatPattern": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:defeat}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:TmenXP}}{{UM:PureCredits}}{{UM:AmmoCost}}{{UM:RepairCost}}{{UM:EquipCost}}{{UM:%%%%%}}{{UM:line1}}{{UM:icons}}{{UM:info}}{{UM:line2}}{{UM:stata}}{{UM:achievements}}",
+				
+				// Подложка сообщения. Путь к изображению с поддержкой макросов
+				// Message background. Path to an image with support for macros
+				//"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BgBattleResultIconDefeat-1.png",
+				"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultDefeat.png",
+				
+				// Иконка сообщения. Путь к изображению с поддержкой макросов
+				// Message icon. Path to an image with support for macros
+				"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png",
+				
+				// Если данных о бое нет, используется этот блок.
+				// If there is no data on this battle, this block is used.
+				"noBattleData": {
+					
+					// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+					// Message text. List of macros watch in readme file. Custom macros support.
+					"message": "{{UM:defeat}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				
+					// Подложка сообщения. Путь к изображению
+					// Message background. Path to an image
+					//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDefeat-1.png",
+					"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultDefeat.png",
+					
+					// Иконка сообщения. Путь к изображению
+					// Message icon. Path to an image
+					"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png"
+				}
+			},
+
+			// Сообщение при ничье.
+			// Message in the draw.
+			"drawPattern": {
+				
+				// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+				// Message text. List of macros watch in readme file. Custom macros support.
+				"message": "{{UM:draw}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:TmenXP}}{{UM:PureCredits}}{{UM:AmmoCost}}{{UM:RepairCost}}{{UM:EquipCost}}{{UM:%%%%%}}{{UM:line1}}{{UM:icons}}{{UM:info}}{{UM:line2}}{{UM:stata}}{{UM:achievements}}",
+				
+				// Подложка сообщения. Путь к изображению с поддержкой макросов
+				// Message background. Path to an image with support for macros
+				//"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BgBattleResultIconDraw-1.png",
+				"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultDraft.png",
+				
+				// Иконка сообщения. Путь к изображению с поддержкой макросов
+				// Message icon. Path to an image with support for macros
+				"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png",
+				
+				// Если данных о бое нет, используется этот блок.
+				// If there is no data on this battle, this block is used.
+				"noBattleData": {
+					
+					// Текст сообщения. Список макросов смотрите в файле readme. Поддержка пользовательских макросов.
+					// Message text. List of macros watch in readme file. Custom macros support.
+					"message": "{{UM:draw}}{{UM:map}}{{UM:VehicleLocalNameShort}}{{UM:VehicleImage}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				
+					// Подложка сообщения. Путь к изображению
+					// Message background. Path to an image
+					//"bgImage": "../../gui/maps/icons/library/BgBattleResultIconDraw-1.png",
+					"bgImage": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/battleResultDraft.png",
+					
+					// Иконка сообщения. Путь к изображению
+					// Message icon. Path to an image
+					"icon": "../../scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/battleresults/BattleResultIcon-1.png"
+				}
+			},
+			
+			// Паттерны макросов.
+			// Macro patterns.
+			"macrosFormatter": {
+				
+				// Множитель опыта. {{val}} - подставляется значение множителя.
+				// Modifier experience. {{val}} - replaced with the value factor.
+				"dailyXPFactor": "<font color='#D3D3D3'> (X {{val}}) </font>",
+				
+				// Штраф за нанесение урона союзникам. {{val}} - подставляется значение кредитов.
+				// Penalty for dealing damage allies. {{val}} - replaced with the value of loans.
+				"creditsPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+
+				// Компенсация за урон полученный от союзника. {{val}} - подставляется значение кредитов.
+				// Compensation for damage resulting from an ally. {{val}} - replaced with the value of loans.
+				"creditsCompensation": "компенсация за урон от союзников: <font color='#D3D3D3'>{{val}}</font>",			
+				
+				// Штраф за нанесение урона союзникам. {{val}} - подставляется значение кредитов.
+				// Penalty for dealing damage allies. {{val}} - replaced with the value of loans.
+				"xpPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+				
+				// Макрос для отображения медалей
+				// Macro to display the medals
+				"achievements": {
+					
+					// #1 Начальная обработка медали. 
+					// {{name}} - имя медали, {{localName}} - локализованное имя медали, {{icon}} - иконка медали размером 67х71
+					// #1 The initial treatment medals. {{val}} - localized name of the medal.
+					"pattern": "<img src='img://{{icon}}' width='32' height='32'align='baseline' vspace='-40'> <font  size='13' color='#C9B967'>{{localName}}</font>",
+					
+					// #2 Разделитель. Все медали соединяются в одну строку и между ними ставится разделитель.
+					// #2 separator. Аll medals combined in one line and put a separator between them. 
+					//<br>
+					"separator": "\n",
+					
+					// #3 Финальный результат макроса. {{pattern}} - сюда подставится готовая строка с медалями.
+					// #3 The final result of the macro. {{pattern}} - will be substituted here ready line with medals.
+					"result": "\n     <img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 100.png' width='20' height='20' align='baseline' vspace='-10'><font  size='13' color='#C9B967'>Награды и Достижения:</font>\n{{pattern}} "
+				}
+			},
+			
+			// Настройка внешнего вида кнопок в сообщениях
+			// Customize the style of the button in the message
+			"buttons": {
+				
+				// Надпись на кнопке
+				// Label ob button
+				"label": "Подробнее",
+				
+				// Цвет кнопки
+				// standart - стандартный, balck - чёрный
+				// Button color
+				// standart, black
+				"type": "blue"
+			},
+			
+			// Пользовательские макросы
+			// Custom macros
+			"userMacros": {
+			"UM:win"                   : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/BattleResults/Win.png' width='220' height='41' align='baseline' vspace='0'>\n\n",
+			"UM:defeat"                : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/BattleResults/Defeat.png' width='220' height='41' align='baseline' vspace='0'>\n\n",
+			"UM:draw"                  : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/BattleResults/Draw.png' width='220' height='41' align='baseline' vspace='0'>\n\n",
+			"UM:map"                   : "<font size='13'>Бой: <font color='#D3D3D3'>{{Map}}</font></font>",
+			"UM:VehicleLocalNameShort" : "<font size='13'>Техника: <font color='#D3D3D3'>{{VehicleLocalNameShort}}</font></font><textformat  tabstops='[70]'>\n\n",
+			"UM:VehicleImage"          : "<tab><img src='img://gui/maps/icons/vehicle/{{VehicleImage}}.png' width='70' height='40' align='baseline' vspace='0'><textformat  tabstops='[25,110,135]'>\n",
+			"UM:xp"                    : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 16.png' width='20' height='20' align='baseline' vspace='-15'><font  size='13' color='#C9B967'> :</font>{{DailyXPFactor}} <font size='13' color='#0082E0'>{{XP}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 181.png' width='13' height='13' align='baseline' vspace='-10'>",
+			"UM:credits"               : "<tab><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Money4.png' width='20' height='20' align='baseline' vspace='-15'><tab><font size='13' color='#C9B967'>: </font><font size='13' color='#4BFE85'>{{Credits}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'></font>\n",
+		// - Опыт экипажу и чистый доход
+			"UM:TmenXP"                : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/additionalBriefing.png' width='20' height='20' align='baseline' vspace='-15'><tab><font  size='13' color='#C9B967'>: </font><font size='13' color='#0082E0'>{{TmenXP}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 184.png' width='13' height='13' align='baseline' vspace='-10'>",
+		// - кредиты с учетом затрат на ремонт/расходники/штрафы
+			"UM:PureCredits"           : "<tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Money4.png' width='20' height='20' align='baseline' vspace='-15'><tab><font size='13' color='#C9B967'>: </font><font size='13' color='{{c:PureCredits}}'>{{PureCredits}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'>\n",
+		// - потрачено серебра на боеприпасы
+			"UM:AmmoCost"              : "<img src='img://gui/maps/icons/shell/ARMOR_PIERCING_HE.png' width='20' height='20' align='baseline' vspace='-10'><tab><font  size='13' color='#C9B967'>: </font><font size='13' color='#EDEDED'>{{AmmoCost}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'>",
+		// - потрачено серебра на ремонт
+			"UM:RepairCost"            : "<tab><img src='img://gui/maps/icons/artefact/removeGold.png' width='20' height='20' align='baseline' vspace='-10'><tab><font size='13' color='#C9B967'>: </font><font size='13' color='#EDEDED'>{{RepairCost}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'><textformat  tabstops='[25,120,160]'>\n",
+		// - потрачено серебра на расходники
+			"UM:EquipCost"             : "<img src='img://gui/maps/icons/artefact/toolbox.png' width='20' height='20' align='baseline' vspace='-10'><tab><font size='13' color='#C9B967'>: </font><font size='13' color='#EDEDED'>{{EquipCost}}</font><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/Image 179.png' width='13' height='13' align='baseline' vspace='-10'>",
+			"UM:%%%%%"                 : "<tab><font size='13' color='{{c:HitsRate}}'>{{HitsRate}}%</font><tab><font size='13' color='{{c:EffHitsRate}}'>{{EffHitsRate}}%</font>\n",			
+			"UM:line1"                 : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/line.png' height='3' width='220' vspace='-7'><textformat  tabstops='[40,80,120,160,200]'>\n\n",
+			"UM:icons"                 : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/damage1.png' width='20' height='20' align='baseline' vspace='10'><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/damage2.png' width='20' height='20' align='baseline' vspace='10'><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/assist.png' width='20' height='20' align='baseline' vspace='10'><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/loader_intuition.png' width='20' height='20' align='baseline' vspace='10'><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/gunner_sniper.png' width='20' height='20' align='baseline' vspace='10'><tab><img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/kill.png' width='20' height='20' align='baseline' vspace='10'>\n",
+			"UM:info"                  : "<font size='13' color='{{c:DamageDealt}}'>{{DamageDealt}}</font><tab><font size='13' color='{{c:DamageReceived}}'>{{DamageReceived}}</font><tab><font size='13' color='#B0FFFF'>{{DamageAssisted}}</font><tab><font size='13' color='{{c:HitsRate}}'>{{Shots}}/{{Hits}}</font><tab><font size='13' color='{{c:EffHitsRate}}'>{{Hits}}/{{Piercings}}</font><tab><font size='13' color='{{c:Frags}}'>{{Frags}}</font></font>\n",
+			"UM:line2"                 : "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/line.png' height='3' width='220' vspace='-5'><textformat  tabstops='[60,120,180]'>\n",
+			"UM:stata"                 : "<font size='13' color='#55C1FE'>РЭ:<tab>WN6:<tab>WN7:<tab>WN8:</font>\n<font size='13' color='{{c:EFF}}'>{{EFF}}</font><tab><font size='13' color='{{c:WN6}}'>{{WN6}}</font><tab><font size='13' color='{{c:WN7}}'>{{WN7}}</font><tab><font size='13' color='{{c:WN8}}'>{{WN8}}</font>\n",			
+			"UM:achievements"          : "{{Achievements}}",
+
+
+			
+			
+
+
+			"UM:creditsEX": "<font color='#E5BF00'>{{PureCredits}}</font> <img src='img://gui/maps/icons/library/CreditsIconBig-1.png' width='8' height='8' align='baseline' vspace='0'></font>\n",
+		// - нанесенный урон
+			"UM:DamageDealt1": "<img src='img://scripts/client/gui/mods/mod_pmod/skins/XXX_MUTANT/icons/image/damage1.png' width='20' height='20' align='baseline' vspace='-2'> {{DamageDealt}}:{{DamageAssisted}}\n",
+		// - нанесенный урон
+			"UM:DamageDealt": "Нанес: {{DamageDealt}}\n",
+		// - заработанный опыт для экипажа
+		// - название картинки карты
+			"UM:MapImage": "{{MapImage}}",
+		// - множитель опыта (х2 х3 и тд и тп)
+			"UM:DailyXPFactor": "{{DailyXPFactor}}",
+		// - списание кредитов 
+			"UM:CreditsPenalty": "{{CreditsPenalty}}",
+		//: - компенсация кредитов  
+			"UM:CreditsCompensation": "{{CreditsCompensation}}",
+		// -  свободный опыт
+			"UM:FreeXP": "{{FreeXP}}",
+		// - опыт без учета Х2 и акций
+			"UM:OriginalXP": "{{OriginalXP}}",
+		// - количество обнаруженных противников
+			"UM:SpottedEnemies": "{{SpottedEnemies}}",
+		// - очки защиты базы
+			"UM:DroppedCapturePoints": "{{DroppedCapturePoints}}",
+		// - урон нанесённый с вашей помощью по вашему засвету
+			"UM:DamageAssistedRadio": "{{DamageAssistedRadio}}",
+		// - урон нанесённый с вашей помощью по сбитых вами гуслях
+			"UM:DamageAssistedTrack": "{{DamageAssistedTrack}}",
+		// - урон нанесённый с вашей помощью ( DamageAssistedRadio + DamageAssistedTrack )
+			"UM:DamageAssisted": "{{DamageAssisted}}",
+		// - количество убитых танков
+			"UM:Frags": "Убил: {{Frags}}",
+		// - очки захвата базы
+			"UM:CapturePoints": "{{CapturePoints}}",
+		// - полученный урон
+			"UM:DamageReceived": "{{DamageReceived}}",
+		// - количество урона заблокированный бронёй
+			"UM:DamageBlockedByArmor": "{{DamageBlockedByArmor}}",
+		// - количество полученого потенциального урон
+			"UM:PotentialDamageReceived": "{{PotentialDamageReceived}}",
+		// - количество выстрелов
+			"UM:Shots": "{{Shots}}",
+		// - количество попаданий
+			"UM:Hits": "{{Hits}}",
+		// - количество попаданий с нанесённым уроном
+			"UM:Piercings": "{{Piercings}} пробитий из ",
+		// - процент попаданий ( Hits / Shots * 100 )
+			"UM:HitsRate": "{{HitsRate}}",
+		// - коэффициент урона ( DamageDealt / DamageReceived )
+			"UM:DamageRatio": "{{DamageRatio}}",
+		// - процент попаданий с нанесённым уроном ( Piercings / Hits * 100 )
+			"UM:EffHitsRate": "{{EffHitsRate}}",
+		// - процент выстрелов с нанесённым уроном ( Piercings / Shots * 100 )
+			"UM:EffShotsRate": "{{EffShotsRate}}",
+		// - рейтинг эффективности
+			"UM:EFF":"{{EFF}}",
+		// - WN6 рейтинг
+			"UM:WN6":"{{WN6}}",
+		// - WN7 рейтинг
+			"UM:WN7":"{{WN7}}",
+		// -  WN8 рейтинг
+			"UM:WN8":"{{WN8}}",
+		// - двухзначный Рейтинг эффективности (шкала XVM)
+			"UM:XEFF": "{{XEFF}}",
+		// - двухзначный WN6 рейтинг (шкала XVM)
+			"UM:XWN6": "{{XWN6}}",
+		// - двухзначный WN7 рейтинг (шкала XVM)
+			"UM:XWN7": "{{XWN7}}",
+		// - двухзначный WN8 рейтинг (шкала XVM)
+			"UM:XWN8": "{{XWN8}}"
+			},
+			
+			// Список цветовых подстановок. "название_макроса": [{"value": значение, "color": "#код_цвета"}, {"value": значение, "color": "#код_цвета"}]
+			// List of color permutations. "macro_name"       : [{"value": value,   "color": "#color_code"}, {"value": value,   "color": "#color_code"}]
+			"colors": {
+            "Frags"                       :    [{"value": 0,         "color": "#EE0001"}, {"value": 1,         "color": "#FE0E00"}, {"value": 2,         "color": "#FE7903"}, {"value": 3,         "color": "#F8F400"}, {"value": 4,         "color": "#60FF00"}, {"value": 5,         "color": "#02C9B3"}, {"value": 15,        "color": "#D042F3"}],
+			"WN6"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 410,       "color": "#FE0E00"}, {"value": 795,       "color": "#FE7903"}, {"value": 1185,      "color": "#F8F400"}, {"value": 1585,      "color": "#60FF00"}, {"value": 1925,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN6"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"WN7"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 455,       "color": "#FE0E00"}, {"value": 815,       "color": "#FE7903"}, {"value": 1180,      "color": "#F8F400"}, {"value": 1570,      "color": "#60FF00"}, {"value": 1890,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN7"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"EFF"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 610,       "color": "#FE0E00"}, {"value": 850,       "color": "#FE7903"}, {"value": 1145,      "color": "#F8F400"}, {"value": 1475,      "color": "#60FF00"}, {"value": 1775,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XEFF"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"WN8"                         :    [{"value": 1,         "color": "#EE0001"}, {"value": 315,       "color": "#FE0E00"}, {"value": 760,       "color": "#FE7903"}, {"value": 1325,      "color": "#F8F400"}, {"value": 1980,      "color": "#60FF00"}, {"value": 2570,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"XWN8"                        :    [{"value": 1,         "color": "#EE0001"}, {"value": 17,        "color": "#FE0E00"}, {"value": 34,        "color": "#FE7903"}, {"value": 53,        "color": "#F8F400"}, {"value": 76,        "color": "#60FF00"}, {"value": 93,        "color": "#02C9B3"}, {"value": 999,       "color": "#D042F3"}],
+			"HitsRate"                    :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"EffHitsRate"                 :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"DamageDealt"                 :    [{"value": 800,       "color": "#FE0E00"}, {"value": 1500,      "color": "#FE7903"}, {"value": 2000,      "color": "#F8F400"}, {"value": 2500,      "color": "#60FF00"}, {"value": 3000,      "color": "#02C9B3"}, {"value": 9999,      "color": "#D042F3"}],
+			"DamageReceived"              :    [{"value": 500,       "color": "#D042F3"}, {"value": 800,       "color": "#02C9B3"}, {"value": 1200,      "color": "#60FF00"}, {"value": 2000,      "color": "#F8F400"}, {"value": 2500,      "color": "#FE7903"}, {"value": 3000,      "color": "#FE0E00"}],
+			"HitsRate"                    :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"EffHitsRate"                 :    [{"value": 45,        "color": "#EE0000"}, {"value": 55,        "color": "#FE7903"}, {"value": 65,        "color": "#F8F400"}, {"value": 80,        "color": "#60FF00"}, {"value": 90,        "color": "#02C9B3"}, {"value": 101,       "color": "#D042F3"}],
+			"PureCredits"                 :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}],
+			"Сredits"                     :    [{"value": 0,         "color": "#D44B5D"}, {"value": 9999999,   "color": "#4BFE85"}]
+			}	
+		}
+	}
