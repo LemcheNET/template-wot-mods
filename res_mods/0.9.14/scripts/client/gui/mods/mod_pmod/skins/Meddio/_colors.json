@@ -1,0 +1,88 @@
+/**
+ * Скин: Meddio A.11.1 (подготовлен для PMOD 0.9.3 #11)
+ * Описание, инструкция по настройке:
+ * http://forum.worldoftanks.ru/index.php?/topic/1172523-/page__st__1980__pid__30837799#entry30837799
+ * http://www.koreanrandom.com/forum/topic/14360-/page-12#entry176082
+ */
+ 
+ "colors": {
+
+// СТАТИСТИКА и СИСТЕМНЫЕ СООБЩЕНИЯ:
+
+	// Цветовая шкала                      20% of players                 better then 20% of players           better then 60% of players          better then 90% of players            better then 99% of players          better then 99.9% of players
+
+	"XWN6":                    [{"value": 16.5, "color": "#FE0E00"}, {"value": 33.5, "color": "#FE7903"}, {"value": 52.5, "color": "#F8F400"}, {"value": 75.5, "color": "#60FF00"}, {"value": 92.5, "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+	"XWN7":                    [{"value": 16.5, "color": "#FE0E00"}, {"value": 33.5, "color": "#FE7903"}, {"value": 52.5, "color": "#F8F400"}, {"value": 75.5, "color": "#60FF00"}, {"value": 92.5, "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+	"XWN8":                    [{"value": 16.5, "color": "#FE0E00"}, {"value": 33.5, "color": "#FE7903"}, {"value": 52.5, "color": "#F8F400"}, {"value": 75.5, "color": "#60FF00"}, {"value": 92.5, "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+	"XEFF":                    [{"value": 16.5, "color": "#FE0E00"}, {"value": 33.5, "color": "#FE7903"}, {"value": 52.5, "color": "#F8F400"}, {"value": 75.5, "color": "#60FF00"}, {"value": 92.5, "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+
+	"WN6":                     [{"value": 410,  "color": "#FE0E00"}, {"value": 795,  "color": "#FE7903"}, {"value": 1185, "color": "#F8F400"}, {"value": 1585, "color": "#60FF00"}, {"value": 1925, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+	"WN7":                     [{"value": 450,  "color": "#FE0E00"}, {"value": 815,  "color": "#FE7903"}, {"value": 1185, "color": "#F8F400"}, {"value": 1590, "color": "#60FF00"}, {"value": 1925, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+	"WN8":                     [{"value": 355,  "color": "#FE0E00"}, {"value": 820,  "color": "#FE7903"}, {"value": 1370, "color": "#F8F400"}, {"value": 2020, "color": "#60FF00"}, {"value": 2620, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+	"EFF":                     [{"value": 610,  "color": "#FE0E00"}, {"value": 850,  "color": "#FE7903"}, {"value": 1145, "color": "#F8F400"}, {"value": 1475, "color": "#60FF00"}, {"value": 1775, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+
+	"WinRate":                 [{"value": 46.5, "color": "#FE0E00"}, {"value": 48.5, "color": "#FE7903"}, {"value": 51.5, "color": "#F8F400"}, {"value": 56.5, "color": "#60FF00"}, {"value": 64.5, "color": "#02C9B3"}, {"value": 101,   "color": "#D042F3"}],
+	"AvgDamageDealt":          [{"value": 500,  "color": "#FE0E00"}, {"value": 1000, "color": "#FE7903"}, {"value": 1800, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 9999,  "color": "#D042F3"}],
+	"AvgFrags":                [{"value": 0.6,  "color": "#FE0E00"}, {"value": 0.8,  "color": "#FE7903"}, {"value": 1,    "color": "#F8F400"}, {"value": 1.3,  "color": "#60FF00"}, {"value": 2,    "color": "#02C9B3"}, {"value": 15,    "color": "#D042F3"}],
+	"AvgSpottedEnemies":       [{"value": 0.6,  "color": "#FE0E00"}, {"value": 1,    "color": "#FE7903"}, {"value": 1.5,  "color": "#F8F400"}, {"value": 2,    "color": "#60FF00"}, {"value": 5,    "color": "#02C9B3"}, {"value": 15,    "color": "#D042F3"}],
+	"AvgXP":                   [{"value": 401,  "color": "#FE0E00"}, {"value": 601,  "color": "#FE7903"}, {"value": 1201, "color": "#F8F400"}, {"value": 1601, "color": "#60FF00"}, {"value": 2201, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+	"AvgOriginalXP":           [{"value": 135,  "color": "#FE0E00"}, {"value": 201,  "color": "#FE7903"}, {"value": 401,  "color": "#F8F400"}, {"value": 535,  "color": "#60FF00"}, {"value": 735,  "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+	"AvgCapturePoints":        [{"value": 1.2,  "color": "#FE0E00"}, {"value": 1.6,  "color": "#FE7903"}, {"value": 2,    "color": "#F8F400"}, {"value": 2.6,  "color": "#60FF00"}, {"value": 4,    "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+	"AvgDroppedCapturePoints": [{"value": 0.6,  "color": "#FE0E00"}, {"value": 0.8,  "color": "#FE7903"}, {"value": 1,    "color": "#F8F400"}, {"value": 1.3,  "color": "#60FF00"}, {"value": 2,    "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+
+	"HitsRate":                [{"value": 45,   "color": "#FE0E00"}, {"value": 55,   "color": "#FE7903"}, {"value": 65,   "color": "#F8F400"}, {"value": 80,   "color": "#60FF00"}, {"value": 90,   "color": "#02C9B3"}, {"value": 101,   "color": "#D042F3"}],
+	"EffHitsRate":             [{"value": 45,   "color": "#FE0E00"}, {"value": 55,   "color": "#FE7903"}, {"value": 65,   "color": "#F8F400"}, {"value": 80,   "color": "#60FF00"}, {"value": 90,   "color": "#02C9B3"}, {"value": 101,   "color": "#D042F3"}],
+	"EffShotsRate":            [{"value": 45,   "color": "#FE0E00"}, {"value": 55,   "color": "#FE7903"}, {"value": 65,   "color": "#F8F400"}, {"value": 80,   "color": "#60FF00"}, {"value": 90,   "color": "#02C9B3"}, {"value": 101,   "color": "#D042F3"}],
+
+	"AvgTierLevel":            [{"value": 2,    "color": "#FE0E00"}, {"value": 3,    "color": "#FE7903"}, {"value": 5,    "color": "#F8F400"}, {"value": 7,    "color": "#60FF00"}, {"value": 9,    "color": "#02C9B3"}, {"value": 11,    "color": "#D042F3"}],
+	"AvgBattleLevel":          [{"value": 2,    "color": "#FE0E00"}, {"value": 3,    "color": "#FE7903"}, {"value": 5,    "color": "#F8F400"}, {"value": 7,    "color": "#60FF00"}, {"value": 9,    "color": "#02C9B3"}, {"value": 13,    "color": "#D042F3"}],
+	
+	
+// Только СИСТЕМНЫЕ СООБЩЕНИЯ:
+	
+	
+	// Отметки на стволах орудий:
+	// https://ru.wargaming.net/support/Knowledgebase/Article/View/704/18/otmetki-n-stvolkh-orudijj
+	
+	
+	// DamageRating по шкале превосходства:
+	// 0% - 20% - 60% - 90% - 99% - 99.9% - 100%
+	
+	"DamageRating":            [{"value": 20,   "color": "#FE0E00"}, {"value": 60,   "color": "#FE7903"}, {"value": 90,   "color": "#F8F400"}, {"value": 99,   "color": "#60FF00"}, {"value": 99.9, "color": "#02C9B3"}, {"value": 101,   "color": "#D042F3"}],
+	
+	// DamageRating по шкале отметок:
+	// 0% - 65% - 85% - 95% - 100%
+	
+	/*
+	"DamageRating": [{"value": 65,   "color": "#FE0E00"}, // без отметок
+	                 {"value": 85,   "color": "#F8F400"}, // одна отметка (присваивается лучшим 35% игрокам на танке)
+	                 {"value": 95,   "color": "#60FF00"}, // две отметки (присваивается лучшим 15% игрокам на танке)
+	                 {"value": 101,  "color": "#D042F3"}], // три отметки (присваивается лучшим 5% игрокам на танке)
+	 */
+	 	
+	
+	"DamageDealt":             [{"value": 500,  "color": "#FE0E00"}, {"value": 1000, "color": "#FE7903"}, {"value": 1800, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 9999,  "color": "#D042F3"}],
+	"DamageAssisted":          [{"value": 500,  "color": "#FE0E00"}, {"value": 1000, "color": "#FE7903"}, {"value": 1800, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 9999,  "color": "#D042F3"}],
+	"Frags":                   [{"value": 0.6,  "color": "#FE0E00"}, {"value": 0.8,  "color": "#FE7903"}, {"value": 1,    "color": "#F8F400"}, {"value": 1.3,  "color": "#60FF00"}, {"value": 2,    "color": "#02C9B3"}, {"value": 15,    "color": "#D042F3"}],
+	"SpottedEnemies":          [{"value": 0.6,  "color": "#FE0E00"}, {"value": 1,    "color": "#FE7903"}, {"value": 1.5,  "color": "#F8F400"}, {"value": 2,    "color": "#60FF00"}, {"value": 5,    "color": "#02C9B3"}, {"value": 15,    "color": "#D042F3"}],
+	"CapturePoints":           [{"value": 1.2,  "color": "#FE0E00"}, {"value": 1.6,  "color": "#FE7903"}, {"value": 2,    "color": "#F8F400"}, {"value": 2.6,  "color": "#60FF00"}, {"value": 4,    "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+	"DroppedCapturePoints":    [{"value": 0.6,  "color": "#FE0E00"}, {"value": 0.8,  "color": "#FE7903"}, {"value": 1,    "color": "#F8F400"}, {"value": 1.3,  "color": "#60FF00"}, {"value": 2,    "color": "#02C9B3"}, {"value": 999,   "color": "#D042F3"}],
+
+	// Плюс / Минус
+
+	"DiffWinrate":                  [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgDamageDealt":           [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgFrags":                 [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgSpottedEnemies":        [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgXP":                    [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgCapturePoints":         [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+	"DiffAvgDroppedCapturePoints":  [{"value": 0, "color": "#D44B5D"}, {"value": 9999999, "color": "#C3D84C"}],
+
+	"AvgCredits":                   [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}],
+	"AvgPureCredits":               [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}],
+	"PureCredits":                  [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}],
+	"AccountCredits":               [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}],
+	"AccountGold":                  [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}],	
+	"Credits":                      [{"value": 0, "color": "#E63628"}, {"value": 9999999, "color": "#99CC33"}]
+	
+}
