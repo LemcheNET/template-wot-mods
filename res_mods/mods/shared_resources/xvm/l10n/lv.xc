@@ -127,6 +127,7 @@
     "uk": "Lielbritānija",
     "china": "Ķīna",
     "japan": "Japāna",
+    "czech": "",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

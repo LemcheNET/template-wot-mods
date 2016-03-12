@@ -127,6 +127,7 @@
     "uk": "Británie",
     "china": "Čína",
     "japan": "Japonsko",
+    "czech": "",
     "HT": "Těžký tank",
     "MT": "Střední tank",
     "LT": "Lehký tank",

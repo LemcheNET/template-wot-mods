@@ -1,0 +1,7 @@
+"battleChat": {
+	"resultInformer": {
+		"resultWin": "<font color='#00b414' size='14' face='Enigmatic Unicode'><img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/map_.png' width='19' height='17' align='baseline' vspace='-4'> {{Map}},<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/tank.png' width='28' height='22' align='baseline' vspace='-4'>{{VehicleLocalName}} -<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/flag_w.png' width='20' height='22' align='baseline' vspace='-4'></font>",
+		"resultDraw": "<font color='#ff9900' size='14' face='Enigmatic Unicode'><img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/map_.png' width='19' height='17' align='baseline' vspace='-4'> {{Map}},<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/tank.png' width='28' height='22' align='baseline' vspace='-4'>{{VehicleLocalName}} -<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/flag.png' width='20' height='22' align='baseline' vspace='-4'></font>",
+		"resultDefeat": "<font color='#cc0000' size='14' face='Enigmatic Unicode'><img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/map_.png' width='19' height='17' align='baseline' vspace='-4'> {{Map}},<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/tank.png' width='28' height='22' align='baseline' vspace='-4'>{{VehicleLocalName}} -<img src='img://scripts/client/gui/mods/mod_pmod/skins/2rokk/images/flag_d.png' width='20' height='22' align='baseline' vspace='-4'></font>"
+		}
+}

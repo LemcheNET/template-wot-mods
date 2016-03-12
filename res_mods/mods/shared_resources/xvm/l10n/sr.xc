@@ -127,6 +127,7 @@
     "uk": "Ujedinjeno Kraljevstvo",
     "china": "Kina",
     "japan": "Japan",
+    "czech": "",
     "HT": "Teški tenk",
     "MT": "Srednji tenk",
     "LT": "Laki tenk",

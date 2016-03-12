@@ -1,0 +1,29 @@
+/*
+	Настройки камеры во время боя.
+	Camera opption during battle.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	// Инерция камеры (появилась в 0.8.11).
+	// Сamera inertia (introduced in 0.8.11).
+	"noGlideCamera": false,
+	
+	// Красная вспышка когда враг попадает по вам.
+	// Red flash when enemy hit your tank.
+	"noFlashBang": false,
+	
+	// Тряска камеры когда враг попадает по вам.
+	// Shake of camera when enemy hit your tank.
+	"noShockWave": false,
+	
+	// Время слежение камеры за тем кто вас убил (Если он в засвете, и галка стоит в настройках клиента)
+	// Time of camera tracking for those who killed you (If it is spotted, and the jackdaw client is configured)
+	"killerVisionTime": 5.0,
+	
+	// Смещением камеры по оси у (высота) относительно геометрического центра модели танка.
+	// Displacement camera on the y-axis (height) relative to the geometric center of the model tank.
+	"heightOffset": 4.0
+}
