@@ -6,7 +6,7 @@
 	
 	// true - включить модуль.
 	// true - enable the module.
-	"enable" : false,
+	"enable" : true,
 	
 	// Двигатся за интерфейсом (интерфейс игры двигается если динамическая камера включена)
 	// Move for the interface (game interface moves if the dynamic camera is turned on)
@@ -16,7 +16,7 @@
 	// Перевернутая по высоте декартовая система координат в пикселях, с отчетом, от центра экрана
 	// Indicator position on the screen
 	// Inverted adjustment cartesian coordinate system in pixels, with a report from the center of the screen
-	"position" : [240, -18],
+	"position" : [240, -175],
 
 	// Текст надписи индикатора
 	// Вместо {{zoom}} будет подставлено текущее значение кратности
@@ -34,7 +34,7 @@
 
 	// Цвет надписи индикатора. Значение цвета в палитре RGB (красный, зелёный, синий)
 	// Color label indicator. Value colors in the RGB (red, green, blue)
-	"color" : "6BF40D",
+	"color" : "66CC00",
 
 	// Шрифт надписи индикатора
 	// Font label indicator
