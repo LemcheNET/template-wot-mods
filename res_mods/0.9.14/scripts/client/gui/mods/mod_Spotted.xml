@@ -20,13 +20,13 @@
     <message>Im Spotted at {cell}.</message>
 
     <!-- Use Platoon Chat if available: -->
-    <useSquadChat>0</useSquadChat>
+    <useSquadChat>1</useSquadChat>
 
     <!-- Activate Help (F7) when Spotted: -->
     <helpMeOption>0</helpMeOption>
 
     <!-- Ping on Minimap Cell when Spotted: -->
-    <cellClickOption>0</cellClickOption>
+    <cellClickOption>1</cellClickOption>
 
 	<!-- Unspotted Notification: -->
     <timeEndMessage>10</timeEndMessage>
