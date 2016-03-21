@@ -7,7 +7,7 @@
 	<welcomeMsg>True</welcomeMsg>
 
 	<!-- En/Disable the Spotted Mod by Default -->
-	<modActive>True</modActive>
+	<modActive>False</modActive>
 
 	<!-- HotKey to turn the Mod Ingame on/off -->
 	<hotKey>KEY_F11</hotKey>
