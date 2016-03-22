@@ -14,14 +14,14 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 14
-!define VERSIONBUILD 1
+!define VERSIONBUILD 2
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Support Information" link
 !define UPDATEURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Product Updates" link
 !define ABOUTURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Publisher" link
 # This is the size (in kB) of all the files copied into "Program Files"
-!define INSTALLSIZE 50708
+!define INSTALLSIZE 59965
 
 RequestExecutionLevel admin ;Require admin rights on NT6+ (When UAC is turned on)
  
@@ -1452,6 +1452,8 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.pyc"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.json"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_autoaim_indicator.dds"
+	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_artyReloadTimer.pyc"
+	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_artyReloadTimer.json"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\mod_.pyc"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\gui\mods\GunConstraints.xml"
 	Delete "$INSTDIR\res_mods\0.9.14\scripts\client\CameraNode.pyc"
@@ -1461,6 +1463,7 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\tessu_mod\checkbox_off.png"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\xvm.swf"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\VehicleMarkersManager.swf"
+	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\TextPanel.swf"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\TeamBasesPanel.swf"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\StatisticForm.swf"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\scaleform\PlayersPanel.swf"

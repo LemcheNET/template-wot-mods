@@ -1,0 +1,66 @@
+{
+	"author": "adri1",
+	"comment": {
+		"position":" 200 —— Left 200px; -200 —— Right 200px; 20% —— Left 20% of width",
+		"macros": ["playerName","vehicleName","reloadRemain","totalReloadTime"]
+	},
+	"block": [
+	{
+		"id": "allyreload",
+		"position": {
+			"x": "40%",
+			"y": "40"
+		},
+		"font": {
+			"size": 16,
+			"color": "#aaff80",
+			"face": "$IMELanguageBar",
+			"shadow": {
+				"distance": 1,
+				"angle": 45,
+				"color": "0x000000",
+				"alpha": 80,
+				"blur": 8,
+				"strength": 8,
+				"quality": 3
+			}
+		},
+		"format": "Allied {{vehicleName}} reloading {{reloadRemain}} sec",
+		"reload": {
+			"showEnemy": false,
+			"showAlly": true,
+			"SPGonly": true,
+			"reloadlimit": 0
+		},
+		"visible": true
+	},
+	{
+		"id": "enemyreload",
+		"position": {
+			"x": "55%",
+			"y": "40"
+		},
+		"font": {
+			"size": 16,
+			"color": "#ffaaaa",
+			"face": "$IMELanguageBar",
+			"shadow": {
+				"distance": 1,
+				"angle": 45,
+				"color": "0x000000",
+				"alpha": 80,
+				"blur": 8,
+				"strength": 8,
+				"quality": 3
+			}
+		},
+		"format": "Enemy {{vehicleName}} reloading {{reloadRemain}} sec",
+		"reload": {
+			"showEnemy": true,
+			"showAlly": false,
+			"SPGonly": true,
+			"reloadlimit": 0
+		},
+		"visible": true
+	}]
+}
