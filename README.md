@@ -38,6 +38,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [J1mB0's Contour Icon Mod](http://worldoftanks.curseforge.com/wot-mods/jimbos-contour-icon-mod/)
   * [J1mB0's Crosshair Mod](http://worldoftanks.curseforge.com/wot-mods/j1mb0s-reticles/)
   * My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.14
+  * [Arty Reload Timer] (http://goxwot.blogspot.se/2015/08/99-arty-reload-timer.html)
 
 ### Not included but recommended mods ###
 I also normally add these mods
