@@ -21,14 +21,15 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Active Dossier Uploader] (http://www.vbaddict.net)
   * [Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
-  * ~~[6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)~~ (The new default sound is also good enough)
+  * ~~[6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)~~ (Replaced by below)
+  * [Replacing the sounds / Sound changing] sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)
   * ~~[SpotMessanger] (http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)~~ Replaced with Spotted Mod
   * [Spotted Mod] (http://forum.worldoftanks.eu/index.php?/topic/526403-0914-spotted-mod-last-update-10032016/)
   * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
   * ~~[Multi Hit Log] (http://forum.worldoftanks.eu/index.php?/topic/413607-0981-multi-hit-log-v23-hitlog-inbattle-wn8-damage-log-no-xvm-required/#topmost)~~ (Replaced by Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage)
   * [Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)
-  * ~~[sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)~~
+  * ~~[sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)~~ ("Replaced by Replacing the sounds / Sound changing] sounds to various events")
   * ~~[Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)~~ (Temporarily replaced with J1mB0's Crosshair)
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
