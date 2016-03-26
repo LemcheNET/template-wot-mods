@@ -5,7 +5,7 @@ Please refer to **[master branch](https://github.com/atterdag/atterdag-wot-mods)
 Game start logo, data synchronization icon, and sixth sense image, are all replaced with aos own clan logo.
 
 # Download #
-Just install using the installer, which you can download here >>> [aos-wot-mods-0.9.14.3.exe](https://dl.dropboxusercontent.com/u/11915528/wot/aos-wot-mods-0.9.14.3.exe)
+Just install using the installer, which you can download here >>> [aos-wot-mods-0.9.14.4.exe](https://dl.dropboxusercontent.com/u/11915528/wot/aos-wot-mods-0.9.14.4.exe)
 
 # Screenshots #
 ## Game/garage loading ##
