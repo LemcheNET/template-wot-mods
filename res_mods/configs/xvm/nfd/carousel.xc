@@ -156,13 +156,14 @@
     ],
     // Order of nations.
     // Порядок наций.
-    "nations_order": ["china", "france", "germany", "uk", "usa", "ussr", "japan"],
+    //"nations_order": [],
+    "nations_order": ["germany", "ussr", "usa", "france", "uk", "china", "japan", "czech"],
     // Order of types of vehicles.
     // Порядок классов техники.
     "types_order":   ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
     // Tank sorting criteria, available options: (minus = reverse order)
     // Критерии сортировки танков, доступные значения: (минус = в обратном порядке)
-    // "nation", "type", "level", "maxBattleTier", "premium", "-level", "-maxBattleTier", "-premium"
+    // "nation", "type", "level", "maxBattleTier", "premium", "winRate", "-level", "-maxBattleTier", "-premium", "-winRate"
     "sorting_criteria": ["nation", "type", "level"],
     // Suppress the tooltips for tanks in carousel
     // Убрать подсказки к танкам в карусели

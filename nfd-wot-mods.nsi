@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 14
-!define VERSIONBUILD 3
+!define VERSIONBUILD 4
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Support Information" link
@@ -601,6 +601,7 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\doc\macros-hangar.txt"
 	Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\doc\ChangeLog-ru.txt"
 	Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\doc\ChangeLog-en.txt"
+	Delete "$INSTDIR\res_mods\mods\shared_resources\xvm\doc\audioww.txt"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_widgets\actionscript\xvm_widgets.swf"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_tooltips\python\__version__.pyc"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_tooltips\python\__init__.pyc"
@@ -642,6 +643,7 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_online\actionscript\xvm_online.swf"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\__version__.pyc"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\__init__.pyc"
+	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\xvm_scale_data.pyc"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\xvm_scale.pyc"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\xvmapi.pyc"
 	Delete "$INSTDIR\res_mods\mods\packages\xvm_main\python\xvm.pyc"
@@ -2528,6 +2530,7 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\flash\crosshairSniper.swf"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\sound_notifications.xml"
 	Delete "$INSTDIR\res_mods\0.9.14\gui\messenger.xml"
+	Delete "$INSTDIR\res_mods\0.9.14\audioww\xvm.bnk"
 	Delete "$INSTDIR\res_mods\0.9.14\audioww\SM_sixthSense_timer.bnk"
 	Delete "$INSTDIR\res_mods\0.9.14\TessuMod.txt"
 	Delete "$INSTDIR\res_mods\0.9.14\tessumod.ts3_plugin"
