@@ -1,0 +1,15 @@
+// Игровой чат в бою.
+// Ingame chat in battle.
+"battleChat": {
+	
+	// Информер итогов оставленных(завершённых) боёв в чат.
+	// Informer results of completed battle to chat.
+	"resultInformer": {
+
+		// Текстовые сообщения в чат. Макросы смотрите в README.txt
+		// Text messages in chat. Macros in README.txt
+		"resultWin":    "<font color='#4EA500' size='25'>     Победа!        </font><br><textformat tabstops='[55]'><img src='img://gui/maps/icons/library/TournamentBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Карта:</font><tab><font color='#FFCC42'>{{Map}}</font><br><img src='img://gui/maps/icons/library/ClanBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Танк:</font><tab><font color='#FFCC42'>{{VehicleLocalNameShort}}</font><br><img src='img://gui/maps/icons/library/CreditsIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Деньги:</font><tab><font color='#FFCC42'>{{Credits}}</font><br><img src='img://gui/maps/icons/library/PowerlevelIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Опыт:</font><tab><font color='#FFCC42'>{{XP}}</font></textformat>",
+		"resultDraw":   "<font color='#FFA500' size='25'>     Ничья!         </font><br><textformat tabstops='[55]'><img src='img://gui/maps/icons/library/TournamentBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Карта:</font><tab><font color='#FFCC42'>{{Map}}</font><br><img src='img://gui/maps/icons/library/ClanBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Танк:</font><tab><font color='#FFCC42'>{{VehicleLocalNameShort}}</font><br><img src='img://gui/maps/icons/library/CreditsIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Деньги:</font><tab><font color='#FFCC42'>{{Credits}}</font><br><img src='img://gui/maps/icons/library/PowerlevelIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Опыт:</font><tab><font color='#FFCC42'>{{XP}}</font></textformat>",
+		"resultDefeat": "<font color='#FF2E00' size='25'>     Поражение!     </font><br><textformat tabstops='[55]'><img src='img://gui/maps/icons/library/TournamentBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Карта:</font><tab><font color='#FFCC42'>{{Map}}</font><br><img src='img://gui/maps/icons/library/ClanBattleResultIcon-1.png' width='14' height='14' vspace='-1'><font color='#BBBBBB'>Танк:</font><tab><font color='#FFCC42'>{{VehicleLocalNameShort}}</font><br><img src='img://gui/maps/icons/library/CreditsIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Деньги:</font><tab><font color='#FFCC42'>{{Credits}}</font><br><img src='img://gui/maps/icons/library/PowerlevelIcon-1.png' width='14' height='14' align='baseline' vspace='-1'><font color='#BBBBBB'>Опыт:</font><tab><font color='#FFCC42'>{{XP}}</font></textformat>"
+	}
+}

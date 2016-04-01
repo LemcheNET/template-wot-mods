@@ -1,0 +1,13 @@
+/*
+	Обработка сообщений в системном канале *Большинство настроек находятся в файле скина
+	Process messages in the system channel *Most of the settings are in the skin file
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	// Шаг прокрутки сообщений в системном канале (10 - стандарт).
+	// System channel scroll step factor (10 - standart).
+	"scrollStepFactor": 10
+}

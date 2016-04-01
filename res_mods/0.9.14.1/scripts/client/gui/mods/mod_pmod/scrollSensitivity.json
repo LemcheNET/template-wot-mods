@@ -1,0 +1,13 @@
+/*
+	Прокрутка в аркадном режиме.
+	Scroll in arcade mode.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable" : false,
+	
+	// Чувствительность прокрутки в аркадном режиме.
+	// Scroll sensitivity in arcade mode.
+	"arcadeScroll" : 5
+}
