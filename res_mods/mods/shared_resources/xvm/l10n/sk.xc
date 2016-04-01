@@ -137,7 +137,7 @@
     "blownUp": "Munícia!",
     "ver/currentVersion": "",
     "ver/newVersion": "",
-    "websock/not_connected": "Status:<tab/><font color='#00FF00'>Aktívny</font>",
+    "xvmsvc/not_connected": "Status:<tab/><font color='#00FF00'>Aktívny</font>",
     "token/services_unavailable": "",
     "token/services_inactive": "",
     "token/blocked": "",

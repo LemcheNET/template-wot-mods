@@ -137,7 +137,7 @@
     "blownUp": "Ανατινάχθηκε!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Διαθέσιμη ενημέρωση:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>Δεν υπάρχει σύνδεση με το διακομιστή XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>Δεν υπάρχει σύνδεση με το διακομιστή XVM</font>",
     "token/services_unavailable": "Υπηρεσίες δικτύου δεν είναι διαθέσιμες.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>περισσότερες πληροφορίες</font></a>",
     "token/services_inactive": "Υπηρεσίες δικτύου δεν είναι διαθέσιμες.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>περισσότερες πληροφορίες</font></a>",
     "token/blocked": "Κατάσταση: <font color='#FF0000'>Αποκλεισμένοι</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>περισσότερες πληροφορίες</font></a>",

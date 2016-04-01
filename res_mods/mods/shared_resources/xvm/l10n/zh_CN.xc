@@ -137,7 +137,7 @@
     "blownUp": "击毁弹药架!",
     "ver/currentVersion": "",
     "ver/newVersion": "",
-    "websock/not_connected": "",
+    "xvmsvc/not_connected": "",
     "token/services_unavailable": "",
     "token/services_inactive": "",
     "token/blocked": "",

@@ -137,7 +137,7 @@
     "blownUp": "Explodido!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Actualização disponível:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>sem ligação ao servidor do XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>sem ligação ao servidor do XVM</font>",
     "token/services_unavailable": "Os serviços de rede estão indisponíveis.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>mais informação</font></a>",
     "token/services_inactive": "Os serviços de rede estão inactivos.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>activar</font></a>",
     "token/blocked": "Estado: <font color='#FF0000'>Bloqueado</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>mais informação</font></a>",

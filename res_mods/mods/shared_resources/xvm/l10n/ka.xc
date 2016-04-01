@@ -137,7 +137,7 @@
     "blownUp": "აფეთქება!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "",
-    "websock/not_connected": "<font color='#FFFF00'>სერვერთან კავშირი არ არის XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>სერვერთან კავშირი არ არის XVM</font>",
     "token/services_unavailable": "ქსელის სერვისები მიუწვდომელია.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>დეტალურად</font></a>",
     "token/services_inactive": "ქსელის სერვისები მიუწვდომელია.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>დეტალურად</font></a>",
     "token/blocked": "სტატუსი: <font color='#FF0000'>დაბლოკილია</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>დეტალურად</font></a>",

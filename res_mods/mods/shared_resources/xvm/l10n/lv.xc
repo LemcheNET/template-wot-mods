@@ -137,7 +137,7 @@
     "blownUp": "Uzspridzināts!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Pieejams atjauninājums:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>nav savienojuma ar XVM serveri</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>nav savienojuma ar XVM serveri</font>",
     "token/services_unavailable": "Tīkla pakalpojumi nav pieejami.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>vairāk</font></a>",
     "token/services_inactive": "Tīkla servisi neaktīvi.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>aktivizēt</font></a>",
     "token/blocked": "Statuss: <font color='#FF0000'>Bloķēts</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>vairāk</font></a>",

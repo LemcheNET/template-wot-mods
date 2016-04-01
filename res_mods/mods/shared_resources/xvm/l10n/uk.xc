@@ -137,7 +137,7 @@
     "blownUp": "Вибух БК!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Доступне оновлення:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>з'єднання з сервером XVM відсутнє</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>з'єднання з сервером XVM відсутнє</font>",
     "token/services_unavailable": "Мережеві сервіси недоступні.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>детальніше</font></a>",
     "token/services_inactive": "Мережеві сервіси неактивні (статистика).&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>увімкнути</font></a>",
     "token/blocked": "Статус: <font color='#FF0000'>Заблокований</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>детальніше</font></a>",

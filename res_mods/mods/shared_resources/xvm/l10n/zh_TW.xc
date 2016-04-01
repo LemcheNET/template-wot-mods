@@ -137,7 +137,7 @@
     "blownUp": "彈藥架殉爆!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "可用的更新:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "狀態:<tab/><font color='#00FF00'>已啟動</font>",
+    "xvmsvc/not_connected": "狀態:<tab/><font color='#00FF00'>已啟動</font>",
     "token/services_unavailable": "狀態:<font color='#FF0000'>已鎖定</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>更多資訊</font></a>",
     "token/services_inactive": "狀態:<font color='#FF0000'>已鎖定</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>更多資訊</font></a>",
     "token/blocked": "狀態:<font color='#FF0000'>已鎖定</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>更多資訊</font></a>",

@@ -137,7 +137,7 @@
     "blownUp": "爆散!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "最新版への更新が可能です:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>XVMサーバー接続不可</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>XVMサーバー接続不可</font>",
     "token/services_unavailable": "ネットワークサービス利用不可.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>詳細</font></a>",
     "token/services_inactive": "ネットワークサービス無効.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>enable</font></a>",
     "token/blocked": "状態: <font color='#FF0000'>ブロックされています</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>詳細</font></a>",

@@ -137,7 +137,7 @@
     "blownUp": "유폭!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "업데이트 가능:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n {1}",
-    "websock/not_connected": "<font color='#FFFF00'>XVM 서버에 연결되지 않음</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>XVM 서버에 연결되지 않음</font>",
     "token/services_unavailable": "네트워크 서비스 비활성화.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>자세히</font></a>",
     "token/services_inactive": "네트워크 서비스 비사용&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>활성화</font></a>",
     "token/blocked": "상태: <font color='#FF0000'>Blocked</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>more info</font></a>",
