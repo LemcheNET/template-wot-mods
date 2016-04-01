@@ -137,7 +137,7 @@
     "blownUp": "Räjähti!",
     "ver/currentVersion": "XVM {0} {1}",
     "ver/newVersion": "Päivitys saatavilla:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>ei yhteyttä XVM serveriin</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>ei yhteyttä XVM serveriin</font>",
     "token/services_unavailable": "Verkkopalvelu ei käytettävissä.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>lisää tietoja</font></a>",
     "token/services_inactive": "Verkkopalvelu ei aktiivisena.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>aktivoi</font></a>",
     "token/blocked": "Tila: <font color='#FF0000'>Estetty</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>lisää tietoa</font></a>",

@@ -137,7 +137,7 @@
     "blownUp": "Munice!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Dostupná aktualizace:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>nelze se spojit se serverem XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>nelze se spojit se serverem XVM</font>",
     "token/services_unavailable": "Síťové služby nedostupné.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
     "token/services_inactive": "Síťové služby jsou nedostupné.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>enable</font></a>",
     "token/blocked": "Stav: <font color='#FF0000'>Blokováno</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>více informací</font></a>",

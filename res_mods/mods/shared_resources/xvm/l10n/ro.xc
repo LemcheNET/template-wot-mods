@@ -137,7 +137,7 @@
     "blownUp": "Explozie!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Actualizare disponibila:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>lipsa conexiune a serverul XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>lipsa conexiune a serverul XVM</font>",
     "token/services_unavailable": "Serviciu de retea indisponibil.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
     "token/services_inactive": "Servicii de retea inactive.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>activare</font></a>",
     "token/blocked": "Stare: <font color='#FF0000'>Blocat</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>more info</font></a>",

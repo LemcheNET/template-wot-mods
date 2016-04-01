@@ -137,7 +137,7 @@
     "blownUp": "Opgeblazen!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Update beschikbaar:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>geen connectie met XVM server</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>geen connectie met XVM server</font>",
     "token/services_unavailable": "Netwerkdiensten onbeschikbaar.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>meer info</font></a>",
     "token/services_inactive": "Netwerkdiensten onbeschikbaar.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>meer info</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Geblokkeerd</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>meer info</font></a>",

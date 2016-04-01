@@ -137,7 +137,7 @@
     "blownUp": "Meledak!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "",
-    "websock/not_connected": "<font color='#FFFF00'>tidak ada koneksi ke XVM server</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>tidak ada koneksi ke XVM server</font>",
     "token/services_unavailable": "Network services unavailable.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
     "token/services_inactive": "Network services unavailable.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>more info</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blocked</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>more info</font></a>",
