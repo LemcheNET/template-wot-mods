@@ -137,7 +137,7 @@
     "blownUp": "Plahvatas!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Uuendus saadaval:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>ühendus XVM serveriga puudub</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>ühendus XVM serveriga puudub</font>",
     "token/services_unavailable": "Võrguteenused pole saadaval.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>rohkem infot</font></a>",
     "token/services_inactive": "Võrguteenused välja lülitatud.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>lülita sisse</font></a>",
     "token/blocked": "Staatus: <font color='#FF0000'>Blokeeritud</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>rohkem infot</font></a>",

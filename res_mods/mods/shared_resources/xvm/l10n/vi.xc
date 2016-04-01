@@ -137,7 +137,7 @@
     "blownUp": "Phát nổ!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Có phiên bản mới:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>không thể kết nối đến máy chủ XVM</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>không thể kết nối đến máy chủ XVM</font>",
     "token/services_unavailable": "Dịch vụ hệ thống không khả dụng.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>chi tiết</font></a>",
     "token/services_inactive": "Dịch vụ hệ thống chưa kích hoạt.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>kích hoạt</font></a>",
     "token/blocked": "Tình trạng: <font color='#FF0000'>Bị khóa</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>chi tiết</font></a>",

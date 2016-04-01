@@ -137,7 +137,7 @@
     "blownUp": "Eksplodirao!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Ažuriranje dostupno:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>nema konekcije sa XVM serverom</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>nema konekcije sa XVM serverom</font>",
     "token/services_unavailable": "Mrežna usluga nedostupna.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>više detalja</font></a>",
     "token/services_inactive": "Mrežne usluge nedostupne.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>uključi</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blokirano</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>više detalja</font></a>",

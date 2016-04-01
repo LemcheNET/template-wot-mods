@@ -137,7 +137,7 @@
     "blownUp": "Взривен!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Налично е обновление:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'> v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>няма връзка с XVM сървъра</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>няма връзка с XVM сървъра</font>",
     "token/services_unavailable": "Мрежовите услуги са недостъпни.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>повече информация</font></a>",
     "token/services_inactive": "Мрежовите услуги не са активни.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>активиране</font></a>",
     "token/blocked": "Състояние: <font color='#FF0000'>Блокиран</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>повече информация</font></a>",

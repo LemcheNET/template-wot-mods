@@ -137,7 +137,7 @@
     "blownUp": "Sprængt i luften!",
     "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Opdatering tilgængelig:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
-    "websock/not_connected": "<font color='#FFFF00'>Ingen forbindelse til XVM serveren</font>",
+    "xvmsvc/not_connected": "<font color='#FFFF00'>Ingen forbindelse til XVM serveren</font>",
     "token/services_unavailable": "Netværkstjenester utilgængelige.&nbsp;&nbsp;<a href='#XVM_SITE_UNAVAILABLE#'><font size='11'>mere info</font></a>",
     "token/services_inactive": "Netværkstjenester inaktive.&nbsp;&nbsp;<a href='#XVM_SITE_INACTIVE#'><font size='11'>aktiver</font></a>",
     "token/blocked": "Status: <font color='#FF0000'>Blokeret</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED'><font size='11'>mere info</font></a>",
