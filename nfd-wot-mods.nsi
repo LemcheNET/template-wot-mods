@@ -14,7 +14,7 @@
 !define VERSIONMAJOR 0
 !define VERSIONMINOR 9
 !define VERSIONPATCH 14
-!define VERSIONBUILD 5
+!define VERSIONBUILD 6
 # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
 # It is possible to use "mailto:" links in here to open the email client
 !define HELPURL "https://github.com/atterdag/atterdag-wot-mods/tree/nfd" # "Support Information" link
@@ -1480,8 +1480,6 @@ section "uninstall"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod.pyc"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod.json"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_old_mods_loader.pyc"
-	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_ModificationDestructible.pyc"
-	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_ModificationDestructible.json"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_J1mB091.pyc"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_GunConstraints.pyc"
 	Delete "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_damagelog.pyc"
@@ -2766,6 +2764,7 @@ section "uninstall"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\XXX_MUTANT\icons\master"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\XXX_MUTANT\icons\image"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\XXX_MUTANT\icons\battleresults"
+	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\XXX_MUTANT\icons\background"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\XXX_MUTANT\icons"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\Meddio\images"
 	RMDir "$INSTDIR\res_mods\0.9.14.1\scripts\client\gui\mods\mod_pmod\skins\demon2597\img"
