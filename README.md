@@ -21,19 +21,13 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Active Dossier Uploader] (http://www.vbaddict.net)
   * [Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
-  * ~~[6thsense-audio] (http://www.koreanrandom.com/forum/index.php?app=core&module=attach&section=attach&attach_id=3936)~~ (Replaced by below)
   * [Replacing the sounds / Sound changing] sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)
-  * ~~[SpotMessanger] (http://forum.worldoftanks.eu/index.php?/topic/353419-0811spotmessanger/)~~ Replaced with Spotted Mod
   * [Spotted Mod] (http://forum.worldoftanks.eu/index.php?/topic/526403-0914-spotted-mod-last-update-10032016/)
   * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
-  * ~~[Multi Hit Log] (http://forum.worldoftanks.eu/index.php?/topic/413607-0981-multi-hit-log-v23-hitlog-inbattle-wn8-damage-log-no-xvm-required/#topmost)~~ (Replaced by Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage)
   * [Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)
-  * ~~[sixth sense duration (icon+audio+countdown)] (http://forum.worldoftanks.eu/index.php?/topic/358159-096sixth-sense-duration-iconaudiocountdown/)~~ ("Replaced by Replacing the sounds / Sound changing] sounds to various events")
-  * ~~[Standard crosshair, with better timer] (http://worldof-tanks.com/standard-crosshair-with-better-timer-9-1/)~~ (Temporarily replaced with J1mB0's Crosshair)
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
-  * [[ZJ] Marker Re-Load Demo] (http://goxwot.blogspot.se/2015/07/99-zj-marker-re-load-build-067-25072015.html)
   * [crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)
   * [J1mB0's Contour Icon Mod](http://worldoftanks.curseforge.com/wot-mods/jimbos-contour-icon-mod/)
   * [J1mB0's Crosshair Mod](http://worldoftanks.curseforge.com/wot-mods/j1mb0s-reticles/)
@@ -41,12 +35,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Arty Reload Timer] (http://goxwot.blogspot.se/2015/08/99-arty-reload-timer.html)
 
 ### Not included but recommended mods ###
-I also normally add these mods
- * ~~[Gnomefather's HR Gun Sound Mod, Engines](http://gnomefather.blogspot.se/)~~ - These mods increases the sense of immersion tremendously.
- * ~~[Terrorist Allahu Akbar Voice Mod](http://forum.wotlabs.net/index.php?/topic/13181-terrorist-allahu-akbar-voice-mod/)~~ - Hearing "Allahu Akhbar" everything I hit someone just puts a smile on my face for some odd reason.
- * ~~[AMX 13-57 uncamo skin with enabled emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) - The WGL skin for the AMX 13 57 is disgusting, and this mods fix it.~~ (PS I made my own version of this skin, and I've added it by default in the modpack)
-
-Furthermore I also want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
+I want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
 
 # Mods configuration #
 I've changed a lot of the default configurations of the various mods, so this is sort of an overview of those changes.
