@@ -21,7 +21,7 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [Active Dossier Uploader] (http://www.vbaddict.net)
   * [Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)
   * [SafeShot] (http://forum.worldoftanks.ru/index.php?/topic/1075087-)
-  * [Replacing the sounds / Sound changing] sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)
+  * [Replacing the sounds / Sound changing sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)
   * [Spotted Mod] (http://forum.worldoftanks.eu/index.php?/topic/526403-0914-spotted-mod-last-update-10032016/)
   * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
