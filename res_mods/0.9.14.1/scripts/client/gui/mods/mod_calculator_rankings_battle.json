@@ -1,6 +1,6 @@
 ﻿/*
 	Modification name - Calculator_rankings_battle
-	Game client version - 0.9.14
+	Game client version - 0.9.14.1
 	Modification author - Ekspoint
 	Configuration author - atterdag
 */
@@ -14,64 +14,55 @@
 	|| {colorXEFF}				||	|| Dynamic color scale XVM for ER														||
 	|| {colorCOEF}				||	|| Dynamic color performance for battle damage on the current tank for COEF				||
 	|| {colorDIFF}				||	|| Dynamic color moderate damage on the server for the current battle tank for DIFF		||
+	|| {colorAVGDAMAGE}         ||  || Dynamic color according to the average damage per fight on this tank for AVGDAMAGE   ||
 	|| {WN8}					||	|| WN8 rating																			||
 	|| {EFF}					||	|| Efficiency rating (ER) for wot-news.com												||
-	|| {XWN8}					||	|| XVM range for WN8 (values ​​00-99, XX for top performance)								||
-	|| {XEFF}					||	|| XVM range for ER (values ​​00-99, XX for top performance)								||
+	|| {XWN8}					||	|| XVM range for WN8 (values ​​00-99, XX for top performance)							||
+	|| {XEFF}					||	|| XVM range for ER (values ​​00-99, XX for top performance)							||
 	|| {COEF}					||	|| Effectiveness of the battle damage on the current tank								||
 	|| {DIFF}					||	|| Average damage caused by the server that you need to cause							||
 	|| {AVGSHOTS}				||	|| Average damage caused by your number of shots										||
 	|| {AVGDAMAGE}				||	|| Medium Damage for battle on the current tank											||
 	|| {DAMAGE}					||	|| Total damage caused																	||
 	--------------------------------------------------------------------------------------------------------------------------
-
 */
 {
-	"calculator_rankings_battle": {
-		"settings": {
-			"enable": true,
+	    "settings": {
+		    "enable": true,
+			"dragEnable": true,                   // Global Switch off and on moving the mouse
 			"reloadKey": "KEY_LALT and KEY_2",
-			"hotKeyEnable": "KEY_LALT and KEY_1",
-			"updatePos": {
-				"enable": true, 
-				"down": "KEY_RCONTROL and KEY_DOWNARROW",
-				"left": "KEY_RCONTROL and KEY_LEFTARROW",
-				"right": "KEY_RCONTROL and KEY_RIGHTARROW",
-				"up": "KEY_RCONTROL and KEY_UPARROW"
-			}
+		    "hotKeyEnable": "KEY_LALT and KEY_1"			
 		},
-		// Settings dialog background
-		"background": {
-			"enable": false,
-			"alignX": "left",
-			"alignY": "top",
-			"alpha": 100,
-			"height": 70,
-			"image": "img://gui/maps/icons/lobby/report-bug-background.png",
-			"width": 200,
-			"x": -30,
-			"y": 440
-		},
-		// Settings dialog text
-		"shadow": {
-			"enable": false,
-			"alpha": 50,
-			"angle": 0,
-			"color": "#000000",
-			"distance": 0,
-			"size": 40,
-			"strength": 500
-		},
+		// Text substrate configuration
+        "background": {
+		    "enable": false,
+            "alpha": 100,
+            "height": 70,
+            "image": "gui/maps/bg.png",
+            "width": 200,
+            "x": -30,
+            "y": 440
+        },
+		// Setting text shadow 
+        "shadow": {
+		    "enable": false,
+            "alpha": 50,
+            "angle": 0,
+            "color": "#000000",
+            "distance": 0,
+            "size": 40,
+            "strength": 500
+        },
 		// Text settings
-		"text": {
-			"enable": true,
-			"alignX": "left",
-			"alignY": "top",
-			"format": "<font color='#ffffff' size='13' face='$TextFont'>WN8: <b><font color='{colorWN8}'>{WN8}</font></b></font>", 
+        "text": {
+		    "enable": true,
+			"alignX": "left", // horizontal alignment of the [left, center, right]
+            "alignY": "top",  // vertical alignment          [top, center, bottom]
+            "format": "<font color='#bdbdbd' size='13' face='$IMELanguageBar'>WN8: <font color='{colorWN8}'>{WN8}</font></font>", 
 			"x": 465,
-			"y": 5
-		},
-		// Dynamic colors for WN8 ratings, EFF, XWN8, EFF, COEF, DIFF
+            "y": 5
+        },
+		// Dynamic colors for WN8 ratings, EFF, XWN8, EFF, COEF, DIFF, AVGDAMAGE
 		"colors": [
 
 			// Wotlabs rating scale
@@ -121,7 +112,6 @@
 			{"type": "DIFF",		"value": 2500,			"color": "#02C9B3"},
 			{"type": "DIFF",		"value": 9999,			"color": "#D042F3"}	
 		]
-	}
 }
 /**
 KEY_NONE, KEY_MOUSE0, KEY_MOUSE1, KEY_MOUSE2, KEY_MOUSE3, KEY_MOUSE4, KEY_MOUSE5, KEY_MOUSE6, KEY_MOUSE7,

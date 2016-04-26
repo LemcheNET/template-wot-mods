@@ -5,7 +5,7 @@ Please refer to **[master branch](https://github.com/atterdag/atterdag-wot-mods)
 Game start logo, data synchronization icon, and sixth sense image, are all replaced with NFD own clan logo.
 
 # Download #
-Just install using the installer, which you can download here >>> [nfd-wot-mods-0.9.14.7.exe](https://dl.dropboxusercontent.com/u/11915528/wot/nfd-wot-mods-0.9.14.7.exe)
+Just install using the installer, which you can download here >>> [nfd-wot-mods-0.9.14.8.exe](https://dl.dropboxusercontent.com/u/11915528/wot/nfd-wot-mods-0.9.14.8.exe)
 
 # Screenshots #
 ## Game/garage loading ##
