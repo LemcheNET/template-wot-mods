@@ -14,11 +14,11 @@
 	|| {colorXEFF}				||	|| Dynamic color scale XVM for ER														||
 	|| {colorCOEF}				||	|| Dynamic color performance for battle damage on the current tank for COEF				||
 	|| {colorDIFF}				||	|| Dynamic color moderate damage on the server for the current battle tank for DIFF		||
-	|| {colorAVGDAMAGE}         ||  || Dynamic color according to the average damage per fight on this tank for AVGDAMAGE   ||
+	|| {colorAVGDAMAGE}		 ||  || Dynamic color according to the average damage per fight on this tank for AVGDAMAGE   ||
 	|| {WN8}					||	|| WN8 rating																			||
 	|| {EFF}					||	|| Efficiency rating (ER) for wot-news.com												||
-	|| {XWN8}					||	|| XVM range for WN8 (values ​​00-99, XX for top performance)							||
-	|| {XEFF}					||	|| XVM range for ER (values ​​00-99, XX for top performance)							||
+	|| {XWN8}					||	|| XVM range for WN8 (values ​​00-99, XX for top performance)								||
+	|| {XEFF}					||	|| XVM range for ER (values ​​00-99, XX for top performance)								||
 	|| {COEF}					||	|| Effectiveness of the battle damage on the current tank								||
 	|| {DIFF}					||	|| Average damage caused by the server that you need to cause							||
 	|| {AVGSHOTS}				||	|| Average damage caused by your number of shots										||
@@ -27,46 +27,46 @@
 	--------------------------------------------------------------------------------------------------------------------------
 */
 {
-	    "settings": {
-		    "enable": true,
-			"dragEnable": true,                   // Global Switch off and on moving the mouse
+		"settings": {
+			"enable": true,
+			"dragEnable": true, // Global Switch off and on moving the mouse
 			"reloadKey": "KEY_LALT and KEY_2",
-		    "hotKeyEnable": "KEY_LALT and KEY_1"			
+			"hotKeyEnable": "KEY_LALT and KEY_1"
 		},
 		// Text substrate configuration
-        "background": {
-		    "enable": false,
-            "alpha": 100,
-            "height": 70,
-            "image": "gui/maps/bg.png",
-            "width": 200,
-            "x": -30,
-            "y": 440
-        },
+		"background": {
+			"alpha": 100,
+			"enable": false,
+			"height": 70,
+			"image": "gui/maps/bg.png",
+			"width": 200,
+			"x": -30,
+			"y": 440
+		},
 		// Setting text shadow 
-        "shadow": {
-		    "enable": false,
-            "alpha": 50,
-            "angle": 0,
-            "color": "#000000",
-            "distance": 0,
-            "size": 40,
-            "strength": 500
-        },
+		"shadow": {
+			"alpha": 80,
+			"angle": 90,
+			"color": "#000000",
+			"distance": 3,
+			"enable": true,
+			"size": 2,
+			"strength": 200
+		},
 		// Text settings
-        "text": {
-		    "enable": true,
-			"alignX": "left", // horizontal alignment of the [left, center, right]
-            "alignY": "top",  // vertical alignment          [top, center, bottom]
-            "format": "<font color='#bdbdbd' size='13' face='$IMELanguageBar'>WN8: <font color='{colorWN8}'>{WN8}</font></font>", 
-			"x": 465,
-            "y": 5
-        },
+		"text": {
+			"alignX": "left",
+			"alignY": "top",
+			"enable": true,
+			"format": "<font color='#FFFFFF' size='15' face='$IMELanguageBar'>WN8: <font color='{colorWN8}'><b>{WN8}</b></font></font>", 
+			"x": 485.0,
+			"y": 4.0
+		},
 		// Dynamic colors for WN8 ratings, EFF, XWN8, EFF, COEF, DIFF, AVGDAMAGE
 		"colors": [
 
 			// Wotlabs rating scale
-			{"type": "WN8",			"value":	0,			"color": "#BAAAAD"}, //    0 -  299 - very bad
+			{"type": "WN8",			"value":	0,			"color": "#BAAAAD"}, //	0 -  299 - very bad
 			{"type": "WN8",			"value":  300,			"color": "#F11919"}, //  300 -  449 - bad
 			{"type": "WN8",			"value":  450,			"color": "#FF8A00"}, //  500 -  649 - below average
 			{"type": "WN8",			"value":  650,			"color": "#E6DF27"}, //  700 -  899 - average
@@ -75,14 +75,14 @@
 			{"type": "WN8",			"value": 1600,			"color": "#2AE4FF"}, // 1600 - 1999 - very good
 			{"type": "WN8",			"value": 2000,			"color": "#00A0B8"}, // 2000 - 2449 - great
 			{"type": "WN8",			"value": 2450,			"color": "#C64CFF"}, // 2450 - 2899 - unicum
-			{"type": "WN8",			"value": 2900,			"color": "#8225AD"}, // 2900 - *    - super unicum
+			{"type": "WN8",			"value": 2900,			"color": "#8225AD"}, // 2900 - *	- super unicum
 
-			{"type": "EFF",			"value": 0,	 			"color": "#FE0E00"}, //    0 - 614  - very bad	(20% of players)
+			{"type": "EFF",			"value": 0,	 			"color": "#FE0E00"}, //	0 - 614  - very bad	(20% of players)
 			{"type": "EFF",			"value": 615,			"color": "#FE7903"}, //  615 - 869  - bad		(better then 20% of players)
 			{"type": "EFF",			"value": 870,			"color": "#F8F400"}, //  870 - 1174 - normal	(better then 60% of players)
 			{"type": "EFF",			"value": 1175,			"color": "#60FF00"}, // 1175 - 1524 - good		(better then 90% of players) 
 			{"type": "EFF",			"value": 1525,			"color": "#02C9B3"}, // 1525 - 1849 - very good	(better then 99% of players)
-			{"type": "EFF",			"value": 1850,			"color": "#D042F3"}, // 1850 - *    - unique	(better then 99.9% of players)
+			{"type": "EFF",			"value": 1850,			"color": "#D042F3"}, // 1850 - *	- unique	(better then 99.9% of players)
 				
 			{"type": "XWN8",		"value": 0,		 		"color": "#FE0E00"}, // 00   - 16.5 - very bad	(20% of players)
 			{"type": "XWN8",		"value": 16.5,			"color": "#FE7903"}, // 16.5 - 33.5 - bad		(better then 20% of players)
