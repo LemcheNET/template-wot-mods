@@ -30,7 +30,7 @@
     // Смещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": -130,
     // X offset for enemies squad icons field
-    // Смещение по оси X значка взвода для противников
+    // Смещение по оси X значка взвода противников
     "squadIconOffsetXRight": -130,
     // X offset for allies player names field
     // Смещение по оси X поля ника союзников

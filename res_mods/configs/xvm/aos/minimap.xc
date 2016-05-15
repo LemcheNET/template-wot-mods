@@ -66,5 +66,5 @@
     // Minimap lines.
     // Линии на миникарте.
     "lines": ${"minimapLines.xc":"lines"}
-    }
+  }
 }
