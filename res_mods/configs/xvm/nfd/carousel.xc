@@ -19,8 +19,8 @@
     // Spacing between carousel cells.
     // Отступ между ячейками карусели.
     "padding": {
-        "horizontal": 10,   // по горизонтали
-        "vertical": 2       // по вертикали
+      "horizontal": 10,   // по горизонтали
+      "vertical": 2       // по вертикали
     },
     // Background transparency (default - 60)
     // Прозрачность подложки (по умолчанию - 60)
@@ -59,8 +59,8 @@
     // Spacing between filters cells.
     // Отступ между ячейками фильтров.
     "filtersPadding": {
-        "horizontal": 11,   // по горизонтали
-        "vertical":   10    // по вертикали
+      "horizontal": 11,   // по горизонтали
+      "vertical": 13      // по вертикали
     },
     // Standard cell elements.
     // Стандартные элементы ячеек.
@@ -90,7 +90,7 @@
       // Статусный текст (Неполный экипаж, Требуется ремонт).
       "statusText": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Status text for "Buy vehicle" and "Buy slot" slots.
-      // Статусный текст для слотов "Купить танк" и "Купить слот".
+      // Статусный текст для слотов "Купить машину" и "Купить слот".
       "statusTextBuy": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Clan lock timer
       // Таймер блокировки танка
@@ -156,7 +156,7 @@
     ],
     // Order of nations.
     // Порядок наций.
-    //"nations_order": [],
+    //"nations_order": ["ussr", "germany", "usa", "france", "uk", "china", "japan", "czech"],
     "nations_order": ["germany", "ussr", "usa", "france", "uk", "china", "japan", "czech"],
     // Order of types of vehicles.
     // Порядок классов техники.
