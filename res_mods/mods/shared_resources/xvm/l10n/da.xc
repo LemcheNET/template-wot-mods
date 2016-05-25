@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base{0} erobret af allierede!",
     "allyBaseCapture": "Base{0} erobring af fjender!",
     "allyBaseCaptured": "Base{0} erobret af fjender!",
-    "Timeleft": "Tid tilbage",
-    "Capturers": "Erobrere",
     "Hit percent": "Træfprocent",
     "Damage (assisted / own)": "Skade (assisteret / egen)",
     "BR_xpCrew": "mandskab",

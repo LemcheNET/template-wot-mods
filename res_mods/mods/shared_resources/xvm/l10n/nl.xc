@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Vijandelijke{0} basis veroverd!",
     "allyBaseCapture": "Eigen{0} basis wordt veroverd!",
     "allyBaseCaptured": "Eigen{0} basis veroverd!",
-    "Timeleft": "Tijd over",
-    "Capturers": "Veroveraars",
     "Hit percent": "Treffers percentage",
     "Damage (assisted / own)": "Schade (geassisteerd / eigen)",
     "BR_xpCrew": "bemanning",

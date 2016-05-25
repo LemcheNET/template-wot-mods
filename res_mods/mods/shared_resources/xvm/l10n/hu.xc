@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Ellenséges bázis{0} elfoglalva!",
     "allyBaseCapture": "Szövetséges bázis{0} foglalva!",
     "allyBaseCaptured": "Szövetséges bázis{0} elfoglalva!",
-    "Timeleft": "Hátralévő idő",
-    "Capturers": "Foglalók",
     "Hit percent": "Találati arány",
     "Damage (assisted / own)": "Sebzés (hozzájárulás / saját)",
     "BR_xpCrew": "legénység",

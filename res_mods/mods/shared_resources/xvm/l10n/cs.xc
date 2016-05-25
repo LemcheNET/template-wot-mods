@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Nepřátelská základna{0} obsazena!",
     "allyBaseCapture": "Obsazování spojenecké základny{0}!",
     "allyBaseCaptured": "Spojenecká základna{0} obsazena!",
-    "Timeleft": "Zbývající čas",
-    "Capturers": "Vozidel",
     "Hit percent": "Procenta zásahů",
     "Damage (assisted / own)": "Poškození (asistence / vlastní)",
     "BR_xpCrew": "posádka",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base nemica {0} conquistata!",
     "allyBaseCapture": "Il nemico sta conquistando la base {0}!",
     "allyBaseCaptured": "Il nemico ha conquistato la base {0}!",
-    "Timeleft": "Tempo Rimasto",
-    "Capturers": "Invasori",
     "Hit percent": "Percentuale colpi",
     "Damage (assisted / own)": "Danno (assist / propri)",
     "BR_xpCrew": "truppa",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Baza{0} osvojena!",
     "allyBaseCapture": "Neprijatelj zauzima bazu{0} !",
     "allyBaseCaptured": "Neprijatelj je osvojio bazu{0} !",
-    "Timeleft": "Vremena preostalo",
-    "Capturers": "Tenkova u bazi",
     "Hit percent": "Procenat pogodaka",
     "Damage (assisted / own)": "Šteta (asistirano / lično)",
     "BR_xpCrew": "posada",

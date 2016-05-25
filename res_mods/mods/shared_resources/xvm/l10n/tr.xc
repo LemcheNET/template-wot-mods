@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "Kalan Süre",
-    "Capturers": "İşgalciler",
     "Hit percent": "Vuruş yüzdesi",
     "Damage (assisted / own)": "Savaş seviyesi",
     "BR_xpCrew": "",

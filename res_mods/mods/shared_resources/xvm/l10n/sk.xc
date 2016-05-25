@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "Čas",
-    "Capturers": "Vozidiel",
     "Hit percent": "Zásahov v percentách",
     "Damage (assisted / own)": "Poškodenie (asistencia / vlastné)",
     "BR_xpCrew": "",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "剩余时间",
-    "Capturers": "入侵人数",
     "Hit percent": "命中率",
     "Damage (assisted / own)": "伤害 (助攻 / 主攻)",
     "BR_xpCrew": "",

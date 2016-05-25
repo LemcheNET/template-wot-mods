@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Feindliche Basis{0} wurde erobert!",
     "allyBaseCapture": "Eigene Basis{0} wird eingenommen!",
     "allyBaseCaptured": "Eigene Basis{0} verloren!",
-    "Timeleft": "Verbleibende Zeit",
-    "Capturers": "Panzer",
     "Hit percent": "Trefferquote",
     "Damage (assisted / own)": "Schaden (ermöglicht / verursacht)",
     "BR_xpCrew": "Besatzung",

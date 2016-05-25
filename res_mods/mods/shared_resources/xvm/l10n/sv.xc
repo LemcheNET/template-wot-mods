@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "Tid kvar",
-    "Capturers": "Erövrare",
     "Hit percent": "Träffprocent",
     "Damage (assisted / own)": "Skada (assisterad / egen)",
     "BR_xpCrew": "",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "{0} 佔領敵軍基地中!",
     "allyBaseCapture": "{0} 敵軍佔領基地中!",
     "allyBaseCaptured": "{0} 失敗! 自軍基地已淪陷!",
-    "Timeleft": "剩餘時間",
-    "Capturers": "基地佔領點數",
     "Hit percent": "命中率",
     "Damage (assisted / own)": "傷害 (輔助 / 輸出)",
     "BR_xpCrew": "",

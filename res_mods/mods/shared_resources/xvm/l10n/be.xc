@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Варожая база{0} захоплена!",
     "allyBaseCapture": "Захоп нашай базы{0} !",
     "allyBaseCaptured": "Нашую базу{0} захапілі!",
-    "Timeleft": "Засталося часу",
-    "Capturers": "Захопнікаў",
     "Hit percent": "Выніковасць траплянняў",
     "Damage (assisted / own)": "Пашкоджанні (з вашай дапамогай / свае)",
     "BR_xpCrew": "экіпажу",

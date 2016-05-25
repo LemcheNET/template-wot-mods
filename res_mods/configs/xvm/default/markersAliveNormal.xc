@@ -131,15 +131,15 @@
       },
       "format": "{{hp}} / {{hp-max}}"
     },
-    // Text field with the XMQP event.
-    // Текстовое поле с событием XMQP.
+    // Text field with the XMQP event marker.
+    // Текстовое поле с маркером события XMQP.
     "xmqpEvent": {
       "name": "xmqp event",           //  название текстового поля, ни на что не влияет
       "visible": true,                //  false - не отображать
       "x": 0,                         //  положение по оси X
-      "y": -55,                       //  положение по оси Y
-      "alpha": "{{x-overturned?100|{{x-spotted?100|50}}}}",  //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
-      "color": "{{x-overturned?0xFFBB00|{{x-spotted?0xFFBB00|0xFFFFFF}}}}",  //  цвет (допускается использование динамического цвета, см. macros.txt)
+      "y": "{{battletype?-71|{{squad?-71|-56}}}}",  //  положение по оси Y
+      "alpha": 100,                   //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "color": "0xFFBB00",            //  цвет (допускается использование динамического цвета, см. macros.txt)
       "font": {                       //  параметры шрифта
         "name": "xvm",                //  название
         "size": 23,                   //  размер
@@ -155,7 +155,7 @@
         "size": 4,                    //  размер
         "strength": 100               //  интенсивность
       },
-      "format": "{{x-overturned?&#x112;|{{x-spotted?&#x70;|{{x-enabled?{{x-sense-on?&#x70;}}}}}}}}"  //  формат текста. См. описание макросов в macros.txt
+      "format": "<font color='{{x-spotted?#FFBB00|#FFFFFF}}' alpha='{{x-spotted?#FF|#80}}'>{{x-spotted?&#x70;|{{x-sense-on?&#x70;}}}}</font> {{x-overturned?&#x112;}}"  //  формат текста. См. описание макросов в macros.txt
     }
   },
   // Настройки для союзников.

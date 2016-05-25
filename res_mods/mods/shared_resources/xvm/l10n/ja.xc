@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "敵陣地{0}の占領を完了!",
     "allyBaseCapture": "味方陣地{0}が敵により占領中!",
     "allyBaseCaptured": "味方陣地{0}が敵により占領されました!",
-    "Timeleft": "残り時間",
-    "Capturers": "車両数",
     "Hit percent": "命中率",
     "Damage (assisted / own)": "ダメージ (アシスト / 直接)",
     "BR_xpCrew": "搭乗員",

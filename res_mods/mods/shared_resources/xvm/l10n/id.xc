@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base{0} Sudah dikuasai oleh teman se-tim!",
     "allyBaseCapture": "Base{0} akan dikuasai oleh musuh!",
     "allyBaseCaptured": "Base{0} sudah dikuasai oleh musuh!",
-    "Timeleft": "Waktu tersisa",
-    "Capturers": "Para penangkap ",
     "Hit percent": "Persen tembakan",
     "Damage (assisted / own)": "Kerusakan (Dibantu/Punya sendiri)",
     "BR_xpCrew": "krew",

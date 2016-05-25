@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "ბაზა{0} დაიპყრეს მოკავშირეებმა!",
     "allyBaseCapture": "ბაზა{0} დაიპყრო მოწინააღმდეგემ!",
     "allyBaseCaptured": "ბაზას{0} იპყრობს მოწინააღმდე!",
-    "Timeleft": "დარჩა",
-    "Capturers": "დაპყრობელი",
     "Hit percent": "გარტყმის პროცენტი",
     "Damage (assisted / own)": "ზიანი (თქვენი დახმარებით / საკუთარი)",
     "BR_xpCrew": "ეკიპაჟი",

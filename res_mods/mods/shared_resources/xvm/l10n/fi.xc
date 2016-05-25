@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Omat valtasivat tukikohdan {0}!",
     "allyBaseCapture": "Viholliset valtaavat tukikohtaa {0}!",
     "allyBaseCaptured": "Viholliset valtasivat tukikohdan {0}!",
-    "Timeleft": "Aikaa jäljellä",
-    "Capturers": "Valtaajia",
     "Hit percent": "Osumaprosentti",
     "Damage (assisted / own)": "Vahinko (avustettu / aiheutettu)",
     "BR_xpCrew": "miehistö",

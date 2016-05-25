@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "",
-    "Capturers": "",
     "Hit percent": "",
     "Damage (assisted / own)": "",
     "BR_xpCrew": "",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base capturada pelos aliados!",
     "allyBaseCapture": "Captura da base pelos inimigos!",
     "allyBaseCaptured": "Base capturada pelos inimigos!",
-    "Timeleft": "Tempo restante",
-    "Capturers": "Captores",
     "Hit percent": "Taxa de acertos",
     "Damage (assisted / own)": "Dano (assistência / próprio)",
     "BR_xpCrew": "",

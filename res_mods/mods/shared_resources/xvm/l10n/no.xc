@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base{0} overtatt av allierte!",
     "allyBaseCapture": "Base{0} overtakelse av fienden!",
     "allyBaseCaptured": "Base{0} overtatt av fienden!",
-    "Timeleft": "Tid Igjen",
-    "Capturers": "Overtagere",
     "Hit percent": "Treffprosent",
     "Damage (assisted / own)": "Skade (assistert / egen)",
     "BR_xpCrew": "besetning",

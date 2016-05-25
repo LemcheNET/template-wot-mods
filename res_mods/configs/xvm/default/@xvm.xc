@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "08.05.2016",
+    "date": "24.05.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.14.1",
+    "gameVersion": "0.9.15",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.2.2.1"
+    "modMinVersion": "6.3.0"
   },
 
   // Parameters for login screen.
@@ -179,5 +179,9 @@
 
   // Extra sounds settings
   // Настройки дополнительных звуков
-  "sounds": ${"sounds.xc":"sounds"}
+  "sounds": ${"sounds.xc":"sounds"},
+
+  // XMQP services settings
+  // Настройки сервисов XMQP
+  "xmqp": ${"xmqp.xc":"xmqp"}
 }

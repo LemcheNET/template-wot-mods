@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Baza {0} este capturata de aliati!",
     "allyBaseCapture": "Baza{0} se captureaza de inamici!",
     "allyBaseCaptured": "Baza{0} este capturata de inamici!",
-    "Timeleft": "Timp rămas",
-    "Capturers": "Capturează",
     "Hit percent": "Lovituri",
     "Damage (assisted / own)": "Avarii (asistat / propriu)",
     "BR_xpCrew": "echipaj",

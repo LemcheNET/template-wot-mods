@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "База{0} захоплена союзниками!",
     "allyBaseCapture": "Захоплення бази{0} ворогами!",
     "allyBaseCaptured": "База{0} захоплена ворогами!",
-    "Timeleft": "Залишилось",
-    "Capturers": "Машин на захопленні",
     "Hit percent": "Відсоток влучень",
     "Damage (assisted / own)": "Завдана шкода (з вашою допомогою/своя)",
     "BR_xpCrew": "екіпажу",

@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "적 점령지를 점령했습니다!",
     "allyBaseCapture": "적이 아군 점령지를 점령중!",
     "allyBaseCaptured": "아군 점령지가 함락되었습니다!",
-    "Timeleft": "남은 시간",
-    "Capturers": "점령 인원",
     "Hit percent": "명중률",
     "Damage (assisted / own)": "입힌 데미지 (어시스트 / 직접)",
     "BR_xpCrew": "승무원",

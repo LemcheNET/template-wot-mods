@@ -50,8 +50,6 @@
     "enemyBaseCaptured": "База{0} захвачена союзниками!",
     "allyBaseCapture": "Захват базы{0} врагами!",
     "allyBaseCaptured": "База{0} захвачена врагами!",
-    "Timeleft": "Осталось",
-    "Capturers": "Захватчиков",
 
     // BattleResults
     "Hit percent": "Процент попаданий",

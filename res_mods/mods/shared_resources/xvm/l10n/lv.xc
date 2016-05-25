@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Pretinieka bāze{0} ieņemta!",
     "allyBaseCapture": "Sabiedroto bāzes{0} ieņemšana!",
     "allyBaseCaptured": "Sabiedroto bāze{0} ieņemta!",
-    "Timeleft": "Atlicis",
-    "Capturers": "Iebrucēji",
     "Hit percent": "Trāpījumu procents",
     "Damage (assisted / own)": "Bojājumi (asistētie / mani)",
     "BR_xpCrew": "apkalpe",

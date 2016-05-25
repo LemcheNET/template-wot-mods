@@ -38,7 +38,6 @@
     ${"sirmax-snippet-test.xc":"."}
   ],
   "login": {
-    //"skipIntro": false,
     "saveLastServer": true,
     "autologin": true,
     "confirmOldReplays": true,
@@ -100,7 +99,6 @@
     "minimapDeadSwitch": true,
     "camera": {
       "enabled": true,
-      "noScroll": true,
       "arcade": {
         "distRange": [2, 50],
         "startDist": 30,
@@ -144,9 +142,22 @@
   },
   "captureBar": {
     //"enabled": false,
-    //"allyColor": "0xFFFF00",
-    //"enemyColor": "0x00FFFF",
-    //"ally": { "primaryTitleFormat":   "<font size='15' color='#FFFFFF'>{0} {{extra}}</font>" },
+    //"distanceOffset": -20,
+    //"hideProgressBar": true,
+    "enemy": {
+      "title": {
+        //"format": "<font size='15' color='#FFFFFF'>{{l10n:allyBaseCapture}}</font>"
+      },
+      "players": {
+        //"format": "<font color='#FFCC66'><font size='15' face='xvm'>&#x113;</font>  <b>{{cap.tanks}}</b></font>"
+      },
+      "timer": {
+        //"format": "<font color='#FFCC66'><font size='15' face='xvm'>&#x114;</font>  <b>{{cap.time}}</b></font>"
+      },
+      "points": {
+        //"format": "<font size='15' color='#FFFFFF'>{{cap.points}}</font>"
+      }
+    },
     "__stub__": null
   },
   "battleLoading": {
@@ -320,13 +331,16 @@
       //"xvm_sixthSenseRudy": "",
       //"xvm_fireAlert": "",
       //"xvm_ammoBay": "",
-      //"xvm_enemySighted": "enemySighted",      
+      //"xvm_enemySighted": "enemySighted",
       //"carousel": "",
       "__stub__": null
     }
   },
+  "xmqp": {
+    //"minimapClicksColor": null,
+    "minimapClicksTime": 7
+  },
   "consts": {
-      "VM_COEFF_VMM_DEAD": 0.75,
-      "X_MINIMAP_COLOR": "0xFF9000"
+      "VM_COEFF_VMM_DEAD": 0.75
   }
 }

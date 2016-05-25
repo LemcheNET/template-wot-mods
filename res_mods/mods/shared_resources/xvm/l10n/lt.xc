@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Saviškiai užgrobė bazę!",
     "allyBaseCapture": "Priešai puola bazę{0}!",
     "allyBaseCaptured": "Priešai užgrobė bazę{0}!",
-    "Timeleft": "Liko laiko",
-    "Capturers": "Puolėjų",
     "Hit percent": "Pataikymo procentas",
     "Damage (assisted / own)": "Žala (pagalbinė / sava)",
     "BR_xpCrew": "įgula",

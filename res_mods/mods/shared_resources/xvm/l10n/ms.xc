@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "",
     "allyBaseCapture": "",
     "allyBaseCaptured": "",
-    "Timeleft": "Baki Masa",
-    "Capturers": "Penawan",
     "Hit percent": "Peratus kena",
     "Damage (assisted / own)": "Kerosakan (bantuan / sendiri)",
     "BR_xpCrew": "",

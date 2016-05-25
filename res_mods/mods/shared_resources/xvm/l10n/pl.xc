@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Baza{0} zdobyta przez sojuszników!",
     "allyBaseCapture": "Baza{0} opanowywana przez przeciwników!",
     "allyBaseCaptured": "Baza{0} zdobyta przez przeciwników!",
-    "Timeleft": "Pozostało czasu",
-    "Capturers": "Okupantów",
     "Hit percent": "Procent trafień",
     "Damage (assisted / own)": "Obrażenia (asysta / własne)",
     "BR_xpCrew": "załoga",

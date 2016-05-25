@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Vaenlaste baas{0} on vallutatud!",
     "allyBaseCapture": "Sinu baasi{0} vallutus!",
     "allyBaseCaptured": "Sinu baas{0} on vallutatud!",
-    "Timeleft": "Aega jäänud",
-    "Capturers": "Vallutajaid",
     "Hit percent": "Tabamus",
     "Damage (assisted / own)": "Kahju (abistatud / enda)",
     "BR_xpCrew": "meeskond",

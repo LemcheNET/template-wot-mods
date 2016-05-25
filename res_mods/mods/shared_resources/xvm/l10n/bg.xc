@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Противниковата база{0} е завладяна!",
     "allyBaseCapture": "Противникът завладява базата ни{0}!",
     "allyBaseCaptured": "Базата ни{0} е завладяна!",
-    "Timeleft": "Оставащо време",
-    "Capturers": "Завладяващи",
     "Hit percent": "Процент попадения",
     "Damage (assisted / own)": "Щети (с ваша помощ / ваши)",
     "BR_xpCrew": "екипаж",

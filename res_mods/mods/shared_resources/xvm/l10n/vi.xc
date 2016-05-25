@@ -38,8 +38,6 @@
     "enemyBaseCaptured": "Base{0} đã bị phe ta chiếm!",
     "allyBaseCapture": "Base{0} đang bị phe địch chiếm!",
     "allyBaseCaptured": "Base{0} đã bị phe địch chiếm!",
-    "Timeleft": "Còn lại",
-    "Capturers": "Xe chiếm",
     "Hit percent": "Tỉ lệ trúng",
     "Damage (assisted / own)": "Sát thương (hỗ trợ / bản thân)",
     "BR_xpCrew": "kíp lái",
