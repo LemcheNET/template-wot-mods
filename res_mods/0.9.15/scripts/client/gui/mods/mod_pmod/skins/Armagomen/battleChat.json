@@ -1,0 +1,12 @@
+/**
+ * Скин: Armagomen
+ * Обновление: http://armagomen.tk  http://enterport.tk/news/armagomen_wot/1-0-29
+ */
+
+"battleChat": {
+	"resultInformer": {
+		"resultWin":    "<font color='#EEEEEE' size='15'><p>&nbsp;<font face='Impact' color='#60FF00' size='16'><i>{{Map}}</i>&nbsp;</font>&nbsp;&nbsp;<font size='16' face='Impact' color='#5A91D2'><i>{{VehicleLocalNameShort}}</i></font></p><p>&nbsp;<b>{{XP}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' />&nbsp;&nbsp;&nbsp;<b>{{Credits}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/credits.png' width='15' height='15' vspace='0' /></p></font>",
+		"resultDraw":   "<font color='#EEEEEE' size='15'><p>&nbsp;<font face='Impact' color='#E46003' size='16'><i>{{Map}}</i>&nbsp;</font>&nbsp;&nbsp;<font size='16' face='Impact' color='#5A91D2'><i>{{VehicleLocalNameShort}}</i></font></p><p>&nbsp;<b>{{XP}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' />&nbsp;&nbsp;&nbsp;<b>{{Credits}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/credits.png' width='15' height='15' vspace='0' /></p></font>",
+		"resultDefeat": "<font color='#EEEEEE' size='15'><p>&nbsp;<font face='Impact' color='#CC0000' size='16'><i>{{Map}}</i>&nbsp;</font>&nbsp;&nbsp;<font size='16' face='Impact' color='#5A91D2'><i>{{VehicleLocalNameShort}}</i></font></p><p>&nbsp;<b>{{XP}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' />&nbsp;&nbsp;&nbsp;<b>{{Credits}}</b>&nbsp;<img src='img://scripts/client/gui/mods/mod_pmod/skins/Armagomen/images/credits.png' width='15' height='15' vspace='0' /></p></font>"
+	}
+}

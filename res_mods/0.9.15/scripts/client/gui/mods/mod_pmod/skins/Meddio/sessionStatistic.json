@@ -1,0 +1,87 @@
+/**
+ * Скин: Meddio A.11.1 (подготовлен для PMOD 0.9.3 #11)
+ * Описание, инструкция по настройке:
+ * http://forum.worldoftanks.ru/index.php?/topic/1172523-/page__st__1980__pid__30837799#entry30837799
+ * http://www.koreanrandom.com/forum/topic/14360-/page-12#entry176082
+ */
+ 
+ "sessionStatistic": {
+	"needBattleToProcess": "<p align='center'><font size='7'> </font>\n<font size='17'><b>PMOD\nСессионная статистика</b></font>{{spacer_welcome_small}}Для отображения изменений нужно провести хотя бы один бой!\n\n<font size='12' color='#1b1b0d'>PMOD {{CurrentVersion}}     скин: Meddio A.11.0</font></p>",
+	"messageBackground": {
+		"enable": true,
+		"path":            "../../scripts/client/gui/mods/mod_pmod/skins/Meddio/images/background_default.png",
+		"pathNullBattles": "../../scripts/client/gui/mods/mod_pmod/skins/Meddio/images/background_default.png"
+	},
+	"messageIcon": {
+		"enable" : false,
+		"path":            "../maps/icons/library/PersonalAchievementsIcon-1.png",
+		"pathNullBattles": "../maps/icons/library/PersonalAchievementsIcon-1.png"
+	},
+	"resetButton": {
+		"enable": true,
+		"label": "Сброс",
+		"type": "black",
+		"width": 200
+	},
+	
+	"template":[
+		"<font size='13' color='{{color_text}}'>",
+		
+		// Для выбора шапки раскомментируйте нужную строчку:
+			
+		//	${"mod_pmod/skins/Meddio/_header5.json"},  // 5 колонок в шапке (WN7, WN8, РЭ, процент побед, уровень техники/боев)
+			${"mod_pmod/skins/Meddio/_header4.json"},  // 4 колонки в шапке (WN7, WN8, РЭ, уровень техники/боев), процент побед - отдельной строкой
+			
+			"<textformat tabstops='[89,106,163,180]' leading='1'>",
+			
+				"Победы<tab><tab><font color='{{color_item}}'>{{Wins}}</font> / <font color='{{color_item}}'>{{Battles}}</font><tab>{{arrow_winrate}}<tab><font color='{{c:WinRate}}'>{{WinRate}}%</font>{{line_hard}}",
+				"Полный опыт<tab>{{image_xp}}<tab><font color='{{color_item}}'>{{XP}}</font><tab><tab><font color='{{c:AvgXP}}'>{{AvgXP}}</font>{{line_soft}}",
+				"Чистый опыт<tab>{{image_original_xp}}<tab><font color='{{color_item}}'>{{OriginalXP}}</font><tab>{{arrow_xp}}<tab><font color='{{c:AvgOriginalXP}}'>{{AvgOriginalXP}}</font>{{line_soft}}",
+				"Свободный опыт<tab>{{image_free_xp}}<tab><font color='{{color_item}}'>{{FreeXP}}</font><tab>{{image_free_xp}}<tab><font color='{{color_item}}'>{{AvgFreeXP}}</font>{{line_hard}}",
+
+				"Урон<tab><tab><font color='{{color_item}}'>{{DamageDealt}}</font><tab>{{arrow_damage_dealt}}<tab><font color='{{c:AvgDamageDealt}}'>{{AvgDamageDealt}}</font>{{line_soft}}",
+				"Урон с помощью<tab><tab><font color='{{color_item}}'>{{DamageAssisted}}</font><tab><tab><font color='{{color_item}}'>{{AvgDamageAssisted}}</font>{{line_soft}}",
+				"Попадания<tab><tab><font color='{{color_item}}'>{{Hits}}</font> / <font color='{{color_item}}'>{{Shots}}</font><tab><tab><font color='{{c:HitsRate}}'>{{HitsRate}}%</font>{{line_soft}}",
+				"Повреждения<tab><tab><font color='{{color_item}}'>{{Piercings}}</font> / <font color='{{color_item}}'>{{Hits}}</font><tab><tab><font color='{{c:EffHitsRate}}'>{{EffHitsRate}}%</font>{{line_hard}}",
+
+				"Уничтожено<tab><tab><font color='{{color_item}}'>{{Frags}}</font><tab>{{arrow_frags}}<tab><font color='{{c:AvgFrags}}'>{{AvgFrags}}</font>{{line_soft}}",
+				"Обнаружено<tab><tab><font color='{{color_item}}'>{{SpottedEnemies}}</font><tab>{{arrow_spotted_enemies}}<tab><font color='{{c:AvgSpottedEnemies}}'>{{AvgSpottedEnemies}}</font>{{line_soft}}",
+				"Очки захвата<tab><tab><font color='{{color_item}}'>{{CapturePoints}}</font><tab>{{arrow_capture}}<tab><font color='{{c:AvgCapturePoints}}'>{{AvgCapturePoints}}</font>{{line_soft}}",
+				"Очки защиты<tab><tab><font color='{{color_item}}'>{{DroppedCapturePoints}}</font><tab>{{arrow_dropped_capture}}<tab><font color='{{c:AvgDroppedCapturePoints}}'>{{AvgDroppedCapturePoints}}</font>{{line_hard}}",
+
+			// Если возникает переполнение в строках с финансами, раскомментируйте следующую строку (удалите //)
+			//	"</textformat><textformat tabstops='[65,82,150,167]' leading='1'>",
+
+				"Доход<tab>{{image_credits}}<tab><font color='{{c:Credits}}'>{{Credits}}</font><tab>{{image_credits}}<tab><font color='{{c:AvgCredits}}'>{{AvgCredits}}</font>{{line_soft}}",
+				"Прибыль<tab>{{image_credits}}<tab><font color='{{c:PureCredits}}'>{{PureCredits}}</font><tab>{{image_credits}}<tab><font color='{{c:AvgPureCredits}}'>{{AvgPureCredits}}</font>{{line_hard}}",
+
+				"Баланс<tab>{{image_credits}}<tab><font color='{{c:AccountCredits}}'>{{AccountCredits}}</font><tab>{{image_gold}}<tab><font color='{{c:AccountGold}}'>{{AccountGold}}</font>{{line_hard}}",
+
+			"</textformat>",
+		"</font>"
+	],	
+	
+	${"mod_pmod/skins/Meddio/_colors.json"},
+	"userMacros": {
+		"color_text": "#A09C94",
+		"color_item": "#DDDDCA",
+		"line_hard":             "\n<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/pixel_04.png' height='1' width='219'>\n",
+		"line_regular":          "\n<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/pixel_04.png' height='1' width='219'>\n",
+		"line_soft":             "\n<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/pixel_03.png' height='1' width='219'>\n",
+		"spacer_header":         "\n<font size='4'> </font>\n",
+		"spacer_welcome_large":  "\n<font size='44'> </font>\n",
+		"spacer_welcome_small":  "\n<font size='15'> </font>\n",
+		"image_credits":         "<img src='img://gui/maps/icons/library/CreditsIcon-2.png' width='16' height='16' align='baseline' vspace='-4'>",
+		"image_gold":            "<img src='img://gui/maps/icons/library/GoldIcon-2.png'    width='16' height='16' align='baseline' vspace='-4'>",
+		"image_xp":              "<img src='img://gui/maps/icons/library/multyXp.png'       width='16' height='16' align='baseline' vspace='-3'>",
+		"image_original_xp":     "<img src='img://gui/maps/icons/library/XpIcon-1.png'      width='16' height='16' align='baseline' vspace='-3'>",
+		"image_free_xp":         "<img src='img://gui/maps/icons/library/FreeXpIcon-1.png'  width='16' height='16' align='baseline' vspace='-3'>",
+		"arrow_winrate":         "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffWinrate}}.png'                 width='16' height='16' vspace='-4'>",
+		"arrow_xp":              "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgXP}}.png'                   width='16' height='16' vspace='-4'>",
+		"arrow_damage_dealt":    "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgDamageDealt}}.png'          width='16' height='16' vspace='-4'>",
+		"arrow_spotted_enemies": "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgSpottedEnemies}}.png'       width='16' height='16' vspace='-4'>",
+		"arrow_frags":           "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgFrags}}.png'                width='16' height='16' vspace='-4'>",
+		"arrow_capture":         "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgCapturePoints}}.png'        width='16' height='16' vspace='-4'>",
+		"arrow_dropped_capture": "<img src='img://scripts/client/gui/mods/mod_pmod/skins/Meddio/images/{{c:DiffAvgDroppedCapturePoints}}.png' width='16' height='16' vspace='-4'>"
+	}
+}
