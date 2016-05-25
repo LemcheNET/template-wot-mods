@@ -10,7 +10,7 @@
 	<hotKey>KEY_F11</hotKey>
 	
 	<!-- Disable Spotted Mod in Battle Types-->
-	<disableInRandomBattle>false</disableInRandomBattle>
+	<disableInRandomBattle>true</disableInRandomBattle>
 	<disableInTrainingBattle>false</disableInTrainingBattle>
 	<disableInCompanyBattle>false</disableInCompanyBattle>
 	<disableInCybersportBattles>false</disableInCybersportBattles>
@@ -31,7 +31,7 @@
 	<useSquadChat>true</useSquadChat>
 	
 	<!-- Call HELPME Command when Spotted -->
-	<helpMeCommand>false</helpMeCommand>
+	<helpMeCommand>true</helpMeCommand>
 	
 	<!-- Displayed Spotted Message -->
 	<spottedMessage>Im Spotted at {cell}!</spottedMessage>
