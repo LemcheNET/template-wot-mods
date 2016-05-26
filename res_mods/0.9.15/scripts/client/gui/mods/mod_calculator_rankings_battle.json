@@ -1,114 +1,116 @@
 ﻿/*
-	Название модификации - Calculator_rankings_battle
-	Версия игрового клиента - 0.9.13
-	Автор модификации - Ekspoint
-	Автор конфига - NooBooL
+	Modification name - Calculator_rankings_battle
+	Game client version - 0.9.14.1
+	Modification author - Ekspoint
+	Configuration author - atterdag
 */
 /*
-    --------------------------------------------------------------------------------------------------------------------------
-	||           Макросы        ||  ||                        Описание                                                      ||
 	--------------------------------------------------------------------------------------------------------------------------
-    || {colorWN8}               ||  || динамический цвет по WN8                                                             ||
-	|| {colorEFF}               ||  || динамический цвет по рейтингу эффективности (РЭ)                                     ||
-	|| {colorXWN8}              ||  || динамический цвет по шкале XVM для WN8                                               ||     
-	|| {colorXEFF}              ||  || динамический цвет по шкале XVM для РЭ                                                ||
-    || {colorCOEF}              ||  || динамический цвет по эффективность урона за бой на текущем танке для COEF            ||	
-	|| {colorDIFF}              ||  || динамический цвет по среднему урону на сервере за бой на текущем танке для DIFF      ||
-	|| {colorAVGDAMAGE}         ||  || динамический цвет по среднему урону за бой на текущем танке для AVGDAMAGE            ||
-	|| {WN8}                    ||  || рейтинг WN8                                                                          ||
-	|| {EFF}                    ||  || рейтинг эффективности (РЭ) по wot-news.com                                           ||     
-	|| {XWN8}                   ||  || шкала XVM для WN8 (значения 00-99, XX для топовых показателей)                       ||                    
-	|| {XEFF}                   ||  || шкала XVM для РЭ  (значения 00-99, XX для топовых показателей)                       || 
-    || {COEF}                   ||  || эффективность урона за бой на текущем танке                                          ||
-    || {DIFF}                   ||  || средний нанесенный урон по серверу который вы должны нанести                         ||
-    || {AVGSHOTS}               ||  || эффективность среднего урона за выстрел                                              ||	 
-    || {AVGDAMAGE}              ||	|| средний нанесенный урону за бой на текущем танке	                                    ||	
-	|| {DAMAGE}                 ||  || общий нанесенный урон                                                                ||
-	|| {MAINGUN}                ||  || основной калибр                                                                      ||
+	||		   Macro			||	||						Description														||
+	--------------------------------------------------------------------------------------------------------------------------
+	|| {colorWN8}				||	|| Dynamic color WN8																	||
+	|| {colorEFF}				||	|| Dynamic color rated efficiency (RE)													||
+	|| {colorXWN8}				||	|| Dynamic color scale for XVM WN8														||
+	|| {colorXEFF}				||	|| Dynamic color scale XVM for ER														||
+	|| {colorCOEF}				||	|| Dynamic color performance for battle damage on the current tank for COEF				||
+	|| {colorDIFF}				||	|| Dynamic color moderate damage on the server for the current battle tank for DIFF		||
+	|| {colorAVGDAMAGE}		 ||  || Dynamic color according to the average damage per fight on this tank for AVGDAMAGE   ||
+	|| {WN8}					||	|| WN8 rating																			||
+	|| {EFF}					||	|| Efficiency rating (ER) for wot-news.com												||
+	|| {XWN8}					||	|| XVM range for WN8 (values ​​00-99, XX for top performance)								||
+	|| {XEFF}					||	|| XVM range for ER (values ​​00-99, XX for top performance)								||
+	|| {COEF}					||	|| Effectiveness of the battle damage on the current tank								||
+	|| {DIFF}					||	|| Average damage caused by the server that you need to cause							||
+	|| {AVGSHOTS}				||	|| Average damage caused by your number of shots										||
+	|| {AVGDAMAGE}				||	|| Medium Damage for battle on the current tank											||
+	|| {DAMAGE}					||	|| Total damage caused																	||
 	--------------------------------------------------------------------------------------------------------------------------
 */
 {
-	    "settings": {
-		    "enable": true,
-			"dragEnable": true,                   // глобальный переключатель выключение и включение перемещения мышкой
+		"settings": {
+			"enable": true,
+			"dragEnable": true, // Global Switch off and on moving the mouse
 			"reloadKey": "KEY_LALT and KEY_2",
-		    "hotKeyEnable": "KEY_LALT and KEY_1"			
+			"hotKeyEnable": "KEY_LALT and KEY_1"
 		},
-		// настройки подложки текста
-        "background": {
-		    "enable": false,
-            "alpha": 100,
-            "height": 70,
-            "image": "gui/maps/bg.png",
-            "width": 200,
-            "x": -30,
-            "y": 440
-        },
-		// настройки тени текста 
-        "shadow": {
-		    "enable": true,
-            "alpha": 100,
-            "angle": 90,
-            "color": "#000000",
-            "distance": 0,
-            "size": 2,
-            "strength": 200
-        },
-		// настройки текста
-        "text": {
-		    "enable": true,
-			"alignX": "left", // горизонтальное выравнивание [left, center, right]
-            "alignY": "top",  // вертикальное выравнивания   [top, center, bottom]
-            "format": "<font color='#bdbdbd' size='15' face='$IMELanguageBar'>WN8: <font color='{colorWN8}'>{WN8}</font></font>", 
-			"x": 10,
-            "y": 18
-        },
-		// динамические цвета для рейтенгов WN8, EFF, XWN8, XEFF, COEF, DIFF, AVGDAMAGE
+		// Text substrate configuration
+		"background": {
+			"alpha": 100,
+			"enable": false,
+			"height": 70,
+			"image": "gui/maps/bg.png",
+			"width": 200,
+			"x": -30,
+			"y": 440
+		},
+		// Setting text shadow 
+		"shadow": {
+			"alpha": 80,
+			"angle": 90,
+			"color": "#000000",
+			"distance": 3,
+			"enable": true,
+			"size": 2,
+			"strength": 200
+		},
+		// Text settings
+		"text": {
+			"alignX": "left",
+			"alignY": "top",
+			"enable": true,
+			"format": "<font color='#FFFFFF' size='15' face='$IMELanguageBar'>WN8: <font color='{colorWN8}'><b>{WN8}</b></font></font>", 
+			"x": 485.0,
+			"y": 4.0
+		},
+		// Dynamic colors for WN8 ratings, EFF, XWN8, EFF, COEF, DIFF, AVGDAMAGE
 		"colors": [
-		    {"type": "WN8",		    "value": 0,             "color": "#FE0E00"}, //    0 - 379  - very bad   (20% of players)			
-	        {"type": "WN8",		    "value": 380,			"color": "#FE7903"}, //  380 - 859  - bad        (better then 20% of players)
-	        {"type": "WN8",		    "value": 860,			"color": "#F8F400"}, //  860 - 1419 - normal     (better then 60% of players)
-	        {"type": "WN8",		    "value": 1420,			"color": "#60FF00"}, // 1420 - 2104 - good       (better then 90% of players)
-	        {"type": "WN8",		    "value": 2105,			"color": "#02C9B3"}, // 2105 - 2769 - very good  (better then 99% of players)
-	        {"type": "WN8",		    "value": 2770,			"color": "#D042F3"}, // 2770 - *    - unique     (better then 99.9% of players)
 
-	        {"type": "EFF",		    "value": 0,     	    "color": "#FE0E00"}, //    0 - 614  - very bad   (20% of players)			
-	        {"type": "EFF",		    "value": 615,			"color": "#FE7903"}, //  615 - 869  - bad        (better then 20% of players)
-	        {"type": "EFF",		    "value": 870,			"color": "#F8F400"}, //  870 - 1174 - normal     (better then 60% of players)
-	        {"type": "EFF",		    "value": 1175,			"color": "#60FF00"}, // 1175 - 1524 - good       (better then 90% of players) 
-	        {"type": "EFF",	    	"value": 1525,			"color": "#02C9B3"}, // 1525 - 1849 - very good  (better then 99% of players)
-	        {"type": "EFF",	    	"value": 1850,			"color": "#D042F3"}, // 1850 - *    - unique     (better then 99.9% of players)
+			// Wotlabs rating scale
+			{"type": "WN8",			"value":	0,			"color": "#BAAAAD"}, //	0 -  299 - very bad
+			{"type": "WN8",			"value":  300,			"color": "#F11919"}, //  300 -  449 - bad
+			{"type": "WN8",			"value":  450,			"color": "#FF8A00"}, //  500 -  649 - below average
+			{"type": "WN8",			"value":  650,			"color": "#E6DF27"}, //  700 -  899 - average
+			{"type": "WN8",			"value":  900,			"color": "#77E812"}, //  900 - 1199 - above average
+			{"type": "WN8",			"value": 1200,			"color": "#459300"}, // 1200 - 1599 - good
+			{"type": "WN8",			"value": 1600,			"color": "#2AE4FF"}, // 1600 - 1999 - very good
+			{"type": "WN8",			"value": 2000,			"color": "#00A0B8"}, // 2000 - 2449 - great
+			{"type": "WN8",			"value": 2450,			"color": "#C64CFF"}, // 2450 - 2899 - unicum
+			{"type": "WN8",			"value": 2900,			"color": "#8225AD"}, // 2900 - *	- super unicum
+
+			{"type": "EFF",			"value": 0,	 			"color": "#FE0E00"}, //	0 - 614  - very bad	(20% of players)
+			{"type": "EFF",			"value": 615,			"color": "#FE7903"}, //  615 - 869  - bad		(better then 20% of players)
+			{"type": "EFF",			"value": 870,			"color": "#F8F400"}, //  870 - 1174 - normal	(better then 60% of players)
+			{"type": "EFF",			"value": 1175,			"color": "#60FF00"}, // 1175 - 1524 - good		(better then 90% of players) 
+			{"type": "EFF",			"value": 1525,			"color": "#02C9B3"}, // 1525 - 1849 - very good	(better then 99% of players)
+			{"type": "EFF",			"value": 1850,			"color": "#D042F3"}, // 1850 - *	- unique	(better then 99.9% of players)
 				
-		    {"type": "XWN8",		"value": 0,	     	    "color": "#FE0E00"}, // 00   - 16.5 - very bad   (20% of players)			
-	        {"type": "XWN8",		"value": 16.5,			"color": "#FE7903"}, // 16.5 - 33.5 - bad        (better then 20% of players)
-	        {"type": "XWN8",		"value": 33.5,			"color": "#F8F400"}, // 33.5 - 52.5 - normal     (better then 60% of players)
-	        {"type": "XWN8",		"value": 52.5,			"color": "#60FF00"}, // 52.5 - 75.5 - good       (better then 90% of players)
-	        {"type": "XWN8",		"value": 75.5,			"color": "#02C9B3"}, // 75.5 - 92.5 - very good  (better then 99% of players)
-	        {"type": "XWN8",		"value": 92.5,			"color": "#D042F3"}, // 92.5 - XX   - unique     (better then 99.9% of players)
+			{"type": "XWN8",		"value": 0,		 		"color": "#FE0E00"}, // 00   - 16.5 - very bad	(20% of players)
+			{"type": "XWN8",		"value": 16.5,			"color": "#FE7903"}, // 16.5 - 33.5 - bad		(better then 20% of players)
+			{"type": "XWN8",		"value": 33.5,			"color": "#F8F400"}, // 33.5 - 52.5 - normal	(better then 60% of players)
+			{"type": "XWN8",		"value": 52.5,			"color": "#60FF00"}, // 52.5 - 75.5 - good		(better then 90% of players) 
+			{"type": "XWN8",		"value": 75.5,			"color": "#02C9B3"}, // 75.5 - 92.5 - very good	(better then 99% of players)
+			{"type": "XWN8",		"value": 92.5,			"color": "#D042F3"}, // 92.5 - XX   - unique	(better then 99.9% of players)
 
-		    {"type": "XEFF",		"value": 0,		        "color": "#FE0E00"}, // 00   - 16.5 - very bad   (20% of players)			
-	        {"type": "XEFF",		"value": 16.5,			"color": "#FE7903"}, // 16.5 - 33.5 - bad        (better then 20% of players)
-	        {"type": "XEFF",		"value": 33.5,			"color": "#F8F400"}, // 33.5 - 52.5 - normal     (better then 60% of players)
-	        {"type": "XEFF",		"value": 52.5,			"color": "#60FF00"}, // 52.5 - 75.5 - good       (better then 90% of players)
-	        {"type": "XEFF",		"value": 75.5,			"color": "#02C9B3"}, // 75.5 - 92.5 - very good  (better then 99% of players)
-	        {"type": "XEFF",		"value": 92.5,			"color": "#D042F3"}, // 92.5 - XX   - unique     (better then 99.9% of players)
+			{"type": "XEFF",		"value": 0,				"color": "#FE0E00"}, // 00   - 16.5 - very bad	(20% of players)
+			{"type": "XEFF",		"value": 16.5,			"color": "#FE7903"}, // 16.5 - 33.5 - bad		(better then 20% of players)
+			{"type": "XEFF",		"value": 33.5,			"color": "#F8F400"}, // 33.5 - 52.5 - normal	(better then 60% of players)
+			{"type": "XEFF",		"value": 52.5,			"color": "#60FF00"}, // 52.5 - 75.5 - good		(better then 90% of players) 
+			{"type": "XEFF",		"value": 75.5,			"color": "#02C9B3"}, // 75.5 - 92.5 - very good	(better then 99% of players)
+			{"type": "XEFF",		"value": 92.5,			"color": "#D042F3"}, // 92.5 - XX   - unique	(better then 99.9% of players)
 			
-			{"type": "COEF",        "value": 0.6,			"color": "#FE0E00"},
-     	    {"type": "COEF",        "value": 0.8,			"color": "#FE7903"},
-     	    {"type": "COEF",        "value": 1.0,			"color": "#F8F400"},
-     	    {"type": "COEF",        "value": 1.3,			"color": "#60FF00"},
-     	    {"type": "COEF",        "value": 2.0,			"color": "#02C9B3"},
-            {"type": "COEF",        "value": 15,			"color": "#D042F3"},
-             
-			{"type": "DIFF",		"value": 500,	        "color": "#FE0E00"},
-			{"type": "DIFF",		"value": 750,	        "color": "#FE7903"},
-			{"type": "DIFF",		"value": 1000,	        "color": "#F8F400"}, 
-			{"type": "DIFF",		"value": 1800,	        "color": "#60FF00"},
-			{"type": "DIFF",		"value": 2500,	        "color": "#02C9B3"},
-            {"type": "DIFF",		"value": 9999,	        "color": "#D042F3"},
-         
-			{"type": "AVGDAMAGE",	"value": "less",	    "color": "#FFFFFF"},
-            {"type": "AVGDAMAGE",	"value": "more",	    "color": "#60FF00"}			 
+			{"type": "COEF",		"value": 0.6,			"color": "#FE0E00"},
+	 		{"type": "COEF",		"value": 0.8,			"color": "#FE7903"},
+	 		{"type": "COEF",		"value": 1.0,			"color": "#F8F400"},
+	 		{"type": "COEF",		"value": 1.3,			"color": "#60FF00"},
+	 		{"type": "COEF",		"value": 2.0,			"color": "#02C9B3"},
+			{"type": "COEF",		"value": 15,			"color": "#D042F3"},
+			 
+			{"type": "DIFF",		"value": 500,			"color": "#FE0E00"},
+			{"type": "DIFF",		"value": 750,			"color": "#FE7903"},
+			{"type": "DIFF",		"value": 1000,			"color": "#F8F400"}, 
+			{"type": "DIFF",		"value": 1800,			"color": "#60FF00"},
+			{"type": "DIFF",		"value": 2500,			"color": "#02C9B3"},
+			{"type": "DIFF",		"value": 9999,			"color": "#D042F3"}	
 		]
 }
 /**
