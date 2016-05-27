@@ -26,12 +26,12 @@ _(Striked out mods are uncompatible with current version of World of Tanks)_
   * [PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
   * [Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)
-  * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
+  * ~~[TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)~~
   * [Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)
-  * [crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)
+  * ~~[crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)~~
   * [J1mB0's Contour Icon Mod](http://worldoftanks.curseforge.com/wot-mods/jimbos-contour-icon-mod/)
   * [J1mB0's Crosshair Mod](http://worldoftanks.curseforge.com/wot-mods/j1mb0s-reticles/)
-  * My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.14
+  * ~~My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.14~~
   * [Arty Reload Timer] (http://goxwot.blogspot.se/2015/08/99-arty-reload-timer.html)
 
 ### Not included but recommended mods ###

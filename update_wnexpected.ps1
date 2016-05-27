@@ -1,5 +1,5 @@
 $expected_tank_values_version = "26"
-$world_of_tanks_version = "0.9.14"
+$world_of_tanks_version = "0.9.15"
 
 $extensions = @("csv","json")
 foreach($extension in $extensions){
