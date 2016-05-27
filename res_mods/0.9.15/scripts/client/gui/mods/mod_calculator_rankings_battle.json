@@ -107,10 +107,13 @@
 			 
 			{"type": "DIFF",		"value": 500,			"color": "#FE0E00"},
 			{"type": "DIFF",		"value": 750,			"color": "#FE7903"},
-			{"type": "DIFF",		"value": 1000,			"color": "#F8F400"}, 
+			{"type": "DIFF",		"value": 1000,			"color": "#F8F400"},
 			{"type": "DIFF",		"value": 1800,			"color": "#60FF00"},
 			{"type": "DIFF",		"value": 2500,			"color": "#02C9B3"},
-			{"type": "DIFF",		"value": 9999,			"color": "#D042F3"}	
+			{"type": "DIFF",		"value": 9999,			"color": "#D042F3"},
+
+			{"type": "AVGDAMAGE",	"value": "less",	    "color": "#FFFFFF"},
+            {"type": "AVGDAMAGE",	"value": "more",	    "color": "#60FF00"}
 		]
 }
 /**
