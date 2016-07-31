@@ -155,7 +155,7 @@
     "NormalTooltipHeader": "Vozidlo",
     "NormalTooltipBody": "",
     "NonElite": "Neelitní",
-    "NonEliteTooltipHeader": "",
+    "NonEliteTooltipHeader": "Vozidlo",
     "NonEliteTooltipBody": "",
     "CompleteCrew": "Plná posádka",
     "CompleteCrewTooltipHeader": "Plná posádka",

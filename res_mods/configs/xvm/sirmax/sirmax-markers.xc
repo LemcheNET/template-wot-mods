@@ -2,7 +2,7 @@
   //"enabled": false,
   "def": {
     "markersStat": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='Symbol' color='#CCCCCC' size='11'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn8}}'>·</font></font></b>",
-    "markersStatAlt": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='$FieldFont' size='12'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}({{py:xvm.xvm2sup({{xte}})|--}})</font> <font color='{{c:xeff}}'>{{xeff|--}}</font> <font color='{{c:xwn8}}'>{{xwn8|--}}</font></font></b>",
+    "markersStatAlt": "<b><font face='$TitleFont' size='8' color='{{t-battles>19?#FFFFFF|#666666}}'>{{marksOnGun|*}}</font> <font face='$FieldFont' size='12'><font color='{{t-battles>19?{{c:xte|#666666}}|#666666}}'>{{xte|--}}({{py:xvm.xvm2sup('{{xte}}')|--}})</font> <font color='{{c:xeff}}'>{{xeff|--}}</font> <font color='{{c:xwn8}}'>{{xwn8|--}}</font></font></b>",
 
     "damageMessageAlive": "{{dmg}}",
     "damageMessageAllyDead": "({{dmg}})",
@@ -57,7 +57,7 @@
             "name": "Vehicle Name",
             "x": 0, "y": -26,
             "shadow": { "alpha": 100, "color": "0x000000", "angle": 0, "strength": 2, "distance": 0, "size": 3 },
-            "format": "<font face='$FieldFont' size='13'>{{vehicle}}{{turret}}</font>"
+            "format": "<font face='$FieldFont' size='13'><img src='cfg://sirmax/img/icons/{{comment}}.png'>{{vehicle}}{{turret}}</font>"
           },
           {
             "enabled": true,
@@ -174,7 +174,7 @@
             "name": "Vehicle Name",
             "x": 0, "y": -18, "alpha": 80,
             "shadow": { "alpha": 100, "color": "0x000000", "angle": 0, "strength": 2, "distance": 0, "size": 3 },
-            "format": "<font face='$FieldFont' size='13'><font color='#7BEC37'>{{vehicle}}</font></font>"
+            "format": "<font face='$FieldFont' size='13'><font color='#7BEC37'><img src='cfg://sirmax/img/icons/{{comment}}.png'>{{vehicle}}</font></font>"
           },
           {
             "enabled": true,
@@ -225,7 +225,7 @@
             "name": "Vehicle Name",
             "x": 0, "y": -26,
             "shadow": { "alpha": 100, "color": "0x000000", "angle": 0, "strength": 2, "distance": 0, "size": 3 },
-            "format": "<font face='$FieldFont' size='13'>{{vehicle}}{{turret}}</font>"
+            "format": "<font face='$FieldFont' size='13'><img src='cfg://sirmax/img/icons/{{comment}}.png'>{{vehicle}}{{turret}}</font>"
           },
           {
             "enabled": true,
@@ -341,7 +341,7 @@
             "name": "Vehicle Name",
             "x": 0, "y": -18, "alpha": 80,
             "shadow": { "alpha": 100, "color": "0x000000", "angle": 0, "strength": 2, "distance": 0, "size": 3 },
-            "format": "<font face='$FieldFont' size='13'><font color='#EC3737'>{{vehicle}}</font></font>"
+            "format": "<font face='$FieldFont' size='13'><font color='#EC3737'><img src='cfg://sirmax/img/icons/{{comment}}.png'>{{vehicle}}</font></font>"
           },
           {
             "enabled": true,

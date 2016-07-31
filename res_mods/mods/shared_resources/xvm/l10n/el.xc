@@ -155,7 +155,7 @@
     "NormalTooltipHeader": "Όχημα",
     "NormalTooltipBody": "",
     "NonElite": "Non elite",
-    "NonEliteTooltipHeader": "",
+    "NonEliteTooltipHeader": "Όχημα",
     "NonEliteTooltipBody": "",
     "CompleteCrew": "Πλήρες πλήρωμα",
     "CompleteCrewTooltipHeader": "Πλήρες πλήρωμα",

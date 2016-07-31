@@ -91,6 +91,7 @@
     "highlightVehicleIcon": false,
     "clanIconsFolder": "../../../../res/clanicons",
     "sixthSenseIcon": "cfg://sirmax/img/SixthSense.png",
+    "sixthSenseDuration": 3000,
     "elements": ${"elements"},
     "minimapDeadSwitch": true,
     "camera": {
@@ -319,11 +320,11 @@
     //"enabled": false,
     //"logSoundEvents": true,
     "soundMapping": {
-      "xvm_sixthSense": "lightbulb",
+      //"xvm_sixthSense": "lightbulb",
       //"xvm_sixthSenseRudy": "",
       //"xvm_fireAlert": "",
       //"xvm_ammoBay": "",
-      //"xvm_enemySighted": "enemySighted",
+      "xvm_enemySighted": "xvm_enemySighted",
       //"carousel": "",
       "__stub__": null
     }

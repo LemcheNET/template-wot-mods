@@ -155,7 +155,7 @@
     "NormalTooltipHeader": "Køretøj",
     "NormalTooltipBody": "",
     "NonElite": "Ikke elite",
-    "NonEliteTooltipHeader": "",
+    "NonEliteTooltipHeader": "Køretøj",
     "NonEliteTooltipBody": "",
     "CompleteCrew": "Fuld besætning",
     "CompleteCrewTooltipHeader": "Fuld besætning",
