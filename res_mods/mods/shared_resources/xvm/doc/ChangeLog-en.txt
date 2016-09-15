@@ -1,3 +1,28 @@
+XVM-6.4.3:
+  * adaptation to WoT 0.9.15.2
+  * labels on minimap are implemented (circles and lines are not yet)
+  * added new elements in sections "battleLabels" and "battleLabelsTemplates":
+      "avgDamage" - avg damage on current vehicle
+      "mainGun" - threshold necessary for achievements "High caliber"
+  * added options in the "minimap" and "minimapAlt" sections:
+      "selfIconScale" - self icon scale
+      "directionTriangleAlpha" - camera direction green triangle transparency
+      "directionLineAlpha" - standard camera direction line transparency
+      "zoom"/"index" - zoom index value for minimap zoom key
+  * removed options in the "minimap" and "minimapAlt" sections:
+      "hideCameraTriangle"
+      "cameraAlpha"
+      "zoom"/"pixelsBack"
+  * renamed options in the "minimap" and "minimapAlt" sections:
+      "showCameraLineAfterDeath" => "showDirectionLineAfterDeath"
+  * extra fields alignment options behavior changed:
+      "align"               - horizontal alignment of the text field relative to its position
+      "valign"              - vertical alignment of the text field relative to its position
+      "textFormat"/"align"  - horizontal alignment of the text inside the field
+      "textFormat"/"valign" - vertical alignment of the text inside the field
+  * added options in the "playersPanel" modes sections:
+      "squadIconAlpha" - transparency of the squad icon
+
 XVM-6.4.2.1:
   * fix Alt mode in the standard markers
 

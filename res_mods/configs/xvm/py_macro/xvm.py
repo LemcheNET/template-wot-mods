@@ -1,9 +1,11 @@
-# Import from config file
 
+import traceback
+
+# Import logger
 from xvm_main.python.logger import *
-import xvm_main.python.config as config
 
-# Example: config.get('definition/author', 'XVM team')
+# Import config. Usage example: config.get('definition/author', 'XVM team')
+import xvm_main.python.config as config
 
 from xvm import utils
 
@@ -12,7 +14,8 @@ from xvm import utils
 @xvm.export('xvm.team_strength')
 def xvm_team_strength(a, e):
     try:
-        if a == '' or e == '':
+        invalid_values = ['', '-']
+        if a in invalid_values or e in invalid_values:
             return ''
         sign = '&gt;' if float(a) > float(e) else '&lt;' if float(a) < float(e) else '='
         ca = utils.brighten_color(int(config.get('colors/system/ally_alive'), 0), 50)
@@ -20,7 +23,7 @@ def xvm_team_strength(a, e):
         value = '<font color="#{:06x}">{}</font> {} <font color="#{:06x}">{}</font>'.format(ca, a, sign, ce, e)
         return value
     except Exception as ex:
-        debug(ex)
+        debug(traceback.format_exc())
         return ''
 
 
@@ -47,6 +50,22 @@ def total_hp_sign():
 @xvm.export('xvm.total_hp.text', deterministic=False)
 def total_hp_text():
     return total_hp.text()
+
+@xvm.export('xvm.total_hp.avgDamage', deterministic=False)
+def total_hp_avgDamage(header, dmg_total):
+    return "%s%s" % (header, total_hp.avgDamage(dmg_total)) if total_hp.avgDamage(dmg_total) is not None else ''
+
+@xvm.export('xvm.total_hp.mainGun', deterministic=False)
+def total_hp_mainGun(header, dmg_total):
+    return "%s%s" % (header, total_hp.mainGun(dmg_total)) if total_hp.mainGun(dmg_total) is not None else ''
+
+@xvm.export('xvm.total_hp.getAvgDamage', deterministic=False)
+def total_hp_getAvgDamage(a, b, dmg_total):
+    return a if total_hp.avgDamage(dmg_total) is not None else b
+
+@xvm.export('xvm.total_hp.getMainGun', deterministic=False)
+def total_hp_getMainGun(a, b, dmg_total):
+    return a if total_hp.mainGun(dmg_total) is not None else b
 
 # xvm2sup
 
