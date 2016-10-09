@@ -1,0 +1,503 @@
+{
+    "debugBattleResultMessage": false,
+    "onlineReloadConfig": false,
+    "ignoreBattleType": [2, 4, 7, 8],
+    "showResetButton": true,
+    "textResetButton": "Reset",
+    "textGeneralPageButton": "By Tank",
+    "textByTankPageButton": "General",
+    "dailyAutoReset": false,
+    "dailyAutoResetHour": 3,
+    "clientReloadReset": false,
+		"thousandSeparator": ",",
+
+    "hideMessagePatterns": [
+				"Repairs:",
+				"Purchased:",
+				"New skill successfully trained.",
+				"The crew successfully sent to the Barracks.",
+				"Crew member successfully transferred.",
+				"Accelerated crew training .*",
+				"Gun .* mounted on vehicle.",
+				"Engine .* mounted on vehicle.",
+				"Radio .* mounted on vehicle.",
+				"Turret .* mounted on vehicle.",
+				"Suspension .* mounted on vehicle.",
+				"Ammunition failed to load. Consider loading ammunition manually.",
+				"Equipment .* mounted on vehicle.",
+				"Equipment .* demounted from vehicle.",
+				"Researched:.*",
+				"Screenshot saved to.*"
+    ],
+
+
+    "showStatForBattle": true,
+    "showPopUp": true,
+    "overwriteBattleResultBgIcon": true,
+    "bgIconDefeat": "../../../configs/wotstat/img/BattleResultBg/BgDefeat.png",
+    "bgIconDraw": "../../../configs/wotstat/img/BattleResultBg/BgDraw.png",
+    "bgIconWin": "../../../configs/wotstat/img/BattleResultBg/BgVictory.png",
+    "battleStatPatterns": [
+				{
+					"pattern": "Victory!",
+					"repl":    "<font size='20' color='#32CD32'>Victory!</font>"
+				},
+				{
+					"pattern": "Defeat",
+					"repl":    "<font size='20' color='#B22222'>Defeat</font>"
+				},
+				{
+					"pattern": "Draw",
+					"repl":    "<font size='20' color='#FFA62F'>Draw</font>"
+				},
+				{
+					"pattern": "Battle:.*",
+					"repl":    "<font size='5'> </font>"
+				},
+				{
+					"pattern": "Vehicles:.*",
+					"repl":    "<textformat leading='-3' tabstops='[90]'><img src='img://gui/maps/icons/vehicle/{{vehicle-raw}}.png' width='64' height='40' align='baseline' vspace='20'><tab><img src='img://gui/maps/icons/map/stats/{{map-raw}}.png' width='120' height='50' align='baseline' vspace='0'>\n</textformat><textformat leading='-1' tabstops='[90]'><font size='14' color='#BDB76B'><b> {{vehicle-short}}  </b></font><tab><font size='13' color='#848b79'><b>{{map}}</b></font></textformat><textformat leading='5'><font size='9' color='#a4a284'>\n   {{survive}}</font></textformat>"
+				},
+        {
+          "if": "{{dailyXPFactor}} == 1",
+					"pattern": "Experience received:.*",
+					"repl":    "<textformat leading='3'><font size='14'><img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='16' height='16' align='baseline' vspace='-3'><font color='#e4bb67'>{{totalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/XpOriginal.png' width='16' height='16' align='baseline' vspace='-3'><font color='#e0b152'>{{totalOriginalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/XpCrew.png' width='18' height='18' align='baseline' vspace='-15'><font color='#647f96'> {{tmenXP}}</font></font></textformat>"
+        },
+        {
+          "if": "{{dailyXPFactor}} != 1",
+					"pattern": "Experience received:.*",
+					"repl":    "<textformat leading='3'><font size='14'><img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='16' height='16' align='baseline' vspace='-3'><font color='#e4bb67'>{{totalXP}}</font><font size='12'> (<img src='img://../configs/wotstat/img/Icons/XpMulty.png' width='14' height='14' align='baseline' vspace='-4'>x{{dailyXPFactor}})</font>     <img src='img://../configs/wotstat/img/Icons/XpOriginal.png' width='16' height='16' align='baseline' vspace='-3'><font color='#e0b152'>{{totalOriginalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/XpCrew.png' width='18' height='18' align='baseline' vspace='-15'><font color='#647f96'> {{tmenXP}}</font></font></textformat>"
+        },
+				{
+					"pattern": "<font color='#[A-F0-9]{6}'>Credits earned: <font color='#C5CFCF'>([^<]+)<\/font>",
+					"repl":    "<textformat leading='2' tabstops='[80]'><font size='14'> <img src='img://../configs/wotstat/img/Icons/CreditsNet.png' width='10' height='10' align='baseline' vspace='0'> <font color='{{g:netCredits}}'>{{netCredits}}</font>    <font color='#6D6968'>( <img src='img://../configs/wotstat/img/Icons/CreditsTotal.png' width='12' height='12' align='baseline' vspace='0'> <font color='#ccad00'>{{grossCredits}}</font><font color='#b34d4d'>  - {{autoServiceCost}}</font> )</font></font></textformat>"
+				},
+				{
+					"pattern": "\\(fine for damage caused to allies: ([^)]+)\\)",
+					"repl":    ""
+				},
+				{
+					"pattern": "\\(compensation for damage caused by allies: ([^)]+)\\)",
+					"repl":    ""
+				},
+				{
+					"pattern": "Battle achievements: <font color='#D6D7D4'>",
+					"repl":    "<textformat leading='-2'><font size='12' color='#D4A017'> Achievements</textformat>\n<font size='10' color='#87CEEB'>   "
+				},
+				{	
+					"pattern": ", ",
+					"repl":    "\n   "
+				},
+				{
+					"pattern": "Mission completed!.*",
+					"repl":    "<font size='8'> \n</font><img src='img://../configs/wotstat/img/Icons/Mission.png' width='14' height='14' align='baseline' vspace='-3'><font size='12' color='#387C44'>Mission completed!</font><font size='7'>\n </font><font size='0'>"
+				}
+    ],
+    "battleStatText": [
+				"<textformat leading='5'>{{ui.newlineXXS}}</textformat>{{ui.fadingLineS}}",
+				"<textformat leading='3'><font size='14'>{{ui.damageIcon}}<font color='#BBB043'> {{totalDmg}}</font>      {{ui.assistIcon}}<font color='#6D7B8D'>{{totalAssist}}</font>       {{ui.fragIconM}} <font color='#BDB76B'>{{totalFrag}}</font></font></textformat>",
+				"<textformat leading='0' tabstops='[20,80]'><font size='14'> <tab>{{ui.placeIcon}}<font color='{{g:medPlace}}'>{{place:d}}</font><tab><font size='12' color='#FFB964'>WN8:  </font><font color='{{c:WN8}}'><b>{{WN8}}</b></font></font></textformat>"
+    ],
+
+
+    "enableBattleEndedMessage": true,
+    "battleEndedMessageDefeat": "<img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'><font size='5'>\n</font><textformat tabstops='[90]'><font size='14' color='#FE0E00'>Defeat</font><tab> <img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='16' height='16' align='baseline' vspace='-3'><font size='13' color='#DAA520'>{{totalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/CreditsNet.png' width='10' height='10' align='baseline' vspace='0'> <font size='13' color='#60FF00'>{{grossCredits}}</font>\n</textformat><textformat leading='-3' tabstops='[90]'><img src='img://gui/maps/icons/vehicle/{{vehicle-raw}}.png' width='64' height='40' align='baseline' vspace='20'><tab><img src='img://gui/maps/icons/map/stats/{{map-raw}}.png' width='120' height='50' align='baseline' vspace='0'>\n</textformat><textformat tabstops='[90]'><font size='14' color='#BDB76B'> {{vehicle-short}}  </font><tab><font size='13' color='#A19C9A'>{{map}}</font></textformat><font size='2'> \n</font><img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'>",
+    "battleEndedMessageDraw": "<img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'><font size='5'>\n</font><textformat tabstops='[90]'><font size='14' color='#FE7903'>Draw</font><tab> <img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='16' height='16' align='baseline' vspace='-3'><font size='13' color='#DAA520'>{{totalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/CreditsNet.png' width='10' height='10' align='baseline' vspace='0'> <font size='13' color='#60FF00'>{{grossCredits}}</font>\n</textformat><textformat leading='-3' tabstops='[90]'><img src='img://gui/maps/icons/vehicle/{{vehicle-raw}}.png' width='64' height='40' align='baseline' vspace='20'><tab><img src='img://gui/maps/icons/map/stats/{{map-raw}}.png' width='120' height='50' align='baseline' vspace='0'>\n</textformat><textformat tabstops='[90]'><font size='14' color='#BDB76B'> {{vehicle-short}}  </font><tab><font size='13' color='#A19C9A'>{{map}}</font></textformat><font size='2'> \n</font><img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'>",
+    "battleEndedMessageWin": "<img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'><font size='5'>\n</font><textformat tabstops='[90]'><font size='14' color='#60FF00'>Victory!</font><tab> <img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='16' height='16' align='baseline' vspace='-3'><font size='13' color='#DAA520'>{{totalXP}}</font>     <img src='img://../configs/wotstat/img/Icons/CreditsNet.png' width='10' height='10' align='baseline' vspace='0'> <font size='13' color='#60FF00'>{{grossCredits}}</font>\n</textformat><textformat leading='-3' tabstops='[90]'><img src='img://gui/maps/icons/vehicle/{{vehicle-raw}}.png' width='64' height='40' align='baseline' vspace='20'><tab><img src='img://gui/maps/icons/map/stats/{{map-raw}}.png' width='120' height='50' align='baseline' vspace='0'>\n</textformat><textformat tabstops='[90]'><font size='14' color='#BDB76B'> {{vehicle-short}}  </font><tab><font size='13' color='#A19C9A'>{{map}}</font></textformat><font size='2'> \n</font><img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'>",
+
+
+    "info": true,
+    "text": [
+				"<font size='14' color='#FFCC66'><b><u>Session Statistics</u></b></font>",
+				"\n    {{ui.welcomeImage}}\n",
+				"Play at least one battle for session statistics to show up."
+		],
+		
+		"bgIcon": "../../../configs/wotstat/img/SesionStatsBg/bgIcon{{c:WN8}}.png",
+    "icon": "../../../configs/wotstat/img/Icons/Stats.png",
+    "template": [
+        
+				"<font size='14' color='#FFCC66'><b><u>Session Statistics</u></b></font><font size='12'><b><textformat leading='-4' tabstops='[50,140,190]'>{{ui.newlineM}}",
+				"<font color='#BDB76B'>Battles:<tab>{{um.battlesCount}}</font>{{ui.battlesIcon}}",
+				"<font color='#32CD32'>Victories:<tab>{{um.winsCount}}</font>  <font color='{{c:winRate}}'>({{winRate:d}}%)</font>{{ui.winRateIcon}}<tab><font color='#FFD700'>Draws:<tab>{{um.drawsCount}}</font>",
+				"<font color='#cc8733'>Survive:<tab>{{um.totalSurvivesCount}}  ({{survivalRate:d}}%)</font> {{ui.survivalIcon}}<tab><font color='#B22222'>Defeats:<tab>{{um.defeatsCount}}</font>",
+				"{{ui.newlineSM}}{{ui.fadingLine}}{{ui.newlineM}}</textformat></b>",
+				
+				"<textformat leading='-4' tabstops='[105,170]'><font color='#FFCC66'><u>Experience</u><tab><font size='8'>Total<tab>Avg</font></font>{{ui.newlineS}}</textformat><textformat leading='-4' tabstops='[75,150]'>",
+				"<font color='{{uc.XPColor}}'>Total XP:<tab>{{um.totalXP}} {{ui.multiXpIconS}}<tab>{{um.avgXP}}</font> {{ui.multiXpIconS}}",
+				"<font color='{{uc.XPColor}}'>Original XP:<tab>{{um.totalOriginalXP}} {{ui.xpIconS}}</font><tab><font color='{{c:avgOriginalXP}}'>{{um.avgOriginalXP}}</font> {{ui.xpIconS}}",
+				"<font color='{{uc.freeXPColor}}'>Free XP:<tab>{{um.totalFreeXP}} {{ui.freeXpIconS}}<tab>{{um.avgFreeXP}}</font> {{ui.freeXpIconS}}",
+				"{{ui.newlineSM}}{{ui.fadingLine}}{{ui.newlineM}}</textformat>",
+
+				"<textformat leading='-4' tabstops='[105,170]'><font color='#FFCC66'><u>Financial</u><tab><font size='8'>Total<tab>Avg</font></font>{{ui.newlineS}}</textformat><textformat leading='-4' tabstops='[75,150]'>",
+				"<font color='{{uc.grossCreditsColor}}'>Gross Income:<tab>{{um.grossCredits}} {{ui.netCreditIconS}}<tab>{{um.avgGrossCredits}}</font> {{ui.netCreditIconS}}",
+				"<font color='{{uc.serviceColor}}'>Services:<tab>{{um.autoServiceCost}} {{ui.netCreditIconS}}<tab>{{um.avgAutoServiceCost}}</font> {{ui.netCreditIconS}}",
+				"<font color='{{uc.netCreditsColor}}'>Net Credits:</font><tab><font color='{{c:netCredits}}'>{{um.netCredits}} {{ui.netCreditIconS}}<tab>{{um.avgNetCredits}}</font> {{ui.netCreditIconS}}",
+				"{{ui.newlineSM}}{{ui.fadingLine}}{{ui.newlineM}}</textformat>",
+
+				"<textformat leading='-4' tabstops='[105,170]'><font color='#FFCC66'><u>Performance</u><tab><font size='8'>Avg<tab>Ratio</font></font>{{ui.newlineS}}</textformat><textformat leading='-4' tabstops='[75,150]'>",
+				"<font color='#cb9886'>Hits:</font><tab><font color='{{c:avgHitsRate}}'>{{um.avgHitsRate}}%  </font>{{ui.hitsIcon}}",
+				"<font color='#cb9886'>Penetrations:</font><tab><font color='{{c:avgEffHitsRate}}'>{{um.avgEffHitsRate}}% </font>{{ui.penetrationIcon}}",
+        "<font color='#515c3d'>Spot:</font><tab>{{um.avgSpot}}  {{ui.spotIcon}}<tab>{{um.rSPOT}}{{ui.ratioIcon}}",
+        "<font color='#515c3d'>Frags:</font><tab>{{um.avgFrag}}  {{ui.fragIconS}}<tab>{{um.rFRAG}}{{ui.ratioIcon}}",
+        "<font color='#b34d4d'>Damage Dlt:</font><tab>{{um.avgDamage}}  {{ui.dmgDltIcon}}<tab>{{um.rDAMAGE}}{{ui.ratioIcon}}",
+        "<font color='#b34d4d'>Damage Rec:<tab>{{um.avgDamageRec}}  {{ui.dmgRecIcon}}<tab></font>{{um.dmgDltRecRatio}}{{ui.dmgDltRecRatioIcon}}",
+        "<font color='#647f96'>Def.Points:<tab>{{um.avgDef}}  {{ui.defIcon}}</font><tab>{{um.rDEF}} {{ui.ratioIcon}}",
+        "<font color='#647f96'>Cap.Points:<tab>{{um.avgCap}}  {{ui.capIcon}}</font>{{ui.newlineS}}</textformat></font>",
+				
+				"<font size='12' color='#FFCC66'><textformat leading='0' tabstops='[75,150]'>{{ui.newlineSSM}}{{ui.endLine}}{{ui.newlineS}}",
+				"WN6: {{ui.masteryWN6Icon}}<tab>WN7: {{ui.masteryWN7Icon}}<tab>EFF: {{ui.masteryEFFIcon}}",
+				"<b><font color='{{c:WN6}}'>{{WN6}}  ({{XWN6}})</font><tab><font color='{{c:WN7}}'>{{WN7}}  ({{XWN7}})</font><tab><font color='{{c:EFF}}'>{{EFF}}  ({{XEFF}})</font></b>{{ui.newlineS}}",
+				"Avg Tier: {{ui.tierIcon}}<tab>Avg Place:<tab><font size='14'>WN8: </font>{{ui.masteryWN8Icon}}",
+				"<b><font color='{{c:avgBattleTier}}'>  {{avgBattleTier:4.1f}}  ({{avgBattleTierDiff:3.1f}})</font><tab><font color='{{c:avgPlace}}'>   {{ui.placeIcon}} {{avgPlace:d}} </font><tab><font color='{{c:WN8}}'>{{WN8}}  ({{XWN8}}) </font></b></font></textformat>"
+
+    ],
+
+    "showStatByTank": true,
+		"sortReverse": true,
+		"sortByMacro": "battlesCount",
+    "byTankTitle": "<textformat leading='-2'><font size='14' color='#FFCC66'><b>Tank Statistics</b></font><font size='2'>\n </font><img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'><font size='5'>\n </font></textformat>",
+    "byTankRow": [
+				"<textformat leading='-3' tabstops='[70,110,157]'><font size='12'><font color='{{uc:brightGold}}'><b>{{vehicle-short}}</b></font><tab><font face='Mono' color='{{g:rFRAG}}'>{{avgFrag:3.1f}}</font> {{ui.fragIconS}}<tab><font face='Mono' color='{{g:rDAMAGE}}'>{{avgDamage:5}}</font>{{ui.damageIcon2}}<tab><font face='Mono' color='{{uc.XPColor}}'>{{totalXP:7}}</font> {{ui.xpIconS}}</font></textformat>",
+				"<textformat leading='-10' tabstops='[15,91,145]'><font size='12'> <tab><font face='Mono' color='{{g:rWIN}}'>{{winsToBattles}}</font>{{ui.winRateIconS}}<tab><font size='8' color='#FFCC66'>WN8: </font><font face='Mono' color='{{c:WN8}}'>{{WN8:5}}</font><tab><font face='Mono' color='{{g:netCredits}}'>{{netCredits:9}}</font>  {{ui.netCreditIconS}}</font></textformat>",
+				"<textformat leading='1'><font size='10' color='#3D3C3A'>__________________________________________</font></textformat>"
+		],
+
+
+    "userMacros": {
+		
+				"um.battlesCount": "<font face='Mono'>{{battlesCount:3}}</font>",
+				"um.winsCount": "<font face='Mono'>{{winsCount:3}}</font>",
+				"um.drawsCount": "<font face='Mono'>{{drawsCount:3}}</font>",
+				"um.defeatsCount": "<font face='Mono'>{{defeatsCount:3}}</font>",
+				"um.totalSurvivesCount": "<font face='Mono'>{{totalSurvivesCount:3}}</font>",
+
+				"um.totalXP": "<font face='Mono'>{{totalXP:9}}</font>",
+				"um.totalOriginalXP": "<font face='Mono'>{{totalOriginalXP:9}}</font>",
+				"um.totalFreeXP": "<font face='Mono'>{{totalFreeXP:9}}</font>",
+				"um.avgXP": "<font face='Mono'>{{avgXP:7}}</font>",
+				"um.avgOriginalXP": "<font face='Mono'>{{avgOriginalXP:7}}</font>",
+				"um.avgFreeXP": "<font face='Mono'>{{avgFreeXP:7}}</font>",
+
+				"um.grossCredits": "<font face='Mono'>{{grossCredits:9}}</font>",
+				"um.autoServiceCost": "<font face='Mono'>{{autoServiceCost:9}}</font>",
+				"um.netCredits": "<font face='Mono'>{{netCredits:9}}</font>",
+				"um.avgGrossCredits": "<font face='Mono'>{{avgGrossCredits:7}}</font>",
+				"um.avgAutoServiceCost": "<font face='Mono'>{{avgAutoServiceCost:7}}</font>",
+				"um.avgNetCredits": "<font face='Mono'>{{avgNetCredits:7}}</font>",
+
+				"um.avgHitsRate": "<font face='Mono'>{{avgHitsRate:6}}</font>",
+				"um.avgEffHitsRate": "<font face='Mono'>{{avgEffHitsRate:6}}</font>",
+				"um.avgSpot": "<font face='Mono' color='{{c:avgSpot}}'>{{avgSpot:7.1f}}</font>",
+				"um.avgFrag": "<font face='Mono' color='{{c:avgFrag}}'>{{avgFrag:7.1f}}</font>",
+				"um.avgDamage": "<font face='Mono' color='{{c:avgDamage}}'>{{avgDamage:7}}</font>",
+				"um.avgDamageRec": "<font face='Mono'>{{avgDamageRec:7}}</font>",
+				"um.avgDef": "<font face='Mono'>{{avgDef:7.1f}}</font>",
+				"um.avgCap": "<font face='Mono'>{{avgCap:7.1f}}</font>",
+				"um.rSPOT": "<font face='Mono' color='{{g:rSPOT}}'>{{rSPOT:6.2f}}</font>",
+				"um.rFRAG": "<font face='Mono' color='{{g:rFRAG}}'>{{rFRAG:6.2f}}</font>",
+				"um.rDAMAGE": "<font face='Mono' color='{{g:rDAMAGE}}'>{{rDAMAGE:6.2f}}</font>",
+				"um.dmgDltRecRatio": "<font face='Mono' color='{{g:dmgDltRecRatio}}'>{{dmgDltRecRatio:6.2f}}</font>",
+				"um.rDEF": "<font face='Mono' color='{{g:rDEF}}'>{{rDEF:6.2f}}</font>",
+
+				"ui.newlineXXS": "<font size='1'>\n </font>",
+				"ui.newlineXS": "<font size='2'>\n </font>",
+				"ui.newlineS": "<font size='3'>\n </font>",
+				"ui.newlineSSM": "<font size='4'>\n </font>",
+				"ui.newlineSM": "<font size='5'>\n </font>",
+				"ui.newlineM": "<font size='7'>\n </font>",
+
+				"ui.fadingLine": "<img src='img://../configs/wotstat/img/Icons/LineFading.png' width='225' height='1'>",
+				"ui.fadingLineS": "<img src='img://../configs/wotstat/img/Icons/LineFading.png' width='200' height='1'>",
+				"ui.endLine": "<img src='img://../configs/wotstat/img/Icons/LineEnd.png' width='220' height='1'>",
+
+				"ui.battlesIcon": "<img src='img://../configs/wotstat/img/Icons/Battles.png' width='20' height='16' align='baseline' vspace='-8'>",
+				"ui.survivalIcon": "<img src='img://../configs/wotstat/img/Icons/Survival.png' width='20' height='16' align='baseline' vspace='-8'>",
+				"ui.winRateIcon": "<img src='img://../configs/wotstat/img/Icons/WinRate.png' width='20' height='16' align='baseline' vspace='-8'>",
+
+				"ui.xpIconS": "<img src='img://../configs/wotstat/img/Icons/XpTotal.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.multiXpIconS": "<img src='img://../configs/wotstat/img/Icons/XpMulty.png' width='11' height='11' align='baseline' vspace='-2'>",
+				"ui.freeXpIconS": "<img src='img://../configs/wotstat/img/Icons/XpFree.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.netCreditIconS": "<img src='img://../configs/wotstat/img/Icons/CreditsNet.png' width='7' height='7' align='baseline' vspace='1'>",
+
+				"ui.hitsIcon": "<img src='img://../configs/wotstat/img/Icons/Hits.png' width='10' height='10' align='baseline' vspace='-1'>",
+				"ui.penetrationIcon": "<img src='img://../configs/wotstat/img/Icons/Penetration.png' width='12' height='12' align='baseline' vspace='-3'>",
+				"ui.spotIcon": "<img src='img://../configs/wotstat/img/Icons/Spot.png' width='12' height='12' align='baseline' vspace='-3'>",
+
+				"ui.fragIconS": "<img src='img://../configs/wotstat/img/Icons/Frag.png' width='12' height='12' align='baseline' vspace='-10'>",
+				"ui.dmgDltIcon": "<img src='img://../configs/wotstat/img/Icons/DmgDlt.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.dmgRecIcon": "<img src='img://../configs/wotstat/img/Icons/DmgRec.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.capIcon": "<img src='img://../configs/wotstat/img/Icons/Cap.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.defIcon": "<img src='img://../configs/wotstat/img/Icons/Def.png' width='12' height='12' align='baseline' vspace='-2'>",
+				"ui.dmgDltRecRatioIcon": "<img src='img://../configs/wotstat/img/Icons/DmgDltRecRatio.png' width='20' height='16' align='baseline' vspace='-7'>",
+				"ui.ratioIcon": "<img src='img://../configs/wotstat/img/Icons/Ratio.png' width='18' height='12' align='baseline' vspace='-7'>",
+
+				"ui.masteryWN8Icon": "<img src='img://../configs/wotstat/img/Mastery/{{c:WN8}}.png' width='25' height='25' align='baseline' vspace='-5'>",
+				"ui.masteryWN7Icon": "<img src='img://../configs/wotstat/img/Mastery/{{c:WN7}}.png' width='20' height='20' align='baseline' vspace='-5'>",
+				"ui.masteryWN6Icon": "<img src='img://../configs/wotstat/img/Mastery/{{c:WN6}}.png' width='20' height='20' align='baseline' vspace='-5'>",
+				"ui.masteryEFFIcon": "<img src='img://../configs/wotstat/img/Mastery/{{c:EFF}}.png' width='20' height='20' align='baseline' vspace='-5'>",
+				"ui.tierIcon": "<img src='img://../configs/wotstat/img/Tiers/Tier_{{avgBattleTier:d}}.png' width='20' height='20' align='baseline' vspace='-4'>",
+				"ui.placeIcon": "<img src='img://../configs/wotstat/img/Icons/Place.png' width='16' height='16' align='baseline' vspace='-3'>",
+
+				"ui.damageIcon": "<img src='img://../configs/wotstat/img/Icons/Damage.png' width='14' height='14' align='baseline' vspace='-10'>",
+				"ui.assistIcon": "<img src='img://../configs/wotstat/img/Icons/AssistDmg.png' width='16' height='16' align='baseline' vspace='-12'>",
+				"ui.fragIconM": "<img src='img://../configs/wotstat/img/Icons/Frag.png' width='16' height='16' align='baseline' vspace='-10'>",
+
+				"ui.damageIcon2": "<img src='img://../configs/wotstat/img/Icons/Damage2.png' width='12' height='12' align='baseline' vspace='-3'>",
+				"ui.winRateIconS": "<img src='img://../configs/wotstat/img/Icons/WinRateS.png' width='13' height='13' align='baseline' vspace='-6'>",
+
+				"ui.welcomeImage": "<img src='img://../configs/wotstat/img/Icons/T_55A.png' width='170' height='109' align='baseline' vspace='0'>",
+				
+				"uc:brightGold":					"#FFE6B3",
+				"uc.grossCreditsColor":		"#ccad00",
+				"uc.XPColor":  						"#DAA520",
+				"uc.freeXPColor":					"#916a08",
+				"uc.serviceColor":				"#cc0000",
+				"uc.netCreditsColor":			"#32CD32"
+
+		},
+
+    "gradient": {
+        "XWN8": [
+            {"value": 16.5, "color": "#FE0E00"},
+            {"value": 33.5, "color": "#FE7903"},
+            {"value": 52.5, "color": "#F8F400"},
+            {"value": 75.5, "color": "#60FF00"},
+            {"value": 92.5, "color": "#02C9B3"},
+            {"value": 999,  "color": "#D042F3"}
+        ],
+				"WN8": [
+						{ "value":  300, "color": "#BAAAAD" },
+						{ "value":  450, "color": "#F11919" },
+						{ "value":  650, "color": "#FF8A00" },
+						{ "value":  900, "color": "#E6DF27" },
+						{ "value": 1200, "color": "#77E812" },
+						{ "value": 1600, "color": "#459300" },
+						{ "value": 2000, "color": "#2AE4FF" },
+						{ "value": 2450, "color": "#00A0B8" },
+						{ "value": 2900, "color": "#C64CFF" },
+						{ "value": 9999, "color": "#8225AD" } 
+				],
+        "rWIN": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"}
+        ],
+        "rDAMAGE": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"}
+        ],
+        "rFRAG": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"}
+        ],
+        "rSPOT": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"}
+        ],
+        "rDEF": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"}
+        ],
+				"dmgDltRecRatio": [
+            {"value": 0.14, "color": "#FE0E00"},
+            {"value": 0.44, "color": "#FE7903"},
+            {"value": 0.76, "color": "#F8F400"},
+            {"value": 1.07, "color": "#60FF00"},
+            {"value": 1.35, "color": "#02C9B3"},
+            {"value": 1.60, "color": "#D042F3"},
+            {"value": 1001, "color": "#8F14B8"}
+				],
+        "medPlace": [
+            {"value":  1, "color": "#D042F3"},
+            {"value":  3, "color": "#02C9B3"},
+            {"value":  5, "color": "#60FF00"},
+            {"value":  7, "color": "#F8F400"},
+            {"value": 10, "color": "#FE7903"},
+            {"value": 15, "color": "#FE0E00"}
+        ],
+				"avgDamage": [
+						{"value":  500, "color": "#FE0E00"},
+						{"value":  750, "color": "#FE7903"},
+						{"value": 1000, "color": "#F8F400"},
+						{"value": 1800, "color": "#60FF00"},
+						{"value": 2500, "color": "#02C9B3"},
+						{"value": 9999, "color": "#D042F3"}
+				],
+        "netCredits": [
+            {"value": -1, "color": "#FE0E00"},
+            {"value":  0, "color": "#FFFFFF"},
+            {"value":  1, "color": "#60FF00"}
+        ]
+    },
+    "palette" : {
+				"avgXP": [
+					{"value":  201, "color": "#FE0E00"},
+					{"value":  301, "color": "#FE7903"},
+					{"value":  601, "color": "#F8F400"},
+					{"value":  801, "color": "#60FF00"},
+					{"value": 1101, "color": "#02C9B3"},
+					{"value": 9999, "color": "#D042F3"}
+				],
+				"avgOriginalXP": [
+					{"value":  201, "color": "#FE0E00"},
+					{"value":  301, "color": "#FE7903"},
+					{"value":  601, "color": "#F8F400"},
+					{"value":  801, "color": "#60FF00"},
+					{"value": 1101, "color": "#02C9B3"},
+					{"value": 9999, "color": "#D042F3"}
+				],
+        "netCredits": [
+            {"value": -1, "color": "#cc0000"},
+            {"value": 0, "color": "#FFFFFF"},
+            {"value": 1, "color": "#32CD32"}
+        ],			
+				"WN6": [
+						{"value":  470, "color": "#FE0E00"},
+						{"value":  860, "color": "#FE7903"},
+						{"value": 1225, "color": "#F8F400"},
+						{"value": 1635, "color": "#60FF00"},
+						{"value": 1990, "color": "#02C9B3"},
+						{"value": 9999, "color": "#D042F3"}
+				],
+        "XWN6": [
+            {"value": 16.5, "color": "#FE0E00"},
+            {"value": 33.5, "color": "#FE7903"},
+            {"value": 52.5, "color": "#F8F400"},
+            {"value": 75.5, "color": "#60FF00"},
+            {"value": 92.5, "color": "#02C9B3"},
+            {"value": 999,  "color": "#D042F3"}
+        ],
+				"WN7": [
+						{"value":  505, "color": "#FE0E00"},
+						{"value":  865, "color": "#FE7903"},
+						{"value": 1225, "color": "#F8F400"},
+						{"value": 1635, "color": "#60FF00"},
+						{"value": 1995, "color": "#02C9B3"},
+						{"value": 9999, "color": "#D042F3"}
+				],
+        "XWN7": [
+            {"value": 16.5, "color": "#FE0E00"},
+            {"value": 33.5, "color": "#FE7903"},
+            {"value": 52.5, "color": "#F8F400"},
+            {"value": 75.5, "color": "#60FF00"},
+            {"value": 92.5, "color": "#02C9B3"},
+            {"value": 999,  "color": "#D042F3"}
+        ],
+				"WN8": [
+						{"value":  400, "color": "#FE0E00"},
+						{"value":  900, "color": "#FE7903"},
+						{"value": 1470, "color": "#F8F400"},
+						{"value": 2180, "color": "#60FF00"},
+						{"value": 2880, "color": "#02C9B3"},
+						{"value": 9999, "color": "#D042F3"}
+				],
+        "XWN8": [
+            {"value": 16.5, "color": "#FE0E00"},
+            {"value": 33.5, "color": "#FE7903"},
+            {"value": 52.5, "color": "#F8F400"},
+            {"value": 75.5, "color": "#60FF00"},
+            {"value": 92.5, "color": "#02C9B3"},
+            {"value": 999,  "color": "#D042F3"}
+        ],
+				"EFF": [
+						{"value":  610, "color": "#FE0E00"},
+						{"value":  875, "color": "#FE7903"},
+						{"value": 1175, "color": "#F8F400"},
+						{"value": 1540, "color": "#60FF00"},
+						{"value": 1880, "color": "#02C9B3"},
+						{"value": 9999, "color": "#D042F3"}
+				],
+        "XEFF": [
+            {"value": 16.5, "color": "#FE0E00"},
+            {"value": 33.5, "color": "#FE7903"},
+            {"value": 52.5, "color": "#F8F400"},
+            {"value": 75.5, "color": "#60FF00"},
+            {"value": 92.5, "color": "#02C9B3"},
+            {"value": 999,  "color": "#D042F3"}
+        ],
+				"winRate": [
+						{"value": 46.5, "color": "#FE0E00"},
+						{"value": 48.5, "color": "#FE7903"},
+						{"value": 52.5, "color": "#F8F400"},
+						{"value": 57.5, "color": "#60FF00"},
+						{"value": 64.5, "color": "#02C9B3"},
+						{"value": 101,  "color": "#D042F3"}
+				],
+				"avgBattleTier": [
+						{"value":  2, "color": "#FE0E00"},
+						{"value":  3, "color": "#FE7903"},
+						{"value":  5, "color": "#F8F400"},
+						{"value":  7, "color": "#60FF00"},
+						{"value":  9, "color": "#02C9B3"},
+						{"value": 11, "color": "#D042F3"}
+				],
+				"avgHitsRate": [
+						{"value": 47.5,  "color": "#FE0E00"},
+						{"value": 60.5,  "color": "#FE7903"},
+						{"value": 68.5,  "color": "#F8F400"},
+						{"value": 74.5,  "color": "#60FF00"},
+						{"value": 78.5,  "color": "#02C9B3"},
+						{"value": 101,   "color": "#D042F3"}
+				],
+				"avgEffHitsRate": [
+						{"value": 47.5,  "color": "#FE0E00"},
+						{"value": 60.5,  "color": "#FE7903"},
+						{"value": 68.5,  "color": "#F8F400"},
+						{"value": 74.5,  "color": "#60FF00"},
+						{"value": 78.5,  "color": "#02C9B3"},
+						{"value": 101,   "color": "#D042F3"}
+				],
+				"avgDamage": [
+						{"value":  500,  "color": "#FE0E00"},
+						{"value":  750,  "color": "#FE7903"},
+						{"value": 1000,  "color": "#F8F400"},
+						{"value": 1800,  "color": "#60FF00"},
+						{"value": 2500,  "color": "#02C9B3"},
+						{"value": 9999,  "color": "#D042F3"}
+				],
+				"avgSpot": [
+						{"value": 0.6,  "color": "#FE0E00"},
+						{"value": 0.8,  "color": "#FE7903"},
+						{"value": 1.0,  "color": "#F8F400"},
+						{"value": 1.3,  "color": "#60FF00"},
+						{"value": 2.0,  "color": "#02C9B3"},
+						{"value": 15,   "color": "#D042F3"}
+				],
+				"avgFrag": [
+						{"value": 0.6,  "color": "#FE0E00"},
+						{"value": 0.8,  "color": "#FE7903"},
+						{"value": 1.0,  "color": "#F8F400"},
+						{"value": 1.3,  "color": "#60FF00"},
+						{"value": 2.0,  "color": "#02C9B3"},
+						{"value": 15,   "color": "#D042F3"}
+				],
+        "avgPlace": [
+            {"value":  1, "color": "#D042F3"},
+            {"value":  3, "color": "#02C9B3"},
+            {"value":  5, "color": "#60FF00"},
+            {"value":  7, "color": "#F8F400"},
+            {"value": 10, "color": "#FE7903"},
+            {"value": 16, "color": "#FE0E00"}
+        ]
+    }
+}

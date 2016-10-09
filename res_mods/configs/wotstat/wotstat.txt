@@ -1,0 +1,164 @@
+MACROS for
+Session Statistics and Battle Result Messages
+
+Statistic Macros       | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+battlesCount           |    x    |   x    |             |                   |
+winsCount              |    x    |   x    |             |                   |
+defeatsCount           |    x    |   x    |             |                   |
+drawsCount             |    x    |   x    |             |                   |
+winsToBattles          |    x    |   x    |             |                   | "{{wins}}/{{battles}}" fixed length string to 7 chars (e.g.: "   7/12")
+totalDeathsCount       |    x    |   x    |             |                   |
+totalSurvivesCount     |    x    |   x    |             |                   |
+deathsRate             |    x    |   x    |             |                   |
+survivalRate           |    x    |   x    |             |                   |
+winRate                |    x    |   x    |             |                   |
+avgTier                |    x    | (tier) |             |                   |
+avgBattleTier          |    x    |   x    |             |                   |
+avgPlace               |    x    |   x    |             |                   |
+medPlace               |    x    |   x    |   (place)   |                   |
+avgBattleTierDiff      |    x    |   x    |             |                   |
+				
+				
+XP Macros              | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+totalXP                |    x    |   x    |      x      |        x          |
+totalOriginalXP        |    x    |   x    |      x      |                   |
+totalFreeXP            |    x    |   x    |      x      |                   |
+avgXP                  |    x    |   x    |             |                   |
+avgOriginalXP          |    x    |   x    |             |                   |
+avgFreeXP              |    x    |   x    |             |                   |
+avgPremXP              |    x    |   x    |             |                   |
+				
+				
+Credits Macros         | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+grossCredits           |    x    |   x    |      x      |        x          |
+netCredits             |    x    |   x    |      x      |                   |
+autoRepairCost         |    x    |   x    |      x      |                   |
+autoLoadCost           |    x    |   x    |      x      |                   |
+autoEquipCost          |    x    |   x    |      x      |                   |
+autoServiceCost        |    x    |   x    |      x      |                   | Repairs + Ammunition + Equipment
+gold                   |    x    |   x    |      x      |                   |
+avgGrossCredits        |    x    |   x    |             |                   |
+avgNetCredits          |    x    |   x    |             |                   |
+avgAutoRepairCost      |    x    |   x    |             |                   |
+avgAutoLoadCost        |    x    |   x    |             |                   |
+avgAutoEquipCost       |    x    |   x    |             |                   |
+avgAutoServiceCost     |    x    |   x    |             |                   |
+				
+				
+Battle Macros          | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+totalFrag              |    x    |   x    |      x      |                   |
+totalSpot              |    x    |   x    |      x      |                   |
+totalDef               |    x    |   x    |      x      |                   |
+totalCap               |    x    |   x    |      x      |                   |
+totalShots             |    x    |   x    |      x      |                   |
+totalHits              |    x    |   x    |      x      |                   |
+totalPierced           |    x    |   x    |      x      |                   |
+avgFrag                |    x    |   x    |             |                   |
+avgSpot                |    x    |   x    |             |                   |
+avgDef                 |    x    |   x    |             |                   |
+avgCap                 |    x    |   x    |             |                   |
+avgHitsRate            |    x    |   x    |             |                   | Hits / Shots
+avgEffHitsRate         |    x    |   x    |             |                   | Penetrations / Hits
+				
+				
+Damage Macros          | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+totalDmg               |    x    |   x    |      x      |                   |
+totalDmgRec            |    x    |   x    |      x      |                   |
+totalPotDmgRec         |    x    |   x    |      x      |                   |
+totalAssist            |    x    |   x    |      x      |                   |
+totalAssistRadio       |    x    |   x    |      x      |                   |
+totalAssistTrack       |    x    |   x    |      x      |                   |
+dmgDltRecRatio         |    x    |   x    |      x      |                   | Damage Dealt / Damage Received   (max 1000)
+avgDamage              |    x    |   x    |             |                   |
+avgDamageRec           |    x    |   x    |             |                   |
+avgPotDmgRec           |    x    |   x    |             |                   |
+avgAssist              |    x    |   x    |             |                   |
+avgAssistRadio         |    x    |   x    |             |                   |
+avgAssistTrack         |    x    |   x    |             |                   |
+				
+				
+Efficiency Macros      | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+WN6                    |    x    |   x    |      x      |                   |
+XWN6                   |    x    |   x    |      x      |                   |
+WN7                    |    x    |   x    |      x      |                   |
+XWN7                   |    x    |   x    |      x      |                   |
+EFF                    |    x    |   x    |      x      |                   |
+XEFF                   |    x    |   x    |      x      |                   |
+BR                     |    x    |   x    |      x      |                   |
+WN8                    |    x    |   x    |      x      |                   |
+XWN8                   |    x    |   x    |      x      |                   |
+				
+				
+WN8 Calc Macros        | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+rDAMAG                 |    x    |   x    |      x      |                   |
+rSPOT                  |    x    |   x    |      x      |                   |
+rFRAG                  |    x    |   x    |      x      |                   |
+rDEF                   |    x    |   x    |      x      |                   |
+rWIN                   |    x    |   x    |      x      |                   |
+rWINc                  |    x    |   x    |      x      |                   |
+rDAMAGEc               |    x    |   x    |      x      |                   |
+rFRAGc                 |    x    |   x    |      x      |                   |
+rSPOTc                 |    x    |   x    |      x      |                   |
+rDEFc                  |    x    |   x    |      x      |                   |
+expDamage              |    x    |   x    |      x      |                   |
+expFrag                |    x    |   x    |      x      |                   |
+expSpot                |    x    |   x    |      x      |                   |
+expDef                 |    x    |   x    |      x      |                   |
+expWinRate             |    x    |   x    |      x      |                   |
+
+
+Special Macros         | General | ByTank | BtlResltMsg | InGameBtlResltMsg | Description
+-------------------------------------------------------------------------------------------------
+map                    |         |        |      x      |        x          | Map name (e.g.: Serene Coast)
+map-raw                |         |        |      x      |        x          | Map system name (e.g.: 47_canada_a)
+vehicle-raw            |         |   x    |      x      |        x          | Tank system name (e.g.: germany-Pz_IV_AusfH)
+vehicle-long           |         |   x    |      x      |        x          | Tank full name (e.g.: Pz.Kpfw. IV Ausf. H)
+vehicle-short          |         |   x    |      x      |        x          | Tank short name (e.g.: Pz. IV H)
+survive                |         |        |      x      |                   | "Survived" or "Destroyed"
+tmenXP                 |         |        |      x      |                   | Crew XP
+result                 |         |        |      x      |                   | "1" for Victory, "0" for Draw or "-1" for Defeat
+place                  |         |        |      x      |                   | Place at the end of the battle
+dailyXPFactor          |         |        |      x      |                   | Daily XP factor (e.g.: "x2")
+
+
+
+FORMATTING MACROS
+  Formatting the output of a macro (usually for aligment)
+                             For example: "grossCredits = 14,632.748"
+    :d                       Number with no decimal ( e.g: {{"grossCredits:d}} displays "14,632")
+    :1f                      Number with one decimal (e.g.: {{grossCredits:1f}} displays: "14,632.7")
+    :1-20                    Number with no decimal and fixed width of 1-20 chars (e.g.: {{grossCredits:10}} displays: "    14,632")
+    :1-20.1f                 Number with one decimal and fixed width of 1-20 chars (e.g.: {{grossCredits:10.1f}} displays: "  14,632.7")
+    :1-20.2f                 Number with two decimal and fixed width of 1-20 chars (e.g.: {{grossCredits:10.2f}} displays: " 14,632.75")
+  Alignment works properly only if you use a monospaced font (e.g.: 'Consolas', 'Lucida Console', 'Courier New' etc.)(XVM users can use 'Mono')
+
+
+USER MACROS
+  User macros can be used only in the fields: "battleStatText", "text", "template", "byTankRow"
+
+
+
+BATTLE TYPES
+  Battle Type Code for "ignoreBattleType" field:
+     0 = Unknown (Special)
+     1 = Random Battle
+     2 = Training
+     3 = Company (Team)
+     4 = Tutorial
+     5 = Cybersport (Team7x7)
+     6 = Fallout
+     7 = Event
+     8 = Sortie (Fortifications)
+     9 = Fort Battle (Fortifications)
+    10 = Rated Cybersport (Team7x7)
+    11 = Rated Sandbox
+    12 = Sandbox
+    13 = Fallout Classic
+    14 = Fallout Multiteam
