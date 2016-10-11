@@ -6,7 +6,7 @@
 	"textResetButton": "Reset",
 	"textGeneralPageButton": "By Tank",
 	"textByTankPageButton": "General",
-	"dailyAutoReset": false,
+	"dailyAutoReset": true,
 	"dailyAutoResetHour": 6,
 	"clientReloadReset": false,
 	"thousandSeparator": ",",
