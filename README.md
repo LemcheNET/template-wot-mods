@@ -15,23 +15,23 @@ Some details of my mod pack.
 
 ## The mods included are as following:##
 _(Striked out mods are uncompatible with current version of World of Tanks)_
-  * [Color Messages and Session Stats] (http://worldof-tanks.com/statistics-pack/)
-  * ~~[DamageLog - log received, and blocked damage](http://forum.worldoftanks.ru/index.php?/topic/1594349-0912-damagelog-%D0%BB%D0%BE%D0%B3-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%BD%D0%B0%D0%BD%D0%B5%D1%81%D0%B5/)~~
+  * [Session Statistics and Battle Result Messages] (http://forum.worldoftanks.eu/index.php?/topic/572771-0916-session-statistics-and-battle-result-messages/)
   * [XVM Mod] (http://www.modxvm.com)
   * [Active Dossier Uploader] (http://www.vbaddict.net)
-  * ~~[Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)~~
   * [SafeShotExtended] (http://forum.worldoftanks.ru/index.php?/topic/1769267-0916-safeshotextended-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D0%B1%D1%8B/)
-  * ~~[Replacing the sounds / Sound changing sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)~~
   * [Spotted Mod] (http://forum.worldoftanks.eu/index.php?/topic/526403-0914-spotted-mod-last-update-10032016/)
-  * ~~[PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)~~
   * [Battle Assistant] ( http://forum.worldoftanks.ru/index.php?/topic/1389614-094-battle-assistant-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B2-%D0%B8%D0%B3%D1%80%D0%B5/)
-  * ~~[Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)~~
   * [TessuMod, WOT/Teamspeak integration mod] (http://forum.worldoftanks.eu/index.php?/topic/433614-099-tessumod-wotteamspeak-integration-mod-v062-1672015/)
+  * Added commonly used sixth sense audio which beeps for 10 secs
+  * ~~[DamageLog - log received, and blocked damage](http://forum.worldoftanks.ru/index.php?/topic/1594349-0912-damagelog-%D0%BB%D0%BE%D0%B3-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%BD%D0%B0%D0%BD%D0%B5%D1%81%D0%B5/)~~
+  * ~~[Radial Menu] (http://forum.worldoftanks.com/index.php?/topic/462197-custom-radial-menu-910-by-yanoerika-sinamafuyu/)~~
+  * ~~[Replacing the sounds / Sound changing sounds to various events] (http://www.koreanrandom.com/forum/topic/18955-)~~
+  * ~~[PMOD] (http://forum.worldoftanks.ru/index.php?/topic/1172523-094-pmod-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D1%81-%D0%BF%D1%80%D1%8F%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8-upd-07112014-ver-094-12/)~~
+  * ~~[Calculator WN8, EFF, XWN8, XEFF, COEF, DIFF + log damage] (http://forum.worldoftanks.ru/index.php?/topic/1421510-0914-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-wn8-eff-xwn8-xeff-coef-diff-%D0%BB%D0%BE%D0%B3-%D1%83%D1%80%D0%BE%D0%BD%D0%B0/)~~
   * ~~[Autoaim indication+snapping] (http://forum.worldoftanks.eu/index.php?/topic/441413-099-autoaim-indicationsnapping/)~~
   * ~~[crewSkillInformer] (http://forum.worldoftanks.eu/index.php?/topic/481984-0981-crewskillinformer-crews-skills-and-perks-in-battle-window-update-05072015-v05/page__hl__%2Bcrewskillinformer__fromsearch__1)~~
-  * ~~My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.14~~
   * ~~[Arty Reload Timer] (http://goxwot.blogspot.se/2015/08/99-arty-reload-timer.html)~~
-  * Added commonly used sixth sense audio which beeps for 10 secs
+  * ~~My updated version of [AMX 13-57 non-WGL skin which allows emblems, and inscriptions](http://www.reddit.com/r/WorldofTanks/comments/33ij9t/the_1357_uncamo_skin_was_pretty_cool_but_lets/) updated to 0.9.14~~
 
 ### Not included but recommended mods ###
 I want to recommend [Orrie's WotStatScript](http://forum.wotlabs.net/index.php?/topic/1264-wotstatscript-userscript-for-player-profile-page/). It will add a lot of additional statistics for players on the worldoftank.{ru,eu,com,etc} player profile statistics. 
