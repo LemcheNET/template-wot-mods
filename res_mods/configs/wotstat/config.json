@@ -1,14 +1,14 @@
 {
     "debugBattleResultMessage": false,
-    "onlineReloadConfig": false,
+    "onlineReloadConfig": true,
     "ignoreBattleType": [2, 4, 7, 8],
     "showResetButton": true,
     "textResetButton": "Reset",
     "textGeneralPageButton": "By Tank",
     "textByTankPageButton": "General",
-    "dailyAutoReset": false,
-    "dailyAutoResetHour": 3,
-    "clientReloadReset": false,
+    "dailyAutoReset": true,
+    "dailyAutoResetHour": 6,
+    "clientReloadReset": true,
     "thousandSeparator": ",",
 
     "hideMessagePatterns": [
