@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 import os
 import sys
@@ -11,8 +11,9 @@ from bisect import bisect_left
 
 import BigWorld
 import Vehicle
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
 from gui import game_control
-from gui.battle_control import g_sessionProvider
 
 from xfw import *
 
@@ -66,11 +67,13 @@ def getVehicleByHandle(handle):
 
 
 def getVehicleInfo(vehicleID):
-    return g_sessionProvider.getArenaDP().getVehicleInfo(vehicleID)
+    sessionProvider = dependency.instance(IBattleSessionProvider)
+    return sessionProvider.getArenaDP().getVehicleInfo(vehicleID)
 
 
 def getVehicleStats(vehicleID):
-    return g_sessionProvider.getArenaDP().getVehicleStats(vehicleID)
+    sessionProvider = dependency.instance(IBattleSessionProvider)
+    return sessionProvider.getArenaDP().getVehicleStats(vehicleID)
 
 
 # 0 - equal, -1 - v1<v2, 1 - v1>v2, -2 - error
@@ -121,12 +124,7 @@ def getDynamicColorValue(type, value, prefix='#'):
     return "{0}{1:06x}".format(prefix, color)
 
 
-def fixPath(path):
-    if path:
-        path = path.replace('\\', '/')
-        if path[-1] != '/':
-            path += '/'
-    return path
+
 
 
 def getAccountDBID():
@@ -146,18 +144,6 @@ def getMapSize():
 def fixImgTag(path):
     return path.replace('xvm://', 'img://' + XVM_PATH.XVM_IMG_RES_ROOT).replace('cfg://', 'img://' + XVM_PATH.XVM_IMG_CFG_ROOT)
 
-# Fix 'xvm://*' to './res_mods/mods/shared_resources/xvm/*'
-# Fix 'cfg://*' to './res_mods/configs/xvm/*'
-# Fix '*' to 'basepath/*'
-def fixXvmPath(path, basepath = None):
-    if path[:6].lower() == "xvm://":
-        path = path.replace("xvm://","./res_mods/mods/shared_resources/xvm/", 1)
-    elif path[:6].lower() == "cfg://":
-        path = path.replace("cfg://","./res_mods/configs/xvm/", 1)
-    elif basepath:
-        path = fixPath(basepath)+path
-    return path.replace('\\', '/')
-
 def takeClosest(myList, myNumber):
     """
     Assumes myList is sorted. Returns closest value to myNumber.
@@ -175,3 +161,16 @@ def takeClosest(myList, myNumber):
        return after
     else:
        return before
+
+class PrettyFloat(float):
+    def __repr__(self):
+        return '%.15g' % self
+
+def pretty_floats(obj):
+    if isinstance(obj, float):
+        return PrettyFloat(obj)
+    elif isinstance(obj, dict):
+        return dict((k, pretty_floats(v)) for k, v in obj.items())
+    elif isinstance(obj, (list, tuple)):
+        return map(pretty_floats, obj)             
+    return obj

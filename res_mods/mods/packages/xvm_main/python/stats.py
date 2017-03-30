@@ -1,14 +1,13 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #############################
 # Command
 
-def getBattleStat(args, respondFunc, spaceID):
+def getBattleStat(args, respondFunc):
     _stat.enqueue({
         'func': _stat.getBattleStat,
         'cmd': XVM_COMMAND.AS_STAT_BATTLE_DATA,
         'respondFunc': respondFunc,
-        'spaceID': spaceID,
         'args': args})
     _stat.processQueue()
 
@@ -44,11 +43,13 @@ import uuid
 import imghdr
 
 import BigWorld
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.app_loader import g_appLoader
-from gui.battle_control import g_sessionProvider
 from items.vehicles import VEHICLE_CLASS_TAGS
 
 from xfw import *
+import xfw.utils as xfwutils
 
 import config
 from consts import *
@@ -61,7 +62,6 @@ import vehinfo_xtdb
 import vehinfo_xte
 import xvm_scale
 import xvmapi
-
 
 #############################
 
@@ -101,7 +101,7 @@ class _Stat(object):
         def paths_gen():
             # Search icons
             prefix = 'res_mods/mods/shared_resources/xvm/res/{}'.format(
-                utils.fixPath(config.get('battle/clanIconsFolder')))
+                xfwutils.fix_path_slashes(config.get('battle/clanIconsFolder')))
             yield '{}ID/{}.png'.format(prefix, pl.accountDBID)
             yield '{}{}/nick/{}.png'.format(prefix, GAME_REGION, pl.name)
             if hasattr(pl, 'x_emblem'):
@@ -161,12 +161,10 @@ class _Stat(object):
                     BigWorld.callback(0, self.processQueue)
 
     def _respond(self):
-        spaceID = self.req.get('spaceID', None)
-        if spaceID is None or g_appLoader.getSpaceID() == spaceID:
-            debug("respond: " + self.req['cmd'])
-            self.resp = unicode_to_ascii(self.resp)
-            func = self.req.get('respondFunc', as_xfw_cmd)
-            func(self.req['cmd'], self.resp)
+        debug("respond: " + self.req['cmd'])
+        self.resp = unicode_to_ascii(self.resp)
+        func = self.req.get('respondFunc', as_xfw_cmd)
+        func(self.req['cmd'], self.resp)
 
 
     # Threaded
@@ -365,10 +363,11 @@ class _Stat(object):
             if cacheKey not in self.cacheBattle:
                 all_cached = False
 
-            requestList.append("%d=%d%s" % (
-                pl.accountDBID,
-                pl.vehCD,
-                '=1' if not replay and pl.vehicleID == playerVehicleID else ''))
+            if pl.vehCD != 65281:
+                requestList.append("%d=%d%s" % (
+                    pl.accountDBID,
+                    pl.vehCD,
+                    '=1' if not replay and pl.vehicleID == playerVehicleID else ''))
 
         if all_cached or not requestList:
             return
@@ -430,7 +429,6 @@ class _Stat(object):
         team = player.team if hasattr(player, 'team') else 0
 
         if self.players is not None:
-            # TODO: optimize
             for (vehicleID, pl) in self.players.iteritems():
                 if pl.accountDBID == stat['_id']:
                     stat['vehicleID'] = pl.vehicleID
@@ -561,8 +559,7 @@ class _Stat(object):
         if 'fb' not in v or v['fb'] < 0:
             return
         v['xte'] = vehinfo_xte.calculateXTE(v['id'], float(v['db']), float(v['fb']))
-        #log(v['xte'])
-
+        #log(str(v['id']) + " xte=" + str(v['xte']))
 
     def _addContactData(self, stat):
         # try to add changed nick and comment
@@ -623,6 +620,8 @@ class _Player(object):
                  'vehCD', 'vLevel', 'maxHealth', 'vIcon', 'vn', 'vType', 'alive', 'ready',
                  'x_emblem', 'x_emblem_loading', 'clanicon')
 
+    sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
     def __init__(self, vehicleID, vData):
         self.vehicleID = vehicleID
         self.accountDBID = vData['accountDBID']
@@ -640,7 +639,7 @@ class _Player(object):
             self.vehCD = 0
         self.team = vData['team']
         self.squadnum = 0
-        arenaDP = g_sessionProvider.getArenaDP()
+        arenaDP = self.sessionProvider.getArenaDP()
         if arenaDP is not None:
             vInfo = arenaDP.getVehicleInfo(vID=vehicleID)
             self.squadnum = vInfo.squadIndex

@@ -1,14 +1,14 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.16',
+    'VERSION':       '0.9.17.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
+    'GAME_VERSIONS': ['0.9.17.1'],
     # optional
 }
 
@@ -36,8 +36,8 @@ def _WWISE_WW_eventGlobalPos(base, event, pos):
     return base(_checkAndReplace(event), pos)
 
 @overrideMethod(WWISE, 'WW_getSoundObject')
-def _WWISE_WW_getSoundObject(base, event, matrix, local):
-    return base(_checkAndReplace(event), matrix, local)
+def _WWISE_WW_getSoundObject(base, objectName, *args, **kwargs):
+    return base(_checkAndReplace(objectName), *args, **kwargs)
 
 @overrideMethod(WWISE, 'WW_getSound')
 def _WWISE_WW_getSound(base, eventName, objectName, matrix, local):

@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 __all__ = ['start', 'stop', 'call']
 
@@ -24,6 +24,7 @@ import xvm_main.python.minimap_circles as minimap_circles
 import xvm_main.python.utils as utils
 
 from xvm_main.python.consts import *
+from xvm_main.python.xvm import g_xvm
 from consts import *
 
 
@@ -40,8 +41,13 @@ def start():
     BigWorld.player().arena.onNewVehicleListReceived -= start
     BigWorld.callback(0, _start)
 
-def _start():
-    if config.networkServicesSettings.xmqp or (isReplay() and XMQP_DEVELOPMENT):
+def _start(e=None):
+    g_eventBus.removeListener(XVM_EVENT.XVM_SERVICES_INITIALIZED, _start)
+    if not g_xvm.xvmServicesInitialized:
+        g_eventBus.addListener(XVM_EVENT.XVM_SERVICES_INITIALIZED, _start)
+        return
+
+    if (config.networkServicesSettings.xmqp and not isReplay()) or XMQP_DEVELOPMENT:
         token = config.token.token
         if token:
             players = []
@@ -166,17 +172,21 @@ class _XMQP(object):
             err(traceback.format_exc())
 
     def call(self, data):
-        if self.is_consuming:
-            #self._correlation_id = str(uuid.uuid4())
-            message = simplejson.dumps({'accountDBID': utils.getAccountDBID(), 'data': data})
-            debug('[XMQP] call: %s' % utils.hide_guid(message))
-            self._channel.basic_publish(
-                exchange=self._exchange_name,
-                routing_key='',
-                #properties=pika.BasicProperties(
-                #    reply_to=self._queue_name,
-                #    correlation_id=self._correlation_id),
-                body=message)
+        if self.is_consuming and self._exchange_name is not None:
+            try:
+                #self._correlation_id = str(uuid.uuid4())
+                message = simplejson.dumps({'accountDBID': utils.getAccountDBID(), 'data': data})
+                debug('[XMQP] call: %s' % utils.hide_guid(message))
+                self._channel.basic_publish(
+                    exchange=self._exchange_name,
+                    routing_key='',
+                    #properties=pika.BasicProperties(
+                    #    reply_to=self._queue_name,
+                    #    correlation_id=self._correlation_id),
+                    body=message)
+            except Exception as ex:
+                err('_exchange_name=' + str(self._exchange_name))
+                err(traceback.format_exc())
 
     # INTERNAL
 
@@ -388,7 +398,7 @@ class _XMQP(object):
             'token': config.token.token,
             'players': self._players,
             'capabilities': simplejson.dumps(getCapabilitiesData())})
-        debug(utils.hide_guid(message))
+        debug('[XMQP] %s' % utils.hide_guid(message))
         self._channel.basic_publish(
             exchange=XVM.XMQP_LOBBY_EXCHANGE,
             routing_key=XVM.XMQP_LOBBY_ROUTING_KEY,

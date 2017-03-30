@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # imports
@@ -11,17 +11,20 @@ import game
 import constants
 from Avatar import PlayerAvatar
 from Vehicle import Vehicle
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.app_loader import g_appLoader
 from gui.app_loader.settings import APP_NAME_SPACE, GUI_GLOBAL_SPACE_ID
 from gui.shared import g_eventBus, events
 from gui.shared.utils.functions import getBattleSubTypeBaseNumder
-from gui.battle_control import g_sessionProvider, avatar_getter
+from gui.battle_control import avatar_getter
 from gui.battle_control.arena_info.settings import INVALIDATE_OP
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from gui.battle_control.controllers.dyn_squad_functional import DynSquadFunctional
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
+from gui.Scaleform.daapi.view.battle.shared import battle_loading
 from gui.Scaleform.daapi.view.battle.shared.damage_panel import DamagePanel
 from gui.Scaleform.daapi.view.battle.shared.markers2d import settings as markers2d_settings
 from gui.Scaleform.daapi.view.battle.shared.minimap import settings as minimap_settings
@@ -77,13 +80,14 @@ def _PlayerAvatar_onBecomePlayer(base, self):
                 arena.onAvatarReady += g_battle.onAvatarReady
                 arena.onVehicleStatisticsUpdate += g_battle.onVehicleStatisticsUpdate
                 arena.onNewVehicleListReceived += xmqp.start
-        ctrl = g_sessionProvider.shared.feedback
+        sessionProvider = dependency.instance(IBattleSessionProvider)
+        ctrl = sessionProvider.shared.feedback
         if ctrl:
             ctrl.onVehicleFeedbackReceived += g_battle.onVehicleFeedbackReceived
-        ctrl = g_sessionProvider.shared.vehicleState
+        ctrl = sessionProvider.shared.vehicleState
         if ctrl:
             ctrl.onVehicleStateUpdated += g_battle.onVehicleStateUpdated
-        ctrl = g_sessionProvider.shared.optionalDevices
+        ctrl = sessionProvider.shared.optionalDevices
         if ctrl:
             ctrl.onOptionalDeviceAdded += g_battle.onOptionalDeviceAdded
             ctrl.onOptionalDeviceUpdated += g_battle.onOptionalDeviceUpdated
@@ -102,13 +106,14 @@ def _PlayerAvatar_onBecomeNonPlayer(base, self):
                 arena.onAvatarReady -= g_battle.onAvatarReady
                 arena.onVehicleStatisticsUpdate -= g_battle.onVehicleStatisticsUpdate
                 arena.onNewVehicleListReceived -= xmqp.start
-        ctrl = g_sessionProvider.shared.feedback
+        sessionProvider = dependency.instance(IBattleSessionProvider)
+        ctrl = sessionProvider.shared.feedback
         if ctrl:
             ctrl.onVehicleFeedbackReceived -= g_battle.onVehicleFeedbackReceived
-        ctrl = g_sessionProvider.shared.vehicleState
+        ctrl = sessionProvider.shared.vehicleState
         if ctrl:
             ctrl.onVehicleStateUpdated -= g_battle.onVehicleStateUpdated
-        ctrl = g_sessionProvider.shared.optionalDevices
+        ctrl = sessionProvider.shared.optionalDevices
         if ctrl:
             ctrl.onOptionalDeviceAdded -= g_battle.onOptionalDeviceAdded
             ctrl.onOptionalDeviceUpdated -= g_battle.onOptionalDeviceUpdated
@@ -152,15 +157,13 @@ def onHealthChanged(self, newHealth, attackerID, attackReasonID):
 # on vehicle info updated
 @registerEvent(DynSquadFunctional, 'updateVehiclesInfo')
 def _DynSquadFunctional_updateVehiclesInfo(self, updated, arenaDP):
-    # debug("> _BattleArenaController_updateVehiclesInfo")
+    # debug("> _DynSquadFunctional_updateVehiclesInfo")
     try:
         # is dynamic squad created
         if BigWorld.player().arena.guiType == constants.ARENA_GUI_TYPE.RANDOM:
             for flags, vo in updated:
                 if flags & INVALIDATE_OP.PREBATTLE_CHANGED and vo.squadIndex > 0:
-                    for vInfoVO in arenaDP.getVehiclesInfoIterator():
-                        if vInfoVO.team == vo.team and vInfoVO.squadIndex == vo.squadIndex:
-                            g_battle.updatePlayerState(vInfoVO.vehicleID, INV.SQUAD_INDEX) # | INV.PLAYER_STATUS
+                    g_battle.updatePlayerState(vo.vehicleID, INV.SQUAD_INDEX) # | INV.PLAYER_STATUS
     except Exception, ex:
         err(traceback.format_exc())
 
@@ -203,15 +206,20 @@ class Battle(object):
     xvm_battle_swf_initialized = False
     is_moving = False
 
+    sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
     def onAppInitialized(self, event):
-        self.xvm_battle_swf_initialized = False
+        #log('onAppInitialized: ' + str(event.ns))
+        if event.ns == APP_NAME_SPACE.SF_BATTLE:
+            self.xvm_battle_swf_initialized = False
         app = g_appLoader.getApp(event.ns)
         if app is not None and app.loaderManager is not None:
             app.loaderManager.onViewLoaded += self.onViewLoaded
 
     def onAppDestroyed(self, event):
-        self.xvm_battle_swf_initialized = False
+        #log('onAppDestroyed: ' + str(event.ns))
         if event.ns == APP_NAME_SPACE.SF_BATTLE:
+            self.xvm_battle_swf_initialized = False
             self.battle_page = None
         app = g_appLoader.getApp(event.ns)
         if app is not None and app.loaderManager is not None:
@@ -308,7 +316,7 @@ class Battle(object):
                         data['marksOnGun'] = entity.publicInfo.marksOnGun
 
             if targets & (INV.ALL_VINFO | INV.ALL_VSTATS):
-                arenaDP = g_sessionProvider.getArenaDP()
+                arenaDP = self.sessionProvider.getArenaDP()
                 if targets & INV.ALL_VINFO:
                     vInfoVO = arenaDP.getVehicleInfo(vehicleID)
                 if targets & INV.ALL_VSTATS:
@@ -339,6 +347,12 @@ class Battle(object):
     def invalidateArenaInfo(self):
         #debug('battle: invalidateArenaInfo')
         if self.battle_page:
+            if battle_loading.isBattleLoadingShowed():
+                if 'battleLoading' in self.battle_page.as_getComponentsVisibilityS():
+                    battleLoading = self.battle_page.getComponent(BATTLE_VIEW_ALIASES.BATTLE_LOADING)
+                    if battleLoading:
+                        battle_loading._setBattleLoading(False)
+                        battleLoading.invalidateArenaInfo()
             ctrl = self.battle_page.getComponent(BATTLE_VIEW_ALIASES.BATTLE_STATISTIC_DATA_CONTROLLER)
             if ctrl:
                 ctrl._BattleStatisticsDataController__setPersonalStatus()
@@ -397,7 +411,7 @@ class Battle(object):
             return markers2d_settings.DAMAGE_TYPE.FROM_UNKNOWN
         if attackerID == avatar_getter.getPlayerVehicleID():
             return markers2d_settings.DAMAGE_TYPE.FROM_PLAYER
-        entityName = g_sessionProvider.getCtx().getPlayerGuiProps(attackerID, entryVehicle['team'])
+        entityName = self.sessionProvider.getCtx().getPlayerGuiProps(attackerID, entryVehicle['team'])
         if entityName == PLAYER_GUI_PROPS.squadman:
             return markers2d_settings.DAMAGE_TYPE.FROM_SQUAD
         if entityName == PLAYER_GUI_PROPS.ally:

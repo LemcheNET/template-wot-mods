@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 import traceback
 import ast
@@ -6,12 +6,12 @@ import sys
 import os
 import glob
 
-from xfw import *
+from xfw.constants import PATH
 from consts import *
 from logger import *
 
 
-sys.path.append("%s/../configs/xvm/py_macro" % XFW_WORK_DIR)
+sys.path.append("%s/../configs/xvm/py_macro" % PATH.XFW_MODS_DIR)
 
 # Globals
 _container = {}

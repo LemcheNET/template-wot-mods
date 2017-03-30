@@ -1,10 +1,146 @@
-﻿XVM-6.4.9.1:
+﻿XVM-6.5.7:
+  [GENERAL]
+  * adaptation to 23.03.2017 micropatch
+
+  [CAROUSEL]
+  * rename options: "damageAvgPerMinute" -> "avgDamagePerMinute", "damageAvg" -> "avgDamage"
+  * fixed tooltips
+
+  [MINIMAP]
+  * changed "artillery" circle behavior:
+      circle radius consider vertical gun constraints
+
+  [HANGAR]
+  * added options hangar/pingServers/bgImage and hangar/onlineServers/bgImage
+
+XVM-6.5.6:
+  [XFW]
+  * python console shortcut was changed to Ctrl+Alt+~
+
+  [HANGAR]
+  * fixed hangar loading after battle
+  * fixed critical hits counter in the battle results window
+  * fixed premium XP counter in the battle results window
+  * fixed win chances in the battle results window
+
+  [PYTHON MACROSES]
+  * added the macro {{py:xvm.dynamic_color_rating(rating, value)}}
+  * totalEfficiency: fixed macroses {{py:xvm.crits}} and {{py:xvm.detection}}
+  * repairTime: fixed timers stuck on switching in observer mode
+  * damageLog: fixed option "moveInBattle"
+  * damageLog: fixed macros usage in the "x" and "y" parameters
+
+XVM-6.5.5:
+  [GENERAL]
+  * adaptation to WoT 0.9.17.1
+  * enable DPI-Aware mode for high pixel density displays for Microsoft Windows Vista or later
+  * various bug fixes
+
+  [XFW]
+  * part of the functionality (bank loading, Microsoft Windows XP fixes) was moved from XVM to XFW
+  * make XFW more independent from XVM
+  * add python console (based on Hedger's py4wot). Use Alt+~ to enable it.
+
+  [XMQP]
+  * ignoring clicks and lines from blocked players
+  * save xmqp data in replay
+  
+  [DAMAGE LOG]
+  * fix statistics for disconnected player
+  * removed the option "saveLocationInBattle"
+  * added new options in the "damageLog"/"log" and "damageLog"/"lastHit": sections:
+      "moveInBattle" - to allow movement of battleLabels by a mouse in battle
+
+  [MARKERS]
+  * added image scaling for extrafields
+
+  [MINIMAP]
+  * save circles data in replay
+  * fixed drawing of "motion" and "blindarea_motion" circles
+
+  [CAROUSEL]
+  * added new options in the "carousel"/"normal"/"fields" and "carousel"/"small"/"fields" sections:
+      "stats" - settings for the stats field that appears on the mouse hover
+      "favorite" - favorite vehicle mark
+  * added hotkeys support for the extraFields in the carousel
+  * added new filter icons
+  
+  [BATTLE LOADING]
+  * implemented "highlightVehicleIcon" option
+  
+  [PLATOONS]
+  * fixed battle tier calculation
+  * fixed dynamic platoons
+
+  [MACROSES]
+  * allow formatting for recursive macros like `{{{{py:random.randint()}}==0?zero|one}}`
+  
+  [PYTHON MACROSES]
+  * added xvm.utils.smooth_transition_color() function
+  * added list of available macroses with their description (/res_mods/mods/shared_resources/xvm/docs/py_macros.txt)
+
+XVM-6.5.4:
+  * adaptation to WoT 0.9.17.0.3
+  * various bug fixes
+
+XVM-6.5.3-CIS:
+  * ONLY FOR CIS(RU) CLUSTER
+  * fix clan wars
+  * added new options in "hangar" section:
+      "commonQuests" - show/hide common quests button or change its parameters
+      "personalQuests" - show/hide personal quests button or change its parameters
+      "vehicleName" - show/hide current vehicle name, type and level or change their parameters
+  * various bug fixes
+ 
+XVM-6.5.2.1:
+  * ONLY FOR EU, NA, ASIA, KR
+  * fix clan wars
+
+XVM-6.5.2-CIS:
+  * ONLY FOR CIS(RU) CLUSTER
+  * adaptation to WoT 0.9.17.0.2
+
+XVM-6.5.2:
+  * adaptation of the battle loading screen
+  * renamed parameters in the "iconset" section and changed value from folder to atlas name:
+      "battleLoadingAlly" => "battleLoadingLeftAtlas"
+      "battleLoadingEnemy" => "battleLoadingRightAtlas"
+
+XVM-6.5.1.1:
+  * re-release
+
+XVM-6.5.1:
+  * fixed switching vehicles on minimap click
+  * updated xTE values
+  * many bugs fixed
+
+XVM-6.5.0.1:
+  * adaptation to WoT 0.9.17.0.1
+
+XVM-6.5.0:
+  [MACROS]
+  * added global macro:
+      {{my-alive}} - is my vehicle alive
+
+  [OTHER]
+  * adaptation to WoT 0.9.17
+  * removed "token/cnt" parameter in the localization files (no longer used)
+  * various bug fixes
+
+﻿XVM-6.4.10:
+  * added macros for "Top Tankers" event:
+      {{top_tankers_rank}} - player's rank on current vehicle in the "Top Tankers" game event
+      {{top_tankers_emblem}} - emblem for player's rank on current vehicle  in the "Top Tankers" game event
+  * added option:
+      "hangar"/"notificationsButtonType" - behavior of the system channel notifications button on new notifications
+
+XVM-6.4.9.1:
   [INSTALLER]
   * Fix installer building
 
 XVM-6.4.9:
   [DAMAGE LOG]
-  * Reloading timer was removed due to new "fair play" policy  
+  * Reloading timer was removed due to new "fair play" policy
 
   [MISC]
   * Python part of XVM now distributed in source code (.py files)
@@ -33,7 +169,7 @@ XVM-6.4.8:
 
   [MISC]
   * Various bugs fixes
-  
+
   [DOC]
   * Added description for the parameters used in setting extra field (see extra-field.txt)
 

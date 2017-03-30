@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 import traceback
 import simplejson
@@ -6,7 +6,6 @@ import simplejson
 from gui.shared import g_eventBus, events
 from gui.app_loader import g_appLoader
 from gui.app_loader.settings import GUI_GLOBAL_SPACE_ID
-from gui.battle_control import g_sessionProvider
 
 from xfw import *
 
@@ -40,6 +39,7 @@ def onXmqpConnected(e):
     data = {'event': EVENTS.XMQP_HOLA, 'capabilities': xmqp.getCapabilitiesData()}
     if xmqp.is_active():
         xmqp.call(data)
+    _sendCapabilities()
 
 def onBattleInit():
     _sendCapabilities()
@@ -68,11 +68,6 @@ def _as_xmqp_event(accountDBID, data, targets=TARGETS.ALL):
         if accountDBID == utils.getAccountDBID():
             accountDBID = getCurrentAccountDBID()
 
-    #arenaDP = g_sessionProvider.getArenaDP()
-    #vehicleID = arenaDP.getVehIDByAccDBID(accountDBID)
-    #if not vehicleID:
-    #    return
-
     battle = getBattleApp()
     if not battle:
         return
@@ -86,14 +81,13 @@ def _as_xmqp_event(accountDBID, data, targets=TARGETS.ALL):
         return
 
     event = data['event']
-    del data['event']
     data = None if not data else unicode_to_ascii(data)
 
     if targets & TARGETS.BATTLE:
         as_xfw_cmd(XVM_BATTLE_COMMAND.AS_XMQP_EVENT, accountDBID, event, data)
 
     if targets & TARGETS.VMM:
-        if g_markers.active:
+        if g_markers.enabled:
             g_markers.call(XVM_BATTLE_COMMAND.AS_XMQP_EVENT, accountDBID, event, data)
 
 # battle init

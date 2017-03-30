@@ -1,14 +1,14 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.16',
+    'VERSION':       '0.9.17.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
+    'GAME_VERSIONS': ['0.9.17.1'],
     # optional
 }
 
@@ -28,7 +28,6 @@ import ResMgr
 import game
 from account_helpers.settings_core import settings_constants
 from account_helpers.settings_core.options import SettingsContainer
-from account_helpers.settings_core.SettingsCore import g_settingsCore
 from Avatar import PlayerAvatar
 from BattleReplay import g_replayCtrl
 from PlayerEvents import g_playerEvents
@@ -41,7 +40,7 @@ from gui.shared import g_eventBus, events
 from gui.Scaleform.framework.application import SFApplication
 from gui.Scaleform.daapi.view.lobby.profile.ProfileTechniqueWindow import ProfileTechniqueWindow
 from gui.Scaleform.daapi.view.lobby.hangar.AmmunitionPanel import AmmunitionPanel
-from helpers import VERSION_FILE_PATH
+from helpers import dependency, VERSION_FILE_PATH
 
 from xfw import *
 
@@ -51,7 +50,9 @@ import config
 import filecache
 import svcmsg
 import utils
+import vehinfo_wn8
 from xvm import g_xvm
+
 
 #####################################################################
 # initialization/finalization
@@ -103,8 +104,8 @@ def SFApplication_as_updateStageS(*args, **kwargs):
     g_xvm.onUpdateStage()
 
 @overrideMethod(MessageDecorator, 'getListVO')
-def _NotificationDecorator_getListVO(base, self):
-    return svcmsg.fixData(base(self))
+def _MessageDecorator_getListVO(base, self, newId=None):
+    return svcmsg.fixData(base(self, newId))
 
 @overrideMethod(NotificationsActionsHandlers, 'handleAction')
 def _NotificationsActionsHandlers_handleAction(base, self, model, typeID, entityID, actionName):
@@ -128,9 +129,9 @@ g_replayCtrl._BattleReplay__replayCtrl.clientVersionDiffersCallback = onClientVe
 # LOBBY
 
 @overrideMethod(ProfileTechniqueWindow, 'requestData')
-def ProfileTechniqueWindow_RequestData(base, self, data):
-    if data.vehicleId:
-        base(self, data)
+def ProfileTechniqueWindow_RequestData(base, self, vehicleId):
+    if vehicleId:
+        base(self, vehicleId)
 
 
 # PRE-BATTLE
@@ -157,7 +158,7 @@ def _PlayerAvatar_onBecomeNonPlayer(base, self):
 #####################################################################
 # Log version info + warn about installed XVM fonts
 
-log("XVM: eXtended Visualisation Mod ( %s )" % XFW_MOD_INFO['URL'])
+log("XVM: eXtended Visualization Mod ( %s )" % XFW_MOD_INFO['URL'])
 
 try:
     from __version__ import __branch__, __revision__, __node__
@@ -185,3 +186,6 @@ except Exception, ex:
 
 # load config
 config.load(events.HasCtxEvent(XVM_EVENT.RELOAD_CONFIG, {'filename':XVM.CONFIG_FILE}))
+
+# load wn8 expected values
+vehinfo_wn8.init()

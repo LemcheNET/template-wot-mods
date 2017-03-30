@@ -1,4 +1,4 @@
-""" XFW Library (c) www.modxvm.com 2013-2016 """
+""" XFW Library (c) www.modxvm.com 2013-2017 """
 
 # EXPORT
 
@@ -40,17 +40,31 @@ class XFWCOLORS(object): #in hex, 6 symbols
 
 # INTERNAL
 
+class FLAGS(object):
+    XFW_IN_PACKAGE = False
+
+class VERSION(object):
+    XFW_VERSION = '5.0.0'
+
+    WOT_VERSION_FULL = ''
+    WOT_VERSION_SHORT = ''
+
 class CONST(object):
     XFW_VIEW_ALIAS = 'xfw_injector'
     XFW_COMPONENT_ALIAS = 'xfw'
 
 class PATH(object):
-    GENERAL_MODS_DIR = '' # will be filled in later with 'res_mods/0.9.9' in xfw_loader.py.
-    XFW_MODS_DIR = "res_mods/mods/packages/"
+    WOT_RESMODS_DIR = '' # will be filled in later with 'res_mods/0.9.9' in xfw_loader.py.
+
+    XFW_WORK_DIR = '' # XFW work dir, will be filled in later in mod_.pyc. Fall back to /res_mods/mods/
+    XFW_MODS_DIR = '' # XFW **realFS** work dir, will be filled in later in mod_.pyc. Fall back to /res_mods/mods/
+
     XFW_SWF_URL = "../../../mods/xfw/actionscript/xfw.swf"
     XFW_SWF_PATH = "../" + XFW_SWF_URL
+
     XFWFONTS_SWF_URL = "../../../mods/xfw/actionscript/xfwfonts.swf"
     XFWFONTS_SWF_PATH = "../" + XFWFONTS_SWF_URL
+
     XVM_LOG_FILE_NAME = "xvm.log"
 
 class COMMAND(object):

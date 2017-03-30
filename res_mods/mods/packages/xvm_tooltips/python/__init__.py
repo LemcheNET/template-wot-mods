@@ -1,14 +1,14 @@
-﻿""" XVM (c) www.modxvm.com 2013-2016 """
+﻿""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.16',
+    'VERSION':       '0.9.17.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
+    'GAME_VERSIONS': ['0.9.17.1'],
     # optional
 }
 
@@ -30,8 +30,6 @@ from gui.shared import g_eventBus, g_itemsCache
 from gui.shared.formatters import text_styles
 from gui.shared.tooltips import formatters
 from gui.shared.gui_items import GUI_ITEM_TYPE
-# TODO:0.9.15.0.1
-#from gui.shared.tooltips.module import ModuleParamsField
 from gui.Scaleform.locale.MENU import MENU
 from gui.shared.items_parameters import formatters as param_formatter
 from gui.shared.items_parameters.formatters import measureUnitsForParameter
@@ -43,6 +41,7 @@ from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
 from gui.Scaleform.framework.ToolTip import ToolTip
 from gui.Scaleform.daapi.view.battle.shared.consumables_panel import ConsumablesPanel
 from gui.Scaleform.daapi.view.meta.ModuleInfoMeta import ModuleInfoMeta
+from gui.shared.tooltips.module import ModuleBlockTooltipData
 from xfw import *
 
 import xvm_main.python.config as config
@@ -59,7 +58,7 @@ shells_vehicles_compatibility = {}
 carousel_tooltips_cache = {}
 styles_templates = {}
 toolTipDelayIntervalId = None
-weightTooHeavy = None  # will be localized red 'weight (kg)'
+weightTooHeavy = False  
 p_replacement = None # will be something like <font size... color...>
 
 #####################################################################
@@ -227,7 +226,7 @@ def CommonStatsBlockConstructor_construct(base, self):
         gun = vehicle.gun.descriptor
         turret = vehicle.turret.descriptor
         comparator = idealCrewComparator_helper(vehicle)
-        vehicleCommonParams = dict(getParameters_helper(vehicle))
+        vehicleCommonParams = getParameters_helper(vehicle)
         veh_type_inconfig = vehicle.type.replace('AT-SPG', 'TD')
         clipGunInfoShown = False
         premium_shells = {}
@@ -240,7 +239,10 @@ def CommonStatsBlockConstructor_construct(base, self):
                 params_list = values # overriding parameters
             else:
                 params_list = self.PARAMS.get(vehicle.type, 'default') # original parameters
+            paramInfo = None
             for paramName in params_list:
+                if paramName is None:
+                    continue
                 if paramName in vehicleCommonParams:
                     paramInfo = comparator.getExtendedData(paramName)
                 if paramName == 'turretArmor' and not vehicle.hasTurrets:
@@ -380,8 +382,8 @@ def CommonStatsBlockConstructor_construct(base, self):
                 elif paramName.startswith('TEXT:'):
                     customtext = paramName[5:]
                     tooltip_add_param(self, result, l10n(customtext), '')
-                elif paramName in paramInfo.name:
-                    valueStr = str(param_formatter.baseFormatParameter(paramName, paramInfo.value))
+                elif paramInfo is not None and paramName in paramInfo.name:
+                    valueStr = str(param_formatter.formatParameter(paramName, paramInfo.value))
                     tooltip_add_param(self, result, getParameterValue(paramName), valueStr)
         if vehicle.isInInventory:
             # optional devices icons, must be in the end
@@ -455,38 +457,44 @@ def ModuleInfoMeta_as_setModuleInfoS(base, self, moduleInfo):
         err(traceback.format_exc())
     base(self, moduleInfo)
 
-# add '#menu:moduleInfo/params/weightTooHeavy' (red 'weight (kg)')
-@overrideMethod(i18n, 'makeString')
-def makeString(base, key, *args, **kwargs):
-    if key == '#menu:moduleInfo/params/weightTooHeavy':
-        global weightTooHeavy
-        if weightTooHeavy is None:
-            weightTooHeavy = '<h>%s</h>' % red_pad(strip_html_tags(i18n.makeString('#menu:moduleInfo/params/weight'))) # localized red 'weight (kg)'
-        return weightTooHeavy
-    return base(key, *args, **kwargs)
+# # add '#menu:moduleInfo/params/weightTooHeavy' (red 'weight (kg)')
+# @overrideMethod(i18n, 'makeString')
+# def makeString(base, key, *args, **kwargs):
+#     if key == '#menu:moduleInfo/params/weightTooHeavy':
+#         global weightTooHeavy
+#         if weightTooHeavy is None:
+#             weightTooHeavy = '<h>%s</h>' % red_pad(strip_html_tags(i18n.makeString('#menu:moduleInfo/params/weight'))) # localized red 'weight (kg)'
+#         return weightTooHeavy
+#     return base(key, *args, **kwargs)
 
-# TODO:0.9.15.0.1
-## paint 'weight (kg)' with red if module does not fit due to overweight
-#@overrideMethod(ModuleParamsField, '_getValue')
-#def ModuleParamsField_getValue(base, self, *args, **kwargs):
-#    result = base(self, *args, **kwargs)
-#    try:
-#        try:
-#            param_name = result[0][-1][0]
-#        except:
-#            param_name = 'wrong item'
-#        if param_name == 'weight':
-#            module = self._tooltip.item
-#            configuration = self._tooltip.context.getStatusConfiguration(module)
-#            vehicle = configuration.vehicle
-#            slotIdx = configuration.slotIdx
-#            if vehicle is not None:
-#                isFit, reason = module.mayInstall(vehicle, slotIdx)
-#                if not isFit and reason == 'too heavy':
-#                    result[0][-1][0] = 'weightTooHeavy'
-#    except Exception as ex:
-#        err(traceback.format_exc())
-#    return result
+##########################################################################
+# paint 'weight (kg)' with red if module does not fit due to overweight
+
+@overrideMethod(param_formatter, 'formatModuleParamName')
+def formatters_formatModuleParamName(base, paramName):
+    builder = text_styles.builder()
+    if weightTooHeavy and paramName == 'weight':
+        builder.addStyledText(text_styles.error, MENU.moduleinfo_params(paramName))
+        builder.addStyledText(text_styles.error, param_formatter.MEASURE_UNITS.get(paramName, ''))
+    else:
+        builder.addStyledText(text_styles.main, MENU.moduleinfo_params(paramName))
+        builder.addStyledText(text_styles.standard, param_formatter.MEASURE_UNITS.get(paramName, ''))
+    return builder.render()
+
+@overrideMethod(ModuleBlockTooltipData, '_packBlocks')
+def ModuleBlockTooltipData_packBlocks(base, self, *args, **kwargs):
+    try:
+        global weightTooHeavy
+        module = self.context.buildItem(*args, **kwargs)
+        statusConfig = self.context.getStatusConfiguration(module)
+        vehicle = statusConfig.vehicle
+        slotIdx = statusConfig.slotIdx
+        if vehicle is not None:
+            isFit, reason = module.mayInstall(vehicle, slotIdx)
+            weightTooHeavy = not isFit and reason == 'too heavy'
+    except Exception as ex:
+        err(traceback.format_exc())
+    return base(self, *args, **kwargs)
 
 
 #####################################################################

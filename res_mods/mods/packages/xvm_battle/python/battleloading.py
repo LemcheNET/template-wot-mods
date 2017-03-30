@@ -1,16 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
-
-#####################################################################
-# MOD INFO
-
-XFW_MOD_INFO = {
-    # mandatory
-    'VERSION':       '0.9.16',
-    'URL':           'http://www.modxvm.com/',
-    'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
-    # optional
-}
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # imports
@@ -20,7 +8,7 @@ import re
 import traceback
 
 import BigWorld
-from gui.Scaleform.daapi.view.battle_loading import BattleLoading
+from gui.Scaleform.daapi.view.battle.shared.battle_loading import BattleLoading
 
 from xfw import *
 
@@ -42,7 +30,6 @@ def BattleLoading_as_setTipTitleS(base, self, title):
     title = '<p align="left"><font size="16">{}</font></p>'.format(title)
     return base(self, title)
 
-
 @overrideMethod(BattleLoading, 'as_setTipS')
 def BattleLoading_as_setTipS(base, self, val):
     stateInfo = config.get('__stateInfo')
@@ -51,7 +38,6 @@ def BattleLoading_as_setTipS(base, self, val):
     elif 'warning' in stateInfo and stateInfo['warning']:
         val = getTipText(stateInfo['warning'])
     return base(self, val)
-
 
 def getTipText(text, isError=False):
     text = cgi.escape(text)

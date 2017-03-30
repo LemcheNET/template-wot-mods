@@ -1,14 +1,14 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.16',
+    'VERSION':       '0.9.17.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
+    'GAME_VERSIONS': ['0.9.17.1'],
     # optional
 }
 
@@ -21,7 +21,7 @@ import game
 from gui.shared import g_eventBus, g_itemsCache
 from gui.Scaleform.daapi.view.lobby.prb_windows.squad_view import SquadView
 from gui.Scaleform.daapi.view.dialogs import SimpleDialogMeta, I18nConfirmDialogButtons
-from gui.prb_control.functional.action_handlers import SquadActionsHandler
+from gui.prb_control.entities.base.squad.actions_handler import SquadActionsHandler
 from gui.DialogsInterface import showDialog
 from functools import partial
 
@@ -85,11 +85,9 @@ def onXfwCommand(cmd, *args):
 def SquadView__init__(self, *args, **kwargs):
     squad_update_tiers(self, *args, **kwargs)
 
-
 @registerEvent(SquadView, 'onUnitVehiclesChanged')
 def SquadView_onUnitVehiclesChanged(self, *args, **kwargs):
     squad_update_tiers(self, *args, **kwargs)
-
 
 def squad_update_tiers(self, *args, **kwargs):
     try:
@@ -99,11 +97,11 @@ def squad_update_tiers(self, *args, **kwargs):
             return
         min_tier = 0
         max_tiers = []
-        squad_unitFunctional = self.unitFunctional.getUnit()[1]
-        if not squad_unitFunctional:
+        entity = self.prbEntity.getUnit()[1]
+        if not entity:
             as_xfw_cmd(COMMANDS.AS_UPDATE_TIERS, '')
             return
-        for squad_vehicle in squad_unitFunctional.getVehicles().values():
+        for squad_vehicle in entity.getVehicles().values():
             veh = g_itemsCache.items.getItemByCD(squad_vehicle[0].vehTypeCompDescr)
             (veh_tier_low, veh_tier_high) = getTiers(veh.level, veh.type, veh.name)
             min_tier = max(veh_tier_low, min_tier)
@@ -118,8 +116,8 @@ def squad_update_tiers(self, *args, **kwargs):
     except Exception, ex:
         err(traceback.format_exc())
 
-@overrideMethod(SquadActionsHandler, '_setCreatorReady')
-def setCreatorReady_confirm_battletier_diff(base, self, result):
+@overrideMethod(SquadActionsHandler, '_confirmCallback')
+def _SquadActionsHandler_confirmCallback(base, self, result):
     if not result:
         return
     try:

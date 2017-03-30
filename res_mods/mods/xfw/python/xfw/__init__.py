@@ -1,12 +1,16 @@
-""" XFW Library (c) www.modxvm.com 2013-2016 """
+""" XFW Library (c) www.modxvm.com 2013-2017 """
 
 import os
+
+#####################################################################
+# Check for token masking
+
+XFW_NO_TOKEN_MASKING = os.environ.get('XFW_NO_TOKEN_MASKING') is not None
 
 #####################################################################
 # Check for development mode
 
 IS_DEVELOPMENT = os.environ.get('XFW_DEVELOPMENT') is not None
-XFW_NO_TOKEN_MASKING = os.environ.get('XFW_NO_TOKEN_MASKING') is not None
 if IS_DEVELOPMENT:
     print '[XFW] Development mode'
     # Setup development environment
@@ -15,8 +19,6 @@ if IS_DEVELOPMENT:
         BigWorld.flushPythonLog()
         BigWorld.callback(0.1, _autoFlushPythonLog)
     _autoFlushPythonLog()
-
-XFW_WORK_DIR = '' # will be filled in later in xfw_loader.py
 
 #####################################################################
 # imports
@@ -33,7 +35,6 @@ from swf import *
 __all__ = [
     'IS_DEVELOPMENT',
     'XFW_NO_TOKEN_MASKING',
-    'XFW_WORK_DIR',
     # constants
     'XFWCOMMAND',
     'XFWEVENT',

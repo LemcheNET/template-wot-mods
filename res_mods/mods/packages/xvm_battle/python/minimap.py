@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2016 """
+""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # imports
@@ -11,12 +11,12 @@ import BigWorld
 import constants
 import game
 from constants import VISIBILITY
-from account_helpers.settings_core import g_settingsCore, settings_constants
+from account_helpers.settings_core.SettingsCore import SettingsCore
+from account_helpers.settings_core import settings_constants
 from Avatar import PlayerAvatar
 from AvatarInputHandler.control_modes import PostMortemControlMode
 from items.vehicles import VEHICLE_CLASS_TAGS
 from gui.shared import g_eventBus, events
-from gui.battle_control import g_sessionProvider
 from gui.Scaleform.daapi.view.battle.shared.minimap.component import MinimapComponent
 from gui.Scaleform.daapi.view.battle.shared.minimap.settings import ENTRY_SYMBOL_NAME, ADDITIONAL_FEATURES
 from gui.Scaleform.daapi.view.battle.shared.minimap.plugins import ArenaVehiclesPlugin, PersonalEntriesPlugin
@@ -107,9 +107,8 @@ def _ADDITIONAL_FEATURES_isOn(base, cls, mask):
 def _ADDITIONAL_FEATURES_isChanged(base, cls, mask):
     return False if g_minimap.active and g_minimap.labelsEnabled else base(mask)
 
-@overrideMethod(PersonalEntriesPlugin, '_PersonalEntriesPlugin__createViewPointEntry')
-def _PersonalEntriesPlugin__createViewPointEntry(base, self, avatar):
-   base(self, avatar)
+@registerEvent(PersonalEntriesPlugin, '_PersonalEntriesPlugin__updateViewPointEntry')
+def _PersonalEntriesPlugin__updateViewPointEntry(self, avatar):
    g_minimap.viewPointID = self._getViewPointID()
 
 @overrideMethod(PersonalEntriesPlugin, '_PersonalEntriesPlugin__onVehicleFeedbackReceived')
@@ -145,9 +144,9 @@ _DEFAULTS = {
 _in_PersonalEntriesPlugin_setSettings = False
 _in_ArenaVehiclesPlugin_setSettings = False
 
-@overrideMethod(g_settingsCore, 'getSetting')
-def _g_settingsCore_getSetting(base, name):
-    value = base(name)
+@overrideMethod(SettingsCore, 'getSetting')
+def _SettingsCore_getSetting(base, self, name):
+    value = base(self, name)
     if g_minimap.active:
         global _in_PersonalEntriesPlugin_setSettings
         if _in_PersonalEntriesPlugin_setSettings:
@@ -170,10 +169,13 @@ def _PersonalEntriesPlugin_start(base, self):
     base(self)
     if g_minimap.active and g_minimap.linesEnabled:
         if not self._PersonalEntriesPlugin__yawLimits:
-            vInfo = g_sessionProvider.getArenaDP().getVehicleInfo()
-            yawLimits = vInfo.vehicleType.turretYawLimits
-            if yawLimits:
-                self._PersonalEntriesPlugin__yawLimits = (math.degrees(yawLimits[0]), math.degrees(yawLimits[1]))
+            vehicle = BigWorld.player().arena.vehicles.get(BigWorld.player().playerVehicleID)
+            staticTurretYaw = vehicle['vehicleType'].gun['staticTurretYaw']
+            if staticTurretYaw is None:
+                vInfoVO = self._arenaDP.getVehicleInfo()
+                yawLimits = vInfoVO.vehicleType.turretYawLimits
+                if yawLimits:
+                    self._PersonalEntriesPlugin__yawLimits = (math.degrees(yawLimits[0]), math.degrees(yawLimits[1]))
 
 @overrideMethod(PersonalEntriesPlugin, 'setSettings')
 def _PersonalEntriesPlugin_setSettings(base, self):
@@ -217,7 +219,7 @@ def _ArenaVehiclesPlugin_updateSettings(base, self, diff):
 # Minimap dead switch
 @registerEvent(PostMortemControlMode, 'onMinimapClicked')
 def _PostMortemControlMode_onMinimapClicked(self, worldPos):
-    #log('_PostMortemControlMode_onMinimapClicked')
+    #log('_PostMortemControlMode_onMinimapClicked active=' + str(g_minimap.active))
     if g_minimap.active and config.get('battle/minimapDeadSwitch'):
         try:
             battle = getBattleApp()
@@ -265,6 +267,7 @@ class _Minimap(object):
 
     @property
     def active(self):
+        #log('g_battle.xvm_battle_swf_initialized: ' + str(g_battle.xvm_battle_swf_initialized))
         return g_battle.xvm_battle_swf_initialized and \
                self.enabled and \
                self.initialized and \

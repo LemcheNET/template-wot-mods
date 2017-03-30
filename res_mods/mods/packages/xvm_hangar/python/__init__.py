@@ -1,14 +1,14 @@
-﻿""" XVM (c) www.modxvm.com 2013-2016 """
+﻿""" XVM (c) www.modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.16',
+    'VERSION':       '0.9.17.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.16'],
+    'GAME_VERSIONS': ['0.9.17.1'],
     # optional
 }
 
@@ -23,10 +23,11 @@ import helpers
 import nations
 from CurrentVehicle import g_currentVehicle
 from gui.shared import g_eventBus, g_itemsCache
+from gui.prb_control.entities.base.actions_validator import CurrentVehicleActionsValidator
+from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import PREBATTLE_RESTRICTION
 from gui.Scaleform.daapi.view.meta.BarracksMeta import BarracksMeta
 from gui.shared.gui_items.Vehicle import Vehicle
-from gui.prb_control.dispatcher import _PrebattleDispatcher
 
 from xfw import *
 
@@ -35,6 +36,7 @@ from xvm_main.python.consts import *
 from xvm_main.python.logger import *
 from xvm_main.python.xvm import l10n
 
+import svcmsg
 
 #####################################################################
 # initialization/finalization
@@ -122,15 +124,16 @@ def Vehicle_isReadyToFight(base, self, *args, **kwargs):
 
 
 # low ammo => vehicle not ready (disable red button)
-@overrideMethod(_PrebattleDispatcher, 'canPlayerDoAction')
-def _PrebattleDispatcher_canPlayerDoAction(base, self, *args, **kwargs):
-    try:
-        if not g_currentVehicle.isReadyToFight() and g_currentVehicle.item and not g_currentVehicle.item.isAmmoFull and config.get('hangar/blockVehicleIfLowAmmo'):
-            return (False, PREBATTLE_RESTRICTION.VEHICLE_NOT_READY)
-    except Exception as ex:
-        err(traceback.format_exc())
-    return base(self, *args, **kwargs)
-
+@overrideMethod(CurrentVehicleActionsValidator, '_validate')
+def _CurrentVehicleActionsValidator_validate(base, self):
+    res = base(self)
+    if not res or res[0] == True:
+        try:
+            if not g_currentVehicle.isReadyToFight() and g_currentVehicle.item and not g_currentVehicle.item.isAmmoFull and config.get('hangar/blockVehicleIfLowAmmo'):
+                res = ValidationResult(False, PREBATTLE_RESTRICTION.VEHICLE_NOT_READY)
+        except Exception as ex:
+            err(traceback.format_exc())
+    return res
 
 # low ammo => write on carousel's vehicle 'low ammo'
 @overrideMethod(helpers.i18n, 'makeString')

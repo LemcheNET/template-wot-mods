@@ -26,18 +26,24 @@ def xvm_team_strength(a, e):
         debug(traceback.format_exc())
         return ''
 
+# Dynamic color
+
+@xvm.export('xvm.dynamic_color_rating', deterministic=False)
+def dynamic_color_rating(rating, value):
+    return utils.dynamic_color_rating(rating, value)
+
 
 # TotalHP
 
 from xvm import total_hp
 
 @xvm.export('xvm.total_hp.ally', deterministic=False)
-def total_hp_ally():
-    return total_hp.ally()
+def total_hp_ally(norm=None):
+    return total_hp.ally(norm)
 
 @xvm.export('xvm.total_hp.enemy', deterministic=False)
-def total_hp_enemy():
-    return total_hp.enemy()
+def total_hp_enemy(norm=None):
+    return total_hp.enemy(norm)
 
 @xvm.export('xvm.total_hp.color', deterministic=False)
 def total_hp_color():
@@ -53,11 +59,13 @@ def total_hp_text():
 
 @xvm.export('xvm.total_hp.avgDamage', deterministic=False)
 def total_hp_avgDamage(header, dmg_total):
-    return "%s%s" % (header, total_hp.avgDamage(dmg_total)) if total_hp.avgDamage(dmg_total) is not None else ''
+    _avgDamage = total_hp.avgDamage(dmg_total)
+    return "%s%s" % (header, _avgDamage) if _avgDamage is not None else None
 
 @xvm.export('xvm.total_hp.mainGun', deterministic=False)
 def total_hp_mainGun(header, dmg_total):
-    return "%s%s" % (header, total_hp.mainGun(dmg_total)) if total_hp.mainGun(dmg_total) is not None else ''
+    _mainGun = total_hp.mainGun(dmg_total)
+    return "%s%s" % (header, _mainGun) if _mainGun is not None else None
 
 @xvm.export('xvm.total_hp.getAvgDamage', deterministic=False)
 def total_hp_getAvgDamage(a, b, dmg_total):
