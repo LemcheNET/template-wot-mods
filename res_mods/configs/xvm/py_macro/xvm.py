@@ -1,4 +1,4 @@
-
+import time
 import traceback
 
 # Import logger
@@ -8,6 +8,43 @@ from xvm_main.python.logger import *
 import xvm_main.python.config as config
 
 from xvm import utils
+
+# Date and time
+
+import locale
+d = {}
+loc = locale.getdefaultlocale()[1]
+
+@xvm.export('xvm.formatDate', deterministic=False)
+def xvm_formatDate(formatDate):
+    def createDict(value, formatDate):
+        global d
+        s = time.strftime('%{}'.format(value[0])).decode(loc)
+        d[value] = s.title() if value[1] == 'u' else s.lower()
+        return formatDate.replace('%{}'.format(value), '{%s}' % value)
+
+    global d
+    d = {}
+    formatDate = formatDate.decode('utf8').encode(loc)
+    if '%au' in formatDate:
+        formatDate = createDict('au', formatDate)
+    if '%al' in formatDate:
+        formatDate = createDict('al', formatDate)
+    if '%Au' in formatDate:
+        formatDate = createDict('Au', formatDate)
+    if '%Al' in formatDate:
+        formatDate = createDict('Au', formatDate)
+    if '%bu' in formatDate:
+        formatDate = createDict('bu', formatDate)
+    if '%bl' in formatDate:
+        formatDate = createDict('bl', formatDate)
+    if '%Bu' in formatDate:
+        formatDate = createDict('Bu', formatDate)
+    if '%Bl' in formatDate:
+        formatDate = createDict('Bl', formatDate)
+    t = time.strftime(formatDate).decode(loc)
+    return t.format(**d)
+
 
 # Team Strength
 

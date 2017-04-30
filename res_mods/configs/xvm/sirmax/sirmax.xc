@@ -42,7 +42,8 @@
     "autologin": true,
     "confirmOldReplays": true,
     "pingServers": ${"def.pingServers"},
-    "onlineServers": ${"def.onlineServers"}
+    "onlineServers": ${"def.onlineServers"},
+    "widgets": ${"sirmax-widgets.xc":"widgets.login"}
   },
   "hangar": {
     "enableGoldLocker": true,
@@ -57,19 +58,12 @@
     "crewMaxPerksCount": 10,
     "enableEquipAutoReturn": true,
     "notificationsButtonType": "blink",
-    "widgetsEnabled": true,
     "blockVehicleIfLowAmmo": true,
     "pingServers": {
       "$ref": { "path":"def.pingServers" },
       "x": 5
     },
     "carousel": ${"sirmax-carousel.xc":"carousel"},
-    "clock": {
-      //"layer": "bottom",
-      //"x": -200,
-      //"y": 70
-      //"format": "<font face='$FieldFont'><font size='26'> {{H}}:{{m%02d}} {{AM?a.m.|p.m.}}</font></font>"
-    },
     //"showBuyPremiumButton": false,
     //"showPremiumShopButton": false,
     "serverInfo": {
@@ -99,12 +93,12 @@
       //"rotation": 0,
       //"shiftX": 0,
       //"shiftY": 0
-    }
+    },
+    "widgets": ${"sirmax-widgets.xc":"widgets.lobby"}
   },
   "userInfo": {
     "inHangarFilterEnabled": true,
     "startPage": 4,
-    "sortColumn": 3,
     //"sortColumn": -9,
     //"showXTEColumn": false,
     "defaultFilterValue": "+all -premium -master -arty"

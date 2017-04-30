@@ -1,4 +1,81 @@
-﻿XVM-6.5.7:
+﻿XVM-6.6.4:
+  [BATTLE LABELS]
+  * fix mouse capture
+
+XVM-6.6.3:
+  [GENERAL]
+  * World of Tanks 9.18 worldwide release
+
+  [CAMERA]
+  * new parameter: "camera"/"sniper"/"noBinoculars" allow to disable dimming and greening in sniper scope
+
+  [STATS]
+  * xTE and xtdb were updated
+
+XVM-6.6.2:
+  [INSTALLER]
+  * fix new installation path selection
+
+  [XFW]
+  * enchanced support for CJK (Chinese, Japanese, Korean)
+
+  [HANGAR]
+  * fixed clock for CJK
+
+XVM-6.6.1:
+  [INSTALLER]
+  * fix installation when XVM was previously installer
+
+  [OTHER]
+  * restore missing locales
+  * XVM-Symbol.ttf font was updated
+  * fixed tiers for Light Tanks
+  * fixed typos in tanks short name
+
+XVM-6.6.0:
+  [GENERAL]
+  * adaptation to World of Tanks 9.18
+
+  [XFW]
+  * part of the functionality (ping, XInput) was moved from XVM to XFW
+  * partially switch to .wotmod packages format
+  * XFW can now be used without XVM
+  
+  [TOOLTIPS]
+  * Updated avaliable parameters list (tooltips.xc) 
+  
+  [DAMAGE LOG]
+  * 'alive' value of a macro {{my-alive} } is renamed into 'al'
+  * added macroses {{wn6}}, {{xwn6}}, {{r}}, {{c:wn6}}, {{c:xwn6}}, {{c:r}}
+  
+  [PYTHON MACROSES]
+  * totalEfficiency: added the macros {{py:xvm.totalStun}}, {{py:xvm.isStuns}}, {{py:xvm.numberStuns}}
+  
+  [WIDGETS]
+  * added new function - widgets in login and lobby
+    currently only "extrafields" widget type implemented
+    configuration files: widgets.xc, widgetsTemplates.xc
+    referenced from login.xc, hangar.xc
+
+  [BATTLE LABELS]
+  * "layer" parameter can be used in the battleLabels
+
+  [INSTALLER]
+  * improvements in WoT client path detection
+  
+  [HANGAR]
+  * clock in the hangar is moved to widgets
+  * removed config file "clock.xc" and references
+  * removed userInfo/sortColumn option, build in since 0.9.18
+
+  [MARKERS]
+  * added "stunMarker" settings for stun marker
+
+  [CAROUSEL]
+  * added settings "fields"/"infoImg"
+  * parameters "textFormat" and "shadow" added in the text fields settings in section "fields"
+
+XVM-6.5.7:
   [GENERAL]
   * adaptation to 23.03.2017 micropatch
 
@@ -787,7 +864,7 @@ XVM-5.5.0:
       {{spotted}} with values from texts/spotted section
       {{c:spotted}}, {{a:spotted}} for color and transparency by spotted status
   * removed section playersPanel/enemySpottedMarker (use extra fields with {{spotted}} macro instead)
-  * added new option to extraFields: "bindToIcon" - if enabled, x position is binded to vehicle icon (default false)
+  * added new option to extraFields: "bindToIcon" - if enabled, x position is bound to vehicle icon (default false)
 
 XVM-5.4.1.3:
   * new in-battle macros:

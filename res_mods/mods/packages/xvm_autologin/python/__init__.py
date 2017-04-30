@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.17.1',
+    'VERSION':       '0.9.18.0',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.17.1'],
+    'GAME_VERSIONS': ['0.9.18.0'],
     # optional
 }
 
@@ -49,11 +49,10 @@ def LoginView_populate(base, self):
     if config.get('login/saveLastServer'):
         if self._servers.selectedServerIdx == 0:
             serverName = userprefs.get('autologin/server', 0)
-
-        for idx, value in enumerate(self._servers.serverList):
-            if serverName == value['data']:
-                self._servers._selectedServerIdx = idx
-                break
+            for idx, value in enumerate(self._servers.serverList):
+                if serverName == value['data']:
+                    self._servers._selectedServerIdx = idx
+                    break
 
     base(self)
 
