@@ -243,7 +243,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                 if paramName == 'rateOfFire':
                     paramName = 'reloadTime'
                 elif paramName == 'traverseLimits':
-                    paramName = 'gunYawLimits'
+                    paramName = 'gunYawLimits' if 'gunYawLimits' in vehicleCommonParams else 'turretYawLimits'
                 elif paramName == 'radioRange':
                     paramName = 'radioDistance'
                 elif paramName == 'reloadTimeSecs' and vehicle.gun.isClipGun():

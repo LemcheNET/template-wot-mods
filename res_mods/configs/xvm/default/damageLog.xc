@@ -36,10 +36,14 @@
     {{diff-masses}}       - vehicles weights difference during collision / разность масс техники при столкновении
     {{nation}}            - vehicle nation / нация техники
     {{my-blownup}}        - value 'blownup' if own vehicle's ammunition have been blown up, '' otherwise  / возвращает 'blownup', если взорван боекомплект техники игрока, иначе пусто
+    {{stun-duration}}     - stun duration / продолжительность оглушения
 */
 
 {
   "damageLog": {
+    // false - Disable.
+    // false - отключить.
+    "enabled": true,
     // true - disable standard detailed damage.
     // true - отключить стандартный детальный урон.
     "disabledDetailStats": true,
