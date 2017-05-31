@@ -9,7 +9,6 @@ import Math
 
 import BigWorld
 from Avatar import PlayerAvatar
-from AvatarInputHandler.control_modes import ArcadeControlMode, SniperControlMode
 from AvatarInputHandler.DynamicCameras.ArcadeCamera import ArcadeCamera, MinMax
 from AvatarInputHandler.DynamicCameras.SniperCamera import SniperCamera
 from AvatarInputHandler.DynamicCameras.StrategicCamera import StrategicCamera
@@ -17,6 +16,14 @@ from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.battle_control.battle_constants import CROSSHAIR_VIEW_ID
 from gui.Scaleform.daapi.view.battle.shared.crosshair.container import CrosshairPanelContainer
+from AvatarInputHandler.control_modes import SniperControlMode
+from helpers.EffectsList import _FlashBangEffectDesc
+from gui.Scaleform.daapi.view.meta.SiegeModeIndicatorMeta import SiegeModeIndicatorMeta
+from gui.Scaleform.daapi.view.meta.CrosshairPanelContainerMeta import CrosshairPanelContainerMeta
+from AvatarInputHandler.AimingSystems.SniperAimingSystem import SniperAimingSystem    
+from Keys import KEY_RIGHTMOUSE
+from AvatarInputHandler import mathUtils
+from gun_rotation_shared import calcPitchLimitsFromDesc
 
 from xfw import *
 
@@ -75,7 +82,9 @@ def _ArcadeCamera_create(base, self, pivotPos, onChangeControlMode = None, postm
 
         value = c['distRange']
         if value is not None:
-            cfg['distRange'] = MinMax(float(value[0]), float(value[1]))
+            defMin = 2
+            defMax = 25
+            cfg['distRange'] = MinMax(float(value[0]), float(value[1])) if value[0] != value[1] else MinMax(defMin, defMax)
 
         value = c['startDist']
         if value is not None:
@@ -125,7 +134,7 @@ def _SniperCamera__onSettingsChanged(base, self, diff):
     base(self, diff)
 
 @overrideMethod(SniperCamera, 'enable')
-def _SniperCamera_enable(base, self, targetPos, saveZoom, isRemoteCamera=False):
+def _SniperCamera_enable(base, self, targetPos, saveZoom):
     #debug('_SniperCamera_enable')
     if config.get('battle/camera/enabled'):
         zoom = config.get('battle/camera/sniper/startZoom')
@@ -135,7 +144,7 @@ def _SniperCamera_enable(base, self, targetPos, saveZoom, isRemoteCamera=False):
             zoom = self._SniperCamera__cfg['zoom']
         self._SniperCamera__cfg['zoom'] = utils.takeClosest(self._SniperCamera__cfg['zooms'], zoom)
 
-    base(self, targetPos, saveZoom, isRemoteCamera)
+    base(self, targetPos, saveZoom)
     _sendSniperCameraFlash(True, self._SniperCamera__zoom)
 
 @registerEvent(SniperCamera, 'disable')
@@ -181,7 +190,6 @@ def _StrategicCamera_create(base, self, onChangeControlMode = None):
         value = c['distRange']
         if value is not None:
             cfg['distRange'] = [float(i) for i in value]
-            self._StrategicCamera__aimingSystem._StrategicAimingSystem__height = cfg['distRange'][0]
 
     base(self, onChangeControlMode)
 
@@ -190,6 +198,62 @@ def setupBinoculars(base, self, isCoatedOptics):
     if config.get('battle/camera/enabled') and config.get('battle/camera/sniper/noBinoculars'):
         return
     base(self, isCoatedOptics)
+
+@overrideMethod(_FlashBangEffectDesc, 'create')
+def create(base, self, model, list, args):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/noFlashBang'):
+        return
+    base(self, model, list, args)
+
+@overrideMethod(SiegeModeIndicatorMeta, 'as_showHintS')
+def SiegeModeIndicatorMeta_as_showHintS(base, self, buttonName, messageLeft, messageRight):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
+        return
+    base(self, buttonName, messageLeft, messageRight)
+
+@overrideMethod(SiegeModeIndicatorMeta, 'as_hideHintS')
+def SiegeModeIndicatorMeta_as_hideHintS(base, self):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
+        return
+    base(self)
+
+@overrideMethod(CrosshairPanelContainerMeta, 'as_showHintS')
+def CrosshairPanelContainerMeta_as_showHintS(base, self, key, messageLeft, messageRight, offsetX, offsetY):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
+        return
+    base(self, key, messageLeft, messageRight, offsetX, offsetY)
+
+@overrideMethod(CrosshairPanelContainerMeta, 'as_hideHintS')
+def CrosshairPanelContainerMeta_as_hideHintS(base, self):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
+        return
+    base(self)
+
+@overrideMethod(SniperAimingSystem, '_SniperAimingSystem__clampToLimits')
+def clampToLimits(base, self, turretYaw, gunPitch):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/sniper/noCameraLimit/enabled'):
+        if not BigWorld.isKeyDown(KEY_RIGHTMOUSE) and self._SniperAimingSystem__yawLimits is not None and config.get('battle/camera/sniper/noCameraLimit/mode') == "hotkey":
+            turretYaw = mathUtils.clamp(self._SniperAimingSystem__yawLimits[0], self._SniperAimingSystem__yawLimits[1], turretYaw)
+        getPitchLimits = BigWorld.player().vehicleTypeDescriptor.gun['combinedPitchLimits']
+        pitchLimits = calcPitchLimitsFromDesc(turretYaw, getPitchLimits)
+        adjustment = max(0, self._SniperAimingSystem__returningOscillator.deviation.y)
+        pitchLimits[0] -= adjustment
+        pitchLimits[1] += adjustment
+        gunPitch = mathUtils.clamp(pitchLimits[0], pitchLimits[1] + self._SniperAimingSystem__pitchCompensating, gunPitch)
+        return (turretYaw, gunPitch)
+    return base(self, turretYaw, gunPitch)
+
+@overrideMethod(SniperControlMode, 'getPreferredAutorotationMode')
+def getPreferredAutorotationMode(base, self):
+    if config.get('battle/camera/enabled') and config.get('battle/camera/sniper/noCameraLimit/enabled') and config.get('battle/camera/sniper/noCameraLimit/mode') == "full":
+        vehicle = BigWorld.entities.get(BigWorld.player().playerVehicleID)
+        if vehicle is None:
+            return
+        else:
+            desc = vehicle.typeDescriptor
+            isRotationAroundCenter = desc.chassis['rotationIsAroundCenter']
+            return isRotationAroundCenter
+    return base(self)
 
 
 # PRIVATE

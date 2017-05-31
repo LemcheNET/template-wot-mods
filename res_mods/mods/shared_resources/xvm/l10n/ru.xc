@@ -35,7 +35,6 @@
     "ramming": "таран",
     "world_collision": "падение",
     "death_zone": "death zone",
-    "drowning": "drowning",
 
     "Hits": "Пробитий",
     "Total": "Всего",
@@ -51,9 +50,28 @@
     "avgDamage": "Средний урон",
     "mainGun": "Основной калибр",
 
+    // Devices
+    "engine": "двигатель",
+    "ammo_bay": "боеукладка",
+    "fuel_tank": "топливный бак",
+    "radio": "радиостанция",
+    "left_track": "левая гусеница",
+    "right_track": "правая гусеница",
+    "gun": "орудие",
+    "turret_rotator": "вращение башни",
+    "surveying_device": "приборы наблюдения",
+    
+    // Tankmen
+    "commander": "командир экипажа",
+    "driver": "механик-водитель",
+    "radioman": "радист",
+    "gunner": "наводчик",
+    "loader": "заряжающий",    
+    
     // DamageLog:
     "sec": "сек",
     "reloaded": "перезарядился",
+    "drowning": "затоплен",
     // Shell kind (macro {{type-shell}})
     "armor_piercing": "ББ",
     "high_explosive": "ОФ",
@@ -69,7 +87,6 @@
     "turret": "башня",
     "hull": "корпус",
     "chassis": "шасси",
-    "gun": "орудие",
 
     // BattleResults
     "Hit percent": "Процент попаданий",
@@ -141,7 +158,7 @@
     "shootingRadius": "Дальность стрельбы",
     "pitchLimitsSide": "Углы вертикальной наводки сбоку (град)",
     "pitchLimitsRear": "Углы вертикальной наводки сзади (град)",
-    "terrainResistance": "Сопротивление грунтов",
+    "terrainResistance": "Сопротивление грунтов (тверд./средн./мягк.)",
     "gravity": "Гравитация",
     "shellSpeed": "Скорость снаряда",
     "general": "Общие",

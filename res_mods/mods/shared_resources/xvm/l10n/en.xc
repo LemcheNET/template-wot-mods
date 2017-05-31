@@ -35,7 +35,6 @@
     "ramming": "ramming",
     "world_collision": "falling",
     "death_zone": "death zone",
-    "drowning": "drowning",
 
     "Hits": "Hits",
     "Total": "Total",
@@ -51,9 +50,28 @@
     "avgDamage": "Avg damage",
     "mainGun": "High caliber",
 
+    // Devices
+    "engine": "engine",
+    "ammo_bay": "ammo bay",
+    "fuel_tank": "fuel tank",
+    "radio": "radio",
+    "left_track": "left track",
+    "right_track": "right track",
+    "gun": "gun",
+    "turret_rotator": "turret rotator",
+    "surveying_device": "surveying device",
+    
+    // Tankmen
+    "commander": "commander",
+    "driver": "driver",
+    "radioman": "radioman",
+    "gunner": "gunner",
+    "loader": "loader",  
+    
     // DamageLog:
     "sec": "sec",
     "reloaded": "reloaded",
+    "drowning": "drowning",
     // Shell kind (macro {{type-shell}})
     "armor_piercing": "AP",
     "high_explosive": "HE",
@@ -69,7 +87,6 @@
     "turret": "turret",
     "hull": "hull",
     "chassis": "chassis",
-    "gun": "gun",
 
     // BattleResults
     "Hit percent": "Hit percent",
@@ -139,11 +156,9 @@
     "radio_range/actual": "actual",
     "lowAmmo": "Low ammo",
     "shootingRadius": "Shooting radius",
-    "pitchLimits": "Elevation arc",
     "pitchLimitsSide": "Elevation arc (side)",
     "pitchLimitsRear": "Elevation arc (rear)",
-    "traverseLimits": "Gun traverse arc",
-    "terrainResistance": "Terrain resistance",
+    "terrainResistance": "Terrain resistance (hard/medium/soft)",
     "gravity": "Gravity",
     "shellSpeed": "Shell speed",
     "general": "General",

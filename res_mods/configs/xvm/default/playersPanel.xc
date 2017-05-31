@@ -9,6 +9,8 @@
     // Enemy spotted status marker.
     // Маркер статуса засвета противника.
     "enemySpottedMarker": {
+      // false - отключить.
+      "enabled": true,
       // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
       // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
       "alpha": "{{a:spotted}}",
@@ -34,6 +36,7 @@
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
+      "enabled": true,
       "x": 88, "y": -2, "align": "center", "bindToIcon": true,
       "textFormat": {
         "font": "xvm",
@@ -45,6 +48,7 @@
     // "Top tankers" rank definition.
     // Шаблон позиции в "Танковых асах".
     "topTankers": {
+      "enabled": true,
       "x": 77, "y": 6, "width": 16, "height": 16, "align": "center", "bindToIcon": true,
       "src": "{{top_tankers_emblem}}"
     },
@@ -169,9 +173,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "rank", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "rank", "nick", "vehicle".
       "standardFields": [ "frags" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -208,6 +212,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank column.
+      // Смещение координаты X для поля ранга.
+      "rankXOffsetLeft": 0,
+      "rankXOffsetRight": 0,
+      // Width of the rank column. Default is 24.
+      // Ширина поля ранга. По умолчанию: 24.
+      "rankWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -277,10 +288,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "rank", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
-      "standardFields": [ "frags", "nick" ],
+      // Допустимые названия: "frags", "rank", "nick", "vehicle".
+      "standardFields": [ "frags", "rank", "nick" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
@@ -316,6 +327,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank column.
+      // Смещение координаты X для поля ранга.
+      "rankXOffsetLeft": 0,
+      "rankXOffsetRight": 0,
+      // Width of the rank column. Default is 24.
+      // Ширина поля ранга. По умолчанию: 24.
+      "rankWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -383,9 +401,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "rank", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "rank", "nick", "vehicle".
       "standardFields": [ "frags", "vehicle" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -422,6 +440,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank column.
+      // Смещение координаты X для поля ранга.
+      "rankXOffsetLeft": 0,
+      "rankXOffsetRight": 0,
+      // Width of the rank column. Default is 24.
+      // Ширина поля ранга. По умолчанию: 24.
+      "rankWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -489,10 +514,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "rank", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
-      "standardFields": [ "frags", "nick", "vehicle" ],
+      // Допустимые названия: "frags", "rank", "nick", "vehicle".
+      "standardFields": [ "frags", "rank", "nick", "vehicle" ],
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -525,6 +550,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank column.
+      // Смещение координаты X для поля ранга.
+      "rankXOffsetLeft": 0,
+      "rankXOffsetRight": 0,
+      // Width of the rank column. Default is 24.
+      // Ширина поля ранга. По умолчанию: 24.
+      "rankWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,

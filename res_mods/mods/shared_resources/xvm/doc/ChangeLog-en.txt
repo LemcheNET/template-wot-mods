@@ -1,4 +1,37 @@
-﻿XVM-6.6.5:
+﻿XVM-6.7.1:
+  [GENERAL]
+  * Fixed compatibility issues with Actionscript mods.
+
+  [HANGAR]
+  * Fixed XVM messages displaying in service channel.
+
+XVM-6.7.0:
+  [KNOWN ISSUES]
+  *  Some hangar corruptions when ModsListAPI mod is installed. XVM and ModsListAPI developers are notified about the problem and are working on a solution.
+
+  [GENERAL]
+  * World of Tanks 9.19
+
+  [DAMAGE LOG]
+  * added macro {{crit-device}} and section "crit-device"
+
+  [CAMERA]
+  * new parameter: "camera"/"noFlashBang" - switch the red flash if player's vehicle has got a hit
+  * new parameter: "camera"/"hideHint" - switch the tips about siege/marching mode and artillery aiming mode
+  * new parameter: "camera"/"noCameraLimit" - TODO: English comments
+
+  [MISC]
+  * added options in "battleLoading" and "statisticForm" sections:
+    "removeRankIcon" - disable rank icons
+  * added new field type "rank" in the "playersPanel"/"standardFields" modes sections
+  * added options in the "playersPanel" modes sections:
+    "rankXOffsetLeft" - offset of X value for rank column
+    "rankXOffsetRight" - offset of X value for rank column
+    "rankWidth" - width of the rank column
+  * added macros:
+      {{rankBadgeId}} - player's rank badge id
+
+XVM-6.6.5:
   [GENERAL]
   * World of Tanks 9.18 micropatch
 
@@ -61,7 +94,7 @@ XVM-6.6.0:
   * XFW can now be used without XVM
 
   [TOOLTIPS]
-  * Updated avaliable parameters list (tooltips.xc) 
+  * Updated avaliable parameters list (tooltips.xc)
 
   [DAMAGE LOG]
   * 'alive' value of a macro {{my-alive} } is renamed into 'al'
