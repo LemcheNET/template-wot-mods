@@ -66,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.7.0"
+    "modMinVersion": "6.7.2"
   },
 
   // Parameters for login screen.
@@ -183,5 +183,9 @@
 
   // XMQP services settings
   // Настройки сервисов XMQP
-  "xmqp": ${"xmqp.xc":"xmqp"}
+  "xmqp": ${"xmqp.xc":"xmqp"},
+
+  // Various settings for advanced users
+  // Различные настройки для продвинутых пользоватей
+  "tweaks": ${"tweaks.xc":"tweaks"}
 }
