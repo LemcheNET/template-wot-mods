@@ -46,6 +46,7 @@
     "widgets": ${"sirmax-widgets.xc":"widgets.login"}
   },
   "hangar": {
+    //"hangarType": "premium",
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "defaultBoughtForCredits": true,
@@ -93,6 +94,12 @@
       //"rotation": 0,
       //"shiftX": 0,
       //"shiftY": 0
+    },
+    "camera": {
+      "minDistance": 0,
+      "maxDistance": 13,
+      "startDistance": 10,
+      "zoomSensitivity": 0.5
     },
     "widgets": ${"sirmax-widgets.xc":"widgets.lobby"}
   },
@@ -185,7 +192,7 @@
     //"clockFormat": "H:i",
     "showBattleTier": true,
     //"removeSquadIcon": true,
-    //"removeRankIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
@@ -220,7 +227,7 @@
     //"clockFormat": "H:i",
     "showBattleTier": true,
     //"removeSquadIcon": true,
-    //"removeRankIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
@@ -254,7 +261,7 @@
   "statisticForm": {
     "showBattleTier": true,
     //"removeSquadIcon": true,
-    //"removeRankIcon": true,
+    //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
@@ -274,7 +281,7 @@
     //"fragsFieldOffsetXRight": 30,
     //"fragsFieldWidthLeft": 100,
     //"fragsFieldWidthRight": 100,
-    "squadIconOffsetXLeft": -15,
+    "squadIconOffsetXLeft": -7,
     "squadIconOffsetXRight": -7,
     //"vehicleIconOffsetXLeft": 20,
     //"vehicleIconOffsetXRight": 20,

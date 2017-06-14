@@ -45,13 +45,6 @@
       "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
       "shadow": {}
     },
-    // "Top tankers" rank definition.
-    // Шаблон позиции в "Танковых асах".
-    "topTankers": {
-      "enabled": true,
-      "x": 77, "y": 6, "width": 16, "height": 16, "align": "center", "bindToIcon": true,
-      "src": "{{top_tankers_emblem}}"
-    },
     // Clan icon.
     // Иконка клана.
     "clanIcon": {
@@ -173,9 +166,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "rank", "nick", "vehicle".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "rank", "nick", "vehicle".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -212,13 +205,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
-      // Offset of X value for rank column.
-      // Смещение координаты X для поля ранга.
-      "rankXOffsetLeft": 0,
-      "rankXOffsetRight": 0,
-      // Width of the rank column. Default is 24.
-      // Ширина поля ранга. По умолчанию: 24.
-      "rankWidth": 24,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -262,7 +255,6 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
-        ${"def.topTankers"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -273,7 +265,6 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        ${"def.topTankers"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -288,10 +279,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "rank", "nick", "vehicle".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "rank", "nick", "vehicle".
-      "standardFields": [ "frags", "rank", "nick" ],
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
+      "standardFields": [ "frags", "badge", "nick" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
@@ -327,13 +318,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
-      // Offset of X value for rank column.
-      // Смещение координаты X для поля ранга.
-      "rankXOffsetLeft": 0,
-      "rankXOffsetRight": 0,
-      // Width of the rank column. Default is 24.
-      // Ширина поля ранга. По умолчанию: 24.
-      "rankWidth": 24,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -380,8 +371,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"},
-        ${"def.topTankers"}
+        ${"def.xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -391,8 +381,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
@@ -401,9 +390,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "rank", "nick", "vehicle".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "rank", "nick", "vehicle".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "vehicle" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -440,13 +429,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
-      // Offset of X value for rank column.
-      // Смещение координаты X для поля ранга.
-      "rankXOffsetLeft": 0,
-      "rankXOffsetRight": 0,
-      // Width of the rank column. Default is 24.
-      // Ширина поля ранга. По умолчанию: 24.
-      "rankWidth": 24,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -493,8 +482,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"},
-        ${"def.topTankers"}
+        ${"def.xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -504,8 +492,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     },
     // Options for the "large" panels - the widest panels.
@@ -514,10 +501,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "rank", "nick", "vehicle".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "rank", "nick", "vehicle".
-      "standardFields": [ "frags", "rank", "nick", "vehicle" ],
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
+      "standardFields": [ "frags", "badge", "nick", "vehicle" ],
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -550,13 +537,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
-      // Offset of X value for rank column.
-      // Смещение координаты X для поля ранга.
-      "rankXOffsetLeft": 0,
-      "rankXOffsetRight": 0,
-      // Width of the rank column. Default is 24.
-      // Ширина поля ранга. По умолчанию: 24.
-      "rankWidth": 24,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -603,8 +590,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"},
-        ${"def.topTankers"}
+        ${"def.xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -614,8 +600,7 @@
         ${"def.hp"},
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     }
   }

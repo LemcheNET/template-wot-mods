@@ -17,14 +17,15 @@ from Vehicle import Vehicle
 from VehicleEffects import DamageFromShotDecoder
 from constants import ITEM_DEFS_PATH
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
-from gui.Scaleform.daapi.view.battle.shared.damage_panel import DamagePanel
+from gui.Scaleform.daapi.view.meta.DamagePanelMeta import DamagePanelMeta
 from gui.shared.utils.TimeInterval import TimeInterval
-from items import vehicles
 from items import vehicles, _xml
 from xfw import *
 from xvm_main.python.logger import *
 from xvm_main.python.stats import _stat
 from constants import DAMAGE_INFO_CODES
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
 
 on_fire = 0
 beginFire = None
@@ -77,32 +78,32 @@ RATINGS = {
     'basic_xte': {'name': 'xte', 'size': 2}
 }
 
-DEVICES_TANKMAN = {61: 'engine_crit',
-                   62: 'ammo_bay_crit',
-                   63: 'fuel_tank_crit',
-                   64: 'radio_crit',
-                   65: 'left_track_crit',
-                   66: 'right_track_crit',
-                   67: 'gun_crit',
-                   68: 'turret_rotator_crit',
-                   69: 'surveying_device_crit',
-                   70: 'commander',
-                   71: 'driver',
-                   72: 'radioman',
-                   73: 'radioman',
-                   74: 'gunner',
-                   75: 'gunner',
-                   76: 'loader',
-                   77: 'loader',
-                   161: 'engine_destr',
-                   162: 'ammo_bay_destr',
-                   163: 'fuel_tank_destr',
-                   164: 'radio_destr',
-                   165: 'left_track_destr',
-                   166: 'right_track_destr',
-                   167: 'gun_destr',
-                   168: 'turret_rotator_destr',
-                   169: 'surveying_device_destr'
+DEVICES_TANKMAN = {76: 'engine_crit',
+                   77: 'ammo_bay_crit',
+                   78: 'fuel_tank_crit',
+                   79: 'radio_crit',
+                   80: 'left_track_crit',
+                   81: 'right_track_crit',
+                   82: 'gun_crit',
+                   83: 'turret_rotator_crit',
+                   84: 'surveying_device_crit',
+                   85: 'commander',
+                   86: 'driver',
+                   87: 'radioman',
+                   88: 'radioman',
+                   89: 'gunner',
+                   90: 'gunner',
+                   91: 'loader',
+                   92: 'loader',
+                   176: 'engine_destr',
+                   177: 'ammo_bay_destr',
+                   178: 'fuel_tank_destr',
+                   179: 'radio_destr',
+                   180: 'left_track_destr',
+                   181: 'right_track_destr',
+                   182: 'gun_destr',
+                   183: 'turret_rotator_destr',
+                   184: 'surveying_device_destr'
                    }
 
 SECTION_LOG = 'damageLog/log/'
@@ -211,9 +212,9 @@ FLAG = {'': '>', "'": '>', '-': '<', "-'": '<', '0': '0', "0'": '0', "-0": '0<',
 
 def formatMacro(macro, macroes):
     _macro = macro[2:-2]
-    _macro, _, _def = _macro.partition('|')
-    _macro, _, _rep = _macro.partition('?')
-    fm = {'flag': '', 'type': '', 'width': '', 'suf': ''}
+    _macro, s_def, _def = _macro.partition('|')
+    _macro, s_rep, _rep = _macro.partition('?')
+    fm = {'flag': '', 'type': '', 'width': '', 'suf': '', 'prec': ''}
     _operator = ''
     for s in ('>=', '<=', '!=', '==', '=', '<', '>'):
         if s in _macro:
@@ -237,18 +238,23 @@ def formatMacro(macro, macroes):
     tempMacro = _macro
     if _macro in macroes:
         _macro = macroes[_macro]
+        b = False
         if _operator:
-            if _rep and comparing(_macro, _operator, _math):
+            compar = comparing(_macro, _operator, _math)
+            if s_rep and compar:
                 _macro = _rep
-            elif not comparing(_macro, _operator, _math):
+                b = True
+            elif s_def and not compar:
                 _macro = _def
-        elif _rep and _macro:
+                b = True
+        elif s_rep and _macro:#_rep and _macro:
             _macro = _rep
-        elif _def and not _macro:
+            b = True
+        elif s_def and not _macro:#_def and not _macro:
             _macro = _def
-        if _macro == macroes[tempMacro]:
+            b = True
+        if not b:
             fm['flag'] = FLAG[fm['flag']]
-            fm['prec'] = ''
             if _prec != '':
                 if isinstance(_macro, int):
                     _macro = int(_macro) + _prec
@@ -285,7 +291,8 @@ def parser(strHTML, macroes):
             for s in MACROS_NAME:
                 temp_str = '{{%s}}' % s
                 if temp_str in strHTML:
-                    _macro = str(macroes.get(s, ''))
+                    value = macroes.get(s, '')
+                    _macro = str(value) if value is not None else ''
                     strHTML = strHTML.replace(temp_str, _macro)
                     b = True
         start = strHTML.rfind('{{')
@@ -325,6 +332,8 @@ def parser(strHTML, macroes):
 
 
 class Data(object):
+    sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
     def __init__(self):
         def isGoldShell(n, s):
             if n != 'icons':
@@ -443,8 +452,12 @@ class Data(object):
                     self.data['xte'] = None
                 self.data['clanAbbrev'] = attacker['clanAbbrev']
             self.data['clanicon'] = _stat.getClanIcon(attackerID)
-            statXVM = _stat.players.get(attackerID, None)
-            self.data['squadnum'] = statXVM.squadnum if statXVM is not None else None
+            self.data['squadnum'] = None
+            arenaDP = self.sessionProvider.getArenaDP()
+            if arenaDP is not None:
+                vInfo = arenaDP.getVehicleInfo(vID=attackerID)
+                self.squadnum = vInfo.squadIndex
+                self.data['squadnum'] = vInfo.squadIndex if vInfo.squadIndex != 0 else None
         else:
             self.data['teamDmg'] = 'unknown'
             self.data['attackerVehicleType'] = 'not_vehicle'
@@ -525,11 +538,12 @@ class Data(object):
         self.data['criticalHit'] = False
         self.data['isDamage'] = False
         self.data['hitEffect'] = 'unknown'
+        self.data['splashHit'] = 'no-splash'
 
     def showDamageFromShot(self, vehicle, attackerID, points, effectsIndex, damageFactor):
         maxHitEffectCode, decodedPoints = DamageFromShotDecoder.decodeHitPoints(points, vehicle.typeDescriptor)
         self.data['compName'] = decodedPoints[0].componentName if decodedPoints else 'unknown'
-        self.data['splashHit'] = 'no-splash'
+
         # self.data['criticalHit'] = (maxHitEffectCode == 5)
         if not self.data['isDamage']:
             self.data['hitEffect'] = HIT_EFFECT_CODES[min(3, maxHitEffectCode)]
@@ -980,7 +994,7 @@ def PlayerAvatar_showVehicleDamageInfo(self, vehicleID, damageIndex, extraIndex,
 @registerEvent(PlayerAvatar, 'updateVehicleHealth')
 def updateVehicleHealth(self, vehicleID, health, deathReasonID, isCrewActive, isRespawn):
     if (vehicleID == self.playerVehicleID) and config.get('damageLog/enabled'):
-        data.data['isDamage'] = (health != data.data['oldHealth'])
+        data.data['isDamage'] = (max(0, health) != data.data['oldHealth'])
 
 
 @registerEvent(Vehicle, 'onEnterWorld')
@@ -1017,8 +1031,8 @@ def Vehicle_updateStunInfo(self):
             data.updateStunInfo(self, stunDuration)
 
 
-@registerEvent(DamagePanel, 'as_setFireInVehicleS')
-def DamagePanel_as_setFireInVehicleS(self, isInFire):
+@registerEvent(DamagePanelMeta, 'as_setFireInVehicleS')
+def DamagePanelMeta_as_setFireInVehicleS(self, isInFire):
     global on_fire, beginFire
     if config.get('damageLog/enabled'):
         if isInFire:

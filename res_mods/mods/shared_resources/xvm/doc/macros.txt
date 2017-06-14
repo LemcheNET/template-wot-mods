@@ -58,7 +58,8 @@ Legend:
 │ D │ {{a:hp-ratio}}     │   │ X │ X │ X │ X │ X │   │ transparency depending on current health ratio (only in vehicle markers)
 │ H │ {{sys-color-key}}  │   │ X │ X │ X │ X │   │   │ key value for system color table
 │ H │ {{c:system}}       │   │ X │ X │ X │ X │   │   │ system color
-│ H │ {{squad-num}}      │ X │ X │ X │ X │ X │ X │ X │ number of squad (1,2,...), empty if not in squad
+│ H │ {{squad-num}}      │ X │ X │ X │ X │ X │ X │   │ number of squad (1,2,...), empty if not in squad
+│ S │ {{rank-level}}     │ X │ X │ X │ X │ X │ X │   │ rank level, empty if no rank
 │ S │ {{xvm-user}}       │ X │ X │ X │ X │ X │ X │ X │ Player's XVM status with values from texts/xvmuser section
 │ S │ {{flag}}           │ X │ X │ X │ X │ X │ X │ X │ Flag for player selected in the personal cabinet or determined from the client language
 │ D │ {{clanicon}}       │ X │ X │ X │ X │ X │ X │ X │ macro with clan embled image path value
@@ -165,14 +166,6 @@ Legend:
 │ S │ {{c:tsb}}          │ X │ X │ X │ X │ X │ X │ dynamic colors for tsb
 └───┴────────────────────┴───┴───┴───┴───┴───┴───┴─────────────────────────────────────────────────
   * Any color macro you can change to transparency macro (e.g. {{a:tdb}}).
-
-  Extra Statistic macros
-┌───┬────────────────────────┬───┬───┬───┬───┬───┬───┬─────────────────────────────────────────────────
-│SDH│ macro                  │ BL│ PP│ SF│ MM│ VM│BLb│ Description
-├───┼────────────────────────┼───┼───┼───┼───┼───┼───┼─────────────────────────────────────────────────
-│ S │ {{top_tankers_rank}}   │ X │ X │ X │ X │ X │ X │ player's rank on current vehicle in the "Top Tankers" game event
-│ S │ {{top_tankers_emblem}} │ X │ X │ X │ X │ X │ X │ emblem for player's rank on current vehicle in the "Top Tankers" game event
-└───┴────────────────────────┴───┴───┴───┴───┴───┴───┴─────────────────────────────────────────────────
 
   XVM services macros (applied for player)
 ┌───┬────────────────────┬───┬───┬───┬───┬───┬───┬─────────────────────────────────────────────────

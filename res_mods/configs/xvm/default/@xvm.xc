@@ -21,8 +21,8 @@
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
   "configVersion": "6.1.0",
 
-  // automatically reload config. Can reduce performance.
-  // автоматически перезагружать конфиг. Может понизить производительность.
+  // Automatically reload config. Requires client restart.
+  // Автоматически перезагружать конфиг. Требует перезапуска клиента.
   "autoReloadConfig": false,
 
   // Language used in mod
@@ -66,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.7.2"
+    "modMinVersion": "6.7.4"
   },
 
   // Parameters for login screen.

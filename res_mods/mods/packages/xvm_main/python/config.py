@@ -12,16 +12,17 @@ from gui.shared import g_eventBus, events
 
 from xfw import *
 import xfw.constants as xfw_constants
+import xfw.filewatcher as xfw_filewatcher
 
 from consts import *
 from logger import *
 from default_xvm_xc import DEFAULT_XVM_XC
 import default_config
-import configwatchdog
 import userprefs
 import utils
 import xvmapi
 
+config_autoreload = False
 config_data = None
 lang_data = None
 
@@ -43,6 +44,7 @@ def get(path, default=None):
     return default
 
 def load(e):
+    global config_autoreload
     global config_data
     global lang_data
 
@@ -50,13 +52,10 @@ def load(e):
         # TODO: config selection
         filename = e.ctx.get('filename', XVM.CONFIG_FILE)
 
-        configwatchdog.stopConfigWatchdog()
-        autoreload = get('autoReloadConfig', False)
-
         config_data = None
         lang_data = None
 
-        config_data = _load_xvm_xc(filename, autoreload)
+        config_data = _load_xvm_xc(filename, config_autoreload)
 
         regionDetected = 'region' not in config_data or config_data['region'].lower() == XVM.REGION_AUTO_DETECTION
         if regionDetected:
@@ -73,11 +72,21 @@ def load(e):
             get('language'),
             'detected' if languageDetected else 'config'))
 
+        if config_autoreload is not True:
+            config_autoreload = get('autoReloadConfig', False)
+
+        if config_autoreload:
+            if not xfw_filewatcher.watcher_is_exists(XVM_EVENT.RELOAD_CONFIG):
+                xfw_filewatcher.watcher_add(XVM_EVENT.RELOAD_CONFIG, XVM.CONFIG_DIR, \
+                    "import BigWorld;"\
+                    "from gui.shared import g_eventBus, events;" \
+                    "BigWorld.callback(0,lambda: g_eventBus.handleEvent(events.HasCtxEvent('%s', {'filename':'%s'})))" % (XVM_EVENT.RELOAD_CONFIG, XVM.CONFIG_FILE), \
+                    True)
+            xfw_filewatcher.watcher_start(XVM_EVENT.RELOAD_CONFIG)
+
     except Exception:
         err(traceback.format_exc())
 
-    if get('autoReloadConfig', False) == True:
-        configwatchdog.startConfigWatchdog()
 
     g_eventBus.handleEvent(events.HasCtxEvent(XVM_EVENT.CONFIG_LOADED))
 

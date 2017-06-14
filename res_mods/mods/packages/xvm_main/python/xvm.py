@@ -17,7 +17,6 @@ from xfw import *
 from consts import *
 from logger import *
 import config
-import configwatchdog
 import stats
 import svcmsg
 import vehinfo
@@ -93,7 +92,6 @@ class Xvm(object):
         if not e or not e.ctx.get('fromInitStage', False):
             self.respondConfig()
             wgutils.reloadHangar()
-
 
     def respondConfig(self):
         trace('respondConfig')
@@ -207,8 +205,7 @@ class Xvm(object):
     def onBecomePlayer(self):
         trace('onBecomePlayer')
         try:
-            if config.get('autoReloadConfig', False) == True:
-                configwatchdog.startConfigWatchdog()
+            pass
         except Exception, ex:
             err(traceback.format_exc())
 

@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.0.1',
+    'VERSION':       '0.9.19.0.2',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.0.1'],
+    'GAME_VERSIONS': ['0.9.19.0.2'],
     # optional
 }
 
@@ -30,8 +30,8 @@ import BigWorld
 import game
 from gui.shared import g_eventBus, tooltips
 from gui.shared.gui_items import GUI_ITEM_TYPE
-from gui.shared.gui_items.fitting_item import FittingItem
 from gui.shared.gui_items.Vehicle import Vehicle
+from gui.shared.money import Currency
 from gui.shared.utils.requesters.StatsRequester import StatsRequester
 from gui.Scaleform.daapi.view.lobby.techtree.TechTree import TechTree
 from gui.Scaleform.daapi.view.lobby.techtree.Research import Research
@@ -47,30 +47,53 @@ from skeletons.gui.shared import IItemsCache
 
 from xfw import *
 
+from xvm_main.python.consts import XVM_EVENT
 from xvm_main.python.logger import *
 import xvm_main.python.config as config
-import xvm_main.python.userprefs as userprefs
+
+
+#####################################################################
+# globals
+
+cfg_hangar_enableGoldLocker = False
+cfg_hangar_enableFreeXpLocker = False
+cfg_hangar_defaultBoughtForCredits = False
+
+gold_enable = True
+freeXP_enable = True
+TechTree_handler = None
+Research_handler = None
+TechnicalMaintenance_handler = None
+PremiumWindow_handler = None
+Shop_handler = None
+RecruitWindow_handler = None
+PersonalCase_handlers = []
+ExchangeFreeToTankmanXpWindow_handlers = []
+MainView_handler = None
 
 
 #####################################################################
 # initialization/finalization
-
-# "reimport"
-import gui.shared.tooltips.module as tooltips_module
-import gui.shared.tooltips.vehicle as tooltips_vehicle
-tooltips_module.getUnlockPrice = tooltips.getUnlockPrice
-tooltips_vehicle.getUnlockPrice = tooltips.getUnlockPrice
-
 
 def start():
     g_eventBus.addListener(XFWCOMMAND.XFW_CMD, onXfwCommand)
 
 BigWorld.callback(0, start)
 
+def onConfigLoaded(self, e=None):
+    global cfg_hangar_enableGoldLocker
+    global cfg_hangar_enableFreeXpLocker
+    global cfg_hangar_defaultBoughtForCredits
+    cfg_hangar_enableGoldLocker = config.get('hangar/enableGoldLocker', False) == True
+    cfg_hangar_enableFreeXpLocker = config.get('hangar/enableFreeXpLocker', False) == True
+    cfg_hangar_defaultBoughtForCredits = config.get('hangar/defaultBoughtForCredits', False) == True
+
+g_eventBus.addListener(XVM_EVENT.CONFIG_LOADED, onConfigLoaded)
 
 @registerEvent(game, 'fini')
 def fini():
     g_eventBus.removeListener(XFWCOMMAND.XFW_CMD, onXfwCommand)
+    g_eventBus.removeListener(XVM_EVENT.CONFIG_LOADED, onConfigLoaded)
 
 
 #####################################################################
@@ -83,6 +106,7 @@ def onXfwCommand(cmd, *args):
             global gold_enable
             gold_enable = not args[0]
             handlersInvalidate('invalidateGold()', TechTree_handler, Research_handler)
+            handlersInvalidate('onGoldChange(0)', TechnicalMaintenance_handler)
             handlersInvalidate('_PremiumWindow__onUpdateHandler()', PremiumWindow_handler)
             handlersInvalidate('onGoldChange(0)', RecruitWindow_handler)
             handlersInvalidate('_update()', Shop_handler)
@@ -101,7 +125,6 @@ def onXfwCommand(cmd, *args):
         return (None, True)
     return (None, False)
 
-
 # run function that updates gold/freeXP status in active handlers
 def handlersInvalidate(function, *handlers):
     try:
@@ -119,49 +142,32 @@ def handlersInvalidate(function, *handlers):
 
 
 #####################################################################
-# globals
-
-gold_enable = True
-freeXP_enable = True
-TechTree_handler = None
-Research_handler = None
-TechnicalMaintenance_handler = None
-PremiumWindow_handler = None
-Shop_handler = None
-RecruitWindow_handler = None
-PersonalCase_handlers = []
-ExchangeFreeToTankmanXpWindow_handlers = []
-MainView_handler = None
-
-
-#####################################################################
 # handlers
 
-#enable or disable active usage of gold (does not affect auto-refill ammo/equip)
+# enable or disable active usage of gold (does not affect auto-refill ammo/equip)
 @overrideMethod(StatsRequester, 'gold')
 def StatsRequester_gold(base, self):
-    if not config.get('hangar/enableGoldLocker') or gold_enable:
+    if not cfg_hangar_enableGoldLocker or gold_enable:
         return max(self.actualGold, 0)
     return 0
 
-
-#enable or disable usage of free experience
+# enable or disable usage of free experience
 @overrideMethod(StatsRequester, 'freeXP')
 def StatsRequester_freeXP(base, self):
-    if not config.get('hangar/enableFreeXpLocker') or freeXP_enable:
+    if not cfg_hangar_enableFreeXpLocker or freeXP_enable:
         return max(self.actualFreeXP, 0)
     return 0
 
+# by default use credits for equipment
+@overrideMethod(TechnicalMaintenance, 'as_setEquipmentS')
+def as_setEquipmentS(base, self, installed, setup, modules):
+    if cfg_hangar_defaultBoughtForCredits:
+        for module in modules:
+            if module['compactDescr'] not in setup:
+                module['currency'] = Currency.CREDITS
+    base(self, installed, setup, modules)
 
-#by default use credits for equipment
-@overrideMethod(FittingItem, '__init__')
-def FittingItem__init__(base, self, intCompactDescr, proxy = None, isBoughtForCredits = None):
-    if isBoughtForCredits is None:
-        isBoughtForCredits = config.get('hangar/defaultBoughtForCredits')
-    base(self, intCompactDescr, proxy, isBoughtForCredits)
-
-
-#by default use credits for ammo
+# by default use credits for ammo
 @overrideMethod(Vehicle, '_parseShells')
 def Vehicle_parseShells(base, self, layoutList, defaultLayoutList, proxy):
     try:
@@ -172,7 +178,7 @@ def Vehicle_parseShells(base, self, layoutList, defaultLayoutList, proxy):
                     # nothing is saved for this configuration - new gun
                     for n in xrange(0, len(defaultLayoutList), 2):
                         defaultLayoutList[n] = abs(defaultLayoutList[n])
-                        if config.get('hangar/defaultBoughtForCredits'):
+                        if cfg_hangar_defaultBoughtForCredits:
                             defaultLayoutList[n] *= -1
     except Exception as ex:
         err(traceback.format_exc())
@@ -188,78 +194,65 @@ def TechTree_populate(self, *args, **kwargs):
     global TechTree_handler
     TechTree_handler = self
 
-
 @registerEvent(TechTree, '_dispose')
 def TechTree_dispose(self, *args, **kwargs):
     global TechTree_handler
     TechTree_handler = None
-
 
 @registerEvent(Research, '_populate')
 def Research_populate(self, *args, **kwargs):
     global Research_handler
     Research_handler = self
 
-
 @registerEvent(Research, '_dispose')
 def Research_dispose(self, *args, **kwargs):
     global Research_handler
     Research_handler = None
-
 
 @registerEvent(TechnicalMaintenance, '_populate')
 def TechnicalMaintenance_populate(self, *args, **kwargs):
     global TechnicalMaintenance_handler
     TechnicalMaintenance_handler = self
 
-
 @registerEvent(TechnicalMaintenance, '_dispose')
 def TechnicalMaintenance_dispose(self, *args, **kwargs):
     global TechnicalMaintenance_handler
     TechnicalMaintenance_handler = None
-
 
 @registerEvent(PremiumWindow, '_populate')
 def PremiumWindow_populate(self, *args, **kwargs):
     global PremiumWindow_handler
     PremiumWindow_handler = self
 
-
 @registerEvent(PremiumWindow, '_dispose')
 def PremiumWindow_dispose(self, *args, **kwargs):
     global PremiumWindow_handler
     PremiumWindow_handler = None
-
 
 @registerEvent(Shop, '_populate')
 def Shop_populate(self, *args, **kwargs):
     global Shop_handler
     Shop_handler = self
 
-
 @registerEvent(Shop, '_dispose')
 def Shop_dispose(self, *args, **kwargs):
     global Shop_handler
     Shop_handler = None
-
 
 @registerEvent(RecruitWindow, '_populate')
 def RecruitWindow_populate(self, *args, **kwargs):
     global RecruitWindow_handler
     RecruitWindow_handler = self
 
-
 @registerEvent(RecruitWindow, '_dispose')
 def RecruitWindow_dispose(self, *args, **kwargs):
     global RecruitWindow_handler
     RecruitWindow_handler = None
 
-
 @registerEvent(PersonalCase, '_populate')
 def PersonalCase_populate(self, *args, **kwargs):
     global PersonalCase_handlers
     PersonalCase_handlers.append(self)
-
 
 @registerEvent(PersonalCase, '_dispose')
 def PersonalCase_dispose(self, *args, **kwargs):
@@ -269,12 +262,10 @@ def PersonalCase_dispose(self, *args, **kwargs):
     else:
         err('PersonalCase window is disposed without being populated')
 
-
 @registerEvent(ExchangeFreeToTankmanXpWindow, '_populate')
 def ExchangeFreeToTankmanXpWindow_populate(self, *args, **kwargs):
     global ExchangeFreeToTankmanXpWindow_handlers
     ExchangeFreeToTankmanXpWindow_handlers.append(self)
-
 
 @registerEvent(ExchangeFreeToTankmanXpWindow, '_dispose')
 def ExchangeFreeToTankmanXpWindow_dispose(self, *args, **kwargs):
@@ -294,36 +285,21 @@ def MainView_dispose(self, *args, **kwargs):
     global MainView_handler
     MainView_handler = None
 
-# force getUnlockPrice to look at freeXP (which is affected by lock)
-# dirty create same names for use in original function
-class itemsCache_dummy:
-    itemsCache = dependency.descriptor(IItemsCache)
-    class items:
-        class stats_dummy:
-            @property
-            def actualFreeXP(*args, **kwargs):
-                return self.itemsCache.items.stats.freeXP
+@overrideMethod(tooltips, 'getUnlockPrice')
+def tooltips_getUnlockPrice(base, compactDescr, parentCD = None):
+    isAvailable, cost, need = base(compactDescr, parentCD)
+    if cfg_hangar_enableFreeXpLocker and not freeXP_enable:
+        need += dependency.instance(IItemsCache).items.stats.actualFreeXP
+    return (isAvailable, cost, need)
 
-            @property
-            def unlocks(*args, **kwargs):
-                return self.itemsCache.items.stats.unlocks
+# "reimport"
+import gui.shared.tooltips.module as tooltips_module
+import gui.shared.tooltips.vehicle as tooltips_vehicle
+tooltips_module.getUnlockPrice = tooltips.getUnlockPrice
+tooltips_vehicle.getUnlockPrice = tooltips.getUnlockPrice
 
-            @property
-            def vehiclesXPs(*args, **kwargs):
-                return self.temsCache.items.stats.vehiclesXPs
-        stats = stats_dummy()
-
-tooltips.itemsCache = itemsCache_dummy
-
-
-# force invalidateFreeXP to look at freeXP (which is affected by lock)
-@overrideMethod(Research, 'invalidateFreeXP')
-def Research_invalidateFreeXP(base, self):
-    try:
-        if self._isDAAPIInited():
-            itemsCache = dependency.instance(IItemsCache)
-            self.as_setFreeXPS(itemsCache.items.stats.freeXP)
-            super(Research, self).invalidateFreeXP()
-    except Exception, ex:
-        err(traceback.format_exc())
-        base(self)
+# force call invalidateFreeXP to update actualFreeXP on vehicle change
+@overrideMethod(Research, 'onResearchItemsDrawn')
+def Research_onResearchItemsDrawn(base, self):
+    base(self)
+    self.invalidateFreeXP()
