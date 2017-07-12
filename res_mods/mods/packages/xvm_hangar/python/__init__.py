@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.0.2',
+    'VERSION':       '0.9.19.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.0.2'],
+    'GAME_VERSIONS': ['0.9.19.1'],
     # optional
 }
 
@@ -40,6 +40,7 @@ from xvm_main.python.logger import *
 from xvm_main.python.xvm import l10n
 
 import svcmsg
+import battletype
 
 #####################################################################
 # globals

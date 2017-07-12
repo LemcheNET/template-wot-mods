@@ -83,19 +83,21 @@ def fini():
     g_eventBus.removeListener(XVM_BATTLE_EVENT.XMQP_MESSAGE, onXmqpMessage)
 
 @overrideMethod(BattleReplay, 'stop')
-def _BattleReplay_stop(base, self, rewindToTime = None, delete = False):
+def _BattleReplay_stop(base, self, rewindToTime = None, delete = False, isDestroyed=False):
     try:
         if self.isRecording:
             global _xvm_record_data
             if _xvm_record_data:
-                arenaInfo = simplejson.loads(self._BattleReplay__replayCtrl.getArenaInfoStr())
-                arenaInfo.update({"xvm":utils.pretty_floats(_xvm_record_data)})
-                self._BattleReplay__replayCtrl.setArenaInfoStr(simplejson.dumps(arenaInfo))
+                arenaInfoStr = self._BattleReplay__replayCtrl.getArenaInfoStr()
+                if arenaInfoStr:
+                    arenaInfo = simplejson.loads(arenaInfoStr)
+                    arenaInfo.update({"xvm":utils.pretty_floats(_xvm_record_data)})
+                    self._BattleReplay__replayCtrl.setArenaInfoStr(simplejson.dumps(arenaInfo))
                 _xvm_record_data = None
     except Exception as ex:
         err(traceback.format_exc())
 
-    return base(self, rewindToTime, delete)
+    return base(self, rewindToTime, delete, isDestroyed)
 
 
 # play

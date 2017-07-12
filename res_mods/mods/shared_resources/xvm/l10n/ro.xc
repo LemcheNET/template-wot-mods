@@ -153,6 +153,7 @@
     "japan": "Japonia",
     "czech": "Cehă",
     "sweden": "Suedez",
+    "poland": "",
     "HT": "Tanc Greu",
     "MT": "Tanc Mediu",
     "LT": "Tanc usor",

@@ -153,6 +153,7 @@
     "japan": "Japan",
     "czech": "Чешки",
     "sweden": "Шведски",
+    "poland": "",
     "HT": "Teški tenk",
     "MT": "Srednji tenk",
     "LT": "Laki tenk",

@@ -1,8 +1,8 @@
 """ XVM (c) www.modxvm.com 2013-2017 """
 
 class XVM(object):
-    XVM_VERSION    = '6.7.4.1'
-    WOT_VERSION    = '0.9.19.0.2'
+    XVM_VERSION    = '6.7.5-dev'
+    WOT_VERSION    = '0.9.19.1'
     XVM_INTRO      = 'www.modxvm.com'
 
     API_VERSION = '4.0'
@@ -52,6 +52,7 @@ class XVM_COMMAND(object):
     LOAD_STAT_USER = "xvm.load_stat_user"
     PYTHON_MACRO = "xvm.python_macro"
     SAVE_SETTINGS = "xvm.save_settings"
+    IS_IN_BOOTCAMP = "xvm.is_in_bootcamp"
     MINIMAP_CLICK = "xvm.minimap_click"
     AS_ON_KEY_EVENT = "xvm.as.on_key_event"
     AS_ON_UPDATE_STAGE = "xvm.as.on_update_stage"

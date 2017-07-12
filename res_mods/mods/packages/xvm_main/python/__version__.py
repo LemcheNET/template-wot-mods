@@ -1,4 +1,4 @@
 # This file was created automatically from build script
-__revision__ = '7401'
-__branch__ = 'xvm-6.7.4.1'
-__node__ = 'a0fd4238b51ed59bb2f28011256e0cead016179d'
+__revision__ = '7713'
+__branch__ = 'default'
+__node__ = 'dcde560ed68e6e56d7f32b1e2f02833280353e2f'

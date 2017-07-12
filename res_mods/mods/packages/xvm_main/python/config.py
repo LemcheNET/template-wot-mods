@@ -4,6 +4,7 @@ __all__ = ['load', 'get', 'config_data', 'lang_data']
 
 from copy import deepcopy
 import os
+import time
 import traceback
 import collections
 import JSONxLoader
@@ -206,7 +207,6 @@ class NetworkServicesSettings(object):
         self.servicesActive = active
         self.statBattle = data.get('statBattle', True) if active else False
         self.statAwards = data.get('statAwards', True) if active else False
-        self.statCompany = data.get('statCompany', True) if active else False
         self.comments = data.get('comments', True) if active else False
         self.chance = data.get('chance', False) if active else False
         self.chanceLive = data.get('chanceLive', False) if active else False
@@ -233,32 +233,6 @@ class XvmServicesToken(object):
         self.errStr = None
         self.online = False
 
-    def _apply(self, data):
-        #trace('config.token._apply')
-        if data is None:
-            data = {}
-        self.accountDBID = data.get('accountDBID', None)
-        if self.accountDBID is None:
-            self.accountDBID = data.get('_id', None) # returned from XVM API
-        self.expires_at = data.get('expires_at', None)
-        self.verChkCnt = data.get('verChkCnt', None)
-        self.cnt = data.get('cnt', None)
-        self.status = data.get('status', 'inactive')
-        self.issued = data.get('issued', None)
-        self.start_at = data.get('start_at', None)
-        self.services = data.get('services', {});
-        self.token = data.get('token', '')
-        if self.token is not None:
-            if self.token == '':
-                self.token = None
-            else:
-                self.token = self.token.encode('ascii')
-
-        active = self.token is not None
-        global networkServicesSettings
-        networkServicesSettings = NetworkServicesSettings(self.services, active)
-
-
     @staticmethod
     def restore():
         #trace('config.token.restore')
@@ -274,18 +248,15 @@ class XvmServicesToken(object):
         except Exception:
             err(traceback.format_exc())
 
-
     def saveToken(self):
         #trace('config.token.saveToken')
         if self.accountDBID:
             userprefs.set('tokens/{0}'.format(self.accountDBID), self.__dict__)
 
-
     def saveLastAccountDBID(self):
         #trace('config.token.saveLastAccountDBID')
         if self.accountDBID:
             userprefs.set('tokens/lastAccountDBID', self.accountDBID)
-
 
     def updateTokenFromApi(self):
         #trace('config.token.updateTokenFromApi')
@@ -295,7 +266,6 @@ class XvmServicesToken(object):
             self.update(data, errStr)
         except Exception, ex:
             err(traceback.format_exc())
-
 
     def update(self, data={}, errStr=None):
         #trace('config.token._update')
@@ -325,6 +295,35 @@ class XvmServicesToken(object):
 
         self.saveToken()
         self.saveLastAccountDBID()
+
+    def _apply(self, data):
+        #trace('config.token._apply')
+        if data is None:
+            data = {}
+        self.accountDBID = data.get('accountDBID', None)
+        if self.accountDBID is None:
+            self.accountDBID = data.get('_id', None) # returned from XVM API
+        self.token = data.get('token', '')
+        if self.token is not None:
+            if self.token == '':
+                self.token = None
+            else:
+                self.token = self.token.encode('ascii')
+        self.start_at = data.get('start_at', None)
+        self.expires_at = data.get('expires_at', None)
+        self.cnt = data.get('cnt', None)
+        if self.expires_at is None or time.time() > self.expires_at / 1000:
+            self.status = 'inactive'
+            self.token = None
+        else:
+            self.status = data.get('status', 'inactive')
+        self.issued = data.get('issued', None)
+        self.services = data.get('services', {});
+        self.verChkCnt = data.get('verChkCnt', None)
+
+        active = self.token is not None
+        global networkServicesSettings
+        networkServicesSettings = NetworkServicesSettings(self.services, active)
 
 token = XvmServicesToken()
 

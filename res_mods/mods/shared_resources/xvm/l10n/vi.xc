@@ -153,6 +153,7 @@
     "japan": "Nhật Bản",
     "czech": "",
     "sweden": "",
+    "poland": "",
     "HT": "Tăng hạng nặng",
     "MT": "Tăng hạng trung",
     "LT": "Tăng hạng nhẹ",

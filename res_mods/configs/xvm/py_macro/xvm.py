@@ -85,7 +85,7 @@ def xvm_team_strength(a, e):
 # Dynamic color
 
 @xvm.export('xvm.dynamic_color_rating', deterministic=False)
-def dynamic_color_rating(rating, value):
+def dynamic_color_rating(rating, value=None):
     return utils.dynamic_color_rating(rating, value)
 
 
@@ -134,22 +134,22 @@ def total_hp_getMainGun(a, b, dmg_total):
 
 #Screen size
 
-@xvm.export('xvm.screenWidth')
+@xvm.export('xvm.screenWidth', deterministic=False)
 def xvm_screenWidth():
     return BigWorld.screenWidth()
 
 
-@xvm.export('xvm.screenHeight')
+@xvm.export('xvm.screenHeight', deterministic=False)
 def xvm_screenHeight():
     return BigWorld.screenHeight()
 
 
-@xvm.export('xvm.screenVCenter')
+@xvm.export('xvm.screenVCenter', deterministic=False)
 def xvm_screenVCenter():
     return BigWorld.screenHeight() // 2
 
 
-@xvm.export('xvm.screenHCenter')
+@xvm.export('xvm.screenHCenter', deterministic=False)
 def xvm_screenHCenter():
     return BigWorld.screenWidth() // 2
 
