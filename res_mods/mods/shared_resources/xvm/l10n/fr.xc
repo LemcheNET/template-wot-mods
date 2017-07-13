@@ -153,7 +153,7 @@
     "japan": "Japon",
     "czech": "Tchécoslovaquie",
     "sweden": "Suède",
-    "poland": "",
+    "poland": "Pologne",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",
