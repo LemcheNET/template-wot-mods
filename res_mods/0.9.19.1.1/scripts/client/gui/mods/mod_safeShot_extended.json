@@ -1,39 +1,39 @@
 ﻿{
-    "safeShot": {
-		"disableKey": "KEY_LALT", // Клавиша для отключения мода
+	"safeShot": {
+		"disableKey": "KEY_LALT", // The key to turn off the mod
 		
-		/* Переключатель блокировки выстрела по уничтоженным танкам */
-        "deadShot": {
-            "blockShot": true,  // Включение, выключение элемента (true - включен, false - выключен)
-            "blockTimeout": 5.0 // Время блокировки огня по цели после ее уничтожения
-        },
+		/* Switch blocking the shot on the destroyed tanks */
+		"deadShot": {
+			"blockShot": true,				// Enabling or disabling an element (true - enabled, false - disabled)
+			"blockTimeout": 5.0				// The time to block the fire on the target after it was destroyed
+		},
 		
-		/* Переключатель блокировки выстрела по союзникам */
-        "teamShot": {
-            "blockShot": true,            // Включение, выключение элемента (true - включен, false - выключен)
-			"blockBlueShot": false,       // Блокировать стрельбу по "голубцам" союзникам
-			"blockSquadShot": false,      // Блокировать стрельбу по совзводным
-			"sendChatMessage": true,      // Отправлять сообщение в чат при блокировке выстрела
-			"chatMessageInterval": 5.0,   // Интервал отправки одинаковых сообщений
-			"considerGunDirection": true, // Учитывать направление орудия (если не подсвечен контур)
-            "chatMessage": "{name}{clan} ({vehicle}), не мешай стрелять >=O!" // Текст сообщения. Разрешены макросы {name} - имя игрока, {clan} - клан игрока и {vehicle} - танк игрока
-        },
+		/* Toggle Allies Lock Switch */
+		"teamShot": {
+			"blockShot": true,				// Enabling or disabling an element (true - enabled, false - disabled)
+			"blockBlueShot": false,				// Block the shooting on the "stuffed cabbage" allies
+			"blockSquadShot": false,			// Block shooting on the team
+			"sendChatMessage": true,			// Block shooting on the team...
+			"chatMessageInterval": 5.0,			// The interval for sending the same messages
+			"considerGunDirection": true,			// Take into account the direction of the implement (if the contour is not highlighted)
+			"chatMessage": "{name}{clan} ({vehicle}), Do not bother to shoot >=O!"	// Message text. The macros {name} are the name of the player, {clan} is the player's clan and {vehicle} is the player's tank
+		},
 		
-		/* Переключатель блокировки бесполезного выстрела */
-        "wasteShot": {
-            "blockShot": false,  // Включение, выключение элемента (true - включен, false - выключен)
-			"aimMode": ["arcade", "sniper", "strategic"] // arcade - аркажный режим, sniper - снайперский режим, strategic - арт режим 
-        },
+		/* Switch for blocking a useless shot */
+		"wasteShot": {
+			"blockShot": false,				// Enabling or disabling an element (true - enabled, false - disabled)
+			"aimMode": ["arcade", "sniper", "strategic"]	// Arcade - arcade mode, sniper - sniper mode, strategic - art mode
+		},
 		
-		/* Сообщение над прицелом при блокировке выстрела */
+		/* The message above the sight when the shot is blocked */
 		"shotBlock": {
-            "blockMessage": true, // Включение, выключение элемента (true - включен, false - выключен)
+			"blockMessage": true,				// Enabling or disabling an element (true - enabled, false - disabled)
 			"reason": {
-			    "teamShot":  "teamShot",  // Огонь по союзникам
-			    "deadShot":  "deadShot",  // Стрельба в труп
-			    "wasteShot": "wasteShot"  // Стрельба заведомо мимо цели
+				"teamShot":  "teamShot",		// Fire on the Allies
+				"deadShot":  "deadShot",		// Shooting in the corpse
+				"wasteShot": "wasteShot"		// Shooting is notorious for the purpose
 			},
-			"shotBlockMessage": "[{reason}] Выстрел заблокирован." // Текст сообщения. Разрешены макросы {reason} - тип заблокированного выстрела
-        }
-    }
+			"shotBlockMessage": "[{reason}] Shot blocked."	// Message text. Enabled macros {reason} - type of blocked shot
+		}
+	}
 }
