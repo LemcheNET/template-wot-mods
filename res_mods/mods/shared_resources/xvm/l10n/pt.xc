@@ -3,8 +3,8 @@
  */
 {
   "locale": {
-    "Warning": "Aviso",
-    "Error": "Erro",
+    "Warning": "Aviso!",
+    "Error": "Erro:",
     "Information": "Informação",
     "OK": "OK",
     "Cancel": "Cancelar",
@@ -25,9 +25,9 @@
     "chanceBattleTier": "Nível",
     "shot": "tiro",
     "fire": "fogo",
-    "ramming": "colisão",
+    "ramming": "Colisão",
     "world_collision": "queda",
-    "death_zone": "zona de destruição",
+    "death_zone": "Zona de Destruição",
     "Hits": "Impactos",
     "Total": "Total",
     "Last": "Último",
@@ -39,7 +39,7 @@
     "mainGun": "Alto Calibre",
     "engine": "Motor",
     "ammo_bay": "Depósito de Munições",
-    "fuel_tank": "Tanque de Combustivel",
+    "fuel_tank": "Tanque de Combustivél",
     "radio": "Rádio",
     "left_track": "Lagarta Esquerda",
     "right_track": "Lagarta Direita",
@@ -214,6 +214,8 @@
     "Incomplete": "Ocultar terminadas",
     "XVM config reloaded": "Configuração XVM carregada",
     "Config file xvm.xc was not found, using the built-in config": "O ficheiro de configuração xvm.xc não foi encontrado, serão usadas as definições por defeito",
-    "Error loading XVM config": "Erro ao carregar a configuração XVM"
+    "Error loading XVM config": "Erro ao carregar a configuração XVM",
+    "bootcamp_workaround_title": "Aviso",
+    "bootcamp_workaround_message": ""
   }
 }

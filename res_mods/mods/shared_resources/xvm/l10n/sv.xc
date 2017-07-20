@@ -214,6 +214,8 @@
     "Incomplete": "",
     "XVM config reloaded": "",
     "Config file xvm.xc was not found, using the built-in config": "",
-    "Error loading XVM config": ""
+    "Error loading XVM config": "",
+    "bootcamp_workaround_title": "Varning",
+    "bootcamp_workaround_message": ""
   }
 }

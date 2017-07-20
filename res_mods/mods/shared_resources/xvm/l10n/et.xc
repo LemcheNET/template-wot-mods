@@ -214,6 +214,8 @@
     "Incomplete": "Puudulik",
     "XVM config reloaded": "XVM sätted uuesti laetud",
     "Config file xvm.xc was not found, using the built-in config": "Sättefaili xvm.xc ei leitud, kasutan vaikeseadistust",
-    "Error loading XVM config": "Viga XVM sätete laadimisel"
+    "Error loading XVM config": "Viga XVM sätete laadimisel",
+    "bootcamp_workaround_title": "Hoiatus",
+    "bootcamp_workaround_message": ""
   }
 }

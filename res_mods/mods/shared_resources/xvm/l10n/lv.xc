@@ -214,6 +214,8 @@
     "Incomplete": "Nepabeigts",
     "XVM config reloaded": "XVM konfigurācija pārlādēta",
     "Config file xvm.xc was not found, using the built-in config": "Konfigurācijas fails xvm.xc nav atrasts, tiks izmantota pamata konfigurācija",
-    "Error loading XVM config": "Kļūda ielādējot XVM konfigurāciju"
+    "Error loading XVM config": "Kļūda ielādējot XVM konfigurāciju",
+    "bootcamp_workaround_title": "Brīdinājums",
+    "bootcamp_workaround_message": ""
   }
 }

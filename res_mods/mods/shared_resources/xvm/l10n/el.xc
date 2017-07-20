@@ -214,6 +214,8 @@
     "Incomplete": "Μη ολοκληρωμένο",
     "XVM config reloaded": "XVM φόρτωση παραμέτρων",
     "Config file xvm.xc was not found, using the built-in config": "Το αρχείο παραμέτρων xvm.xc δεν βρέθηκε, φορτώστε το βασικό αρχείο παραμέτρων",
-    "Error loading XVM config": "Σφάλμα κατά την φόρτωση ρυθμίσεων XVM"
+    "Error loading XVM config": "Σφάλμα κατά την φόρτωση ρυθμίσεων XVM",
+    "bootcamp_workaround_title": "Προειδοποίηση",
+    "bootcamp_workaround_message": ""
   }
 }

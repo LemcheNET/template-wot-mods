@@ -214,6 +214,8 @@
     "Incomplete": "Keskeneräinen",
     "XVM config reloaded": "XVM asetukset uudelleenladattu",
     "Config file xvm.xc was not found, using the built-in config": "Asetustiedostoa xvm.xc ei löydy, käytetään oletusasetuksia",
-    "Error loading XVM config": "Virhe ladattaessa XVM asetuksia"
+    "Error loading XVM config": "Virhe ladattaessa XVM asetuksia",
+    "bootcamp_workaround_title": "Varoitus",
+    "bootcamp_workaround_message": ""
   }
 }

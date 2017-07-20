@@ -214,6 +214,8 @@
     "Incomplete": "Незавершаныя",
     "XVM config reloaded": "Файл налад XVM перазагружаны",
     "Config file xvm.xc was not found, using the built-in config": "Файл канфігурацыі xvm.xc не знойдзены, ужыта ўбудаваная канфігурацыя",
-    "Error loading XVM config": "Няўдалая загрузка файла канфігурацыі XVM"
+    "Error loading XVM config": "Няўдалая загрузка файла канфігурацыі XVM",
+    "bootcamp_workaround_title": "Папярэджанне",
+    "bootcamp_workaround_message": "Пакуль што XVM несумяшчальны з рэжымам «Вучэбны палігон».\n\nКаб зайсці на Вучэбны палігон, трэба запусціць World of Tanks у бяспечным рэжыме (з адключанымі мадыфікацыямі).\n\nПеразапусціць World of Tanks у бяспечным рэжыме?"
   }
 }

@@ -9,10 +9,9 @@ from messenger import MessengerEntry
 from gui import SystemMessages
 from gui.app_loader import g_appLoader
 from gui.app_loader.settings import APP_NAME_SPACE, GUI_GLOBAL_SPACE_ID
+from gui.battle_control import avatar_getter
 from gui.shared import g_eventBus, events
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from helpers import dependency
-from skeletons.gui.game_control import IBootcampController
 
 from xfw import *
 
@@ -79,7 +78,7 @@ def l10n(text):
     return utils.fixImgTag(lang_data.get(text, text))
 
 class Xvm(object):
-    bootcampController = dependency.descriptor(IBootcampController)
+    _initialized_apps = {}
 
     def __init__(self):
         self.xvmServicesInitialized = False
@@ -116,19 +115,26 @@ class Xvm(object):
     # state handler
 
     def onAppInitialized(self, event):
-        trace('onAppInitialized: {}'.format(event.ns))
-        app = g_appLoader.getApp(event.ns)
+        if self._initialized_apps.get(event.ctx.ns, None) is not None:
+            return
+        self._initialized_apps[event.ctx.ns] = True
+
+        trace('onAppInitialized: {}'.format(event.ctx.ns))
+
+        app = g_appLoader.getApp(event.ctx.ns)
         if app is not None and app.loaderManager is not None:
             app.loaderManager.onViewLoaded += self.onViewLoaded
         # initialize XVM services if game restarted after crash or in replay
-        if event.ns == APP_NAME_SPACE.SF_BATTLE:
+        if event.ctx.ns == APP_NAME_SPACE.SF_BATTLE:
             self.initializeXvmServices()
 
     def onAppDestroyed(self, event):
-        trace('onAppDestroyed: {}'.format(event.ns))
-        if event.ns == APP_NAME_SPACE.SF_LOBBY:
+        trace('onAppDestroyed: {}'.format(event.ctx.ns))
+        if event.ctx.ns in self._initialized_apps:
+            del self._initialized_apps[event.ctx.ns]
+        if event.ctx.ns == APP_NAME_SPACE.SF_LOBBY:
             self.hangarDispose()
-        app = g_appLoader.getApp(event.ns)
+        app = g_appLoader.getApp(event.ctx.ns)
         if app is not None and app.loaderManager is not None:
             app.loaderManager.onViewLoaded -= self.onViewLoaded
 
@@ -244,7 +250,7 @@ class Xvm(object):
                 return (python_macro.process_python_macro(args[0]), True)
 
             if cmd == XVM_COMMAND.GET_PLAYER_NAME:
-                return (BigWorld.player().name, True)
+                return (avatar_getter.getPlayerName(), True)
 
             if cmd == XVM_COMMAND.GET_SVC_SETTINGS:
                 return (config.networkServicesSettings.__dict__, True)
@@ -258,7 +264,7 @@ class Xvm(object):
                 return (None, True)
 
             if cmd == XVM_COMMAND.IS_IN_BOOTCAMP:
-                return (self.bootcampController.isInBootcamp(), True)
+                return (isInBootcamp(), True)
 
             # battle
 
@@ -310,14 +316,8 @@ class Xvm(object):
         config.token = config.XvmServicesToken.restore()
         config.token.updateTokenFromApi()
 
-        if config.networkServicesSettings.servicesActive and config.networkServicesSettings.statBattle:
-            #data = xvmapi.getVersion()
-            #topclans.clear()
-            data = xvmapi.getVersionWithLimit(config.networkServicesSettings.topClansCount)
-            topclans.update(data)
-        else:
-            data = xvmapi.getVersionWithLimit(config.networkServicesSettings.topClansCount)
-            topclans.update(data)
+        data = xvmapi.getVersionWithLimit(config.networkServicesSettings.topClansCount)
+        topclans.update(data)
         config.verinfo = config.XvmVersionInfo(data)
 
         if g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.LOBBY:

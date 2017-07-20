@@ -37,7 +37,7 @@
     "allyBaseCaptured": "Üssümüz{0} Ele Geçirildi!",
     "avgDamage": "Ortalama Yardım Hasarı",
     "mainGun": "",
-    "engine": "",
+    "engine": "Motor",
     "ammo_bay": "",
     "fuel_tank": "",
     "radio": "",
@@ -214,6 +214,8 @@
     "Incomplete": "tamamlanmadı",
     "XVM config reloaded": "XVM yeniden yüklendi",
     "Config file xvm.xc was not found, using the built-in config": "Özelleştirilmiş xvm.xc dosyası bulunamadı, dahili yapılandırma dosyası kullanılıyor",
-    "Error loading XVM config": "Özelleştirilmiş XVM dosyası yüklenemedi"
+    "Error loading XVM config": "Özelleştirilmiş XVM dosyası yüklenemedi",
+    "bootcamp_workaround_title": "Dikkat",
+    "bootcamp_workaround_message": ""
   }
 }

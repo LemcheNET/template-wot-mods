@@ -214,6 +214,8 @@
     "Incomplete": "Incomplètes",
     "XVM config reloaded": "Config XVM rechargée",
     "Config file xvm.xc was not found, using the built-in config": "Fichier de config xvm.xc non trouvé, utilisation de la config intégrée",
-    "Error loading XVM config": "Erreur lors du chargement de la config XVM"
+    "Error loading XVM config": "Erreur lors du chargement de la config XVM",
+    "bootcamp_workaround_title": "Attention",
+    "bootcamp_workaround_message": ""
   }
 }

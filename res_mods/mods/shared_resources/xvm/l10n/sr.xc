@@ -214,6 +214,8 @@
     "Incomplete": "Некомплетно",
     "XVM config reloaded": "XVM konfiguracija učitana",
     "Config file xvm.xc was not found, using the built-in config": "Konfiguracijska datoteka xvm.xc nije pronađena. koristiće se standardna konfiguracija",
-    "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije"
+    "Error loading XVM config": "Greška pri učitavanju XVM konfiguracije",
+    "bootcamp_workaround_title": "Упозорење",
+    "bootcamp_workaround_message": ""
   }
 }

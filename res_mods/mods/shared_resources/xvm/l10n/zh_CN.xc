@@ -214,6 +214,8 @@
     "Incomplete": "不完整乘员",
     "XVM config reloaded": "XVM设置已重新加载",
     "Config file xvm.xc was not found, using the built-in config": "xvm.xc文件未找到，使用内置设置",
-    "Error loading XVM config": "加载XVM设置错误"
+    "Error loading XVM config": "加载XVM设置错误",
+    "bootcamp_workaround_title": "警告",
+    "bootcamp_workaround_message": ""
   }
 }

@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.1',
+    'VERSION':       '0.9.19.1.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.1'],
+    'GAME_VERSIONS': ['0.9.19.1.1'],
     # optional
 }
 
@@ -18,7 +18,6 @@ XFW_MOD_INFO = {
 
 import traceback
 
-import BigWorld
 from gui.Scaleform.locale.PROFILE import PROFILE
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.meta.ProfileMeta import ProfileMeta
@@ -131,7 +130,7 @@ def DetailedStatisticsUtils_getStatistics(base, targetData, isCurrentuser, layou
                     color = utils.getDynamicColorValue(consts.DYNAMIC_VALUE_TYPE.X, x)
                     xStr = 'XX' if x == 100 else ('0' if x < 10 else '') + str(x)
                     data = '<font color="#{}" size="12">({} {}%)</font>  <font color="{}">{}</font>'.format(
-                        XFWCOLORS.UICOLOR_LABEL, l10n('better than'), ref['xte_sup'], color, xStr)
+                        XFW_COLORS.UICOLOR_LABEL, l10n('better than'), ref['xte_sup'], color, xStr)
                     #log("xte={} color={}".format(xStr, color))
             res[0]['data'].insert(0, {
                 'label': 'xTE',
@@ -147,7 +146,7 @@ def DetailedStatisticsUtils_getStatistics(base, targetData, isCurrentuser, layou
                 if x >= 0:
                     color = utils.getDynamicColorValue(consts.DYNAMIC_VALUE_TYPE.X, x)
                     item['data'] = '<font color="#{}" size="12">({} {}%)</font>  <font color="{}">{}</font>'.format(
-                        XFWCOLORS.UICOLOR_LABEL, l10n('better than'), sup, color, item['data'])
+                        XFW_COLORS.UICOLOR_LABEL, l10n('better than'), sup, color, item['data'])
 
         except:
             err(traceback.format_exc())

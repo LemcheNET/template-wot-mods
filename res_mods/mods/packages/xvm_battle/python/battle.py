@@ -44,9 +44,9 @@ import xmqp_events
 # initialization/finalization
 
 def start():
-    g_eventBus.addListener(XFWCOMMAND.XFW_CMD, g_battle.onXfwCommand)
-    g_eventBus.addListener(events.AppLifeCycleEvent.INITIALIZED, g_battle.onAppInitialized)
-    g_eventBus.addListener(events.AppLifeCycleEvent.DESTROYED, g_battle.onAppDestroyed)
+    g_eventBus.addListener(XFW_COMMAND.XFW_CMD, g_battle.onXfwCommand)
+    g_eventBus.addListener(XFW_EVENT.APP_INITIALIZED, g_battle.onAppInitialized)
+    g_eventBus.addListener(XFW_EVENT.APP_DESTROYED, g_battle.onAppDestroyed)
 
 BigWorld.callback(0, start)
 
@@ -55,9 +55,9 @@ g_eventBus.addListener(XVM_BATTLE_EVENT.XMQP_MESSAGE, xmqp_events.onXmqpMessage)
 
 @registerEvent(game, 'fini')
 def fini():
-    g_eventBus.removeListener(XFWCOMMAND.XFW_CMD, g_battle.onXfwCommand)
-    g_eventBus.removeListener(events.AppLifeCycleEvent.INITIALIZED, g_battle.onAppInitialized)
-    g_eventBus.removeListener(events.AppLifeCycleEvent.DESTROYED, g_battle.onAppDestroyed)
+    g_eventBus.removeListener(XFW_COMMAND.XFW_CMD, g_battle.onXfwCommand)
+    g_eventBus.removeListener(XFW_EVENT.APP_INITIALIZED, g_battle.onAppInitialized)
+    g_eventBus.removeListener(XFW_EVENT.APP_DESTROYED, g_battle.onAppDestroyed)
     g_eventBus.removeListener(XVM_BATTLE_EVENT.XMQP_CONNECTED, xmqp_events.onXmqpConnected)
     g_eventBus.removeListener(XVM_BATTLE_EVENT.XMQP_MESSAGE, xmqp_events.onXmqpMessage)
 
@@ -71,14 +71,12 @@ def fini():
 def _PlayerAvatar_onBecomePlayer(base, self):
     base(self)
     try:
-        player = BigWorld.player()
-        if player is not None and hasattr(player, 'arena'):
-            arena = BigWorld.player().arena
-            if arena:
-                arena.onVehicleKilled += g_battle.onVehicleKilled
-                arena.onAvatarReady += g_battle.onAvatarReady
-                arena.onVehicleStatisticsUpdate += g_battle.onVehicleStatisticsUpdate
-                arena.onNewVehicleListReceived += xmqp.start
+        arena = avatar_getter.getArena()
+        if arena:
+            arena.onVehicleKilled += g_battle.onVehicleKilled
+            arena.onAvatarReady += g_battle.onAvatarReady
+            arena.onVehicleStatisticsUpdate += g_battle.onVehicleStatisticsUpdate
+            arena.onNewVehicleListReceived += xmqp.start
         sessionProvider = dependency.instance(IBattleSessionProvider)
         ctrl = sessionProvider.shared.feedback
         if ctrl:
@@ -97,14 +95,12 @@ def _PlayerAvatar_onBecomePlayer(base, self):
 @overrideMethod(PlayerAvatar, 'onBecomeNonPlayer')
 def _PlayerAvatar_onBecomeNonPlayer(base, self):
     try:
-        player = BigWorld.player()
-        if player is not None and hasattr(player, 'arena'):
-            arena = BigWorld.player().arena
-            if arena:
-                arena.onVehicleKilled -= g_battle.onVehicleKilled
-                arena.onAvatarReady -= g_battle.onAvatarReady
-                arena.onVehicleStatisticsUpdate -= g_battle.onVehicleStatisticsUpdate
-                arena.onNewVehicleListReceived -= xmqp.start
+        arena = avatar_getter.getArena()
+        if arena:
+            arena.onVehicleKilled -= g_battle.onVehicleKilled
+            arena.onAvatarReady -= g_battle.onAvatarReady
+            arena.onVehicleStatisticsUpdate -= g_battle.onVehicleStatisticsUpdate
+            arena.onNewVehicleListReceived -= xmqp.start
         sessionProvider = dependency.instance(IBattleSessionProvider)
         ctrl = sessionProvider.shared.feedback
         if ctrl:
@@ -159,7 +155,7 @@ def _DynSquadFunctional_updateVehiclesInfo(self, updated, arenaDP):
     # debug("> _DynSquadFunctional_updateVehiclesInfo")
     try:
         # is dynamic squad created
-        if BigWorld.player().arena.guiType == constants.ARENA_GUI_TYPE.RANDOM:
+        if avatar_getter.getArena().guiType == constants.ARENA_GUI_TYPE.RANDOM:
             for flags, vo in updated:
                 if flags & INVALIDATE_OP.PREBATTLE_CHANGED and vo.squadIndex > 0:
                     g_battle.updatePlayerState(vo.vehicleID, INV.SQUAD_INDEX) # | INV.PLAYER_STATUS
@@ -208,26 +204,24 @@ class Battle(object):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def onAppInitialized(self, event):
-        #log('onAppInitialized: ' + str(event.ns))
-        if event.ns == APP_NAME_SPACE.SF_BATTLE:
+        #log('onAppInitialized: ' + str(event.ctx.ns))
+        if event.ctx.ns == APP_NAME_SPACE.SF_BATTLE:
             self.xvm_battle_swf_initialized = False
-        app = g_appLoader.getApp(event.ns)
-        if app is not None and app.loaderManager is not None:
-            app.loaderManager.onViewLoaded += self.onViewLoaded
+            app = g_appLoader.getApp(event.ctx.ns)
+            if app is not None and app.loaderManager is not None:
+                app.loaderManager.onViewLoaded += self.onViewLoaded
 
     def onAppDestroyed(self, event):
-        #log('onAppDestroyed: ' + str(event.ns))
-        if event.ns == APP_NAME_SPACE.SF_BATTLE:
+        #log('onAppDestroyed: ' + str(event.ctx.ns))
+        if event.ctx.ns == APP_NAME_SPACE.SF_BATTLE:
             self.xvm_battle_swf_initialized = False
             self.battle_page = None
-        app = g_appLoader.getApp(event.ns)
-        if app is not None and app.loaderManager is not None:
-            app.loaderManager.onViewLoaded -= self.onViewLoaded
+            app = g_appLoader.getApp(event.ctx.ns)
+            if app is not None and app.loaderManager is not None:
+                app.loaderManager.onViewLoaded -= self.onViewLoaded
 
     def onViewLoaded(self, view=None):
-        if not view:
-            return
-        if view.uniqueName in [VIEW_ALIAS.CLASSIC_BATTLE_PAGE, VIEW_ALIAS.RANKED_BATTLE_PAGE]:
+        if view and view.uniqueName in [VIEW_ALIAS.CLASSIC_BATTLE_PAGE, VIEW_ALIAS.RANKED_BATTLE_PAGE]:
             self.battle_page = weakref.proxy(view)
 
     def onStartBattle(self):
@@ -277,7 +271,7 @@ class Battle(object):
     def onVehicleHealthChanged(self, vehicleID, newHealth, attackerID, attackReasonID):
         inv = INV.CUR_HEALTH
         userData = None
-        if attackerID == BigWorld.player().playerVehicleID:
+        if attackerID == avatar_getter.getPlayerVehicleID():
             inv |= INV.HITLOG
             userData = {'damageFlag':self._getVehicleDamageType(attackerID),
                         'damageType':constants.ATTACK_REASONS[attackReasonID]}
@@ -363,7 +357,7 @@ class Battle(object):
                 ctrl.invalidateVehiclesInfo(arenaDP)
                 ctrl.invalidateVehiclesStats(arenaDP)
             # update vehicles data
-            for (vehicleID, vData) in BigWorld.player().arena.vehicles.iteritems():
+            for (vehicleID, vData) in avatar_getter.getArena().vehicles.iteritems():
                 self.updatePlayerState(vehicleID, INV.ALL)
             g_eventBus.handleEvent(events.HasCtxEvent(XVM_BATTLE_EVENT.ARENA_INFO_INVALIDATED))
 
@@ -404,7 +398,7 @@ class Battle(object):
     # misc
 
     def _getVehicleDamageType(self, attackerID):
-        entryVehicle = BigWorld.player().arena.vehicles.get(attackerID, None)
+        entryVehicle = avatar_getter.getArena().vehicles.get(attackerID, None)
         if not entryVehicle:
             return markers2d_settings.DAMAGE_TYPE.FROM_UNKNOWN
         if attackerID == avatar_getter.getPlayerVehicleID():

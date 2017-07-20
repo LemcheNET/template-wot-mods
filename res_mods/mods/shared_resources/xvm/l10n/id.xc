@@ -214,6 +214,8 @@
     "Incomplete": "Drop semua krew",
     "XVM config reloaded": "",
     "Config file xvm.xc was not found, using the built-in config": "",
-    "Error loading XVM config": "Error loading comments"
+    "Error loading XVM config": "Error loading comments",
+    "bootcamp_workaround_title": "Peringatan",
+    "bootcamp_workaround_message": ""
   }
 }

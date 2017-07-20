@@ -214,6 +214,8 @@
     "Incomplete": "乘員完整",
     "XVM config reloaded": "",
     "Config file xvm.xc was not found, using the built-in config": "",
-    "Error loading XVM config": ""
+    "Error loading XVM config": "",
+    "bootcamp_workaround_title": "警告",
+    "bootcamp_workaround_message": ""
   }
 }

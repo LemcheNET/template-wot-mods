@@ -214,6 +214,8 @@
     "Incomplete": "Befejezetlen",
     "XVM config reloaded": "XVM beállítások újratöltve",
     "Config file xvm.xc was not found, using the built-in config": "Az xvm.xc beállítófájl nem található, beépített beállítások használata",
-    "Error loading XVM config": "Hiba az XVM beállítások betöltésekor"
+    "Error loading XVM config": "Hiba az XVM beállítások betöltésekor",
+    "bootcamp_workaround_title": "Figyelmeztetés",
+    "bootcamp_workaround_message": ""
   }
 }

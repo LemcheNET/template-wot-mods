@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.1',
+    'VERSION':       '0.9.19.1.1',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.1'],
+    'GAME_VERSIONS': ['0.9.19.1.1'],
     # optional
 }
 
@@ -31,7 +31,6 @@ class VIEW(object):
 #####################################################################
 # includes
 
-import BigWorld
 from gui.Scaleform.framework import g_entitiesFactories, ViewSettings, ViewTypes, ScopeTemplates
 from gui.Scaleform.framework.entities.View import View
 from gui.shared.tooltips.common import ContactTooltipData
@@ -103,5 +102,5 @@ def ContactTooltipData_getDisplayableData(base, self, dbID, defaultName):
         #if result['xvm_contact_data']['nick']: # commented for use original nick in tooltip
         #    result['userProps']['userName'] = result['xvm_contact_data']['nick']
         if result['xvm_contact_data']['comment']:
-            result['note'] = "<font color='#%s'>%s</font>"  % (XFWCOLORS.UICOLOR_LABEL, l10n(result['xvm_contact_data']['comment']))
+            result['note'] = "<font color='#%s'>%s</font>"  % (XFW_COLORS.UICOLOR_LABEL, l10n(result['xvm_contact_data']['comment']))
     return result

@@ -214,6 +214,8 @@
     "Incomplete": "მთლიანი ეკიპაჯი",
     "XVM config reloaded": "XVM კონფიგი გადატვირთულია",
     "Config file xvm.xc was not found, using the built-in config": "xvm.xc კონფიგი ვერ მოიძებნა, ვიყენებთ მთავარ კონფიგს",
-    "Error loading XVM config": "შეცდომა XVM კონფიგის ჩატვირთვისას"
+    "Error loading XVM config": "შეცდომა XVM კონფიგის ჩატვირთვისას",
+    "bootcamp_workaround_title": "გაფრთხილება",
+    "bootcamp_workaround_message": ""
   }
 }

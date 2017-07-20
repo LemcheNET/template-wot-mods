@@ -214,6 +214,8 @@
     "Incomplete": "Nedokončeno",
     "XVM config reloaded": "Konfigurace XVM byla znovu načtena",
     "Config file xvm.xc was not found, using the built-in config": "Konfigurační soubor xvm.xc nenalezen, bude použita základní konfigurace",
-    "Error loading XVM config": "Chyba v nahrávání konfigurace XVM"
+    "Error loading XVM config": "Chyba v nahrávání konfigurace XVM",
+    "bootcamp_workaround_title": "Varování",
+    "bootcamp_workaround_message": ""
   }
 }

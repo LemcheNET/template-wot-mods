@@ -214,6 +214,8 @@
     "Incomplete": "100% 승무원만",
     "XVM config reloaded": "XVM config reloaded",
     "Config file xvm.xc was not found, using the built-in config": "xvm.xc 환경설정 파일을 찾을수 없습니다. 내장된 환경설정을 사용합니다.",
-    "Error loading XVM config": "XVM 설정을 불러오는데 문제가 발생했습니다."
+    "Error loading XVM config": "XVM 설정을 불러오는데 문제가 발생했습니다.",
+    "bootcamp_workaround_title": "경고",
+    "bootcamp_workaround_message": ""
   }
 }

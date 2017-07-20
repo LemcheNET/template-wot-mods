@@ -45,10 +45,10 @@
     "right_track": "dešinysis vikšras",
     "gun": "pabūklas",
     "turret_rotator": "bokštelio valdytojas",
-    "surveying_device": "",
+    "surveying_device": "matavimo prietaisas",
     "commander": "vadas",
     "driver": "vairuotojas",
-    "radioman": "",
+    "radioman": "radistas",
     "gunner": "šaulys",
     "loader": "užtaisytojas",
     "sec": "sek",
@@ -153,7 +153,7 @@
     "japan": "Japonija",
     "czech": "Čekoslovakija",
     "sweden": "Švedija",
-    "poland": "",
+    "poland": "Lenkija",
     "HT": "ST",
     "MT": "VT",
     "LT": "LT",
@@ -214,6 +214,8 @@
     "Incomplete": "Nebaigtas",
     "XVM config reloaded": "XVM forma perkrauta",
     "Config file xvm.xc was not found, using the built-in config": "Konfigūracijos failas xvm.xc buvo nerastas, naudojant įmontuotą formą",
-    "Error loading XVM config": "Klaida kraunant XVM konfigūraciją"
+    "Error loading XVM config": "Klaida kraunant XVM konfigūraciją",
+    "bootcamp_workaround_title": "Įspėjimas",
+    "bootcamp_workaround_message": "Šiuo metu XVM nėra suderinamas su \"treniruočių stovyklos\" žaidimo režimu.\n\nNorėdami įjungti \"treniruočių stovyklos\" režimą, turite iš naujo paleisti World of Tanks saugiuoju režimu, kuris neįkelia modifikacijų.\n\nAr norite paleisti World of Tanks be modifikacijų?"
   }
 }
