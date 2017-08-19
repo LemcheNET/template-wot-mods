@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.1.1',
+    'VERSION':       '0.9.19.1.2',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.1.1'],
+    'GAME_VERSIONS': ['0.9.19.1.2'],
     # optional
 }
 
@@ -51,6 +51,7 @@ def event_dispatcher_showBattleResultsWindow(base, arenaUniqueID, cnt=0):
 @overrideMethod(BattleResultsWindow, 'as_setDataS')
 def BattleResultsWindow_as_setDataS(base, self, data):
     try:
+        data['tabInfo'][0]['linkage'] = 'com.xvm.lobby.ui.battleresults::UI_CommonStats'
         # Use data['common']['regionNameStr'] value to transfer XVM data.
         # Cannot add in data object because DAAPIDataClass is not dynamic.
         #log(data['xvm_data'])

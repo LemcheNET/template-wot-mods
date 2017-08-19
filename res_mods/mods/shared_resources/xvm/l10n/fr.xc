@@ -102,8 +102,8 @@
     "Average distance driven per battle": "Distance moyenne parcourue par bataille",
     "Average woodcuts per battle": "Nb. moyen d'arbres abattus par bataille",
     "Average damage assisted": "Dégâts moyens par assistance",
-    "    by tracking": "    par déchenillage",
-    "    by spotting": "    par détection",
+    "by tracking": "    par déchenillage",
+    "by spotting": "    par détection",
     "Average HE shells fired (splash)": "Nb. moyen d'obus HE tirés (splash)",
     "Average HE shells received (splash)": "Nb. moyen d'obus HE reçus (splash)",
     "Average penetrations per battle": "Nb. moyen de pénétrations par bataille",
@@ -152,8 +152,8 @@
     "china": "Chine",
     "japan": "Japon",
     "czech": "Tchécoslovaquie",
-    "sweden": "Suède",
     "poland": "Pologne",
+    "sweden": "Suède",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",
@@ -216,6 +216,6 @@
     "Config file xvm.xc was not found, using the built-in config": "Fichier de config xvm.xc non trouvé, utilisation de la config intégrée",
     "Error loading XVM config": "Erreur lors du chargement de la config XVM",
     "bootcamp_workaround_title": "Attention",
-    "bootcamp_workaround_message": ""
+    "bootcamp_workaround_message": "La version actuelle d'XVM est incompatible avec le camp d'entrainement.\n\nPour entrer dans le camp d'entrainement, vous devez redémarrer le client World of Tanks en mode sans échec, qui ne charge pas les modifications.\n\nVoulez-vous redémarrer World of Tanks sans les mods maintenant ?"
   }
 }
