@@ -216,6 +216,6 @@
     "Config file xvm.xc was not found, using the built-in config": "Az xvm.xc beállítófájl nem található, beépített beállítások használata",
     "Error loading XVM config": "Hiba az XVM beállítások betöltésekor",
     "bootcamp_workaround_title": "Figyelmeztetés",
-    "bootcamp_workaround_message": ""
+    "bootcamp_workaround_message": "Az XVM jelenleg nem kompatibilis a \"kiképzőtábor\" játékmóddal.\n\nA \"kiképzőtábor\" módba lépéshez újra kell indítani a World of Tanks klienst biztonságos módban, ami nem tölt be módosításokat.\n\nAkarod újraindítani a World of Tanks-ot módosítások nélkül?"
   }
 }

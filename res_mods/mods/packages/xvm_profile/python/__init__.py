@@ -5,10 +5,10 @@
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.19.1.2',
+    'VERSION':       '0.9.20.0',
     'URL':           'http://www.modxvm.com/',
     'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.19.1.2'],
+    'GAME_VERSIONS': ['0.9.20.0'],
     # optional
 }
 
@@ -25,6 +25,8 @@ from gui.Scaleform.daapi.view.meta.ProfileWindowMeta import ProfileWindowMeta
 from gui.Scaleform.daapi.view.lobby.profile.ProfileTechnique import ProfileTechnique
 from gui.Scaleform.daapi.view.lobby.profile.ProfileUtils import DetailedStatisticsUtils
 from gui.Scaleform.genConsts.PROFILE_DROPDOWN_KEYS import PROFILE_DROPDOWN_KEYS
+from helpers import dependency
+from skeletons.gui.lobby_context import ILobbyContext
 
 from xfw import *
 
@@ -77,7 +79,7 @@ def ProfileTechnique_getTechniqueListVehicles(base, self, targetData, addVehicle
         for x in res:
             try:
                 vehCD = x['id']
-                vDossier = dossier.getDossier((self._battlesType, _lastAccountDBID, vehCD))
+                vDossier = dossier.getDossier(self._battlesType, _lastAccountDBID, vehCD)
                 x['xvm_xte'] = int(vDossier['xte']) if vDossier is not None else -1
                 x['xvm_xte_flag'] = 0
             except:
@@ -93,7 +95,7 @@ def ProfileTechnique_receiveVehicleDossier(base, self, vehCD, accountDBID):
 
     if config.networkServicesSettings.statAwards:
         if self._isDAAPIInited():
-            vDossier = dossier.getDossier((self._battlesType, accountDBID, vehCD))
+            vDossier = dossier.getDossier(self._battlesType, accountDBID, vehCD)
             self.flashObject.as_responseVehicleDossierXvm(vDossier)
 
 @overrideStaticMethod(DetailedStatisticsUtils, 'getStatistics')
@@ -164,15 +166,21 @@ def _getStartPageAlias(self, alias, isProfilePage):
     if isProfilePage and self._ProfilePage__ctx.get('itemCD'):
         return VIEW_ALIAS.PROFILE_TECHNIQUE_PAGE
 
-    startPage = config.get('userInfo/startPage')
+    startPage = config.get('userInfo/profileStartPage' if isProfilePage else 'userInfo/contactsStartPage').lower()
+
     #log('startPage={}'.format(startPage))
-    if startPage == 2:
+    if startPage == 'awards':
         return VIEW_ALIAS.PROFILE_AWARDS
 
-    if startPage == 3:
+    if startPage == 'statistics':
         return VIEW_ALIAS.PROFILE_STATISTICS
 
-    if startPage == 4:
+    if startPage == 'vehicles':
         return VIEW_ALIAS.PROFILE_TECHNIQUE_PAGE if isProfilePage else VIEW_ALIAS.PROFILE_TECHNIQUE_WINDOW
+
+    if startPage == 'hof' and isProfilePage:
+        isHofEnabled = dependency.instance(ILobbyContext).getServerSettings().isHofEnabled()
+        if isHofEnabled:
+            return VIEW_ALIAS.PROFILE_HOF
 
     return VIEW_ALIAS.PROFILE_SUMMARY_PAGE if isProfilePage else VIEW_ALIAS.PROFILE_SUMMARY_WINDOW
