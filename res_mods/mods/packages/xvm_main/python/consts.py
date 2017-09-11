@@ -1,7 +1,7 @@
 """ XVM (c) www.modxvm.com 2013-2017 """
 
 class XVM(object):
-    XVM_VERSION    = '6.9.0'
+    XVM_VERSION    = '6.9.1.1'
     WOT_VERSION    = '0.9.20.0'
     XVM_INTRO      = 'www.modxvm.com'
 
@@ -102,4 +102,3 @@ class DYNAMIC_VALUE_TYPE(object):
     WN8EFFD        = 'wn8effd'
     DAMAGERATING   = 'damageRating'
     HITSRATIO      = 'hitsRatio'
-    WINCHANCE      = 'winChance'

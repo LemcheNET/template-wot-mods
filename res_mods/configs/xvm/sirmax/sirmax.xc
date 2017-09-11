@@ -171,6 +171,7 @@
   },
   "captureBar": {
     //"enabled": false,
+    //"y": 200,
     //"distanceOffset": -20,
     //"hideProgressBar": true,
     "enemy": {
@@ -191,7 +192,6 @@
   },
   "battleLoading": {
     //"clockFormat": "H:i",
-    "showBattleTier": true,
     //"removeSquadIcon": true,
     //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
@@ -226,7 +226,6 @@
   },
   "battleLoadingTips": {
     //"clockFormat": "H:i",
-    "showBattleTier": true,
     //"removeSquadIcon": true,
     //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
@@ -260,7 +259,6 @@
     "__stub__": {}
   },
   "statisticForm": {
-    "showBattleTier": true,
     //"removeSquadIcon": true,
     //"removeRankBadgeIcon": true,
     //"vehicleIconAlpha": 30,
@@ -322,9 +320,8 @@
   "battleResults": {
     "startPage": 1,
     "sortColumn": 5,
-    "showCrewExperience": true,
     //"showTotals": false,
-    "showBattleTier": true
+    "showCrewExperience": true
   },
   "minimap": ${"sirmax-minimap.xc":"minimap"},
   "minimapAlt": ${"sirmax-minimap.xc":"minimapAlt"},
@@ -426,6 +423,9 @@
     //"hideSimplifiedVehParams": false
   },
   "battleLabels": ${"sirmax-battleLabels.xc":"."},
+  "tweaks": {
+    //"allowMultipleWotInstances": true
+  },
   "consts": {
       "VM_COEFF_VMM_DEAD": 0.75
   }

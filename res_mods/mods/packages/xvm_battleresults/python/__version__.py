@@ -1,4 +1,4 @@
 # This file was created automatically from build script
-__revision__ = '7860'
-__branch__ = 'default'
-__node__ = '262d08cf9fc981e0ab7a03f9e9221ce5ea912a16'
+__revision__ = '7907'
+__branch__ = '6.9.1.1'
+__node__ = 'bc11199a702a57e106f7e3451cd3545085f249c8'
