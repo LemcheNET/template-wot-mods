@@ -1,7 +1,9 @@
 """ XVM (c) www.modxvm.com 2013-2017 """
 
+from __version__ import __xvm_version__
+
 class XVM(object):
-    XVM_VERSION    = '6.9.1.1'
+    XVM_VERSION    = __xvm_version__
     WOT_VERSION    = '0.9.20.0'
     XVM_INTRO      = 'www.modxvm.com'
 
@@ -13,7 +15,7 @@ class XVM(object):
         ]
     TIMEOUT = 5000
 
-    XMQP_SERVER = 'xmqp.modxvm.com'
+    XMQP_SERVER_TEMPLATE = 'xmqp{HASH}.modxvm.com'
     XMQP_API_VERSION = '2v0'
     XMQP_LOBBY_EXCHANGE = 'com.xvm.xmqp.%s.lobby' % XMQP_API_VERSION
     XMQP_LOBBY_ROUTING_KEY = 'query.battle.channel'
@@ -88,9 +90,9 @@ class DYNAMIC_VALUE_TYPE(object):
     HP             = 'hp'
     HP_RATIO       = 'hp_ratio'
     EFF            = 'eff'
-    WN6            = 'wn6'
     WN8            = 'wn8'
     WGR            = 'wgr'
+    WTR            = 'wtr'
     WINRATE        = 'winrate'
     KB             = 'kb'
     AVGLVL         = 'avglvl'

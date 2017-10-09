@@ -74,7 +74,7 @@
     "General stats": "Generell Stats",
     "Summary": "Sammanfattning",
     "Avg level": "Genomsn. nivå",
-    "WN6": "WN6",
+    "WTR": "",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "",

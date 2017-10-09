@@ -74,7 +74,7 @@
     "General stats": "Statistiques globales",
     "Summary": "Résumé",
     "Avg level": "Tier moyen",
-    "WN6": "WN6",
+    "WTR": "WTR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",

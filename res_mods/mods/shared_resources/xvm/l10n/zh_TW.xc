@@ -74,7 +74,7 @@
     "General stats": "統計",
     "Summary": "總計",
     "Avg level": "平均車輛階級",
-    "WN6": "WN6",
+    "WTR": "WGR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",

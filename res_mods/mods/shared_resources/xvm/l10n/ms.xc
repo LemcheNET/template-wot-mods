@@ -74,7 +74,7 @@
     "General stats": "Stat umum",
     "Summary": "Ringkasan",
     "Avg level": "Tahap purata",
-    "WN6": "WN6",
+    "WTR": "",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "",

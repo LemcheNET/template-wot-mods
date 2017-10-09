@@ -74,7 +74,7 @@
     "General stats": "統計情報",
     "Summary": "概要",
     "Avg level": "平均レベル",
-    "WN6": "WN6",
+    "WTR": "WTR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "パーソナルレーティング",

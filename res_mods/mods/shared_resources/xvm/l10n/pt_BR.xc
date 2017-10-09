@@ -74,7 +74,7 @@
     "General stats": "",
     "Summary": "Sumário",
     "Avg level": "Nível Méd.",
-    "WN6": "WN6",
+    "WTR": "",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "",

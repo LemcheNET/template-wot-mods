@@ -74,7 +74,7 @@
     "General stats": "综合统计",
     "Summary": "总结",
     "Avg level": "平均等级",
-    "WN6": "WN6",
+    "WTR": "WarGaming 评分",
     "WN8": "WN8",
     "EFF": "效率",
     "WGR": "WarGaming 评分",

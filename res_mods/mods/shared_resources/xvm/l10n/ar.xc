@@ -74,7 +74,7 @@
     "General stats": "",
     "Summary": "",
     "Avg level": "",
-    "WN6": "",
+    "WTR": "",
     "WN8": "",
     "EFF": "",
     "WGR": "",

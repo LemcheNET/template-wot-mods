@@ -74,7 +74,7 @@
     "General stats": "Обща статистика",
     "Summary": "Обобщение",
     "Avg level": "Средно ниво",
-    "WN6": "WN6",
+    "WTR": "WGR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",

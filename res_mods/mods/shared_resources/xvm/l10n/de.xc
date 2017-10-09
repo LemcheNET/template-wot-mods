@@ -74,7 +74,7 @@
     "General stats": "Allgemeine Statistik",
     "Summary": "Zusammenfassung",
     "Avg level": "Ø-Stufe",
-    "WN6": "WN6",
+    "WTR": "Persönliche Wertung",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "Persönliche Wertung",

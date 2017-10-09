@@ -74,7 +74,7 @@
     "General stats": "Üldine statistika",
     "Summary": "Kokkuvõte",
     "Avg level": "Keskmine järk",
-    "WN6": "WN6",
+    "WTR": "WGR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",

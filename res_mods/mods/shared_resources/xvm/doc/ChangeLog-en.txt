@@ -1,9 +1,66 @@
-﻿XVM-6.9.1.1:
+﻿XVM-7.0.3-dev:
+  [KNOWN ISSUES]
+  * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
+
+  [OTHER]
+  * various bugs fixes
+
+  [MACROS]
+    * added macros:
+      {{xwr}}, {{c:xwr}}, {{a:xwr}},
+      {{mystat.xwr}}, {{mystat.c_xwr}}, {{mystat.a_xwr}}
+      
+  [TOOLTIPS]
+  * added display appropriate vehicles in tooltips for shells
+
+XVM-7.0.2:
+  [KNOWN ISSUES]
+  * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
+ 
+  [MISC]
+  * fix XVM version detection
+
+XVM-7.0.1:
+  [KNOWN ISSUES]
+  * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
+ 
+  [BATTLE]
+  * fix battle initialization
+ 
+XVM-7.0.0:
+  [KNOWN ISSUES]
+  * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
+
+  [RATINGS]
+  * added rating WTR
+  * added macros:
+      {{wtr}}, {{xwtr}}, {{c:wtr}}, {{c:xwtr}}, {{a:wtr}}, {{a:xwtr}},
+      {{mystat.wtr}}, {{mystat.xwtr}}, {{mystat.c_wtr}}, {{mystat.c_xwtr}}
+  * added config sections:
+      "alpha"/"wtr"
+      "colors"/"wtr"
+  * updated color and alpha values boundaries for all ratings
+  * color and alpha values boundaries for XVM scale are updated automatically every day
+  * removed rating WN6
+  * removed macros:
+      {{wn6}}, {{xwn6}}, {{c:wn6}}, {{c:xwn6}}, {{a:wn6}}, {{a:xwn6}},
+      {{mystat.wn6}}, {{mystat.xwn6}}, {{mystat.c_wn6}}, {{mystat.c_xwn6}}
+  * removed config sections:
+      "alpha"/"wn6"
+      "colors"/"wn6"
+
+  [MISC]
+  * updated texts/battletype section with text replacements for {{battletype}} macro
+
+  [PYTHON MACROS]
+  * added macros {{py:upper('str')}}, {{py:lower('str')}}, {{py:capitalize('str')}} and {{py:title('str')}}
+
+XVM-6.9.1.1:
   [KNOWN ISSUES]
   * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
 
   [MISC]
-  * Bypass Baidu antivirus false-positive fireAlert
+  * bypass Baidu antivirus false-positive fireAlert
 
 XVM-6.9.1:
   [KNOWN ISSUES]
@@ -233,8 +290,6 @@ XVM-6.6.5:
 
   [PYTHON MACROS]
   * totalEfficiency: added the macro {{py:xvm.numberDamagedVehicles}}
-
-  [PYTHON MACROS]
   * added macros {{py:xvm.screenWidth}}, {{py:xvm.screenHeight}}, {{py:xvm.screenVCenter}} and {{py:xvm.screenHCenter}}
 
   [DAMAGE LOG]

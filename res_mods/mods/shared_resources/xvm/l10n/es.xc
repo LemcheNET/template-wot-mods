@@ -38,7 +38,7 @@
     "radio": "radio",
     "left_track": "oruga izquierda",
     "right_track": "oruga derecha",
-    "gun": "Cañon",
+    "gun": "Cañón",
     "turret_rotator": "Rotador de torreta",
     "surveying_device": "dispositivo de topografía",
     "commander": "comandante",
@@ -62,7 +62,7 @@
     "hull": "Casco",
     "chassis": "Chasis",
     "Hit percent": "Tasa de impactos",
-    "Damage (assisted / own)": "Daño (asistido / propio)",
+    "Damage (assisted / own)": "Daño (asistido/propio)",
     "BR_xpCrew": "tripulación",
     "Friend": "Amigo",
     "Ignored": "Ignorado",
@@ -74,7 +74,7 @@
     "General stats": "Estadísticas generales",
     "Summary": "Resumen",
     "Avg level": "Nivel promedio",
-    "WN6": "WN6",
+    "WTR": "WTR",
     "WN8": "WN8",
     "EFF": "EFI",
     "WGR": "WGR",
@@ -147,7 +147,7 @@
     "china": "China",
     "japan": "Japón",
     "czech": "Checo",
-    "poland": "",
+    "poland": "Polonia",
     "sweden": "Sueco",
     "HT": "TP",
     "MT": "TM",
@@ -211,6 +211,6 @@
     "Config file xvm.xc was not found, using the built-in config": "El archivo xvm.xc no ha sido encontrado se usara la configuración por defecto",
     "Error loading XVM config": "Error al cargar la configuración XVM",
     "bootcamp_workaround_title": "Advertencia",
-    "bootcamp_workaround_message": ""
+    "bootcamp_workaround_message": "Actualmente XVM no es compatible con el modo de juego \"boot camp\".\n\nPara entrar en el modo \"boot camp\", debe reiniciar el cliente World of Tanks en modo seguro, que no carga modificaciones.\n\n¿Quieres reiniciar World of Tanks sin mods ahora mismo?"
   }
 }

@@ -74,7 +74,7 @@
     "General stats": "Všeobecná statistika",
     "Summary": "Celkové výsledky",
     "Avg level": "Průměrná úroveň",
-    "WN6": "WN6",
+    "WTR": "WGR",
     "WN8": "WN8",
     "EFF": "EFF",
     "WGR": "WGR",
