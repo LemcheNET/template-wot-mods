@@ -12,7 +12,7 @@
     "Remove": "Avlägsna",
     "Yes": "Ja",
     "No": "Nej",
-    "Not available short": "",
+    "Not available short": "n/a",
     "from": "från",
     "m": "m",
     "Initialization": "Initialisering",
