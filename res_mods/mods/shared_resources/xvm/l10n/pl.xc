@@ -171,7 +171,7 @@
     "lobby/header/freexp_unlocked_tooltip": "Używanie wolnego XP odblokowane",
     "lobby/crew/enable_prev_crew": "Automatycznie przywróć załogę",
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nAutomatycznie przywraca załogę która walczyła\nw tym pojeździe w poprzedniej bitwie.",
-    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nWydajność dla pojazdu\nWięcej informacji <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
+    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>хте</font></b>\nEfektywności na danym czołgu\nWięcej informacji w <font color='#FDF4CE'>https://modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nWartości referencyjne:\n\t\tObrażenia\tfrags\n\tAktualnie:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tŚrednio:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tMaksymalnie:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "Normal": "Normalny",
     "NormalTooltipHeader": "Pojazd",
@@ -211,6 +211,6 @@
     "Config file xvm.xc was not found, using the built-in config": "Nie znaleziono pliku xvm.xc, załadowano domyślną konfigurację XVM",
     "Error loading XVM config": "Błąd ładowania konfiguracji XVM",
     "bootcamp_workaround_title": "Ostrzeżenie",
-    "bootcamp_workaround_message": "Aktualnie XVM jest niekompatybilny z trybem gry \"Obóz dla rekrutów\".\n\nAby wejść w tryb \"Obozu dla rekrutów\", musisz zrestartować World of Tanks w trybie bezpieczeństwa, który nie ładuje modyfikacji.\n\nCzy chcesz uruchomić ponownie World of Tanks bez modyfikacji?"
+    "bootcamp_workaround_message": "W tej chwili xvm nie jest kompatybilny z \"учебки\" tryb gry.\n\nAby wejść w tryb \"obóz treningowy\", należy ponownie uruchomić World of tanks klient w trybie awaryjnym, który nie zmiany obciążenia.\n\nChcesz, aby ponownie uruchomić World of tanks bez modów teraz?"
   }
 }

@@ -1,14 +1,14 @@
-﻿""" XVM (c) www.modxvm.com 2013-2017 """
+﻿""" XVM (c) https://modxvm.com 2013-2017 """
 
 #####################################################################
 # MOD INFO
 
 XFW_MOD_INFO = {
     # mandatory
-    'VERSION':       '0.9.20.1',
-    'URL':           'http://www.modxvm.com/',
-    'UPDATE_URL':    'http://www.modxvm.com/en/download-xvm/',
-    'GAME_VERSIONS': ['0.9.20.1'],
+    'VERSION':       '0.9.20.1.3',
+    'URL':           'https://modxvm.com/',
+    'UPDATE_URL':    'https://modxvm.com/en/download-xvm/',
+    'GAME_VERSIONS': ['0.9.20.1.3'],
     # optional
 }
 
@@ -250,7 +250,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                     paramName = 'gunYawLimits' if 'gunYawLimits' in vehicleCommonParams else 'turretYawLimits'
                 elif paramName == 'radioRange':
                     paramName = 'radioDistance'
-                elif paramName == 'reloadTimeSecs' and vehicle.gun.isClipGun():
+                elif paramName == 'reloadTimeSecs' and (gun.clip[0] > 1):
                     paramName = 'clipFireRate'
                 elif paramName == 'turretRotationSpeed' and not vehicle.hasTurrets:
                     paramName = 'gunRotationSpeed'

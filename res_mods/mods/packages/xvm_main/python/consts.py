@@ -1,11 +1,11 @@
-""" XVM (c) www.modxvm.com 2013-2017 """
+""" XVM (c) https://modxvm.com 2013-2017 """
 
 from __version__ import __xvm_version__
 
 class XVM(object):
     XVM_VERSION    = __xvm_version__
-    WOT_VERSION    = '0.9.20.1'
-    XVM_INTRO      = 'www.modxvm.com'
+    WOT_VERSION    = '0.9.20.1.3'
+    XVM_INTRO      = 'https://modxvm.com'
 
     API_VERSION = '4.0'
     API_VERSION_OLD = '3.0'
@@ -16,6 +16,7 @@ class XVM(object):
     TIMEOUT = 5000
 
     XMQP_SERVER_TEMPLATE = 'xmqp{HASH}.modxvm.com'
+    XMQP_SERVER_PORT_BASE = 5600
     XMQP_API_VERSION = '2v0'
     XMQP_LOBBY_EXCHANGE = 'com.xvm.xmqp.%s.lobby' % XMQP_API_VERSION
     XMQP_LOBBY_ROUTING_KEY = 'query.battle.channel'

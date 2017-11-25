@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2017 """
+""" XVM (c) https://modxvm.com 2013-2017 """
 
 # PUBLIC
 
@@ -84,10 +84,10 @@ def getXtdbDataArray(vehCD):
 
 # PRIVATE
 
-_XVMSCALE_DATA_URL = 'http://stat.modxvm.com/xvmscales.json.gz'
-_WN8_DATA_URL = 'http://stat.modxvm.com/wn8.json.gz'
-_XTE_DATA_URL = 'http://stat.modxvm.com/xte.json.gz'
-_XTDB_DATA_URL = 'http://stat.modxvm.com/xtdb.json.gz'
+_XVMSCALE_DATA_URL = 'https://static.modxvm.com/xvmscales.json.gz'
+_WN8_DATA_URL = 'https://static.modxvm.com/wn8-data-exp/json/wn8exp.json.gz'
+_XTE_DATA_URL = 'https://static.modxvm.com/xte.json.gz'
+_XTDB_DATA_URL = 'https://static.modxvm.com/xtdb.json.gz'
 
 
 from math import sin, radians

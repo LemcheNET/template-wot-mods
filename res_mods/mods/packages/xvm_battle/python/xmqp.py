@@ -1,4 +1,4 @@
-""" XVM (c) www.modxvm.com 2013-2017 """
+""" XVM (c) https://modxvm.com 2013-2017 """
 
 __all__ = ['start', 'stop', 'call']
 
@@ -253,10 +253,11 @@ class _XMQP(object):
         """
         credentials = pika.PlainCredentials('xvm', 'xvm')
         host = XVM.XMQP_SERVER_TEMPLATE.format(HASH=self.server_hash)
+        port = XVM.XMQP_SERVER_PORT_BASE + self.server_hash
         log('[XMQP] Connecting to %s' % host)
         params = pika.ConnectionParameters(
             host=host,
-            #port=XVM.XMQP_SERVER_PORT,
+            #port=port, # TODO
             virtual_host='xvm',
             credentials=credentials,
             #channel_max=None,

@@ -13,7 +13,7 @@
  *
  * Внимание! Кодировка файлов должна оставаться UTF8+BOM. В противном случае
  * вместо кириллицы в игре будут пустые глифы.
- * Для редактирования используйте Notepad++. http://goo.gl/y6iet
+ * Для редактирования используйте Notepad++. https://goo.gl/y6iet
  * В случае блокнота Windows: Сохранить как -> Кодировка: UTF.
  */
 {
@@ -54,19 +54,19 @@
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
-    "url": "http://www.modxvm.com/",
+    "url": "https://modxvm.com/",
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "29.09.2017",
+    "date": "24.10.2017",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.20.1",
+    "gameVersion": "0.9.20.1.3",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.1.0"
+    "modMinVersion": "7.2.3"
   },
 
   // Parameters for login screen.
@@ -99,7 +99,7 @@
 
   // Log of the received hits.
   // Лог полученных попаданий.
-  "damageLog": ${"damageLog.xc":"damageLog"},  
+  "damageLog": ${"damageLog.xc":"damageLog"},
 
   // Special XVM hotkeys.
   // Специальные горячие клавиши XVM.

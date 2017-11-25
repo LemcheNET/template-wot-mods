@@ -1,5 +1,5 @@
 # This file was created automatically from build script
-__xvm_version__ = '7.1.0'
-__revision__ = '7996'
+__xvm_version__ = '7.2.3'
+__revision__ = '8073'
 __branch__ = 'default'
-__node__ = '33fbe18b0c685a19227abfc33c2911cd9492fa29'
+__node__ = 'aabef5b845a504b351a36b594b2cad7b3e3aa4d8'

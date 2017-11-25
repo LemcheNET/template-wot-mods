@@ -77,22 +77,24 @@
       "rated_sandbox": "",
       // Песочный PVE, >10 боев
       "sandbox": "",
-      // Бой до последнего
+      // Стальная охота
       "fallout_classic": "",
-      // ?
+      // Превосходство
       "fallout_multiteam": "",
-      // Укрепрайон, вылазка (новый)
+      // Укрепрайон, вылазка
       "sortie_2": "sortie_2",
-      // Битва за укрепрайон (новый)
+      // Укрепрайон, наступление
       "fort_battle_2": "fort_battle_2",
       // Ранговый бой
       "ranked": "",
       // Учебный полигон
-      "bootcamp": "bootcamp",
+      "bootcamp": "",
       // Генеральное сражение
       "epic_random": "",
       // Генеральное сражение (тренировка)
-      "epic_random_training": "epic_random_training"
+      "epic_random_training": "epic_random_training",
+      // Бой спецрежима (новый)(гонки, футбол и т.п.)
+      "event_battles_2": ""
     },
     // Text for {{topclan}} macro.
     // Текст для макроса {{topclan}}

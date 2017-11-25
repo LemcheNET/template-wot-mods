@@ -171,7 +171,7 @@
     "lobby/header/freexp_unlocked_tooltip": "フリー経験値はロックされていません",
     "lobby/crew/enable_prev_crew": "自動的に搭乗員を戻す",
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\n最終戦闘時の搭乗員を\n自動で再搭乗させる",
-    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\n車両毎効果率\n詳細は<font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
+    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\n車両毎の戦闘貢献評価\n詳細は<font color='#FDF4CE'>https://modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\n参照値:\n\t\tダメージ\t撃破数\n\t現在値:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\t平均値:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\t最高値:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "Normal": "通常",
     "NormalTooltipHeader": "通常車輌",

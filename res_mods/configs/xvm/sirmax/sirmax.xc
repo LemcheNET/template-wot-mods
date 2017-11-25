@@ -71,29 +71,29 @@
       "enabled": false
       //"alpha": 75,
       //"rotation": 0,
-      //"shiftX": 0,
-      //"shiftY": 50
+      //"offsetX": 0,
+      //"offsetY": 50
     },
     "commonQuests": {
       //"enabled": false,
       //"alpha": 100,
       //"rotation": 0,
-      //"shiftX": 0,
-      //"shiftY": 0
+      //"offsetX": 0,
+      //"offsetY": 0
     },
     "personalQuests": {
       //"enabled": false,
       //"alpha": 100,
       //"rotation": 0,
-      //"shiftX": 0,
-      //"shiftY": 0
+      //"offsetX": 0,
+      //"offsetY": 0
     },
     "vehicleName": {
       //"enabled": false,
       //"alpha": 100,
       //"rotation": 0,
-      //"shiftX": 0,
-      //"shiftY": 0
+      //"offsetX": 0,
+      //"offsetY": 0
     },
     "camera": {
       "minDistance": 0,
@@ -395,7 +395,7 @@
   "definition": {
     "author": "sirmax2",
     "description": "Sirmax's settings for XVM",
-    "url": "http://www.modxvm.com/",
+    "url": "https://modxvm.com/",
     "date": "10.10.2012",
     "gameVersion": "0.8.0",
     "modMinVersion": "3.0.4"

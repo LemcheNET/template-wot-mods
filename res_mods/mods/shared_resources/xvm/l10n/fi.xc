@@ -5,7 +5,7 @@
   "locale": {
     "Warning": "Varoitus",
     "Error": "Virhe",
-    "Information": "Tieto",
+    "Information": "Tietoja",
     "OK": "Hyväksy",
     "Cancel": "Peruuta",
     "Save": "Tallenna",
@@ -31,7 +31,7 @@
     "allyBaseCapture": "Viholliset valtaavat tukikohtaa {0}!",
     "allyBaseCaptured": "Viholliset valtasivat tukikohdan {0}!",
     "avgDamage": "Keskimääräinen avustustettu vahinko",
-    "mainGun": "",
+    "mainGun": "Suurikaliiperinen",
     "engine": "moottori",
     "ammo_bay": "ammusteline",
     "fuel_tank": "polttoainetankki",

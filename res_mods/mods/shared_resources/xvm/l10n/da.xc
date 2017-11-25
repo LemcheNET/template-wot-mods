@@ -171,7 +171,7 @@
     "lobby/header/freexp_unlocked_tooltip": "Frie XP er ulåst",
     "lobby/crew/enable_prev_crew": "Automatisk returnering af mandskab",
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nAutomatisk returnering af mandskab der kæmpede\ni dette køretøj i den foregående kamp",
-    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nPer køretøjs effektivitet\nMere info på <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
+    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nPr. køretøjs effektivitet\nMere info på <font color='#FDF4CE'>https://modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nReferenceværdier:\n\t\tskade\tdrab\n\tNuværende:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tGennemsnit:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tToppen:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "Normal": "Normal",
     "NormalTooltipHeader": "Normale Køretøjer",

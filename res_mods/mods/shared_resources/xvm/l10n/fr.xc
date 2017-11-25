@@ -171,7 +171,7 @@
     "lobby/header/freexp_unlocked_tooltip": "XP Libre est débloquée",
     "lobby/crew/enable_prev_crew": "Retour automatique de l'équipage",
     "lobby/crew/enable_prev_crew_tooltip": "<b><font color='#FDF4CE'>{{l10n:lobby/crew/enable_prev_crew}}</font></b>\nRetour automatique de l'équipage qui a combattu\ndans le véhicule lors de la précédente bataille",
-    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nEfficacité par char\nPlus d'infos sur <font color='#FDF4CE'>www.modxvm.com/ratings/</font>",
+    "profile/xvm_xte_tooltip": "<b><font color='#FDF4CE' size='16'>xTE</font></b>\nEfficacité par char\nPlus d'infos sur <font color='#FDF4CE'>https://modxvm.com/ratings/</font>",
     "profile/xvm_xte_extended_tooltip": "<textformat tabstops='[20, 85, 140]'>{{l10n:profile/xvm_xte_tooltip}}\n\nValeurs de référence:\n\t\tdégâts\ttués\n\tActuel:\t<font color='#FDF4CE' size='14'>{0}</font>\t<font color='#FDF4CE' size='14'>{1}</font>\n\tMoyen:\t<font color='#FDF4CE' size='14'>{2}</font>\t<font color='#FDF4CE' size='14'>{3}</font>\n\tMax:\t<font color='#FDF4CE' size='14'>{4}</font>\t<font color='#FDF4CE' size='14'>{5}</font>",
     "Normal": "Normal",
     "NormalTooltipHeader": "Chars Standards",
