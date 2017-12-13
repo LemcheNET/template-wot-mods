@@ -1,0 +1,17 @@
+{
+    "id": "com.modxvm.xvm.ping",
+    "name": "XVM Ping",
+    "description": "XVM Ping module",
+
+    "version": "7.3.0-dev.8116",
+    "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.online"],
+    "dependencies_optional": ["com.modxvm.xfw.ping"],
+
+    "url": "http://modxvm.com/",
+    "url_update": "http://modxvm.com/",
+    
+    "wot_versions"         : ["0.9.21.0"],
+    "wot_versions_strategy": "",
+
+    "features": ["python"]
+}

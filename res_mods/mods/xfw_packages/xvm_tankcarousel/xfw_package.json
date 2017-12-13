@@ -1,0 +1,16 @@
+{
+    "id": "com.modxvm.xvm.tankcarousel",
+    "name": "XVM Tankcarousel",
+    "description": "XVM Tankcarousel module",
+
+    "version": "7.3.0-dev.8116",
+    "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.squad"],
+
+    "url": "http://modxvm.com/",
+    "url_update": "http://modxvm.com/",
+    
+    "wot_versions"         : ["0.9.21.0"],
+    "wot_versions_strategy": "",
+
+    "features": ["python"]
+}
