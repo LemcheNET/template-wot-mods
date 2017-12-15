@@ -3,14 +3,19 @@
     "name": "XVM",
     "description": "XVM",
 
-    "version": "7.3.0-dev.8116",
+    "version": "7.3.0-dev.8138",
+
     "dependencies": ["com.modxvm.xfw"],
-    "dependencies_optional": ["com.modxvm.xfw.filewatcher", "com.modxvm.xfw.mutex"],
+    "dependencies_optional": [
+        "com.modxvm.xfw.filewatcher", 
+        "com.modxvm.xfw.mutex",
+        "com.modxvm.xfw.wotfix"    
+    ],
 
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["0.9.21.0"],
+    "wot_versions"         : ["0.9.21.0.1"],
     "wot_versions_strategy": "",
 
     "features": ["python"]

@@ -79,19 +79,19 @@ class _DummyStats(object):
 class _DummyDossier(object):
     _dummyStats = _DummyStats()
     def getRecordValue(*a, **k): return None
-    def getGlobalStats(): return _dummyStats
-    def getRandomStats(): return _dummyStats
-    def getFalloutStats(): return _dummyStats
-    def getHistoricalStats(): return _dummyStats
-    def getTeam7x7Stats(): return _dummyStats
-    def getRated7x7Stats(): return _dummyStats
-    def getFortSortiesStats(): return _dummyStats
-    def getGlobalMapStats(): return _dummyStats
-    def getSeasonRated7x7Stats(*a, **k): return _dummyStats
-    def getFortBattlesStats(): return _dummyStats
-    def getFortSortiesStats(): return _dummyStats
-    def getCompanyStats(): return _dummyStats
-    def getRankedStats(): return _dummyStats
+    def getGlobalStats(self): return self._dummyStats
+    def getRandomStats(self): return self._dummyStats
+    def getFalloutStats(self): return self._dummyStats
+    def getHistoricalStats(self): return self._dummyStats
+    def getTeam7x7Stats(self): return self._dummyStats
+    def getRated7x7Stats(self): return self._dummyStats
+    def getFortSortiesStats(self): return self._dummyStats
+    def getGlobalMapStats(self): return self._dummyStats
+    def getSeasonRated7x7Stats(*a, **k): return self._dummyStats
+    def getFortBattlesStats(self): return self._dummyStats
+    def getFortSortiesStats(self): return self._dummyStats
+    def getCompanyStats(self): return self._dummyStats
+    def getRankedStats(self): return self._dummyStats
 
 class _Dossier(object):
 
