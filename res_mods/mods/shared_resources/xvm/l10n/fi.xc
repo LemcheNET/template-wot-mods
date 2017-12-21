@@ -163,7 +163,7 @@
     "token/blocked": "Tila: <font color='#FF0000'>Estetty</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>lisää tietoa</font></a>",
     "token/active": "Tila:<tab/><font color='#00FF00'>Toiminnassa</font>",
     "token/time_left": "Aikaa jäljellä:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m</font>",
-    "token/time_left_warn": "<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>\n<tab/><a href='#XVM_SITE#'>Pidennä</a>",
+    "token/time_left_warn": "<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m</font>\n<tab/><a href='#XVM_SITE#'>Pidennä</a>",
     "token/unknown_status": "Tunnistamaton tila",
     "lobby/header/gold_locked_tooltip": "Kulta on lukittu",
     "lobby/header/gold_unlocked_tooltip": "Kulta on käytettävissä",

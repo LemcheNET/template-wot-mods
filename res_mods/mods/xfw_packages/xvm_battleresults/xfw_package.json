@@ -3,13 +3,13 @@
     "name": "XVM Battle Results",
     "description": "XVM Battle Results module",
 
-    "version": "7.3.0-dev.8138",
+    "version": "7.3.2.8175",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.battle"],
 
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["0.9.21.0.1"],
+    "wot_versions"         : ["0.9.21.0.2"],
     "wot_versions_strategy": "",
 
     "features": ["python"]
