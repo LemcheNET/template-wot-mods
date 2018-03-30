@@ -9,7 +9,7 @@ import gui.shared.tooltips.shell as tooltips_shell
 from gui.shared.tooltips import formatters
 from gui.shared.formatters import text_styles
 from gui.Scaleform.daapi.view.lobby.store.StoreView import StoreView
-from gui.Scaleform.daapi.view.lobby.vehicle_carousel.carousel_data_provider import CarouselDataProvider
+from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_data_provider import CarouselDataProvider
 from gui.Scaleform.daapi.view.lobby.ModuleInfoWindow import ModuleInfoWindow
 
 from xvm_main.python.logger import *
@@ -36,7 +36,7 @@ def getGuns():
     vehicles = ResMgr.openSection(xmlPath)
     result = {}
     for veh, v_v in vehicles.items():
-        if veh == 'Observer':
+        if (veh == 'Observer') or (veh == 'xmlns:xmlref'):
             continue
         i18n_veh = v_v['userString'].asString
         xmlPath = '%svehicles/%s/%s.xml' % (ITEM_DEFS_PATH, nation, veh)

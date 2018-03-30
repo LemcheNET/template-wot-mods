@@ -1,4 +1,4 @@
-﻿""" XVM (c) https://modxvm.com 2013-2017 """
+﻿""" XVM (c) https://modxvm.com 2013-2018 """
 
 #####################################################################
 # imports
@@ -10,6 +10,7 @@ import helpers
 import nations
 from CurrentVehicle import g_currentVehicle
 from gui import ClientHangarSpace
+from gui.hangar_camera_manager import HangarCameraManager
 from gui.shared import g_eventBus
 from gui.prb_control.entities.base.actions_validator import CurrentVehicleActionsValidator
 from gui.prb_control.items import ValidationResult
@@ -18,6 +19,7 @@ from gui.Scaleform.daapi.view.meta.BarracksMeta import BarracksMeta
 from gui.shared.gui_items.Vehicle import Vehicle
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
+from messenger.gui.Scaleform.lobby_entry import LobbyEntry
 
 from xfw import *
 
@@ -32,26 +34,14 @@ import battletype
 #####################################################################
 # globals
 
-cfg_hangar_hangarType = None
 cfg_hangar_barracksShowFlags = True
 cfg_hangar_barracksShowSkills = True
 cfg_hangar_blockVehicleIfLowAmmo = False
-cfg_hangar_camera_minDistance = 6.5
-cfg_hangar_camera_maxDistance = 12
-cfg_hangar_camera_startDistance = 11
-cfg_hangar_camera_zoomSensitivity = 1
 
 #####################################################################
 # initialization/finalization
 
 def onConfigLoaded(self, e=None):
-    global cfg_hangar_hangarType
-    cfg_hangar_hangarType = config.get('hangar/hangarType', None)
-    if cfg_hangar_hangarType is not None:
-        cfg_hangar_hangarType = cfg_hangar_hangarType.lower()
-        if cfg_hangar_hangarType not in ['premium', 'basic']:
-            cfg_hangar_hangarType = None
-
     global cfg_hangar_barracksShowFlags
     cfg_hangar_barracksShowFlags = config.get('hangar/barracksShowFlags', True)
 
@@ -60,18 +50,6 @@ def onConfigLoaded(self, e=None):
 
     global cfg_hangar_blockVehicleIfLowAmmo
     cfg_hangar_blockVehicleIfLowAmmo = config.get('hangar/blockVehicleIfLowAmmo', False)
-
-    global cfg_hangar_camera_minDistance
-    cfg_hangar_camera_minDistance = config.get('hangar/camera/minDistance', 6.5)
-
-    global cfg_hangar_camera_maxDistance
-    cfg_hangar_camera_maxDistance = config.get('hangar/camera/maxDistance', 12)
-
-    global cfg_hangar_camera_startDistance
-    cfg_hangar_camera_startDistance = config.get('hangar/camera/startDistance', 11)
-
-    global cfg_hangar_camera_zoomSensitivity
-    cfg_hangar_camera_zoomSensitivity = config.get('hangar/camera/zoomSensitivity', 1)
 
     Vehicle.NOT_FULL_AMMO_MULTIPLIER = config.get('hangar/lowAmmoPercentage', 20) / 100.0
 
@@ -98,7 +76,7 @@ def Vehicle_isAmmoFull(base, self):
         err(traceback.format_exc())
         return base(self)
 
-#barracks: add nation flag and skills for tanksman
+# barracks: add nation flag and skills for tanksman
 @overrideMethod(BarracksMeta, 'as_setTankmenS')
 def BarracksMeta_as_setTankmenS(base, self, data):
     try:
@@ -176,25 +154,16 @@ def i18n_makeString(base, key, *args, **kwargs):
         return l10n('lowAmmo')
     return base(key, *args, **kwargs)
 
-
-# handle hangar/hangarType option
-@overrideMethod(ClientHangarSpace, 'getSpaceType')
-def getSpaceType(base, isPremium):
-    if cfg_hangar_hangarType is not None:
-        isPremium = cfg_hangar_hangarType == 'premium'
-    return base(isPremium)
-
-
-# handle hangar/camera/* options
-@overrideMethod(ClientHangarSpace, 'loadConfig')
-def _ClientHangarSpace_loadConfig(base, cfg, xml, defaultCfg = None):
-    base(cfg, xml, defaultCfg)
-    cfg['cam_dist_constr'] = (cfg_hangar_camera_minDistance, cfg_hangar_camera_maxDistance)
-    cfg['cam_start_dist'] = cfg_hangar_camera_startDistance
-    # increase pitch angles
-    cfg['cam_pitch_constr'] = (-89, 5)
-
-@overrideMethod(ClientHangarSpace.ClientHangarSpace, 'updateCameraByMouseMove')
-def _ClientHangarSpace_updateCameraByMouseMove(base, self, dx, dy, dz):
-    dz *= cfg_hangar_camera_zoomSensitivity
-    base(self, dx, dy, dz)
+# hide shared chat button
+@overrideMethod(LobbyEntry, '_LobbyEntry__handleLazyChannelCtlInited')
+def handleLazyChannelCtlInited(base, self, event):
+    if not config.get('hangar/showGeneralChatButton', True):
+        ctx = event.ctx
+        controller = ctx.get('controller')
+        if controller is None:
+            log('Controller is not defined', ctx)
+            return
+        else:
+            ctx.clear()
+            return
+    return base(self, event)

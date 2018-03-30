@@ -149,6 +149,7 @@
     "czech": "Cehă",
     "poland": "Polonia",
     "sweden": "Suedez",
+    "italy": "",
     "HT": "Tanc Greu",
     "MT": "Tanc Mediu",
     "LT": "Tanc usor",

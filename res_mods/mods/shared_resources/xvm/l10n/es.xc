@@ -149,6 +149,7 @@
     "czech": "Checo",
     "poland": "Polonia",
     "sweden": "Sueco",
+    "italy": "Italia",
     "HT": "TP",
     "MT": "TM",
     "LT": "TL",

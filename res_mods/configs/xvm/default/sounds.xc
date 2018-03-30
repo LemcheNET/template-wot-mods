@@ -6,6 +6,9 @@
 {
   "sounds": {
     "enabled": true,
+    // true to enable remote communication between WoT client and WWISE Authoring Tools
+    // установите в true для включения коммуникации между клиентом WoT и WWISE Authoring Tools
+    "remote_communication": false,
     // List of extra banks to load
     // Use comma for multiple values: ["bank1.bnk", "bank2.bnk"]. Path is relative to ./res_mods/x.x.x/audioww/
     // You can use xvm:// (path relative to /res_mods/mods/shared_resources/xvm/ ) and cfg:// (path relative to /res_mods/configs/xvm/ )
@@ -35,10 +38,10 @@
       "lightbulb_02": "",
       "sixthSense": "",
       //
-      // Disable original enemy detection event      
+      // Disable original enemy detection event
       // Отключить оригинальный звук обнаружения противника
       //"enemy_sighted_for_team": "",
-      //      
+      //
       // Disable original fire sound event
       // Отключить оригинальный звук пожара
       //"vo_fire_started": "",
@@ -61,9 +64,9 @@
       // Sixth sense perk for Т-34-85 Rudy
       // Перк Шестое чувство для Т-34-85 Rudy
       "xvm_sixthSenseRudy": "xvm_sixthSenseRudy",
-      // Enemy detection (Use in together with disable original enemy detection event) 
+      // Enemy detection (Use in together with disable original enemy detection event)
       // Обнаружение противника (Используйте вместе с отключением оригинального звука обнаружения противника)
-      "xvm_enemySighted": "",      
+      "xvm_enemySighted": "",
       //"xvm_enemySighted": "xvm_enemySighted",      
       // Fire alert (Use in together with disable original event)
       // Пожар (Используйте вместе с отключением оригинального звука)
@@ -73,6 +76,10 @@
       // Повреждение боеукладки (Используйте вместе с отключением оригинального звука)
       //"xvm_ammoBay": "",
       "xvm_ammoBay": "xvm_ammoBay",
+      // The sound of the end of recharging the gun
+      // Озвучка окончания перезарядки орудия
+      "xvm_gunReloaded": "",
+      //"xvm_gunReloaded": "xvm_gunReloaded",
       // Notifications informing about the imminent end of the battle (Use in together with disable original event)
       // Оповещения сообщающие о скором завершении боя (Используйте вместе с отключением оригинального звука)
       "xvm_battleEnd_5_min": "",

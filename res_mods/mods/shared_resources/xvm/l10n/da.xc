@@ -149,6 +149,7 @@
     "czech": "Tjekkiet",
     "poland": "Polen",
     "sweden": "Sverige",
+    "italy": "Italien",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

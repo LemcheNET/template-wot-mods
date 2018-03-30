@@ -3,13 +3,13 @@
     "name": "XVM Profiler",
     "description": "XVM Profiler module",
 
-    "version": "7.3.2.8175",
+    "version": "7.5.2.8269",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.profile"],
 
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["0.9.21.0.2"],
+    "wot_versions"         : ["1.0.0.1"],
     "wot_versions_strategy": "",
 
     "features": ["python"]

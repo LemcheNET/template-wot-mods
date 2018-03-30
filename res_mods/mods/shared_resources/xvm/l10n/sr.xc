@@ -149,6 +149,7 @@
     "czech": "Чешки",
     "poland": "",
     "sweden": "Шведски",
+    "italy": "",
     "HT": "Teški tenk",
     "MT": "Srednji tenk",
     "LT": "Laki tenk",

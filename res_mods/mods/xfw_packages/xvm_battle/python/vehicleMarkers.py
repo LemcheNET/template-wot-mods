@@ -1,4 +1,4 @@
-""" XVM (c) https://modxvm.com 2013-2017 """
+""" XVM (c) https://modxvm.com 2013-2018 """
 
 #####################################################################
 # imports
@@ -119,7 +119,7 @@ def _MarkersManager_createMarker(base, self, symbol, matrixProvider = None, acti
             symbol = 'com.xvm.vehiclemarkers.ui::XvmVehicleMarker'
     #log(traceback.format_stack())
     markerID = base(self, symbol, matrixProvider, active)
-    debug('createMarker: ' + str(symbol) + ' markerID=' + str(markerID))
+    #debug('createMarker: ' + str(symbol) + ' markerID=' + str(markerID))
     return markerID
 
 @overrideMethod(MarkersManager, 'destroyMarker')

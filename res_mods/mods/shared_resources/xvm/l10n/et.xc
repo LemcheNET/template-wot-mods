@@ -149,6 +149,7 @@
     "czech": "Tšehhi",
     "poland": "",
     "sweden": "Rootsi",
+    "italy": "",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

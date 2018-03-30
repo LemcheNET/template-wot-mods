@@ -4,8 +4,8 @@
  */
 {
   "carousel": {
-    // false - Disable customizable carousel.
-    // false - Отключить настраиваемую карусель.
+    // false - disable customizable carousel.
+    // false - отключить настраиваемую карусель.
     "enabled": true,
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
@@ -57,7 +57,7 @@
     },
     // Order of nations.
     // Порядок наций.
-    //"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden"],
+    //"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden", "italy"],
     "nations_order": [],
     // Order of types of vehicles.
     // Порядок классов техники.

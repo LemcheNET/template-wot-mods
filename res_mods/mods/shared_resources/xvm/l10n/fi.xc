@@ -149,6 +149,7 @@
     "czech": "Tšekki",
     "poland": "Puola",
     "sweden": "Ruotsi",
+    "italy": "",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

@@ -1,4 +1,52 @@
-﻿XVM-7.3.2-dev:
+﻿XVM-7.5.2:
+  [XFW]
+  * XFW.Native was updated 1.0.9-39
+
+XVM-7.5.1:
+  [GENERAL]
+  * World of Tanks 1.0.0 micropatch 1
+
+  [PYTHON MACROS]
+  * added macro {{py:xvm.isImpact}}
+
+XVM-7.5.0:
+  [GENERAL]
+  * World of Tanks 1.0
+
+  [SOUNDS]
+  * new options "sounds"/"xvm_gunReloaded" - the sound of the end of recharging the gun.
+
+  [HANGAR]
+  * removed option "hangar/hangarType" and section "hangar/camera"
+
+  [PYTHON MACROS]
+  * damageLog: added macro {{hitTime}}
+
+XVM-7.4.1:
+  [GENERAL]
+  * World of Tanks 9.22 micropatch 1
+
+  [XFW]
+  * fixed check for native components loading before using them.
+
+XVM-7.4.0:
+  [GENERAL]
+  * World of Tanks 9.22
+
+XVM-7.3.3:
+  [GENERAL]
+  * World of Tanks 9.21.0.3
+
+  [HANGAR]
+  * new options "hangar"/"showGeneralChatButton" - show "General chat" button.
+
+  [SOUNDS]
+  * new options "sounds"/"remote_communication option" - remote communication between WoT client and WWISE Authoring Tools.
+
+  [MISC]
+  * updated "texts"/"battletype" section with text replacements for {{battletype}} macro.
+
+XVM-7.3.2:
   [GENERAL]
   * World of Tanks 9.21.0.2
 
@@ -7,15 +55,15 @@
 
 XVM-7.3.1:
   [GENERAL]
-  * Fixed crash when leaving the battle
+  * fixed crash when leaving the battle.
 
   [KNOWN ISSUES]
   * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
 
 XVM-7.3.0:
   [KNOWN ISSUES]
-  * Possible game client crash when leaving the battle
-  * To minimize crash possibility, markers were disabled by default.
+  * possible game client crash when leaving the battle;
+  * to minimize crash possibility, markers were disabled by default.
   * Microsoft Windows XP: crash to desktop on battle loading if graphics mode is standard.
 
   [GENERAL]
@@ -47,7 +95,7 @@ XVM-7.2.3:
       "shiftY" -> "offsetY"
   * renamed option in the "hangar"/"commonQuests" sections:
       "shiftX" -> "offsetX"
-      "shiftY" -> "offsetY"      
+      "shiftY" -> "offsetY"
   * renamed option in the "hangar"/"personalQuests" sections:
       "shiftX" -> "offsetX"
       "shiftY" -> "offsetY"
@@ -97,7 +145,7 @@ XVM-7.2.1:
   * World of Tanks 9.20.1.2
 
   [MISC]
-  * updated texts/battletype section with text replacements for {{battletype}} macro
+  * updated "texts"/"battletype" section with text replacements for {{battletype}} macro
 
 XVM-7.2.0:
   [GENERAL]
@@ -164,7 +212,7 @@ XVM-7.0.0:
       "colors"/"wn6"
 
   [MISC]
-  * updated texts/battletype section with text replacements for {{battletype}} macro
+  * updated "texts"/"battletype" section with text replacements for {{battletype}} macro
 
   [PYTHON MACROS]
   * added macros {{py:upper('str')}}, {{py:lower('str')}}, {{py:capitalize('str')}} and {{py:title('str')}}

@@ -149,6 +149,7 @@
     "czech": "Çek",
     "poland": "",
     "sweden": "",
+    "italy": "",
     "HT": "AT",
     "MT": "OT",
     "LT": "HT",

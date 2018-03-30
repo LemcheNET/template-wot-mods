@@ -149,6 +149,7 @@
     "czech": "",
     "poland": "",
     "sweden": "",
+    "italy": "",
     "HT": "Tăng hạng nặng",
     "MT": "Tăng hạng trung",
     "LT": "Tăng hạng nhẹ",

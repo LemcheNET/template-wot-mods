@@ -1,4 +1,4 @@
-﻿""" XVM (c) https://modxvm.com 2013-2017 """
+﻿""" XVM (c) https://modxvm.com 2013-2018 """
 
 #####################################################################
 # imports
@@ -25,7 +25,7 @@ from gui.Scaleform.daapi.view.dialogs import SimpleDialogMeta, I18nConfirmDialog
 from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
 import gui.Scaleform.daapi.view.lobby.hangar.hangar_cm_handlers as hangar_cm_handlers
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.carousel_data_provider import CarouselDataProvider, HangarCarouselDataProvider, _SUPPLY_ITEMS
-from gui.Scaleform.daapi.view.lobby.vehicle_carousel import carousel_data_provider
+from gui.Scaleform.daapi.view.common.vehicle_carousel import carousel_data_provider
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 
@@ -99,8 +99,6 @@ def _Hangar_as_setCarouselS(base, self, linkage, alias):
         if xfw_mods_info.loaded_swfs.get(XVM_LOBBY_UI_SWF, 0):
             if linkage == HANGAR_ALIASES.TANK_CAROUSEL_UI:
                 linkage = 'com.xvm.lobby.ui.tankcarousel::UI_TankCarousel'
-            if linkage == HANGAR_ALIASES.FALLOUT_TANK_CAROUSEL_UI:
-                linkage = 'com.xvm.lobby.ui.tankcarousel::UI_FalloutTankCarousel'
         else:
             log('WARNING: as_setCarouselS: ({}) {} is not loaded'.format(linkage, XVM_LOBBY_UI_SWF))
             g_eventBus.removeListener(XFW_EVENT.SWF_LOADED, onSwfLoaded)
