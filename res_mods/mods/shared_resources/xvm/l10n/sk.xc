@@ -158,7 +158,7 @@
     "blownUp": "Munícia!",
     "ver/currentVersion": "",
     "ver/newVersion": "",
-    "xvmsvc/not_connected": "",
+    "xvmsvc/not_connected": "Status:<tab/><font color='#00FF00'>Aktívny</font>",
     "token/services_unavailable": "",
     "token/services_inactive": "",
     "token/blocked": "",

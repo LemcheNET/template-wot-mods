@@ -3,10 +3,10 @@
  */
 {
   "locale": {
-    "Warning": "Ostrzeżenie",
+    "Warning": "Uwaga",
     "Error": "Błąd",
     "Information": "Informacja",
-    "OK": "OK",
+    "OK": "Ok",
     "Cancel": "Anuluj",
     "Save": "Zapisz",
     "Remove": "Usuń",
@@ -149,7 +149,7 @@
     "czech": "Czechy",
     "poland": "Polska",
     "sweden": "Szwecja",
-    "italy": "",
+    "italy": "Włochy",
     "HT": "HT",
     "MT": "MT",
     "LT": "LT",

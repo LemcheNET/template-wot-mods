@@ -3,13 +3,13 @@
     "name": "XVM Integrity",
     "description": "XVM Integrity Module",
 
-    "version": "7.5.2.8269",
+    "version": "7.5.5.8286",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.hotfix"],
 
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["1.0.0.1"],
+    "wot_versions"         : ["1.0.0.2"],
     "wot_versions_strategy": "",
 
     "features": ["python"]
