@@ -3,14 +3,14 @@
     "name": "XVM Sounds",
     "description": "XVM Sounds module",
 
-    "version": "7.5.5.8286",
+    "version": "7.5.6.8293",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.profiler"],
     "dependencies_optional": ["com.modxvm.xfw.wwise"],
     
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["1.0.0.2"],
+    "wot_versions"         : ["1.0.0.3"],
     "wot_versions_strategy": "",
 
     "features": ["python"]
