@@ -3,13 +3,13 @@
     "name": "XVM Battle",
     "description": "XVM Battle module",
 
-    "version": "7.5.6.8293",
+    "version": "7.6.0.8322",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.autologin"],
 
     "url": "http://modxvm.com/",
     "url_update": "http://modxvm.com/",
     
-    "wot_versions"         : ["1.0.0.3"],
+    "wot_versions"         : ["1.0.1.0"],
     "wot_versions_strategy": "",
 
     "features": ["actionscript", "python"]

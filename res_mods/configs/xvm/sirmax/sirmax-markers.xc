@@ -52,8 +52,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -110,8 +117,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "clanIcon": {
           "enabled": true,
@@ -160,8 +174,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         }
       },
       "extended": {
@@ -179,8 +200,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -234,8 +262,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
@@ -292,8 +327,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "clanIcon": {
           "enabled": true,
@@ -341,8 +383,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         }
       },
       "extended": {
@@ -360,8 +409,15 @@
         "actionMarker": {
           "y": -55
         },
-        "stunMarker": {
+        "vehicleStatusMarker": {
           "y": -60
+        },
+        "damageIndicator": {
+          "enabled": true,
+          "showText": false,
+          "x": 0,
+          "y": -65,
+          "alpha": 75
         },
         "textFields": [
           {
