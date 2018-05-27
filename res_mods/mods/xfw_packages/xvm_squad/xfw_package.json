@@ -3,13 +3,13 @@
     "name": "XVM Squad",
     "description": "XVM Squad module",
 
-    "version": "7.6.1.8371",
+    "version": "7.6.2.8386",
     "dependencies": ["com.modxvm.xvm", "com.modxvm.xvm.sounds"],
 
-    "url": "http://modxvm.com/",
-    "url_update": "http://modxvm.com/",
+    "url": "https://modxvm.com/",
+    "url_update": "https://modxvm.com/",
     
-    "wot_versions" : ["1.0.1.1"],
+    "wot_versions": ["1.0.1.1"],
     "wot_versions_strategy": "",
 
     "features": ["python"]
