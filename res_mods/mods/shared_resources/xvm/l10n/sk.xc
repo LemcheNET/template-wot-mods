@@ -164,7 +164,7 @@
     "token/blocked": "",
     "token/active": "Status:<tab/><font color='#00FF00'>Aktívny</font>",
     "token/time_left": "Zostávajúci čas:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
-    "token/time_left_warn": "",
+    "token/time_left_warn": "Zostávajúci čas:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
     "token/unknown_status": "Neznámy status",
     "lobby/header/gold_locked_tooltip": "",
     "lobby/header/gold_unlocked_tooltip": "",

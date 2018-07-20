@@ -164,7 +164,7 @@
     "token/blocked": "სტატუსი: <font color='#FF0000'>დაბლოკილია</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>დეტალურად</font></a>",
     "token/active": "სტატუსი:<tab/><font color='#00FF00'>აქტიურია</font>",
     "token/time_left": "დარჩენილი:<tab/><font color='#EEEEEE'>{0}д. {1}ч. {2}м.</font>",
-    "token/time_left_warn": "",
+    "token/time_left_warn": "დარჩენილი:<tab/><font color='#EEEEEE'>{0}д. {1}ч. {2}м.</font>",
     "token/unknown_status": "უცნობი სტატუსი",
     "lobby/header/gold_locked_tooltip": "",
     "lobby/header/gold_unlocked_tooltip": "",

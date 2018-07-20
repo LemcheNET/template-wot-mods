@@ -164,7 +164,7 @@
     "token/blocked": "Stare: <font color='#FF0000'>Blocat</font>&nbsp;&nbsp;<a href='#XVM_SITE_BLOCKED#'><font size='11'>more info</font></a>",
     "token/active": "Stare:<tab/><font color='#00FF00'>Activ</font>",
     "token/time_left": "Time ramas:<tab/><font color='#EEEEEE'>{0}z. {1}h. {2}m.</font>",
-    "token/time_left_warn": "",
+    "token/time_left_warn": "Time ramas:<tab/><font color='#EEEEEE'>{0}z. {1}h. {2}m.</font>",
     "token/unknown_status": "Stare necunoscuta",
     "lobby/header/gold_locked_tooltip": "Goldul este blocat",
     "lobby/header/gold_unlocked_tooltip": "Gold-ul este deblocat",

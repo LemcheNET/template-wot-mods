@@ -146,10 +146,10 @@
     "uk": "Großbritannien",
     "china": "China",
     "japan": "Japan",
-    "czech": "Tschechei",
+    "czech": "Tschechisch",
     "poland": "Polen",
     "sweden": "Schweden",
-    "italy": "",
+    "italy": "Italien",
     "HT": "SP",
     "MT": "MP",
     "LT": "LP",
@@ -212,6 +212,6 @@
     "Config file xvm.xc was not found, using the built-in config": "Konfigurationsdatei xvm.xc nicht gefunden, benutze eingebaute Standard-Konfiguration",
     "Error loading XVM config": "Fehler beim Laden der XVM-Konfiguration",
     "bootcamp_workaround_title": "Warnung",
-    "bootcamp_workaround_message": ""
+    "bootcamp_workaround_message": "Derzeit ist XVM nicht mit dem Spielmodus \"Bootcamp\" kompatibel.\n\nUm in den \"Boot Camp\" Modus zu gelangen, müssen Sie den World of Tanks-Client im abgesicherten Modus neu starten, wodurch keine Änderungen geladen werden.\n\nMöchten Sie World of Tanks jetzt ohne Mods neu starten?"
   }
 }

@@ -1,4 +1,87 @@
-﻿XVM-7.6.2:
+﻿XVM-7.6.9:
+  [GENERAL]
+  * World of Tanks 1.0.2.3
+
+XVM-7.6.8:
+  [CRASHES]
+  * fixed compatibility with MacOS
+  * fixed compatibility with Windows XP
+  * fixed compatibility with Wargaming Error Monitor
+  * improved crashfix #2
+
+  [XFW]
+  * fixed xfw_package.json/dependencies_optional option behavior 
+  * added version info for binary files (.pyd)
+
+  [BATTLE]
+  * added displaying of the fractional part of the magnification.
+
+  [PYTHON MACROS]
+  * damageLog: various bugs fixed
+  * totalEfficiency: various bugs fixed
+
+XVM-7.6.7:
+  [GENERAL]
+  * World of Tanks 1.0.2.2
+  * added semi-automatic crash reporting
+
+  [HANGAR]
+  * fixed widgets disappearing after battle
+
+  [OTHER]
+  * refactored online and ping displaying
+  * builtin fonts are case-insensetive now
+  * added check for isDAAPIInited flag on flash loading
+  
+  [INSTALLER]
+  * removed Microsoft C++ Runtime from archive (it is available for download on modxvm.com)
+
+XVM-7.6.6:
+  [OTHER]
+  * skip version due to technical reasons
+
+XVM-7.6.5:
+  [INSTALLER]
+  * Fixed XVM installer uninstallation process.
+
+  [OTHER]
+  * fixed "updateReserve" function error
+
+XVM-7.6.4:
+  [GENERAL]
+  * World of Tanks 1.0.2.1
+
+  [CRASHES]
+  * added fixes for Autodesk Scaleform crashes
+  * fixed crash in case when there is ping or online counters in lobby
+  * added updated Microsoft Universal CRT and Microsoft Visual C++ Redistributable versions
+
+  [HANGAR]
+  * added section "hangar"/"notificationCounter" - show/hide notifications counters in the main menu
+  * added options:
+      "hangar"/"showCreateSquadButtonText" - show "Create squad" text on the squad creation button
+      "hangar"/"showBattleTypeSelectorText" - show selected battle mode text
+      "hangar"/"showPromoPremVehicle" - disable display promo of premium vehicle (on the background in the hangar)
+
+  [BATTLE]
+  * added options in the "playersPanel" modes sections:
+      "rankBadgeAlpha" - transparency of the rank badge
+
+XVM-7.6.3:
+  [HANGAR]
+  * added option "hangar"/"restoreBattleType" - restore selected battle type on switching to another server
+  * added option in "hangar"/"pingServers" and "hangar"/"onlineServers":
+      "currentServerFormat" - html format for current server
+  * removed option in "hangar"/"pingServers" and "hangar"/"onlineServers":
+      "markCurrentServer" - replaced with "currentServerFormat"
+  * added option "login"/"disabledServers" - do not show the specified servers in the servers list
+
+  [MISC]
+  * fixed display of tooltips in battle
+  * added option "tooltips"/"hideTooltips" - list of tooltips to hide
+  * added option "tooltips"/"logLocalization" - log all localization keys to the xvm.log file
+
+XVM-7.6.2:
   [GENERAL]
   * World of Tanks 1.0.1.1 nanopatch 2
   * changed structure of the settings cache files, need to re-configure the filters and tanks in reserve.
@@ -9,7 +92,7 @@
 
   [MISC]
   * fixes in hangar filters
-  * removed useless tooltip in players panel
+  * disabled tooltip in players panel
 
 XVM-7.6.1:
   [GENERAL]
@@ -19,9 +102,9 @@ XVM-7.6.1:
   * damageLog: disabled panel in the frontline mode
   * damageLog: fix macros {{costShell}} and {{c:costShell}}
 
-  [РАЗНОЕ]
+  [MISC]
   * fixed old replays playback
-  * fixed reload timer position
+  * fixed repair modules timer position
   * player profile: fixed xTE column
   * implemented HTTP-proxy support through environment variable XVM_HTTP_PROXY=http://[login:password@]domain.com:3128
 
