@@ -17,7 +17,8 @@ import threading
 
 import BigWorld
 import ResMgr
-from gui.shared.utils.HangarSpace import g_hangarSpace
+from helpers import dependency
+from skeletons.gui.shared.utils import IHangarSpace
 
 from xfw import *
 from xfw_ping.python import ping as xfw_ping
@@ -28,6 +29,7 @@ from xvm_main.python.xvm import l10n
 
 
 class _Ping(object):
+    hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self):
         self.lock = threading.RLock()
@@ -41,22 +43,19 @@ class _Ping(object):
         self.hangarErrorString = l10n(config.get('hangar/pingServers/errorString', '--'))
         self.loginShowTitle = config.get('login/pingServers/showTitle', True)
         self.hangarShowTitle = config.get('hangar/pingServers/showTitle', True)
-        ignoredServers = config.get('hangar/pingServers/ignoredServers', [])
+        ignoredServersLogin = config.get('login/pingServers/ignoredServers', [])
+        ignoredServersHangar = config.get('hangar/pingServers/ignoredServers', [])
 
         self.hosts_urls = {}
         self.loginHosts = []
         self.hangarHosts = []
         if self.loginSection is not None:
             for (name, subSec) in self.loginSection.items():
-                host_name = subSec.readStrings('name')[0]
-                if 'Supertest' not in host_name:
-                    if len(host_name) >= 13:
-                        host_name = subSec.readStrings('short_name')[0]
-                    elif host_name.startswith('WOT '):
-                        host_name = host_name[4:]
+                host_name = subSec.readStrings('short_name')[0]
                 self.hosts_urls[host_name] = subSec.readStrings('url')[0]
-                self.loginHosts.append(host_name)
-                if host_name not in ignoredServers:
+                if host_name not in ignoredServersLogin:
+                    self.loginHosts.append(host_name)
+                if host_name not in ignoredServersHangar:
                     self.hangarHosts.append(host_name)
             alphanumeric_sort(self.loginHosts)
             alphanumeric_sort(self.hangarHosts)
@@ -102,18 +101,18 @@ class _Ping(object):
 
             # Parse ping output
             best_ping = 999
-            for host in (self.hangarHosts if g_hangarSpace.inited else self.loginHosts):
+            for host in (self.hangarHosts if self.hangarSpace.inited else self.loginHosts):
                 hostping = xfw_ping(self.hosts_urls[host].split(':')[0])
 
                 if hostping<0:
-                    res.append({'cluster': host, 'time': (self.hangarErrorString if g_hangarSpace.inited else self.loginErrorString)})
+                    res.append({'cluster': host, 'time': (self.hangarErrorString if self.hangarSpace.inited else self.loginErrorString)})
                     debug('Ping has returned non-zero status: %d' % hostping)
                     continue
 
                 res.append({'cluster': host, 'time': hostping})
                 best_ping = min(best_ping, hostping)
 
-            if (g_hangarSpace.inited and self.hangarShowTitle) or (not g_hangarSpace.inited and self.loginShowTitle):
+            if (self.hangarSpace.inited and self.hangarShowTitle) or (not self.hangarSpace.inited and self.loginShowTitle):
                 res.insert(0, {'cluster': '###best_ping###', 'time': best_ping}) # will appear first, key is replaced by localized "Ping"
 
         except Exception:

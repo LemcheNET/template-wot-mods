@@ -52,6 +52,9 @@ toolTipDelayIntervalId = None
 weightTooHeavy = False
 p_replacement = None # will be something like <font size... color...>
 
+class XVM_TOOLTIPS(object):
+    HIDE = 'xvm_hide_tooltip'
+
 #####################################################################
 # initialization/finalization
 
@@ -69,17 +72,24 @@ def fini():
 #####################################################################
 # handlers
 
+@overrideMethod(i18n, 'makeString')
+def _i18n_makeString(base, key, *args, **kwargs):
+    if config.get('tooltips/logLocalization', False):
+        log('l10n key: ' + key + ', value: ' + base(key, *args, **kwargs))
+    if key in config.get('tooltips/hideTooltips', []):
+        return XVM_TOOLTIPS.HIDE
+    return base(key, *args, **kwargs)
+
 # tooltip delay to resolve performance issue
 @overrideMethod(ToolTip, 'onCreateComplexTooltip')
-def ToolTip_onCreateComplexTooltip(base, self, tooltipId, stateType):
-    # log('ToolTip_onCreateComplexTooltip')
-    _createTooltip(self, lambda:_onCreateComplexTooltip_callback(base, self, tooltipId, stateType))
-
+def _ToolTip_onCreateComplexTooltip(base, self, tooltipId, stateType):
+    if XVM_TOOLTIPS.HIDE not in tooltipId:
+        _createTooltip(self, lambda:_onCreateComplexTooltip_callback(base, self, tooltipId, stateType))
 
 # tooltip delay to resolve performance issue
 # suppress carousel tooltips
 @overrideMethod(ToolTip, 'onCreateTypedTooltip')
-def ToolTip_onCreateTypedTooltip(base, self, type, *args):
+def _ToolTip_onCreateTypedTooltip(base, self, type, *args):
     # log('ToolTip_onCreateTypedTooltip')
     try:
         if type == TOOLTIPS_CONSTANTS.CAROUSEL_VEHICLE and config.get('hangar/carousel/suppressCarouselTooltips'):
@@ -87,8 +97,13 @@ def ToolTip_onCreateTypedTooltip(base, self, type, *args):
     except Exception as ex:
         err(traceback.format_exc())
 
-    _createTooltip(self, lambda:_onCreateTypedTooltip_callback(base, self, type, *args))
+    if args and XVM_TOOLTIPS.HIDE not in args[0]:
+        _createTooltip(self, lambda:_onCreateTypedTooltip_callback(base, self, type, *args))
 
+@overrideMethod(ToolTip, 'onHideTooltip')
+def _ToolTip_onHideTooltip(base, self, tooltipId):
+    self.xvm_hide()
+    base(self, tooltipId)
 
 # adds delay for tooltip appearance
 def _createTooltip(self, func):
@@ -100,20 +115,17 @@ def _createTooltip(self, func):
     except Exception as ex:
         err(traceback.format_exc())
 
-
 def _onCreateTypedTooltip_callback(base, self, type, *args):
     # log('ToolTip_onCreateTypedTooltip_callback')
     global toolTipDelayIntervalId
     toolTipDelayIntervalId = None
     base(self, type, *args)
 
-
 def _onCreateComplexTooltip_callback(base, self, tooltipId, stateType):
     # log('_onCreateComplexTooltip_callback')
     global toolTipDelayIntervalId
     toolTipDelayIntervalId = None
     base(self, tooltipId, stateType)
-
 
 def _ToolTip_xvm_hide(self):
     # log('_ToolTip_xvm_hide')
@@ -247,7 +259,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                     continue
                 #maxHealth
                 elif paramName == 'maxHealth':
-                    tooltip_add_param(self, result, i18n.makeString('#menu:vehicleInfo/params/maxHealth'), formatNumber(veh_descr.maxHealth))
+                    tooltip_add_param(self, result, i18n.makeString(MENU.VEHICLEINFO_PARAMS_MAXHEALTH), formatNumber(veh_descr.maxHealth))
                 #battle tiers
                 elif paramName == 'battleTiers':
                     (minTier, maxTier) = getTiers(vehicle.level, vehicle.type, vehicle.name)
@@ -282,7 +294,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                 #piercingPowerAvg
                 elif paramName == 'piercingPowerAvg':
                     piercingPowerAvg = formatNumber(veh_descr.shot.piercingPower[0])
-                    tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/avgPiercingPower')), piercingPowerAvg)
+                    tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.TANK_PARAMS_AVGPIERCINGPOWER)), piercingPowerAvg)
                 #piercingPowerAvgSummary
                 elif paramName == 'piercingPowerAvgSummary':
                     piercingPowerAvgSummary_arr = []
@@ -292,7 +304,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                             piercingPower_str = gold_pad(piercingPower_str)
                         piercingPowerAvgSummary_arr.append(piercingPower_str)
                     piercingPowerAvgSummary_str = '/'.join(piercingPowerAvgSummary_arr)
-                    tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/avgPiercingPower')), piercingPowerAvgSummary_str)
+                    tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.MODULEINFO_PARAMS_AVGPIERCINGPOWER)), piercingPowerAvgSummary_str)
                 #damageAvgSummary
                 elif paramName == 'damageAvgSummary':
                     damageAvgSummary_arr = []
@@ -302,7 +314,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                             damageAvg_str = gold_pad(damageAvg_str)
                         damageAvgSummary_arr.append(damageAvg_str)
                     damageAvgSummary_str = '/'.join(damageAvgSummary_arr)
-                    tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/avgDamage')), damageAvgSummary_str)
+                    tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.MODULEINFO_PARAMS_AVGDAMAGE)), damageAvgSummary_str)
                 #magazine loading
                 # elif (paramName == 'reloadTimeSecs' or paramName == 'rateOfFire') and vehicle.gun.isClipGun():
                 #     if clipGunInfoShown:
@@ -311,14 +323,14 @@ def CommonStatsBlockConstructor_construct(base, self):
                 #     reloadMagazineTime = gun.reloadTime
                 #     shellReloadingTime_str = formatNumber(shellReloadingTime)
                 #     reloadMagazineTime_str = formatNumber(reloadMagazineTime)
-                #     tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/shellsCount')), shellsCount)
-                #     tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/shellReloadingTime')), shellReloadingTime_str)
-                #     tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/reloadMagazineTime')), reloadMagazineTime_str)
+                #     tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.MODULEINFO_PARAMS_SHELLSCOUNT)), shellsCount)
+                #     tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.MODULEINFO_PARAMS_SHELLRELOADINGTIME)), shellReloadingTime_str)
+                #     tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.MODULEINFO_PARAMS_RELOADMAGAZINETIME)), reloadMagazineTime_str)
                 #     clipGunInfoShown = True
                 #rate of fire
                 # elif paramName == 'rateOfFire' and not vehicle.gun.isClipGun():
                 #     rateOfFire_str = formatNumber(60 / gun.reloadTime)
-                #     tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/reloadTime')), rateOfFire_str)
+                #     tooltip_add_param(self, result, replace_p(i18n.makeString(MANU.MODULEINFO_PARAMS_RELOADTIME)), rateOfFire_str)
                 # gun traverse limits
                 # elif paramName == 'traverseLimits' and gun.turretYawLimits:
                 #     (traverseMin, traverseMax) = gun.turretYawLimits
@@ -358,7 +370,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                 #     if not vehicle.hasTurrets:
                 #         paramName = 'gunRotationSpeed'
                 #     turretRotationSpeed_str = str(int(degrees(veh_descr.turret.rotationSpeed)))
-                #     tooltip_add_param(self, result, tooltip_with_units(i18n.makeString('#menu:tank_params/%s' % paramName).rstrip(), i18n.makeString('#menu:tank_params/gps')), turretRotationSpeed_str)
+                #     tooltip_add_param(self, result, tooltip_with_units(i18n.makeString('#menu:tank_params/%s' % paramName).rstrip(), i18n.makeString(MENU.TANK_PARAMS_GPS)), turretRotationSpeed_str)
                 #terrain resistance
                 elif paramName == 'terrainResistance':
                     resistances_arr = []
@@ -369,7 +381,7 @@ def CommonStatsBlockConstructor_construct(base, self):
                 #radioRange
                 # elif paramName == 'radioRange':
                 #     radioRange_str = '%s' % int(vehicle.radio.descriptor.distance)
-                #     tooltip_add_param(self, result, replace_p(i18n.makeString('#menu:moduleInfo/params/radioDistance')), radioRange_str)
+                #     tooltip_add_param(self, result, replace_p(i18n.makeString(MENU.TANK_PARAMS_RADIODISTANCE)), radioRange_str)
                 #gravity
                 elif paramName == 'gravity':
                     gravity_str = formatNumber(veh_descr.shot.gravity)
@@ -445,7 +457,7 @@ def ConsumablesPanel__makeShellTooltip(base, self, descriptor, piercingPower):
     result = base(self, descriptor, piercingPower)
     try:
         if descriptor.kind == SHELL_TYPES.HIGH_EXPLOSIVE:
-            key_str = i18n.makeString('#menu:tank_params/explosionRadius')
+            key_str = i18n.makeString(MENU.TANK_PARAMS_EXPLOSIONRADIUS)
             result = result.replace('{/BODY}', '\n%s: %s{/BODY}' % (key_str, formatNumber(descriptor.type.explosionRadius)))
     except Exception as ex:
         err(traceback.format_exc())
@@ -459,7 +471,7 @@ def ModuleInfoMeta_as_setModuleInfoS(base, self, moduleInfo):
             if not shells_vehicles_compatibility:
                 relate_shells_vehicles()
             if self.moduleCompactDescr in shells_vehicles_compatibility:
-                moduleInfo['compatible'].append({'type': i18n.makeString('#menu:moduleInfo/compatible/vehicles'), 'value': ', '.join(shells_vehicles_compatibility[self.moduleCompactDescr])})
+                moduleInfo['compatible'].append({'type': i18n.makeString(MENU.MODULEINFO_COMPATIBLE_VEHICLES), 'value': ', '.join(shells_vehicles_compatibility[self.moduleCompactDescr])})
     except Exception as ex:
         err(traceback.format_exc())
     base(self, moduleInfo)
@@ -470,7 +482,7 @@ def ModuleInfoMeta_as_setModuleInfoS(base, self, moduleInfo):
 #     if key == '#menu:moduleInfo/params/weightTooHeavy':
 #         global weightTooHeavy
 #         if weightTooHeavy is None:
-#             weightTooHeavy = '<h>%s</h>' % red_pad(strip_html_tags(i18n.makeString('#menu:moduleInfo/params/weight'))) # localized red 'weight (kg)'
+#             weightTooHeavy = '<h>%s</h>' % red_pad(strip_html_tags(i18n.makeString(MENU.MODULEINFO_PARAMS_WEIGHT))) # localized red 'weight (kg)'
 #         return weightTooHeavy
 #     return base(key, *args, **kwargs)
 
