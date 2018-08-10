@@ -1,4 +1,12 @@
-﻿XVM-7.6.9:
+﻿XVM-7.6.11:
+  [GENERAL]
+  * fix incompability with unbound-based UI windows (e.g. new ingame store)
+
+XVM-7.6.10:
+  [GENERAL]
+  * World of Tanks 1.0.2.4
+
+XVM-7.6.9:
   [GENERAL]
   * World of Tanks 1.0.2.3
 
