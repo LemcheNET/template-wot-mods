@@ -19,6 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #####################################################################
 # imports
 
+import traceback
 from xfw import *
 from xvm_main.python.logger import *
 

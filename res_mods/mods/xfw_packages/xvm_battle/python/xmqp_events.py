@@ -8,6 +8,7 @@ from gui.app_loader import g_appLoader
 from gui.app_loader.settings import GUI_GLOBAL_SPACE_ID
 
 from xfw import *
+from xfw_actionscript.python import *
 
 import xvm_main.python.config as config
 from xvm_main.python.logger import *
@@ -132,27 +133,23 @@ def _DestroyTimersPanel__setFireInVehicle(self, isInFire):
 @registerEvent(DestroyTimersPanel, '_DestroyTimersPanel__showDestroyTimer')
 def _DestroyTimersPanel__showDestroyTimer(self, value):
     if xmqp.is_active() and g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.BATTLE:
-        if len(value) == 4:
-            code, totalTime, level, startTime = value
+        if value.needToCloseAll():
+            xmqp.call({
+                'event':EVENTS.XMQP_VEHICLE_TIMER,
+                'enable':False,
+                'code':'ALL'})
+        elif value.needToCloseTimer():
+            xmqp.call({
+                'event':EVENTS.XMQP_VEHICLE_TIMER,
+                'enable':False,
+                'code':value.code})
         else:
-            (code, totalTime, level), startTime = value, None
-        xmqp.call({
-            'event':EVENTS.XMQP_VEHICLE_TIMER,
-            'enable':True,
-            'code':code,
-            'totalTime':totalTime,
-            'level':level})
-
-@registerEvent(DestroyTimersPanel, '_DestroyTimersPanel__hideDestroyTimer')
-def _DestroyTimersPanel__hideDestroyTimer(self, value):
-    if xmqp.is_active() and g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.BATTLE:
-        code = value
-        if code is None:
-            code = 'ALL'
-        xmqp.call({
-            'event':EVENTS.XMQP_VEHICLE_TIMER,
-            'enable':False,
-            'code':code})
+            xmqp.call({
+                'event': EVENTS.XMQP_VEHICLE_TIMER,
+                'enable': True,
+                'code': value.code,
+                'totalTime': value.totalTime,
+                'level': value.level})
 
 # death zone timers
 #   zoneID: death_zone, gas_attack, ALL
@@ -161,24 +158,23 @@ def _DestroyTimersPanel__hideDestroyTimer(self, value):
 @registerEvent(DestroyTimersPanel, '_showDeathZoneTimer')
 def _DestroyTimersPanel_showDeathZoneTimer(self, value):
     if xmqp.is_active() and g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.BATTLE:
-        code, totalTime, level = value
-        xmqp.call({
-            'event':EVENTS.XMQP_DEATH_ZONE_TIMER,
-            'enable':True,
-            'code':code,
-            'totalTime':totalTime,
-            'level':level})
-
-@registerEvent(DestroyTimersPanel, '_hideDeathZoneTimer')
-def _DestroyTimersPanel_hideDeathZoneTimer(self, value):
-    if xmqp.is_active() and g_appLoader.getSpaceID() == GUI_GLOBAL_SPACE_ID.BATTLE:
-        code = value
-        if code is None:
-            code = 'ALL'
-        xmqp.call({
-            'event':EVENTS.XMQP_DEATH_ZONE_TIMER,
-            'enable':False,
-            'code':code})
+        if value.needToCloseAll():
+            xmqp.call({
+                'event':EVENTS.XMQP_DEATH_ZONE_TIMER,
+                'enable':False,
+                'code':'ALL'})
+        elif value.needToCloseTimer():
+            xmqp.call({
+                'event':EVENTS.XMQP_DEATH_ZONE_TIMER,
+                'enable':False,
+                'code':value.code})
+        else:
+            xmqp.call({
+                'event': EVENTS.XMQP_DEATH_ZONE_TIMER,
+                'enable': True,
+                'code': value.code,
+                'totalTime': value.totalTime,
+                'level': value.level})
 
 # sixth sense indicator
 

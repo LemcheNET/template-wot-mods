@@ -19,14 +19,13 @@ from gui.battle_control.battle_constants import CROSSHAIR_VIEW_ID
 from gui.Scaleform.daapi.view.battle.shared.crosshair.container import CrosshairPanelContainer
 from AvatarInputHandler.control_modes import SniperControlMode
 from helpers.EffectsList import _FlashBangEffectDesc
-from gui.Scaleform.daapi.view.meta.SiegeModeIndicatorMeta import SiegeModeIndicatorMeta
-from gui.Scaleform.daapi.view.meta.CrosshairPanelContainerMeta import CrosshairPanelContainerMeta
 from AvatarInputHandler.AimingSystems.SniperAimingSystem import SniperAimingSystem
 from Keys import KEY_RIGHTMOUSE
 from AvatarInputHandler import mathUtils
 from gun_rotation_shared import calcPitchLimitsFromDesc
 
 from xfw import *
+from xfw_actionscript.python import *
 
 from xvm_main.python.logger import *
 import xvm_main.python.config as config
@@ -97,16 +96,6 @@ def _ArcadeCamera_create(base, self, pivotPos, onChangeControlMode = None, postm
             cfg['scrollSensitivity'] = float(value) * ucfg['scrollSensitivity']
 
     base(self, pivotPos, onChangeControlMode, postmortemMode)
-
-@overrideMethod(ArcadeCamera, 'setToVehicleDirectionFootball')
-def _ArcadeCamera_setToVehicleDirectionFootball(base, self):
-    if config.get('battle/camera/enabled'):
-        distRange = self._ArcadeCamera__cfg['distRange']
-        self._ArcadeCamera__cfg['distRange'] = (2, 25)
-        base(self)
-        self._ArcadeCamera__cfg['distRange'] = distRange
-    else:
-        base(self)
 
 @registerEvent(ArcadeCamera, 'enable')
 def _ArcadeCamera_enable(self, *args, **kwargs):
@@ -215,30 +204,6 @@ def create(base, self, model, list, args):
     if config.get('battle/camera/enabled') and config.get('battle/camera/noFlashBang'):
         return
     base(self, model, list, args)
-
-@overrideMethod(SiegeModeIndicatorMeta, 'as_showHintS')
-def SiegeModeIndicatorMeta_as_showHintS(base, self, buttonName, messageLeft, messageRight):
-    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
-        return
-    base(self, buttonName, messageLeft, messageRight)
-
-@overrideMethod(SiegeModeIndicatorMeta, 'as_hideHintS')
-def SiegeModeIndicatorMeta_as_hideHintS(base, self):
-    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
-        return
-    base(self)
-
-@overrideMethod(CrosshairPanelContainerMeta, 'as_showHintS')
-def CrosshairPanelContainerMeta_as_showHintS(base, self, key, messageLeft, messageRight, offsetX, offsetY):
-    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
-        return
-    base(self, key, messageLeft, messageRight, offsetX, offsetY)
-
-@overrideMethod(CrosshairPanelContainerMeta, 'as_hideHintS')
-def CrosshairPanelContainerMeta_as_hideHintS(base, self):
-    if config.get('battle/camera/enabled') and config.get('battle/camera/hideHint'):
-        return
-    base(self)
 
 @overrideMethod(SniperAimingSystem, '_SniperAimingSystem__clampToLimits')
 def clampToLimits(base, self, turretYaw, gunPitch):
