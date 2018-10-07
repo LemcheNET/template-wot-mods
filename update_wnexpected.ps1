@@ -1,4 +1,4 @@
-$expected_tank_values_version = "27"
+$expected_tank_values_version = "30"
 
 $extensions = @("csv","json")
 foreach($extension in $extensions){
