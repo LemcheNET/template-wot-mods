@@ -1,5 +1,31 @@
-*.swf filter=lfs diff=lfs merge=lfs -text
-*.wotmod filter=lfs diff=lfs merge=lfs -text
-*.pyc filter=lfs diff=lfs merge=lfs -text
-*.bnk filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.bat text
+*.json text
+*.md text
+*.nsi text
+*.placeholder text
+*.ps1 text
+*.py text
+*.sample text
+*.txt text
+*.url text
+*.xc text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.ps1 text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary filter=lfs diff=lfs merge=lfs -text
+*.jpg binary filter=lfs diff=lfs merge=lfs -text
+*.swf binary filter=lfs diff=lfs merge=lfs -text
+*.wotmod binary filter=lfs diff=lfs merge=lfs -text
+*.pyc binary filter=lfs diff=lfs merge=lfs -text
+*.bnk binary filter=lfs diff=lfs merge=lfs -text
+*.mp3 binary filter=lfs diff=lfs merge=lfs -text
+*.bnk binary filter=lfs diff=lfs merge=lfs -text
+*.exe binary filter=lfs diff=lfs merge=lfs -text
+*.ico binary filter=lfs diff=lfs merge=lfs -text
