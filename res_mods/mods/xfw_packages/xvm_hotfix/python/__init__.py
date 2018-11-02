@@ -25,24 +25,20 @@ from xvm_main.python.logger import *
 
 
 #####################################################################
-# fix WG's bug with markers appearing in the top corner on battle start
-# https://koreanrandom.com/forum/topic/32423-/page-86#entry395145
+#
 
-import BigWorld
-from gui.Scaleform.daapi.view.battle.shared.markers2d.manager import MarkersManager
-
-markersVisibleCallbackID = None
-
-def _set_canvas_visible_true(self):
-    global markersVisibleCallbackID
-    markersVisibleCallbackID = None
-    self.movie.visible = True
-
-@overrideMethod(MarkersManager, 'createMarker')
-def _MarkersManager_createMarker(base, self, *args, **kwargs):
-    global markersVisibleCallbackID
-    self.movie.visible = False
-    if markersVisibleCallbackID is not None:
-        BigWorld.cancelCallback(markersVisibleCallbackID)
-    markersVisibleCallbackID = BigWorld.callback(0, lambda: _set_canvas_visible_true(self))
-    return base(self, *args, **kwargs)
+import base64
+from account_helpers.CustomFilesCache import CustomFilesCache
+@overrideMethod(CustomFilesCache, '_CustomFilesCache__onReadLocalFile')
+def _CustomFilesCache__onReadLocalFile(base, self, url, showImmediately):
+    try:
+        base(self, url, showImmediately)
+    except EOFError:
+        err('CustomFilesCache.__onReadLocalFile: url="{0}"'.format(url))
+        err(traceback.format_exc())
+        try:
+            log('Attempt to reload url: {0}'.format(url))
+            del(self._CustomFilesCache__db[base64.b32encode(url)])
+            base(self, url, showImmediately)
+        except Exception:
+            err(traceback.format_exc())

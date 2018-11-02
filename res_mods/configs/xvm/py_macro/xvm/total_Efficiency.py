@@ -7,6 +7,7 @@ from Avatar import PlayerAvatar
 from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
 from gui.Scaleform.daapi.view.battle.shared.ribbons_panel import BattleRibbonsPanel
+from gui.Scaleform.daapi.view.battle.shared.ribbons_aggregator import RibbonsAggregator
 from vehicle_extras import ShowShooting
 from constants import VEHICLE_HIT_FLAGS as VHF
 from gui.battle_control.arena_info.arena_dp import ArenaDataProvider
@@ -37,6 +38,9 @@ fragsSquad_dict = {}
 isPlayerInSquad = False
 totalStun = 0
 numberStuns = 0
+numberAssistTrack = 0
+numberAssistSpot = 0
+numberAssistStun = 0
 isStuns = None
 numberDamagedVehicles = []
 hitAlly = False
@@ -172,30 +176,37 @@ def _onTotalEfficiencyUpdated(self, diff):
 
 @registerEvent(BattleRibbonsPanel, '_BattleRibbonsPanel__onRibbonUpdated')
 def BattleRibbonsPanel__onRibbonUpdated(self, ribbon):
-    global ribbonTypes, numberDamagesDealt
+    global ribbonTypes, numberDamagesDealt, numberAssistTrack, numberAssistSpot, numberAssistStun
     if isPlayerVehicle():
         ribbonType = ribbon.getType()
         if ribbonType == 'assistTrack':
             ribbonTypes[ribbonType] = (totalAssist - ribbonTypes['assistSpot']) if totalAssist else 0
+            numberAssistTrack += 1
             as_event('ON_TOTAL_EFFICIENCY')
         elif ribbonType == 'assistSpot':
             ribbonTypes[ribbonType] = (totalAssist - ribbonTypes['assistTrack']) if totalAssist else 0
+            numberAssistSpot += 1
             as_event('ON_TOTAL_EFFICIENCY')
-        elif ribbonType in ['damage']:
+        elif ribbonType == 'damage':
             numberDamagesDealt += 1
+            as_event('ON_TOTAL_EFFICIENCY')
+        elif ribbonType == 'stun':
+            numberAssistStun += 1
             as_event('ON_TOTAL_EFFICIENCY')
 
 
 @registerEvent(BattleRibbonsPanel, '_BattleRibbonsPanel__onRibbonAdded')
 def BattleRibbonsPanel__onRibbonAdded(self, ribbon):
-    global ribbonTypes, numberDamagesDealt
+    global ribbonTypes, numberDamagesDealt, numberAssistTrack, numberAssistSpot, numberAssistStun
     if isPlayerVehicle():
         ribbonType = ribbon.getType()
         if ribbonType == 'assistTrack':
             ribbonTypes[ribbonType] = (totalAssist - ribbonTypes['assistSpot']) if totalAssist else 0
+            numberAssistTrack += 1
             as_event('ON_TOTAL_EFFICIENCY')
         elif ribbonType == 'assistSpot':
             ribbonTypes[ribbonType] = (totalAssist - ribbonTypes['assistTrack']) if totalAssist else 0
+            numberAssistSpot += 1
             as_event('ON_TOTAL_EFFICIENCY')
         elif ribbonType == 'crits':
             ribbonTypes[ribbonType] += ribbon.getExtraValue()
@@ -208,6 +219,9 @@ def BattleRibbonsPanel__onRibbonAdded(self, ribbon):
             as_event('ON_TOTAL_EFFICIENCY')
         elif ribbonType in ['damage', 'ram', 'burn']:
             numberDamagesDealt += 1
+            as_event('ON_TOTAL_EFFICIENCY')
+        elif ribbonType == 'stun':
+            numberAssistStun += 1
             as_event('ON_TOTAL_EFFICIENCY')
 
 
@@ -256,7 +270,7 @@ def destroyGUI(self):
     global vehiclesHealth, totalDamage, totalAssist, totalBlocked, damageReceived, damagesSquad, detection, isPlayerInSquad
     global ribbonTypes, numberHitsBlocked, player, numberHitsDealt, old_totalDamage, damage, numberShotsDealt, totalStun
     global numberDamagesDealt, numberShotsReceived, numberHitsReceived, numberHits, fragsSquad, fragsSquad_dict, isStuns
-    global numberStuns, numberDamagedVehicles, hitAlly, allyVehicles, burst
+    global numberStuns, numberDamagedVehicles, hitAlly, allyVehicles, burst, numberAssistTrack, numberAssistSpot, numberAssistStun
     vehiclesHealth = {}
     totalDamage = 0
     damage = 0
@@ -279,6 +293,9 @@ def destroyGUI(self):
     isPlayerInSquad = False
     totalStun = 0
     numberStuns = 0
+    numberAssistTrack = 0
+    numberAssistSpot = 0
+    numberAssistStun = 0
     isStuns = None
     hitAlly = False
     burst = 1
@@ -299,4 +316,9 @@ def destroyGUI(self):
         'defence': 0,
         'assist': 0
     }
+
+
+@overrideMethod(RibbonsAggregator, 'suspend')
+def suspend(base, self):
+    self.resume()
 

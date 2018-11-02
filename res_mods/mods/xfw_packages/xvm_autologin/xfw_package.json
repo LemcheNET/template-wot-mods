@@ -3,13 +3,13 @@
     "name": "XVM Autologin",
     "description": "XVM Autologin module",
 
-    "version": "7.7.4.8639",
+    "version": "7.7.6.8680",
     "dependencies": ["com.modxvm.xvm"],
 
     "url": "https://modxvm.com/",
     "url_update": "https://modxvm.com/",
 
-    "wot_version_min": "1.2.0",
+    "wot_version_min": "1.2.0.1",
     "wot_version_exactmatch": false,
 
     "features": ["python"]
